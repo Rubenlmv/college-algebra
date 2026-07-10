@@ -7,7 +7,7 @@
     <!--instead of web it said course before-->
     <target name="web" source="main.ptx" format="html"
     
-            publication="publication.ptx" deploy-dir="course" />
+            publication="publication.ptx" deploy-dir="web" />
     <target name="print" source="main.ptx" format="pdf"
             output-filename="course.pdf" publication="publication.ptx" />
     <!--
