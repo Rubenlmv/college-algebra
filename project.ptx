@@ -9,7 +9,7 @@
     
             publication="publication.ptx" deploy-dir="web" />
     <target name="print" source="main.ptx" format="pdf"
-            output-filename="course.pdf" publication="publication.ptx" />
+            output-filename="web.pdf" publication="publication.ptx" />
     <!--
     <target name="course" source="main.ptx" format="html"
     
