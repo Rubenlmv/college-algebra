@@ -4,10 +4,15 @@
 <project ptx-version="2">
   <targets>
     <!-- Main course for html or pdf -->
-    <target name="course" source="main.ptx" format="html"
+    <!--instead of web it said course before-->
+    <target name="web" source="main.ptx" format="html"
+    
             publication="publication.ptx" deploy-dir="course" />
     <target name="print" source="main.ptx" format="pdf"
             output-filename="course.pdf" publication="publication.ptx" />
+    <target name="course" source="main.ptx" format="html"
+    
+            publication="publication.ptx" deploy-dir="course" />
 
     <!--
     <target name="slides" source="slides/slides.ptx" format="revealjs"
@@ -32,7 +37,12 @@
   <target name="scorm" standalone="yes" format="html" compression="scorm"
           output-dir="scorms" publication="publication_standalone.ptx"/>
   </targets>
+
+
 </project>
+
+
+  
 
 
 <!-- SAMPLE MANIFEST illustrating all options. Defaults are given (mostly).              -->
