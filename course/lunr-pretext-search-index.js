@@ -61,7 +61,7 @@ var ptx_lunr_docs = [
   "type": "Chapter",
   "number": "",
   "title": "Handouts",
-  "body": " Handouts    "
+  "body": " Handouts      "
 },
 {
   "id": "homework",
@@ -70,7 +70,7 @@ var ptx_lunr_docs = [
   "type": "Chapter",
   "number": "",
   "title": "Homework",
-  "body": " Homework    "
+  "body": " Homework      "
 }
 ]
 
