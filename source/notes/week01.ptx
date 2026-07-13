@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="notes-week-01">
+<section xml:id="notes-week-01" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Week 1</title>
 
   <introduction>
     <p>
-      This is an outline of the topics we covered in the first week of class.
+      This is an outline of the topics we covered in the first week of class. 
     </p>
   </introduction>
 
   <!-- Can also be <handout> instead of <subsection> to get a printable version -->
-  <subsection>
+  <subsection >
     <title>Monday 8/22</title>
 
     <p>
     </p>
+    
   </subsection>
 
 
@@ -32,4 +33,5 @@
     <p>
     </p>
   </subsection>
-</section>
+</section >
+

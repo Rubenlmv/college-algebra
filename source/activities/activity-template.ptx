@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- When creating a new activity, make a copy of this file with appropriate name -->
-<worksheet>
+<worksheet xml:id="activity" >
   <title>Activity Title</title>
 
   <!-- Optional introduction -->
@@ -16,8 +16,219 @@
     <statement>
       <p>
         This is the first exercise.
+      
+        The derivative of the integral is:
+        </p>
+        
+      <me>\frac{d}{dx} \int_1^x \frac{1}{t}\, dt = \frac{1}{x}</me>
+    </statement>
+    
+  </exercise>
+    <theorem>
+    <statement>
+      <p>
+        Testing testing.
       </p>
     </statement>
-  </exercise>
+  </theorem>
+
+  <proof>
+    <p>
+      testing proof
+    </p>
+  </proof>
+
+  <proposition>
+    <statement>
+        <p>
+            Let <m>p</m> be a prime and let all matrices be over <m>\mathbb{F}_p</m>. 
+            Suppose <m>\bar{y}=e_{1p}</m> and <m>\bar{x}</m> are such that
+            <me>\bar{x}\bar{y}=0=\bar{y}\bar{x}.</me>
+            If there exist <m>A, B \in M_p(\mathbb{F}_p)</m> such that
+            <me>[\bar{x}, B] + [A, \bar{y}] = I_p,</me>
+            with the conditions
+            <me>B e_p = 0, \qquad \operatorname{Im}(x_c b_r)\subset \mathbb{F}_pe_1 \text{ (this is equivalent to } b_r=0 \text{ or } x_c\in\mathbb{F}_p e_1\text{)}.</me>
+            where
+            <ul>
+                <li><m>b_r</m> is the last row of <m>B</m> (restricted to its first <m>p-1</m> entries),</li>
+                <li><m>x_c</m> is the last column of <m>\bar{x}</m> (restricted to its first <m>p-1</m> entries),</li>
+                <li><m>x_m</m> is the top-left <m>(p-1)\times(p-1)</m> submatrix of <m>\bar{x}</m>,</li>
+                <li><m>b_m</m> is the top-left <m>(p-1)\times(p-1)</m> submatrix of <m>B</m>,</li>
+            </ul>
+            then <m>(x_m, b_m)</m> is a Calogero-Moser pair.
+        </p>
+        <p>
+            Conversely, if <m>(x_m, b_m)</m> is a Calogero-Moser pair such that
+            <me>[x_m, b_m] = I_{p-1} + R</me>
+            with <m>\operatorname{Im}(R) \subseteq \mathbb{F}_p e_1</m> and <m>x_m e_1 = 0</m>, then for any
+            <m>b_r \in \mathbb{F}_p^{\,1\times(p-1)}</m> and <m>x_c \in \mathbb{F}_p^{(p-1)\times 1}</m>
+            satisfying
+            <me>\operatorname{Im}(x_c b_r)\subset \mathbb{F}_pe_1,</me>
+            there exists <m>A \in M_p(\mathbb{F}_p)</m> such that
+            <me>[\bar{x}, B] + [A, \bar{y}] = I_p.</me>
+        </p>
+    </statement>
+    <proof>
+        <p>Sketch of the proof:</p>
+        
+        <p>
+            <term>Block notation.</term>
+            Write
+            <me>
+                \bar{x} = 
+                \begin{pmatrix}
+                x_m &amp; x_c \\
+                0 &amp; 0
+                \end{pmatrix}, \qquad
+                B = 
+                \begin{pmatrix}
+                b_m &amp; b \\
+                b_r &amp; 0
+                \end{pmatrix}.
+            </me>
+        </p>
+        
+        <p>
+            Set
+            <me>
+                X_m = 
+                \begin{pmatrix}
+                x_m &amp; 0 \\
+                0 &amp; 0
+                \end{pmatrix}, \qquad
+                B_m = 
+                \begin{pmatrix}
+                b_m &amp; 0 \\
+                0 &amp; 0
+                \end{pmatrix},
+            </me>
+            <me>
+                X_c = 
+                \begin{pmatrix}
+                0 &amp; x_c \\
+                0 &amp; 0
+                \end{pmatrix}, \qquad
+                B_r = 
+                \begin{pmatrix}
+                0 &amp; 0 \\
+                b_r &amp; 0
+                \end{pmatrix}.
+            </me>
+        </p>
+        
+        <p>
+            Then we have the following commutators:
+            <me>
+                [B_r, X_m] = 
+                \begin{pmatrix}
+                0 &amp; 0 \\
+                b_r x_m &amp; 0
+                \end{pmatrix},
+            </me>
+            <me>
+                [B_m, X_c] = 
+                \begin{pmatrix}
+                0 &amp; b_m x_c \\
+                0 &amp; 0
+                \end{pmatrix}, \qquad
+                [B_r, X_c] = 
+                \begin{pmatrix}
+                -x_c b_r &amp; 0 \\
+                0 &amp; b_r x_c
+                \end{pmatrix}.
+            </me>
+        </p>
+        
+        <p>
+            In addition
+            <me>
+                [A,\bar{y}] = 
+                \begin{pmatrix}
+                -a_{p1} &amp; -a_{p2} &amp; \cdots &amp; a_{11}-a_{pp} \\
+                0 &amp; \cdots &amp; \cdots &amp; a_{21} \\
+                \vdots &amp; \ddots &amp; \ddots &amp; \vdots \\
+                0 &amp; 0 &amp; \cdots &amp; a_{p1}
+                \end{pmatrix},
+            </me>
+            with
+            <me>
+                x_c = 
+                \begin{pmatrix}
+                x_{1p} \\
+                x_{2p} \\
+                \vdots \\
+                x_{p-1,p}
+                \end{pmatrix}, \qquad
+                b_r = 
+                \begin{pmatrix}
+                b_{p1} &amp; \cdots &amp; b_{p,p-1}
+                \end{pmatrix}.
+            </me>
+            Moreover,
+            <me>
+                x_c b_r = \bigl( x_{ip}\, b_{pj} \bigr)_{i,j=1}^{p-1}, \qquad
+                b_r x_c = \sum_{i=1}^{p-1} b_{pi}\, x_{ip}.
+            </me>
+        </p>
+        
+        <p>
+            Now, since <m>\bar{x} = X_m + X_c</m> and <m>B = B_m + B_r</m>, we have
+            <me>
+                [\bar{x}, B] = [X_m + X_c, B_m + B_r]
+                = [X_m, B_m] + [X_m, B_r] + [X_c, B_m] + [X_c, B_r].
+            </me>
+        </p>
+        
+        <p>
+            Using the explicit block commutators, the equation
+            <me>[\bar{x}, B] + [A, \bar{y}] = I_p</me>
+            is equivalent to
+            <me>
+                [X_m, B_m]
+                =
+                I_p - [A,\bar{y}]
+                +
+                \begin{pmatrix}
+                0 &amp; 0 \\
+                b_r x_m &amp; 0
+                \end{pmatrix}
+                +
+                \begin{pmatrix}
+                0 &amp; b_m x_c \\
+                0 &amp; 0
+                \end{pmatrix}
+                +
+                \begin{pmatrix}
+                -x_c b_r &amp; 0 \\
+                0 &amp; b_r x_c
+                \end{pmatrix}.
+            </me>
+        </p>
+        
+        <p>
+            Taking the top-left <m>(p-1)\times(p-1)</m> block gives
+            <me>
+                [x_m, b_m]
+                =
+                I_{p-1}
+                +
+                \begin{pmatrix}
+                a_{p1} &amp; a_{p2} &amp; \cdots &amp; a_{p,p-1} \\
+                0 &amp; 0 &amp; \cdots &amp; 0 \\
+                \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+                0 &amp; 0 &amp; \cdots &amp; 0
+                \end{pmatrix}
+                -
+                x_c b_r.
+            </me>
+        </p>
+        
+        <p>
+            This yields the Calogero-Moser condition for <m>(x_m,b_m)</m>, precisely when <m>\operatorname{Im}(x_c b_r)\subset \mathbb{F}_pe_1</m>.
+        </p>
+    </proof>
+</proposition>
+
+
 
 </worksheet>
