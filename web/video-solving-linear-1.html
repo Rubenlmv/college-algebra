@@ -87,5 +87,27 @@ eBookConfig.enable_chatcodes =  false;
 <div style="text-align: center;">Reloading this page will reset a start location</div>
 <div class="video-box" style="width: 100%;padding-top: 56.25%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/PLACEHOLDER_VIDEO_ID?&amp;modestbranding=1&amp;rel=0&amp;autoplay=1" id="video-solving-linear-1"></iframe></div>
 </div></main></div>
+<script data-pretext-tools-frame-bridge="true">
+(function () {
+  if (window.__ptxFrameBridge) { return; }
+  window.__ptxFrameBridge = true;
+  function report() {
+    try {
+      parent.postMessage({
+        command: 'ptxFramePath',
+        path: location.pathname + location.search + location.hash
+      }, '*');
+    } catch (e) { /* not framed */ }
+  }
+  report();
+  window.addEventListener('hashchange', report);
+  window.addEventListener('pageshow', report);
+  window.addEventListener('message', function (event) {
+    if (event.data && event.data.command === 'ptxFrameReload') {
+      location.reload();
+    }
+  });
+})();
+</script>
 </body>
 </html>

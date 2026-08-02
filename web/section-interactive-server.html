@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Interactive Elements, Server &amp; Layouts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="Course Testing">
+<meta property="og:title" content="Course Testing">
+<meta property="book:title" content="Course Testing">
+<meta name="twitter:description" content="MATH 1320 Fall  Semester 2026">
+<meta property="og:description" content="MATH 1320 Fall  Semester 2026">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.43"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.1.11';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.8b6d53d5a91823a0.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.2901d6466316ff22.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.66fa8a682a32c0ac.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">Course Testing</span> <span class="subtitle">MATH 1320 Fall  Semester 2026</span></a></h1>
+<p class="byline">Instructor Lastname</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="ptx-embed-button" class="ptx-embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><dialog class="ptx-dialog ptx-embed-popup" id="ptx-embed-popup"><div class="ptx-embed-popup-controls">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<button class="ptx-embed-close-button button" id="ptx-embed-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-embed-code-container">
+<textarea class="ptx-embed-code-textbox" id="ptx-embed-code-textbox" readonly aria-label="Embed"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button autofocus="autofocus" class="ptx-embed-copy-button button" id="ptx-embed-copy-button" title="Copy"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div></dialog><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="notes-week-02.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="course-notes.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="activities.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="title">Course Documents</span></a></div>
+<ul id="ptx-toc-group-course-documents" class="structural toc-item-list"><li class="toc-item toc-section">
+<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Syllabus</span></a></div>
+<ul id="ptx-toc-group-syllabus" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-info" class="internal"><span class="title">Course Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-assessments" class="internal"><span class="title">Assessments and Grades</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="course-notes.html" class="internal"><span class="title">Course Notes</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-course-notes">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-01.html" class="internal"><span class="title">Week 1</span></a></div>
+<ul id="ptx-toc-group-notes-week-01" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-3" class="internal"><span class="title">Monday 8/22</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-4" class="internal"><span class="title">Wednesday 8/24</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-5" class="internal"><span class="title">Friday 8/26</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-02.html" class="internal"><span class="title">Week 2</span></a></div>
+<ul id="ptx-toc-group-notes-week-02" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-2" class="internal"><span class="title">Monday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-3" class="internal"><span class="title">Wednesday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-4" class="internal"><span class="title">Friday</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="section-interactive-server.html" class="internal"><span class="title">Interactive Elements, Server &amp; Layouts</span></a></div>
+<ul class="structural toc-item-list active" id="ptx-toc-group-section-interactive-server">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-interactive-server.html#subsection-geogebra-server" class="internal"><span class="title">GeoGebra</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-interactive-server.html#section-interactive-server-7" class="internal"><span class="title">Desmos Graphs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-interactive-server.html#section-interactive-server-8" class="internal"><span class="title">CalcPlot3D</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-interactive-server.html#interactive-iframes-server" class="internal"><span class="title">IFrames from Servers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-interactive-server.html#layout-interactives" class="internal"><span class="title">Layout of Interactives</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="activities.html" class="internal"><span class="title">In-Class Activities</span></a></div>
+<ul id="ptx-toc-group-activities" class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-01-intro-activity.html" class="internal"><span class="title">Introduction Activity</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity.html" class="internal"><span class="title">Activity Title</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="handouts.html" class="internal"><span class="title">Handouts</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="homework.html" class="internal"><span class="title">Homework</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="section-interactive-server">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Interactive Elements, Server &amp; Layouts</span>
+</h2>
+<section class="introduction" id="section-interactive-server-5">
+<div class="para" id="section-interactive-server-5-1">When outputting Web page versions, it is possible to embed a variety of dynamic interactive elements.  In a <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span>/PDF version, these will necessarily need to be replaced by some static substitute, such as a screenshot.  See <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "section-sage-cells" missing or not unique]</code> for the specifics of embedding instances of the Sage Cell Server, which is more elaborate, and not entirely similar.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-interactive-server-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-interactive-server-5-2">Interactives in this section have code that lives on a server somewhere (in the “cloud”).  So maybe you uploaded an interactive demonstration, or maybe somebody else did.  In this sense, these are easier to create or use.  But pay attention, the code may come with restrictive licenses, even if you are the author originally.  See <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "section-interactive-authored" missing or not unique]</code> for more interactives that can be free as in “freedom” or <i class="foreign" lang="fr-FR">liberté</i>.  CalcPlot3D is the notable exception here.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-interactive-server-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-interactive-server-5-3">(2018-06-22) Almost everything in this section is under active development and not stable yet.  Feel free to experiment and make suggestions and requests.  This page takes a while to completely load, so be patient.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-interactive-server-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<section class="subsection" id="subsection-geogebra-server">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">GeoGebra</span>
+</h3>
+<div class="para" id="subsection-geogebra-server-4">A Geogebra <dfn class="terminology">material</dfn> is something you might use in a class.  It could also be called an interactive demonstration.  Go browsing at <a class="external" href="https://www.geogebra.org/materials/" target="_blank"><code class="code-inline tex2jax_ignore">www.geogebra.org/materials/</code></a> and find something appropriate for your project.  Or make an account and create your own.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsection-geogebra-server-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsection-geogebra-server-5">
+<div class="para">Once you find a material that looks instructive, it will be at a <abbr class="initialism">URL</abbr> such as</div>
+<pre class="code-display tex2jax_ignore clipboardable">https://www.geogebra.org/m/KGn2d4Qd</pre>
+<div class="para">and you want to pick off the identifier on the end, in this case <code class="code-inline tex2jax_ignore">KGn2d4Qd</code>.  Then author</div>
+<pre class="code-display tex2jax_ignore clipboardable">&lt;interactive geogebra="KGn2d4Qd" /&gt;</pre>
+<div class="para">At this writing (2018-02-04) you will want to place this inside a <code class="code-inline tex2jax_ignore">figure</code>, with a caption, as we do right now with material <code class="code-inline tex2jax_ignore">KGn2d4Qd</code>.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsection-geogebra-server-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-geogebra-server-6">The shape of the material will be fixed, so determine the dimensions (measure with an on-screen ruler or inspect the underlying definition). Use <code class="code-inline tex2jax_ignore">@material-width</code> and <code class="code-inline tex2jax_ignore">@material-height</code> with the actual material width and height (units are pixels). These are treated by Geogebra as internal coordinate dimensions and are separate from the physical layout dimensions that appear in your text. In the absence of these attributes, default values are 800 pixels for the width and a height based on the provied aspect ratio.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsection-geogebra-server-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="subsection-geogebra-server-7"><div class="interactive-iframe-container">
+<iframe id="geogebra-right-triangle" style="width:420px; height:233px; display: block; " src="geogebra-right-triangle-if.html" title="described in detail following the image" aria-describedby="geogebra-right-triangle-description"></iframe><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="geogebra-right-triangle-description">
+<div class="para" id="geogebra-right-triangle-1-1">An interactive puzzle. The puzzle shows two triangles placed on a square grid. On the left, there is a triangle decomposed into four pieces. On the right, there is a triangle with outlines corresponding to the sizes and shapes of the pieces in the left triangle. The pieces from the left triangle can be dragged to the right. However, the triangle on the right has one additional grid square containing a question mark.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#geogebra-right-triangle-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<div class="interactive-iframe-container__opener"><a href="geogebra-right-triangle.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Right Triangle Paradox<div class="autopermalink" aria-hidden="true" data-description="Figure 1"><a tabindex="-1" href="#subsection-geogebra-server-7" title="Copy heading and permalink for Figure 1" aria-label="Copy heading and permalink for Figure 1">🔗</a></div></figcaption>
+</figure>
+<div class="para logical" id="subsection-geogebra-server-8">
+<div class="para">There are some optional control elements that Geogebra provides, such as the presence of the toolbar and the reset button. These can be controlled by adding the following additional attributes to the <code class="code-inline tex2jax_ignore">interactive</code>.</div>
+<ul class="disc" id="subsection-geogebra-server-8-2">
+<li id="subsection-geogebra-server-8-2-1">
+<div class="para" id="subsection-geogebra-server-8-2-1-1">
+<code class="code-inline tex2jax_ignore">toolbar="yes"</code>: add the Geogebra toolbar above the material<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsection-geogebra-server-8-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsection-geogebra-server-8-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsection-geogebra-server-8-2-2">
+<div class="para" id="subsection-geogebra-server-8-2-2-1">
+<code class="code-inline tex2jax_ignore">algebra-input="yes"</code>: add an entry box below the material to add graphical objects using algebra formulas or Geogebra graphical commands<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsection-geogebra-server-8-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsection-geogebra-server-8-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsection-geogebra-server-8-2-3">
+<div class="para" id="subsection-geogebra-server-8-2-3-1">
+<code class="code-inline tex2jax_ignore">reset-icon="yes"</code>: enable the reset icon<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsection-geogebra-server-8-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsection-geogebra-server-8-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsection-geogebra-server-8-2-4">
+<div class="para" id="subsection-geogebra-server-8-2-4-1">
+<code class="code-inline tex2jax_ignore">shift-drag-zoom="yes"</code>: enable ability to drag and zoom the viewing context<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsection-geogebra-server-8-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsection-geogebra-server-8-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsection-geogebra-server-8-2-5">
+<div class="para" id="subsection-geogebra-server-8-2-5-1">
+<code class="code-inline tex2jax_ignore">zoom-buttons="yes"</code>: enable buttons that control zoom<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsection-geogebra-server-8-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsection-geogebra-server-8-2-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsection-geogebra-server-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-geogebra-server-9">Note that materials hosted at <code class="code-inline tex2jax_ignore">geogebra.org</code> have a non-standard, non-commercial license you must agree to before you can download them as source code.  Perhaps you must forfeit your copyright when you upload a material?  We have not investigated this thoroughly.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsection-geogebra-server-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection: GeoGebra"><a tabindex="-1" href="#subsection-geogebra-server" title="Copy heading and permalink for Subsection: GeoGebra" aria-label="Copy heading and permalink for Subsection: GeoGebra">🔗</a></div>
+</section>
+<section class="subsection" id="section-interactive-server-7">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Desmos Graphs</span>
+</h3>
+<div class="para logical" id="section-interactive-server-7-3">
+<div class="para">
+<dfn class="terminology">Desmos</dfn> provides interactive graphing applications.  The following example was created by Ann Cary and made available via the “Share” function of Desmos.  You can make your own Desmos graph, choose the “Share” icon, and the “Embed” option, to get a <abbr class="initialism">URL</abbr> such as</div>
+<pre class="code-display tex2jax_ignore clipboardable">https://www.desmos.com/calculator/ttox1bvxku</pre>
+<div class="para">You want to pick off the identifier on the end, in this case <code class="code-inline tex2jax_ignore">ttox1bvxku</code>, then author</div>
+<pre class="code-display tex2jax_ignore clipboardable">&lt;interactive desmos="ttox1bvxku" width="60%" aspect="2:3" /&gt;</pre>
+<div class="para">as we have done here.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-interactive-server-7-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-interactive-server-7-4">The static image employed in the <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> version of this article was obtained by viewing the graph at the Desmos site (i.e., not the embedded version in the PreTeXt HTML version), and using the Share button to export a <abbr class="initialism">PNG</abbr> image.  In this case, we used a “Medium Rectangle” and “Thick” lines.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-interactive-server-7-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="section-interactive-server-7-5"><div class="interactive-iframe-container">
+<iframe src="https://www.desmos.com/calculator/ttox1bvxku" id="desmos-natural-log" style="width:360px; height:540px; display: block; " title="An interactive graph of a function."></iframe><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="desmos-natural-log-description">
+<div class="para" id="desmos-natural-log-2-1">An interactive graph of <span class="process-math">\(\ln(x^2+5)-3\text{.}\)</span> The function decreases from the left edge of the window until <span class="process-math">\(x=0\text{,}\)</span> where the <span class="process-math">\(y\)</span>-value is approximately <span class="process-math">\(-1.4\text{.}\)</span> The function then increases to the right edge of the window.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#desmos-natural-log-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<div class="interactive-iframe-container__opener"><a href="desmos-natural-log.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Graph of <span class="process-math">\(\ln(x^2+5)-3\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 2"><a tabindex="-1" href="#section-interactive-server-7-5" title="Copy heading and permalink for Figure 2" aria-label="Copy heading and permalink for Figure 2">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="section-interactive-server-7-6">Note that Desmos has extensive <span class="booktitle">Terms of Service</span> which include restrictions on commercial uses.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-interactive-server-7-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection: Desmos Graphs"><a tabindex="-1" href="#section-interactive-server-7" title="Copy heading and permalink for Subsection: Desmos Graphs" aria-label="Copy heading and permalink for Subsection: Desmos Graphs">🔗</a></div>
+</section>
+<section class="subsection" id="section-interactive-server-8">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">CalcPlot3D</span>
+</h3>
+<div class="para" id="section-interactive-server-8-3">CalcPlot3D is a Javascript application for creating, visualizing, and understanding plots of 3D surfaces.  So it would be an ideal companion to a book on multivariate calculus, but should be useful in other courses of study.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-interactive-server-8-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-interactive-server-8-4">To use it, start at the <a class="external" href="https://c3d.libretexts.org/CalcPlot3D/index.html" target="_blank">online app version</a>.  Create a plot and adjust the image to a viewpoint and scale if you like.  Then, click the menu/hamburger icon in the upper-left and choose <code class="code-inline tex2jax_ignore">File</code>.  From here you can save a <abbr class="initialism">PNG</abbr> image for the static version, but you also want to select <code class="code-inline tex2jax_ignore">Encode View in URL</code>.  Now your browser address bar is filled with a query string (<em class="emphasis">all</em> the stuff <em class="emphasis">after</em> the question-mark) that has all the information necessary to reproduce your plot (and view).  Copy everything after the first question-mark to the <code class="code-inline tex2jax_ignore">interactive/code</code> element.  Be sure to replace any ampersands by <code class="code-inline tex2jax_ignore">&amp;amp;</code> (see the Author’s Guide for more about certain characters in <abbr class="initialism">URL</abbr>s).  Examine the source for the examples below to see how they are authored.  The <span class="booktitle">Help Manual</span> for CalcPlot3D is also available off the menu/hamburger icon in the upper-left.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-interactive-server-8-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-interactive-server-8-5">In <a href="section-interactive-server.html#figure-intersecting-planes" class="internal" title="Figure 3">Figure 3</a> grab the image with your mouse and rotate it in various directions.  Then while the image has focus, press the <code class="code-inline tex2jax_ignore">3</code> key (short for “3-D”), to get a 3D view, which will require some red-blue 3D glasses to fully appreciate.  Press the key again to return to a regular view.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-interactive-server-8-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-interactive-server-8-6">When using a version with controls (e.g. <a href="section-interactive-server.html#figure-wavefunction" class="internal" title="Figure 4">Figure 4</a>), or the full application (e.g. <a href="section-interactive-server.html#figure-calcplot3d" class="internal" title="Figure 5">Figure 5</a>), specify an aspect ratio that is wider than it is tall.  Start with <code class="code-inline tex2jax_ignore">aspect="3:2"</code>, and perhaps fine-tune from there.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#section-interactive-server-8-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="figure-intersecting-planes"><div class="interactive-iframe-container">
+<iframe src="https://c3d.libretexts.org/CalcPlot3D/dynamicFigure/index.html?type=implicit;equation=2x-y+z~0;cubes=16;visible=true;xmin=-2;xmax=2;ymin=-2;ymax=2;zmin=-2;zmax=2;alpha=-1;format=constant;constcol=rgb(61,133,198)&amp;type=parametric;parametric=2;x=-(u+v)/2;y=(u-v)/2;z=v;visible=true;umin=-3;umax=3;usteps=30;vmin=-2;vmax=2;vsteps=15;alpha=193;format=constant;constcol=rgb(255,161,114)&amp;type=text;text=x%20%2B%20y%20%2B%20z%20~%200;visible=true;point=(.5,-2.5,2.1);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=false;italic=false;fontmath=true;align=Upper-right&amp;type=text;text=2x%20-%20y%20%2B%20z%20~%200;visible=true;point=(2,2.2,-1.25);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=false;italic=false;fontmath=true;align=Upper-right&amp;type=window;hsrmode=0;anaglyph=-1;center=7.006292692220367,5.09036960455127,4.999999999999999,1;focus=0,0,0,1;up=-0.3290568564833397,-0.23907380036690282,0.9135454576426009,1;transparent=true;alpha=140;edgeson=false;faceson=true;showbox=false;showaxes=true;showticks=true;perspective=true;centerxpercent=0.5;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);xmin=-2;xmax=2;ymin=-2;ymax=2;zmin=-2;zmax=2;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;zoom=0.655294;xscalefactor=1;yscalefactor=1;zscalefactor=1" id="calcplot3d-intersection-planes" style="width:480px; height:480px; display: block; " title="Two intersecting planes in three-space."></iframe><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="calcplot3d-intersection-planes-description">
+<div class="para" id="calcplot3d-intersection-planes-2-1">The planes <span class="process-math">\(x+y+z=0\)</span> and <span class="process-math">\(2x-y+z=0\)</span> are shown in <span class="process-math">\(\mathbb{R}^3\text{.}\)</span> The planes intersect in a line passing through the origin.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#calcplot3d-intersection-planes-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<div class="interactive-iframe-container__opener"><a href="calcplot3d-intersection-planes.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Intersection of two planes (minimal embedding)<div class="autopermalink" aria-hidden="true" data-description="Figure 3"><a tabindex="-1" href="#figure-intersecting-planes" title="Copy heading and permalink for Figure 3" aria-label="Copy heading and permalink for Figure 3">🔗</a></div></figcaption>
+</figure>
+<figure class="figure figure-like" id="figure-wavefunction"><div class="interactive-iframe-container">
+<iframe src="https://c3d.libretexts.org/CalcPlot3D/dynamicFigureWCP/index.html?type=jaxlabel;position=middle;math=%255Cpsi_%257Bn_x%252Cn_y%257D(x%252Cy);textonly=false&amp;type=z;z=sin(api*x)sin(bpi*y);visible=true;umin=0;umax=1;vmin=0;vmax=1;grid=50;format=normal;alpha=200;constcol=rgb(255,0,0);view=0;contourcolor=rgb(255,0,0);contourplot=true;showcontourplot=true;firstvalue=-1;stepsize=0.2;numlevels=11;xnum=75;ynum=75;show2d=false;hidesurface=false;hidelabels=false;showprojections=false;surfacecontours=true;projectioncolor=rgba(51,153,0,1);showxygrid=false;showxygridonbox=false&amp;type=slider;slider=a;value=1;steps=2;pmin=1;pmax=3;repeat=true;bounce=true;waittime=40;careful=true;noanimate=true;name=n_x&amp;type=slider;slider=b;value=1;steps=2;pmin=1;pmax=3;repeat=true;bounce=true;waittime=40;careful=true;noanimate=true;name=n_y&amp;type=text;text=0;visible=true;point=(0,0,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=15pt;bold=true;italic=false;fontmath=true;align=Center-left&amp;type=text;text=L;visible=true;point=(1,-0.025,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;fontmath=true;align=Center&amp;type=text;text=L;visible=true;point=(-0.05,1,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;fontmath=true;align=Center&amp;type=text;text=x;visible=true;point=(0.5,-0.07,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;fontmath=true;align=Center&amp;type=text;text=y;visible=true;point=(-0.08,0.5,0);color=rgb(0,0,0);font=Times%20New%20Roman;fontsize=14pt;bold=true;italic=false;fontmath=true;align=Center&amp;type=window;hsrmode=3;anaglyph=-1;center=-7.447051206708178,-2.790794355991455,3.71998429905919,1;focus=0.5,0.5,0.5,1;up=0.39804763218685024,0.14521777837291014,0.9057979241281567,1;transparent=true;alpha=140;twoviews=false;unlinkviews=false;axisextension=0;xaxislabel=%20;yaxislabel=%20;zaxislabel=%20;edgeson=false;faceson=true;showbox=false;showaxes=false;showticks=false;perspective=true;centerxpercent=0.5;centerypercent=0.4;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=false;gridplanes=true;gridcolor=rgb(128,128,128);xmin=0;xmax=1;ymin=0;ymax=1;zmin=0;zmax=1;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;zoom=3.543529;xscalefactor=1;yscalefactor=1;zscalefactor=0.5;hidexysliders=true;hidetracevalue=true" id="calcplot3d-probability-wavefunction" style="width:570px; height:380px; display: block; " title="described in detail following the image" aria-describedby="calcplot3d-probability-wavefunction-description"></iframe><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="calcplot3d-probability-wavefunction-description">
+<div class="para" id="calcplot3d-probability-wavefunction-1-1">A plot of a function in three-space. The surface is labeled <span class="process-math">\(\psi_{n_x,n_y}(x,y)\text{.}\)</span> There are sliders to adjust <span class="process-math">\(n_x\)</span> and <span class="process-math">\(n_y\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#calcplot3d-probability-wavefunction-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<div class="interactive-iframe-container__opener"><a href="calcplot3d-probability-wavefunction.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Probability wavefunction with contours (includes controls)<div class="autopermalink" aria-hidden="true" data-description="Figure 4"><a tabindex="-1" href="#figure-wavefunction" title="Copy heading and permalink for Figure 4" aria-label="Copy heading and permalink for Figure 4">🔗</a></div></figcaption>
+</figure>
+<figure class="figure figure-like" id="figure-calcplot3d"><div class="interactive-iframe-container"><iframe src="https://c3d.libretexts.org/CalcPlot3D/index.html?type=z;z=1/(y-x^2);visible=true;umin=-2;umax=2;vmin=-2;vmax=2;grid=30;format=normal;alpha=-1;constcol=rgb(255,0,0);contourcolor=red&amp;type=window;hsrmode=3;anaglyph=-1;center=5.529712854135209,7.349875454071844,3.9244880634856956,1;focus=0,0,0,1;up=-0.26875302682986874,-0.2884991397174344,0.9189886054528014,1;transparent=true;alpha=140;edgeson=true;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.5;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);xmin=-2;xmax=2;ymin=-2;ymax=2;zmin=-4;zmax=4;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;zoom=0.468667;xscalefactor=1;yscalefactor=1;zscalefactor=1" id="calcplot3d-full-application" style="width:570px; height:380px; display: block; "></iframe></div>
+<div class="interactive-iframe-container__opener"><a href="calcplot3d-full-application.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Plot of <span class="process-math">\(f(x,y)=\dfrac{1}{y-x^2}\)</span> on <span class="process-math">\([-2,2]\times[-2,2]\)</span> (full application)<div class="autopermalink" aria-hidden="true" data-description="Figure 5"><a tabindex="-1" href="#figure-calcplot3d" title="Copy heading and permalink for Figure 5" aria-label="Copy heading and permalink for Figure 5">🔗</a></div></figcaption>
+</figure><div class="autopermalink" aria-hidden="true" data-description="Subsection: CalcPlot3D"><a tabindex="-1" href="#section-interactive-server-8" title="Copy heading and permalink for Subsection: CalcPlot3D" aria-label="Copy heading and permalink for Subsection: CalcPlot3D">🔗</a></div>
+</section>
+<section class="subsection" id="interactive-iframes-server">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">IFrames from Servers</span>
+</h3>
+<div class="para" id="interactive-iframes-server-2">The <code class="code-inline tex2jax_ignore">iFrame</code> versions of interactives can point to a network location, presuming the endpoint is reasonably well-behaved.  If you are using this sytematically, let us know and perhpas it should become a more dedicated PreTeXt construction.  See <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "interactive-iframes-local" missing or not unique]</code> for the local file version.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#interactive-iframes-server-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="interactive-iframes-server-3">This example is from <a class="external" href="https://phet.colorado.edu/" target="_blank">PhET Interactive Simulations</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#interactive-iframes-server-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="figure-phet-fourier"><div class="interactive-iframe-container"><iframe src="https://phet.colorado.edu/sims/html/fourier-making-waves/latest/fourier-making-waves_en.html" id="interactive-phet-fourier" style="width:570px; height:380px; display: block; "></iframe></div>
+<div class="interactive-iframe-container__opener"><a href="interactive-phet-fourier.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Fourier: Making Waves <code class="code-inline tex2jax_ignore">iframe</code><div class="autopermalink" aria-hidden="true" data-description="Figure 6"><a tabindex="-1" href="#figure-phet-fourier" title="Copy heading and permalink for Figure 6" aria-label="Copy heading and permalink for Figure 6">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="interactive-iframes-server-5">Anything that suggests you can <dfn class="terminology">embed</dfn> an interactive widget via an iFrame is fair game for this feature.  This is a Google Map of the state of California, for use in a French language document, from Julien Giol.  The necessary <abbr class="initialism">URL</abbr> is obtained by using the “Share” feature, and then the “Embed a map” option has <abbr class="initialism">HTML</abbr> with the <abbr class="initialism">URL</abbr> in a <code class="code-inline tex2jax_ignore">@src</code> attribute.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#interactive-iframes-server-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="map-california"><div class="interactive-iframe-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6512739.689202133!2d-124.5931848890628!3d37.151542068971864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2sCalifornie%2C%20%C3%89tats-Unis!5e0!3m2!1sfr!2sca!4v1682454368296!5m2!1sfr!2sca" id="interactive-map-california" style="width:600px; height:400px; display: block; "></iframe></div>
+<div class="interactive-iframe-container__opener"><a href="interactive-map-california.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>California.<div class="autopermalink" aria-hidden="true" data-description="Figure 7"><a tabindex="-1" href="#map-california" title="Copy heading and permalink for Figure 7" aria-label="Copy heading and permalink for Figure 7">🔗</a></div></figcaption>
+</figure><div class="autopermalink" aria-hidden="true" data-description="Subsection: IFrames from Servers"><a tabindex="-1" href="#interactive-iframes-server" title="Copy heading and permalink for Subsection: IFrames from Servers" aria-label="Copy heading and permalink for Subsection: IFrames from Servers">🔗</a></div>
+</section>
+<section class="subsection" id="layout-interactives">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Layout of Interactives</span>
+</h3>
+<div class="para" id="layout-interactives-2">In HTML, interactives are rendered in iframes, which can offer some layout challenges. The PreTeXt page has no direct control over the layout within the interactive. All it does is provide a fixed sized frame in which the interactive content can display itself. The <code class="code-inline tex2jax_ignore">@width</code> (a percentage) and <code class="code-inline tex2jax_ignore">@aspect</code> (a width:height ratio like <code class="code-inline tex2jax_ignore">2.1:1</code> OR a number like <code class="code-inline tex2jax_ignore">1.5</code>) attributes on the interactive are the main tools to specify the dimensions. Below are three renderings of the same Google map using different widths/heights.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#layout-interactives-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="interactive-iframe-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6512739.689202133!2d-124.5931848890628!3d37.151542068971864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2sCalifornie%2C%20%C3%89tats-Unis!5e0!3m2!1sfr!2sca!4v1682454368296!5m2!1sfr!2sca" id="interactive-layout-map-wide" style="width:600px; height:400px; display: block; "></iframe></div>
+<div class="interactive-iframe-container__opener"><a href="interactive-layout-map-wide.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
+<div class="interactive-iframe-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6512739.689202133!2d-124.5931848890628!3d37.151542068971864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2sCalifornie%2C%20%C3%89tats-Unis!5e0!3m2!1sfr!2sca!4v1682454368296!5m2!1sfr!2sca" id="interactive-layout-map-medium" style="width:300px; height:200px; display: block; "></iframe></div>
+<div class="interactive-iframe-container__opener"><a href="interactive-layout-map-medium.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
+<div class="interactive-iframe-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6512739.689202133!2d-124.5931848890628!3d37.151542068971864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2sCalifornie%2C%20%C3%89tats-Unis!5e0!3m2!1sfr!2sca!4v1682454368296!5m2!1sfr!2sca" id="interactive-layout-map-tall" style="width:300px; height:600px; display: block; "></iframe></div>
+<div class="interactive-iframe-container__opener"><a href="interactive-layout-map-tall.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
+<div class="para" id="layout-interactives-6">If you know a particular interactive is designed to display at a particular pixel size, you can can specify a <code class="code-inline tex2jax_ignore">@design-width</code> like <code class="code-inline tex2jax_ignore">300</code> to force exactly that width. Combine that with <code class="code-inline tex2jax_ignore">@aspect</code> to also force the height. The example below forces a size of 300x450.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#layout-interactives-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="layout-interactives-7"><div class="interactive-iframe-container"><iframe src="https://www.desmos.com/calculator/ttox1bvxku" id="interactive-layout-desmos" data-design-width="300" style="width:300px; height:450px; display: block; "></iframe></div>
+<div class="interactive-iframe-container__opener"><a href="interactive-layout-desmos.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Graph of <span class="process-math">\(ln(x^2+5)-3\)</span><div class="autopermalink" aria-hidden="true" data-description="Figure 8"><a tabindex="-1" href="#layout-interactives-7" title="Copy heading and permalink for Figure 8" aria-label="Copy heading and permalink for Figure 8">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="layout-interactives-8">What happens if there is not enough space to display the requested frame? That depends on the <code class="code-inline tex2jax_ignore">@resize-behavior</code> applied to the interactive. The default is <code class="code-inline tex2jax_ignore">fixed-height</code>. In this case, the interactive’s height will not change if the window becomes too small to display the full width of the interactive. Instead a horizontal scroll bar will appear. This can be seen in many of the samples in <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "section-interactive-authored" missing or not unique]</code> and this CircuitJS sample:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#layout-interactives-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="layout-interactives-9"><div class="interactive-iframe-container"><iframe src="https://www.falstad.com/circuit/circuitjs.html?cct='$%201%200.000005%2010.20027730826997%2058%205%2050%205e-11%0AR%20464%2032%20464%20-16%200%200%2040%203.3%200%200%200.5%0Ag%20464%20224%20464%20240%200%200%0As%20464%2032%20464%20128%200%200%20false%0As%20464%20128%20464%20224%200%201%20false%0Ax%20274%20181%20431%20184%204%2012%20bottom\sswitch\s(to\sground)%0Ax%20312%2085%20426%2088%204%2012%20top\sswitch\s(to\sVdd)%0AO%20464%20128%20544%20128%201%200%0Ax%20532%20110%20593%20113%204%2012%20output\spin'" id="interactive-layout-circuitjs-small" style="width:540px; height:405px; display: block; "></iframe></div>
+<div class="interactive-iframe-container__opener"><a href="interactive-layout-circuitjs-small.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>CircuitJS with <code class="code-inline tex2jax_ignore">resize-behavior="fixed-height"</code><div class="autopermalink" aria-hidden="true" data-description="Figure 9"><a tabindex="-1" href="#layout-interactives-9" title="Copy heading and permalink for Figure 9" aria-label="Copy heading and permalink for Figure 9">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="layout-interactives-10">The other option for <code class="code-inline tex2jax_ignore">@resize-behavior</code> is <code class="code-inline tex2jax_ignore">responsive</code>. In this case, the interactive’s aspect ratio will be maintained. If the width gets smaller, so will the height. This can be seen in the version below.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#layout-interactives-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="layout-interactives-11"><div class="interactive-iframe-container"><iframe src="https://www.falstad.com/circuit/circuitjs.html?cct='$%201%200.000005%2010.20027730826997%2058%205%2050%205e-11%0AR%20464%2032%20464%20-16%200%200%2040%203.3%200%200%200.5%0Ag%20464%20224%20464%20240%200%200%0As%20464%2032%20464%20128%200%200%20false%0As%20464%20128%20464%20224%200%201%20false%0Ax%20274%20181%20431%20184%204%2012%20bottom\sswitch\s(to\sground)%0Ax%20312%2085%20426%2088%204%2012%20top\sswitch\s(to\sVdd)%0AO%20464%20128%20544%20128%201%200%0Ax%20532%20110%20593%20113%204%2012%20output\spin'" id="interactive-layout-circuitjs-big" style="max-width: 90%; width: 100%; aspect-ratio:1.333333333333333"></iframe></div>
+<div class="interactive-iframe-container__opener"><a href="interactive-layout-circuitjs-big.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>CircuitJS with <code class="code-inline tex2jax_ignore">resize-behavior="responsive"</code><div class="autopermalink" aria-hidden="true" data-description="Figure 10"><a tabindex="-1" href="#layout-interactives-11" title="Copy heading and permalink for Figure 10" aria-label="Copy heading and permalink for Figure 10">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="layout-interactives-12">The best behavior will be determined by the contents of the interactive. If the interactive knows how to dynamically size itself, <code class="code-inline tex2jax_ignore">responsive</code> is likely the better option. If the interactive assumes that there is a certain amount of space and the contents will never resize themselves, <code class="code-inline tex2jax_ignore">fixed-height</code> will likely work better.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#layout-interactives-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="layout-interactives-13">In addition to specifying the resize-behavior in a particular interactive, you can apply a document level default value in your pub file. You can also specify a different default for a specific types of interactive. See the PreTeXt guide for documentation, or the <code class="code-inline tex2jax_ignore">publication.xml</code> file of this Sample Article for an example of configuring defaults.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#layout-interactives-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="layout-interactives-14">The code that generates content needs to make sure it does not overflow the available space or you will get scroll bars. Common culprits are <code class="code-inline tex2jax_ignore">&lt;canvas&gt;</code> or <code class="code-inline tex2jax_ignore">&lt;svg&gt;</code> elements that are not displayed as blocks or little bits of whitespace.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#layout-interactives-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="layout-interactives-15">If an interactive wants to request a change to the amount of vertical space available to it, it can pass a message to the PreTeXt page asking for a <code class="code-inline tex2jax_ignore">lti.frameResize</code>. (It is also possible to request a different amount of horizontal space, but doing so is not guaranteed to work and is much more likely to result in breaking the overall page layout.) The simple demo below uses that process to allow for resizing. A resize request should trump the original aspect ratio.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#layout-interactives-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="layout-interactives-16"><div class="interactive-iframe-container"><iframe id="interactive-layout-grow-one" style="width:480px; height:240px; display: block; " src="interactive-layout-grow-one-if.html"></iframe></div>
+<div class="interactive-iframe-container__opener"><a href="interactive-layout-grow-one.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Growable interactive fixed-height<div class="autopermalink" aria-hidden="true" data-description="Figure 11"><a tabindex="-1" href="#layout-interactives-16" title="Copy heading and permalink for Figure 11" aria-label="Copy heading and permalink for Figure 11">🔗</a></div></figcaption>
+</figure>
+<figure class="figure figure-like" id="layout-interactives-17"><div class="interactive-iframe-container"><iframe id="interactive-layout-grow-two" style="max-width: 80%; width: 100%; aspect-ratio:2" src="interactive-layout-grow-two-if.html"></iframe></div>
+<div class="interactive-iframe-container__opener"><a href="interactive-layout-grow-two.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Growable interactive responsive with % width<div class="autopermalink" aria-hidden="true" data-description="Figure 12"><a tabindex="-1" href="#layout-interactives-17" title="Copy heading and permalink for Figure 12" aria-label="Copy heading and permalink for Figure 12">🔗</a></div></figcaption>
+</figure>
+<figure class="figure figure-like" id="layout-interactives-18"><div class="interactive-iframe-container"><iframe id="interactive-layout-grow-three" data-design-width="480" style="max-width: 480px; width: 100%; aspect-ratio:2" src="interactive-layout-grow-three-if.html"></iframe></div>
+<div class="interactive-iframe-container__opener"><a href="interactive-layout-grow-three.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Growable interactive responsive and design-width<div class="autopermalink" aria-hidden="true" data-description="Figure 13"><a tabindex="-1" href="#layout-interactives-18" title="Copy heading and permalink for Figure 13" aria-label="Copy heading and permalink for Figure 13">🔗</a></div></figcaption>
+</figure><div class="autopermalink" aria-hidden="true" data-description="Subsection: Layout of Interactives"><a tabindex="-1" href="#layout-interactives" title="Copy heading and permalink for Subsection: Layout of Interactives" aria-label="Copy heading and permalink for Subsection: Layout of Interactives">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Section: Interactive Elements, Server &amp; Layouts"><a tabindex="-1" href="#section-interactive-server" title="Copy heading and permalink for Section: Interactive Elements, Server &amp; Layouts" aria-label="Copy heading and permalink for Section: Interactive Elements, Server &amp; Layouts">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="notes-week-02.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="activities.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+<script data-pretext-tools-frame-bridge="true">
+(function () {
+  if (window.__ptxFrameBridge) { return; }
+  window.__ptxFrameBridge = true;
+  function report() {
+    try {
+      parent.postMessage({
+        command: 'ptxFramePath',
+        path: location.pathname + location.search + location.hash
+      }, '*');
+    } catch (e) { /* not framed */ }
+  }
+  report();
+  window.addEventListener('hashchange', report);
+  window.addEventListener('pageshow', report);
+  window.addEventListener('message', function (event) {
+    if (event.data && event.data.command === 'ptxFrameReload') {
+      location.reload();
+    }
+  });
+})();
+</script>
+</body>
+</html>
