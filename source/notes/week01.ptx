@@ -33,5 +33,13 @@
     <p>
     </p>
   </subsection>
+
+<subsection >
+    <title>ser</title>
+    <p>
+        For more details, see 
+         <xref ref="prop123"/>  <!-- ← Use the ID, not the file path! -->
+    </p>
+</subsection>
 </section >
 

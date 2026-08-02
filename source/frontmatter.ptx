@@ -3,7 +3,9 @@
 <!-- first chapter. Fill in and comment/uncomment to see how this -->
 <!-- works. -->
 
-<frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
+<frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" 
+             xml:id="frontmatter" 
+             next="course-documents">
   <bibinfo>
     <author>
       <personname>Instructor Lastname</personname>

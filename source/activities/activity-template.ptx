@@ -38,7 +38,7 @@
     </p>
   </proof>
 
-  <proposition>
+  <proposition xml:id="prop123">
     <statement>
         <p>
             Let <m>p</m> be a prime and let all matrices be over <m>\mathbb{F}_p</m>. 

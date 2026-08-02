@@ -9,7 +9,7 @@
   </introduction>
 
   <page>
-    <exercise>
+    <exercise xml:id="testing123">
       <statement>
         <p>
           This is the first homework exercise.
@@ -18,4 +18,11 @@
     </exercise>
 
   </page>
+  <subsection >
+    <title>ser</title>
+    <p>
+        For more details, see 
+         <xref ref="testing123"/>  <!-- ← Use the ID, not the file path! -->
+    </p>
+</subsection>
 </worksheet>

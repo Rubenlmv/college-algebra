@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="section-1-2">
+    <title>Section 1.2 Linear Equation Applications</title>
+
+    <!-- ========================================================
+         PART 1: BASIC THINGS TO KNOW
+         ======================================================== -->
+
+    <subsection xml:id="basic-things-applications">
+        <title>Some Basic Things We Should Know About Applications</title>
+
+        <subsubsection xml:id="geometry-formulas">
+            <title>Geometry</title>
+            <ul>
+                <li>Area of a rectangle: Area = length × width</li>
+                <li>Area of a Triangle: Area = <m>\frac{1}{2}</m> × base × height</li>
+                <li>Perimeter of a geometric shape is the sum of the lengths of each side</li>
+                <li>The sum of interior angles in a triangle is <m>180^\circ</m></li>
+            </ul>
+        </subsubsection>
+
+        <subsubsection xml:id="percentages-formulas">
+            <title>Percentages</title>
+            <ul>
+                <li>Percentages: Part = base × rate</li>
+                <li>Base is always the original value</li>
+                <li>Rate (percentage) is in decimal form</li>
+                <li>Simple interest: Amount of Interest = principle × rate × time</li>
+            </ul>
+        </subsubsection>
+
+        <subsubsection xml:id="physics-formulas">
+            <title>Physics</title>
+            <ul>
+                <li>Distance = Rate × Time or Distance = Speed × Time</li>
+                <li>When traveling upstream/against the wind, subtract water/wind speed</li>
+                <li>When traveling downstream/with the wind, add the water/wind speed</li>
+            </ul>
+        </subsubsection>
+
+    </subsection>
+
+    <!-- ========================================================
+         PART 2: PROBLEM-SOLVING STRATEGY
+         ======================================================== -->
+
+    <subsection xml:id="problem-solving-strategy">
+        <title>Problem-Solving Strategy</title>
+
+        <algorithm number="no">
+            <p>Follow these steps to solve application problems:</p>
+            <ol>
+                <li><em>Read</em> – Understand the problem. What are you solving for?</li>
+                <li><em>Define</em> – Assign variables. Figure out how they relate.</li>
+                <li><em>Draw</em> – If possible, draw a picture or graph to visualize.</li>
+                <li><em>Equation</em> – Write an equation using the given information.</li>
+                <li><em>Solve</em> – Solve the equation algebraically.</li>
+                <li><em>Check</em> – Verify your answer works in the original problem.</li>
+            </ol>
+        </algorithm>
+    </subsection>
+
+    <!-- ========================================================
+         PART 3: EXAMPLE PROBLEMS
+         ======================================================== -->
+
+    <!-- Example 1: Triangle Angles -->
+    <subsection xml:id="example-triangle-angles">
+    <title>Example: Triangle Angles</title>
+
+    <example>
+        <statement>
+            <p>
+                The sum of the measures of the angles in a triangle is <m>180^\circ</m>. What is the value of <m>x</m> in the given triangle?
+            </p>
+            
+            <!-- ========================================================
+                 TRIANGLE FIGURE
+                 ======================================================== -->
+<figure xml:id="figure-triangle" xmlns:pi="http://pretextbook.org/2020/pretext/internal">
+    <caption>Right Triangle with 40°, 2x°, and 90°</caption>
+    
+    <image xml:id="triangle-diagram" width="50%">
+        <shortdescription>
+            A right triangle with angles 40°, 2x°, and 90° (right angle marked with a square)
+        </shortdescription>
+        
+        <latex-image>
+            % CDATA prevents certain LaTeX code from being interpreted as XML
+            \begin{tikzpicture}[scale=0.7]
+    % Draw the right triangle
+    \draw (0,0) -- (3,0) -- (0,2) -- cycle;
+    
+    % Right angle square at (0,0)
+    \draw (0,0) -- (0.4,0) -- (0.4,0.4) -- (0,0.4) -- cycle;
+    
+    % 40° angle arc
+    \draw (2.4,0) arc (180:146.31:0.6);
+    % 40° label - SCALED TO 70%
+    \node at (2,0.28) {\scalebox{0.5}{\(40^\circ\)}};
+    
+    % 2x° angle arc
+    \draw (0,1.4) arc (-90:-33.69:0.6);
+    % 2x° label - SCALED TO 70%
+    \node at (0.48,1.35) {\scalebox{0.5}{\(2x^\circ\)}};
+\end{tikzpicture}
+        </latex-image>
+    </image>
+</figure>
+            
+            <p>
+                <em>Note:</em> The triangle is a right triangle. One angle is <m>40^\circ</m>, another is <m>2x^\circ</m>, and the third angle is a right angle (<m>90^\circ</m>).
+            </p>
+        </statement>
+        
+        <solution>
+            <p><em>Step 1: Read</em> – We need to find the value of <m>x</m> in the triangle.</p>
+            <p><em>Step 2: Define</em> – The angles are <m>40^\circ</m>, <m>2x^\circ</m>, and <m>90^\circ</m> (right angle).</p>
+            <p><em>Step 3: Draw</em> – Already given.</p>
+            <p><em>Step 4: Equation</em> – The sum of the angles is <m>180^\circ</m>:</p>
+            <me>40 + 2x + 90 = 180</me>
+            <p><em>Step 5: Solve</em></p>
+            <me>130 + 2x = 180</me>
+            <me>2x = 50</me>
+            <me>x = 25</me>
+            <p><em>Step 6: Check</em> – <m>40 + 2(25) + 90 = 40 + 50 + 90 = 180^\circ</m> ✅</p>
+            <p>Therefore, the value of <m>x</m> is <m>25</m>.</p>
+        </solution>
+    </example>
+</subsection>
+
+    <!-- Example 2: Farmer John -->
+    <subsection xml:id="example-farmer-john">
+        <title>Example: Farmer John</title>
+
+        <example>
+            <statement>
+                <p>
+                    Farmer John has pigs and chickens. When he looks out into the barnyard he can count 12 animals and together those animals have 30 legs. How many pigs and how many chickens does he have? Solve without an equation.
+                </p>
+            </statement>
+            <solution>
+                <p><em>Step 1: Read</em> – We need to find how many pigs and chickens Farmer John has.</p>
+                <p><em>Step 2: Define</em> – Let <m>p</m> = number of pigs, <m>c</m> = number of chickens.</p>
+                <p><em>Step 3: Draw</em> – Not needed for this problem.</p>
+                <p><em>Step 4: Equation</em> – We know:</p>
+                <ul>
+                    <li><m>p + c = 12</m> (total animals)</li>
+                    <li><m>4p + 2c = 30</m> (pigs have 4 legs, chickens have 2 legs)</li>
+                </ul>
+                <p><em>Step 5: Solve</em> – From the first equation, <m>c = 12 - p</m>. Substitute into the second equation:</p>
+                <me>4p + 2(12 - p) = 30</me>
+                <me>4p + 24 - 2p = 30</me>
+                <me>2p + 24 = 30</me>
+                <me>2p = 6</me>
+                <me>p = 3</me>
+                <me>c = 12 - 3 = 9</me>
+                <p><em>Step 6: Check</em> – <m>3 + 9 = 12</m> animals ✅. <m>3(4) + 9(2) = 12 + 18 = 30</m> legs ✅.</p>
+                <p>Therefore, Farmer John has <m>3</m> pigs and <m>9</m> chickens.</p>
+            </solution>
+        </example>
+    </subsection>
+
+    <!-- Example 3: Alicia's Trail Mix -->
+    <subsection xml:id="example-alicia-trail-mix">
+        <title>Example: Alicia's Trail Mix</title>
+
+        <example>
+            <statement>
+                <p>
+                    Putting together snacks for a party, Alicia combines a low fat trail mix with a very tasty higher fat candy mix. How much of the <m>10\%</m> fat trail mix should she mix with 4 ounces of the <m>40\%</m> fat candy mix to get a <m>12\%</m> fat party mix?
+                </p>
+                <p>
+                    Label the "buckets" with weight and fat percentage (as a decimal) and fill in the equations. Use the bottom equation to solve the problem.
+                </p>
+                <p>
+                    <em>Weight:</em> <m>x</m> ounces + 4 ounces = ( ) ounces
+                </p>
+                <p>
+                    <em>Fat content:</em> <m>0.1(x)</m> ounces + <m>0.4(4)</m> ounces = <m>0.12</m> ( ) ounces
+                </p>
+            </statement>
+            <solution>
+                <p><em>Step 1: Read</em> – We need to find how many ounces of the <m>10\%</m> trail mix to add.</p>
+                <p><em>Step 2: Define</em> – Let <m>x</m> = ounces of <m>10\%</m> trail mix.</p>
+                <p><em>Step 3: Draw</em> – Use the bucket method:</p>
+                <ul>
+                    <li>Bucket 1: <m>x</m> ounces at <m>10\%</m> fat</li>
+                    <li>Bucket 2: 4 ounces at <m>40\%</m> fat</li>
+                    <li>Mixture: <m>x + 4</m> ounces at <m>12\%</m> fat</li>
+                </ul>
+                <p><em>Step 4: Equation</em> – <m>0.1(x) + 0.4(4) = 0.12(x + 4)</m></p>
+                <p><em>Step 5: Solve</em></p>
+                <me>0.1x + 1.6 = 0.12x + 0.48</me>
+                <me>1.6 - 0.48 = 0.12x - 0.1x</me>
+                <me>1.12 = 0.02x</me>
+                <me>x = 56</me>
+                <p><em>Step 6: Check</em> – <m>0.1(56) + 1.6 = 5.6 + 1.6 = 7.2</m>. <m>0.12(56 + 4) = 0.12(60) = 7.2</m> ✅</p>
+                <p>Therefore, Alicia needs <m>56</m> ounces of the <m>10\%</m> fat trail mix.</p>
+            </solution>
+        </example>
+    </subsection>
+
+    <!-- Example 4: Malcolm and Janay -->
+    <subsection xml:id="example-malcolm-janay">
+        <title>Example: Malcolm and Janay</title>
+
+        <example>
+            <statement>
+                <p>
+                    Malcolm and Janay have been offered <m>\$100</m> if they can clean out a garage in under 2 hours. Malcolm can clean the garage in 3 hours and Janay can clean the garage in 5 hours. Working together, can they clean the garage in time to make <m>\$100</m>?
+                </p>
+                <p>
+                    What are their speeds alone? What is their speed when they work together?
+                </p>
+                <p>
+                    How much will they get done in 2 hours? Will they earn the <m>\$100</m>?
+                </p>
+            </statement>
+            <solution>
+                <p><em>Step 1: Read</em> – We need to determine if Malcolm and Janay working together can clean the garage in under 2 hours.</p>
+                <p><em>Step 2: Define</em> – Malcolm's rate = <m>\frac{1}{3}</m> garage per hour. Janay's rate = <m>\frac{1}{5}</m> garage per hour.</p>
+                <p><em>Step 3: Draw</em> – Not needed for this problem.</p>
+                <p><em>Step 4: Equation</em> – Combined rate = <m>\frac{1}{3} + \frac{1}{5}</m> garages per hour.</p>
+                <p><em>Step 5: Solve</em></p>
+                <me>\text{Combined rate} = \frac{1}{3} + \frac{1}{5} = \frac{5}{15} + \frac{3}{15} = \frac{8}{15}</me>
+                <p>In 2 hours, they will complete:</p>
+                <me>2 \times \frac{8}{15} = \frac{16}{15} \approx 1.067</me>
+                <p>Since <m>\frac{16}{15} &gt; 1</m>, they will complete more than one garage in 2 hours.</p>
+                <p><em>Step 6: Check</em> – <m>\frac{16}{15} \approx 1.067</m> garages, which is more than 1. They will finish in under 2 hours.</p>
+                <p>Therefore, Malcolm and Janay will earn the <m>\$100</m>.</p>
+            </solution>
+        </example>
+    </subsection>
+
+    <!-- Example 5: Two Planes -->
+    <subsection xml:id="example-two-planes">
+        <title>Example: Two Planes</title>
+
+        <example>
+            <statement>
+                <p>
+                    Two passengers leave the airport at Kansas City, Missouri. One flies to Los Angeles, California in 3.4 hours and the other flies the opposite direction to New York City in 2.4 hours. With prevailing westerly winds, the speed of the plane to NYC is 60 mph faster than the plane to LA. If the total distance travelled by both planes is 2464, what is the average speed of each plane?
+                </p>
+            </statement>
+            <solution>
+                <p><em>Step 1: Read</em> – We need to find the speed of each plane.</p>
+                <p><em>Step 2: Define</em> – Let <m>x</m> = speed of plane to LA. Then <m>x + 60</m> = speed of plane to NYC.</p>
+                <p><em>Step 3: Draw</em> – Not needed for this problem.</p>
+                <p><em>Step 4: Equation</em> – Distance = Rate × Time. Total distance = 2464 miles.</p>
+                <me>3.4x + 2.4(x + 60) = 2464</me>
+                <p><em>Step 5: Solve</em></p>
+                <me>3.4x + 2.4x + 144 = 2464</me>
+                <me>5.8x + 144 = 2464</me>
+                <me>5.8x = 2320</me>
+                <me>x = 400</me>
+                <p>Plane to LA: <m>x = 400</m> mph</p>
+                <p>Plane to NYC: <m>x + 60 = 460</m> mph</p>
+                <p><em>Step 6: Check</em> – <m>3.4(400) + 2.4(460) = 1360 + 1104 = 2464</m> ✅</p>
+                <p>Therefore, the plane to LA travels at <m>400</m> mph, and the plane to NYC travels at <m>460</m> mph.</p>
+            </solution>
+        </example>
+    </subsection>
+
+    <!-- Example 6: Tasha's Job Offers -->
+    <subsection xml:id="example-tasha-jobs">
+        <title>Example: Tasha's Job Offers</title>
+
+        <example>
+            <statement>
+                <p>
+                    Tasha considers two sales jobs for two pharmaceutical companies. One pays a base salary of <m>\$25,000</m> with a <m>16\%</m> commission on sales. The other pays <m>\$30,000</m> with a <m>15\%</m> commission on sales.
+                </p>
+                <p>a) Write equations that represent the salaries of the two offers.</p>
+                <p>b) For how much in sales will the two jobs result in the equal salaries?</p>
+                <p>c) If Tasha expects to sell <m>\$700,000</m>, which job would be better?</p>
+            </statement>
+            <solution>
+                <p><em>Step 1: Read</em> – We need to compare two job offers.</p>
+                <p><em>Step 2: Define</em> – Let <m>x</m> = amount of sales.</p>
+                <p><em>Step 3: Draw</em> – Not needed for this problem.</p>
+                <p><em>Step 4: Equation</em></p>
+                <p>a) Job 1: <m>S_1 = 25000 + 0.16x</m></p>
+                <p>Job 2: <m>S_2 = 30000 + 0.15x</m></p>
+                <p>b) For equal salaries: <m>S_1 = S_2</m></p>
+                <p><em>Step 5: Solve</em></p>
+                <me>25000 + 0.16x = 30000 + 0.15x</me>
+                <me>0.16x - 0.15x = 30000 - 25000</me>
+                <me>0.01x = 5000</me>
+                <me>x = 500,000</me>
+                <p>c) For <m>x = 700,000</m>:</p>
+                <p>Job 1: <m>25000 + 0.16(700000) = 25000 + 112000 = 137,000</m></p>
+                <p>Job 2: <m>30000 + 0.15(700000) = 30000 + 105000 = 135,000</m></p>
+                <p><em>Step 6: Check</em> – <m>137,000 &gt; 135,000</m>, so Job 1 is better.</p>
+                <p>a) <m>S_1 = 25000 + 0.16x</m>, <m>S_2 = 30000 + 0.15x</m></p>
+                <p>b) The two jobs result in equal salaries at <m>\$500,000</m> in sales.</p>
+                <p>c) If Tasha expects to sell <m>\$700,000</m>, Job 1 is the better option (<m>\$137,000</m> vs <m>\$135,000</m>).</p>
+            </solution>
+        </example>
+    </subsection>
+
+    <!-- Example 7: School Tickets -->
+    <subsection xml:id="example-school-tickets">
+        <title>Example: School Tickets</title>
+
+        <example>
+            <statement>
+                <p>
+                    A total of 575 tickets were sold for the school play. They were either adult tickets or student tickets. There were 75 more student tickets sold than adult tickets. How many adult tickets were sold?
+                </p>
+            </statement>
+            <solution>
+                <p><em>Step 1: Read</em> – We need to find the number of adult tickets sold.</p>
+                <p><em>Step 2: Define</em> – Let <m>a</m> = number of adult tickets, <m>s</m> = number of student tickets.</p>
+                <p><em>Step 3: Draw</em> – Not needed for this problem.</p>
+                <p><em>Step 4: Equation</em> – We know:</p>
+                <ul>
+                    <li><m>s = a + 75</m> (75 more student tickets)</li>
+                    <li><m>a + s = 575</m> (total tickets)</li>
+                </ul>
+                <p><em>Step 5: Solve</em> – Substitute <m>s = a + 75</m> into the total equation:</p>
+                <me>a + (a + 75) = 575</me>
+                <me>2a + 75 = 575</me>
+                <me>2a = 500</me>
+                <me>a = 250</me>
+                <p><em>Step 6: Check</em> – <m>250 + (250 + 75) = 250 + 325 = 575</m> ✅</p>
+                <p>Therefore, there were <m>250</m> adult tickets sold.</p>
+            </solution>
+        </example>
+    </subsection>
+
+    <!-- Example 8: Prepaid Phone Card -->
+    <subsection xml:id="example-phone-card">
+        <title>Example: Prepaid Phone Card</title>
+
+        <example>
+            <statement>
+                <p>
+                    Lisa purchased a prepaid phone card for $15. Long distance calls cost 16 cents a minute using this card. Lisa used her card only once to make a long distance call. If the remaining credit on her card is $9.72, how many minutes did her call last?
+                </p>
+            </statement>
+            <solution>
+                <p><em>Step 1: Read</em> – We need to find how many minutes Lisa's call lasted.</p>
+                <p><em>Step 2: Define</em> – Let <m>m</m> = number of minutes.</p>
+                <p><em>Step 3: Draw</em> – Not needed for this problem.</p>
+                <p><em>Step 4: Equation</em> – Cost of call = <m>0.16m</m>. Remaining credit = <m>15 - 0.16m = 9.72</m>.</p>
+                <p><em>Step 5: Solve</em></p>
+                <me>15 - 0.16m = 9.72</me>
+                <me>-0.16m = 9.72 - 15</me>
+                <me>-0.16m = -5.28</me>
+                <me>m = 33</me>
+                <p><em>Step 6: Check</em> – <m>15 - 0.16(33) = 15 - 5.28 = 9.72</m> ✅</p>
+                <p>Therefore, Lisa's call lasted <m>33</m> minutes.</p>
+            </solution>
+        </example>
+    </subsection>
+
+    <!-- Example 9: Movie Theatre Tickets -->
+    <subsection xml:id="example-movie-tickets">
+        <title>Example: Movie Theatre Tickets</title>
+
+        <example>
+            <statement>
+                <p>
+                    At the movie theatre, child admission is $5.10 and adult admission is $9.50. On Saturday, 170 tickets were sold for a total sales of $1210.20. How many adult tickets were sold that day?
+                </p>
+            </statement>
+            <solution>
+                <p><em>Step 1: Read</em> – We need to find the number of adult tickets sold.</p>
+                <p><em>Step 2: Define</em> – Let <m>a</m> = number of adult tickets, <m>c</m> = number of child tickets.</p>
+                <p><em>Step 3: Draw</em> – Not needed for this problem.</p>
+                <p><em>Step 4: Equation</em> – We know:</p>
+                <ul>
+                    <li><m>a + c = 170</m> (total tickets)</li>
+                    <li><m>9.50a + 5.10c = 1210.20</m> (total sales)</li>
+                </ul>
+                <p><em>Step 5: Solve</em> – From the first equation, <m>c = 170 - a</m>. Substitute into the second equation:</p>
+                <me>9.50a + 5.10(170 - a) = 1210.20</me>
+                <me>9.50a + 867 - 5.10a = 1210.20</me>
+                <me>4.40a + 867 = 1210.20</me>
+                <me>4.40a = 343.20</me>
+                <me>a = 78</me>
+                <p><em>Step 6: Check</em> – <m>78 + 92 = 170</m> tickets ✅. <m>9.50(78) + 5.10(92) = 741 + 469.20 = 1210.20</m> ✅</p>
+                <p>Therefore, there were <m>78</m> adult tickets sold that day.</p>
+            </solution>
+        </example>
+    </subsection>
+
+</section>

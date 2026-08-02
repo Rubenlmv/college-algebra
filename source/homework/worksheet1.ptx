@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="Worksheet" >
+    <title>Math 1320 Section 1.1</title>
 
-  
-
-<section xml:id="section-1-1">
-    <title>Section 1.1 Linear Equations and Rational Equations</title>
-
-    <subsection xml:id="idea-1-linear-equations">
-        <title>Linear Equations</title>
+    <subsection >
+        <title>Idea 1 – Linear Equations</title>
         <p>
-            Linear equations are also known as equations of first degree. That is, variables have <em>no written exponents</em>.
+            Linear equations are also known as equations of first degree. That is, variables have <em>no exponents</em>.
         </p>
         <p>
             In General, this would exclude equations with variables in the denominators of fractions, since they would have an 
@@ -17,38 +14,34 @@
         </p>
     </subsection>
 
-  <subsection xml:id="idea-2-solving-equations">
-    <title>Solving Equations</title>
-    <p>
-        To solve an equation means to find all possible solutions.
-    </p>
-    <p>
-        Good News! When solving an equation you can do anything you want—as long as you do it twice. Once to the whole left side and 
-        once to the whole right side.
-    </p>
-    
-    <!-- Custom box with CLASS instead of ID -->
-    <algorithm label="Problem">
-    <p>The most common things we do:</p>
-    <p>
-        <ul>
-            <li><em>Add/subtract</em> same value from both sides</li>
-            <li><em>Multiply/divide</em> both sides by the same non-zero value</li>
-        </ul>
-    </p>
-    <p>We solve equations by:</p>
-    <p>
-        <ol>
-            <li><em>Distribute</em> to eliminate parentheses</li>
-            <li><em>Combine</em> "Like Terms"</li>
-            <li>Use <em>Addition/Subtraction</em> to "collect" variables on one side, constants on the other</li>
-            <li>Use <em>Multiplication/Division</em> to isolate the variable</li>
-        </ol>
-    </p>
-</algorithm>
-</subsection>
+    <subsection >
+        <title>Idea 2 – Solving Equations</title>
+        <p>
+            To solve an equation means to find all possible solutions.
+        </p>
+        <p>
+            Good News! When solving an equation you can do anything you want—as long as you do it twice. Once to the whole left side and 
+            once to the whole right side.
+        </p>
+        <p>
+            The most common things we do:
+            <ul>
+                <li>Add/subtract same value from both sides</li>
+                <li>Multiply/divide both sides by the same non-zero value</li>
+            </ul>
+        </p>
+        <p>
+            We solve equations by:
+            <ol>
+                <li>Distribute to eliminate parentheses</li>
+                <li>Combine "Like Terms"</li>
+                <li>Use Addition/Subtraction to "collect" variables on one side, constants on the other</li>
+                <li>Use Multiplication/Division to isolate the variable</li>
+            </ol>
+        </p>
+    </subsection>
 
-    <subsection xml:id="solving-linear-equations-video">
+    <subsection >
         <title>Solving Linear Equations Video</title>
         
         <p>Watch the video below for a step-by-step explanation:</p>
@@ -59,7 +52,7 @@
         
     </subsection>
 
-    <subsection xml:id="example-linear-equation">
+    <subsection >
         <title>Example</title>
         
         <example>
@@ -84,26 +77,26 @@
         </example>
     </subsection>
 
-    <subsection xml:id="clearing-fractions">
-    <title>Clearing Fractions</title>
-    
-    <algorithm number="2">
-        <p>To clear fractions from an equation:</p>
-        <ol>
-            <li><em>Find the Lowest Common Denominator</em> (LCD) of ALL the fractions. (If you can't find the lowest common denominator, just multiply all denominators together.)</li>
-            <li><em>Multiply</em> every term (on BOTH sides) by the LCD</li>
-            <li><em>Simplify</em> each term. There should be no fractions.</li>
-            <li><em>Solve</em> the new equation using your algebra skills.</li>
-        </ol>
-    </algorithm>
-</subsection>
-
-xml:id="fig-clearing-fractions">
+    <subsection >
+        <title>Clearing Fractions</title>
+        
+        <figure >
             <caption>Clearing the Fraction</caption>
             <interactive iframe="https://echo360.org/media/ad586bdc-3b3d-4da4-8d1e-832db422fccc/public" />
-       
+        </figure>
+        
+        <p> 
+            To clear fractions from an equation:
+            <ol>
+                <li>Find the Lowest Common Denominator (LCD) of ALL the fractions. (If you can't find the lowest common denominator, just multiply all denominators together.)</li>
+                <li>Multiply every term (on BOTH sides) by the LCD</li>
+                <li>Simplify each term. There should be no fractions.</li>
+                <li>Solve the new equation using your algebra skills.</li>
+            </ol>
+        </p>
+    </subsection>
 
-    <subsection xml:id="example-clearing-fractions">
+    <subsection >
         <title>Example</title>
         
         <example>
@@ -131,11 +124,11 @@ xml:id="fig-clearing-fractions">
         </example>
     </subsection>
 
-    <subsection xml:id="variables-in-denominator">
+    <subsection >
         <title>What happens if there is a variable in the denominator?</title>
 
         <!-- Example 1 - Variables in denominator -->
-        <example xml:id="ex-denominator-11">
+        <example >
             <statement>
                 <p>
                     Solve: 
@@ -167,7 +160,7 @@ xml:id="fig-clearing-fractions">
         </example>
 
         <!-- Example 2 - Variables in denominator -->
-        <example xml:id="ex12345">
+        <example >
             <statement>
                 <p>
                     Solve: 
@@ -198,9 +191,13 @@ xml:id="fig-clearing-fractions">
                 <p>Therefore, the solution is <m>x = -5</m>.</p>
             </solution>
         </example>
-         
     </subsection>
 
-
-</section>
-
+<subsection xml:id="subsec-">
+    <title>ser</title>
+    <p>
+        For more details, see 
+         <xref ref="variables-in-denominator"/>  <!-- ← Use the ID, not the file path! -->
+    </p>
+</subsection>
+</worksheet>
