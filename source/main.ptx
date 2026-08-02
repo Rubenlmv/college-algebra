@@ -78,7 +78,7 @@
       <p>
          <!-- Include homework files --></p>
       <xi:include href="./homework/homework-01.ptx"/>
-      <xi:include href="./homework/worksheet1-1.ptx"/>
+      <!--<xi:include href="./homework/worksheet1-1.ptx"/>-->
       
     </chapter>
 

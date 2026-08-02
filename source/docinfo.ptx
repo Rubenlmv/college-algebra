@@ -31,11 +31,6 @@
   <!-- <cross-references text="type-global" /> -->
 <rename element="algorithm">Problem-Solving Strategy</rename>
 
-<latex-image-preamble>
-        \usepackage{tikz}
-        \usetikzlibrary{positioning,matrix,arrows}
-        \usetikzlibrary{shapes,decorations,shadows,fadings,patterns}
-        \usetikzlibrary{decorations.markings}
-    </latex-image-preamble>
+
 
 </docinfo>
