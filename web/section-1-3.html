@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Section 1.3 Complex Numbers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="Course Testing">
+<meta property="og:title" content="Course Testing">
+<meta property="book:title" content="Course Testing">
+<meta name="twitter:description" content="MATH 1320 Fall  Semester 2026">
+<meta property="og:description" content="MATH 1320 Fall  Semester 2026">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.43"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.2.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.ed2cce180827a7ad.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.1f660864c47fc762.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8086b62682b271d1.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">Course Testing</span> <span class="subtitle">MATH 1320 Fall  Semester 2026</span></a></h1>
+<p class="byline">Instructor Lastname</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="ptx-embed-button" class="ptx-embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><dialog class="ptx-dialog ptx-embed-popup" id="ptx-embed-popup"><div class="ptx-embed-popup-controls">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<button class="ptx-embed-close-button button" id="ptx-embed-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-embed-code-container">
+<textarea class="ptx-embed-code-textbox" id="ptx-embed-code-textbox" readonly aria-label="Embed"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button autofocus="autofocus" class="ptx-embed-copy-button button" id="ptx-embed-copy-button" title="Copy"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div></dialog><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="section-1-2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="course-notes.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="section-1-4.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="title">Course Documents</span></a></div>
+<ul id="ptx-toc-group-course-documents" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Syllabus</span></a></div>
+<ul id="ptx-toc-group-syllabus" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-info" class="internal"><span class="title">Course Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-assessments" class="internal"><span class="title">Assessments and Grades</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="calendar-fall2026.html" class="internal"><span class="title">Calendar</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="course-notes.html" class="internal"><span class="title">Course Notes</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-course-notes">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-01.html" class="internal"><span class="title">Week 1</span></a></div>
+<ul id="ptx-toc-group-notes-week-01" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-3" class="internal"><span class="title">Monday 8/22</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-4" class="internal"><span class="title">Wednesday 8/24</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-5" class="internal"><span class="title">Friday 8/26</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-6" class="internal"><span class="title">ser</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-week-02.html" class="internal"><span class="title">Week 2</span></a></div>
+<ul id="ptx-toc-group-notes-week-02" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-2" class="internal"><span class="title">Monday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-3" class="internal"><span class="title">Wednesday</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-02.html#notes-week-02-4" class="internal"><span class="title">Friday</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-1-1.html" class="internal"><span class="title">Section 1.1 Linear Equations and Rational Equations</span></a></div>
+<ul id="ptx-toc-group-section-1-1" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-1.html#idea-1-linear-equations" class="internal"><span class="title">Linear Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-1.html#idea-2-solving-equations" class="internal"><span class="title">Solving Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-1.html#solving-linear-equations-video" class="internal"><span class="title">Solving Linear Equations Video</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-1.html#example-linear-equation" class="internal"><span class="title"></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-1.html#clearing-fractions" class="internal"><span class="title">Clearing Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-1.html#example-clearing-fractions" class="internal"><span class="title">Example</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-1.html#variables-in-denominator" class="internal"><span class="title">What happens if there is a variable in the denominator?</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-1-2.html" class="internal"><span class="title">Section 1.2 Linear Equation Applications</span></a></div>
+<ul id="ptx-toc-group-section-1-2" class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-1-2.html#basic-things-applications" class="internal"><span class="title">Some Basic Things We Should Know About Applications</span></a></div>
+<ul id="ptx-toc-group-basic-things-applications" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="section-1-2.html#geometry-formulas" class="internal"><span class="title">Geometry</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="section-1-2.html#percentages-formulas" class="internal"><span class="title">Percentages</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="section-1-2.html#physics-formulas" class="internal"><span class="title">Physics</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-2.html#problem-solving-strategy" class="internal"><span class="title">Problem-Solving Strategy</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-2.html#activity-triangle-angles" class="internal"><span class="title">Triangle Angles</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-2.html#activity-farmer-john" class="internal"><span class="title">Farmer John</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-2.html#activity-alicia-trail-mix" class="internal"><span class="title">Alicia’s Trail Mix</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-2.html#activity-malcolm-janay" class="internal"><span class="title">Malcolm and Janay</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-2.html#activity-two-planes" class="internal"><span class="title">Two Planes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-2.html#activity-tasha-jobs" class="internal"><span class="title">Tasha’s Job Offers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-2.html#activity-school-tickets" class="internal"><span class="title">School Tickets</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-2.html#activity-phone-card" class="internal"><span class="title">Prepaid Phone Card</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-2.html#activity-movie-tickets" class="internal"><span class="title">Movie Theatre Tickets</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="section-1-3.html" class="internal"><span class="title">Section 1.3 Complex Numbers</span></a></div>
+<ul class="structural toc-item-list active" id="ptx-toc-group-section-1-3">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-3.html#intro-imaginary-numbers" class="internal"><span class="title">Intro to Imaginary Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-3.html#practice-square-roots" class="internal"><span class="title">Practice: Simplifying Square Roots of Negative Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-3.html#practice-multiplying-roots" class="internal"><span class="title">Practice: Multiplying Square Roots with Negative Radicands</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-3.html#standard-complex-form" class="internal"><span class="title">Standard Complex Form</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-3.html#powers-of-i" class="internal"><span class="title">Powers of <span class="process-math">\(i\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-3.html#adding-subtracting-complex" class="internal"><span class="title">Adding and Subtracting Complex Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-3.html#multiplying-complex" class="internal"><span class="title">Multiplying Complex Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-3.html#complex-conjugates" class="internal"><span class="title">Multiplying Complex Conjugates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-3.html#dividing-complex" class="internal"><span class="title">Dividing Complex Numbers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-1-4.html" class="internal"><span class="title">Section 1.4 Quadratic Equations</span></a></div>
+<ul id="ptx-toc-group-section-1-4" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-4.html#intro-quadratic-equations" class="internal"><span class="title">Quadratic Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-4.html#zero-product-property" class="internal"><span class="title">The Zero Product Property</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-4.html#practice-factoring" class="internal"><span class="title">Practice: Factoring</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-4.html#square-root-property" class="internal"><span class="title">Square Root Property</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-4.html#completing-the-square" class="internal"><span class="title">Completing the Square</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-4.html#quadratic-formula" class="internal"><span class="title">The Quadratic Formula</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-4.html#discriminant" class="internal"><span class="title">The Discriminant</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-1-5.html" class="internal"><span class="title">Section 1.5 Problem Solving and Quadratic Applications</span></a></div>
+<ul id="ptx-toc-group-section-1-5" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-5.html#intro-problem-solving" class="internal"><span class="title">Problem Solving</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-1-5.html#polya-steps" class="internal"><span class="title">Pólya’s 4 Steps</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="activities.html" class="internal"><span class="title">In-Class Activities</span></a></div>
+<ul id="ptx-toc-group-activities" class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-01-intro-activity.html" class="internal"><span class="title">Introduction Activity</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity.html" class="internal"><span class="title">Activity Title</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="handouts.html" class="internal"><span class="title">Handouts</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="homework.html" class="internal"><span class="title">Homework</span></a></div>
+<ul id="ptx-toc-group-homework" class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="homework-3.html" class="internal"><span class="title">Homework 01</span></a></div></li></ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="section-1-3">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Section 1.3 Complex Numbers</span>
+</h2>
+<section class="subsection" id="intro-imaginary-numbers">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Intro to Imaginary Numbers</span>
+</h3>
+<div class="para" id="intro-imaginary-numbers-2">The imaginary unit is defined as:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#intro-imaginary-numbers-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="intro-imaginary-numbers-3">
+\begin{equation*}
+i = \sqrt{-1}
+\end{equation*}
+</div>
+<div class="para" id="intro-imaginary-numbers-4">Therefore:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#intro-imaginary-numbers-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="intro-imaginary-numbers-5">
+\begin{equation*}
+i^2 = -1
+\end{equation*}
+</div>
+<div class="para" id="intro-imaginary-numbers-6">If <span class="process-math">\(b\)</span> is a positive real number, then:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#intro-imaginary-numbers-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="intro-imaginary-numbers-7">
+\begin{equation*}
+\sqrt{-b} = i\sqrt{b}
+\end{equation*}
+</div>
+<div class="para" id="intro-imaginary-numbers-8">Or sometimes it is written as:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#intro-imaginary-numbers-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="intro-imaginary-numbers-9">
+\begin{equation*}
+\sqrt{-b} = \sqrt{b}\, i
+\end{equation*}
+</div>
+<div class="para" id="intro-imaginary-numbers-10">
+<em class="emphasis">What were you taught? What do you see in the book? What’s the difference?</em><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#intro-imaginary-numbers-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection: Intro to Imaginary Numbers"><a tabindex="-1" href="#intro-imaginary-numbers" title="Copy heading and permalink for Subsection: Intro to Imaginary Numbers" aria-label="Copy heading and permalink for Subsection: Intro to Imaginary Numbers">🔗</a></div>
+</section>
+<section class="subsection" id="practice-square-roots">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Practice: Simplifying Square Roots of Negative Numbers</span>
+</h3>
+<div class="para" id="practice-square-roots-2">Simplify each expression:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#practice-square-roots-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="activity project-like" id="practice-square-roots-3"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="practice-square-roots-3-1-1">
+<div class="displaymath process-math" id="practice-square-roots-3-1-1-1">
+\begin{equation*}
+\sqrt{-100}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#practice-square-roots-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="practice-square-roots-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="practice-square-roots-3-2-1">
+<span class="process-math">\(\sqrt{-100} = i\sqrt{100} = 10i\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#practice-square-roots-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 14.1"><a tabindex="-1" href="#practice-square-roots-3-2" title="Copy heading and permalink for Solution 14.1" aria-label="Copy heading and permalink for Solution 14.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 14"><a tabindex="-1" href="#practice-square-roots-3" title="Copy heading and permalink for Example 14" aria-label="Copy heading and permalink for Example 14">🔗</a></div>
+</article>
+<article class="activity project-like" id="practice-square-roots-4"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="practice-square-roots-4-1-1">
+<div class="displaymath process-math" id="practice-square-roots-4-1-1-1">
+\begin{equation*}
+\sqrt{-36}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#practice-square-roots-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="practice-square-roots-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="practice-square-roots-4-2-1">
+<span class="process-math">\(\sqrt{-36} = i\sqrt{36} = 6i\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#practice-square-roots-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 15.1"><a tabindex="-1" href="#practice-square-roots-4-2" title="Copy heading and permalink for Solution 15.1" aria-label="Copy heading and permalink for Solution 15.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 15"><a tabindex="-1" href="#practice-square-roots-4" title="Copy heading and permalink for Example 15" aria-label="Copy heading and permalink for Example 15">🔗</a></div>
+</article>
+<article class="activity project-like" id="practice-square-roots-5"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="practice-square-roots-5-1-1">
+<div class="displaymath process-math" id="practice-square-roots-5-1-1-1">
+\begin{equation*}
+\sqrt{-6}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#practice-square-roots-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="practice-square-roots-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="practice-square-roots-5-2-1">
+<span class="process-math">\(\sqrt{-6} = i\sqrt{6}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#practice-square-roots-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 16.1"><a tabindex="-1" href="#practice-square-roots-5-2" title="Copy heading and permalink for Solution 16.1" aria-label="Copy heading and permalink for Solution 16.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 16"><a tabindex="-1" href="#practice-square-roots-5" title="Copy heading and permalink for Example 16" aria-label="Copy heading and permalink for Example 16">🔗</a></div>
+</article>
+<article class="activity project-like" id="practice-square-roots-6"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">17</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="practice-square-roots-6-1-1">
+<div class="displaymath process-math" id="practice-square-roots-6-1-1-1">
+\begin{equation*}
+\sqrt{-20}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#practice-square-roots-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="practice-square-roots-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="practice-square-roots-6-2-1">
+<span class="process-math">\(\sqrt{-20} = i\sqrt{20} = i \cdot 2\sqrt{5} = 2i\sqrt{5}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#practice-square-roots-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 17.1"><a tabindex="-1" href="#practice-square-roots-6-2" title="Copy heading and permalink for Solution 17.1" aria-label="Copy heading and permalink for Solution 17.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 17"><a tabindex="-1" href="#practice-square-roots-6" title="Copy heading and permalink for Example 17" aria-label="Copy heading and permalink for Example 17">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection: Practice: Simplifying Square Roots of Negative Numbers"><a tabindex="-1" href="#practice-square-roots" title="Copy heading and permalink for Subsection: Practice: Simplifying Square Roots of Negative Numbers" aria-label="Copy heading and permalink for Subsection: Practice: Simplifying Square Roots of Negative Numbers">🔗</a></div>
+</section>
+<section class="subsection" id="practice-multiplying-roots">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Practice: Multiplying Square Roots with Negative Radicands</span>
+</h3>
+<div class="para" id="practice-multiplying-roots-2">Simplify each expression:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#practice-multiplying-roots-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="activity project-like" id="practice-multiplying-roots-3"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">18</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="practice-multiplying-roots-3-1-1">
+<div class="displaymath process-math" id="practice-multiplying-roots-3-1-1-1">
+\begin{equation*}
+\sqrt{-16} \cdot \sqrt{-25}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#practice-multiplying-roots-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="practice-multiplying-roots-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="practice-multiplying-roots-3-2-1">
+<span class="process-math">\(\sqrt{-16} = 4i\)</span> and <span class="process-math">\(\sqrt{-25} = 5i\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#practice-multiplying-roots-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="practice-multiplying-roots-3-2-2">
+\begin{equation*}
+4i \cdot 5i = 20i^2 = 20(-1) = -20
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 18.1"><a tabindex="-1" href="#practice-multiplying-roots-3-2" title="Copy heading and permalink for Solution 18.1" aria-label="Copy heading and permalink for Solution 18.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 18"><a tabindex="-1" href="#practice-multiplying-roots-3" title="Copy heading and permalink for Example 18" aria-label="Copy heading and permalink for Example 18">🔗</a></div>
+</article>
+<article class="activity project-like" id="practice-multiplying-roots-4"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="practice-multiplying-roots-4-1-1">
+<div class="displaymath process-math" id="practice-multiplying-roots-4-1-1-1">
+\begin{equation*}
+\sqrt{-40} \cdot \sqrt{-10}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#practice-multiplying-roots-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="practice-multiplying-roots-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="practice-multiplying-roots-4-2-1">
+<span class="process-math">\(\sqrt{-40} = i\sqrt{40}\)</span> and <span class="process-math">\(\sqrt{-10} = i\sqrt{10}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#practice-multiplying-roots-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="practice-multiplying-roots-4-2-2">
+\begin{equation*}
+i\sqrt{40} \cdot i\sqrt{10} = i^2 \sqrt{400} = -1 \cdot 20 = -20
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 19.1"><a tabindex="-1" href="#practice-multiplying-roots-4-2" title="Copy heading and permalink for Solution 19.1" aria-label="Copy heading and permalink for Solution 19.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 19"><a tabindex="-1" href="#practice-multiplying-roots-4" title="Copy heading and permalink for Example 19" aria-label="Copy heading and permalink for Example 19">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection: Practice: Multiplying Square Roots with Negative Radicands"><a tabindex="-1" href="#practice-multiplying-roots" title="Copy heading and permalink for Subsection: Practice: Multiplying Square Roots with Negative Radicands" aria-label="Copy heading and permalink for Subsection: Practice: Multiplying Square Roots with Negative Radicands">🔗</a></div>
+</section>
+<section class="subsection" id="standard-complex-form">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Standard Complex Form</span>
+</h3>
+<div class="para" id="standard-complex-form-2">Given real numbers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> a number written in the form:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#standard-complex-form-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="standard-complex-form-3">
+\begin{equation*}
+a + bi
+\end{equation*}
+</div>
+<div class="para" id="standard-complex-form-4">is called a complex number written in <em class="emphasis">standard complex form</em>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#standard-complex-form-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="standard-complex-form-5">
+<li id="standard-complex-form-5-1">
+<div class="para" id="p-derived-standard-complex-form-5-1">
+<span class="process-math">\(a\)</span> is the <em class="emphasis">real part</em>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#standard-complex-form-5-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="standard-complex-form-5-2">
+<div class="para" id="p-derived-standard-complex-form-5-2">
+<span class="process-math">\(b\)</span> is the <em class="emphasis">imaginary part</em>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#standard-complex-form-5-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para" id="standard-complex-form-6">Write the following in standard complex form:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#standard-complex-form-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="activity project-like" id="standard-complex-form-7"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">20</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="standard-complex-form-7-1-1">
+<div class="displaymath process-math" id="standard-complex-form-7-1-1-1">
+\begin{equation*}
+3 + \sqrt{-16}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#standard-complex-form-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="standard-complex-form-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="standard-complex-form-7-2-1">
+<span class="process-math">\(\sqrt{-16} = 4i\text{,}\)</span> so the expression is <span class="process-math">\(3 + 4i\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#standard-complex-form-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 20.1"><a tabindex="-1" href="#standard-complex-form-7-2" title="Copy heading and permalink for Solution 20.1" aria-label="Copy heading and permalink for Solution 20.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 20"><a tabindex="-1" href="#standard-complex-form-7" title="Copy heading and permalink for Example 20" aria-label="Copy heading and permalink for Example 20">🔗</a></div>
+</article>
+<article class="activity project-like" id="standard-complex-form-8"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">21</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="standard-complex-form-8-1-1">
+<div class="displaymath process-math" id="standard-complex-form-8-1-1-1">
+\begin{equation*}
+5
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#standard-complex-form-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="standard-complex-form-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="standard-complex-form-8-2-1">
+<span class="process-math">\(5 = 5 + 0i\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#standard-complex-form-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 21.1"><a tabindex="-1" href="#standard-complex-form-8-2" title="Copy heading and permalink for Solution 21.1" aria-label="Copy heading and permalink for Solution 21.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 21"><a tabindex="-1" href="#standard-complex-form-8" title="Copy heading and permalink for Example 21" aria-label="Copy heading and permalink for Example 21">🔗</a></div>
+</article>
+<article class="activity project-like" id="standard-complex-form-9"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">22</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="standard-complex-form-9-1-1">
+<div class="displaymath process-math" id="standard-complex-form-9-1-1-1">
+\begin{equation*}
+7i
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#standard-complex-form-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="standard-complex-form-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="standard-complex-form-9-2-1">
+<span class="process-math">\(7i = 0 + 7i\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#standard-complex-form-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 22.1"><a tabindex="-1" href="#standard-complex-form-9-2" title="Copy heading and permalink for Solution 22.1" aria-label="Copy heading and permalink for Solution 22.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 22"><a tabindex="-1" href="#standard-complex-form-9" title="Copy heading and permalink for Example 22" aria-label="Copy heading and permalink for Example 22">🔗</a></div>
+</article>
+<article class="activity project-like" id="standard-complex-form-10"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">23</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="standard-complex-form-10-1-1">
+<div class="displaymath process-math" id="standard-complex-form-10-1-1-1">
+\begin{equation*}
+\frac{6 + \sqrt{-8}}{2}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#standard-complex-form-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="standard-complex-form-10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="standard-complex-form-10-2-1">
+<span class="process-math">\(\sqrt{-8} = i\sqrt{8} = 2i\sqrt{2}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#standard-complex-form-10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="standard-complex-form-10-2-2">
+\begin{equation*}
+\frac{6 + 2i\sqrt{2}}{2} = 3 + i\sqrt{2}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 23.1"><a tabindex="-1" href="#standard-complex-form-10-2" title="Copy heading and permalink for Solution 23.1" aria-label="Copy heading and permalink for Solution 23.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 23"><a tabindex="-1" href="#standard-complex-form-10" title="Copy heading and permalink for Example 23" aria-label="Copy heading and permalink for Example 23">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection: Standard Complex Form"><a tabindex="-1" href="#standard-complex-form" title="Copy heading and permalink for Subsection: Standard Complex Form" aria-label="Copy heading and permalink for Subsection: Standard Complex Form">🔗</a></div>
+</section>
+<section class="subsection" id="powers-of-i">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Powers of <span class="process-math">\(i\)</span></span>
+</h3>
+<div class="para" id="powers-of-i-2">Fill in the pattern:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#powers-of-i-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="powers-of-i-3">
+<span class="process-math">\(i^0 =\)</span> ________ 
+<details id="powers-of-i-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<span class="process-math">\(1\)</span><div class="autopermalink" aria-hidden="true" data-description="Solution 1"><a tabindex="-1" href="#powers-of-i-3-2" title="Copy heading and permalink for Solution 1" aria-label="Copy heading and permalink for Solution 1">🔗</a></div>
+</div></details><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#powers-of-i-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="powers-of-i-4">
+<span class="process-math">\(i^1 =\)</span> ________ 
+<details id="powers-of-i-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<span class="process-math">\(i\)</span><div class="autopermalink" aria-hidden="true" data-description="Solution 1"><a tabindex="-1" href="#powers-of-i-4-2" title="Copy heading and permalink for Solution 1" aria-label="Copy heading and permalink for Solution 1">🔗</a></div>
+</div></details><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#powers-of-i-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="powers-of-i-5">
+<span class="process-math">\(i^2 =\)</span> ________ 
+<details id="powers-of-i-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<span class="process-math">\(-1\)</span><div class="autopermalink" aria-hidden="true" data-description="Solution 1"><a tabindex="-1" href="#powers-of-i-5-2" title="Copy heading and permalink for Solution 1" aria-label="Copy heading and permalink for Solution 1">🔗</a></div>
+</div></details><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#powers-of-i-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="powers-of-i-6">
+<span class="process-math">\(i^3 =\)</span> ________ 
+<details id="powers-of-i-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<span class="process-math">\(-i\)</span><div class="autopermalink" aria-hidden="true" data-description="Solution 1"><a tabindex="-1" href="#powers-of-i-6-2" title="Copy heading and permalink for Solution 1" aria-label="Copy heading and permalink for Solution 1">🔗</a></div>
+</div></details><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#powers-of-i-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="powers-of-i-7">
+<span class="process-math">\(i^4 =\)</span> ________ 
+<details id="powers-of-i-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<span class="process-math">\(1\)</span><div class="autopermalink" aria-hidden="true" data-description="Solution 1"><a tabindex="-1" href="#powers-of-i-7-2" title="Copy heading and permalink for Solution 1" aria-label="Copy heading and permalink for Solution 1">🔗</a></div>
+</div></details><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#powers-of-i-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="powers-of-i-8">
+<span class="process-math">\(i^5 =\)</span> ________ 
+<details id="powers-of-i-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<span class="process-math">\(i\)</span><div class="autopermalink" aria-hidden="true" data-description="Solution 1"><a tabindex="-1" href="#powers-of-i-8-2" title="Copy heading and permalink for Solution 1" aria-label="Copy heading and permalink for Solution 1">🔗</a></div>
+</div></details><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#powers-of-i-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="powers-of-i-9">
+<span class="process-math">\(i^6 =\)</span> ________ 
+<details id="powers-of-i-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<span class="process-math">\(-1\)</span><div class="autopermalink" aria-hidden="true" data-description="Solution 1"><a tabindex="-1" href="#powers-of-i-9-2" title="Copy heading and permalink for Solution 1" aria-label="Copy heading and permalink for Solution 1">🔗</a></div>
+</div></details><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#powers-of-i-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="powers-of-i-10">
+<span class="process-math">\(i^7 =\)</span> ________ 
+<details id="powers-of-i-10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<span class="process-math">\(-i\)</span><div class="autopermalink" aria-hidden="true" data-description="Solution 1"><a tabindex="-1" href="#powers-of-i-10-2" title="Copy heading and permalink for Solution 1" aria-label="Copy heading and permalink for Solution 1">🔗</a></div>
+</div></details><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#powers-of-i-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="powers-of-i-11">
+<em class="emphasis">What pattern do you see?</em><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#powers-of-i-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="activity project-like" id="powers-of-i-12"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">24</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="powers-of-i-12-1-1">What is <span class="process-math">\(i^{23}\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#powers-of-i-12-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="powers-of-i-12-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="powers-of-i-12-2-1">The pattern repeats every 4: <span class="process-math">\(i^4 = 1\text{,}\)</span> <span class="process-math">\(i^8 = 1\text{,}\)</span> etc.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#powers-of-i-12-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="powers-of-i-12-2-2">
+<span class="process-math">\(23 \div 4 = 5\)</span> remainder <span class="process-math">\(3\text{,}\)</span> so <span class="process-math">\(i^{23} = i^3 = -i\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#powers-of-i-12-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 24.1"><a tabindex="-1" href="#powers-of-i-12-2" title="Copy heading and permalink for Solution 24.1" aria-label="Copy heading and permalink for Solution 24.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 24"><a tabindex="-1" href="#powers-of-i-12" title="Copy heading and permalink for Example 24" aria-label="Copy heading and permalink for Example 24">🔗</a></div>
+</article>
+<div class="para" id="powers-of-i-13">
+<em class="emphasis">There are many ways to do this. If you have a different method, go for it!</em><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#powers-of-i-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection: Powers of i"><a tabindex="-1" href="#powers-of-i" title="Copy heading and permalink for Subsection: Powers of i" aria-label="Copy heading and permalink for Subsection: Powers of i">🔗</a></div>
+</section>
+<section class="subsection" id="adding-subtracting-complex">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Adding and Subtracting Complex Numbers</span>
+</h3>
+<div class="para" id="adding-subtracting-complex-2">To add or subtract complex numbers, add or subtract their real parts, and add or subtract their imaginary parts.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#adding-subtracting-complex-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="adding-subtracting-complex-3">In the book, it shows:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#adding-subtracting-complex-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="adding-subtracting-complex-4">
+\begin{equation*}
+(a + bi) + (c + di) = (a + c) + (b + d)i
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="adding-subtracting-complex-5">
+\begin{equation*}
+(a + bi) - (c + di) = (a - c) + (b - d)i
+\end{equation*}
+</div>
+<div class="para" id="adding-subtracting-complex-6">
+<em class="emphasis">How does this compare to what you know about combining like terms of polynomials? How is it the same? How is it different?</em><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#adding-subtracting-complex-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="adding-subtracting-complex-7">Perform the operations:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#adding-subtracting-complex-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="activity project-like" id="adding-subtracting-complex-8"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">25</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="adding-subtracting-complex-8-1-1">
+<div class="displaymath process-math" id="adding-subtracting-complex-8-1-1-1">
+\begin{equation*}
+(8 + 3i) + (5 - 2i)
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#adding-subtracting-complex-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="adding-subtracting-complex-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="displaymath process-math" id="adding-subtracting-complex-8-2-1">
+\begin{equation*}
+(8 + 5) + (3 - 2)i = 13 + i
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 25.1"><a tabindex="-1" href="#adding-subtracting-complex-8-2" title="Copy heading and permalink for Solution 25.1" aria-label="Copy heading and permalink for Solution 25.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 25"><a tabindex="-1" href="#adding-subtracting-complex-8" title="Copy heading and permalink for Example 25" aria-label="Copy heading and permalink for Example 25">🔗</a></div>
+</article>
+<article class="activity project-like" id="adding-subtracting-complex-9"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">26</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="adding-subtracting-complex-9-1-1">
+<div class="displaymath process-math" id="adding-subtracting-complex-9-1-1-1">
+\begin{equation*}
+(8 + 3i) - (5 - 2i)
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#adding-subtracting-complex-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="adding-subtracting-complex-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="displaymath process-math" id="adding-subtracting-complex-9-2-1">
+\begin{equation*}
+(8 - 5) + (3 - (-2))i = 3 + 5i
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 26.1"><a tabindex="-1" href="#adding-subtracting-complex-9-2" title="Copy heading and permalink for Solution 26.1" aria-label="Copy heading and permalink for Solution 26.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 26"><a tabindex="-1" href="#adding-subtracting-complex-9" title="Copy heading and permalink for Example 26" aria-label="Copy heading and permalink for Example 26">🔗</a></div>
+</article>
+<article class="activity project-like" id="adding-subtracting-complex-10"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">27</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="adding-subtracting-complex-10-1-1">
+<div class="displaymath process-math" id="adding-subtracting-complex-10-1-1-1">
+\begin{equation*}
+(5 - 3i) + 7i
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#adding-subtracting-complex-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="adding-subtracting-complex-10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="displaymath process-math" id="adding-subtracting-complex-10-2-1">
+\begin{equation*}
+5 + (-3 + 7)i = 5 + 4i
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 27.1"><a tabindex="-1" href="#adding-subtracting-complex-10-2" title="Copy heading and permalink for Solution 27.1" aria-label="Copy heading and permalink for Solution 27.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 27"><a tabindex="-1" href="#adding-subtracting-complex-10" title="Copy heading and permalink for Example 27" aria-label="Copy heading and permalink for Example 27">🔗</a></div>
+</article>
+<article class="activity project-like" id="adding-subtracting-complex-11"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">28</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="adding-subtracting-complex-11-1-1">
+<div class="displaymath process-math" id="adding-subtracting-complex-11-1-1-1">
+\begin{equation*}
+(-5 - 2i) - (5 - 2i)
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#adding-subtracting-complex-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="adding-subtracting-complex-11-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="displaymath process-math" id="adding-subtracting-complex-11-2-1">
+\begin{equation*}
+(-5 - 5) + (-2 - (-2))i = -10 + 0i = -10
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 28.1"><a tabindex="-1" href="#adding-subtracting-complex-11-2" title="Copy heading and permalink for Solution 28.1" aria-label="Copy heading and permalink for Solution 28.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 28"><a tabindex="-1" href="#adding-subtracting-complex-11" title="Copy heading and permalink for Example 28" aria-label="Copy heading and permalink for Example 28">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection: Adding and Subtracting Complex Numbers"><a tabindex="-1" href="#adding-subtracting-complex" title="Copy heading and permalink for Subsection: Adding and Subtracting Complex Numbers" aria-label="Copy heading and permalink for Subsection: Adding and Subtracting Complex Numbers">🔗</a></div>
+</section>
+<section class="subsection" id="multiplying-complex">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Multiplying Complex Numbers</span>
+</h3>
+<div class="para" id="multiplying-complex-2">When we distribute a binomial times a binomial, we multiply everything in the first by everything in the second. We do the same thing with complex numbers.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#multiplying-complex-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="activity project-like" id="multiplying-complex-3"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">29</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="multiplying-complex-3-1-1">
+<div class="displaymath process-math" id="multiplying-complex-3-1-1-1">
+\begin{equation*}
+-4i(3 - 2i)
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#multiplying-complex-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="multiplying-complex-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="displaymath process-math" id="multiplying-complex-3-2-1">
+\begin{equation*}
+-4i(3) + (-4i)(-2i) = -12i + 8i^2 = -12i + 8(-1) = -8 - 12i
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 29.1"><a tabindex="-1" href="#multiplying-complex-3-2" title="Copy heading and permalink for Solution 29.1" aria-label="Copy heading and permalink for Solution 29.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 29"><a tabindex="-1" href="#multiplying-complex-3" title="Copy heading and permalink for Example 29" aria-label="Copy heading and permalink for Example 29">🔗</a></div>
+</article>
+<article class="activity project-like" id="multiplying-complex-4"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">30</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="multiplying-complex-4-1-1">
+<div class="displaymath process-math" id="multiplying-complex-4-1-1-1">
+\begin{equation*}
+(4 - 5i)(3 + 2i)
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#multiplying-complex-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="multiplying-complex-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="displaymath process-math" id="multiplying-complex-4-2-1">
+\begin{equation*}
+4(3) + 4(2i) - 5i(3) - 5i(2i)
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="multiplying-complex-4-2-2">
+\begin{equation*}
+12 + 8i - 15i - 10i^2
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="multiplying-complex-4-2-3">
+\begin{equation*}
+12 - 7i - 10(-1) = 12 - 7i + 10 = 22 - 7i
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 30.1"><a tabindex="-1" href="#multiplying-complex-4-2" title="Copy heading and permalink for Solution 30.1" aria-label="Copy heading and permalink for Solution 30.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 30"><a tabindex="-1" href="#multiplying-complex-4" title="Copy heading and permalink for Example 30" aria-label="Copy heading and permalink for Example 30">🔗</a></div>
+</article>
+<article class="activity project-like" id="multiplying-complex-5"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">31</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="multiplying-complex-5-1-1">
+<div class="displaymath process-math" id="multiplying-complex-5-1-1-1">
+\begin{equation*}
+(6 - 7i)^2
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#multiplying-complex-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="multiplying-complex-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="displaymath process-math" id="multiplying-complex-5-2-1">
+\begin{equation*}
+(6 - 7i)(6 - 7i)
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="multiplying-complex-5-2-2">
+\begin{equation*}
+36 - 42i - 42i + 49i^2
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="multiplying-complex-5-2-3">
+\begin{equation*}
+36 - 84i + 49(-1) = 36 - 84i - 49 = -13 - 84i
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 31.1"><a tabindex="-1" href="#multiplying-complex-5-2" title="Copy heading and permalink for Solution 31.1" aria-label="Copy heading and permalink for Solution 31.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 31"><a tabindex="-1" href="#multiplying-complex-5" title="Copy heading and permalink for Example 31" aria-label="Copy heading and permalink for Example 31">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection: Multiplying Complex Numbers"><a tabindex="-1" href="#multiplying-complex" title="Copy heading and permalink for Subsection: Multiplying Complex Numbers" aria-label="Copy heading and permalink for Subsection: Multiplying Complex Numbers">🔗</a></div>
+</section>
+<section class="subsection" id="complex-conjugates">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Multiplying Complex Conjugates</span>
+</h3>
+<div class="para" id="complex-conjugates-2">Recall that conjugates can be written as <span class="process-math">\((a + b)\)</span> and <span class="process-math">\((a - b)\)</span> for some numbers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#complex-conjugates-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="complex-conjugates-3">
+<em class="emphasis">Recall the difference of squares formula:</em><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#complex-conjugates-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="complex-conjugates-4">
+\begin{equation*}
+(a + b)(a - b) = a^2 - b^2
+\end{equation*}
+</div>
+<div class="para" id="complex-conjugates-5">For complex numbers, the same pattern applies:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#complex-conjugates-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="complex-conjugates-6">
+\begin{equation*}
+(a + bi)(a - bi) = a^2 + b^2
+\end{equation*}
+</div>
+<div class="para" id="complex-conjugates-7">(Since <span class="process-math">\(i^2 = -1\text{,}\)</span> the product of complex conjugates is always a <em class="emphasis">real number</em>.)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#complex-conjugates-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="activity project-like" id="complex-conjugates-8"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">32</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="complex-conjugates-8-1-1">
+<div class="displaymath process-math" id="complex-conjugates-8-1-1-1">
+\begin{equation*}
+(2 - 5i)(2 + 5i)
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#complex-conjugates-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="complex-conjugates-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="displaymath process-math" id="complex-conjugates-8-2-1">
+\begin{equation*}
+4 + 10i - 10i - 25i^2
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="complex-conjugates-8-2-2">
+\begin{equation*}
+4 - 25(-1) = 4 + 25 = 29
+\end{equation*}
+</div>
+<div class="para" id="complex-conjugates-8-2-3">Notice that the product of complex conjugates is always a <em class="emphasis">real number</em>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#complex-conjugates-8-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 32.1"><a tabindex="-1" href="#complex-conjugates-8-2" title="Copy heading and permalink for Solution 32.1" aria-label="Copy heading and permalink for Solution 32.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 32"><a tabindex="-1" href="#complex-conjugates-8" title="Copy heading and permalink for Example 32" aria-label="Copy heading and permalink for Example 32">🔗</a></div>
+</article>
+<article class="activity project-like" id="complex-conjugates-9"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">33</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="complex-conjugates-9-1-1">
+<div class="displaymath process-math" id="complex-conjugates-9-1-1-1">
+\begin{equation*}
+(4 - 3i)(4 + 3i)
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#complex-conjugates-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="complex-conjugates-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="displaymath process-math" id="complex-conjugates-9-2-1">
+\begin{equation*}
+16 + 12i - 12i - 9i^2 = 16 - 9(-1) = 16 + 9 = 25
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 33.1"><a tabindex="-1" href="#complex-conjugates-9-2" title="Copy heading and permalink for Solution 33.1" aria-label="Copy heading and permalink for Solution 33.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 33"><a tabindex="-1" href="#complex-conjugates-9" title="Copy heading and permalink for Example 33" aria-label="Copy heading and permalink for Example 33">🔗</a></div>
+</article>
+<article class="activity project-like" id="complex-conjugates-10"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">34</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="complex-conjugates-10-1-1">
+<div class="displaymath process-math" id="complex-conjugates-10-1-1-1">
+\begin{equation*}
+4i \cdot (-4i)
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#complex-conjugates-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="complex-conjugates-10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="displaymath process-math" id="complex-conjugates-10-2-1">
+\begin{equation*}
+-16i^2 = -16(-1) = 16
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 34.1"><a tabindex="-1" href="#complex-conjugates-10-2" title="Copy heading and permalink for Solution 34.1" aria-label="Copy heading and permalink for Solution 34.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 34"><a tabindex="-1" href="#complex-conjugates-10" title="Copy heading and permalink for Example 34" aria-label="Copy heading and permalink for Example 34">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection: Multiplying Complex Conjugates"><a tabindex="-1" href="#complex-conjugates" title="Copy heading and permalink for Subsection: Multiplying Complex Conjugates" aria-label="Copy heading and permalink for Subsection: Multiplying Complex Conjugates">🔗</a></div>
+</section>
+<section class="subsection" id="dividing-complex">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Dividing Complex Numbers</span>
+</h3>
+<div class="para" id="dividing-complex-2">To divide, we need to create an equivalent fraction with a <em class="emphasis">real</em> denominator. From the conjugates section above, we saw that multiplying conjugates gives us a <em class="emphasis">real</em> result.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#dividing-complex-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="dividing-complex-3">So, create an equivalent fraction by multiplying by 1, written as the conjugate of the denominator over the conjugate of the denominator.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#dividing-complex-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="activity project-like" id="dividing-complex-4"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">35</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="dividing-complex-4-1-1">
+<div class="displaymath process-math" id="dividing-complex-4-1-1-1">
+\begin{equation*}
+\frac{-2 + 7i}{2 + 6i}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#dividing-complex-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="dividing-complex-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="dividing-complex-4-2-1">Multiply numerator and denominator by the conjugate of the denominator:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#dividing-complex-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="dividing-complex-4-2-2">
+\begin{equation*}
+\frac{-2 + 7i}{2 + 6i} \cdot \frac{2 - 6i}{2 - 6i}
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="dividing-complex-4-2-3">
+\begin{equation*}
+\frac{(-2 + 7i)(2 - 6i)}{(2 + 6i)(2 - 6i)}
+\end{equation*}
+</div>
+<div class="para" id="dividing-complex-4-2-4">Multiply the numerator:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#dividing-complex-4-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="dividing-complex-4-2-5">
+\begin{equation*}
+(-2)(2) + (-2)(-6i) + (7i)(2) + (7i)(-6i)
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="dividing-complex-4-2-6">
+\begin{equation*}
+-4 + 12i + 14i - 42i^2
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="dividing-complex-4-2-7">
+\begin{equation*}
+-4 + 26i - 42(-1) = -4 + 26i + 42 = 38 + 26i
+\end{equation*}
+</div>
+<div class="para" id="dividing-complex-4-2-8">Multiply the denominator:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#dividing-complex-4-2-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="dividing-complex-4-2-9">
+\begin{equation*}
+2^2 + 6^2 = 4 + 36 = 40
+\end{equation*}
+</div>
+<div class="para" id="dividing-complex-4-2-10">Therefore:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#dividing-complex-4-2-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="dividing-complex-4-2-11">
+\begin{equation*}
+\frac{38 + 26i}{40} = \frac{38}{40} + \frac{26}{40}i = \frac{19}{20} + \frac{13}{20}i
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 35.1"><a tabindex="-1" href="#dividing-complex-4-2" title="Copy heading and permalink for Solution 35.1" aria-label="Copy heading and permalink for Solution 35.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 35"><a tabindex="-1" href="#dividing-complex-4" title="Copy heading and permalink for Example 35" aria-label="Copy heading and permalink for Example 35">🔗</a></div>
+</article>
+<article class="activity project-like" id="dividing-complex-5"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">36</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="dividing-complex-5-1-1">
+<div class="displaymath process-math" id="dividing-complex-5-1-1-1">
+\begin{equation*}
+\frac{4 - 3i}{4i}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#dividing-complex-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="dividing-complex-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="dividing-complex-5-2-1">Multiply numerator and denominator by the conjugate of <span class="process-math">\(4i\)</span> (which is <span class="process-math">\(-4i\)</span>):<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#dividing-complex-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="dividing-complex-5-2-2">
+\begin{equation*}
+\frac{4 - 3i}{4i} \cdot \frac{-4i}{-4i}
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="dividing-complex-5-2-3">
+\begin{equation*}
+\frac{(4 - 3i)(-4i)}{-16i^2}
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="dividing-complex-5-2-4">
+\begin{equation*}
+\frac{-16i + 12i^2}{16}
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="dividing-complex-5-2-5">
+\begin{equation*}
+\frac{-12 - 16i}{16} = -\frac{3}{4} - i
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 36.1"><a tabindex="-1" href="#dividing-complex-5-2" title="Copy heading and permalink for Solution 36.1" aria-label="Copy heading and permalink for Solution 36.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 36"><a tabindex="-1" href="#dividing-complex-5" title="Copy heading and permalink for Example 36" aria-label="Copy heading and permalink for Example 36">🔗</a></div>
+</article>
+<article class="activity project-like" id="dividing-complex-6"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">37</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="dividing-complex-6-1-1">
+<div class="displaymath process-math" id="dividing-complex-6-1-1-1">
+\begin{equation*}
+\frac{4 - 3i}{5 + 2i}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#dividing-complex-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="dividing-complex-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="dividing-complex-6-2-1">Multiply numerator and denominator by the conjugate of <span class="process-math">\(5 + 2i\)</span> (which is <span class="process-math">\(5 - 2i\)</span>):<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#dividing-complex-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="dividing-complex-6-2-2">
+\begin{equation*}
+\frac{4 - 3i}{5 + 2i} \cdot \frac{5 - 2i}{5 - 2i}
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="dividing-complex-6-2-3">
+\begin{equation*}
+\frac{(4 - 3i)(5 - 2i)}{25 + 4}
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="dividing-complex-6-2-4">
+\begin{equation*}
+\frac{20 - 8i - 15i + 6i^2}{29}
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="dividing-complex-6-2-5">
+\begin{equation*}
+\frac{20 - 23i - 6}{29}
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="dividing-complex-6-2-6">
+\begin{equation*}
+\frac{14 - 23i}{29} = \frac{14}{29} - \frac{23}{29}i
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 37.1"><a tabindex="-1" href="#dividing-complex-6-2" title="Copy heading and permalink for Solution 37.1" aria-label="Copy heading and permalink for Solution 37.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 37"><a tabindex="-1" href="#dividing-complex-6" title="Copy heading and permalink for Example 37" aria-label="Copy heading and permalink for Example 37">🔗</a></div>
+</article>
+<div class="para" id="dividing-complex-7">Watch the video below for Multiplying Complex Numbers:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#dividing-complex-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="interactive-iframe-container"><iframe src="https://echo360.org/media/21665c94-fd3f-4ed5-8f94-a20c0caf5277/public" id="dividing-complex-8" style="width:600px; height:600px; display: block; "></iframe></div>
+<div class="interactive-iframe-container__opener"><a href="dividing-complex-8.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection: Dividing Complex Numbers"><a tabindex="-1" href="#dividing-complex" title="Copy heading and permalink for Subsection: Dividing Complex Numbers" aria-label="Copy heading and permalink for Subsection: Dividing Complex Numbers">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Section: Section 1.3 Complex Numbers"><a tabindex="-1" href="#section-1-3" title="Copy heading and permalink for Section: Section 1.3 Complex Numbers" aria-label="Copy heading and permalink for Section: Section 1.3 Complex Numbers">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="section-1-2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="section-1-4.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
