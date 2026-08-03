@@ -65,11 +65,11 @@
          PART 3: EXAMPLE PROBLEMS
          ======================================================== -->
 
-    <!-- Example 1: Triangle Angles -->
-    <subsection xml:id="example-triangle-angles">
-    <title>Example: Triangle Angles</title>
+    <!-- Activity 1: Triangle Angles -->
+    <subsection xml:id="activity-triangle-angles">
+    <title>Triangle Angles</title>
 
-    <example>
+    <activity>
         <statement>
             <p>
                 The sum of the measures of the angles in a triangle is <m>180^\circ</m>. What is the value of <m>x</m> in the given triangle?
@@ -127,14 +127,14 @@
             <p><em>Step 6: Check</em> – <m>40 + 2(25) + 90 = 40 + 50 + 90 = 180^\circ</m> ✅</p>
             <p>Therefore, the value of <m>x</m> is <m>25</m>.</p>
         </solution>
-    </example>
+    </activity>
 </subsection>
 
-    <!-- Example 2: Farmer John -->
-    <subsection xml:id="example-farmer-john">
-        <title>Example: Farmer John</title>
+    <!-- Activity 2: Farmer John -->
+    <subsection xml:id="activity-farmer-john">
+        <title>Farmer John</title>
 
-        <example>
+        <activity>
             <statement>
                 <p>
                     Farmer John has pigs and chickens. When he looks out into the barnyard he can count 12 animals and together those animals have 30 legs. How many pigs and how many chickens does he have? Solve without an equation.
@@ -159,14 +159,14 @@
                 <p><em>Step 6: Check</em> – <m>3 + 9 = 12</m> animals ✅. <m>3(4) + 9(2) = 12 + 18 = 30</m> legs ✅.</p>
                 <p>Therefore, Farmer John has <m>3</m> pigs and <m>9</m> chickens.</p>
             </solution>
-        </example>
+        </activity>
     </subsection>
 
-    <!-- Example 3: Alicia's Trail Mix -->
-    <subsection xml:id="example-alicia-trail-mix">
-        <title>Example: Alicia's Trail Mix</title>
+    <!-- Activity 3: Alicia's Trail Mix -->
+    <subsection xml:id="activity-alicia-trail-mix">
+        <title>Alicia's Trail Mix</title>
 
-        <example>
+        <activity>
             <statement>
                 <p>
                     Putting together snacks for a party, Alicia combines a low fat trail mix with a very tasty higher fat candy mix. How much of the <m>10\%</m> fat trail mix should she mix with 4 ounces of the <m>40\%</m> fat candy mix to get a <m>12\%</m> fat party mix?
@@ -199,14 +199,14 @@
                 <p><em>Step 6: Check</em> – <m>0.1(56) + 1.6 = 5.6 + 1.6 = 7.2</m>. <m>0.12(56 + 4) = 0.12(60) = 7.2</m> ✅</p>
                 <p>Therefore, Alicia needs <m>56</m> ounces of the <m>10\%</m> fat trail mix.</p>
             </solution>
-        </example>
+        </activity>
     </subsection>
 
-    <!-- Example 4: Malcolm and Janay -->
-    <subsection xml:id="example-malcolm-janay">
-        <title>Example: Malcolm and Janay</title>
+    <!-- Activity 4: Malcolm and Janay -->
+    <subsection xml:id="activity-malcolm-janay">
+        <title>Malcolm and Janay</title>
 
-        <example>
+        <activity>
             <statement>
                 <p>
                     Malcolm and Janay have been offered <m>\$100</m> if they can clean out a garage in under 2 hours. Malcolm can clean the garage in 3 hours and Janay can clean the garage in 5 hours. Working together, can they clean the garage in time to make <m>\$100</m>?
@@ -231,14 +231,14 @@
                 <p><em>Step 6: Check</em> – <m>\frac{16}{15} \approx 1.067</m> garages, which is more than 1. They will finish in under 2 hours.</p>
                 <p>Therefore, Malcolm and Janay will earn the <m>\$100</m>.</p>
             </solution>
-        </example>
+        </activity>
     </subsection>
 
-    <!-- Example 5: Two Planes -->
-    <subsection xml:id="example-two-planes">
-        <title>Example: Two Planes</title>
+    <!-- Activity 5: Two Planes -->
+    <subsection xml:id="activity-two-planes">
+        <title>Two Planes</title>
 
-        <example>
+        <activity>
             <statement>
                 <p>
                     Two passengers leave the airport at Kansas City, Missouri. One flies to Los Angeles, California in 3.4 hours and the other flies the opposite direction to New York City in 2.4 hours. With prevailing westerly winds, the speed of the plane to NYC is 60 mph faster than the plane to LA. If the total distance travelled by both planes is 2464, what is the average speed of each plane?
@@ -260,14 +260,14 @@
                 <p><em>Step 6: Check</em> – <m>3.4(400) + 2.4(460) = 1360 + 1104 = 2464</m> ✅</p>
                 <p>Therefore, the plane to LA travels at <m>400</m> mph, and the plane to NYC travels at <m>460</m> mph.</p>
             </solution>
-        </example>
+        </activity>
     </subsection>
 
-    <!-- Example 6: Tasha's Job Offers -->
-    <subsection xml:id="example-tasha-jobs">
-        <title>Example: Tasha's Job Offers</title>
+    <!-- Activity 6: Tasha's Job Offers -->
+    <subsection xml:id="activity-tasha-jobs">
+        <title>Tasha's Job Offers</title>
 
-        <example>
+        <activity>
             <statement>
                 <p>
                     Tasha considers two sales jobs for two pharmaceutical companies. One pays a base salary of <m>\$25,000</m> with a <m>16\%</m> commission on sales. The other pays <m>\$30,000</m> with a <m>15\%</m> commission on sales.
@@ -297,14 +297,14 @@
                 <p>b) The two jobs result in equal salaries at <m>\$500,000</m> in sales.</p>
                 <p>c) If Tasha expects to sell <m>\$700,000</m>, Job 1 is the better option (<m>\$137,000</m> vs <m>\$135,000</m>).</p>
             </solution>
-        </example>
+        </activity>
     </subsection>
 
-    <!-- Example 7: School Tickets -->
-    <subsection xml:id="example-school-tickets">
-        <title>Example: School Tickets</title>
+    <!-- Activity 7: School Tickets -->
+    <subsection xml:id="activity-school-tickets">
+        <title>School Tickets</title>
 
-        <example>
+        <activity>
             <statement>
                 <p>
                     A total of 575 tickets were sold for the school play. They were either adult tickets or student tickets. There were 75 more student tickets sold than adult tickets. How many adult tickets were sold?
@@ -327,14 +327,14 @@
                 <p><em>Step 6: Check</em> – <m>250 + (250 + 75) = 250 + 325 = 575</m> ✅</p>
                 <p>Therefore, there were <m>250</m> adult tickets sold.</p>
             </solution>
-        </example>
+        </activity>
     </subsection>
 
-    <!-- Example 8: Prepaid Phone Card -->
-    <subsection xml:id="example-phone-card">
-        <title>Example: Prepaid Phone Card</title>
+    <!-- Activity 8: Prepaid Phone Card -->
+    <subsection xml:id="activity-phone-card">
+        <title>Prepaid Phone Card</title>
 
-        <example>
+        <activity>
             <statement>
                 <p>
                     Lisa purchased a prepaid phone card for $15. Long distance calls cost 16 cents a minute using this card. Lisa used her card only once to make a long distance call. If the remaining credit on her card is $9.72, how many minutes did her call last?
@@ -353,14 +353,14 @@
                 <p><em>Step 6: Check</em> – <m>15 - 0.16(33) = 15 - 5.28 = 9.72</m> ✅</p>
                 <p>Therefore, Lisa's call lasted <m>33</m> minutes.</p>
             </solution>
-        </example>
+        </activity>
     </subsection>
 
-    <!-- Example 9: Movie Theatre Tickets -->
-    <subsection xml:id="example-movie-tickets">
-        <title>Example: Movie Theatre Tickets</title>
+    <!-- Activity 9: Movie Theatre Tickets -->
+    <subsection xml:id="activity-movie-tickets">
+        <title>Movie Theatre Tickets</title>
 
-        <example>
+        <activity>
             <statement>
                 <p>
                     At the movie theatre, child admission is $5.10 and adult admission is $9.50. On Saturday, 170 tickets were sold for a total sales of $1210.20. How many adult tickets were sold that day?
@@ -384,7 +384,7 @@
                 <p><em>Step 6: Check</em> – <m>78 + 92 = 170</m> tickets ✅. <m>9.50(78) + 5.10(92) = 741 + 469.20 = 1210.20</m> ✅</p>
                 <p>Therefore, there were <m>78</m> adult tickets sold that day.</p>
             </solution>
-        </example>
+        </activity>
     </subsection>
 
 </section>

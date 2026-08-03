@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="section-1-4">
+    <title>Section 1.4 Quadratic Equations</title>
+
+    <!-- ========================================================
+         INTRODUCTION
+         ======================================================== -->
+
+    <subsection xml:id="intro-quadratic-equations">
+        <title>Quadratic Equations</title>
+
+        <p>
+            You should know how to solve quadratic equations by:
+        </p>
+        <ul>
+            <li><em>Zero Product Property</em> (aka factoring)</li>
+            <li><em>Square Root Property</em> (apply square root to both sides when appropriate)</li>
+            <li><em>Completing the Square</em> (this WILL be on the test)</li>
+            <li><em>The Quadratic Formula</em> (a student favorite and most often done wrong)</li>
+        </ul>
+
+        <!-- Video 1: Intro to Quadratic Equations -->
+        <p><url href="https://youtu.be/HpWQh3MSpKk">Intro to Quadratic Equations Video</url></p>
+    </subsection>
+
+    <!-- ========================================================
+         THE ZERO PRODUCT PROPERTY
+         ======================================================== -->
+
+    <subsection xml:id="zero-product-property">
+        <title>The Zero Product Property</title>
+
+        <p>
+            If <m>mn = 0</m>, then <m>m = 0</m> or <m>n = 0</m>.
+        </p>
+        <p>
+            That is, if the product of two factors is zero, then at least one factor is zero.
+        </p>
+        <p>
+            The big idea is: if we find a value that makes one factor equal to zero, the value of the other factor doesn't matter.
+        </p>
+
+        <activity>
+            <statement>
+                <p>Solve: <me>2x = 0</me></p>
+            </statement>
+            <solution>
+                <me>x = 0</me>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p>Solve: <me>2(x - 1) = 0</me></p>
+            </statement>
+            <solution>
+                <me>x - 1 = 0</me>
+                <me>x = 1</me>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p>Solve: <me>x(x - 1) = 0</me></p>
+            </statement>
+            <solution>
+                <me>x = 0 \quad \text{or} \quad x - 1 = 0</me>
+                <me>x = 0 \quad \text{or} \quad x = 1</me>
+            </solution>
+        </activity>
+
+        <p>
+            Notice that we find values for <m>x</m> where the factor is equal to zero. Zero is like "magic", since anything times zero is ZERO.
+        </p>
+    </subsection>
+
+    <!-- ========================================================
+         PRACTICE: FACTORING
+         ======================================================== -->
+
+    <subsection xml:id="practice-factoring">
+        <title>Practice: Factoring</title>
+
+        <p>Solve each equation by factoring:</p>
+
+        <!-- Video 2: Factoring Trinomials Trick -->
+        <p><em>Factoring Trinomials Trick:</em> <url href="https://youtu.be/q5Ww6W4VlyI">Trick Video</url></p>
+
+        <activity>
+            <statement>
+                <p><me>x(2x + 1) = 15</me></p>
+            </statement>
+            <solution>
+                <p>First, rewrite in standard form:</p>
+                <me>2x^2 + x - 15 = 0</me>
+                <me>(2x - 5)(x + 3) = 0</me>
+                <me>2x - 5 = 0 \quad \text{or} \quad x + 3 = 0</me>
+                <me>x = \frac{5}{2} \quad \text{or} \quad x = -3</me>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p><me>24x^2 = 8x</me></p>
+            </statement>
+            <solution>
+                <me>24x^2 - 8x = 0</me>
+                <me>8x(3x - 1) = 0</me>
+                <me>8x = 0 \quad \text{or} \quad 3x - 1 = 0</me>
+                <me>x = 0 \quad \text{or} \quad x = \frac{1}{3}</me>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p>Solve using the trick from the video above: <me>6x^2 + 23x - 4 = 0</me></p>
+            </statement>
+            <solution>
+                <me>(6x - 1)(x + 4) = 0</me>
+                <me>6x - 1 = 0 \quad \text{or} \quad x + 4 = 0</me>
+                <me>x = \frac{1}{6} \quad \text{or} \quad x = -4</me>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         SQUARE ROOT PROPERTY
+         ======================================================== -->
+
+    <subsection xml:id="square-root-property">
+        <title>Square Root Property</title>
+
+        <!-- Video 3: Square Root Property -->
+        <p><url href="https://youtu.be/UYAHXNBSVbY">Square Root Property Video</url></p>
+
+        <p>Solve using the square root property:</p>
+
+        <activity>
+            <statement>
+                <p><me>3x^2 = 12</me></p>
+            </statement>
+            <solution>
+                <me>x^2 = 4</me>
+                <me>x = \pm 2</me>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p><me>x^2 + 25 = 0</me></p>
+            </statement>
+            <solution>
+                <me>x^2 = -25</me>
+                <me>x = \pm \sqrt{-25} = \pm 5i</me>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p><me>(x - 5)^2 = 7</me></p>
+            </statement>
+            <solution>
+                <me>x - 5 = \pm \sqrt{7}</me>
+                <me>x = 5 \pm \sqrt{7}</me>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         COMPLETING THE SQUARE
+         ======================================================== -->
+
+    <subsection xml:id="completing-the-square">
+        <title>Completing the Square</title>
+
+        <p>
+            To solve <m>ax^2 + bx + c = 0</m> by completing the square, you want to get the equation in the form:
+        </p>
+        <me>(\text{something})^2 = \text{constant}</me>
+
+        <algorithm number="no">
+            <p><em>Steps for Completing the Square:</em></p>
+            <ol>
+                <li><em>Divide</em> both sides by <m>a</m> to make the leading coefficient 1.</li>
+                <li><em>Isolate</em> the variable terms on one side of the equation.</li>
+                <li><em>Complete the square.</em> Add the square of one-half the linear term to both sides. That is, add <m>\left(\frac{b}{2}\right)^2</m> to both sides, then factor.</li>
+                <li><em>Apply</em> the square root property and solve for <m>x</m>.</li>
+            </ol>
+        </algorithm>
+
+        <!-- Video 4: Completing the Square -->
+        <p><url href="https://youtu.be/KouDAzYl_bc">Completing the Square Video</url></p>
+
+        <!-- Video 5: Example Video -->
+        <p><url href="https://youtu.be/WrH1Z-SuhhQ">Completing the Square Example Video</url></p>
+
+        <activity>
+            <statement>
+                <p><me>x^2 - 18x + 5 = 0</me></p>
+            </statement>
+            <solution>
+                <p>Step 1: The leading coefficient is already 1.</p>
+                <p>Step 2: Isolate the variable terms:</p>
+                <me>x^2 - 18x = -5</me>
+                <p>Step 3: Complete the square. <m>\left(\frac{-18}{2}\right)^2 = (-9)^2 = 81</m></p>
+                <me>x^2 - 18x + 81 = -5 + 81</me>
+                <me>(x - 9)^2 = 76</me>
+                <p>Step 4: Apply the square root property:</p>
+                <me>x - 9 = \pm \sqrt{76} = \pm 2\sqrt{19}</me>
+                <me>x = 9 \pm 2\sqrt{19}</me>
+            </solution>
+        </activity>
+
+        <!-- Video 6: Example with fractions video -->
+        <p><url href="https://youtu.be/K61haYSxSNE">Example with Fractions Video</url></p>
+    </subsection>
+
+    <!-- ========================================================
+         THE QUADRATIC FORMULA
+         ======================================================== -->
+
+    <subsection xml:id="quadratic-formula">
+        <title>The Quadratic Formula</title>
+
+        <p>
+            For <m>ax^2 + bx + c = 0</m>, the solutions are:
+        </p>
+        <me>x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}</me>
+
+        <!-- Video 7: Quadratic Formula video -->
+        <p><url href="https://youtu.be/yNYejdkGflw">The Quadratic Formula Video</url></p>
+
+        <activity>
+            <statement>
+                <p>Solve using the quadratic formula:</p>
+                <me>2x(x - 3) = -7</me>
+                <p><em>(Rewrite as <m>ax^2 + bx + c = 0</m>. What are the values for <m>a, b</m> and <m>c</m>?)</em></p>
+            </statement>
+            <solution>
+                <p>First, rewrite as <m>ax^2 + bx + c = 0</m>:</p>
+                <me>2x^2 - 6x + 7 = 0</me>
+                <p>
+                    So <m>a = 2</m>, <m>b = -6</m>, <m>c = 7</m>.
+                </p>
+                <me>x = \frac{-(-6) \pm \sqrt{(-6)^2 - 4(2)(7)}}{2(2)}</me>
+                <me>x = \frac{6 \pm \sqrt{36 - 56}}{4}</me>
+                <me>x = \frac{6 \pm \sqrt{-20}}{4} = \frac{6 \pm 2i\sqrt{5}}{4}</me>
+                <me>x = \frac{3 \pm i\sqrt{5}}{2}</me>
+            </solution>
+        </activity>
+
+        <!-- Video 8: Solving 2x(x-3)=-7 -->
+        <p><url href="https://youtu.be/D6NYI41jnes">Quadratic Formula Example Video</url></p>
+    </subsection>
+
+    <!-- ========================================================
+         THE DISCRIMINANT
+         ======================================================== -->
+
+    <subsection xml:id="discriminant">
+        <title>The Discriminant</title>
+
+        <p>
+            The discriminant is the expression under the radical in the quadratic formula:
+        </p>
+        <me>D = b^2 - 4ac</me>
+
+        <p>
+            It describes the type of solutions the quadratic equation will have:
+        </p>
+
+        <ul>
+            <li>
+                <m>b^2 - 4ac &gt; 0</m> — then there are <em>2 real solutions</em>.
+            </li>
+            <li>
+                <m>b^2 - 4ac = 0</m> — then there is only one square root of zero, so there is <em>1 real solution</em>.
+            </li>
+            <li>
+                <m>b^2 - 4ac &lt; 0</m> — then there are 2 imaginary roots, so there are <em>2 complex solutions</em>.
+            </li>
+        </ul>
+
+        <!-- Video 9: Discriminant -->
+        <p><url href="https://youtu.be/GBWGWHHsvxE">Discriminant Video</url></p>
+
+        <activity>
+            <statement>
+                <p>Determine the number and type of solutions for:</p>
+                <me>5x^2 - 3x + 1 = 0</me>
+            </statement>
+            <solution>
+                <p>
+                    Here <m>a = 5</m>, <m>b = -3</m>, <m>c = 1</m>.
+                </p>
+                <me>D = b^2 - 4ac = (-3)^2 - 4(5)(1) = 9 - 20 = -11</me>
+                <p>
+                    Since <m>-11 &lt; 0</m>, there are <em>2 complex solutions</em>.
+                </p>
+            </solution>
+        </activity>
+
+    </subsection>
+
+</section>

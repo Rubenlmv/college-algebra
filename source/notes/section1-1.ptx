@@ -60,9 +60,7 @@
     </subsection>
 
     <subsection xml:id="example-linear-equation">
-        <title>Example</title>
-        
-        <example>
+        <activity>
             <statement>
                 <p>Solve:</p>
                 <me>x - 4(x - 5) = 2 - (2 - x)</me>
@@ -81,7 +79,7 @@
                 
                 <p>Therefore, the solution is <m>x = 5</m>.</p>
             </solution>
-        </example>
+        </activity>
     </subsection>
 
     <subsection xml:id="clearing-fractions">
@@ -106,7 +104,7 @@ xml:id="fig-clearing-fractions">
     <subsection xml:id="example-clearing-fractions">
         <title>Example</title>
         
-        <example>
+        <activity>
             <statement>
                 <p>Solve:</p>
                 <me>\frac{2x}{3} - \frac{5x}{6} - 3 = \frac{x}{2} - 5</me>
@@ -128,14 +126,14 @@ xml:id="fig-clearing-fractions">
                 
                 <p>Therefore, the solution is <m>x = 3</m>.</p>
             </solution>
-        </example>
+        </activity>
     </subsection>
 
     <subsection xml:id="variables-in-denominator">
         <title>What happens if there is a variable in the denominator?</title>
 
         <!-- Example 1 - Variables in denominator -->
-        <example xml:id="ex-denominator-11">
+        <activity>
             <statement>
                 <p>
                     Solve: 
@@ -164,10 +162,10 @@ xml:id="fig-clearing-fractions">
                 
                 <p>Therefore, the solution is <m>x = 2</m>.</p>
             </solution>
-        </example>
+        </activity>
 
         <!-- Example 2 - Variables in denominator -->
-        <example xml:id="ex12345">
+        <activity>
             <statement>
                 <p>
                     Solve: 
@@ -197,7 +195,7 @@ xml:id="fig-clearing-fractions">
                 
                 <p>Therefore, the solution is <m>x = -5</m>.</p>
             </solution>
-        </example>
+        </activity>
          
     </subsection>
 

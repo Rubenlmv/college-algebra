@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="section-1-3">
+    <title>Section 1.3 Complex Numbers</title>
+
+    <!-- ========================================================
+         INTRODUCTION
+         ======================================================== -->
+
+    <subsection xml:id="intro-imaginary-numbers">
+        <title>Intro to Imaginary Numbers</title>
+
+        <p>
+            The imaginary unit is defined as:
+        </p>
+        <me>i = \sqrt{-1}</me>
+        <p>
+            Therefore:
+        </p>
+        <me>i^2 = -1</me>
+
+        <p>
+            If <m>b</m> is a positive real number, then:
+        </p>
+        <me>\sqrt{-b} = i\sqrt{b}</me>
+
+        <p>
+            Or sometimes it is written as:
+        </p>
+        <me>\sqrt{-b} = \sqrt{b}\, i</me>
+
+        <p>
+            <em>What were you taught? What do you see in the book? What's the difference?</em>
+        </p>
+
+        
+    </subsection>
+
+    <!-- ========================================================
+         PRACTICE: SIMPLIFYING SQUARE ROOTS
+         ======================================================== -->
+
+    <subsection xml:id="practice-square-roots">
+        <title>Practice: Simplifying Square Roots of Negative Numbers</title>
+
+        <p>Simplify each expression:</p>
+
+        <activity>
+            <statement>
+                <p><me>\sqrt{-100}</me></p>
+            </statement>
+            <solution>
+                <p><m>\sqrt{-100} = i\sqrt{100} = 10i</m></p>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p><me>\sqrt{-36}</me></p>
+            </statement>
+            <solution>
+                <p><m>\sqrt{-36} = i\sqrt{36} = 6i</m></p>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p><me>\sqrt{-6}</me></p>
+            </statement>
+            <solution>
+                <p><m>\sqrt{-6} = i\sqrt{6}</m></p>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p><me>\sqrt{-20}</me></p>
+            </statement>
+            <solution>
+                <p><m>\sqrt{-20} = i\sqrt{20} = i \cdot 2\sqrt{5} = 2i\sqrt{5}</m></p>
+            </solution>
+        </activity>
+
+    </subsection>
+
+    <!-- ========================================================
+         PRACTICE: MULTIPLYING SQUARE ROOTS
+         ======================================================== -->
+
+    <subsection xml:id="practice-multiplying-roots">
+        <title>Practice: Multiplying Square Roots with Negative Radicands</title>
+
+        <p>Simplify each expression:</p>
+
+        <activity>
+            <statement>
+                <p><me>\sqrt{-16} \cdot \sqrt{-25}</me></p>
+            </statement>
+            <solution>
+                <p>
+                    <m>\sqrt{-16} = 4i</m> and <m>\sqrt{-25} = 5i</m>
+                </p>
+                <me>4i \cdot 5i = 20i^2 = 20(-1) = -20</me>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p><me>\sqrt{-40} \cdot \sqrt{-10}</me></p>
+            </statement>
+            <solution>
+                <p>
+                    <m>\sqrt{-40} = i\sqrt{40}</m> and <m>\sqrt{-10} = i\sqrt{10}</m>
+                </p>
+                <me>i\sqrt{40} \cdot i\sqrt{10} = i^2 \sqrt{400} = -1 \cdot 20 = -20</me>
+            </solution>
+        </activity>
+
+    </subsection>
+
+    <!-- ========================================================
+         STANDARD COMPLEX FORM
+         ======================================================== -->
+
+    <subsection xml:id="standard-complex-form">
+        <title>Standard Complex Form</title>
+
+        <p>
+            Given real numbers <m>a</m> and <m>b</m>, a number written in the form:
+        </p>
+        <me>a + bi</me>
+        <p>
+            is called a complex number written in <em>standard complex form</em>.
+        </p>
+        <ul>
+            <li><m>a</m> is the <em>real part</em></li>
+            <li><m>b</m> is the <em>imaginary part</em></li>
+        </ul>
+
+        <p>Write the following in standard complex form:</p>
+
+        <activity>
+            <statement>
+                <p><me>3 + \sqrt{-16}</me></p>
+            </statement>
+            <solution>
+                <p>
+                    <m>\sqrt{-16} = 4i</m>, so the expression is <m>3 + 4i</m>.
+                </p>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p><me>5</me></p>
+            </statement>
+            <solution>
+                <p>
+                    <m>5 = 5 + 0i</m>
+                </p>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p><me>7i</me></p>
+            </statement>
+            <solution>
+                <p>
+                    <m>7i = 0 + 7i</m>
+                </p>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p><me>\frac{6 + \sqrt{-8}}{2}</me></p>
+            </statement>
+            <solution>
+                <p>
+                    <m>\sqrt{-8} = i\sqrt{8} = 2i\sqrt{2}</m>
+                </p>
+                <me>\frac{6 + 2i\sqrt{2}}{2} = 3 + i\sqrt{2}</me>
+            </solution>
+        </activity>
+
+    </subsection>
+
+    <!-- ========================================================
+         POWERS OF i (PRINTABLE TABLE)
+         ======================================================== -->
+
+    <subsection xml:id="powers-of-i">
+        <title>Powers of <m>i</m></title>
+
+        <p>Fill in the pattern:</p>
+
+        <p>
+            <m>i^0 =</m> ________
+            <solution><m>1</m></solution>
+        </p>
+        <p>
+            <m>i^1 =</m> ________
+            <solution><m>i</m></solution>
+        </p>
+        <p>
+            <m>i^2 =</m> ________
+            <solution><m>-1</m></solution>
+        </p>
+        <p>
+            <m>i^3 =</m> ________
+            <solution><m>-i</m></solution>
+        </p>
+        <p>
+            <m>i^4 =</m> ________
+            <solution><m>1</m></solution>
+        </p>
+        <p>
+            <m>i^5 =</m> ________
+            <solution><m>i</m></solution>
+        </p>
+        <p>
+            <m>i^6 =</m> ________
+            <solution><m>-1</m></solution>
+        </p>
+        <p>
+            <m>i^7 =</m> ________
+            <solution><m>-i</m></solution>
+        </p>
+
+        <p>
+            <em>What pattern do you see?</em>
+        </p>
+
+        <activity>
+            <statement>
+                <p>What is <m>i^{23}</m>?</p>
+            </statement>
+            <solution>
+                <p>
+                    The pattern repeats every 4: <m>i^4 = 1</m>, <m>i^8 = 1</m>, etc.
+                </p>
+                <p>
+                    <m>23 \div 4 = 5</m> remainder <m>3</m>, so <m>i^{23} = i^3 = -i</m>.
+                </p>
+            </solution>
+        </activity>
+
+        <p>
+            <em>There are many ways to do this. If you have a different method, go for it!</em>
+        </p>
+    </subsection>
+
+    <!-- ========================================================
+         ADDING AND SUBTRACTING COMPLEX NUMBERS
+         ======================================================== -->
+
+    <subsection xml:id="adding-subtracting-complex">
+        <title>Adding and Subtracting Complex Numbers</title>
+
+        <p>
+            To add or subtract complex numbers, add or subtract their real parts, and add or subtract their imaginary parts.
+        </p>
+
+        <p>
+            In the book, it shows:
+        </p>
+        <me>(a + bi) + (c + di) = (a + c) + (b + d)i</me>
+        <me>(a + bi) - (c + di) = (a - c) + (b - d)i</me>
+
+        <p>
+            <em>How does this compare to what you know about combining like terms of polynomials? How is it the same? How is it different?</em>
+        </p>
+
+        <p>Perform the operations:</p>
+
+        <activity>
+            <statement>
+                <p><me>(8 + 3i) + (5 - 2i)</me></p>
+            </statement>
+            <solution>
+                <me>(8 + 5) + (3 - 2)i = 13 + i</me>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p><me>(8 + 3i) - (5 - 2i)</me></p>
+            </statement>
+            <solution>
+                <me>(8 - 5) + (3 - (-2))i = 3 + 5i</me>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p><me>(5 - 3i) + 7i</me></p>
+            </statement>
+            <solution>
+                <me>5 + (-3 + 7)i = 5 + 4i</me>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p><me>(-5 - 2i) - (5 - 2i)</me></p>
+            </statement>
+            <solution>
+                <me>(-5 - 5) + (-2 - (-2))i = -10 + 0i = -10</me>
+            </solution>
+        </activity>
+
+    </subsection>
+
+    <!-- ========================================================
+         MULTIPLYING COMPLEX NUMBERS
+         ======================================================== -->
+
+    <subsection xml:id="multiplying-complex">
+        <title>Multiplying Complex Numbers</title>
+
+        <p>
+            When we distribute a binomial times a binomial, we multiply everything in the first by everything in the second. We do the same thing with complex numbers.
+        </p>
+
+        <activity>
+            <statement>
+                <p><me>-4i(3 - 2i)</me></p>
+            </statement>
+            <solution>
+                <me>-4i(3) + (-4i)(-2i) = -12i + 8i^2 = -12i + 8(-1) = -8 - 12i</me>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p><me>(4 - 5i)(3 + 2i)</me></p>
+            </statement>
+            <solution>
+                <me>4(3) + 4(2i) - 5i(3) - 5i(2i)</me>
+                <me>12 + 8i - 15i - 10i^2</me>
+                <me>12 - 7i - 10(-1) = 12 - 7i + 10 = 22 - 7i</me>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p><me>(6 - 7i)^2</me></p>
+            </statement>
+            <solution>
+                <me>(6 - 7i)(6 - 7i)</me>
+                <me>36 - 42i - 42i + 49i^2</me>
+                <me>36 - 84i + 49(-1) = 36 - 84i - 49 = -13 - 84i</me>
+            </solution>
+        </activity>
+
+    </subsection>
+
+    <!-- ========================================================
+         MULTIPLYING COMPLEX CONJUGATES
+         ======================================================== -->
+
+    <subsection xml:id="complex-conjugates">
+        <title>Multiplying Complex Conjugates</title>
+
+        <p>
+            Recall that conjugates can be written as <m>(a + b)</m> and <m>(a - b)</m> for some numbers <m>a</m> and <m>b</m>.
+        </p>
+
+        <p>
+            <em>Recall the difference of squares formula:</em>
+        </p>
+        <me>(a + b)(a - b) = a^2 - b^2</me>
+
+        <p>
+            For complex numbers, the same pattern applies:
+        </p>
+        <me>(a + bi)(a - bi) = a^2 + b^2</me>
+        <p>
+            (Since <m>i^2 = -1</m>, the product of complex conjugates is always a <em>real number</em>.)
+        </p>
+
+        <activity>
+            <statement>
+                <p><me>(2 - 5i)(2 + 5i)</me></p>
+            </statement>
+            <solution>
+                <me>4 + 10i - 10i - 25i^2</me>
+                <me>4 - 25(-1) = 4 + 25 = 29</me>
+                <p>
+                    Notice that the product of complex conjugates is always a <em>real number</em>.
+                </p>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p><me>(4 - 3i)(4 + 3i)</me></p>
+            </statement>
+            <solution>
+                <me>16 + 12i - 12i - 9i^2 = 16 - 9(-1) = 16 + 9 = 25</me>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p><me>4i \cdot (-4i)</me></p>
+            </statement>
+            <solution>
+                <me>-16i^2 = -16(-1) = 16</me>
+            </solution>
+        </activity>
+
+    </subsection>
+
+    <!-- ========================================================
+         DIVIDING COMPLEX NUMBERS
+         ======================================================== -->
+
+    <subsection xml:id="dividing-complex">
+        <title>Dividing Complex Numbers</title>
+
+        <p>
+            To divide, we need to create an equivalent fraction with a <em>real</em> denominator. From the conjugates section above, we saw that multiplying conjugates gives us a <em>real</em> result.
+        </p>
+
+        <p>
+            So, create an equivalent fraction by multiplying by 1, written as the conjugate of the denominator over the conjugate of the denominator.
+        </p>
+
+        <!-- Example from the PDF -->
+        <activity>
+            <statement>
+                <p><me>\frac{-2 + 7i}{2 + 6i}</me></p>
+            </statement>
+            <solution>
+                <p>
+                    Multiply numerator and denominator by the conjugate of the denominator:
+                </p>
+                <me>\frac{-2 + 7i}{2 + 6i} \cdot \frac{2 - 6i}{2 - 6i}</me>
+                <me>\frac{(-2 + 7i)(2 - 6i)}{(2 + 6i)(2 - 6i)}</me>
+                <p>
+                    Multiply the numerator:
+                </p>
+                <me>(-2)(2) + (-2)(-6i) + (7i)(2) + (7i)(-6i)</me>
+                <me>-4 + 12i + 14i - 42i^2</me>
+                <me>-4 + 26i - 42(-1) = -4 + 26i + 42 = 38 + 26i</me>
+                <p>
+                    Multiply the denominator:
+                </p>
+                <me>2^2 + 6^2 = 4 + 36 = 40</me>
+                <p>
+                    Therefore:
+                </p>
+                <me>\frac{38 + 26i}{40} = \frac{38}{40} + \frac{26}{40}i = \frac{19}{20} + \frac{13}{20}i</me>
+            </solution>
+        </activity>
+
+
+        <!-- Problem 5 from the PDF -->
+        <activity>
+            <statement>
+                <p><me>\frac{4 - 3i}{4i}</me></p>
+            </statement>
+            <solution>
+                <p>
+                    Multiply numerator and denominator by the conjugate of <m>4i</m> (which is <m>-4i</m>):
+                </p>
+                <me>\frac{4 - 3i}{4i} \cdot \frac{-4i}{-4i}</me>
+                <me>\frac{(4 - 3i)(-4i)}{-16i^2}</me>
+                <me>\frac{-16i + 12i^2}{16}</me>
+                <me>\frac{-12 - 16i}{16} = -\frac{3}{4} - i</me>
+            </solution>
+        </activity>
+
+        <!-- Problem 6 from the PDF -->
+        <activity>
+            <statement>
+                <p><me>\frac{4 - 3i}{5 + 2i}</me></p>
+            </statement>
+            <solution>
+                <p>
+                    Multiply numerator and denominator by the conjugate of <m>5 + 2i</m> (which is <m>5 - 2i</m>):
+                </p>
+                <me>\frac{4 - 3i}{5 + 2i} \cdot \frac{5 - 2i}{5 - 2i}</me>
+                <me>\frac{(4 - 3i)(5 - 2i)}{25 + 4}</me>
+                <me>\frac{20 - 8i - 15i + 6i^2}{29}</me>
+                <me>\frac{20 - 23i - 6}{29}</me>
+                <me>\frac{14 - 23i}{29} = \frac{14}{29} - \frac{23}{29}i</me>
+            </solution>
+        </activity>
+
+        <!-- Video -->
+        <p>
+            Watch the video below for Multiplying Complex Numbers:
+        </p>
+        <interactive iframe="https://echo360.org/media/21665c94-fd3f-4ed5-8f94-a20c0caf5277/public" />
+
+    </subsection>
+
+</section>

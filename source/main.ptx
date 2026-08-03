@@ -23,7 +23,7 @@
 
       <!-- Course syllabus -->
       <xi:include href="./syllabus/syllabus.ptx" />
-      
+      <xi:include href="./syllabus/calendar.ptx" />
     
       <!-- Other documents could go here, like a schedule, project description, etc. -->
     </chapter>
@@ -42,7 +42,9 @@
       <xi:include href="./notes/week02.ptx"/>
       <xi:include href="./notes/section1-1.ptx"/>
       <xi:include href="./notes/section1-2.ptx"/>
-      
+      <xi:include href="./notes/section1-3.ptx"/>
+      <xi:include href="./notes/section1-4.ptx"/>
+      <xi:include href="./notes/section1-5.ptx"/>
       <!-- etc. -->
 
     </chapter>

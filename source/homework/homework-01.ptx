@@ -1,28 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<worksheet >
-  <title>Homework 01</title>
-  <introduction>
-    <p>
-      <alert>Instructions:</alert> Complete all the exercises below and submit your work by the due date.
-    </p>
-  </introduction>
-
-  <page>
-    <exercise xml:id="testing123">
-      <statement>
-        <p>
-          This is the first homework exercise.
-        </p>
-      </statement>
-    </exercise>
-
-  </page>
-  <subsection >
-    <title>ser</title>
-    <p>
-        For more details, see 
-         <xref ref="testing123"/>  <!-- ← Use the ID, not the file path! -->
-    </p>
-</subsection>
+<worksheet>
+    <title>Homework 01</title>
+    
+    <p><em>Section 1.1–1.2</em></p>
+    
+    <interactive iframe="https://1drv.ms/b/c/cd02fc73d95036d6/IQQQCvnZNBpQS7ERE5bEW72sAZFwOAR3L5jPve710sAvLXg" width="100%" height="600" />
 </worksheet>

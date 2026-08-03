@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="section-1-5">
+    <title>Section 1.5 Problem Solving and Quadratic Applications</title>
+
+    <!-- ========================================================
+         INTRODUCTION
+         ======================================================== -->
+
+    <subsection xml:id="intro-problem-solving">
+        <title>Problem Solving</title>
+
+        <p>
+            The study of mathematics is not simply to earn enough credit in the course to receive a passing grade and then quickly forget the material after the final examination.
+        </p>
+        <p>
+            Instead, the purpose is to develop skills for problem solving and occasionally discover the means for independent thinking.
+        </p>
+        <p>
+            George Pólya (1887–1985) was a professor of mathematics at Stanford University. In his book, <em>How to Solve It</em>, he offers a method of attacking any problem that can be reasoned out. He proposed 4 steps in solving a problem.
+        </p>
+
+        <!-- Video -->
+        <p><url href="https://echo360.org/media/75c62022-6ac1-48cc-8a1b-642387a8c567/public">Quadratic Application Problems Video</url></p>
+    </subsection>
+
+    <!-- ========================================================
+         PÓLYA'S 4 STEPS
+         ======================================================== -->
+
+    <subsection xml:id="polya-steps">
+        <title>Pólya's 4 Steps</title>
+
+        <algorithm number="no">
+            <p><em>Step 1: Understand the Problem</em></p>
+            <ul>
+                <li>Do I understand what is being asked?</li>
+                <li>What do I know that I can use?</li>
+                <li>What is unknown?</li>
+                <li>What are we trying to find?</li>
+            </ul>
+
+            <p><em>Step 2: Devise a Plan</em></p>
+            <ul>
+                <li>Have you seen this before?</li>
+                <li>Can you <em>draw a picture</em>?</li>
+                <li>Can you <em>build a table</em>?</li>
+                <li>Can you <em>create a formula</em>?</li>
+                <li>Can you <em>find a simpler problem</em>?</li>
+            </ul>
+
+            <p><em>Step 3: Carry Out the Plan</em></p>
+            <ul>
+                <li>Is each step correct? (Can you prove it?)</li>
+                <li>Is it leading you to a solution?</li>
+            </ul>
+
+            <p><em>Step 4: Look Back</em></p>
+            <ul>
+                <li>Is your answer reasonable?</li>
+                <li>What did you learn?</li>
+                <li>Was there an easier way?</li>
+            </ul>
+        </algorithm>
+    </subsection>
+
+    <!-- ========================================================
+         EXAMPLE 1: BALL HEIGHT (renamed automatically)
+         ======================================================== -->
+
+    <activity xml:id="activity-ball-height">
+        <title>Ball Height</title>
+
+        <p>
+            A ball is thrown from an initial height of 7 feet with an initial upward velocity of 21 ft/s. The ball's height <m>h</m> (in feet) after <m>t</m> seconds is given by the following.
+        </p>
+        <me>h = 7 + 21t - 16t^2</me>
+        <p>
+            Find all values of <m>t</m> for which the ball's height is 13 feet. Round your answer(s) to the nearest hundredth.
+        </p>
+
+        <!-- Figure: Ball Height Graph -->
+        <figure xml:id="fig-ball-height">
+            <caption>Projectile motion of the ball</caption>
+            <image xml:id="ball-height-graph" width="70%">
+                <shortdescription>
+                    Projectile motion graph showing the ball's path from initial height to maximum height.
+                </shortdescription>
+                <latex-image>
+                    % CDATA prevents certain LaTeX code from being interpreted as XML
+                    \begin{tikzpicture}[scale=0.9,&gt;=stealth]
+                        % Ground
+                        \draw[thick] (-0.5,0) -- (7,0);
+                        \node[right] at (7,0) {ground};
+                        
+                        % Initial height
+                        \draw[blue] (0,1.4) -- (1.2,1.4);
+                        \node[left,align=center] at (0,1.0) {initial\\height};
+                        
+                        % Projectile path
+                        \draw[blue,dashed,thick]
+                            (1.2,1.4)
+                            .. controls (2.5,3.5) and (3.8,4.7)
+                            .. (5,4.3);
+                        
+                        % Ball
+                        \fill[blue] (5,4.3) circle (0.14);
+                        
+                        % Height arrow
+                        \draw[blue,&lt;-&gt;] (5.7,0) -- (5.7,4.3);
+                        \node[right] at (5.8,2.15) {$h$};
+                    \end{tikzpicture}
+                </latex-image>
+            </image>
+        </figure>
+
+        <solution>
+            <p><em>Step 1: Understand the Problem</em></p>
+            <p>
+                We are given the formula <m>h = 7 + 21t - 16t^2</m>. We need to find <m>t</m> when <m>h = 13</m>.
+            </p>
+
+            <p><em>Step 2: Devise a Plan</em></p>
+            <p>
+                Substitute <m>h = 13</m> into the formula and solve the resulting quadratic equation for <m>t</m>.
+            </p>
+
+            <p><em>Step 3: Carry Out the Plan</em></p>
+            <me>13 = 7 + 21t - 16t^2</me>
+            <p>Subtract 13 from both sides:</p>
+            <me>0 = -6 + 21t - 16t^2</me>
+            <p>Rearrange in standard form:</p>
+            <me>16t^2 - 21t + 6 = 0</me>
+            <p>Use the quadratic formula with <m>a = 16</m>, <m>b = -21</m>, <m>c = 6</m>:</p>
+            <me>t = \frac{21 \pm \sqrt{(-21)^2 - 4(16)(6)}}{2(16)}</me>
+            <me>t = \frac{21 \pm \sqrt{441 - 384}}{32}</me>
+            <me>t = \frac{21 \pm \sqrt{57}}{32}</me>
+            <me>t \approx \frac{21 \pm 7.55}{32}</me>
+            <me>t \approx 0.42 \quad \text{or} \quad t \approx 0.89</me>
+
+            <p><em>Step 4: Look Back</em></p>
+            <p>
+                The ball reaches 13 feet at <m>t \approx 0.42</m> seconds on the way up, and again at <m>t \approx 0.89</m> seconds on the way down. Both answers are reasonable.
+            </p>
+            <p>
+                Therefore, the ball's height is 13 feet at <m>t \approx 0.42</m> or <m>t \approx 0.89</m> seconds.
+            </p>
+        </solution>
+    </activity>
+
+    <!-- ========================================================
+         EXAMPLE 2: FISH TANK (renamed automatically)
+         ======================================================== -->
+
+    <activity xml:id="activity-fish-tank">
+        <title>Fish Tank Dimensions</title>
+
+        <p>
+            Dmitri is having a fish tank constructed to fit in a niche in his wall. The width must be 12 inches, while the length is twice the height decreased by 8 inches. The total volume of the tank must be 6840 cubic inches. What are the dimensions of the tank?
+        </p>
+
+        <!-- Figure: Fish Tank Diagram -->
+        <figure xml:id="fig-fish-tank">
+            <caption>Fish tank with dimensions labeled</caption>
+            <image xml:id="fish-tank-diagram" width="70%">
+                <shortdescription>
+                    A rectangular prism (fish tank) with length l = 2h - 8, width w = 12, and height h.
+                </shortdescription>
+                <latex-image>
+                    % CDATA prevents certain LaTeX code from being interpreted as XML
+                    \begin{tikzpicture}[scale=0.8, &gt;=stealth]
+                        % Front face (visible)
+                        \draw (0,0) rectangle (4,2.5);
+                        % Back face (shifted)
+                        \draw (1.5,0.8) rectangle (5.5,3.3);
+                        % Connecting lines
+                        \draw (0,0) -- (1.5,0.8);
+                        \draw (4,0) -- (5.5,0.8);
+                        \draw (0,2.5) -- (1.5,3.3);
+                        \draw (4,2.5) -- (5.5,3.3);
+                        
+                        % Dimensions with arrows
+                        % Length (bottom front)
+                        \draw[&lt;-&gt;, thick] (0,-0.6) -- (4,-0.6) node[midway, below] {$l = 2h - 8$};
+                        % Width (bottom side)
+                        \draw[&lt;-&gt;, thick] (4,-0.6) -- (5.5,0.2) node[midway, right, yshift=-0.3cm] {$w = 12$};
+                        % Height (left front)
+                        \draw[&lt;-&gt;, thick] (-0.5,0) -- (-0.5,2.5) node[midway, left] {$h$};
+                    \end{tikzpicture}
+                </latex-image>
+            </image>
+        </figure>
+
+        <solution>
+            <p><em>Step 1: Understand the Problem</em></p>
+            <p>
+                We need to find the dimensions of the fish tank. We know:
+            </p>
+            <ul>
+                <li>Width (<m>w</m>) = 12 inches</li>
+                <li>Length (<m>l</m>) = twice the height decreased by 8 inches: <m>l = 2h - 8</m></li>
+                <li>Volume (<m>V</m>) = 6840 cubic inches</li>
+            </ul>
+            <p>
+                Volume formula for a rectangular prism: <m>V = l \times w \times h</m>
+            </p>
+
+            <p><em>Step 2: Devise a Plan</em></p>
+            <p>
+                Substitute the known values into the volume formula and solve for <m>h</m>.
+            </p>
+
+            <p><em>Step 3: Carry Out the Plan</em></p>
+            <me>6840 = (2h - 8) \times 12 \times h</me>
+            <me>6840 = 24h^2 - 96h</me>
+            <p>Rewrite as a quadratic equation:</p>
+            <me>0 = 24h^2 - 96h - 6840</me>
+            <p>Divide both sides by 24:</p>
+            <me>0 = h^2 - 4h - 285</me>
+            <p>Factor:</p>
+            <me>0 = (h - 19)(h + 15)</me>
+            <me>h = 19 \quad \text{or} \quad h = -15</me>
+            <p>
+                Since height cannot be negative, <m>h = 19</m> inches.
+            </p>
+            <p>
+                Now find the length:
+            </p>
+            <me>l = 2h - 8 = 2(19) - 8 = 38 - 8 = 30</me>
+
+            <p><em>Step 4: Look Back</em></p>
+            <p>
+                Check the volume: <m>V = 30 \times 12 \times 19 = 6840</m> cubic inches. ✅
+            </p>
+            <p>
+                Therefore, the dimensions of the tank are:
+            </p>
+            <ul>
+                <li><em>Width</em>: 12 inches</li>
+                <li><em>Length</em>: 30 inches</li>
+                <li><em>Height</em>: 19 inches</li>
+            </ul>
+        </solution>
+    </activity>
+
+</section>

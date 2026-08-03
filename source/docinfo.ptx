@@ -30,6 +30,7 @@
   <!-- Specify the default type of cross reference: -->
   <!-- <cross-references text="type-global" /> -->
 <rename element="algorithm">Problem-Solving Strategy</rename>
+<rename element="activity">Example</rename>
 
 
 
