@@ -1,12 +1,7 @@
 <section xml:id="calendar-fall2026">
 <title>Calendar</title>
-<figure xmlns:pi="http://pretextbook.org/2020/pretext/internal">
-
-  <caption>New Zealand Landscape, <url href="https://commons.wikimedia.org/wiki/File:NZ_Landscape_from_the_van.jpg" visual="commons.wikimedia.org/wiki/File:NZ_Landscape_from_the_van.jpg"><c>commons.wikimedia.org</c></url>, CC-BY-SA-2.0</caption>
-
-  <image source="/workspaces/Testing/source/images/cube.jpg" width="50%"/>
-
-  </figure>
-<p>sdfsdkkkkkkkkpppp</p>
-
+  <image source="images/september.jpg" width="100%"/>
+  <image source="images/october.jpg" width="100%"/>
+  <image source="images/november.jpg" width="100%"/>
+  <image source="images/legend.jpg" width="100%"/>
 </section>
