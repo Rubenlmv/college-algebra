@@ -25,16 +25,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Calendar",
-  "body": " Calendar   New Zealand Landscape, commons.wikimedia.org , CC-BY-SA-2.0    sdfsdkkkkkkkkpppp  "
-},
-{
-  "id": "calendar-fall2026-2",
-  "level": "2",
-  "url": "calendar-fall2026.html#calendar-fall2026-2",
-  "type": "Figure",
-  "number": "1",
-  "title": "",
-  "body": " New Zealand Landscape, commons.wikimedia.org , CC-BY-SA-2.0   "
+  "body": " Calendar      "
 },
 {
   "id": "notes-week-01",
@@ -68,7 +59,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-1.html#Problem",
   "type": "Problem-Solving Strategy",
-  "number": "2",
+  "number": "1",
   "title": "",
   "body": " The most common things we do:    Add\/subtract same value from both sides  Multiply\/divide both sides by the same non-zero value    We solve equations by:    Distribute to eliminate parentheses  Combine \"Like Terms\"  Use Addition\/Subtraction to \"collect\" variables on one side, constants on the other  Use Multiplication\/Division to isolate the variable    "
 },
@@ -86,7 +77,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-1.html#clearing-fractions-2",
   "type": "Problem-Solving Strategy",
-  "number": "3",
+  "number": "2",
   "title": "",
   "body": " To clear fractions from an equation:   Find the Lowest Common Denominator (LCD) of ALL the fractions. (If you can't find the lowest common denominator, just multiply all denominators together.)  Multiply every term (on BOTH sides) by the LCD  Simplify each term. There should be no fractions.  Solve the new equation using your algebra skills.   "
 },
@@ -131,7 +122,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-2.html#problem-solving-strategy-2",
   "type": "Problem-Solving Strategy",
-  "number": "4",
+  "number": "3",
   "title": "",
   "body": " Follow these steps to solve application problems:   Read – Understand the problem. What are you solving for?  Define – Assign variables. Figure out how they relate.  Draw – If possible, draw a picture or graph to visualize.  Equation – Write an equation using the given information.  Solve – Solve the equation algebraically.  Check – Verify your answer works in the original problem.   "
 },
@@ -536,7 +527,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-4.html#completing-the-square-4",
   "type": "Problem-Solving Strategy",
-  "number": "6",
+  "number": "5",
   "title": "",
   "body": " Steps for Completing the Square:   Divide both sides by to make the leading coefficient 1.  Isolate the variable terms on one side of the equation.  Complete the square. Add the square of one-half the linear term to both sides. That is, add to both sides, then factor.  Apply the square root property and solve for .   "
 },
@@ -581,7 +572,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-5.html#polya-steps-2",
   "type": "Problem-Solving Strategy",
-  "number": "7",
+  "number": "6",
   "title": "",
   "body": " Step 1: Understand the Problem   Do I understand what is being asked?  What do I know that I can use?  What is unknown?  What are we trying to find?   Step 2: Devise a Plan   Have you seen this before?  Can you draw a picture ?  Can you build a table ?  Can you create a formula ?  Can you find a simpler problem ?   Step 3: Carry Out the Plan   Is each step correct? (Can you prove it?)  Is it leading you to a solution?   Step 4: Look Back   Is your answer reasonable?  What did you learn?  Was there an easier way?   "
 },
@@ -644,7 +635,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity.html#activity-4",
   "type": "Theorem",
-  "number": "10",
+  "number": "9",
   "title": "",
   "body": "  Testing testing.   "
 },
@@ -662,7 +653,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity.html#prop123",
   "type": "Proposition",
-  "number": "11",
+  "number": "10",
   "title": "",
   "body": "  Let be a prime and let all matrices be over . Suppose and are such that If there exist such that with the conditions where  is the last row of (restricted to its first entries),  is the last column of (restricted to its first entries),  is the top-left submatrix of ,  is the top-left submatrix of ,  then is a Calogero-Moser pair.  Conversely, if is a Calogero-Moser pair such that with and , then for any and satisfying there exists such that     Sketch of the proof:   Block notation. Write   Set    Then we have the following commutators:    In addition with Moreover,   Now, since and , we have   Using the explicit block commutators, the equation is equivalent to   Taking the top-left block gives   This yields the Calogero-Moser condition for , precisely when .   "
 },
