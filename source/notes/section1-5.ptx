@@ -17,7 +17,7 @@
             Instead, the purpose is to develop skills for problem solving and occasionally discover the means for independent thinking.
         </p>
         <p>
-            George Pólya (1887–1985) was a professor of mathematics at Stanford University. In his book, <em>How to Solve It</em>, he offers a method of attacking any problem that can be reasoned out. He proposed 4 steps in solving a problem.
+            George Pólya (1887–1985) was a professor of mathematics at Stanford University. In his book, <em>How to Solve It</em>, he offers a method of attacking any problem that can be reasoned out. He proposed 4 steps in solving a problem. The following 6-step strategy is an expanded, more concrete version of Pólya's framework.
         </p>
 
         <!-- Video -->
@@ -25,47 +25,27 @@
     </subsection>
 
     <!-- ========================================================
-         PÓLYA'S 4 STEPS
+         PROBLEM-SOLVING STRATEGY (6 STEPS)
          ======================================================== -->
 
     <subsection xml:id="polya-steps">
-        <title>Pólya's 4 Steps</title>
+        <title>Problem-Solving Strategy</title>
 
         <algorithm number="no">
-            <p><em>Step 1: Understand the Problem</em></p>
-            <ul>
-                <li>Do I understand what is being asked?</li>
-                <li>What do I know that I can use?</li>
-                <li>What is unknown?</li>
-                <li>What are we trying to find?</li>
-            </ul>
-
-            <p><em>Step 2: Devise a Plan</em></p>
-            <ul>
-                <li>Have you seen this before?</li>
-                <li>Can you <em>draw a picture</em>?</li>
-                <li>Can you <em>build a table</em>?</li>
-                <li>Can you <em>create a formula</em>?</li>
-                <li>Can you <em>find a simpler problem</em>?</li>
-            </ul>
-
-            <p><em>Step 3: Carry Out the Plan</em></p>
-            <ul>
-                <li>Is each step correct? (Can you prove it?)</li>
-                <li>Is it leading you to a solution?</li>
-            </ul>
-
-            <p><em>Step 4: Look Back</em></p>
-            <ul>
-                <li>Is your answer reasonable?</li>
-                <li>What did you learn?</li>
-                <li>Was there an easier way?</li>
-            </ul>
+            <p>Follow these steps to solve application problems:</p>
+            <ol>
+                <li><em>Read</em> – Understand the problem. What are you solving for?</li>
+                <li><em>Define</em> – Assign variables. Figure out how they relate.</li>
+                <li><em>Draw</em> – If possible, draw a picture or graph to visualize.</li>
+                <li><em>Equation</em> – Write an equation using the given information.</li>
+                <li><em>Solve</em> – Solve the equation algebraically (using factoring, quadratic formula, etc.).</li>
+                <li><em>Check</em> – Verify your answer works in the original problem.</li>
+            </ol>
         </algorithm>
     </subsection>
 
     <!-- ========================================================
-         EXAMPLE 1: BALL HEIGHT (renamed automatically)
+         EXAMPLE 1: BALL HEIGHT
          ======================================================== -->
 
     <activity xml:id="activity-ball-height">
@@ -115,41 +95,34 @@
         </figure>
 
         <solution>
-            <p><em>Step 1: Understand the Problem</em></p>
-            <p>
-                We are given the formula <m>h = 7 + 21t - 16t^2</m>. We need to find <m>t</m> when <m>h = 13</m>.
-            </p>
-
-            <p><em>Step 2: Devise a Plan</em></p>
-            <p>
-                Substitute <m>h = 13</m> into the formula and solve the resulting quadratic equation for <m>t</m>.
-            </p>
-
-            <p><em>Step 3: Carry Out the Plan</em></p>
+            <p><em>Step 1: Read</em> – We are given the formula <m>h = 7 + 21t - 16t^2</m>. We need to find <m>t</m> when <m>h = 13</m>.</p>
+            
+            <p><em>Step 2: Define</em> – Let <m>t</m> be the time in seconds when the ball's height is 13 feet.</p>
+            
+            <p><em>Step 3: Draw</em> – The graph above shows the projectile motion of the ball.</p>
+            
+            <p><em>Step 4: Equation</em> – Substitute <m>h = 13</m> into the formula:</p>
             <me>13 = 7 + 21t - 16t^2</me>
             <p>Subtract 13 from both sides:</p>
             <me>0 = -6 + 21t - 16t^2</me>
             <p>Rearrange in standard form:</p>
             <me>16t^2 - 21t + 6 = 0</me>
-            <p>Use the quadratic formula with <m>a = 16</m>, <m>b = -21</m>, <m>c = 6</m>:</p>
+            
+            <p><em>Step 5: Solve</em> – Use the quadratic formula with <m>a = 16</m>, <m>b = -21</m>, <m>c = 6</m>:</p>
             <me>t = \frac{21 \pm \sqrt{(-21)^2 - 4(16)(6)}}{2(16)}</me>
             <me>t = \frac{21 \pm \sqrt{441 - 384}}{32}</me>
             <me>t = \frac{21 \pm \sqrt{57}}{32}</me>
             <me>t \approx \frac{21 \pm 7.55}{32}</me>
             <me>t \approx 0.42 \quad \text{or} \quad t \approx 0.89</me>
-
-            <p><em>Step 4: Look Back</em></p>
-            <p>
-                The ball reaches 13 feet at <m>t \approx 0.42</m> seconds on the way up, and again at <m>t \approx 0.89</m> seconds on the way down. Both answers are reasonable.
-            </p>
-            <p>
-                Therefore, the ball's height is 13 feet at <m>t \approx 0.42</m> or <m>t \approx 0.89</m> seconds.
-            </p>
+            
+            <p><em>Step 6: Check</em> – The ball reaches 13 feet at <m>t \approx 0.42</m> seconds on the way up, and again at <m>t \approx 0.89</m> seconds on the way down. Both answers are reasonable.</p>
+            
+            <p>Therefore, the ball's height is 13 feet at <m>t \approx 0.42</m> or <m>t \approx 0.89</m> seconds.</p>
         </solution>
     </activity>
 
     <!-- ========================================================
-         EXAMPLE 2: FISH TANK (renamed automatically)
+         EXAMPLE 2: FISH TANK
          ======================================================== -->
 
     <activity xml:id="activity-fish-tank">
@@ -192,49 +165,35 @@
         </figure>
 
         <solution>
-            <p><em>Step 1: Understand the Problem</em></p>
-            <p>
-                We need to find the dimensions of the fish tank. We know:
-            </p>
+            <p><em>Step 1: Read</em> – We need to find the dimensions of the fish tank.</p>
+            
+            <p><em>Step 2: Define</em> – Let <m>h</m> be the height of the tank.</p>
             <ul>
                 <li>Width (<m>w</m>) = 12 inches</li>
-                <li>Length (<m>l</m>) = twice the height decreased by 8 inches: <m>l = 2h - 8</m></li>
+                <li>Length (<m>l</m>) = <m>2h - 8</m> (twice the height decreased by 8)</li>
                 <li>Volume (<m>V</m>) = 6840 cubic inches</li>
             </ul>
-            <p>
-                Volume formula for a rectangular prism: <m>V = l \times w \times h</m>
-            </p>
-
-            <p><em>Step 2: Devise a Plan</em></p>
-            <p>
-                Substitute the known values into the volume formula and solve for <m>h</m>.
-            </p>
-
-            <p><em>Step 3: Carry Out the Plan</em></p>
+            
+            <p><em>Step 3: Draw</em> – The diagram above shows the fish tank with labeled dimensions.</p>
+            
+            <p><em>Step 4: Equation</em> – Volume formula for a rectangular prism: <m>V = l \times w \times h</m></p>
             <me>6840 = (2h - 8) \times 12 \times h</me>
             <me>6840 = 24h^2 - 96h</me>
             <p>Rewrite as a quadratic equation:</p>
             <me>0 = 24h^2 - 96h - 6840</me>
             <p>Divide both sides by 24:</p>
             <me>0 = h^2 - 4h - 285</me>
-            <p>Factor:</p>
+            
+            <p><em>Step 5: Solve</em> – Factor:</p>
             <me>0 = (h - 19)(h + 15)</me>
             <me>h = 19 \quad \text{or} \quad h = -15</me>
-            <p>
-                Since height cannot be negative, <m>h = 19</m> inches.
-            </p>
-            <p>
-                Now find the length:
-            </p>
+            <p>Since height cannot be negative, <m>h = 19</m> inches.</p>
+            <p>Now find the length:</p>
             <me>l = 2h - 8 = 2(19) - 8 = 38 - 8 = 30</me>
-
-            <p><em>Step 4: Look Back</em></p>
-            <p>
-                Check the volume: <m>V = 30 \times 12 \times 19 = 6840</m> cubic inches. ✅
-            </p>
-            <p>
-                Therefore, the dimensions of the tank are:
-            </p>
+            
+            <p><em>Step 6: Check</em> – Check the volume: <m>V = 30 \times 12 \times 19 = 6840</m> cubic inches. ✅</p>
+            
+            <p>Therefore, the dimensions of the tank are:</p>
             <ul>
                 <li><em>Width</em>: 12 inches</li>
                 <li><em>Length</em>: 30 inches</li>

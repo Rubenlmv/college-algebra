@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="section-1-6">
+    <title>Section 1.6 Other Non-linear Equations</title>
+
+    <!-- ========================================================
+         FACTOR BY GROUPING
+         ======================================================== -->
+
+    <subsection xml:id="factor-by-grouping">
+        <title>Factor by Grouping</title>
+
+        <!-- Video 1: Factor by Grouping -->
+        <p><url href="https://youtu.be/apCmfszdXZA">Factor by Grouping Video</url></p>
+
+        <p>
+            Remember from 1.4, you should know how to solve quadratic equations by factoring. How does that apply to the equation below? Use Grouping to factor, then solve.
+        </p>
+
+        <activity>
+            <statement>
+                <p>Solve by factoring using grouping:</p>
+                <me>8x^3 + 4x^2 - 50x - 25 = 0</me>
+            </statement>
+            <solution>
+                <p><em>Step 1: Group the terms.</em></p>
+                <me>(8x^3 + 4x^2) + (-50x - 25) = 0</me>
+                <p><em>Step 2: Factor out the GCF from each group.</em></p>
+                <me>4x^2(2x + 1) - 25(2x + 1) = 0</me>
+                <p><em>Step 3: Factor out the common binomial.</em></p>
+                <me>(2x + 1)(4x^2 - 25) = 0</me>
+                <p><em>Step 4: Factor the difference of squares.</em></p>
+                <me>(2x + 1)(2x - 5)(2x + 5) = 0</me>
+                <p><em>Step 5: Apply the Zero Product Property.</em></p>
+                <me>2x + 1 = 0 \quad \text{or} \quad 2x - 5 = 0 \quad \text{or} \quad 2x + 5 = 0</me>
+                <me>x = -\frac{1}{2} \quad \text{or} \quad x = \frac{5}{2} \quad \text{or} \quad x = -\frac{5}{2}</me>
+                <p>
+                    Therefore, the solutions are <m>x = -\frac{1}{2}</m>, <m>x = \frac{5}{2}</m>, and <m>x = -\frac{5}{2}</m>.
+                </p>
+            </solution>
+        </activity>
+
+    </subsection>
+
+    <!-- ========================================================
+         RATIONAL EQUATIONS
+         ======================================================== -->
+
+    <subsection xml:id="rational-equations">
+        <title>Rational Equations</title>
+
+        <!-- Video 2: Rational Equations -->
+        <p><url href="https://youtu.be/4-a6tkwHZEM?t=17">Rational Equation Video</url></p>
+
+        <p>
+            Recall from Section 1.1: when variables appear in the denominator, we must identify <em>restricted values</em>.
+        </p>
+
+        <activity>
+            <statement>
+                <p>Solve:</p>
+                <me>\frac{1}{2x - 1} + \frac{1}{x + 1} = \frac{1}{x + 1}</me>
+                <p>
+                    LCD: <fillin /> 
+                    Restricted Values for <m>x</m>: <fillin />
+                </p>
+            </statement>
+            <solution>
+                <p>First, identify the LCD and restricted values:</p>
+                <p>LCD = <m>(2x-1)(x+1)</m></p>
+                <p>Restricted Values: <m>x \neq \frac{1}{2}</m> and <m>x \neq -1</m></p>
+                <p><em>Step 1: Multiply every term by the LCD.</em></p>
+                <me>(2x-1)(x+1)\left(\frac{1}{2x-1}\right) + (2x-1)(x+1)\left(\frac{1}{x+1}\right) = (2x-1)(x+1)\left(\frac{1}{x+1}\right)</me>
+                <p><em>Step 2: Simplify.</em></p>
+                <me>(x+1) + (2x-1) = (2x-1)</me>
+                <p><em>Step 3: Solve.</em></p>
+                <me>x + 1 + 2x - 1 = 2x - 1</me>
+                <me>3x = 2x - 1</me>
+                <me>x = -1</me>
+                <p>
+                    Since <m>x = -1</m> is a restricted value, it is <em>not</em> a valid solution.
+                </p>
+                <p>Therefore, there is <em>no solution</em>.</p>
+            </solution>
+        </activity>
+
+    </subsection>
+
+    <!-- ========================================================
+         RADICAL EQUATIONS
+         ======================================================== -->
+
+    <subsection xml:id="radical-equations">
+        <title>Radical Equations</title>
+
+        <!-- Video 3: Radical Equations -->
+        <p><url href="https://youtu.be/0gicD4STzpg">Radical Equation Video</url></p>
+
+        <algorithm number="no">
+            <p><em>Steps for Solving Radical Equations:</em></p>
+            <ol>
+                <li><em>Isolate</em> a radical (using algebra).</li>
+                <li><em>Raise BOTH WHOLE sides</em> to the index power. (You may need to use distribution.)</li>
+                <li>If a radical remains, go back to step 1.</li>
+                <li><em>Solve</em> the resulting equation.</li>
+                <li><em>Check</em> your answers! You must check answers when you raise an equation to an even power. There may be solutions that don't work! Remember, the radical means the <em>principle (positive)</em> square root.</li>
+            </ol>
+        </algorithm>
+
+        <activity>
+            <statement>
+                <p><em>Problem 1.</em> Solve: <me>\sqrt{x - 1} + 3 = x</me></p>
+            </statement>
+            <solution>
+                <p><em>Step 1: Isolate the radical.</em></p>
+                <me>\sqrt{x - 1} = x - 3</me>
+                <p><em>Step 2: Square both sides.</em></p>
+                <me>(\sqrt{x - 1})^2 = (x - 3)^2</me>
+                <me>x - 1 = x^2 - 6x + 9</me>
+                <p><em>Step 3: Solve the resulting equation.</em></p>
+                <me>0 = x^2 - 7x + 10</me>
+                <me>0 = (x - 5)(x - 2)</me>
+                <me>x = 5 \quad \text{or} \quad x = 2</me>
+                <p><em>Step 4: Check your answers.</em></p>
+                <p>Check <m>x = 5</m>: <m>\sqrt{5 - 1} + 3 = \sqrt{4} + 3 = 2 + 3 = 5</m> ✅</p>
+                <p>Check <m>x = 2</m>: <m>\sqrt{2 - 1} + 3 = \sqrt{1} + 3 = 1 + 3 = 4 \neq 2</m> ❌</p>
+                <p>Since <m>x = 2</m> does not work, the only solution is <m>x = 5</m>.</p>
+            </solution>
+        </activity>
+
+    </subsection>
+
+    <!-- ========================================================
+         RATIONAL EXPONENTS
+         ======================================================== -->
+
+    <subsection xml:id="rational-exponents">
+        <title>Rational Exponents</title>
+
+        <p>
+            Recall:
+        </p>
+        <me>a^{\frac{m}{n}} = \sqrt[n]{a^m} = \left(\sqrt[n]{a}\right)^m</me>
+
+        <activity>
+            <statement>
+                <p><em>Problem 2.</em> Solve: <me>x^{2/3} = 4</me></p>
+            </statement>
+            <solution>
+                <p>
+                    To solve equations with rational exponents, raise both sides to the reciprocal power.
+                </p>
+                <me>(x^{2/3})^{3/2} = 4^{3/2}</me>
+                <me>x = (\sqrt{4})^3 = 2^3 = 8</me>
+                <p>
+                    Check: <m>8^{2/3} = (\sqrt[3]{8})^2 = 2^2 = 4</m> ✅
+                </p>
+                <p>Therefore, the solution is <m>x = 8</m>.</p>
+                <p>
+                    <em>Note:</em> Be careful when raising to an even power — you may need to consider both positive and negative roots.
+                </p>
+            </solution>
+        </activity>
+
+    </subsection>
+
+       <!-- ========================================================
+         QUADRATIC IN FORM
+         ======================================================== -->
+
+    <subsection xml:id="quadratic-in-form">
+        <title>Quadratic in Form</title>
+
+        <!-- Video 4: Quadratic in Form -->
+        <p><url href="https://echo360.org/media/71742b9d-9ded-447e-98f0-985569a7f858/public">Quadratic in Form Video</url></p>
+
+        <p>
+            <em>What is Quadratic Form?</em>
+        </p>
+
+        <me>ax^{2n} + bx^n + c = 0</me>
+
+        <p>
+            Where <m>n</m> is some number.
+        </p>
+
+        <algorithm number="no">
+            <p><em>Method:</em></p>
+            <ol>
+                <li>Let <m>u = x^n</m> (We introduce our own variable here.) Then <m>u^2 = x^{2n}</m>.</li>
+                <li>Substitute for <m>x</m> and write the equation as <m>au^2 + bu + c = 0</m>.</li>
+                <li>Solve for <m>u</m> as you would solve any quadratic.</li>
+                <li>Back substitute the solution into <m>u = x^n</m> to find <m>x</m>.</li>
+            </ol>
+        </algorithm>
+
+        <activity>
+            <statement>
+                <p><em>Problem 1.</em> Solve: <me>(y - 3)^2 - 3(y - 3) - 4 = 0</me></p>
+            </statement>
+            <solution>
+                <p><em>Step 1: Let <m>u = y - 3</m>.</em></p>
+                <p>Then <m>u^2 = (y - 3)^2</m>.</p>
+                <p><em>Step 2: Substitute.</em></p>
+                <me>u^2 - 3u - 4 = 0</me>
+                <p><em>Step 3: Solve for <m>u</m>.</em></p>
+                <me>(u - 4)(u + 1) = 0</me>
+                <me>u = 4 \quad \text{or} \quad u = -1</me>
+                <p><em>Step 4: Back substitute.</em></p>
+                <p>If <m>u = 4</m>: <m>y - 3 = 4</m> → <m>y = 7</m></p>
+                <p>If <m>u = -1</m>: <m>y - 3 = -1</m> → <m>y = 2</m></p>
+                <p>Therefore, the solutions are <m>y = 7</m> and <m>y = 2</m>.</p>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p><em>Problem 2.</em> Solve: <me>x^4 - 3x^2 - 4 = 0</me></p>
+            </statement>
+            <solution>
+                <p><em>Step 1: Let <m>u = x^2</m>.</em></p>
+                <p>Then <m>u^2 = x^4</m>.</p>
+                <p><em>Step 2: Substitute.</em></p>
+                <me>u^2 - 3u - 4 = 0</me>
+                <p><em>Step 3: Solve for <m>u</m>.</em></p>
+                <me>(u - 4)(u + 1) = 0</me>
+                <me>u = 4 \quad \text{or} \quad u = -1</me>
+                <p><em>Step 4: Back substitute.</em></p>
+                <p>If <m>u = 4</m>: <m>x^2 = 4</m> → <m>x = \pm 2</m></p>
+                <p>If <m>u = -1</m>: <m>x^2 = -1</m> → <m>x = \pm i</m> (complex solutions)</p>
+                <p>Therefore, the real solutions are <m>x = 2</m> and <m>x = -2</m>.</p>
+                <p>The complex solutions are <m>x = i</m> and <m>x = -i</m>.</p>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p><em>Problem 3.</em> Solve: <me>x^{2/3} - 3x^{1/3} - 4 = 0</me></p>
+            </statement>
+            <solution>
+                <p><em>Step 1: Let <m>u = x^{1/3}</m>.</em></p>
+                <p>Then <m>u^2 = x^{2/3}</m>.</p>
+                <p><em>Step 2: Substitute.</em></p>
+                <me>u^2 - 3u - 4 = 0</me>
+                <p><em>Step 3: Solve for <m>u</m>.</em></p>
+                <me>(u - 4)(u + 1) = 0</me>
+                <me>u = 4 \quad \text{or} \quad u = -1</me>
+                <p><em>Step 4: Back substitute.</em></p>
+                <p>If <m>u = 4</m>: <m>x^{1/3} = 4</m> → <m>x = 4^3 = 64</m></p>
+                <p>If <m>u = -1</m>: <m>x^{1/3} = -1</m> → <m>x = (-1)^3 = -1</m></p>
+                <p>Therefore, the solutions are <m>x = 64</m> and <m>x = -1</m>.</p>
+                <p>
+                    Check: <m>64^{2/3} - 3(64)^{1/3} - 4 = 16 - 3(4) - 4 = 16 - 12 - 4 = 0</m> ✅
+                </p>
+                <p>
+                    Check: <m>(-1)^{2/3} - 3(-1)^{1/3} - 4 = 1 - 3(-1) - 4 = 1 + 3 - 4 = 0</m> ✅
+                </p>
+            </solution>
+        </activity>
+
+    </subsection>
+</section>

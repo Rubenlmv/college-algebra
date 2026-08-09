@@ -22,6 +22,7 @@
     \usetikzlibrary{positioning,matrix,arrows}
     \usetikzlibrary{shapes,decorations,shadows,fadings,patterns}
     \usetikzlibrary{decorations.markings}
+    \usetikzlibrary{arrows.meta}
   </latex-image-preamble>
 
   <!-- It is possible to rename elements: -->

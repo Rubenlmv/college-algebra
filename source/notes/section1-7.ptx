@@ -1,0 +1,1108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<section xml:id="section-1-7">
+    <title>Section 1.7 Inequalities and Absolute Value</title>
+
+    <!-- ========================================================
+         INTRODUCTION
+         ======================================================== -->
+
+    <subsection xml:id="intro-inequalities">
+        <title>Inequalities</title>
+
+        <p>
+            Inequalities are solved similarly to equations, but with one important difference:
+            <em>When you multiply or divide both sides of an inequality by a negative number, you must reverse the inequality sign.</em>
+        </p>
+
+        <p>
+            For example:
+        </p>
+        <me>-2x &lt; 6</me>
+        <p>
+            Divide both sides by <m>-2</m> and reverse the inequality sign:
+        </p>
+        <me>x &gt; -3</me>
+
+      
+    </subsection>
+<!-- ========================================================
+     NOTATION REFERENCE
+     ======================================================== -->
+
+<subsection xml:id="inequality-notation-reference">
+    <title>Notation for Solutions of Inequalities</title>
+
+    <p>
+        When solving inequalities, there are three ways to represent the solution:
+        <ul>
+            <li><em>Set-Builder Notation</em> — describes the set of all <m>x</m> that satisfy the condition.</li>
+            <li><em>Interval Notation</em> — uses parentheses <m>( \quad )</m> and brackets <m>[ \quad ]</m> to describe the interval of solutions.</li>
+            <li><em>Number Line</em> — a visual representation of the solution set.</li>
+        </ul>
+    </p>
+
+    <p>
+        <em>Key Points:</em>
+    </p>
+    <ul>
+        <li>
+            <em>Parentheses</em> <m>( \quad )</m> indicate that the endpoint is <em>not included</em> (strict inequalities: <m>&lt;</m> or <m>&gt;</m>).
+        </li>
+        <li>
+            <em>Brackets</em> <m>[ \quad ]</m> indicate that the endpoint is <em>included</em> (non-strict inequalities: <m>\leq</m> or <m>\geq</m>).
+        </li>
+    </ul>
+
+    <!-- ========================================================
+         CASE 1: x ≤ a
+         ======================================================== -->
+
+    <subsubsection xml:id="notation-x-leq-a">
+        <title>Case 1: <m>x \leq a</m></title>
+
+        <p>
+            <em>Set-Builder Notation:</em> <m>\{x \mid x \leq a\}</m>
+        </p>
+        <p>
+            <em>Interval Notation:</em> <m>(-\infty, a]</m>
+        </p>
+        <p>
+            <em>Number Line:</em>
+        </p>
+        <figure>
+            <caption>Number line for <m>x \leq a</m></caption>
+            <image xml:id="nl-ref-1" width="60%">
+                <shortdescription>Number line showing x less than or equal to a</shortdescription>
+                <latex-image>
+                    <![CDATA[
+                    \begin{tikzpicture}
+                        \draw[->, thick, line width=1.2pt] (-3,0) -- (3,0);
+                        \draw[<-, thick, line width=1.2pt] (3,0) -- (-3,0);
+                        \foreach \x in {-2,-1,0,1,2}
+                            \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+                        \draw[thick, blue, line width=2pt, <-] (-3,0) -- (0,0);
+                        \node[blue] at (0,0) {$\pmb{]}$};
+                        \node[below] at (0,-0.6) {$a$};
+                    \end{tikzpicture}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+    </subsubsection>
+
+    <!-- ========================================================
+         CASE 2: x < a
+         ======================================================== -->
+
+    <subsubsection xml:id="notation-x-lt-a">
+        <title>Case 2: <m>x &lt; a</m></title>
+
+        <p>
+            <em>Set-Builder Notation:</em> <m>\{x \mid x &lt; a\}</m>
+        </p>
+        <p>
+            <em>Interval Notation:</em> <m>(-\infty, a)</m>
+        </p>
+        <p>
+            <em>Number Line:</em>
+        </p>
+        <figure>
+            <caption>Number line for <m>x &lt; a</m></caption>
+            <image xml:id="nl-ref-2" width="60%">
+                <shortdescription>Number line showing x less than a</shortdescription>
+                <latex-image>
+                    <![CDATA[
+                    \begin{tikzpicture}
+                        \draw[->, thick, line width=1.2pt] (-3,0) -- (3,0);
+                        \draw[<-, thick, line width=1.2pt] (3,0) -- (-3,0);
+                        \foreach \x in {-2,-1,0,1,2}
+                            \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+                        \draw[thick, blue, line width=2pt, <-] (-3,0) -- (0,0);
+                        \node[blue] at (0,0) {$\pmb{)}$};
+                        \node[below] at (0,-0.6) {$a$};
+                    \end{tikzpicture}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+    </subsubsection>
+
+    <!-- ========================================================
+         CASE 3: x ≥ a
+         ======================================================== -->
+
+    <subsubsection xml:id="notation-x-geq-a">
+        <title>Case 3: <m>x \geq a</m></title>
+
+        <p>
+            <em>Set-Builder Notation:</em> <m>\{x \mid x \geq a\}</m>
+        </p>
+        <p>
+            <em>Interval Notation:</em> <m>[a, \infty)</m>
+        </p>
+        <p>
+            <em>Number Line:</em>
+        </p>
+        <figure>
+            <caption>Number line for <m>x \geq a</m></caption>
+            <image xml:id="nl-ref-3" width="60%">
+                <shortdescription>Number line showing x greater than or equal to a</shortdescription>
+                <latex-image>
+                    <![CDATA[
+                    \begin{tikzpicture}
+                        \draw[->, thick, line width=1.2pt] (-3,0) -- (3,0);
+                        \draw[<-, thick, line width=1.2pt] (3,0) -- (-3,0);
+                        \foreach \x in {-2,-1,0,1,2}
+                            \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+                        \draw[thick, blue, line width=2pt, ->] (0,0) -- (3,0);
+                        \node[blue] at (0,0) {$\pmb{[}$};
+                        \node[below] at (0,-0.6) {$a$};
+                    \end{tikzpicture}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+    </subsubsection>
+
+    <!-- ========================================================
+         CASE 4: x > a
+         ======================================================== -->
+
+    <subsubsection xml:id="notation-x-gt-a">
+        <title>Case 4: <m>x &gt; a</m></title>
+
+        <p>
+            <em>Set-Builder Notation:</em> <m>\{x \mid x &gt; a\}</m>
+        </p>
+        <p>
+            <em>Interval Notation:</em> <m>(a, \infty)</m>
+        </p>
+        <p>
+            <em>Number Line:</em>
+        </p>
+        <figure>
+            <caption>Number line for <m>x &gt; a</m></caption>
+            <image xml:id="nl-ref-4" width="60%">
+                <shortdescription>Number line showing x greater than a</shortdescription>
+                <latex-image>
+                    <![CDATA[
+                    \begin{tikzpicture}
+                        \draw[->, thick, line width=1.2pt] (-3,0) -- (3,0);
+                        \draw[<-, thick, line width=1.2pt] (3,0) -- (-3,0);
+                        \foreach \x in {-2,-1,0,1,2}
+                            \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+                        \draw[thick, blue, line width=2pt, ->] (0,0) -- (3,0);
+                        \node[blue] at (0,0) {$\pmb{(}$};
+                        \node[below] at (0,-0.6) {$a$};
+                    \end{tikzpicture}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+    </subsubsection>
+
+    <!-- ========================================================
+         CASE 5: a ≤ x ≤ b
+         ======================================================== -->
+
+    <subsubsection xml:id="notation-a-leq-x-leq-b">
+        <title>Case 5: <m>a \leq x \leq b</m></title>
+
+        <p>
+            <em>Set-Builder Notation:</em> <m>\{x \mid a \leq x \leq b\}</m>
+        </p>
+        <p>
+            <em>Interval Notation:</em> <m>[a, b]</m>
+        </p>
+        <p>
+            <em>Number Line:</em>
+        </p>
+        <figure>
+            <caption>Number line for <m>a \leq x \leq b</m></caption>
+            <image xml:id="nl-ref-5" width="60%">
+                <shortdescription>Number line showing x between a and b inclusive</shortdescription>
+                <latex-image>
+                    <![CDATA[
+                    \begin{tikzpicture}
+                        \draw[->, thick, line width=1.2pt] (-3,0) -- (3,0);
+                        \draw[<-, thick, line width=1.2pt] (3,0) -- (-3,0);
+                        \foreach \x in {-2,-1,0,1,2}
+                            \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+                        \draw[thick, blue, line width=2pt] (-1,0) -- (1,0);
+                        \node[blue] at (-1,0) {$\pmb{[}$};
+                        \node[blue] at (1,0) {$\pmb{]}$};
+                        \node[below] at (-1,-0.6) {$a$};
+                        \node[below] at (1,-0.6) {$b$};
+                    \end{tikzpicture}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+    </subsubsection>
+
+    <!-- ========================================================
+         CASE 6: a < x < b
+         ======================================================== -->
+
+    <subsubsection xml:id="notation-a-lt-x-lt-b">
+        <title>Case 6: <m>a &lt; x &lt; b</m></title>
+
+        <p>
+            <em>Set-Builder Notation:</em> <m>\{x \mid a &lt; x &lt; b\}</m>
+        </p>
+        <p>
+            <em>Interval Notation:</em> <m>(a, b)</m>
+        </p>
+        <p>
+            <em>Number Line:</em>
+        </p>
+        <figure>
+            <caption>Number line for <m>a &lt; x &lt; b</m></caption>
+            <image xml:id="nl-ref-6" width="60%">
+                <shortdescription>Number line showing x between a and b</shortdescription>
+                <latex-image>
+                    <![CDATA[
+                    \begin{tikzpicture}
+                        \draw[->, thick, line width=1.2pt] (-3,0) -- (3,0);
+                        \draw[<-, thick, line width=1.2pt] (3,0) -- (-3,0);
+                        \foreach \x in {-2,-1,0,1,2}
+                            \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+                        \draw[thick, blue, line width=2pt] (-1,0) -- (1,0);
+                        \node[blue] at (-1,0) {$\pmb{(}$};
+                        \node[blue] at (1,0) {$\pmb{)}$};
+                        \node[below] at (-1,-0.6) {$a$};
+                        \node[below] at (1,-0.6) {$b$};
+                    \end{tikzpicture}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+    </subsubsection>
+
+</subsection>
+
+    <!-- ========================================================
+         LINEAR INEQUALITIES
+         ======================================================== -->
+
+    <subsection xml:id="linear-inequalities">
+        <title>Linear Inequalities</title>
+
+        <activity>
+            <statement>
+                <p><em>Problem 1.</em> Solve: <me>5(x - 4) &gt; 3x - 8</me></p>
+                <p><em>Graph the solution set, and write the solution in set-builder notation and interval notation.</em></p>
+            </statement>
+            <solution>
+                <p><em>Step 1: Distribute.</em></p>
+                <me>5x - 20 &gt; 3x - 8</me>
+                <p><em>Step 2: Collect variables on one side.</em></p>
+                <me>5x - 3x &gt; -8 + 20</me>
+                <me>2x &gt; 12</me>
+                <p><em>Step 3: Divide by 2.</em></p>
+                <me>x &gt; 6</me>
+                <p>Therefore, the solution is <m>x &gt; 6</m>.</p>
+                <p>
+                    <em>Set-builder notation:</em> <m>\{x \mid x &gt; 6\}</m>
+                </p>
+                <p>
+                    <em>Interval notation:</em> <m>(6, \infty)</m>
+                </p>
+                <figure>
+                    <caption>Number line for <m>x &gt; 6</m></caption>
+                    <image xml:id="nl-1" width="80%">
+                        <shortdescription>Number line showing x greater than 6</shortdescription>
+                        <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                                \draw[->, thick, line width=1.2pt] (-1,0) -- (8,0);
+                                \draw[<-, thick, line width=1.2pt] (8,0) -- (-1,0);
+                                \foreach \x in {0,1,2,3,4,5,6,7}
+                                    \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+                                \draw[thick, blue, line width=2pt, ->] (6,0) -- (8,0);
+                                \node[blue] at (6,0) {$\pmb{(}$};
+                            \end{tikzpicture}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p><em>Problem 2.</em> Solve: <me>16 \leq 7(x - 3) - 2x + 5</me></p>
+                <p><em>Graph the solution set, and write the solution in set-builder notation and interval notation.</em></p>
+            </statement>
+            <solution>
+                <p><em>Step 1: Distribute and simplify.</em></p>
+                <me>16 \leq 7x - 21 - 2x + 5</me>
+                <me>16 \leq 5x - 16</me>
+                <p><em>Step 2: Collect constants on one side.</em></p>
+                <me>32 \leq 5x</me>
+                <p><em>Step 3: Divide by 5.</em></p>
+                <me>\frac{32}{5} \leq x</me>
+                <p>Therefore, the solution is <m>x \geq \frac{32}{5}</m>.</p>
+                <p>
+                    <em>Set-builder notation:</em> <m>\left\{x \mid x \geq \frac{32}{5}\right\}</m>
+                </p>
+                <p>
+                    <em>Interval notation:</em> <m>\left[\frac{32}{5}, \infty\right)</m>
+                </p>
+                <figure>
+                    <caption>Number line for <m>x \geq \frac{32}{5}</m></caption>
+                    <image xml:id="nl-2" width="80%">
+                        <shortdescription>Number line showing x greater than or equal to 32/5</shortdescription>
+                        <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                                \draw[->, thick, line width=1.2pt] (4,0) -- (9,0);
+                                \draw[<-, thick, line width=1.2pt] (9,0) -- (4,0);
+                                \foreach \x in {4,5,6,7,8}
+                                    \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+                                \draw[thick, blue, line width=2pt, ->] (6.4,0) -- (9,0);
+                                \node[blue] at (6.4,0) {$\pmb{[}$};
+                                \node[below] at (6.4,-0.6) {$\frac{32}{5}$};
+                            \end{tikzpicture}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         COMPOUND INEQUALITIES
+         ======================================================== -->
+
+    <subsection xml:id="compound-inequalities">
+        <title>Compound Inequalities</title>
+
+        <p>
+            Compound inequalities involve two separate inequalities joined by <em>or</em> or <em>and</em>.
+        </p>
+
+        <algorithm number="no">
+            <p><em>Key Differences:</em></p>
+            <ul>
+                <li><em>AND</em> — The solution must satisfy <em>both</em> inequalities.</li>
+                <li><em>OR</em> — The solution must satisfy <em>at least one</em> inequality.</li>
+            </ul>
+        </algorithm>
+
+        <!-- OR Example -->
+        <activity>
+            <statement>
+                <p><em>Problem 1 (OR).</em> Solve: <me>2x &gt; 10 \quad \text{or} \quad 2x - 3 &lt; 5</me></p>
+                <p><em>Graph the solution set, and write the solution in set-builder notation and interval notation.</em></p>
+            </statement>
+            <solution>
+                <p><em>Solve each inequality separately.</em></p>
+                <p>First: <m>x &gt; 5</m>. Second: <m>x &lt; 4</m>.</p>
+                <p>Since it is <em>OR</em>, the solution is:</p>
+                <me>x &gt; 5 \quad \text{or} \quad x &lt; 4</me>
+                <p>
+                    <em>Set-builder notation:</em> <m>\{x \mid x &lt; 4 \text{ or } x &gt; 5\}</m>
+                </p>
+                <p>
+                    <em>Interval notation:</em> <m>(-\infty, 4) \cup (5, \infty)</m>
+                </p>
+                <figure>
+                    <caption>Number line for compound inequality (OR)</caption>
+                    <image xml:id="nl-3" width="80%">
+                        <shortdescription>Number line showing union of two intervals</shortdescription>
+                        <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                                \draw[->, thick, line width=1.2pt] (-1,0) -- (8,0);
+                                \draw[<-, thick, line width=1.2pt] (8,0) -- (-1,0);
+                                \foreach \x in {0,1,2,3,4,5,6,7}
+                                    \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+                                \draw[thick, blue, line width=2pt, <-] (-1,0) -- (4,0);
+                                \node[blue] at (4,0) {$\pmb{)}$};
+                                \draw[thick, blue, line width=2pt, ->] (5,0) -- (8,0);
+                                \node[blue] at (5,0) {$\pmb{(}$};
+                            \end{tikzpicture}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+
+        <!-- AND Example -->
+        <activity>
+            <statement>
+                <p><em>Problem 2 (AND).</em> Solve: <me>5x &lt; 10 \quad \text{and} \quad 6x - 12 &lt; 10x</me></p>
+                <p><em>Graph the solution set, and write the solution in set-builder notation and interval notation.</em></p>
+            </statement>
+            <solution>
+                <p><em>Solve each inequality separately.</em></p>
+                <p>First: <m>x &lt; 2</m>. Second: <m>-3 &lt; x</m>.</p>
+                <p>Since it is <em>AND</em>, the solution must satisfy both:</p>
+                <me>-3 &lt; x \quad \text{and} \quad x &lt; 2</me>
+                <p>
+                    <em>Set-builder notation:</em> <m>\{x \mid -3 &lt; x &lt; 2\}</m>
+                </p>
+                <p>
+                    <em>Interval notation:</em> <m>(-3, 2)</m>
+                </p>
+                <figure>
+                    <caption>Number line for compound inequality (AND)</caption>
+                    <image xml:id="nl-4" width="80%">
+                        <shortdescription>Number line showing intersection of two intervals</shortdescription>
+                        <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                                \draw[->, thick, line width=1.2pt] (-4,0) -- (4,0);
+                                \draw[<-, thick, line width=1.2pt] (4,0) -- (-4,0);
+                                \foreach \x in {-3,-2,-1,0,1,2,3}
+                                    \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+                                \draw[thick, blue, line width=2pt] (-3,0) -- (2,0);
+                                \node[blue] at (-3,0) {$\pmb{(}$};
+                                \node[blue] at (2,0) {$\pmb{)}$};
+                            \end{tikzpicture}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+
+        <!-- Mixed OR Example -->
+        <activity>
+            <statement>
+                <p><em>Problem 3 (OR).</em> Solve: <me>\frac{1}{2}x &lt; 3x + 5 \quad \text{or} \quad 6x \geq -12</me></p>
+                <p><em>Graph the solution set, and write the solution in set-builder notation and interval notation.</em></p>
+            </statement>
+            <solution>
+                <p><em>Solve each inequality separately.</em></p>
+                <p>First: <m>x &gt; -2</m>. Second: <m>x \geq -2</m>.</p>
+                <p>Since it is <em>OR</em>, the solution is:</p>
+                <me>x \geq -2</me>
+                <p>
+                    <em>Set-builder notation:</em> <m>\{x \mid x \geq -2\}</m>
+                </p>
+                <p>
+                    <em>Interval notation:</em> <m>[-2, \infty)</m>
+                </p>
+                <figure>
+                    <caption>Number line for x ≥ -2</caption>
+                    <image xml:id="nl-5" width="80%">
+                        <shortdescription>Number line showing x greater than or equal to -2</shortdescription>
+                        <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                                \draw[->, thick, line width=1.2pt] (-4,0) -- (4,0);
+                                \draw[<-, thick, line width=1.2pt] (4,0) -- (-4,0);
+                                \foreach \x in {-3,-2,-1,0,1,2,3}
+                                    \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+                                \draw[thick, blue, line width=2pt, ->] (-2,0) -- (4,0);
+                                \node[blue] at (-2,0) {$\pmb{[}$};
+                            \end{tikzpicture}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+
+        <!-- Mixed AND Example -->
+        <activity>
+            <statement>
+                <p><em>Problem 4 (AND).</em> Solve: <me>\frac{1}{2}x &lt; 3x + 5 \quad \text{and} \quad 6x \geq -12</me></p>
+                <p><em>Graph the solution set, and write the solution in set-builder notation and interval notation.</em></p>
+            </statement>
+            <solution>
+                <p><em>Solve each inequality separately.</em></p>
+                <p>First: <m>x &gt; -2</m>. Second: <m>x \geq -2</m>.</p>
+                <p>Since it is <em>AND</em>, the solution must satisfy both:</p>
+                <me>x &gt; -2</me>
+                <p>
+                    <em>Set-builder notation:</em> <m>\{x \mid x &gt; -2\}</m>
+                </p>
+                <p>
+                    <em>Interval notation:</em> <m>(-2, \infty)</m>
+                </p>
+                <figure>
+                    <caption>Number line for x > -2</caption>
+                    <image xml:id="nl-6" width="80%">
+                        <shortdescription>Number line showing x greater than -2</shortdescription>
+                        <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                                \draw[->, thick, line width=1.2pt] (-4,0) -- (4,0);
+                                \draw[<-, thick, line width=1.2pt] (4,0) -- (-4,0);
+                                \foreach \x in {-3,-2,-1,0,1,2,3}
+                                    \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+                                \draw[thick, blue, line width=2pt, ->] (-2,0) -- (4,0);
+                                \node[blue] at (-2,0) {$\pmb{(}$};
+                            \end{tikzpicture}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         THREE-PART INEQUALITIES
+         ======================================================== -->
+
+    <subsection xml:id="three-part-inequalities">
+        <title>Three-Part Inequalities</title>
+
+        <activity>
+            <statement>
+                <p><em>Problem 1.</em> Solve: <me>-2 &lt; 2x - 4 \leq 10</me></p>
+                <p><em>Graph the solution set, and write the solution in set-builder notation and interval notation.</em></p>
+            </statement>
+            <solution>
+                <p><em>Add 4 to all three parts.</em></p>
+                <me>2 &lt; 2x \leq 14</me>
+                <p><em>Divide by 2.</em></p>
+                <me>1 &lt; x \leq 7</me>
+                <p>
+                    <em>Set-builder notation:</em> <m>\{x \mid 1 &lt; x \leq 7\}</m>
+                </p>
+                <p>
+                    <em>Interval notation:</em> <m>(1, 7]</m>
+                </p>
+                <figure>
+                    <caption>Number line for 1 &lt; x ≤ 7</caption>
+                    <image xml:id="nl-7" width="80%">
+                        <shortdescription>Number line showing 1 less than x less than or equal to 7</shortdescription>
+                        <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                                \draw[->, thick, line width=1.2pt] (-1,0) -- (9,0);
+                                \draw[<-, thick, line width=1.2pt] (9,0) -- (-1,0);
+                                \foreach \x in {0,1,2,3,4,5,6,7,8}
+                                    \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+                                \draw[thick, blue, line width=2pt] (1,0) -- (7,0);
+                                \node[blue] at (1,0) {$\pmb{(}$};
+                                \node[blue] at (7,0) {$\pmb{]}$};
+                            \end{tikzpicture}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p><em>Problem 2.</em> Solve: <me>3 \leq 2x - 1 \leq 11</me></p>
+                <p><em>Graph the solution set, and write the solution in set-builder notation and interval notation.</em></p>
+            </statement>
+            <solution>
+                <p><em>Add 1 to all three parts.</em></p>
+                <me>4 \leq 2x \leq 12</me>
+                <p><em>Divide by 2.</em></p>
+                <me>2 \leq x \leq 6</me>
+                <p>
+                    <em>Set-builder notation:</em> <m>\{x \mid 2 \leq x \leq 6\}</m>
+                </p>
+                <p>
+                    <em>Interval notation:</em> <m>[2, 6]</m>
+                </p>
+                <figure>
+                    <caption>Number line for 2 ≤ x ≤ 6</caption>
+                    <image xml:id="nl-8" width="80%">
+                        <shortdescription>Number line showing x between 2 and 6 inclusive</shortdescription>
+                        <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                                \draw[->, thick, line width=1.2pt] (-1,0) -- (8,0);
+                                \draw[<-, thick, line width=1.2pt] (8,0) -- (-1,0);
+                                \foreach \x in {0,1,2,3,4,5,6,7}
+                                    \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+                                \draw[thick, blue, line width=2pt] (2,0) -- (6,0);
+                                \node[blue] at (2,0) {$\pmb{[}$};
+                                \node[blue] at (6,0) {$\pmb{]}$};
+                            \end{tikzpicture}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         ABSOLUTE VALUE: PIECEWISE DEFINITION
+         ======================================================== -->
+
+    <subsection xml:id="absolute-value-definition">
+        <title>Absolute Value: Piecewise Definition</title>
+
+        <p>
+            The absolute value of a number is its distance from zero on the number line.
+        </p>
+
+        <p>
+            <em>Piecewise definition:</em>
+        </p>
+        <me>
+            |x| = 
+            \begin{cases}
+                x &amp; \text{if } x \geq 0 \\
+                -x &amp; \text{if } x &lt; 0
+            \end{cases}
+        </me>
+    </subsection>
+
+    <!-- ========================================================
+         ABSOLUTE VALUE EQUATIONS
+         ======================================================== -->
+
+    <subsection xml:id="absolute-value-equations">
+        <title>Absolute Value Equations</title>
+
+        <p>
+            For <m>|X| = k</m> where <m>k \geq 0</m>, the solutions are:
+        </p>
+        <me>X = k \quad \text{or} \quad X = -k</me>
+
+        <activity>
+            <statement>
+                <p><em>Problem 1.</em> Solve: <me>|x| = 5</me></p>
+            </statement>
+            <solution>
+                <me>x = 5 \quad \text{or} \quad x = -5</me>
+                <p>
+                    <em>Set-builder notation:</em> <m>\{x \mid x = -5 \text{ or } x = 5\}</m>
+                </p>
+                <p>
+                    <em>Interval notation:</em> <m>\{-5, 5\}</m>
+                </p>
+                <figure>
+                    <caption>Number line for |x| = 5</caption>
+                    <image xml:id="nl-9" width="80%">
+                        <shortdescription>Number line showing points at -5 and 5</shortdescription>
+                        <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                                \draw[->, thick, line width=1.2pt] (-6,0) -- (6,0);
+                                \draw[<-, thick, line width=1.2pt] (6,0) -- (-6,0);
+                                \foreach \x in {-5,-4,-3,-2,-1,0,1,2,3,4,5}
+                                    \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+                                \draw[fill=blue] (-5,0) circle (0.12);
+                                \draw[fill=blue] (5,0) circle (0.12);
+                            \end{tikzpicture}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p><em>Problem 2.</em> Solve: <me>|x - 2| = 5</me></p>
+            </statement>
+            <solution>
+                <me>x - 2 = 5 \quad \text{or} \quad x - 2 = -5</me>
+                <me>x = 7 \quad \text{or} \quad x = -3</me>
+                <p>
+                    <em>Set-builder notation:</em> <m>\{x \mid x = -3 \text{ or } x = 7\}</m>
+                </p>
+                <p>
+                    <em>Interval notation:</em> <m>\{-3, 7\}</m>
+                </p>
+                <figure>
+                    <caption>Number line for |x - 2| = 5</caption>
+                    <image xml:id="nl-10" width="80%">
+                        <shortdescription>Number line showing points at -3 and 7</shortdescription>
+                        <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                                \draw[->, thick, line width=1.2pt] (-4,0) -- (8,0);
+                                \draw[<-, thick, line width=1.2pt] (8,0) -- (-4,0);
+                                \foreach \x in {-3,-2,-1,0,1,2,3,4,5,6,7}
+                                    \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+                                \draw[fill=blue] (-3,0) circle (0.12);
+                                \draw[fill=blue] (7,0) circle (0.12);
+                            \end{tikzpicture}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+
+        <activity>
+    <statement>
+        <p><em>Problem 3.</em> Solve: <me>\frac{1}{2}|x - 2| + 1 = 5</me></p>
+    </statement>
+    <solution>
+        <p><em>Step 1: Isolate the absolute value.</em></p>
+        <me>|x - 2| = 8</me>
+        <p><em>Step 2: Split into two equations.</em></p>
+        <me>x = 10 \quad \text{or} \quad x = -6</me>
+        <p>
+            <em>Set-builder notation:</em> <m>\{x \mid x = -6 \text{ or } x = 10\}</m>
+        </p>
+        <p>
+            <em>Interval notation:</em> <m>\{-6, 10\}</m>
+        </p>
+        <figure>
+    <caption>Number line for (1/2)|x-2| + 1 = 5</caption>
+    <image xml:id="nl-11" width="80%">
+        <shortdescription>Number line showing points at -6 and 10</shortdescription>
+        <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}[scale=0.7]
+                \draw[->, thick, line width=1.2pt] (-7,0) -- (11,0);
+                \draw[<-, thick, line width=1.2pt] (11,0) -- (-7,0);
+                \foreach \x in {-6,-4,-2,0,2,4,6,8,10}
+                    \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+                \draw[fill=blue] (-6,0) circle (0.15);
+                \draw[fill=blue] (10,0) circle (0.15);
+            \end{tikzpicture}
+            ]]>
+        </latex-image>
+    </image>
+</figure>
+    </solution>
+</activity>
+        <activity>
+            <statement>
+                <p><em>Problem 4.</em> Solve: <me>|2x - 1| = -5</me></p>
+            </statement>
+            <solution>
+                <p>
+                    <em>No solution.</em> Absolute value cannot equal a negative number.
+                </p>
+                <p>
+                    <em>Set-builder notation:</em> <m>\varnothing</m>
+                </p>
+                <p>
+                    <em>Interval notation:</em> No solution
+                </p>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p><em>Problem 5.</em> Solve: <me>|x - 2| = 0</me></p>
+            </statement>
+            <solution>
+                <me>x = 2</me>
+                <p>
+                    <em>Set-builder notation:</em> <m>\{x \mid x = 2\}</m>
+                </p>
+                <p>
+                    <em>Interval notation:</em> <m>\{2\}</m>
+                </p>
+                <figure>
+                    <caption>Number line for |x - 2| = 0</caption>
+                    <image xml:id="nl-12" width="80%">
+                        <shortdescription>Number line showing point at 2</shortdescription>
+                        <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                                \draw[->, thick, line width=1.2pt] (-2,0) -- (6,0);
+                                \draw[<-, thick, line width=1.2pt] (6,0) -- (-2,0);
+                                \foreach \x in {-1,0,1,2,3,4,5}
+                                    \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+                                \draw[fill=blue] (2,0) circle (0.12);
+                            \end{tikzpicture}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         ABSOLUTE VALUE INEQUALITIES (≤)
+         ======================================================== -->
+
+    <subsection xml:id="absolute-value-inequalities-less-or-equal">
+        <title>Absolute Value Inequalities (Less Than or Equal To)</title>
+
+        <p>
+            For <m>|X| \leq k</m>, the solution is:
+        </p>
+        <me>-k \leq X \leq k</me>
+
+        <figure>
+            <caption>Number line for |x| ≤ 3</caption>
+            <image xml:id="nl-abs1" width="80%">
+                <shortdescription>Number line showing interval from -3 to 3</shortdescription>
+                <latex-image>
+                    <![CDATA[
+                    \begin{tikzpicture}
+                        \draw[->, thick, line width=1.2pt] (-4,0) -- (4,0);
+                        \draw[<-, thick, line width=1.2pt] (4,0) -- (-4,0);
+                        \foreach \x in {-3,-2,-1,0,1,2,3}
+                            \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+                        \draw[thick, blue, line width=2pt] (-3,0) -- (3,0);
+                        \node[blue] at (-3,0) {$\pmb{[}$};
+                        \node[blue] at (3,0) {$\pmb{]}$};
+                    \end{tikzpicture}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+
+        <figure>
+            <caption>Number line for |x + 2| ≤ 3</caption>
+            <image xml:id="nl-abs2" width="80%">
+                <shortdescription>Number line showing interval from -5 to 1</shortdescription>
+                <latex-image>
+                    <![CDATA[
+                    \begin{tikzpicture}
+                        \draw[->, thick, line width=1.2pt] (-6,0) -- (2,0);
+                        \draw[<-, thick, line width=1.2pt] (2,0) -- (-6,0);
+                        \foreach \x in {-5,-4,-3,-2,-1,0,1}
+                            \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+                        \draw[thick, blue, line width=2pt] (-5,0) -- (1,0);
+                        \node[blue] at (-5,0) {$\pmb{[}$};
+                        \node[blue] at (1,0) {$\pmb{]}$};
+                    \end{tikzpicture}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+    </subsection>
+
+    <!-- ========================================================
+         ABSOLUTE VALUE INEQUALITIES (≥)
+         ======================================================== -->
+
+    <subsection xml:id="absolute-value-inequalities-greater-or-equal">
+        <title>Absolute Value Inequalities (Greater Than or Equal To)</title>
+
+        <p>
+            For <m>|X| \geq k</m>, the solution is:
+        </p>
+        <me>X \leq -k \quad \text{or} \quad X \geq k</me>
+
+        <figure>
+            <caption>Number line for |x| ≥ 3</caption>
+            <image xml:id="nl-abs3" width="80%">
+                <shortdescription>Number line showing union of two intervals</shortdescription>
+                <latex-image>
+                    <![CDATA[
+                    \begin{tikzpicture}
+                        \draw[->, thick, line width=1.2pt] (-5,0) -- (5,0);
+                        \draw[<-, thick, line width=1.2pt] (5,0) -- (-5,0);
+                        \foreach \x in {-4,-3,-2,-1,0,1,2,3,4}
+                            \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+                        \draw[thick, blue, line width=2pt, <-] (-5,0) -- (-3,0);
+                        \node[blue] at (-3,0) {$\pmb{]}$};
+                        \draw[thick, blue, line width=2pt, ->] (3,0) -- (5,0);
+                        \node[blue] at (3,0) {$\pmb{[}$};
+                    \end{tikzpicture}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+
+        <figure>
+            <caption>Number line for |x + 2| ≥ 3</caption>
+            <image xml:id="nl-abs4" width="80%">
+                <shortdescription>Number line showing union of two intervals</shortdescription>
+                <latex-image>
+                    <![CDATA[
+                    \begin{tikzpicture}
+                        \draw[->, thick, line width=1.2pt] (-7,0) -- (3,0);
+                        \draw[<-, thick, line width=1.2pt] (3,0) -- (-7,0);
+                        \foreach \x in {-6,-5,-4,-3,-2,-1,0,1,2}
+                            \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+                        \draw[thick, blue, line width=2pt, <-] (-7,0) -- (-5,0);
+                        \node[blue] at (-5,0) {$\pmb{]}$};
+                        \draw[thick, blue, line width=2pt, ->] (1,0) -- (3,0);
+                        \node[blue] at (1,0) {$\pmb{[}$};
+                    \end{tikzpicture}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+    </subsection>
+
+    <!-- ========================================================
+         ABSOLUTE VALUE INEQUALITIES (<)
+         ======================================================== -->
+
+    <subsection xml:id="absolute-value-inequalities-less">
+        <title>Absolute Value Inequalities (Less Than)</title>
+
+        <p>
+            For <m>|X| &lt; k</m>, the solution is:
+        </p>
+        <me>-k &lt; X &lt; k</me>
+
+        <activity>
+            <statement>
+                <p><em>Problem 1.</em> Solve: <me>|2x + 3| &lt; 5</me></p>
+            </statement>
+            <solution>
+                <me>-5 &lt; 2x + 3 &lt; 5</me>
+                <p><em>Subtract 3 from all parts.</em></p>
+                <me>-8 &lt; 2x &lt; 2</me>
+                <p><em>Divide by 2.</em></p>
+                <me>-4 &lt; x &lt; 1</me>
+                <p>
+                    <em>Set-builder notation:</em> <m>\{x \mid -4 &lt; x &lt; 1\}</m>
+                </p>
+                <p>
+                    <em>Interval notation:</em> <m>(-4, 1)</m>
+                </p>
+                <figure>
+                    <caption>Number line for |2x + 3| &lt; 5</caption>
+                    <image xml:id="nl-13" width="80%">
+                        <shortdescription>Number line showing interval from -4 to 1</shortdescription>
+                        <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                                \draw[->, thick, line width=1.2pt] (-5,0) -- (2,0);
+                                \draw[<-, thick, line width=1.2pt] (2,0) -- (-5,0);
+                                \foreach \x in {-4,-3,-2,-1,0,1}
+                                    \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+                                \draw[thick, blue, line width=2pt] (-4,0) -- (1,0);
+                                \node[blue] at (-4,0) {$\pmb{(}$};
+                                \node[blue] at (1,0) {$\pmb{)}$};
+                            \end{tikzpicture}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p><em>Problem 2.</em> Solve: <me>|2x + 5| + 4 &lt; 11</me></p>
+            </statement>
+            <solution>
+                <p><em>Isolate the absolute value.</em></p>
+                <me>|2x + 5| &lt; 7</me>
+                <me>-7 &lt; 2x + 5 &lt; 7</me>
+                <p><em>Subtract 5 from all parts.</em></p>
+                <me>-12 &lt; 2x &lt; 2</me>
+                <p><em>Divide by 2.</em></p>
+                <me>-6 &lt; x &lt; 1</me>
+                <p>
+                    <em>Set-builder notation:</em> <m>\{x \mid -6 &lt; x &lt; 1\}</m>
+                </p>
+                <p>
+                    <em>Interval notation:</em> <m>(-6, 1)</m>
+                </p>
+                <figure>
+                    <caption>Number line for |2x + 5| + 4 &lt; 11</caption>
+                    <image xml:id="nl-14" width="80%">
+                        <shortdescription>Number line showing interval from -6 to 1</shortdescription>
+                        <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                                \draw[->, thick, line width=1.2pt] (-7,0) -- (2,0);
+                                \draw[<-, thick, line width=1.2pt] (2,0) -- (-7,0);
+                                \foreach \x in {-6,-5,-4,-3,-2,-1,0,1}
+                                    \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+                                \draw[thick, blue, line width=2pt] (-6,0) -- (1,0);
+                                \node[blue] at (-6,0) {$\pmb{(}$};
+                                \node[blue] at (1,0) {$\pmb{)}$};
+                            \end{tikzpicture}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         ABSOLUTE VALUE INEQUALITIES (>)
+         ======================================================== -->
+
+    <subsection xml:id="absolute-value-inequalities-greater">
+        <title>Absolute Value Inequalities (Greater Than)</title>
+
+        <p>
+            For <m>|X| &gt; k</m>, the solution is:
+        </p>
+        <me>X &lt; -k \quad \text{or} \quad X &gt; k</me>
+
+        <activity>
+            <statement>
+                <p><em>Problem 1.</em> Solve: <me>|2x + 3| \geq 5</me></p>
+            </statement>
+            <solution>
+                <me>2x + 3 \leq -5 \quad \text{or} \quad 2x + 3 \geq 5</me>
+                <p>First: <m>x \leq -4</m>. Second: <m>x \geq 1</m>.</p>
+                <p>
+                    <em>Set-builder notation:</em> <m>\{x \mid x \leq -4 \text{ or } x \geq 1\}</m>
+                </p>
+                <p>
+                    <em>Interval notation:</em> <m>(-\infty, -4] \cup [1, \infty)</m>
+                </p>
+                <figure>
+                    <caption>Number line for |2x + 3| ≥ 5</caption>
+                    <image xml:id="nl-15" width="80%">
+                        <shortdescription>Number line showing union of two intervals</shortdescription>
+                        <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                                \draw[->, thick, line width=1.2pt] (-6,0) -- (3,0);
+                                \draw[<-, thick, line width=1.2pt] (3,0) -- (-6,0);
+                                \foreach \x in {-5,-4,-3,-2,-1,0,1,2}
+                                    \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+                                \draw[thick, blue, line width=2pt, <-] (-6,0) -- (-4,0);
+                                \node[blue] at (-4,0) {$\pmb{]}$};
+                                \draw[thick, blue, line width=2pt, ->] (1,0) -- (3,0);
+                                \node[blue] at (1,0) {$\pmb{[}$};
+                            \end{tikzpicture}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p><em>Problem 2.</em> Solve: <me>2|x + 4| + 3 &gt; 9</me></p>
+            </statement>
+            <solution>
+                <p><em>Isolate the absolute value.</em></p>
+                <me>|x + 4| &gt; 3</me>
+                <p>First: <m>x &lt; -7</m>. Second: <m>x &gt; -1</m>.</p>
+                <p>
+                    <em>Set-builder notation:</em> <m>\{x \mid x &lt; -7 \text{ or } x &gt; -1\}</m>
+                </p>
+                <p>
+                    <em>Interval notation:</em> <m>(-\infty, -7) \cup (-1, \infty)</m>
+                </p>
+                <figure>
+                    <caption>Number line for 2|x + 4| + 3 &gt; 9</caption>
+                    <image xml:id="nl-16" width="80%">
+                        <shortdescription>Number line showing union of two intervals</shortdescription>
+                        <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}
+                                \draw[->, thick, line width=1.2pt] (-9,0) -- (1,0);
+                                \draw[<-, thick, line width=1.2pt] (1,0) -- (-9,0);
+                                \foreach \x in {-8,-7,-6,-5,-4,-3,-2,-1,0}
+                                    \draw (\x,0.1) -- (\x,-0.1) node[below] {\x};
+                                \draw[thick, blue, line width=2pt, <-] (-9,0) -- (-7,0);
+                                \node[blue] at (-7,0) {$\pmb{)}$};
+                                \draw[thick, blue, line width=2pt, ->] (-1,0) -- (1,0);
+                                \node[blue] at (-1,0) {$\pmb{(}$};
+                            \end{tikzpicture}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+</section>
