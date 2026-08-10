@@ -17,13 +17,28 @@
 
   <!-- If you put any latex-image elements you can include preambles -->
   <!-- for those in the next element. -->
-  <latex-image-preamble>
-    \usepackage{tikz, pgfplots}
-    \usetikzlibrary{positioning,matrix,arrows}
-    \usetikzlibrary{shapes,decorations,shadows,fadings,patterns}
-    \usetikzlibrary{decorations.markings}
-    \usetikzlibrary{arrows.meta}
-  </latex-image-preamble>
+   <latex-image-preamble>
+        \usepackage{tikz}
+        \usepackage{pgfplots}
+        \pgfplotsset{compat=1.18}
+        \usetikzlibrary{arrows.meta}
+        \usetikzlibrary{decorations.pathreplacing}
+        \usetikzlibrary{positioning}
+        \usetikzlibrary{shapes.geometric}
+        \usetikzlibrary{patterns}
+        \usetikzlibrary{matrix}
+        \usepackage{amsmath, amssymb}
+
+        % Custom colors for function diagrams
+        \definecolor{lightblue}{RGB}{200,220,240}
+        \definecolor{cream}{RGB}{248,247,232}
+        \definecolor{lightorange}{RGB}{251,229,210}
+        \definecolor{lightcyan}{RGB}{215,237,244}
+        \definecolor{lightgreen}{RGB}{177,223,105}
+        \definecolor{brightblue}{RGB}{0,0,235}
+        \definecolor{headblue}{RGB}{58,96,142}
+        \definecolor{boxblue}{RGB}{0,155,205}
+    </latex-image-preamble>
 
   <!-- It is possible to rename elements: -->
   <!-- <rename element="assemblage" xml:lang="en-US">Summary</rename> -->

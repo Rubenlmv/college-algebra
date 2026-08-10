@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="section-2-1">
+    <title>Section 2.1 Rectangular Coordinate System</title>
+
+    <!-- ========================================================
+         INTRODUCTION (NO VIDEO HERE)
+         ======================================================== -->
+
+    <subsection xml:id="intro-coordinate-system">
+        <title>Rectangular Coordinate System</title>
+
+        <p>
+            Also called the <em>Cartesian Coordinate System</em>, named after René Descartes, who first proposed identifying points in a plane by using two perpendicular number lines, intersecting at <m>0</m>.
+        </p>
+
+        <!-- Figure: Coordinate System with Quadrants -->
+        <figure>
+            <caption>Rectangular Coordinate System with Quadrants</caption>
+            <image xml:id="fig-coordinate-system" width="70%">
+                <shortdescription>Coordinate system with four quadrants labeled</shortdescription>
+                <latex-image>
+                    <![CDATA[
+                    \begin{tikzpicture}[scale=.55]
+                        \draw[step=1,black!15,thin] (-6,-6) grid (6,6);
+                        \draw[thick] (-6,0) -- (6,0);
+                        \draw[thick] (0,-6) -- (0,6);
+                        \draw[-latex,thick] (-6.35,0) -- (6.45,0) node[right] {$x$};
+                        \draw[-latex,thick] (0,-6.35) -- (0,6.45) node[above] {$y$};
+                        \foreach \x in {-5,-4,-3,-2,-1,1,2,3,4,5}
+                            \draw (\x,0.1) -- (\x,-0.1) node[below] {$\x$};
+                        \foreach \y in {-5,-4,-3,-2,-1,1,2,3,4,5}
+                            \draw (0.1,\y) -- (-0.1,\y) node[left] {$\y$};
+                        \node[red,font=\bfseries] at (-3.2,3.35) {Quadrant II};
+                        \node[red,font=\bfseries] at (2.8,3.35) {Quadrant I};
+                        \node[red,font=\bfseries] at (-3.1,-3.45) {Quadrant III};
+                        \node[red,font=\bfseries] at (2.8,-3.45) {Quadrant IV};
+                        \draw[red,thick,-{Stealth[length=2.5mm]}] (9.2,3.4) -- (0.1,0.1);
+                        \draw[red] (9.2,3.0) rectangle (11.2,3.9);
+                        \node at (10.2,3.45) {Origin};
+                    \end{tikzpicture}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+    </subsection>
+
+    <!-- ========================================================
+         PLOTTING POINTS
+         ======================================================== -->
+
+    <subsection xml:id="plotting-points">
+        <title>Plotting Points</title>
+
+        <p>
+            Every point can be identified by an <em>ordered pair</em>, given as <m>(x, y)</m>.
+        </p>
+
+        <activity>
+            <statement>
+                <p>Plot the following points on the coordinate plane below:</p>
+                <ol marker="1." columns="2">
+                    <li><m>(1, 1)</m></li>
+                    <li><m>(-3, -4)</m></li>
+                    <li><m>(5.5, -2.5)</m></li>
+                    <li><m>(0, -2)</m></li>
+                    <li><m>(-3, 0)</m></li>
+                </ol>
+
+                <!-- Empty grid for the exercise -->
+                <figure>
+                    <caption>Empty coordinate plane</caption>
+                    <image xml:id="fig-plotting-empty" width="70%">
+                        <shortdescription>Empty grid for plotting</shortdescription>
+                        <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}[scale=0.55]
+                                \draw[step=1,black!15,thin] (-6,-6) grid (6,6);
+                                \draw[thick] (-6,0) -- (6,0);
+                                \draw[thick] (0,-6) -- (0,6);
+                                \draw[-latex,thick] (-6.35,0) -- (6.45,0) node[right] {$x$};
+                                \draw[-latex,thick] (0,-6.35) -- (0,6.45) node[above] {$y$};
+                                \foreach \x in {-5,-4,-3,-2,-1,1,2,3,4,5}
+                                    \draw (\x,0.1) -- (\x,-0.1) node[below] {$\x$};
+                                \foreach \y in {-5,-4,-3,-2,-1,1,2,3,4,5}
+                                    \draw (0.1,\y) -- (-0.1,\y) node[left] {$\y$};
+                            \end{tikzpicture}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </statement>
+            <solution>
+                <p>The points are plotted as shown below:</p>
+                <figure>
+                    <caption>Plotted points</caption>
+                    <image xml:id="fig-plotting-solution" width="70%">
+                        <shortdescription>Coordinate plane with five points plotted</shortdescription>
+                        <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}[scale=0.55]
+                                \draw[step=1,black!15,thin] (-6,-6) grid (6,6);
+                                \draw[thick] (-6,0) -- (6,0);
+                                \draw[thick] (0,-6) -- (0,6);
+                                \draw[-latex,thick] (-6.35,0) -- (6.45,0) node[right] {$x$};
+                                \draw[-latex,thick] (0,-6.35) -- (0,6.45) node[above] {$y$};
+                                \foreach \x in {-5,-4,-3,-2,-1,1,2,3,4,5}
+                                    \draw (\x,0.1) -- (\x,-0.1) node[below] {$\x$};
+                                \foreach \y in {-5,-4,-3,-2,-1,1,2,3,4,5}
+                                    \draw (0.1,\y) -- (-0.1,\y) node[left] {$\y$};
+                                \fill[red] (1,1) circle (0.24);
+                                \node[red,font=\bfseries] at (1.45,1.55) {$(1,1)$};
+                                \fill[red] (-3,-4) circle (0.24);
+                                \node[red,font=\bfseries] at (-3.45,-4.55) {$(-3,-4)$};
+                                \fill[red] (5.5,-2.5) circle (0.24);
+                                \node[red,font=\bfseries] at (5.95,-2.95) {$(5.5,-2.5)$};
+                                \fill[red] (0,-2) circle (0.24);
+                                \node[red,font=\bfseries] at (0.45,-2.55) {$(0,-2)$};
+                                \fill[red] (-3,0) circle (0.24);
+                                \node[red,font=\bfseries] at (-3.45,0.55) {$(-3,0)$};
+                            \end{tikzpicture}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         DISTANCE FORMULA (VIDEO 1)
+         ======================================================== -->
+
+    <subsection xml:id="distance-formula">
+        <title>Distance Formula</title>
+
+        <!-- Video 1: Distance Formula -->
+        <p><url href="https://echo360.org/media/757cd5c4-957c-4cfb-8575-54d160440dab/public">Distance Formula Video</url></p>
+
+        <p>
+            The distance formula between two points can be found using the Pythagorean Theorem.
+        </p>
+
+        <figure>
+            <caption>Distance Formula Diagram</caption>
+            <image xml:id="fig-distance-formula" width="60%">
+                <shortdescription>Diagram showing distance between two points</shortdescription>
+                <latex-image>
+                    <![CDATA[
+                    \begin{tikzpicture}[scale=0.55]
+                        \draw[step=1,black!15,thin] (-6,-6) grid (6,6);
+                        \draw[thick] (-6,0) -- (6,0);
+                        \draw[thick] (0,-6) -- (0,6);
+                        \draw[-latex,thick] (-6.35,0) -- (6.45,0) node[right] {$x$};
+                        \draw[-latex,thick] (0,-6.35) -- (0,6.45) node[above] {$y$};
+                        \foreach \x in {-5,-4,-3,-2,-1,1,2,3,4,5}
+                            \draw (\x,0.1) -- (\x,-0.1) node[below] {$\x$};
+                        \foreach \y in {-5,-4,-3,-2,-1,1,2,3,4,5}
+                            \draw (0.1,\y) -- (-0.1,\y) node[left] {$\y$};
+                        \coordinate (A) at (4,4);
+                        \coordinate (B) at (-4,-2);
+                        \draw[red,very thick] (A)--(B);
+                        \fill[red] (A) circle (0.24);
+                        \fill[red] (B) circle (0.24);
+                        \draw[red,dashed,very thick] (4,4)--(4,-2)--(-4,-2);
+                        \draw[red,very thick] (-4,-2) -- (4,-2);
+                        \draw[red,very thick] (4,-2) -- (4,4);
+                        \node[red,below] at (0,-2.3) {$(x_2-x_1)$};
+                        \node[red,right] at (4.3,-1) {$(y_2-y_1)$};
+                        \node[left] at (-4,-2) {$(x_2,y_2)$};
+                        \node[right] at (4,4) {$(x_1,y_1)$};
+                    \end{tikzpicture}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+
+        <me>d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}</me>
+
+        <activity>
+            <statement>
+                <p><em>Example.</em> Find the distance between the points <m>(-3, -4)</m> and <m>(3, 0)</m>. Give the exact distance and an approximation to 2 decimal places.</p>
+            </statement>
+            <solution>
+                <p><em>Step 1: Identify the coordinates.</em></p>
+                <p>Let <m>(x_1, y_1) = (-3, -4)</m> and <m>(x_2, y_2) = (3, 0)</m>.</p>
+                <p><em>Step 2: Apply the distance formula.</em></p>
+                <me>d = \sqrt{(3 - (-3))^2 + (0 - (-4))^2}</me>
+                <me>d = \sqrt{6^2 + 4^2}</me>
+                <me>d = \sqrt{36 + 16}</me>
+                <me>d = \sqrt{52} = 2\sqrt{13}</me>
+                <p><em>Step 3: Approximate to 2 decimal places.</em></p>
+                <me>d \approx 7.21</me>
+                <p>Therefore, the exact distance is <m>2\sqrt{13}</m> and the approximate distance is <m>7.21</m>.</p>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         MIDPOINT FORMULA (VIDEO 2)
+         ======================================================== -->
+
+    <subsection xml:id="midpoint-formula">
+        <title>Midpoint Formula</title>
+
+        <!-- Video 2: Midpoint Formula -->
+        <p><url href="https://youtu.be/pzDfd8NXRXk">Midpoint Formula Video</url></p>
+
+        <p>
+            The midpoint of the line segment with endpoints <m>(x_1, y_1)</m> and <m>(x_2, y_2)</m> is:
+        </p>
+        <me>\left(\frac{x_1 + x_2}{2}, \frac{y_1 + y_2}{2}\right)</me>
+
+        <activity>
+            <statement>
+                <p><em>Example.</em> Find the midpoint of the line segment with endpoints <m>(-1.5, -3)</m> and <m>(4.5, 5)</m>.</p>
+            </statement>
+            <solution>
+                <p><em>Step 1: Identify the coordinates.</em></p>
+                <p>Let <m>(x_1, y_1) = (-1.5, -3)</m> and <m>(x_2, y_2) = (4.5, 5)</m>.</p>
+                <p><em>Step 2: Apply the midpoint formula.</em></p>
+                <me>\left(\frac{-1.5 + 4.5}{2}, \frac{-3 + 5}{2}\right)</me>
+                <me>\left(\frac{3}{2}, \frac{2}{2}\right)</me>
+                <me>(1.5, 1)</me>
+                <p>Therefore, the midpoint is <m>(1.5, 1)</m>.</p>
+            </solution>
+        </activity>
+
+        <figure>
+            <caption>Midpoint of a line segment</caption>
+            <image xml:id="fig-midpoint" width="60%">
+                <shortdescription>Line segment with midpoint marked</shortdescription>
+                <latex-image>
+                    <![CDATA[
+                    \begin{tikzpicture}[scale=0.55]
+                        \draw[step=1,black!15,thin] (-3,-7) grid (7,6);
+                        \draw[thick] (-3,0) -- (7,0);
+                        \draw[thick] (0,-7) -- (0,6);
+                        \draw[-latex,thick] (-3.35,0) -- (7.45,0) node[right] {$x$};
+                        \draw[-latex,thick] (0,-7.35) -- (0,6.45) node[above] {$y$};
+                        \foreach \x in {-2,-1,1,2,3,4,5,6}
+                            \draw (\x,0.1) -- (\x,-0.1) node[below] {$\x$};
+                        \foreach \y in {-6,-5,-4,-3,-2,-1,1,2,3,4,5}
+                            \draw (0.1,\y) -- (-0.1,\y) node[left] {$\y$};
+                        \draw[red,very thick] (-1.5,-3)--(4.5,5);
+                        \fill[red] (-1.5,-3) circle (0.24);
+                        \fill[red] (4.5,5) circle (0.24);
+                        \fill[blue] (1.5,1) circle (0.3);
+                    \end{tikzpicture}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+    </subsection>
+<!-- ========================================================
+     GRAPHING BY PLOTTING POINTS (VIDEO 3)
+     ======================================================== -->
+
+<subsection xml:id="graphing-by-plotting-points">
+    <title>Graphing by Plotting Points</title>
+
+    <!-- Video 3: Graphing by Plotting Points -->
+    <p><url href="https://youtu.be/1uh-7m-SzYk">Graphing by Plotting Points Video</url></p>
+
+    <!-- Activity 1: y = x^2 + 3 -->
+    <activity>
+        <statement>
+            <p><em>Example 1.</em> Graph <m>y = x^2 + 3</m> by completing the table of values and plotting the points.</p>
+            <p>Complete the table:</p>
+            <tabular cols="|l|l|l|" top="minor" bottom="minor" header="1">
+                <row>
+                    <cell><m>x</m></cell>
+                    <cell><m>y</m></cell>
+                    <cell>Ordered Pair</cell>
+                </row>
+                <row>
+                    <cell><fillin /></cell>
+                    <cell><fillin /></cell>
+                    <cell><fillin /></cell>
+                </row>
+                <row>
+                    <cell><fillin /></cell>
+                    <cell><fillin /></cell>
+                    <cell><fillin /></cell>
+                </row>
+                <row>
+                    <cell><fillin /></cell>
+                    <cell><fillin /></cell>
+                    <cell><fillin /></cell>
+                </row>
+                <row>
+                    <cell><fillin /></cell>
+                    <cell><fillin /></cell>
+                    <cell><fillin /></cell>
+                </row>
+                <row>
+                    <cell><fillin /></cell>
+                    <cell><fillin /></cell>
+                    <cell><fillin /></cell>
+                </row>
+            </tabular>
+            <figure>
+                <caption>Empty coordinate plane for <m>y=x^2+3</m></caption>
+                <image xml:id="fig-plot1-empty" width="60%">
+                    <shortdescription>Empty grid for parabola</shortdescription>
+                    <latex-image>
+                        <![CDATA[
+                        \begin{tikzpicture}[scale=0.48]
+                            \draw[step=1,black!15,thin] (-5,-2) grid (5,12);
+                            \draw[thick] (-5,0) -- (5,0);
+                            \draw[thick] (0,-2) -- (0,12);
+                            \draw[-latex,thick] (-5.35,0) -- (5.45,0) node[right] {$x$};
+                            \draw[-latex,thick] (0,-2.35) -- (0,12.45) node[above] {$y$};
+                            \foreach \x in {-4,-3,-2,-1,1,2,3,4}
+                                \draw (\x,0.1) -- (\x,-0.1) node[below] {$\x$};
+                            \foreach \y in {-1,1,2,3,4,5,6,7,8,9,10,11}
+                                \draw (0.1,\y) -- (-0.1,\y) node[left] {$\y$};
+                        \end{tikzpicture}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+        </statement>
+        <solution>
+            <p>Choose <m>x</m> values: <m>-2, -1, 0, 1, 2</m>.</p>
+            <tabular cols="|l|l|l|" top="minor" bottom="minor" header="1">
+                <row>
+                    <cell><m>x</m></cell>
+                    <cell><m>y = x^2 + 3</m></cell>
+                    <cell>Ordered Pair</cell>
+                </row>
+                <row>
+                    <cell><m>-2</m></cell>
+                    <cell><m>7</m></cell>
+                    <cell><m>(-2, 7)</m></cell>
+                </row>
+                <row>
+                    <cell><m>-1</m></cell>
+                    <cell><m>4</m></cell>
+                    <cell><m>(-1, 4)</m></cell>
+                </row>
+                <row>
+                    <cell><m>0</m></cell>
+                    <cell><m>3</m></cell>
+                    <cell><m>(0, 3)</m></cell>
+                </row>
+                <row>
+                    <cell><m>1</m></cell>
+                    <cell><m>4</m></cell>
+                    <cell><m>(1, 4)</m></cell>
+                </row>
+                <row>
+                    <cell><m>2</m></cell>
+                    <cell><m>7</m></cell>
+                    <cell><m>(2, 7)</m></cell>
+                </row>
+            </tabular>
+            <p>Plot the points and connect them with a smooth curve to form a parabola opening upward with vertex at <m>(0, 3)</m>.</p>
+            <figure>
+                <caption>Graph of <m>y = x^2 + 3</m></caption>
+                <image xml:id="fig-plot1-solution" width="60%">
+                    <shortdescription>Parabola y = x^2 + 3</shortdescription>
+                    <latex-image>
+                        <![CDATA[
+                        \begin{tikzpicture}[scale=0.48]
+                            \draw[step=1,black!15,thin] (-5,-2) grid (5,12);
+                            \draw[thick] (-5,0) -- (5,0);
+                            \draw[thick] (0,-2) -- (0,12);
+                            \draw[-latex,thick] (-5.35,0) -- (5.45,0) node[right] {$x$};
+                            \draw[-latex,thick] (0,-2.35) -- (0,12.45) node[above] {$y$};
+                            \foreach \x in {-4,-3,-2,-1,1,2,3,4}
+                                \draw (\x,0.1) -- (\x,-0.1) node[below] {$\x$};
+                            \foreach \y in {-1,1,2,3,4,5,6,7,8,9,10,11}
+                                \draw (0.1,\y) -- (-0.1,\y) node[left] {$\y$};
+                            \draw[blue,very thick,domain=-3.1:3.1,samples=100] plot (\x,{\x*\x+3});
+                            \fill[red] (-2,7) circle (0.24);
+                            \fill[red] (-1,4) circle (0.24);
+                            \fill[red] (0,3) circle (0.24);
+                            \fill[red] (1,4) circle (0.24);
+                            \fill[red] (2,7) circle (0.24);
+                        \end{tikzpicture}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+        </solution>
+    </activity>
+
+    <!-- Activity 2: y = sqrt(x+3) -->
+    <activity>
+        <statement>
+            <p><em>Example 2.</em> Graph <m>y = \sqrt{x + 3}</m> by completing the table and plotting points.</p>
+            <p>Complete the table:</p>
+            <tabular cols="|l|l|l|" top="minor" bottom="minor" header="1">
+                <row>
+                    <cell><m>x</m></cell>
+                    <cell><m>y</m></cell>
+                    <cell>Ordered Pair</cell>
+                </row>
+                <row>
+                    <cell><fillin /></cell>
+                    <cell><fillin /></cell>
+                    <cell><fillin /></cell>
+                </row>
+                <row>
+                    <cell><fillin /></cell>
+                    <cell><fillin /></cell>
+                    <cell><fillin /></cell>
+                </row>
+                <row>
+                    <cell><fillin /></cell>
+                    <cell><fillin /></cell>
+                    <cell><fillin /></cell>
+                </row>
+                <row>
+                    <cell><fillin /></cell>
+                    <cell><fillin /></cell>
+                    <cell><fillin /></cell>
+                </row>
+                <row>
+                    <cell><fillin /></cell>
+                    <cell><fillin /></cell>
+                    <cell><fillin /></cell>
+                </row>
+            </tabular>
+            <figure>
+                <caption>Empty coordinate plane for <m>y=\sqrt{x+3}</m></caption>
+                <image xml:id="fig-plot2-empty" width="60%">
+                    <shortdescription>Empty grid for square root</shortdescription>
+                    <latex-image>
+                        <![CDATA[
+                        \begin{tikzpicture}[scale=0.52]
+                            \draw[step=1,black!15,thin] (-5,-2) grid (5,5);
+                            \draw[thick] (-5,0) -- (5,0);
+                            \draw[thick] (0,-2) -- (0,5);
+                            \draw[-latex,thick] (-5.35,0) -- (5.45,0) node[right] {$x$};
+                            \draw[-latex,thick] (0,-2.35) -- (0,5.45) node[above] {$y$};
+                            \foreach \x in {-4,-3,-2,-1,1,2,3,4}
+                                \draw (\x,0.1) -- (\x,-0.1) node[below] {$\x$};
+                            \foreach \y in {-1,1,2,3,4}
+                                \draw (0.1,\y) -- (-0.1,\y) node[left] {$\y$};
+                        \end{tikzpicture}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+        </statement>
+        <solution>
+            <p>Choose <m>x</m> values: <m>-3, -2, 1, 6, 13</m> (so the radicand is non-negative).</p>
+            <tabular cols="|l|l|l|" top="minor" bottom="minor" header="1">
+                <row>
+                    <cell><m>x</m></cell>
+                    <cell><m>y = \sqrt{x + 3}</m></cell>
+                    <cell>Ordered Pair</cell>
+                </row>
+                <row>
+                    <cell><m>-3</m></cell>
+                    <cell><m>0</m></cell>
+                    <cell><m>(-3, 0)</m></cell>
+                </row>
+                <row>
+                    <cell><m>-2</m></cell>
+                    <cell><m>1</m></cell>
+                    <cell><m>(-2, 1)</m></cell>
+                </row>
+                <row>
+                    <cell><m>1</m></cell>
+                    <cell><m>2</m></cell>
+                    <cell><m>(1, 2)</m></cell>
+                </row>
+                <row>
+                    <cell><m>6</m></cell>
+                    <cell><m>3</m></cell>
+                    <cell><m>(6, 3)</m></cell>
+                </row>
+                <row>
+                    <cell><m>13</m></cell>
+                    <cell><m>4</m></cell>
+                    <cell><m>(13, 4)</m></cell>
+                </row>
+            </tabular>
+            <p>Plot the points and connect them with a smooth curve starting at <m>(-3, 0)</m>.</p>
+            <figure>
+                <caption>Graph of <m>y = \sqrt{x + 3}</m></caption>
+                <image xml:id="fig-plot2-solution" width="60%">
+                    <shortdescription>Square root function y = sqrt(x + 3)</shortdescription>
+                    <latex-image>
+                        <![CDATA[
+                        \begin{tikzpicture}[scale=0.52]
+                            \draw[step=1,black!15,thin] (-5,-2) grid (5,5);
+                            \draw[thick] (-5,0) -- (5,0);
+                            \draw[thick] (0,-2) -- (0,5);
+                            \draw[-latex,thick] (-5.35,0) -- (5.45,0) node[right] {$x$};
+                            \draw[-latex,thick] (0,-2.35) -- (0,5.45) node[above] {$y$};
+                            \foreach \x in {-4,-3,-2,-1,1,2,3,4}
+                                \draw (\x,0.1) -- (\x,-0.1) node[below] {$\x$};
+                            \foreach \y in {-1,1,2,3,4}
+                                \draw (0.1,\y) -- (-0.1,\y) node[left] {$\y$};
+                            \draw[blue,very thick,domain=-3:13,samples=100] plot (\x,{sqrt(\x+3)});
+                            \fill[red] (-3,0) circle (0.24);
+                            \fill[red] (-2,1) circle (0.24);
+                            \fill[red] (1,2) circle (0.24);
+                            \fill[red] (6,3) circle (0.24);
+                            \fill[red] (13,4) circle (0.24);
+                        \end{tikzpicture}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+        </solution>
+    </activity>
+</subsection>
+    <!-- ========================================================
+         X- AND Y- INTERCEPTS (VIDEO 4)
+         ======================================================== -->
+
+    <subsection xml:id="intercepts">
+        <title>Identifying x- and y- Intercepts</title>
+
+        <!-- Video 4: x- and y- Intercepts -->
+        <p><url href="https://youtu.be/-08_QjVDu98">x- and y- Intercepts Video</url></p>
+
+        <algorithm number="no">
+            <title>Finding x- and y-intercepts</title>
+            <ol>
+                <li>To find the <m>x</m>-intercept(s), substitute <m>y=0</m> into the equation and solve for <m>x</m>.</li>
+                <li>To find the <m>y</m>-intercept(s), substitute <m>x=0</m> into the equation and solve for <m>y</m>.</li>
+            </ol>
+        </algorithm>
+
+        <p>
+            Any point on the <m>x</m>-axis has <m>0</m> as its <m>y</m>-coordinate: <m>(a, 0)</m>.
+            Any point on the <m>y</m>-axis has <m>0</m> as its <m>x</m>-coordinate: <m>(0, b)</m>.
+        </p>
+
+        <activity>
+            <statement>
+                <p>Estimate the <m>x</m>- and <m>y</m>-intercepts from the graph of <m>y = x^2 - 4</m> shown below.</p>
+                <figure>
+                    <caption>Graph of <m>y = x^2 - 4</m></caption>
+                    <image xml:id="fig-intercepts-exercise" width="60%">
+                        <shortdescription>Parabola y = x^2 - 4</shortdescription>
+                        <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}[scale=0.52]
+                                \draw[step=1,black!15,thin] (-5,-5) grid (5,5);
+                                \draw[thick] (-5,0) -- (5,0);
+                                \draw[thick] (0,-5) -- (0,5);
+                                \draw[-latex,thick] (-5.35,0) -- (5.45,0) node[right] {$x$};
+                                \draw[-latex,thick] (0,-5.35) -- (0,5.45) node[above] {$y$};
+                                \foreach \x in {-4,-3,-2,-1,1,2,3,4}
+                                    \draw (\x,0.1) -- (\x,-0.1) node[below] {$\x$};
+                                \foreach \y in {-4,-3,-2,-1,1,2,3,4}
+                                    \draw (0.1,\y) -- (-0.1,\y) node[left] {$\y$};
+                                \draw[blue,very thick,domain=-3.1:3.1,samples=100] plot (\x,{\x*\x-4});
+                            \end{tikzpicture}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </statement>
+            <solution>
+                <p>From the graph, the parabola crosses the <m>x</m>-axis at <m>(-2,0)</m> and <m>(2,0)</m>, and the <m>y</m>-axis at <m>(0,-4)</m>.</p>
+                <figure>
+                    <caption>Intercepts labeled</caption>
+                    <image xml:id="fig-intercepts-solution" width="60%">
+                        <shortdescription>Parabola with intercepts</shortdescription>
+                        <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}[scale=0.52]
+                                \draw[step=1,black!15,thin] (-5,-5) grid (5,5);
+                                \draw[thick] (-5,0) -- (5,0);
+                                \draw[thick] (0,-5) -- (0,5);
+                                \draw[-latex,thick] (-5.35,0) -- (5.45,0) node[right] {$x$};
+                                \draw[-latex,thick] (0,-5.35) -- (0,5.45) node[above] {$y$};
+                                \foreach \x in {-4,-3,-2,-1,1,2,3,4}
+                                    \draw (\x,0.1) -- (\x,-0.1) node[below] {$\x$};
+                                \foreach \y in {-4,-3,-2,-1,1,2,3,4}
+                                    \draw (0.1,\y) -- (-0.1,\y) node[left] {$\y$};
+                                \draw[blue,very thick,domain=-3.1:3.1,samples=100] plot (\x,{\x*\x-4});
+                                \fill[red] (-2,0) circle (0.24);
+                                \fill[red] (2,0) circle (0.24);
+                                \fill[red] (0,-4) circle (0.24);
+                                \node[red,above] at (-2,0.3) {$(-2,0)$};
+                                \node[red,above] at (2,0.3) {$(2,0)$};
+                                \node[red,left] at (0,-3.7) {$(0,-4)$};
+                            \end{tikzpicture}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p>Find the <m>x</m>- and <m>y</m>-intercepts of the circle <m>(x + 3)^2 + (y - 2)^2 = 16</m>.</p>
+            </statement>
+            <solution>
+                <p><em>Find the y-intercepts:</em> Set <m>x = 0</m>.</p>
+                <me>(0 + 3)^2 + (y - 2)^2 = 16</me>
+                <me>9 + (y - 2)^2 = 16</me>
+                <me>(y - 2)^2 = 7</me>
+                <me>y = 2 \pm \sqrt{7}</me>
+                <p>y-intercepts: <m>(0, 2 + \sqrt{7})</m> and <m>(0, 2 - \sqrt{7})</m>.</p>
+                <p><em>Find the x-intercepts:</em> Set <m>y = 0</m>.</p>
+                <me>(x + 3)^2 + (0 - 2)^2 = 16</me>
+                <me>(x + 3)^2 + 4 = 16</me>
+                <me>(x + 3)^2 = 12</me>
+                <me>x = -3 \pm 2\sqrt{3}</me>
+                <p>x-intercepts: <m>(-3 + 2\sqrt{3}, 0)</m> and <m>(-3 - 2\sqrt{3}, 0)</m>.</p>
+                <figure>
+                    <caption>Circle with intercepts</caption>
+                    <image xml:id="fig-circle-intercepts-solution" width="60%">
+                        <shortdescription>Circle with intercepts marked</shortdescription>
+                        <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}[scale=0.48]
+                                \draw[step=1,black!15,thin] (-8,-4) grid (4,8);
+                                \draw[thick] (-8,0) -- (4,0);
+                                \draw[thick] (0,-4) -- (0,8);
+                                \draw[-latex,thick] (-8.35,0) -- (4.45,0) node[right] {$x$};
+                                \draw[-latex,thick] (0,-4.35) -- (0,8.45) node[above] {$y$};
+                                \foreach \x in {-7,-6,-5,-4,-3,-2,-1,1,2,3}
+                                    \draw (\x,0.1) -- (\x,-0.1) node[below] {$\x$};
+                                \foreach \y in {-3,-2,-1,1,2,3,4,5,6,7}
+                                    \draw (0.1,\y) -- (-0.1,\y) node[left] {$\y$};
+                                \draw[blue,very thick] (-3,2) circle (4);
+                                \fill[red] (-7,2) circle (0.24);
+                                \fill[red] (1,2) circle (0.24);
+                                \fill[red] (-3,6) circle (0.24);
+                                \fill[red] (-3,-2) circle (0.24);
+                                \draw[red,thick,fill=white] (-3,2) circle (0.24);
+                            \end{tikzpicture}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         CIRCLES (VIDEO 5)
+         ======================================================== -->
+
+    <subsection xml:id="circles">
+        <title>Circles</title>
+
+        <!-- Video 5: Circles -->
+        <p><url href="https://youtu.be/JUvo3GrgWHk">Circles Video</url></p>
+
+        <p>
+            A circle is the set of all points that are the same distance from a fixed point called the <em>center</em>.
+        </p>
+
+        <p>
+            Let the point <m>(h, k)</m> be the center, some value <m>r</m> for the radius, and begin with the distance formula.
+        </p>
+
+        <me>r = \sqrt{(x - h)^2 + (y - k)^2}</me>
+        <me>r^2 = (x - h)^2 + (y - k)^2</me>
+
+        <p>
+            This is the <em>standard form</em> of an equation of a circle with center <m>(h, k)</m> and radius <m>r &gt; 0</m>.
+        </p>
+
+        <activity>
+            <statement>
+                <p><em>Example.</em> Graph the circle with center <m>(-3, 2)</m> and radius <m>4</m>.</p>
+                <p>The equation is <m>(x + 3)^2 + (y - 2)^2 = 4^2</m>.</p>
+                <p>Mark the center with an open circle, then plot points 4 units up, down, left, and right from the center, and draw the circle.</p>
+            </statement>
+            <solution>
+                <p>Center: <m>(-3,2)</m>. Points:</p>
+                <ul>
+                    <li>Up: <m>(-3, 6)</m></li>
+                    <li>Down: <m>(-3, -2)</m></li>
+                    <li>Left: <m>(-7, 2)</m></li>
+                    <li>Right: <m>(1, 2)</m></li>
+                </ul>
+                <p>The graph is shown below:</p>
+                <figure>
+                    <caption>Circle with center (-3,2) and radius 4</caption>
+                    <image xml:id="fig-circle-example-solution" width="60%">
+                        <shortdescription>Circle with center and radius marked</shortdescription>
+                        <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}[scale=0.48]
+                                \draw[step=1,black!15,thin] (-8,-4) grid (4,8);
+                                \draw[thick] (-8,0) -- (4,0);
+                                \draw[thick] (0,-4) -- (0,8);
+                                \draw[-latex,thick] (-8.35,0) -- (4.45,0) node[right] {$x$};
+                                \draw[-latex,thick] (0,-4.35) -- (0,8.45) node[above] {$y$};
+                                \foreach \x in {-7,-6,-5,-4,-3,-2,-1,1,2,3}
+                                    \draw (\x,0.1) -- (\x,-0.1) node[below] {$\x$};
+                                \foreach \y in {-3,-2,-1,1,2,3,4,5,6,7}
+                                    \draw (0.1,\y) -- (-0.1,\y) node[left] {$\y$};
+                                \draw[blue,very thick] (-3,2) circle (4);
+                                \fill[red] (-7,2) circle (0.24);
+                                \fill[red] (1,2) circle (0.24);
+                                \fill[red] (-3,6) circle (0.24);
+                                \fill[red] (-3,-2) circle (0.24);
+                                \draw[red,thick,fill=white] (-3,2) circle (0.24);
+                            \end{tikzpicture}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p><em>Practice.</em> Write the equation of the circle with center <m>(-1, -2)</m> and radius <m>3</m> in standard form, then graph the circle.</p>
+            </statement>
+            <solution>
+                <p>The standard form is <m>(x - (-1))^2 + (y - (-2))^2 = 3^2</m>, i.e.</p>
+                <me>(x + 1)^2 + (y + 2)^2 = 9</me>
+                <p>Graph: center at <m>(-1,-2)</m>, radius <m>3</m>.</p>
+                <figure>
+                    <caption>Circle with center (-1,-2) and radius 3</caption>
+                    <image xml:id="fig-circle-center-1-2" width="60%">
+                        <shortdescription>Circle with center (-1,-2) radius 3</shortdescription>
+                        <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}[scale=0.52]
+                                \draw[step=1,black!15,thin] (-5,-5) grid (5,3);
+                                \draw[thick] (-5,0) -- (5,0);
+                                \draw[thick] (0,-5) -- (0,3);
+                                \draw[-latex,thick] (-5.35,0) -- (5.45,0) node[right] {$x$};
+                                \draw[-latex,thick] (0,-5.35) -- (0,3.45) node[above] {$y$};
+                                \foreach \x in {-4,-3,-2,-1,1,2,3,4}
+                                    \draw (\x,0.1) -- (\x,-0.1) node[below] {$\x$};
+                                \foreach \y in {-4,-3,-2,-1,1,2}
+                                    \draw (0.1,\y) -- (-0.1,\y) node[left] {$\y$};
+                                \draw[blue,very thick] (-1,-2) circle (3);
+                                \draw[red,thick,fill=white] (-1,-2) circle (0.24);
+                                \fill[red] (-4,-2) circle (0.24);
+                                \fill[red] (2,-2) circle (0.24);
+                                \fill[red] (-1,1) circle (0.24);
+                                \fill[red] (-1,-5) circle (0.24);
+                            \end{tikzpicture}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p><em>Practice.</em> Write the equation of the circle with center at <m>(3, -2)</m> and tangent to the <m>y</m>-axis in standard form, then graph the circle.</p>
+            </statement>
+            <solution>
+                <p>
+                    If the circle is tangent to the y-axis, the radius is the horizontal distance from the center to the y-axis.
+                    The center is <m>(3, -2)</m>, so the distance to the y-axis is <m>3</m>. Thus, <m>r = 3</m>.
+                </p>
+                <p>The equation in standard form is:</p>
+                <me>(x - 3)^2 + (y + 2)^2 = 9</me>
+                <p>Graph: center <m>(3,-2)</m>, radius <m>3</m>.</p>
+                <figure>
+                    <caption>Circle tangent to the y-axis</caption>
+                    <image xml:id="fig-circle-tangent-solution" width="60%">
+                        <shortdescription>Circle tangent to y-axis</shortdescription>
+                        <latex-image>
+                            <![CDATA[
+                            \begin{tikzpicture}[scale=0.52]
+                                \draw[step=1,black!15,thin] (-3,-6) grid (7,4);
+                                \draw[thick] (-3,0) -- (7,0);
+                                \draw[thick] (0,-6) -- (0,4);
+                                \draw[-latex,thick] (-3.35,0) -- (7.45,0) node[right] {$x$};
+                                \draw[-latex,thick] (0,-6.35) -- (0,4.45) node[above] {$y$};
+                                \foreach \x in {-2,-1,1,2,3,4,5,6}
+                                    \draw (\x,0.1) -- (\x,-0.1) node[below] {$\x$};
+                                \foreach \y in {-5,-4,-3,-2,-1,1,2,3}
+                                    \draw (0.1,\y) -- (-0.1,\y) node[left] {$\y$};
+                                \draw[blue,very thick] (3,-2) circle (3);
+                                \draw[red,thick,fill=white] (3,-2) circle (0.24);
+                                \fill[red] (0,-2) circle (0.24);
+                                \fill[red] (3,1) circle (0.24);
+                                \fill[red] (3,-5) circle (0.24);
+                                \fill[red] (6,-2) circle (0.24);
+                            \end{tikzpicture}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         GENERAL FORM OF A CIRCLE
+         ======================================================== -->
+
+    <subsection xml:id="general-form-circle">
+        <title>General Form of a Circle</title>
+
+        <p>
+            The <em>general form</em> of an equation of a circle is:
+        </p>
+        <me>x^2 + y^2 + Ax + By + C = 0</me>
+
+        <activity>
+            <statement>
+                <p><em>Example.</em> Write the equation <m>(x + 3)^2 + (y - 2)^2 = 16</m> in general form.</p>
+            </statement>
+            <solution>
+                <p><em>Step 1: Expand the squares.</em></p>
+                <me>(x^2 + 6x + 9) + (y^2 - 4y + 4) = 16</me>
+                <p><em>Step 2: Combine like terms and set equal to 0.</em></p>
+                <me>x^2 + y^2 + 6x - 4y + 13 = 16</me>
+                <me>x^2 + y^2 + 6x - 4y - 3 = 0</me>
+                <p>Therefore, the general form is <m>x^2 + y^2 + 6x - 4y - 3 = 0</m>.</p>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         COMPLETING THE SQUARE
+         ======================================================== -->
+
+    <subsection xml:id="completing-square-circle">
+        <title>Completing the Square for Circles</title>
+
+        <p>
+            To write the equation of a circle from general form into standard form, we must complete the square twice.
+        </p>
+
+        <activity>
+            <statement>
+                <p><em>Example 1.</em> Given <m>x^2 + y^2 + 12x - 14y + 84 = 0</m>, write the equation in standard form and identify the center and radius.</p>
+            </statement>
+            <solution>
+                <p><em>Step 1: Group x and y terms.</em></p>
+                <me>(x^2 + 12x) + (y^2 - 14y) = -84</me>
+                <p><em>Step 2: Complete the square for x.</em></p>
+                <p>Half of <m>12</m> is <m>6</m>, square it: <m>36</m>.</p>
+                <p><em>Step 3: Complete the square for y.</em></p>
+                <p>Half of <m>-14</m> is <m>-7</m>, square it: <m>49</m>.</p>
+                <p><em>Step 4: Add to both sides.</em></p>
+                <me>(x^2 + 12x + 36) + (y^2 - 14y + 49) = -84 + 36 + 49</me>
+                <p><em>Step 5: Factor.</em></p>
+                <me>(x + 6)^2 + (y - 7)^2 = 1</me>
+                <p>Therefore, the center is <m>(-6, 7)</m> and the radius is <m>r = 1</m>.</p>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p><em>Example 2.</em> Complete the square to write <m>4x^2 - 12x + 4y^2 + 8y = 51</m> in standard form.</p>
+            </statement>
+            <solution>
+                <p><em>Step 1: Factor out the coefficient of <m>x^2</m> and <m>y^2</m>.</em></p>
+                <me>4(x^2 - 3x) + 4(y^2 + 2y) = 51</me>
+                <p><em>Step 2: Complete the square for x.</em></p>
+                <p>Half of <m>-3</m> is <m>-\frac{3}{2}</m>, square it: <m>\frac{9}{4}</m>.</p>
+                <p><em>Step 3: Complete the square for y.</em></p>
+                <p>Half of <m>2</m> is <m>1</m>, square it: <m>1</m>.</p>
+                <p><em>Step 4: Add to both sides (inside the parentheses).</em></p>
+                <me>4\left(x^2 - 3x + \frac{9}{4}\right) + 4(y^2 + 2y + 1) = 51 + 4\left(\frac{9}{4}\right) + 4(1)</me>
+                <p><em>Step 5: Simplify.</em></p>
+                <me>4\left(x - \frac{3}{2}\right)^2 + 4(y + 1)^2 = 51 + 9 + 4</me>
+                <me>4\left(x - \frac{3}{2}\right)^2 + 4(y + 1)^2 = 64</me>
+                <p><em>Step 6: Divide by 4.</em></p>
+                <me>\left(x - \frac{3}{2}\right)^2 + (y + 1)^2 = 16</me>
+                <p>Therefore, the center is <m>\left(\frac{3}{2}, -1\right)</m> and the radius is <m>r = 4</m>.</p>
+            </solution>
+        </activity>
+    </subsection>
+
+</section>
