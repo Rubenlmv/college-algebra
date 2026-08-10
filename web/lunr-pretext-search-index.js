@@ -937,6 +937,348 @@ var ptx_lunr_docs = [
   "body": "  Problem 2. Solve:    Isolate the absolute value.   First: . Second: .   Set-builder notation:     Interval notation:     Number line for 2|x + 4| + 3 > 9   Number line showing union of two intervals      "
 },
 {
+  "id": "section-2-1",
+  "level": "1",
+  "url": "section-2-1.html",
+  "type": "Section",
+  "number": "",
+  "title": "Section 2.1 Rectangular Coordinate System",
+  "body": " Section 2.1 Rectangular Coordinate System    Rectangular Coordinate System  Also called the Cartesian Coordinate System , named after René Descartes, who first proposed identifying points in a plane by using two perpendicular number lines, intersecting at .    Rectangular Coordinate System with Quadrants   Coordinate system with four quadrants labeled        Plotting Points  Every point can be identified by an ordered pair , given as .    Plot the following points on the coordinate plane below:           Empty coordinate plane   Empty grid for plotting       The points are plotted as shown below:   Plotted points   Coordinate plane with five points plotted          Distance Formula   Distance Formula Video  The distance formula between two points can be found using the Pythagorean Theorem.   Distance Formula Diagram   Diagram showing distance between two points        Example. Find the distance between the points and . Give the exact distance and an approximation to 2 decimal places.    Step 1: Identify the coordinates.  Let and .  Step 2: Apply the distance formula.      Step 3: Approximate to 2 decimal places.   Therefore, the exact distance is and the approximate distance is .       Midpoint Formula   Midpoint Formula Video  The midpoint of the line segment with endpoints and is:     Example. Find the midpoint of the line segment with endpoints and .    Step 1: Identify the coordinates.  Let and .  Step 2: Apply the midpoint formula.     Therefore, the midpoint is .     Midpoint of a line segment   Line segment with midpoint marked        Graphing by Plotting Points   Graphing by Plotting Points Video     Example 1. Graph by completing the table of values and plotting the points.  Complete the table:      Ordered Pair                              Empty coordinate plane for   Empty grid for parabola       Choose values: .      Ordered Pair                             Plot the points and connect them with a smooth curve to form a parabola opening upward with vertex at .   Graph of   Parabola y = x^2 + 3          Example 2. Graph by completing the table and plotting points.  Complete the table:      Ordered Pair                              Empty coordinate plane for   Empty grid for square root       Choose values: (so the radicand is non-negative).      Ordered Pair                             Plot the points and connect them with a smooth curve starting at .   Graph of   Square root function y = sqrt(x + 3)          Identifying x- and y- Intercepts   x- and y- Intercepts Video   Finding x- and y-intercepts   To find the -intercept(s), substitute into the equation and solve for .  To find the -intercept(s), substitute into the equation and solve for .    Any point on the -axis has as its -coordinate: . Any point on the -axis has as its -coordinate: .    Estimate the - and -intercepts from the graph of shown below.   Graph of   Parabola y = x^2 - 4       From the graph, the parabola crosses the -axis at and , and the -axis at .   Intercepts labeled   Parabola with intercepts         Find the - and -intercepts of the circle .    Find the y-intercepts: Set .      y-intercepts: and .  Find the x-intercepts: Set .      x-intercepts: and .   Circle with intercepts   Circle with intercepts marked          Circles   Circles Video  A circle is the set of all points that are the same distance from a fixed point called the center .  Let the point be the center, some value for the radius, and begin with the distance formula.    This is the standard form of an equation of a circle with center and radius .    Example. Graph the circle with center and radius .  The equation is .  Mark the center with an open circle, then plot points 4 units up, down, left, and right from the center, and draw the circle.    Center: . Points:   Up:  Down:  Left:  Right:   The graph is shown below:   Circle with center (-3,2) and radius 4   Circle with center and radius marked         Practice. Write the equation of the circle with center and radius in standard form, then graph the circle.    The standard form is , i.e.   Graph: center at , radius .   Circle with center (-1,-2) and radius 3   Circle with center (-1,-2) radius 3         Practice. Write the equation of the circle with center at and tangent to the -axis in standard form, then graph the circle.    If the circle is tangent to the y-axis, the radius is the horizontal distance from the center to the y-axis. The center is , so the distance to the y-axis is . Thus, .  The equation in standard form is:   Graph: center , radius .   Circle tangent to the y-axis   Circle tangent to y-axis          General Form of a Circle  The general form of an equation of a circle is:     Example. Write the equation in general form.    Step 1: Expand the squares.   Step 2: Combine like terms and set equal to 0.    Therefore, the general form is .       Completing the Square for Circles  To write the equation of a circle from general form into standard form, we must complete the square twice.    Example 1. Given , write the equation in standard form and identify the center and radius.    Step 1: Group x and y terms.   Step 2: Complete the square for x.  Half of is , square it: .  Step 3: Complete the square for y.  Half of is , square it: .  Step 4: Add to both sides.   Step 5: Factor.   Therefore, the center is and the radius is .      Example 2. Complete the square to write in standard form.    Step 1: Factor out the coefficient of and .   Step 2: Complete the square for x.  Half of is , square it: .  Step 3: Complete the square for y.  Half of is , square it: .  Step 4: Add to both sides (inside the parentheses).   Step 5: Simplify.    Step 6: Divide by 4.   Therefore, the center is and the radius is .     "
+},
+{
+  "id": "intro-coordinate-system-3",
+  "level": "2",
+  "url": "section-2-1.html#intro-coordinate-system-3",
+  "type": "Figure",
+  "number": "38",
+  "title": "",
+  "body": " Rectangular Coordinate System with Quadrants   Coordinate system with four quadrants labeled    "
+},
+{
+  "id": "plotting-points-3",
+  "level": "2",
+  "url": "section-2-1.html#plotting-points-3",
+  "type": "Example",
+  "number": "75",
+  "title": "",
+  "body": "  Plot the following points on the coordinate plane below:           Empty coordinate plane   Empty grid for plotting       The points are plotted as shown below:   Plotted points   Coordinate plane with five points plotted      "
+},
+{
+  "id": "distance-formula-4",
+  "level": "2",
+  "url": "section-2-1.html#distance-formula-4",
+  "type": "Figure",
+  "number": "41",
+  "title": "",
+  "body": " Distance Formula Diagram   Diagram showing distance between two points    "
+},
+{
+  "id": "distance-formula-6",
+  "level": "2",
+  "url": "section-2-1.html#distance-formula-6",
+  "type": "Example",
+  "number": "76",
+  "title": "",
+  "body": "  Example. Find the distance between the points and . Give the exact distance and an approximation to 2 decimal places.    Step 1: Identify the coordinates.  Let and .  Step 2: Apply the distance formula.      Step 3: Approximate to 2 decimal places.   Therefore, the exact distance is and the approximate distance is .   "
+},
+{
+  "id": "midpoint-formula-5",
+  "level": "2",
+  "url": "section-2-1.html#midpoint-formula-5",
+  "type": "Example",
+  "number": "77",
+  "title": "",
+  "body": "  Example. Find the midpoint of the line segment with endpoints and .    Step 1: Identify the coordinates.  Let and .  Step 2: Apply the midpoint formula.     Therefore, the midpoint is .   "
+},
+{
+  "id": "midpoint-formula-6",
+  "level": "2",
+  "url": "section-2-1.html#midpoint-formula-6",
+  "type": "Figure",
+  "number": "42",
+  "title": "",
+  "body": " Midpoint of a line segment   Line segment with midpoint marked    "
+},
+{
+  "id": "graphing-by-plotting-points-3",
+  "level": "2",
+  "url": "section-2-1.html#graphing-by-plotting-points-3",
+  "type": "Example",
+  "number": "78",
+  "title": "",
+  "body": "  Example 1. Graph by completing the table of values and plotting the points.  Complete the table:      Ordered Pair                              Empty coordinate plane for   Empty grid for parabola       Choose values: .      Ordered Pair                             Plot the points and connect them with a smooth curve to form a parabola opening upward with vertex at .   Graph of   Parabola y = x^2 + 3      "
+},
+{
+  "id": "graphing-by-plotting-points-4",
+  "level": "2",
+  "url": "section-2-1.html#graphing-by-plotting-points-4",
+  "type": "Example",
+  "number": "79",
+  "title": "",
+  "body": "  Example 2. Graph by completing the table and plotting points.  Complete the table:      Ordered Pair                              Empty coordinate plane for   Empty grid for square root       Choose values: (so the radicand is non-negative).      Ordered Pair                             Plot the points and connect them with a smooth curve starting at .   Graph of   Square root function y = sqrt(x + 3)      "
+},
+{
+  "id": "intercepts-3",
+  "level": "2",
+  "url": "section-2-1.html#intercepts-3",
+  "type": "Problem-Solving Strategy",
+  "number": "47",
+  "title": "Finding x- and y-intercepts.",
+  "body": " Finding x- and y-intercepts   To find the -intercept(s), substitute into the equation and solve for .  To find the -intercept(s), substitute into the equation and solve for .   "
+},
+{
+  "id": "intercepts-5",
+  "level": "2",
+  "url": "section-2-1.html#intercepts-5",
+  "type": "Example",
+  "number": "80",
+  "title": "",
+  "body": "  Estimate the - and -intercepts from the graph of shown below.   Graph of   Parabola y = x^2 - 4       From the graph, the parabola crosses the -axis at and , and the -axis at .   Intercepts labeled   Parabola with intercepts      "
+},
+{
+  "id": "intercepts-6",
+  "level": "2",
+  "url": "section-2-1.html#intercepts-6",
+  "type": "Example",
+  "number": "81",
+  "title": "",
+  "body": "  Find the - and -intercepts of the circle .    Find the y-intercepts: Set .      y-intercepts: and .  Find the x-intercepts: Set .      x-intercepts: and .   Circle with intercepts   Circle with intercepts marked      "
+},
+{
+  "id": "circles-8",
+  "level": "2",
+  "url": "section-2-1.html#circles-8",
+  "type": "Example",
+  "number": "82",
+  "title": "",
+  "body": "  Example. Graph the circle with center and radius .  The equation is .  Mark the center with an open circle, then plot points 4 units up, down, left, and right from the center, and draw the circle.    Center: . Points:   Up:  Down:  Left:  Right:   The graph is shown below:   Circle with center (-3,2) and radius 4   Circle with center and radius marked      "
+},
+{
+  "id": "circles-9",
+  "level": "2",
+  "url": "section-2-1.html#circles-9",
+  "type": "Example",
+  "number": "83",
+  "title": "",
+  "body": "  Practice. Write the equation of the circle with center and radius in standard form, then graph the circle.    The standard form is , i.e.   Graph: center at , radius .   Circle with center (-1,-2) and radius 3   Circle with center (-1,-2) radius 3      "
+},
+{
+  "id": "circles-10",
+  "level": "2",
+  "url": "section-2-1.html#circles-10",
+  "type": "Example",
+  "number": "84",
+  "title": "",
+  "body": "  Practice. Write the equation of the circle with center at and tangent to the -axis in standard form, then graph the circle.    If the circle is tangent to the y-axis, the radius is the horizontal distance from the center to the y-axis. The center is , so the distance to the y-axis is . Thus, .  The equation in standard form is:   Graph: center , radius .   Circle tangent to the y-axis   Circle tangent to y-axis      "
+},
+{
+  "id": "general-form-circle-4",
+  "level": "2",
+  "url": "section-2-1.html#general-form-circle-4",
+  "type": "Example",
+  "number": "85",
+  "title": "",
+  "body": "  Example. Write the equation in general form.    Step 1: Expand the squares.   Step 2: Combine like terms and set equal to 0.    Therefore, the general form is .   "
+},
+{
+  "id": "completing-square-circle-3",
+  "level": "2",
+  "url": "section-2-1.html#completing-square-circle-3",
+  "type": "Example",
+  "number": "86",
+  "title": "",
+  "body": "  Example 1. Given , write the equation in standard form and identify the center and radius.    Step 1: Group x and y terms.   Step 2: Complete the square for x.  Half of is , square it: .  Step 3: Complete the square for y.  Half of is , square it: .  Step 4: Add to both sides.   Step 5: Factor.   Therefore, the center is and the radius is .   "
+},
+{
+  "id": "completing-square-circle-4",
+  "level": "2",
+  "url": "section-2-1.html#completing-square-circle-4",
+  "type": "Example",
+  "number": "87",
+  "title": "",
+  "body": "  Example 2. Complete the square to write in standard form.    Step 1: Factor out the coefficient of and .   Step 2: Complete the square for x.  Half of is , square it: .  Step 3: Complete the square for y.  Half of is , square it: .  Step 4: Add to both sides (inside the parentheses).   Step 5: Simplify.    Step 6: Divide by 4.   Therefore, the center is and the radius is .   "
+},
+{
+  "id": "section-2-3",
+  "level": "1",
+  "url": "section-2-3.html",
+  "type": "Section",
+  "number": "",
+  "title": "Section 2.3 Functions",
+  "body": " Section 2.3 Functions    Introduction to Functions   Functions Video  A function is a relation that takes each input to exactly one output.  Think of it as a machine: you put in an -value (input), and the machine gives you a corresponding unique -value (output).  Most functions we work with have names like , , and .   Function Machine   Function machine labeled f       Domain  The set of inputs ( -values) of the relation.    Range  The set of outputs ( -values) of the relation.    Function  A relation in and where for each value of in the domain, there is exactly one corresponding value of in the range.    Function Machine: Age Function   Function machine diagram        Function Notation  A function may be defined by an equation in two variables. For example, defines as a function of , since for any real number there is exactly one corresponding value for .  To make it clear that the relation is a function, we use function notation :   We read this as f of x equals 3 x squared minus 4 .  With function notation we know:   is the name of the function (it could be , , , , , or another letter)  is the input (independent variable) from the domain  is the output (or -value) for the corresponding   The set of inputs is called the domain , and the set of outputs is called the range of the function.   Mapping Diagram of a Function   Mapping diagram showing domain and range     This function could be defined by .     Identifying Functions    Examples. Which of the following are examples of relations that are functions? Why or why not?  1)  2)  3) Mapping Diagram:   Mapping Diagram   Mapping diagram with two sets     4)  5)    Solutions:  1)  is a function because each -value has exactly one corresponding -value.  2)  is not a function because the -value maps to multiple -values.  3) The mapping diagram is not a function because maps to both and .  4)  is a function because for each , there is exactly one -value.  5)  is not a function because, for example, when , .       Graphs of Functions  The graph of a function is the collection of ordered pairs such that is in the domain of .  Every pair on the graph satisfies .    Use the graph of to answer the following:   Graph of   Graph of cubic function     What is ?  For what value of , does ?     when (since is on the graph).       Domain and Range from Graphs   Domain and Range Video  Functions can be defined by graphs (without an equation). The function is still the collection of ordered pairs . That means we can use the graph to find the domain and range.   Domain and Range from a Graph   Graph showing domain and range       Find the domain and range of each graph shown.   Domain and Range Practice   Four graphs for domain and range practice       a. Domain: , Range:  b. Domain: , Range:  c. Domain: (with open\/closed mixed), Range:  d. Domain: , Range:       Finding Domain Algebraically  When finding the domain of a function without a graph, watch out for these trouble areas:   Finding Domain Algebraically   Denominators cannot equal zero. (Set the denominator )  Even radicands must not be negative. (Stuff under even root )      Find the domain of each function:   a.   b.     c.   d.      a.   Domain:  b.   Domain:  c.  is always positive, so no restrictions.  Domain:  d. Need (since denominator cannot be zero).  Domain:       Vertical Line Test   Vertical Line Test Video  By the definition of a function, at most one -value corresponds to a given -value.  This means that the graph of a function cannot have two or more different points with the same -coordinate, and no two points on the graph of a function can be vertically above or below each other.  It follows, then, that a vertical line can intersect the graph of a function at most once.   Vertical Line Test for Functions  A set of points in a coordinate plane is the graph of as a function of if and only if no vertical line intersects the graph at more than one point.     Which graphs are functions? Use the vertical line test.   Vertical Line Test Practice   Four graphs for vertical line test       a.  is a function (parabola opens up).  b.  is not a function (fails vertical line test).  c.  is a function (cubic function).  d.  is a function (can be written as ).       Evaluating Functions   Evaluating Functions Video  When evaluating functions for specific inputs, replace with parentheses. Then input your number and simplify. Don't forget the order of operations.    Let and   Find:   a.   b.   c.   d.      a.   b.   c.   d.        Zeros of a Function   Zeros of a Function Video  If the graph of a function of has an -intercept at , then is a zero of the function.   Zeros of a Function  The zeros of a function  of are the -values for which .   When we talk about zeros of a function, this also means:   is a zero of function  is a solution of  is an -intercept of the graph of     Find the zeros of each function.   a.   b.   c.      a. Set :     Zeros:  b. Set :      Zeros:  c. Set :   A fraction is zero when the numerator is zero:    Zero:     Example: Look again at . We found the zeros by solving:    Graph of with zeros   Parabola with zeros labeled      "
+},
+{
+  "id": "intro-functions-3",
+  "level": "2",
+  "url": "section-2-3.html#intro-functions-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "function exactly one "
+},
+{
+  "id": "intro-functions-6",
+  "level": "2",
+  "url": "section-2-3.html#intro-functions-6",
+  "type": "Figure",
+  "number": "54",
+  "title": "",
+  "body": " Function Machine   Function machine labeled f    "
+},
+{
+  "id": "intro-functions-7",
+  "level": "2",
+  "url": "section-2-3.html#intro-functions-7",
+  "type": "Definition",
+  "number": "55",
+  "title": "Domain.",
+  "body": " Domain  The set of inputs ( -values) of the relation.  "
+},
+{
+  "id": "intro-functions-8",
+  "level": "2",
+  "url": "section-2-3.html#intro-functions-8",
+  "type": "Definition",
+  "number": "56",
+  "title": "Range.",
+  "body": " Range  The set of outputs ( -values) of the relation.  "
+},
+{
+  "id": "intro-functions-9",
+  "level": "2",
+  "url": "section-2-3.html#intro-functions-9",
+  "type": "Definition",
+  "number": "57",
+  "title": "Function.",
+  "body": " Function  A relation in and where for each value of in the domain, there is exactly one corresponding value of in the range.  "
+},
+{
+  "id": "intro-functions-10",
+  "level": "2",
+  "url": "section-2-3.html#intro-functions-10",
+  "type": "Figure",
+  "number": "58",
+  "title": "",
+  "body": " Function Machine: Age Function   Function machine diagram    "
+},
+{
+  "id": "function-notation-9",
+  "level": "2",
+  "url": "section-2-3.html#function-notation-9",
+  "type": "Figure",
+  "number": "59",
+  "title": "",
+  "body": " Mapping Diagram of a Function   Mapping diagram showing domain and range    "
+},
+{
+  "id": "identifying-functions-2",
+  "level": "2",
+  "url": "section-2-3.html#identifying-functions-2",
+  "type": "Example",
+  "number": "88",
+  "title": "",
+  "body": "  Examples. Which of the following are examples of relations that are functions? Why or why not?  1)  2)  3) Mapping Diagram:   Mapping Diagram   Mapping diagram with two sets     4)  5)    Solutions:  1)  is a function because each -value has exactly one corresponding -value.  2)  is not a function because the -value maps to multiple -values.  3) The mapping diagram is not a function because maps to both and .  4)  is a function because for each , there is exactly one -value.  5)  is not a function because, for example, when , .   "
+},
+{
+  "id": "graphs-of-functions-4",
+  "level": "2",
+  "url": "section-2-3.html#graphs-of-functions-4",
+  "type": "Example",
+  "number": "89",
+  "title": "",
+  "body": "  Use the graph of to answer the following:   Graph of   Graph of cubic function     What is ?  For what value of , does ?     when (since is on the graph).   "
+},
+{
+  "id": "domain-range-graphs-4",
+  "level": "2",
+  "url": "section-2-3.html#domain-range-graphs-4",
+  "type": "Figure",
+  "number": "62",
+  "title": "",
+  "body": " Domain and Range from a Graph   Graph showing domain and range    "
+},
+{
+  "id": "domain-range-graphs-5",
+  "level": "2",
+  "url": "section-2-3.html#domain-range-graphs-5",
+  "type": "Example",
+  "number": "90",
+  "title": "",
+  "body": "  Find the domain and range of each graph shown.   Domain and Range Practice   Four graphs for domain and range practice       a. Domain: , Range:  b. Domain: , Range:  c. Domain: (with open\/closed mixed), Range:  d. Domain: , Range:   "
+},
+{
+  "id": "domain-algebraically-3",
+  "level": "2",
+  "url": "section-2-3.html#domain-algebraically-3",
+  "type": "Problem-Solving Strategy",
+  "number": "64",
+  "title": "Finding Domain Algebraically.",
+  "body": " Finding Domain Algebraically   Denominators cannot equal zero. (Set the denominator )  Even radicands must not be negative. (Stuff under even root )   "
+},
+{
+  "id": "domain-algebraically-4",
+  "level": "2",
+  "url": "section-2-3.html#domain-algebraically-4",
+  "type": "Example",
+  "number": "91",
+  "title": "",
+  "body": "  Find the domain of each function:   a.   b.     c.   d.      a.   Domain:  b.   Domain:  c.  is always positive, so no restrictions.  Domain:  d. Need (since denominator cannot be zero).  Domain:   "
+},
+{
+  "id": "vertical-line-test-6",
+  "level": "2",
+  "url": "section-2-3.html#vertical-line-test-6",
+  "type": "Problem-Solving Strategy",
+  "number": "65",
+  "title": "Vertical Line Test for Functions.",
+  "body": " Vertical Line Test for Functions  A set of points in a coordinate plane is the graph of as a function of if and only if no vertical line intersects the graph at more than one point.  "
+},
+{
+  "id": "vertical-line-test-7",
+  "level": "2",
+  "url": "section-2-3.html#vertical-line-test-7",
+  "type": "Example",
+  "number": "92",
+  "title": "",
+  "body": "  Which graphs are functions? Use the vertical line test.   Vertical Line Test Practice   Four graphs for vertical line test       a.  is a function (parabola opens up).  b.  is not a function (fails vertical line test).  c.  is a function (cubic function).  d.  is a function (can be written as ).   "
+},
+{
+  "id": "evaluating-functions-4",
+  "level": "2",
+  "url": "section-2-3.html#evaluating-functions-4",
+  "type": "Example",
+  "number": "93",
+  "title": "",
+  "body": "  Let and   Find:   a.   b.   c.   d.      a.   b.   c.   d.    "
+},
+{
+  "id": "zeros-of-functions-4",
+  "level": "2",
+  "url": "section-2-3.html#zeros-of-functions-4",
+  "type": "Problem-Solving Strategy",
+  "number": "67",
+  "title": "Zeros of a Function.",
+  "body": " Zeros of a Function  The zeros of a function  of are the -values for which .  "
+},
+{
+  "id": "zeros-of-functions-7",
+  "level": "2",
+  "url": "section-2-3.html#zeros-of-functions-7",
+  "type": "Example",
+  "number": "94",
+  "title": "",
+  "body": "  Find the zeros of each function.   a.   b.   c.      a. Set :     Zeros:  b. Set :      Zeros:  c. Set :   A fraction is zero when the numerator is zero:    Zero:   "
+},
+{
+  "id": "zeros-of-functions-10",
+  "level": "2",
+  "url": "section-2-3.html#zeros-of-functions-10",
+  "type": "Figure",
+  "number": "68",
+  "title": "",
+  "body": " Graph of with zeros   Parabola with zeros labeled    "
+},
+{
   "id": "activity-01-intro-activity",
   "level": "1",
   "url": "activity-01-intro-activity.html",
@@ -977,7 +1319,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity.html#activity-4",
   "type": "Theorem",
-  "number": "38",
+  "number": "69",
   "title": "",
   "body": "  Testing testing.   "
 },
@@ -995,7 +1337,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity.html#prop123",
   "type": "Proposition",
-  "number": "39",
+  "number": "70",
   "title": "",
   "body": "  Let be a prime and let all matrices be over . Suppose and are such that If there exist such that with the conditions where  is the last row of (restricted to its first entries),  is the last column of (restricted to its first entries),  is the top-left submatrix of ,  is the top-left submatrix of ,  then is a Calogero-Moser pair.  Conversely, if is a Calogero-Moser pair such that with and , then for any and satisfying there exists such that     Sketch of the proof:   Block notation. Write   Set    Then we have the following commutators:    In addition with Moreover,   Now, since and , we have   Using the explicit block commutators, the equation is equivalent to   Taking the top-left block gives   This yields the Calogero-Moser condition for , precisely when .   "
 },
