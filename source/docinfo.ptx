@@ -28,7 +28,8 @@
         \usetikzlibrary{patterns}
         \usetikzlibrary{matrix}
         \usepackage{amsmath, amssymb}
-
+        \usetikzlibrary{arrows.meta}
+\usepackage{adjustbox} 
         % Custom colors for function diagrams
         \definecolor{lightblue}{RGB}{200,220,240}
         \definecolor{cream}{RGB}{248,247,232}
@@ -38,6 +39,7 @@
         \definecolor{brightblue}{RGB}{0,0,235}
         \definecolor{headblue}{RGB}{58,96,142}
         \definecolor{boxblue}{RGB}{0,155,205}
+        \definecolor{graphblue}{RGB}{45,55,220}
     </latex-image-preamble>
 
   <!-- It is possible to rename elements: -->

@@ -14,34 +14,131 @@
     <p><url href="https://echo360.org/media/757cd5c4-957c-4cfb-8575-54d160440dab/public">Functions Video</url></p>
 
     <p>
-        A <term>function</term> is a relation that takes each input to <term>exactly one</term> output.</p>
-        <p>Think of it as a machine: you put in an <m>x</m>-value (input), and the machine gives you a corresponding unique <m>y</m>-value (output).
-        </p>
-        <p>Most functions we work with have names like <m>f</m>, <m>g</m>, and <m>h</m>.
+        A <term>function</term> is a relation between two sets that takes each input to <term>exactly one</term> output.
     </p>
 
-    <figure>
-        <caption>Function Machine</caption>
-        <image xml:id="fig-function-machine" width="50%">
-            <shortdescription>Function machine labeled f</shortdescription>
+    <!-- IMAGE 1: Function vs Non-Function -->
+    <p>
+        <image width="90%">
             <latex-image>
                 <![CDATA[
-                \begin{tikzpicture}[x=1cm,y=1cm,>=Stealth]
-                    \draw[fill=lightblue,draw=black!60] (-1.3,-0.65) rectangle (1.15,0.65);
-                    \draw[fill=lightblue,draw=black!60] (-1.0,0.65)--(-1.15,1.02)--(-0.42,1.02)--(-0.22,0.65);
-                    \draw[fill=lightblue,draw=black!60] (1.15,0.35)..controls(1.65,0.35)and(1.6,-0.15)..(1.15,-0.35);
-                    \draw[->,gray] (-0.9,1.35) arc(155:25:0.9);
-                    \draw[->,gray](1.25,-0.4)arc(-30:-55:0.65);
-                    \node at (-0.05,0.1){\Large\bfseries$f$};
-                    \node[font=\small] at (-0.05,-0.22){function machine};
-                    \node[left,font=\small] at (-1.55,0.8){$x$};
-                    \node[right,font=\small] at (1.7,-0.7){$f(x)$\quad Output};
-                    \node[left,font=\small] at (-1.55,0.35){Input};
+                \begin{adjustbox}{max width=\linewidth}
+                \begin{tikzpicture}[
+                    x=1cm,
+                    y=1cm,
+                    >=Stealth,
+                    every node/.style={font=\normalsize}
+                ]
+
+                % ============================================================
+                % LEFT DIAGRAM: FUNCTION
+                % ============================================================
+
+                % Titles
+                \node[font=\Large\bfseries] at (0,3.4) {Function};
+                \node[font=\large\bfseries] at (0,2.7) {People};
+                \node[font=\large\bfseries] at (5,2.7) {Ages};
+
+                % Left set
+                \draw[
+                    fill=lightorange,
+                    draw=black,
+                    thick
+                ] (0,0) ellipse (1.5 and 2.1);
+
+                % Right set
+                \draw[
+                    fill=lightcyan,
+                    draw=black,
+                    thick
+                ] (5,0) ellipse (1.2 and 2.1);
+
+                % People
+                \node at (0,1) {Alice};
+                \node at (0,0) {Bob};
+                \node at (0,-1) {Carlos};
+
+                % Ages
+                \node at (5,1) {18};
+                \node at (5,0) {21};
+                \node at (5,-1) {25};
+
+                % Arrows
+                \draw[->,thick] (0.65,1) -- (4.35,1);
+                \draw[->,thick] (0.65,0) -- (4.35,0);
+                \draw[->,thick] (0.65,-1) -- (4.35,0);
+
+                % Explanation
+                \node[
+                    draw=blue,
+                    thick,
+                    align=center,
+                    text width=5.2cm,
+                    minimum height=1.0cm
+                ] at (2.5,-3.0)
+                {\textbf{Each person has exactly one age.}\\
+                This is a \textbf{function}.};
+
+                % ============================================================
+                % RIGHT DIAGRAM: NOT A FUNCTION
+                % ============================================================
+
+                % Titles
+                \node[font=\Large\bfseries] at (10.5,3.4) {Not a Function};
+                \node[font=\large\bfseries] at (10.5,2.7) {People};
+                \node[font=\large\bfseries] at (15.5,2.7) {Ages};
+
+                % Left set
+                \draw[
+                    fill=lightorange,
+                    draw=black,
+                    thick
+                ] (10.5,0) ellipse (1.5 and 2.1);
+
+                % Right set
+                \draw[
+                    fill=lightcyan,
+                    draw=black,
+                    thick
+                ] (15.5,0) ellipse (1.2 and 2.1);
+
+                % People
+                \node at (10.5,1) {Alice};
+                \node at (10.5,0) {Bob};
+                \node at (10.5,-1) {Carlos};
+
+                % Ages
+                \node at (15.5,1) {18};
+                \node at (15.5,0) {21};
+                \node at (15.5,-1) {25};
+
+                % Arrows
+                \draw[->,thick] (11.15,1) -- (14.85,1);
+
+                % Bob has TWO outputs
+                \draw[->,thick] (11.15,0) -- (14.85,1);
+                \draw[->,thick] (11.15,0) -- (14.85,0);
+
+                % Carlos
+                \draw[->,thick] (11.15,-1) -- (14.85,-1);
+
+                % Explanation
+                \node[
+                    draw=red,
+                    thick,
+                    align=center,
+                    text width=5.2cm,
+                    minimum height=1.0cm
+                ] at (13,-3.0)
+                {\textbf{Bob is associated with two ages.}\\
+                This is \textbf{not a function}.};
+
                 \end{tikzpicture}
+                \end{adjustbox}
                 ]]>
             </latex-image>
         </image>
-    </figure>
+    </p>
 
     <!-- Formal Definitions -->
     <definition>
@@ -54,212 +151,421 @@
         <p>The set of outputs (<m>y</m>-values) of the relation.</p>
     </definition>
 
+    <p>
+        Most functions we work with have names like <m>f</m>, <m>g</m>, and <m>h</m>.
+    </p>
+
+    <!-- IMAGE 2: Domain/Range Mapping Diagram -->
+  <figure xml:id="function-age" visibility="hidden">
+    <caption>Domain and Range Mapping</caption>
+    <image width="60%">
+        <latex-image>
+            <![CDATA[
+            \begin{adjustbox}{max width=\linewidth}
+            \begin{tikzpicture}[
+                x=1cm,
+                y=1cm,
+                >=Stealth,
+                every node/.style={font=\normalsize}
+            ]
+
+            % ============================================================
+            % DOMAIN (Left Set)
+            % ============================================================
+            \node[font=\large\bfseries, above] at (-2.5, 2.3) {\textbf{Domain}};
+            \draw[fill=orange!30, draw=black, thick] (-2.5, 0) ellipse (1.5 and 2.1);
+
+            % ============================================================
+            % CODOMAIN (Right Set - Outer)
+            % ============================================================
+            \node[font=\large\bfseries, above] at (2.5, 2.3) {\textbf{Codomain}};
+            \draw[fill=cyan!30, draw=black, thick] (2.5, 0) ellipse (1.2 and 2.1);
+
+            % ============================================================
+            % RANGE (Inner Red Ellipse - only the actual outputs)
+            % ============================================================
+            \draw[fill=red!20, draw=red, thick, dashed] (2.5, 0.2) ellipse (0.9 and 1.2);
+            \node[font=\small\bfseries, red] at (2.5, -0.8) {\textbf{Range}};
+
+            % ============================================================
+            % ELEMENTS
+            % ============================================================
+            % People (Domain)
+            \node at (-2.5, 1.2) {Alice};
+            \node at (-2.5, 0.0) {Bob};
+            \node at (-2.5, -1.2) {Carlos};
+
+            % Ages (Codomain)
+            \node at (2.5, 1.2) {18};
+            \node at (2.5, 0.0) {21};
+            \node at (2.5, -1.2) {25};
+
+            % ============================================================
+            % MAPPING ARROWS
+            % ============================================================
+            \draw[->, thick] (-1.0, 1.2) -- (1.3, 1.2);
+            \draw[->, thick] (-1.0, 0.0) -- (1.3, 0.0);
+            \draw[->, thick] (-1.0, -1.2) -- (1.3, 0.0);
+
+            % ============================================================
+            % FUNCTION ARROW
+            % ============================================================
+            \draw[->, thick, bend left=45, color=blue!70!black] 
+                (-2.5, 2.8) to node[above, font=\Large, color=blue!70!black] {$f$} (2.5, 2.8);
+
+            \end{tikzpicture}
+            \end{adjustbox}
+            ]]>
+        </latex-image>
+    </image>
+</figure>
+
+    <p>
+        Think of a function as a machine: you put in an <m>x</m>-value (input), and the machine gives you a corresponding <em effect="bold">unique</em> <m>y</m>-value (output).
+    </p>
+
+    <!-- IMAGES 3 & 4: Function Machines side-by-side -->
+    <sidebyside widths="50% 50%">
+        <!-- LEFT: Function Machine f -->
+        <p>
+            <image width="100%">
+                <latex-image>
+                    <![CDATA[
+                    \begin{adjustbox}{max width=\linewidth}
+                    \begin{tikzpicture}[x=1cm,y=1cm,>=Stealth]
+                        \draw[fill=lightblue,draw=black!60] (-1.3,-0.65) rectangle (1.15,0.65);
+                        \draw[fill=lightblue,draw=black!60] (-1.0,0.65)--(-1.15,1.02)--(-0.42,1.02)--(-0.22,0.65);
+                        \draw[fill=lightblue,draw=black!60] (1.15,0.35)..controls(1.65,0.35)and(1.6,-0.15)..(1.15,-0.35);
+                        \draw[->,gray] (-0.9,1.35) arc(155:25:0.9);
+                        \draw[->,gray](1.25,-0.4)arc(-30:-55:0.65);
+                        \node at (-0.05,0.1){\Large\bfseries$f$};
+                        \node[font=\small] at (-0.05,-0.22){function machine};
+                        \node[left,font=\small] at (-1.55,0.8){$x$};
+                        \node[right,font=\small] at (1.7,-0.7){$f(x)$\quad Output};
+                        \node[left,font=\small] at (-1.55,0.35){Input};
+                    \end{tikzpicture}
+                    \end{adjustbox}
+                    ]]>
+                </latex-image>
+            </image>
+        </p>
+
+        <!-- RIGHT: AGE Function Machine -->
+        <p>
+            <image width="100%">
+                <latex-image>
+                    <![CDATA[
+                    \begin{adjustbox}{max width=\linewidth}
+                    \begin{tikzpicture}[x=1cm,y=1cm,>=Stealth]
+                        \draw[fill=lightblue,draw=black!60] (-1.4,-0.7) rectangle (1.25,0.65);
+                        \draw[fill=lightblue,draw=black!60] (-1.05,0.65)--(-1.2,1.05)--(-0.45,1.05)--(-0.25,0.65);
+                        \draw[fill=lightblue,draw=black!60] (1.25,0.35)..controls(1.8,0.35)and(1.75,-0.15)..(1.25,-0.35);
+                        \draw[->,gray] (-0.9,1.45) arc(155:25:0.95);
+                        \node at (-0.05,0.05){\bfseries AGE};
+                        \node[font=\small] at (-0.05,-0.25){function machine};
+                        \node[left] at (-2.0,0.3){Input};
+                        \node[right] at (1.65,-0.9){Output};
+                        \draw[->,gray] (1.35,-0.4) arc(-30:-55:0.65);
+                    \end{tikzpicture}
+                    \end{adjustbox}
+                    ]]>
+                </latex-image>
+            </image>
+        </p>
+    </sidebyside>
+
+    <p>
+        In this course, our functions will usually have numerical inputs and outputs. Generally, we use the variable <m>x</m> to denote input values (though we can use any other letter or symbol), and <m>y</m> or <m>f(x)</m> to denote the output values.
+    </p>
+
+    <p>
+        So, most of the time we will see expressions like <m>f(x)=2x^3-2x</m>.
+    </p>
+
+    <p>
+        For our purposes, an alternative definition of a function is the following:
+    </p>
+
     <definition>
         <title>Function</title>
         <p>
-            A relation in <m>x</m> and <m>y</m> where for each value of <m>x</m> in the domain,
-            there is <em effect="bold">exactly one</em> corresponding value of <m>y</m> in the range.
+            A function is an equation for which any input <m>x</m> yields exactly one output <m>y</m>.
         </p>
     </definition>
 
-    <figure>
-        <caption>Function Machine: Age Function</caption>
-        <image xml:id="fig-age-function" width="60%">
-            <shortdescription>Function machine diagram</shortdescription>
-            <latex-image>
-                <![CDATA[
-                \begin{tikzpicture}[x=1cm,y=1cm,>=Stealth]
-                    \draw[fill=lightblue,draw=black!60] (-1.4,-0.7) rectangle (1.25,0.65);
-                    \draw[fill=lightblue,draw=black!60] (-1.05,0.65)--(-1.2,1.05)--(-0.45,1.05)--(-0.25,0.65);
-                    \draw[fill=lightblue,draw=black!60] (1.25,0.35)..controls(1.8,0.35)and(1.75,-0.15)..(1.25,-0.35);
-                    \draw[->,gray] (-0.9,1.45) arc(155:25:0.95);
-                    \node at (-0.05,0.05){\bfseries AGE};
-                    \node[font=\small] at (-0.05,-0.25){function machine};
-                    \node[left] at (-2.0,0.3){Input};
-                    \node[right] at (1.65,-0.9){Output};
-                    \draw[->,gray] (1.35,-0.4) arc(-30:-55:0.65);
-                \end{tikzpicture}
-                ]]>
-            </latex-image>
-        </image>
-    </figure>
 </subsection>
 
-    <!-- ========================================================
-         FUNCTION NOTATION
+
+<!-- ========================================================
+     FUNCTION NOTATION
+     ======================================================== -->
+
+<subsection xml:id="function-notation">
+    <title>Function Notation</title>
+
+    <ul>
+        <li><m>f</m> is the name of the function (it could be <m>f</m>, <m>g</m>, <m>h</m>, <m>F</m>, <m>G</m>, or another letter)</li>
+        <li><m>x</m> is the input (independent variable) from the domain</li>
+        <li><m>f(x)</m> is the output (or <m>y</m>-value) for the corresponding <m>x</m></li>
+    </ul>
+
+    <p>
+        We read <m>f(x) = 3x^2 - 4</m> as <q>f of x equals 3 x squared minus 4</q>.
+    </p>
+
+    <p>
+        With function notation from <xref ref="function-age"/>, we can write <m>f(\text{Bob}) = 21</m>, meaning that the function <m>f = \text{age}</m> takes Bob and assigns him the age 21.
+    </p>
+
+    <p>
+        The function that takes any number and assigns its square is represented by the equation:
+    </p>
+    <me>f(x) = x^2</me>
+    <p>
+        For instance, <m>f(2) = 2^2 = 4</m> and <m>f(-1) = (-1)^2 = 1</m>.
+    </p>
+</subsection>
+
+
+<!-- ========================================================
+     EVALUATING FUNCTIONS (Video 4)
+     ======================================================== -->
+
+<subsection xml:id="evaluating-functions">
+    <title>Evaluating Functions</title>
+
+    <!-- Video 4: Evaluating Functions -->
+    <p><url href="https://youtu.be/-08_QjVDu98">Evaluating Functions Video</url></p>
+
+    <p>
+        When evaluating functions for specific inputs, replace <m>x</m> with parentheses. Then substitute the number and simplify. Don't forget the order of operations.
+    </p>
+
+    <activity>
+        <statement>
+            <p>
+                Let <m>f(x) = 2x - 3x^2</m> and <m>g(x) = \dfrac{2x^2 + 1}{4x}</m>
+            </p>
+            <p>Find:</p>
+            <sidebyside>
+                <p><strong>a.</strong> <m>f(2)</m></p>
+                <p><strong>b.</strong> <m>g(3)</m></p>
+                <p><strong>c.</strong> <m>f(-4)</m></p>
+                <p><strong>d.</strong> <m>g(-2)</m></p>
+            </sidebyside>
+        </statement>
+        <solution>
+            <p><em>a.</em> <m>f(2) = 2(2) - 3(2)^2 = 4 - 12 = -8</m></p>
+            <p><em>b.</em> <m>g(3) = \dfrac{2(3)^2 + 1}{4(3)} = \dfrac{18 + 1}{12} = \dfrac{19}{12}</m></p>
+            <p><em>c.</em> <m>f(-4) = 2(-4) - 3(-4)^2 = -8 - 48 = -56</m></p>
+            <p><em>d.</em> <m>g(-2) = \dfrac{2(-2)^2 + 1}{4(-2)} = \dfrac{8 + 1}{-8} = -\dfrac{9}{8}</m></p>
+        </solution>
+    </activity>
+</subsection>
+
+   <p>
+    Recall that given a function we can draw its graph by plotting points (ordered pairs) <m>(x,f(x))</m>.
+    For instance we saw the graph of the function <m>f(x)=𝑥^2 +3</m> in <xref ref="plotting-ex"/>.
+   </p>
+   
+   <p>
+    Conversely, giving a graph we can determine whether it corresponds to a function or not, and if it does, we can find its domain and range from it.
+</p>
+
+<!-- ========================================================
+         VERTICAL LINE TEST (Video 3)
          ======================================================== -->
 
-    <subsection xml:id="function-notation">
-        <title>Function Notation</title>
+    <subsection xml:id="vertical-line-test">
+        <title>Vertical Line Test</title>
+
+        <!-- Video 3: Vertical Line Test -->
+        <p><url href="https://youtu.be/1uh-7m-SzYk">Vertical Line Test Video</url></p>
 
         <p>
-            A function may be defined by an equation in two variables. For example, <m>y = 3x^2 - 4</m> defines <m>y</m> as a function of <m>x</m>, since for any real number <m>x</m> there is exactly one corresponding value for <m>y</m>.
+            By the definition of a function, at most one <m>y</m>-value corresponds to a given <m>x</m>-value.
         </p>
 
         <p>
-            To make it clear that the relation is a function, we use <em>function notation</em>:
-        </p>
-
-        <me>f(x) = 3x^2 - 4</me>
-
-        <p>
-            We read this as <q>f of x equals 3 x squared minus 4</q>.
+            This means that the graph of a function cannot have two or more different points with the same <m>x</m>-coordinate, and no two points on the graph of a function can be vertically above or below each other.
         </p>
 
         <p>
-            With function notation we know:
+            It follows, then, that a vertical line can intersect the graph of a function at most once.
         </p>
 
-        <ul>
-            <li><m>f</m> is the name of the function (it could be <m>f</m>, <m>g</m>, <m>h</m>, <m>F</m>, <m>G</m>, or another letter)</li>
-            <li><m>x</m> is the input (independent variable) from the domain</li>
-            <li><m>f(x)</m> is the output (or <m>y</m>-value) for the corresponding <m>x</m></li>
-        </ul>
+        <algorithm number="no">
+            <title>Vertical Line Test for Functions</title>
+            <p>
+                If any vertical line intersects the graph in more than one point, the graph does not represent a function. If every vertical line intersects the graph in at most one point, the graph represents a function.
+            </p>
+        </algorithm>
 
-        <p>
-            The set of inputs is called the <em>domain</em>, and the set of outputs is called the <em>range</em> of the function.
-        </p>
-
+        <!-- ACTIVITY: Which graphs are functions? -->
+<activity>
+    <statement>
+        <p>Which graphs are functions? Use the vertical line test.</p>
         <figure>
-            <caption>Mapping Diagram of a Function</caption>
-            <image xml:id="fig-function-mapping" width="70%">
-                <shortdescription>Mapping diagram showing domain and range</shortdescription>
+            <caption>Vertical Line Test Practice</caption>
+            <image xml:id="fig-vlt-practice" width="100%">
+                <shortdescription>Four graphs for vertical line test</shortdescription>
                 <latex-image>
                     <![CDATA[
-                    \begin{tikzpicture}[x=1cm,y=1cm,>=Stealth]
-                        \node[fill=blue!55,draw=black,regular polygon,regular polygon sides=5,minimum width=2.2cm,minimum height=1.25cm,rotate=0] at (-3,0){$-2,-1,0,1$};
-                        \draw[fill=lightblue,draw=black!60] (-0.8,-0.6) rectangle (1.6,0.65);
-                        \draw[fill=lightblue,draw=black!60] (-0.45,0.65)--(-0.6,1.0)--(0.15,1.0)--(0.35,0.65);
-                        \draw[fill=lightblue,draw=black!60] (1.6,0.35)..controls(2.1,0.35)and(2.05,-0.15)..(1.6,-0.35);
-                        \draw[->,gray] (-0.3,1.3)arc(155:25:0.85);
-                        \draw[->,gray](1.7,-0.4)arc(-30:-55:0.7);
-                        \node at (0.4,0.05){\small function machine};
-                        \node at (0.4,-0.27){$x^2+1$};
-                        \node[fill=lightgreen,draw=black,regular polygon,regular polygon sides=5,minimum width=2.2cm,minimum height=1.25cm] at (4, -0.4){$5,2,1,2$};
-                        \draw[->,red,line width=3pt] (-2.0,0.1)--(-1.0,0.35);
-                        \draw[->,red,line width=3pt] (2.1,0.0)--(3.0,-0.25);
-                        \node[font=\small] at (-1.25,0.9){Input $x$};
-                        \node[font=\small] at (2.35,-0.75){$f(x)$ Output};
+                    \begin{adjustbox}{max width=\linewidth}
+                    \begin{tikzpicture}[x=0.6cm,y=0.6cm,>=Stealth]
+
+                    % ---- Graph a: y = 0.5 x^2 (Parabola) ----
+                    \begin{scope}[shift={(-2,7)}]
+                        \draw[->,gray] (-5,0) -- (5,0) node[right]{$x$};
+                        \draw[->,gray] (0,-2) -- (0,8) node[above]{$y$};
+                        \foreach \x in {-4,-2,2,4}
+                            \draw[gray] (\x,-0.1) -- (\x,0.1) node[below=2pt,font=\tiny]{\x};
+                        \foreach \y in {2,4,6}
+                            \draw[gray] (-0.1,\y) -- (0.1,\y) node[left=2pt,font=\tiny]{\y};
+                        \draw[very thick,blue,domain=-3.5:3.5,samples=100] plot (\x,{0.5*\x*\x});
+                        \node[anchor=west,font=\Large] at (-5,7.5) {a.\quad $y=\tfrac12x^2$};
+                    \end{scope}
+
+                    % ---- Graph b: x - y^2 = 1 (Sideways parabola) ----
+                    \begin{scope}[shift={(7,7)}]
+                        \draw[->,gray] (-2,0) -- (8,0) node[right]{$x$};
+                        \draw[->,gray] (0,-4) -- (0,4) node[above]{$y$};
+                        \foreach \x in {2,4,6}
+                            \draw[gray] (\x,-0.1) -- (\x,0.1) node[below=2pt,font=\tiny]{\x};
+                        \foreach \y in {-3,-2,-1,1,2,3}
+                            \draw[gray] (-0.1,\y) -- (0.1,\y) node[left=2pt,font=\tiny]{\y};
+                        \draw[very thick,blue,domain=-3.2:3.2,samples=100,variable=\y] plot ({1+\y*\y},\y);
+                        \node[anchor=west,font=\Large] at (-2,7.5) {b.\quad $x-y^2=1$};
+                    \end{scope}
+
+                    % ---- Graph c: y = 0.25 x^3 (Cubic) ----
+                    \begin{scope}[shift={(-2,-5)}]
+                        \draw[->,gray] (-5,0) -- (5,0) node[right]{$x$};
+                        \draw[->,gray] (0,-4) -- (0,4) node[above]{$y$};
+                        \foreach \x in {-4,-2,2,4}
+                            \draw[gray] (\x,-0.1) -- (\x,0.1) node[below=2pt,font=\tiny]{\x};
+                        \foreach \y in {-3,-2,-1,1,2,3}
+                            \draw[gray] (-0.1,\y) -- (0.1,\y) node[left=2pt,font=\tiny]{\y};
+                        \draw[very thick,blue,domain=-3:3,samples=100] plot (\x,{0.25*\x*\x*\x});
+                        \node[anchor=west,font=\Large] at (-5,-5.5) {c.\quad $y=\tfrac14x^3$};
+                    \end{scope}
+
+                    % ---- Graph d: x^2 = 2xy - 1  =>  y = (x^2+1)/(2x) (Hyperbola) ----
+                    \begin{scope}[shift={(7,-5)}]
+                        \draw[->,gray] (-6,0) -- (6,0) node[right]{$x$};
+                        \draw[->,gray] (0,-5) -- (0,5) node[above]{$y$};
+                        \foreach \x in {-4,-2,2,4}
+                            \draw[gray] (\x,-0.1) -- (\x,0.1) node[below=2pt,font=\tiny]{\x};
+                        \foreach \y in {-4,-2,2,4}
+                            \draw[gray] (-0.1,\y) -- (0.1,\y) node[left=2pt,font=\tiny]{\y};
+                        \draw[very thick,blue,domain=-5:-0.2,samples=100] plot (\x,{(\x*\x+1)/(2*\x)});
+                        \draw[very thick,blue,domain=0.2:5,samples=100] plot (\x,{(\x*\x+1)/(2*\x)});
+                        \node[anchor=west,font=\Large] at (-6,-5.5) {d.\quad $x^2=2xy-1$};
+                    \end{scope}
+
                     \end{tikzpicture}
+                    \end{adjustbox}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+    </statement>
+
+    <!-- SOLUTION with visual vertical lines -->
+    <solution>
+        <p>Use the vertical line test: if a vertical line intersects the graph more than once, it is <em>not</em> a function.</p>
+
+        <figure>
+            <caption>Vertical Line Test Applied</caption>
+            <image xml:id="fig-vlt-solution" width="100%">
+                <shortdescription>Vertical line test applied to four graphs</shortdescription>
+                <latex-image>
+                    <![CDATA[
+                    \begin{adjustbox}{max width=\linewidth}
+                    \begin{tikzpicture}[x=0.6cm,y=0.6cm,>=Stealth]
+
+                    % ---- Graph a: y = 0.5 x^2 (Function) ----
+                    \begin{scope}[shift={(-2,7)}]
+                        \draw[->,gray] (-5,0) -- (5,0) node[right]{$x$};
+                        \draw[->,gray] (0,-2) -- (0,8) node[above]{$y$};
+                        \foreach \x in {-4,-2,2,4}
+                            \draw[gray] (\x,-0.1) -- (\x,0.1) node[below=2pt,font=\tiny]{\x};
+                        \foreach \y in {2,4,6}
+                            \draw[gray] (-0.1,\y) -- (0.1,\y) node[left=2pt,font=\tiny]{\y};
+                        \draw[very thick,blue,domain=-3.5:3.5,samples=100] plot (\x,{0.5*\x*\x});
+                        \draw[dashed,red,thick] (1,-2) -- (1,8);  % vertical line
+                        \node[green!50!black,font=\bfseries] at (-3.5,6) {Function};
+                        \node[anchor=west,font=\Large] at (-5,7.5) {a.};
+                    \end{scope}
+
+                    % ---- Graph b: x - y^2 = 1 (Not a Function) ----
+                    \begin{scope}[shift={(7,7)}]
+                        \draw[->,gray] (-2,0) -- (8,0) node[right]{$x$};
+                        \draw[->,gray] (0,-4) -- (0,4) node[above]{$y$};
+                        \foreach \x in {2,4,6}
+                            \draw[gray] (\x,-0.1) -- (\x,0.1) node[below=2pt,font=\tiny]{\x};
+                        \foreach \y in {-3,-2,-1,1,2,3}
+                            \draw[gray] (-0.1,\y) -- (0.1,\y) node[left=2pt,font=\tiny]{\y};
+                        \draw[very thick,blue,domain=-3.2:3.2,samples=100,variable=\y] plot ({1+\y*\y},\y);
+                        \draw[dashed,red,thick] (4,-4) -- (4,4);
+                        \draw[red,fill=red] (4,1.732) circle (4pt);
+                        \draw[red,fill=red] (4,-1.732) circle (4pt);
+                        \node[red,font=\bfseries] at (1,3) {Not a Function};
+                        \node[anchor=west,font=\Large] at (-2,7.5) {b.};
+                    \end{scope}
+
+                    % ---- Graph c: y = 0.25 x^3 (Function) ----
+                    \begin{scope}[shift={(-2,-5)}]
+                        \draw[->,gray] (-5,0) -- (5,0) node[right]{$x$};
+                        \draw[->,gray] (0,-4) -- (0,4) node[above]{$y$};
+                        \foreach \x in {-4,-2,2,4}
+                            \draw[gray] (\x,-0.1) -- (\x,0.1) node[below=2pt,font=\tiny]{\x};
+                        \foreach \y in {-3,-2,-1,1,2,3}
+                            \draw[gray] (-0.1,\y) -- (0.1,\y) node[left=2pt,font=\tiny]{\y};
+                        \draw[very thick,blue,domain=-3:3,samples=100] plot (\x,{0.25*\x*\x*\x});
+                        \draw[dashed,red,thick] (2,-4) -- (2,4);
+                        \node[green!50!black,font=\bfseries] at (-3.5,-3) {Function};
+                        \node[anchor=west,font=\Large] at (-5,-5.5) {c.};
+                    \end{scope}
+
+                    % ---- Graph d: x^2 = 2xy - 1 (Function) ----
+                    \begin{scope}[shift={(7,-5)}]
+                        \draw[->,gray] (-6,0) -- (6,0) node[right]{$x$};
+                        \draw[->,gray] (0,-5) -- (0,5) node[above]{$y$};
+                        \foreach \x in {-4,-2,2,4}
+                            \draw[gray] (\x,-0.1) -- (\x,0.1) node[below=2pt,font=\tiny]{\x};
+                        \foreach \y in {-4,-2,2,4}
+                            \draw[gray] (-0.1,\y) -- (0.1,\y) node[left=2pt,font=\tiny]{\y};
+                        \draw[very thick,blue,domain=-5:-0.2,samples=100] plot (\x,{(\x*\x+1)/(2*\x)});
+                        \draw[very thick,blue,domain=0.2:5,samples=100] plot (\x,{(\x*\x+1)/(2*\x)});
+                        \draw[dashed,red,thick] (1,-5) -- (1,5);  % vertical line
+                        \node[green!50!black,font=\bfseries] at (2.5,4) {Function};
+                        \node[anchor=west,font=\Large] at (-6,-5.5) {d.};
+                    \end{scope}
+
+                    % Legend
+                    \draw[red,dashed,thick] (0,-7.5) -- (0.5,-7.5);
+                    \node[font=\small] at (2,-7.5) {Vertical line};
+
+                    \end{tikzpicture}
+                    \end{adjustbox}
                     ]]>
                 </latex-image>
             </image>
         </figure>
 
-        <p>
-            This function could be defined by <m>\{(-2, 5), (-1, 2), (0, 1), (1, 2)\}</m>.
-        </p>
+        <p>The results are:</p>
+        <ul>
+            <li><strong>a.</strong> <m>y = \frac12 x^2</m> is a <em>function</em> – every vertical line intersects the parabola exactly once.</li>
+            <li><strong>b.</strong> <m>x - y^2 = 1</m> is <em>not</em> a function – vertical lines intersect the graph twice (shown by the red dots).</li>
+            <li><strong>c.</strong> <m>y = \frac14 x^3</m> is a <em>function</em> – every vertical line intersects the cubic exactly once.</li>
+            <li><strong>d.</strong> <m>x^2 = 2xy - 1</m> is a <em>function</em> – solving for <m>y</m> gives <m>y = \frac{x^2+1}{2x}</m>, which yields exactly one <m>y</m> for each <m>x \neq 0</m>.</li>
+        </ul>
+    </solution>
+</activity>
     </subsection>
 
-    <!-- ========================================================
-         EXAMPLES: IDENTIFYING FUNCTIONS
-         ======================================================== -->
 
-    <subsection xml:id="identifying-functions">
-        <title>Identifying Functions</title>
-
-        <activity>
-            <statement>
-                <p><em>Examples.</em> Which of the following are examples of relations that are functions? Why or why not?</p>
-
-                <p>1) <m>\{(1, 2), (2, 4), (3, 6), (4, 8)\}</m></p>
-
-                <p>2) <m>\{(1, 2), (1, 4), (1, 6), (1, 8)\}</m></p>
-
-                <p>3) Mapping Diagram:</p>
-                <figure>
-                    <caption>Mapping Diagram</caption>
-                    <image xml:id="fig-mapping-example" width="40%">
-                        <shortdescription>Mapping diagram with two sets</shortdescription>
-                        <latex-image>
-                            <![CDATA[
-                            \begin{tikzpicture}[x=1cm,y=1cm,>=Stealth]
-                                \draw[fill=lightorange] (0,0) ellipse (1.0 and 1.5);
-                                \draw[fill=lightcyan] (4,0) ellipse (1.0 and 1.5);
-                                \node at (0,0.55){$-2$};
-                                \node at (0,-0.55){$6$};
-                                \node at (4,0.55){$-2$};
-                                \node at (4,-0.55){$6$};
-                                \draw[->] (0.65,0.55)--(3.35,0.55);
-                                \draw[->] (0.65,0.05)--(3.35,-0.05);
-                                \draw[->] (0.65,-0.55)--(3.35,-0.55);
-                            \end{tikzpicture}
-                            ]]>
-                        </latex-image>
-                    </image>
-                </figure>
-
-                <p>4) <m>y = 3x^2 - 4</m></p>
-
-                <p>5) <m>x^2 + y^2 = 4</m></p>
-            </statement>
-            <solution>
-                <p><em>Solutions:</em></p>
-                <p><em>1)</em> <m>\{(1, 2), (2, 4), (3, 6), (4, 8)\}</m> is a <em>function</em> because each <m>x</m>-value has exactly one corresponding <m>y</m>-value.</p>
-                <p><em>2)</em> <m>\{(1, 2), (1, 4), (1, 6), (1, 8)\}</m> is <em>not</em> a function because the <m>x</m>-value <m>1</m> maps to multiple <m>y</m>-values.</p>
-                <p><em>3)</em> The mapping diagram is <em>not</em> a function because <m>-2</m> maps to both <m>-2</m> and <m>6</m>.</p>
-                <p><em>4)</em> <m>y = 3x^2 - 4</m> is a <em>function</em> because for each <m>x</m>, there is exactly one <m>y</m>-value.</p>
-                <p><em>5)</em> <m>x^2 + y^2 = 4</m> is <em>not</em> a function because, for example, when <m>x = 0</m>, <m>y = \pm 2</m>.</p>
-            </solution>
-        </activity>
-    </subsection>
-
-    <!-- ========================================================
-         GRAPHS OF FUNCTIONS
-         ======================================================== -->
-
-    <subsection xml:id="graphs-of-functions">
-        <title>Graphs of Functions</title>
-
-        <p>
-            The graph of a function <m>f</m> is the collection of ordered pairs <m>(x, f(x))</m> such that <m>x</m> is in the domain of <m>f</m>.
-        </p>
-
-        <p>
-            Every <m>(x, y)</m> pair on the graph satisfies <m>f(x)</m>.
-        </p>
-
-        <activity>
-            <statement>
-                <p>Use the graph of <m>f(x) = 2x^3 - 4x^2 + 2</m> to answer the following:</p>
-
-                <figure>
-                    <caption>Graph of <m>f(x) = 2x^3 - 4x^2 + 2</m></caption>
-                    <image xml:id="fig-function-graph" width="60%">
-                        <shortdescription>Graph of cubic function</shortdescription>
-                        <latex-image>
-                            <![CDATA[
-                            \begin{tikzpicture}[x=1.05cm,y=0.9cm,>=Stealth]
-                                \draw[->] (-6.2,0)--(6.0,0) node[right]{$x$};
-                                \draw[->] (0,-4.7)--(0,4.2) node[above]{$y$};
-                                \foreach \x in {-4,-2,0,2,4}
-                                    \draw[gray] (\x,-0.12)--(\x,0.12) node[below=3pt,font=\small]{\x};
-                                \foreach \y in {-4,-2,2}
-                                    \draw[gray] (-0.12,\y)--(0.12,\y) node[left=3pt,font=\small]{\y};
-                                \draw[very thick,brightblue] plot[domain=-1.25:2.3,samples=100] (\x,{2*\x^3-4*\x^2+2});
-                                \fill[brightblue] (-1,-4)circle(4pt) node[left,font=\large]{$(-1,-4)$};
-                                \fill[brightblue] (1,0)circle(4pt) node[below right,font=\large]{$(1,0)$};
-                                \fill[brightblue] (2,2)circle(4pt) node[above right,font=\large]{$(2,2)$};
-                                \node[brightblue,font=\Large] at (0.9,-4.4){$f(x)=2x^3-4x^2+2$};
-                            \end{tikzpicture}
-                            ]]>
-                        </latex-image>
-                    </image>
-                </figure>
-
-                <p>
-                    What is <m>f(-1)</m>?
-                </p>
-                <p>
-                    For what value of <m>x</m>, does <m>f(x) = 0</m>?
-                </p>
-            </statement>
-            <solution>
-                <p><m>f(-1) = -4</m></p>
-                <p><m>f(x) = 0</m> when <m>x = 1</m> (since <m>(1, 0)</m> is on the graph).</p>
-            </solution>
-        </activity>
-    </subsection>
 
     <!-- ========================================================
          DOMAIN AND RANGE FROM GRAPHS (Video 2)
@@ -272,7 +578,7 @@
         <p><url href="https://youtu.be/pzDfd8NXRXk">Domain and Range Video</url></p>
 
         <p>
-            Functions can be defined by graphs (without an equation). The function is still the collection of ordered pairs <m>(x, y)</m>. That means we can use the graph to find the domain and range.
+            Functions can be defined by graphs (without an equation). The function is still the collection of ordered pairs <m>(x, f(x))</m>. That means we can use the graph to find the domain and range.
         </p>
 
         <figure>
@@ -309,69 +615,364 @@
                 </latex-image>
             </image>
         </figure>
+<!-- ACTIVITY: Domain and Range Practice -->
+<activity>
+    <statement>
+        <p>Find the domain and range of each graph shown.</p>
+        <figure>
+            <caption>Domain and Range Practice</caption>
+            <image xml:id="fig-domain-range-practice" width="100%">
+                <shortdescription>Four graphs for domain and range practice</shortdescription>
+                <latex-image>
+                    <![CDATA[
+                    \begin{adjustbox}{max width=\linewidth}
+                    \begin{tikzpicture}[>=Stealth]
 
-        <activity>
-            <statement>
-                <p>Find the domain and range of each graph shown.</p>
-                <figure>
-                    <caption>Domain and Range Practice</caption>
-                    <image xml:id="fig-domain-range-practice" width="70%">
-                        <shortdescription>Four graphs for domain and range practice</shortdescription>
-                        <latex-image>
-                            <![CDATA[
-                            \begin{tikzpicture}[x=0.85cm,y=0.85cm,>=Stealth]
-                                \node at (-5,2.8){\Large\bfseries a.};
-                                \draw[->,gray](-7,0)--(0,0)node[right]{$x$};
-                                \draw[->,gray](-3,-0.7)--(-3,4.1)node[above]{$y$};
-                                \foreach \x in {-6,-5,-4,-2,-1}
-                                    \draw[gray](\x,-.12)--(\x,.12)node[below=2pt,font=\scriptsize]{\x+3};
-                                \foreach \y in {1,2,3,4}
-                                    \draw[gray](-3.12,\y)--(-2.88,\y)node[left=2pt,font=\scriptsize]{\y};
-                                \draw[very thick,brightblue] (-6,0)arc(180:0:3);
-                                \fill[brightblue](-6,0)circle(4pt);
-                                \draw[fill=white,very thick,brightblue] (0,0)circle(4pt);
-                                \node[brightblue] at (-4.9,.35){$(-2,0)$};
-                                \node[brightblue] at (-0.1,.35){$(2,0)$};
+                    % ============================================================
+                    % GRAPH (a)
+                    % ============================================================
 
-                                \node at (4.3,2.8){\Large\bfseries b.};
-                                \draw[->,gray](1,0)--(8,0)node[right]{$x$};
-                                \draw[->,gray](4.5,-.7)--(4.5,4.1)node[above]{$y$};
-                                \draw[very thick,brightblue] (1.5,2.1)--(4.5,0)--(8,2);
-                                \draw[->,brightblue,very thick](1.5,2.1)--(1.25,2.25);
-                                \draw[->,brightblue,very thick](8,2)--(8.3,2.15);
+                    \begin{scope}[xshift=0cm,yshift=0cm]
 
-                                \node at (-5,-3.0){\Large\bfseries c.};
-                                \draw[->,gray](-7,-3.7)--(0,-3.7)node[right]{$x$};
-                                \draw[->,gray](-3,-4.2)--(-3,-1.0)node[above]{$y$};
-                                \draw[very thick,brightblue](-6,-1.5)--(-1.2,-1.5);
-                                \draw[->,brightblue,very thick](-6,-1.5)--(-6.4,-1.5);
-                                \draw[fill=white,very thick,brightblue](-1,-1.5)circle(4pt)node[above right]{$(1,2)$};
-                                \draw[very thick,brightblue](0,-3.5)--(5,-3.5);
-                                \draw[->,brightblue,very thick](5,-3.5)--(5.4,-3.5);
-                                \draw[fill=white,very thick,brightblue](0,-3.5)circle(4pt)node[above right]{$(1,-1)$};
+                    \node[anchor=west,font=\bfseries\large] at (-4.1,3.9) {a.};
 
-                                \node at (4.3,-3.0){\Large\bfseries d.};
-                                \draw[->,gray](1,-3.7)--(8,-3.7)node[right]{$x$};
-                                \draw[->,gray](4.5,-4.2)--(4.5,-1.0)node[above]{$y$};
-                                \draw[very thick,brightblue](1.3,-1.5)--(4.0,-1.5);
-                                \draw[->,brightblue,very thick](1.3,-1.5)--(1,-1.5);
-                                \draw[fill=white,very thick,brightblue](4,-1.5)circle(4pt)node[above right]{$(1,2)$};
-                                \draw[very thick,brightblue](5.5,-2.8)--(8,-1.0);
-                                \draw[->,brightblue,very thick](8,-1)--(8.4,-0.7);
-                                \fill[brightblue](5.5,-2.8)circle(4pt)node[above right]{$(2,1)$};
-                            \end{tikzpicture}
-                            ]]>
-                        </latex-image>
-                    </image>
-                </figure>
-            </statement>
-            <solution>
-                <p><em>a.</em> Domain: <m>[-2, 2]</m>, Range: <m>[0, 4]</m></p>
-                <p><em>b.</em> Domain: <m>(-∞, ∞)</m>, Range: <m>(-∞, ∞)</m></p>
-                <p><em>c.</em> Domain: <m>(-∞, 1) \cup [1, ∞)</m> (with open/closed mixed), Range: <m>[-3, -1) \cup (-1, ∞)</m></p>
-                <p><em>d.</em> Domain: <m>(-∞, ∞)</m>, Range: <m>(-∞, ∞)</m></p>
-            </solution>
-        </activity>
+                    \draw[->,gray!65] (-4.1,0) -- (4.1,0);
+                    \draw[->,gray!65] (0,-0.8) -- (0,4.1);
+
+                    \foreach \x in {-3,-2,-1,1,2,3}
+                    {
+                        \draw[gray!65] (\x,-0.07) -- (\x,0.07);
+                        \node[font=\small,below] at (\x,-0.07) {\x};
+                    }
+
+                    \foreach \y in {1,2,3,4}
+                    {
+                        \draw[gray!65] (-0.07,\y) -- (0.07,\y);
+                        \node[font=\small,left] at (-0.08,\y) {\y};
+                    }
+
+                    \node[font=\small,below left] at (0,0) {0};
+
+                    \draw[graphblue,very thick] plot[domain=0:180,samples=100] ({2*cos(\x)},{2*sin(\x)});
+                    \fill[graphblue] (-2,0) circle (3pt);
+                    \draw[graphblue,very thick,fill=white] (2,0) circle (3.2pt);
+
+                    \node[graphblue,font=\small] at (-1.35,0.35) {(-2, 0)};
+                    \node[graphblue,font=\small] at (2.45,0.35) {(2, 0)};
+
+                    \end{scope}
+
+                    % ============================================================
+                    % GRAPH (b)
+                    % ============================================================
+
+                    \begin{scope}[xshift=9cm,yshift=0cm]
+
+                    \node[anchor=west,font=\bfseries\large] at (-4.1,3.9) {b.};
+
+                    \draw[->,gray!65] (-4.1,0) -- (4.1,0);
+                    \draw[->,gray!65] (0,-0.8) -- (0,4.1);
+
+                    \foreach \x in {-3,-2,-1,1,2,3}
+                    {
+                        \draw[gray!65] (\x,-0.07) -- (\x,0.07);
+                        \node[font=\small,below] at (\x,-0.07) {\x};
+                    }
+
+                    \foreach \y in {1,2,3,4}
+                    {
+                        \draw[gray!65] (-0.07,\y) -- (0.07,\y);
+                        \node[font=\small,left] at (-0.08,\y) {\y};
+                    }
+
+                    \node[font=\small,below left] at (0,0) {0};
+
+                    \draw[graphblue,very thick,{Stealth[length=7pt]}-] (-4,2) -- (0,0);
+                    \draw[graphblue,very thick,-{Stealth[length=7pt]}] (0,0) -- (4,2);
+
+                    \end{scope}
+
+                    % ============================================================
+                    % GRAPH (c)
+                    % ============================================================
+
+                    \begin{scope}[xshift=0cm,yshift=-5.6cm]
+
+                    \node[anchor=west,font=\bfseries\large] at (-4.1,3.9) {c.};
+
+                    \draw[->,gray!65] (-4.1,0) -- (4.1,0);
+                    \draw[->,gray!65] (0,-1.8) -- (0,4.1);
+
+                    \foreach \x in {-3,-2,-1,1,2,3}
+                    {
+                        \draw[gray!65] (\x,-0.07) -- (\x,0.07);
+                        \node[font=\small,below] at (\x,-0.07) {\x};
+                    }
+
+                    \foreach \y in {-1,1,2,3,4}
+                    {
+                        \draw[gray!65] (-0.07,\y) -- (0.07,\y);
+                        \node[font=\small,left] at (-0.08,\y) {\y};
+                    }
+
+                    \node[font=\small,below left] at (0,0) {0};
+
+                    \draw[graphblue,very thick,{Stealth[length=7pt]}-] (-4,2) -- (1,2);
+                    \draw[graphblue,very thick,fill=white] (1,2) circle (3.2pt);
+                    \draw[graphblue,very thick,-{Stealth[length=7pt]}] (1,-1) -- (4,-1);
+                    \draw[graphblue,very thick,fill=white] (1,-1) circle (3.2pt);
+
+                    \node[graphblue,font=\small] at (1.55,2.25) {(1, 2)};
+                    \node[graphblue,font=\small] at (1.55,-1.35) {(1, -1)};
+
+                    \end{scope}
+
+                    % ============================================================
+                    % GRAPH (d)
+                    % ============================================================
+
+                    \begin{scope}[xshift=9cm,yshift=-5.6cm]
+
+                    \node[anchor=west,font=\bfseries\large] at (-4.1,3.9) {d.};
+
+                    \draw[->,gray!65] (-4.1,0) -- (4.1,0);
+                    \draw[->,gray!65] (0,-1.8) -- (0,4.1);
+
+                    \foreach \x in {-3,-2,-1,1,2,3}
+                    {
+                        \draw[gray!65] (\x,-0.07) -- (\x,0.07);
+                        \node[font=\small,below] at (\x,-0.07) {\x};
+                    }
+
+                    \foreach \y in {-1,1,2,3,4}
+                    {
+                        \draw[gray!65] (-0.07,\y) -- (0.07,\y);
+                        \node[font=\small,left] at (-0.08,\y) {\y};
+                    }
+
+                    \node[font=\small,below left] at (0,0) {0};
+
+                    \draw[graphblue,very thick,{Stealth[length=7pt]}-] (-4,2) -- (1,2);
+                    \draw[graphblue,very thick,fill=white] (1,2) circle (3.2pt);
+                    \draw[graphblue,very thick,-{Stealth[length=7pt]}] (2,1) -- (4,3);
+                    \fill[graphblue] (2,1) circle (3pt);
+
+                    \node[graphblue,font=\small] at (1.55,2.25) {(1, 2)};
+                    \node[graphblue,font=\small] at (2.55,0.65) {(2, 1)};
+
+                    \end{scope}
+
+                    \end{tikzpicture}
+                    \end{adjustbox}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+    </statement>
+
+    <!-- SOLUTION -->
+    <solution>
+        <p>For each graph, determine the set of all possible <m>x</m>-values (domain) and the set of all possible <m>y</m>-values (range).</p>
+
+        <figure>
+            <caption>Domain and Range Solutions</caption>
+            <image xml:id="fig-domain-range-solution" width="100%">
+                <shortdescription>Solutions for domain and range</shortdescription>
+                <latex-image>
+                    <![CDATA[
+                    \begin{adjustbox}{max width=\linewidth}
+                    \begin{tikzpicture}[>=Stealth]
+
+                    % ============================================================
+                    % GRAPH (a)
+                    % ============================================================
+
+                    \begin{scope}[xshift=0cm,yshift=0cm]
+
+                    \node[anchor=west,font=\bfseries\large] at (-4.1,3.9) {a.};
+
+                    \draw[->,gray!65] (-4.1,0) -- (4.1,0);
+                    \draw[->,gray!65] (0,-0.8) -- (0,4.1);
+
+                    \foreach \x in {-3,-2,-1,1,2,3}
+                    {
+                        \draw[gray!65] (\x,-0.07) -- (\x,0.07);
+                        \node[font=\small,below] at (\x,-0.07) {\x};
+                    }
+
+                    \foreach \y in {1,2,3,4}
+                    {
+                        \draw[gray!65] (-0.07,\y) -- (0.07,\y);
+                        \node[font=\small,left] at (-0.08,\y) {\y};
+                    }
+
+                    \node[font=\small,below left] at (0,0) {0};
+
+                    \draw[graphblue,very thick] plot[domain=0:180,samples=100] ({2*cos(\x)},{2*sin(\x)});
+                    \fill[graphblue] (-2,0) circle (3pt);
+                    \draw[graphblue,very thick,fill=white] (2,0) circle (3.2pt);
+
+                    \node[graphblue,font=\small] at (-1.35,0.35) {(-2, 0)};
+                    \node[graphblue,font=\small] at (2.45,0.35) {(2, 0)};
+
+                    \draw[magenta,dashed] (-2,0) -- (-2,-0.8);
+                    \draw[magenta,dashed] (2,0) -- (2,-0.8);
+                    \draw[magenta,decorate,decoration={brace,amplitude=5pt,mirror}] (-2,-0.8) -- (2,-0.8) node[midway,below=8pt,font=\small]{Domain: $[-2,2)$};
+
+                    \draw[magenta,dashed] (0,0) -- (-0.8,0);
+                    \draw[magenta,dashed] (0,2) -- (-0.8,2);
+                    \draw[magenta,decorate,decoration={brace,amplitude=5pt}] (-0.8,0) -- (-0.8,2) node[midway,left=8pt,font=\small]{Range: $[0,2]$};
+
+                    \end{scope}
+
+                    % ============================================================
+                    % GRAPH (b)
+                    % ============================================================
+
+                    \begin{scope}[xshift=9cm,yshift=0cm]
+
+                    \node[anchor=west,font=\bfseries\large] at (-4.1,3.9) {b.};
+
+                    \draw[->,gray!65] (-4.1,0) -- (4.1,0);
+                    \draw[->,gray!65] (0,-0.8) -- (0,4.1);
+
+                    \foreach \x in {-3,-2,-1,1,2,3}
+                    {
+                        \draw[gray!65] (\x,-0.07) -- (\x,0.07);
+                        \node[font=\small,below] at (\x,-0.07) {\x};
+                    }
+
+                    \foreach \y in {1,2,3,4}
+                    {
+                        \draw[gray!65] (-0.07,\y) -- (0.07,\y);
+                        \node[font=\small,left] at (-0.08,\y) {\y};
+                    }
+
+                    \node[font=\small,below left] at (0,0) {0};
+
+                    \draw[graphblue,very thick,{Stealth[length=7pt]}-] (-4,2) -- (0,0);
+                    \draw[graphblue,very thick,-{Stealth[length=7pt]}] (0,0) -- (4,2);
+
+                    \draw[magenta,decorate,decoration={brace,amplitude=5pt,mirror}] (-4,-1) -- (4,-1) node[midway,below=8pt,font=\small]{Domain: $(-\infty,\infty)$};
+
+                    \draw[magenta,dashed] (0,0) -- (-0.8,0);
+                    \draw[magenta,decorate,decoration={brace,amplitude=5pt}] (-0.8,0) -- (-0.8,3.5) node[midway,left=8pt,font=\small]{Range: $[0,\infty)$};
+
+                    \end{scope}
+
+                    % ============================================================
+                    % GRAPH (c)
+                    % ============================================================
+
+                    \begin{scope}[xshift=0cm,yshift=-5.6cm]
+
+                    \node[anchor=west,font=\bfseries\large] at (-4.1,3.9) {c.};
+
+                    \draw[->,gray!65] (-4.1,0) -- (4.1,0);
+                    \draw[->,gray!65] (0,-1.8) -- (0,4.1);
+
+                    \foreach \x in {-3,-2,-1,1,2,3}
+                    {
+                        \draw[gray!65] (\x,-0.07) -- (\x,0.07);
+                        \node[font=\small,below] at (\x,-0.07) {\x};
+                    }
+
+                    \foreach \y in {-1,1,2,3,4}
+                    {
+                        \draw[gray!65] (-0.07,\y) -- (0.07,\y);
+                        \node[font=\small,left] at (-0.08,\y) {\y};
+                    }
+
+                    \node[font=\small,below left] at (0,0) {0};
+
+                    \draw[graphblue,very thick,{Stealth[length=7pt]}-] (-4,2) -- (1,2);
+                    \draw[graphblue,very thick,fill=white] (1,2) circle (3.2pt);
+                    \draw[graphblue,very thick,-{Stealth[length=7pt]}] (1,-1) -- (4,-1);
+                    \draw[graphblue,very thick,fill=white] (1,-1) circle (3.2pt);
+
+                    \node[graphblue,font=\small] at (1.55,2.25) {(1, 2)};
+                    \node[graphblue,font=\small] at (1.55,-1.35) {(1, -1)};
+
+                    \draw[magenta,decorate,decoration={brace,amplitude=5pt,mirror}] (-4,-2) -- (1,-2) node[midway,below=8pt,font=\small]{$(-\infty,1)$};
+                    \draw[magenta,decorate,decoration={brace,amplitude=5pt,mirror}] (1,-2) -- (4,-2) node[midway,below=8pt,font=\small]{$(1,\infty)$};
+                    \node[font=\small,magenta] at (0,-2.8) {Domain: $(-\infty,1)\cup(1,\infty)$};
+
+                    \draw[magenta,dashed] (-4,2) -- (-4.8,2);
+                    \draw[magenta,decorate,decoration={brace,amplitude=5pt}] (-4.8,2) -- (-4.8,3) node[midway,left=8pt,font=\small]{$y=2$};
+                    \draw[magenta,dashed] (-4,-1) -- (-4.8,-1);
+                    \draw[magenta,decorate,decoration={brace,amplitude=5pt}] (-4.8,-1) -- (-4.8,-0.2) node[midway,left=8pt,font=\small]{$y=-1$};
+                    \node[font=\small,magenta] at (-5.5,1.5) {Range: $\{-1,2\}$};
+
+                    \end{scope}
+
+                    % ============================================================
+                    % GRAPH (d)
+                    % ============================================================
+
+                    \begin{scope}[xshift=9cm,yshift=-5.6cm]
+
+                    \node[anchor=west,font=\bfseries\large] at (-4.1,3.9) {d.};
+
+                    \draw[->,gray!65] (-4.1,0) -- (4.1,0);
+                    \draw[->,gray!65] (0,-1.8) -- (0,4.1);
+
+                    \foreach \x in {-3,-2,-1,1,2,3}
+                    {
+                        \draw[gray!65] (\x,-0.07) -- (\x,0.07);
+                        \node[font=\small,below] at (\x,-0.07) {\x};
+                    }
+
+                    \foreach \y in {-1,1,2,3,4}
+                    {
+                        \draw[gray!65] (-0.07,\y) -- (0.07,\y);
+                        \node[font=\small,left] at (-0.08,\y) {\y};
+                    }
+
+                    \node[font=\small,below left] at (0,0) {0};
+
+                    \draw[graphblue,very thick,{Stealth[length=7pt]}-] (-4,2) -- (1,2);
+                    \draw[graphblue,very thick,fill=white] (1,2) circle (3.2pt);
+                    \draw[graphblue,very thick,-{Stealth[length=7pt]}] (2,1) -- (4,3);
+                    \fill[graphblue] (2,1) circle (3pt);
+
+                    \node[graphblue,font=\small] at (1.55,2.25) {(1, 2)};
+                    \node[graphblue,font=\small] at (2.55,0.65) {(2, 1)};
+
+                    \draw[magenta,decorate,decoration={brace,amplitude=5pt,mirror}] (-4,-2) -- (1,-2) node[midway,below=8pt,font=\small]{$(-\infty,1)$};
+                    \draw[magenta,decorate,decoration={brace,amplitude=5pt,mirror}] (2,-2) -- (4,-2) node[midway,below=8pt,font=\small]{$[2,\infty)$};
+                    \node[font=\small,magenta] at (0,-2.8) {Domain: $(-\infty,1)\cup[2,\infty)$};
+
+                    \draw[magenta,dashed] (2,1) -- (2.5,1);
+                    \draw[magenta,dashed] (2,3) -- (2.5,3);
+                    \draw[magenta,decorate,decoration={brace,amplitude=5pt}] (2.5,1) -- (2.5,3) node[midway,right=8pt,font=\small]{$[1,\infty)$};
+                    \node[font=\small,magenta] at (4.5,2) {Range: $[1,\infty)$};
+
+                    \end{scope}
+
+                    \end{tikzpicture}
+                    \end{adjustbox}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+
+        <p>The solutions are:</p>
+        <ul>
+            <li>
+                <strong>a.</strong> Domain: <m>[-2, 2)</m>, Range: <m>[0, 2]</m>.
+            </li>
+            <li>
+                <strong>b.</strong> Domain: <m>(-\infty, \infty)</m>, Range: <m>[0, \infty)</m>.
+            </li>
+            <li>
+                <strong>c.</strong> Domain: <m>(-\infty, 1) \cup (1, \infty)</m>, Range: <m>\{-1, 2\}</m>.
+            </li>
+            <li>
+                <strong>d.</strong> Domain: <m>(-\infty, 1) \cup [2, \infty)</m>, Range: <m>[1, \infty)</m>.
+            </li>
+        </ul>
+    </solution>
+</activity>
     </subsection>
 
     <!-- ========================================================
@@ -387,9 +988,12 @@
 
         <algorithm number="no">
             <title>Finding Domain Algebraically</title>
+            <p>
+                The domain of a function <m>f</m> is the set of all the <m>x</m>-values for which we can compute <m>f(x)</m>. Hence, when the function has fractions or radicals, we must exclude some values.
+            </p>
             <ol>
-                <li>Denominators cannot equal zero. (Set the denominator <m>\ne 0</m>)</li>
-                <li>Even radicands must not be negative. (Stuff under even root <m>\ge 0</m>)</li>
+                <li>Exclude values of <m>x</m> that make the denominator zero. (Set the denominator <m>\ne 0</m>)</li>
+                <li>When the index of the root is even, exclude values of <m>x</m> that make the radicand negative. (Set stuff under root <m>\ge 0</m>)</li>
             </ol>
         </algorithm>
 
@@ -405,240 +1009,241 @@
                     <p><strong>d.</strong> <m>f(x) = \dfrac{1}{\sqrt{x - 2}}</m></p>
                 </sidebyside>
             </statement>
-            <solution>
-                <p><em>a.</em> <m>x^2 - 2x - 8 \ne 0 \Rightarrow (x - 4)(x + 2) \ne 0 \Rightarrow x \ne 4, -2</m></p>
-                <p>Domain: <m>(-\infty, -2) \cup (-2, 4) \cup (4, \infty)</m></p>
+           <solution>
+    <!-- a. -->
+    <p>
+        <em>a.</em>
+        <me>x^2 - 2x - 8 \ne 0 \Rightarrow (x - 4)(x + 2) \ne 0 \Rightarrow x \ne 4, -2</me>
+    </p>
+    <p>Domain: <m>(-\infty, -2) \cup (-2, 4) \cup (4, \infty)</m></p>
+    <figure>
+        <caption>Number line for (a)</caption>
+        <image width="60%">
+            <latex-image>
+                <![CDATA[
+                \begin{adjustbox}{max width=\linewidth}
+                \begin{tikzpicture}[scale=0.8]
+                    \draw[->,thick] (-7,0) -- (7,0) node[right] {$x$};
+                    \draw[<-,thick] (7,0) -- (-7,0);
+                    \foreach \x in {-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6}
+                        \draw (\x,0.08) -- (\x,-0.08) node[below] {\x};
+                    \draw[thick, blue, line width=2pt, -{Stealth}] (-2,0) -- (-6.5,0);
+                    \draw[thick, blue, line width=2pt] (-2,0) -- (4,0);
+                    \draw[thick, blue, line width=2pt, -{Stealth}] (4,0) -- (6.5,0);
+                    \node[blue, font=\Large\bfseries] at (-2,0.15) {)(};
+                    \node[blue, font=\Large\bfseries] at (4,0.15) {)(};
+                \end{tikzpicture}
+                \end{adjustbox}
+                ]]>
+            </latex-image>
+        </image>
+    </figure>
 
-                <p><em>b.</em> <m>x^2 + 12x + 36 \ne 0 \Rightarrow (x + 6)^2 \ne 0 \Rightarrow x \ne -6</m></p>
-                <p>Domain: <m>(-\infty, -6) \cup (-6, \infty)</m></p>
+    <!-- b. -->
+    <p>
+        <em>b.</em>
+        <me>x^2 + 12x + 36 \ne 0 \Rightarrow (x + 6)^2 \ne 0 \Rightarrow x \ne -6</me>
+    </p>
+    <p>Domain: <m>(-\infty, -6) \cup (-6, \infty)</m></p>
+    <figure>
+        <caption>Number line for (b)</caption>
+        <image width="60%">
+            <latex-image>
+                <![CDATA[
+                \begin{adjustbox}{max width=\linewidth}
+                \begin{tikzpicture}[scale=0.8]
+                    \draw[->,thick] (-8.5,0) -- (8.5,0) node[right] {$x$};
+                    \draw[<-,thick] (8.5,0) -- (-8.5,0);
+                    \foreach \x in {-8,-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,8}
+                        \draw (\x,0.08) -- (\x,-0.08) node[below] {\x};
+                    \draw[thick, blue, line width=2pt, -{Stealth}] (-6,0) -- (-8,0);
+                    \draw[thick, blue, line width=2pt, -{Stealth}] (-6,0) -- (8,0);
+                    \node[blue, font=\Large\bfseries] at (-6,0.15) {)(};
+                \end{tikzpicture}
+                \end{adjustbox}
+                ]]>
+            </latex-image>
+        </image>
+    </figure>
 
-                <p><em>c.</em> <m>x^2 + 4</m> is always positive, so no restrictions.</p>
-                <p>Domain: <m>(-\infty, \infty)</m></p>
+    <!-- c. -->
+    <p>
+        <em>c.</em>
+        <m>x^2 + 4</m> is always positive, so no restrictions.
+    </p>
+    <p>Domain: <m>(-\infty, \infty)</m></p>
+    <figure>
+        <caption>Number line for (c)</caption>
+        <image width="60%">
+            <latex-image>
+                <![CDATA[
+                \begin{adjustbox}{max width=\linewidth}
+                \begin{tikzpicture}[scale=0.8]
+                    \draw[->,thick] (-6.5,0) -- (6.5,0) node[right] {$x$};
+                    \draw[<-,thick] (6.5,0) -- (-6.5,0);
+                    \foreach \x in {-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6}
+                        \draw (\x,0.08) -- (\x,-0.08) node[below] {\x};
+                    \draw[thick, blue, line width=2pt, -{Stealth}] (-6.5,0) -- (6.5,0);
+                    \draw[thick, blue, line width=2pt, {Stealth}-] (-6.5,0) -- (6.5,0);
+                \end{tikzpicture}
+                \end{adjustbox}
+                ]]>
+            </latex-image>
+        </image>
+    </figure>
 
-                <p><em>d.</em> Need <m>x - 2 &gt; 0</m> (since denominator cannot be zero).</p>
-                <p>Domain: <m>(2, \infty)</m></p>
-            </solution>
+    <!-- d. -->
+    <p>
+        <em>d.</em>
+        Need <m>x - 2 &gt; 0</m> (since denominator cannot be zero).
+    </p>
+    <p>Domain: <m>(2, \infty)</m></p>
+    <figure>
+        <caption>Number line for (d)</caption>
+        <image width="60%">
+            <latex-image>
+                <![CDATA[
+                \begin{adjustbox}{max width=\linewidth}
+                \begin{tikzpicture}[scale=0.8]
+                    \draw[->,thick] (-4.5,0) -- (8.5,0) node[right] {$x$};
+                    \draw[<-,thick] (8.5,0) -- (-4.5,0);
+                    \foreach \x in {-4,-3,-2,-1,0,1,2,3,4,5,6,7,8}
+                        \draw (\x,0.08) -- (\x,-0.08) node[below] {\x};
+                    \draw[thick, blue, line width=2pt, -{Stealth}] (2,0) -- (8,0);
+                    \node[blue, font=\Large\bfseries] at (2,0.15) {(};
+                \end{tikzpicture}
+                \end{adjustbox}
+                ]]>
+            </latex-image>
+        </image>
+    </figure>
+</solution>
         </activity>
     </subsection>
 
-    <!-- ========================================================
-         VERTICAL LINE TEST (Video 3)
-         ======================================================== -->
+    
 
-    <subsection xml:id="vertical-line-test">
-        <title>Vertical Line Test</title>
-
-        <!-- Video 3: Vertical Line Test -->
-        <p><url href="https://youtu.be/1uh-7m-SzYk">Vertical Line Test Video</url></p>
-
-        <p>
-            By the definition of a function, at most one <m>y</m>-value corresponds to a given <m>x</m>-value.
-        </p>
-
-        <p>
-            This means that the graph of a function cannot have two or more different points with the same <m>x</m>-coordinate, and no two points on the graph of a function can be vertically above or below each other.
-        </p>
-
-        <p>
-            It follows, then, that a vertical line can intersect the graph of a function at most once.
-        </p>
-
-        <algorithm number="no">
-            <title>Vertical Line Test for Functions</title>
-            <p>
-                A set of points in a coordinate plane is the graph of <m>y</m> as a function of <m>x</m> if and only if <em>no vertical line</em> intersects the graph at more than one point.
-            </p>
-        </algorithm>
-
-        <activity>
-            <statement>
-                <p>Which graphs are functions? Use the vertical line test.</p>
-                <figure>
-                    <caption>Vertical Line Test Practice</caption>
-                    <image xml:id="fig-vlt-practice" width="70%">
-                        <shortdescription>Four graphs for vertical line test</shortdescription>
-                        <latex-image>
-                            <![CDATA[
-                            \begin{tikzpicture}[x=0.72cm,y=0.72cm,>=Stealth]
-                                \node[anchor=west] at (-6,6.2){\Large a.\quad $y=\frac12x^2$};
-                                \fill[cream] (-5.7,-1) rectangle (0.2,5.7);
-                                \draw[->,gray](-5.5,0)--(0.35,0)node[right]{$x$};
-                                \draw[->,gray](0,-1)--(0,6.1)node[above]{$y$};
-                                \foreach \x in {-4,-3,-2,-1,1,2,3,4}
-                                    \draw[gray](\x,-.12)--(\x,.12);
-                                \foreach \y in {1,2,3,4,5,6}
-                                    \draw[gray](-.12,\y)--(.12,\y);
-                                \draw[very thick] plot[domain=-4:4,samples=100] (\x,{0.5*\x^2});
-
-                                \node[anchor=west] at (1.2,6.2){\Large b.\quad $x-y^2=1$};
-                                \fill[cream] (1.0,-2.7) rectangle (7.5,5.7);
-                                \draw[->,gray](0.8,0)--(7.7,0)node[right]{$x$};
-                                \draw[->,gray](1.7,-3)--(1.7,6.1)node[above]{$y$};
-                                \foreach \x in {2,3,4,5,6,7}
-                                    \draw[gray](\x,-.12)--(\x,.12)node[below=2pt,font=\tiny]{\x};
-                                \foreach \y in {-2,-1,1,2,3,4,5}
-                                    \draw[gray](1.58,\y)--(1.82,\y)node[left=2pt,font=\tiny]{\y};
-                                \draw[very thick] plot[domain=1.7:7.5,samples=100] (\x,{sqrt(\x-1)});
-                                \draw[very thick] plot[domain=1.7:7.5,samples=100] (\x,{-sqrt(\x-1)});
-
-                                \node[anchor=west] at (-6,-3.6){\Large c.\quad $y=\frac14x^3$};
-                                \fill[cream] (-5.7,-4.8) rectangle (0.2,4.7);
-                                \draw[->,gray](-5.5,0)--(0.35,0)node[right]{$x$};
-                                \draw[->,gray](0,-4.9)--(0,5)node[above]{$y$};
-                                \foreach \x in {-4,-3,-2,-1,1,2,3,4}
-                                    \draw[gray](\x,-.12)--(\x,.12);
-                                \foreach \y in {-4,-3,-2,-1,1,2,3,4}
-                                    \draw[gray](-.12,\y)--(.12,\y);
-                                \draw[very thick] plot[domain=-2.6:2.6,samples=100] (\x,{0.25*\x^3});
-
-                                \node[anchor=west] at (1.2,-3.6){\Large d.\quad $x^2=2y-1$};
-                                \fill[cream] (1.0,-4.8) rectangle (7.5,4.7);
-                                \draw[->,gray](0.8,0)--(7.7,0)node[right]{$x$};
-                                \draw[->,gray](1.7,-4.9)--(1.7,5)node[above]{$y$};
-                                \draw[very thick] plot[domain=0.08:5.7,samples=100] (\x,{(\x^2+1)/(2*\x)});
-                                \draw[very thick] plot[domain=-5.7:-0.08,samples=100] (\x,{(\x^2+1)/(2*\x)});
-                            \end{tikzpicture}
-                            ]]>
-                        </latex-image>
-                    </image>
-                </figure>
-            </statement>
-            <solution>
-                <p><em>a.</em> <m>y = \frac12 x^2</m> is a <em>function</em> (parabola opens up).</p>
-                <p><em>b.</em> <m>x - y^2 = 1</m> is <em>not</em> a function (fails vertical line test).</p>
-                <p><em>c.</em> <m>y = \frac14 x^3</m> is a <em>function</em> (cubic function).</p>
-                <p><em>d.</em> <m>x^2 = 2y - 1</m> is a <em>function</em> (can be written as <m>y = \frac{x^2+1}{2}</m>).</p>
-            </solution>
-        </activity>
-    </subsection>
 
     <!-- ========================================================
-         EVALUATING FUNCTIONS (Video 4)
-         ======================================================== -->
+     ZEROS OF A FUNCTION (Video 5)
+     ======================================================== -->
 
-    <subsection xml:id="evaluating-functions">
-        <title>Evaluating Functions</title>
+<subsection xml:id="zeros-of-functions">
+    <title>Zeros of a Function</title>
 
-        <!-- Video 4: Evaluating Functions -->
-        <p><url href="https://youtu.be/-08_QjVDu98">Evaluating Functions Video</url></p>
+    <!-- Video 5: Zeros of a Function -->
+    <p><url href="https://youtu.be/JUvo3GrgWHk">Zeros of a Function Video</url></p>
 
-        <p>
-            When evaluating functions for specific inputs, replace <m>x</m> with parentheses. Then input your number and simplify. Don't forget the order of operations.
-        </p>
+    <p>
+        If the graph of a function of <m>x</m> has an <m>x</m>-intercept at <m>(a, 0)</m>, then <m>a</m> is a zero of the function.
+    </p>
 
-        <activity>
-            <statement>
-                <p>
-                    Let <m>f(x) = 2x - 3x^2</m> and <m>g(x) = \dfrac{2x^2 + 1}{4x}</m>
-                </p>
-                <p>Find:</p>
-                <sidebyside>
-                    <p><strong>a.</strong> <m>f(2)</m></p>
-                    <p><strong>b.</strong> <m>g(3)</m></p>
-                    <p><strong>c.</strong> <m>f(-4)</m></p>
-                    <p><strong>d.</strong> <m>g(-2)</m></p>
-                </sidebyside>
-            </statement>
-            <solution>
-                <p><em>a.</em> <m>f(2) = 2(2) - 3(2)^2 = 4 - 12 = -8</m></p>
-                <p><em>b.</em> <m>g(3) = \dfrac{2(3)^2 + 1}{4(3)} = \dfrac{18 + 1}{12} = \dfrac{19}{12}</m></p>
-                <p><em>c.</em> <m>f(-4) = 2(-4) - 3(-4)^2 = -8 - 48 = -56</m></p>
-                <p><em>d.</em> <m>g(-2) = \dfrac{2(-2)^2 + 1}{4(-2)} = \dfrac{8 + 1}{-8} = -\dfrac{9}{8}</m></p>
-            </solution>
-        </activity>
-    </subsection>
-
-    <!-- ========================================================
-         ZEROS OF A FUNCTION (Video 5)
-         ======================================================== -->
-
-    <subsection xml:id="zeros-of-functions">
+    <algorithm number="no">
         <title>Zeros of a Function</title>
-
-        <!-- Video 5: Zeros of a Function -->
-        <p><url href="https://youtu.be/JUvo3GrgWHk">Zeros of a Function Video</url></p>
-
         <p>
-            If the graph of a function of <m>x</m> has an <m>x</m>-intercept at <m>(a, 0)</m>, then <m>a</m> is a zero of the function.
+            To find the zeros of a function <m>f</m>, solve the equation <m>f(x) = 0</m>.
         </p>
+    </algorithm>
 
-        <algorithm number="no">
-            <title>Zeros of a Function</title>
-            <p>
-                The <em>zeros of a function</em> <m>f</m> of <m>x</m> are the <m>x</m>-values for which <m>f(x) = 0</m>.
-            </p>
-        </algorithm>
+    <p>
+        When we talk about zeros of a function, this also means:
+    </p>
+    <ul>
+        <li><m>x = a</m> is a zero of function <m>f</m></li>
+        <li><m>x = a</m> is a solution of <m>f(x) = 0</m></li>
+        <li><m>(a, 0)</m> is an <m>x</m>-intercept of the graph of <m>f(x)</m></li>
+    </ul>
 
-        <p>
-            When we talk about zeros of a function, this also means:
-        </p>
-        <ul>
-            <li><m>x = a</m> is a zero of function <m>f</m></li>
-            <li><m>x = a</m> is a solution of <m>f(x) = 0</m></li>
-            <li><m>(a, 0)</m> is an <m>x</m>-intercept of the graph of <m>f(x)</m></li>
-        </ul>
+    <activity>
+        <statement>
+            <p>Find the zeros of each function.</p>
 
-        <activity>
-            <statement>
-                <p>Find the zeros of each function.</p>
-                <sidebyside>
-                    <p><strong>a.</strong> <m>f(x) = 3x^2 + x - 10</m></p>
-                    <p><strong>b.</strong> <m>g(x) = \sqrt{25 - x^2}</m></p>
-                    <p><strong>c.</strong> <m>h(x) = \dfrac{2x - 4}{x + 1}</m></p>
-                </sidebyside>
-            </statement>
-            <solution>
-                <p><em>a.</em> Set <m>f(x) = 0</m>:</p>
-                <me>3x^2 + x - 10 = 0</me>
-                <me>(3x - 5)(x + 2) = 0</me>
-                <me>x = \frac{5}{3} \quad \text{or} \quad x = -2</me>
-                <p>Zeros: <m>x = \frac{5}{3}, -2</m></p>
+            <!-- Each problem on its own line with spacing -->
+            <p><strong>a.</strong> <m>f(x) = 3x^2 + x - 10</m></p>
 
-                <p><em>b.</em> Set <m>g(x) = 0</m>:</p>
-                <me>\sqrt{25 - x^2} = 0</me>
-                <me>25 - x^2 = 0</me>
-                <me>x^2 = 25</me>
-                <me>x = \pm 5</me>
-                <p>Zeros: <m>x = -5, 5</m></p>
+            <p><strong>b.</strong> <m>g(x) = \sqrt{25 - x^2}</m></p>
 
-                <p><em>c.</em> Set <m>h(x) = 0</m>:</p>
-                <me>\frac{2x - 4}{x + 1} = 0</me>
-                <p>A fraction is zero when the numerator is zero:</p>
-                <me>2x - 4 = 0</me>
-                <me>x = 2</me>
-                <p>Zero: <m>x = 2</m></p>
-            </solution>
-        </activity>
+            <p><strong>c.</strong> <m>h(x) = \dfrac{2x - 4}{x + 1}</m></p>
 
-        <p>
-            <em>Example:</em> Look again at <m>f(x) = 3x^2 + x - 10</m>. We found the zeros by solving:
-        </p>
-        <me>0 = 3x^2 + x - 10 = (3x - 5)(x + 2)</me>
+        </statement>
+        <solution>
+            <p><em>a.</em> Set <m>f(x) = 0</m>:</p>
+            <me>3x^2 + x - 10 = 0</me>
+            <me>(3x - 5)(x + 2) = 0</me>
+            <me>x = \frac{5}{3} \quad \text{or} \quad x = -2</me>
+            <p>Zeros: <m>x = \frac{5}{3}, -2</m></p>
 
-        <figure>
-            <caption>Graph of <m>f(x) = 3x^2 + x - 10</m> with zeros</caption>
-            <image xml:id="fig-zeros-graph" width="60%">
-                <shortdescription>Parabola with zeros labeled</shortdescription>
-                <latex-image>
-                    <![CDATA[
-                    \begin{tikzpicture}[x=0.48cm,y=0.18cm,>=Stealth]
-                        \fill[white] (-4.4,-11) rectangle (4.5,20);
-                        \draw[->,gray](-4.5,0)--(4.7,0)node[right]{$x$};
-                        \draw[->,gray](0,-11)--(0,20.5)node[above]{$y$};
-                        \foreach \x in {-4,-3,-2,-1,1,2,3,4}
-                            \draw[gray](\x,-.5)--(\x,.5)node[below=3pt,font=\scriptsize]{\x};
-                        \foreach \y in {-10,-5,5,10,15}
-                            \draw[gray](-.08,\y)--(.08,\y)node[left=3pt,font=\scriptsize]{\y};
-                        \draw[very thick,brightblue] plot[domain=-3.4:3.1,samples=100] (\x,{3*\x^2+\x-10});
-                        \fill[red] (-2,0) circle (6pt);
-                        \fill[red] (1.67,0) circle (6pt);
-                        \node[red,font=\small,below] at (-2,-0.5){$(-2,0)$};
-                        \node[red,font=\small,below] at (1.67,-0.5){$(\frac{5}{3},0)$};
-                    \end{tikzpicture}
-                    ]]>
-                </latex-image>
-            </image>
-        </figure>
-    </subsection>
+            <p><em>b.</em> Set <m>g(x) = 0</m>:</p>
+            <me>\sqrt{25 - x^2} = 0</me>
+            <me>25 - x^2 = 0</me>
+            <me>x^2 = 25</me>
+            <me>x = \pm 5</me>
+            <p>Zeros: <m>x = -5, 5</m></p>
+
+            <p><em>c.</em> Set <m>h(x) = 0</m>:</p>
+            <me>\frac{2x - 4}{x + 1} = 0</me>
+            <p>A fraction is zero when the numerator is zero:</p>
+            <me>2x - 4 = 0</me>
+            <me>x = 2</me>
+            <p>Zero: <m>x = 2</m></p>
+        </solution>
+    </activity>
+
+    <p>
+        <em>Example:</em> Look again at <m>f(x) = 3x^2 + x - 10</m>. We found the zeros by solving:
+    </p>
+    <me>0 = 3x^2 + x - 10 = (3x - 5)(x + 2)</me>
+
+    <!-- ============================================================
+         GRAPH OF f(x) = 3x^2 + x - 10 with zeros labeled
+         ============================================================ -->
+    <figure>
+        <caption>Graph of <m>f(x) = 3x^2 + x - 10</m> with zeros</caption>
+        <image xml:id="fig-zeros-graph" width="70%">
+            <shortdescription>Parabola with zeros labeled</shortdescription>
+            <latex-image>
+                <![CDATA[
+                \begin{adjustbox}{max width=\linewidth}
+                \begin{tikzpicture}[x=0.7cm,y=0.25cm,>=Stealth]
+
+                    % ---- Grid ----
+                    \draw[step=1,black!15,thin] (-5,-12) grid (5,20);
+
+                    % ---- Axes ----
+                    \draw[->,thick] (-5.5,0) -- (5.5,0) node[right] {$x$};
+                    \draw[->,thick] (0,-12.5) -- (0,20.5) node[above] {$y$};
+
+                    % ---- Tick marks ----
+                    \foreach \x in {-5,-4,-3,-2,-1,1,2,3,4,5}
+                        \draw[gray] (\x,-0.2) -- (\x,0.2) node[below=3pt,font=\small] {\x};
+                    \foreach \y in {-10,-5,5,10,15,20}
+                        \draw[gray] (-0.2,\y) -- (0.2,\y) node[left=3pt,font=\small] {\y};
+
+                    % ---- Origin label ----
+                    \node[font=\small,below right] at (0,0) {0};
+
+                    % ---- Parabola: f(x) = 3x^2 + x - 10 ----
+                    \draw[very thick,graphblue,domain=-3.2:2.8,samples=100] plot (\x,{3*\x*\x + \x - 10});
+
+                    % ---- Zeros (x-intercepts) with SMALLER dots ----
+                    \fill[red] (-2,0) circle (4pt);
+                    \fill[red] (1.6667,0) circle (4pt);
+
+                    % ---- Labels for zeros ----
+                    \node[red,font=\small,below] at (-2,-0.8) {$(-2,0)$};
+                    \node[red,font=\small,below] at (1.6667,-0.8) {$\left(\frac{5}{3},0\right)$};
+
+                    % ---- Vertex label (optional but helpful) ----
+                    \draw[dashed,black!40] (-0.1667,-10.0833) -- (-0.1667,0);
+                    \node[font=\small,black!50,below] at (-0.1667,-0.8) {$x=-\frac{1}{6}$};
+
+                \end{tikzpicture}
+                \end{adjustbox}
+                ]]>
+            </latex-image>
+        </image>
+    </figure>
+
+</subsection>
 
 </section>

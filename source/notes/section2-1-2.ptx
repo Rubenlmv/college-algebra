@@ -263,7 +263,7 @@
     <p><url href="https://youtu.be/1uh-7m-SzYk">Graphing by Plotting Points Video</url></p>
 
     <!-- Activity 1: y = x^2 + 3 -->
-    <activity>
+    <activity xml:id="plotting-ex">
         <statement>
             <p><em>Example 1.</em> Graph <m>y = x^2 + 3</m> by completing the table of values and plotting the points.</p>
             <p>Complete the table:</p>
