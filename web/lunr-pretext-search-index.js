@@ -1000,9 +1000,9 @@ var ptx_lunr_docs = [
   "body": " Midpoint of a line segment   Line segment with midpoint marked    "
 },
 {
-  "id": "graphing-by-plotting-points-3",
+  "id": "plotting-ex",
   "level": "2",
-  "url": "section-2-1.html#graphing-by-plotting-points-3",
+  "url": "section-2-1.html#plotting-ex",
   "type": "Example",
   "number": "78",
   "title": "",
@@ -1105,7 +1105,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Section 2.3 Functions",
-  "body": " Section 2.3 Functions    Introduction to Functions   Functions Video  A function is a relation that takes each input to exactly one output.  Think of it as a machine: you put in an -value (input), and the machine gives you a corresponding unique -value (output).  Most functions we work with have names like , , and .   Function Machine   Function machine labeled f       Domain  The set of inputs ( -values) of the relation.    Range  The set of outputs ( -values) of the relation.    Function  A relation in and where for each value of in the domain, there is exactly one corresponding value of in the range.    Function Machine: Age Function   Function machine diagram        Function Notation  A function may be defined by an equation in two variables. For example, defines as a function of , since for any real number there is exactly one corresponding value for .  To make it clear that the relation is a function, we use function notation :   We read this as f of x equals 3 x squared minus 4 .  With function notation we know:   is the name of the function (it could be , , , , , or another letter)  is the input (independent variable) from the domain  is the output (or -value) for the corresponding   The set of inputs is called the domain , and the set of outputs is called the range of the function.   Mapping Diagram of a Function   Mapping diagram showing domain and range     This function could be defined by .     Identifying Functions    Examples. Which of the following are examples of relations that are functions? Why or why not?  1)  2)  3) Mapping Diagram:   Mapping Diagram   Mapping diagram with two sets     4)  5)    Solutions:  1)  is a function because each -value has exactly one corresponding -value.  2)  is not a function because the -value maps to multiple -values.  3) The mapping diagram is not a function because maps to both and .  4)  is a function because for each , there is exactly one -value.  5)  is not a function because, for example, when , .       Graphs of Functions  The graph of a function is the collection of ordered pairs such that is in the domain of .  Every pair on the graph satisfies .    Use the graph of to answer the following:   Graph of   Graph of cubic function     What is ?  For what value of , does ?     when (since is on the graph).       Domain and Range from Graphs   Domain and Range Video  Functions can be defined by graphs (without an equation). The function is still the collection of ordered pairs . That means we can use the graph to find the domain and range.   Domain and Range from a Graph   Graph showing domain and range       Find the domain and range of each graph shown.   Domain and Range Practice   Four graphs for domain and range practice       a. Domain: , Range:  b. Domain: , Range:  c. Domain: (with open\/closed mixed), Range:  d. Domain: , Range:       Finding Domain Algebraically  When finding the domain of a function without a graph, watch out for these trouble areas:   Finding Domain Algebraically   Denominators cannot equal zero. (Set the denominator )  Even radicands must not be negative. (Stuff under even root )      Find the domain of each function:   a.   b.     c.   d.      a.   Domain:  b.   Domain:  c.  is always positive, so no restrictions.  Domain:  d. Need (since denominator cannot be zero).  Domain:       Vertical Line Test   Vertical Line Test Video  By the definition of a function, at most one -value corresponds to a given -value.  This means that the graph of a function cannot have two or more different points with the same -coordinate, and no two points on the graph of a function can be vertically above or below each other.  It follows, then, that a vertical line can intersect the graph of a function at most once.   Vertical Line Test for Functions  A set of points in a coordinate plane is the graph of as a function of if and only if no vertical line intersects the graph at more than one point.     Which graphs are functions? Use the vertical line test.   Vertical Line Test Practice   Four graphs for vertical line test       a.  is a function (parabola opens up).  b.  is not a function (fails vertical line test).  c.  is a function (cubic function).  d.  is a function (can be written as ).       Evaluating Functions   Evaluating Functions Video  When evaluating functions for specific inputs, replace with parentheses. Then input your number and simplify. Don't forget the order of operations.    Let and   Find:   a.   b.   c.   d.      a.   b.   c.   d.        Zeros of a Function   Zeros of a Function Video  If the graph of a function of has an -intercept at , then is a zero of the function.   Zeros of a Function  The zeros of a function  of are the -values for which .   When we talk about zeros of a function, this also means:   is a zero of function  is a solution of  is an -intercept of the graph of     Find the zeros of each function.   a.   b.   c.      a. Set :     Zeros:  b. Set :      Zeros:  c. Set :   A fraction is zero when the numerator is zero:    Zero:     Example: Look again at . We found the zeros by solving:    Graph of with zeros   Parabola with zeros labeled      "
+  "body": " Section 2.3 Functions    Introduction to Functions   Functions Video  A function is a relation between two sets that takes each input to exactly one output.          Domain  The set of inputs ( -values) of the relation.    Range  The set of outputs ( -values) of the relation.   Most functions we work with have names like , , and .    Domain and Range Mapping      Think of a function as a machine: you put in an -value (input), and the machine gives you a corresponding unique  -value (output).                 In this course, our functions will usually have numerical inputs and outputs. Generally, we use the variable to denote input values (though we can use any other letter or symbol), and or to denote the output values.  So, most of the time we will see expressions like .  For our purposes, an alternative definition of a function is the following:   Function  A function is an equation for which any input yields exactly one output .      Function Notation   is the name of the function (it could be , , , , , or another letter)  is the input (independent variable) from the domain  is the output (or -value) for the corresponding   We read as f of x equals 3 x squared minus 4 .  With function notation from , we can write , meaning that the function takes Bob and assigns him the age 21.  The function that takes any number and assigns its square is represented by the equation:   For instance, and .     Evaluating Functions   Evaluating Functions Video  When evaluating functions for specific inputs, replace with parentheses. Then substitute the number and simplify. Don't forget the order of operations.    Let and   Find:   a.   b.   c.   d.      a.   b.   c.   d.      Recall that given a function we can draw its graph by plotting points (ordered pairs) . For instance we saw the graph of the function in .  Conversely, giving a graph we can determine whether it corresponds to a function or not, and if it does, we can find its domain and range from it.    Vertical Line Test   Vertical Line Test Video  By the definition of a function, at most one -value corresponds to a given -value.  This means that the graph of a function cannot have two or more different points with the same -coordinate, and no two points on the graph of a function can be vertically above or below each other.  It follows, then, that a vertical line can intersect the graph of a function at most once.   Vertical Line Test for Functions  If any vertical line intersects the graph in more than one point, the graph does not represent a function. If every vertical line intersects the graph in at most one point, the graph represents a function.      Which graphs are functions? Use the vertical line test.   Vertical Line Test Practice   Four graphs for vertical line test        Use the vertical line test: if a vertical line intersects the graph more than once, it is not a function.   Vertical Line Test Applied   Vertical line test applied to four graphs     The results are:   a.  is a function – every vertical line intersects the parabola exactly once.  b.  is not a function – vertical lines intersect the graph twice (shown by the red dots).  c.  is a function – every vertical line intersects the cubic exactly once.  d.  is a function – solving for gives , which yields exactly one for each .        Domain and Range from Graphs   Domain and Range Video  Functions can be defined by graphs (without an equation). The function is still the collection of ordered pairs . That means we can use the graph to find the domain and range.   Domain and Range from a Graph   Graph showing domain and range        Find the domain and range of each graph shown.   Domain and Range Practice   Four graphs for domain and range practice        For each graph, determine the set of all possible -values (domain) and the set of all possible -values (range).   Domain and Range Solutions   Solutions for domain and range     The solutions are:    a. Domain: , Range: .   b. Domain: , Range: .   c. Domain: , Range: .   d. Domain: , Range: .        Finding Domain Algebraically  When finding the domain of a function without a graph, watch out for these trouble areas:   Finding Domain Algebraically  The domain of a function is the set of all the -values for which we can compute . Hence, when the function has fractions or radicals, we must exclude some values.   Exclude values of that make the denominator zero. (Set the denominator )  When the index of the root is even, exclude values of that make the radicand negative. (Set stuff under root )      Find the domain of each function:   a.   b.     c.   d.        a.    Domain:   Number line for (a)        b.    Domain:   Number line for (b)        c.  is always positive, so no restrictions.  Domain:   Number line for (c)        d. Need (since denominator cannot be zero).  Domain:   Number line for (d)           Zeros of a Function   Zeros of a Function Video  If the graph of a function of has an -intercept at , then is a zero of the function.   Zeros of a Function  To find the zeros of a function , solve the equation .   When we talk about zeros of a function, this also means:   is a zero of function  is a solution of  is an -intercept of the graph of     Find the zeros of each function.   a.   b.   c.     a. Set :     Zeros:  b. Set :      Zeros:  c. Set :   A fraction is zero when the numerator is zero:    Zero:     Example: Look again at . We found the zeros by solving:     Graph of with zeros   Parabola with zeros labeled      "
 },
 {
   "id": "intro-functions-3",
@@ -1117,83 +1117,74 @@ var ptx_lunr_docs = [
   "body": "function exactly one "
 },
 {
-  "id": "intro-functions-6",
+  "id": "intro-functions-5",
   "level": "2",
-  "url": "section-2-3.html#intro-functions-6",
-  "type": "Figure",
-  "number": "54",
-  "title": "",
-  "body": " Function Machine   Function machine labeled f    "
-},
-{
-  "id": "intro-functions-7",
-  "level": "2",
-  "url": "section-2-3.html#intro-functions-7",
+  "url": "section-2-3.html#intro-functions-5",
   "type": "Definition",
-  "number": "55",
+  "number": "54",
   "title": "Domain.",
   "body": " Domain  The set of inputs ( -values) of the relation.  "
 },
 {
-  "id": "intro-functions-8",
+  "id": "intro-functions-6",
   "level": "2",
-  "url": "section-2-3.html#intro-functions-8",
+  "url": "section-2-3.html#intro-functions-6",
   "type": "Definition",
-  "number": "56",
+  "number": "55",
   "title": "Range.",
   "body": " Range  The set of outputs ( -values) of the relation.  "
 },
 {
-  "id": "intro-functions-9",
+  "id": "function-age",
   "level": "2",
-  "url": "section-2-3.html#intro-functions-9",
+  "url": "section-2-3.html#function-age",
+  "type": "Figure",
+  "number": "56",
+  "title": "",
+  "body": " Domain and Range Mapping     "
+},
+{
+  "id": "intro-functions-14",
+  "level": "2",
+  "url": "section-2-3.html#intro-functions-14",
   "type": "Definition",
   "number": "57",
   "title": "Function.",
-  "body": " Function  A relation in and where for each value of in the domain, there is exactly one corresponding value of in the range.  "
+  "body": " Function  A function is an equation for which any input yields exactly one output .  "
 },
 {
-  "id": "intro-functions-10",
+  "id": "evaluating-functions-4",
   "level": "2",
-  "url": "section-2-3.html#intro-functions-10",
-  "type": "Figure",
-  "number": "58",
-  "title": "",
-  "body": " Function Machine: Age Function   Function machine diagram    "
-},
-{
-  "id": "function-notation-9",
-  "level": "2",
-  "url": "section-2-3.html#function-notation-9",
-  "type": "Figure",
-  "number": "59",
-  "title": "",
-  "body": " Mapping Diagram of a Function   Mapping diagram showing domain and range    "
-},
-{
-  "id": "identifying-functions-2",
-  "level": "2",
-  "url": "section-2-3.html#identifying-functions-2",
+  "url": "section-2-3.html#evaluating-functions-4",
   "type": "Example",
   "number": "88",
   "title": "",
-  "body": "  Examples. Which of the following are examples of relations that are functions? Why or why not?  1)  2)  3) Mapping Diagram:   Mapping Diagram   Mapping diagram with two sets     4)  5)    Solutions:  1)  is a function because each -value has exactly one corresponding -value.  2)  is not a function because the -value maps to multiple -values.  3) The mapping diagram is not a function because maps to both and .  4)  is a function because for each , there is exactly one -value.  5)  is not a function because, for example, when , .   "
+  "body": "  Let and   Find:   a.   b.   c.   d.      a.   b.   c.   d.    "
 },
 {
-  "id": "graphs-of-functions-4",
+  "id": "vertical-line-test-6",
   "level": "2",
-  "url": "section-2-3.html#graphs-of-functions-4",
+  "url": "section-2-3.html#vertical-line-test-6",
+  "type": "Problem-Solving Strategy",
+  "number": "58",
+  "title": "Vertical Line Test for Functions.",
+  "body": " Vertical Line Test for Functions  If any vertical line intersects the graph in more than one point, the graph does not represent a function. If every vertical line intersects the graph in at most one point, the graph represents a function.  "
+},
+{
+  "id": "vertical-line-test-7",
+  "level": "2",
+  "url": "section-2-3.html#vertical-line-test-7",
   "type": "Example",
   "number": "89",
   "title": "",
-  "body": "  Use the graph of to answer the following:   Graph of   Graph of cubic function     What is ?  For what value of , does ?     when (since is on the graph).   "
+  "body": "  Which graphs are functions? Use the vertical line test.   Vertical Line Test Practice   Four graphs for vertical line test        Use the vertical line test: if a vertical line intersects the graph more than once, it is not a function.   Vertical Line Test Applied   Vertical line test applied to four graphs     The results are:   a.  is a function – every vertical line intersects the parabola exactly once.  b.  is not a function – vertical lines intersect the graph twice (shown by the red dots).  c.  is a function – every vertical line intersects the cubic exactly once.  d.  is a function – solving for gives , which yields exactly one for each .    "
 },
 {
   "id": "domain-range-graphs-4",
   "level": "2",
   "url": "section-2-3.html#domain-range-graphs-4",
   "type": "Figure",
-  "number": "62",
+  "number": "61",
   "title": "",
   "body": " Domain and Range from a Graph   Graph showing domain and range    "
 },
@@ -1204,7 +1195,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "90",
   "title": "",
-  "body": "  Find the domain and range of each graph shown.   Domain and Range Practice   Four graphs for domain and range practice       a. Domain: , Range:  b. Domain: , Range:  c. Domain: (with open\/closed mixed), Range:  d. Domain: , Range:   "
+  "body": "  Find the domain and range of each graph shown.   Domain and Range Practice   Four graphs for domain and range practice        For each graph, determine the set of all possible -values (domain) and the set of all possible -values (range).   Domain and Range Solutions   Solutions for domain and range     The solutions are:    a. Domain: , Range: .   b. Domain: , Range: .   c. Domain: , Range: .   d. Domain: , Range: .    "
 },
 {
   "id": "domain-algebraically-3",
@@ -1213,7 +1204,7 @@ var ptx_lunr_docs = [
   "type": "Problem-Solving Strategy",
   "number": "64",
   "title": "Finding Domain Algebraically.",
-  "body": " Finding Domain Algebraically   Denominators cannot equal zero. (Set the denominator )  Even radicands must not be negative. (Stuff under even root )   "
+  "body": " Finding Domain Algebraically  The domain of a function is the set of all the -values for which we can compute . Hence, when the function has fractions or radicals, we must exclude some values.   Exclude values of that make the denominator zero. (Set the denominator )  When the index of the root is even, exclude values of that make the radicand negative. (Set stuff under root )   "
 },
 {
   "id": "domain-algebraically-4",
@@ -1222,61 +1213,250 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "91",
   "title": "",
-  "body": "  Find the domain of each function:   a.   b.     c.   d.      a.   Domain:  b.   Domain:  c.  is always positive, so no restrictions.  Domain:  d. Need (since denominator cannot be zero).  Domain:   "
-},
-{
-  "id": "vertical-line-test-6",
-  "level": "2",
-  "url": "section-2-3.html#vertical-line-test-6",
-  "type": "Problem-Solving Strategy",
-  "number": "65",
-  "title": "Vertical Line Test for Functions.",
-  "body": " Vertical Line Test for Functions  A set of points in a coordinate plane is the graph of as a function of if and only if no vertical line intersects the graph at more than one point.  "
-},
-{
-  "id": "vertical-line-test-7",
-  "level": "2",
-  "url": "section-2-3.html#vertical-line-test-7",
-  "type": "Example",
-  "number": "92",
-  "title": "",
-  "body": "  Which graphs are functions? Use the vertical line test.   Vertical Line Test Practice   Four graphs for vertical line test       a.  is a function (parabola opens up).  b.  is not a function (fails vertical line test).  c.  is a function (cubic function).  d.  is a function (can be written as ).   "
-},
-{
-  "id": "evaluating-functions-4",
-  "level": "2",
-  "url": "section-2-3.html#evaluating-functions-4",
-  "type": "Example",
-  "number": "93",
-  "title": "",
-  "body": "  Let and   Find:   a.   b.   c.   d.      a.   b.   c.   d.    "
+  "body": "  Find the domain of each function:   a.   b.     c.   d.        a.    Domain:   Number line for (a)        b.    Domain:   Number line for (b)        c.  is always positive, so no restrictions.  Domain:   Number line for (c)        d. Need (since denominator cannot be zero).  Domain:   Number line for (d)       "
 },
 {
   "id": "zeros-of-functions-4",
   "level": "2",
   "url": "section-2-3.html#zeros-of-functions-4",
   "type": "Problem-Solving Strategy",
-  "number": "67",
+  "number": "69",
   "title": "Zeros of a Function.",
-  "body": " Zeros of a Function  The zeros of a function  of are the -values for which .  "
+  "body": " Zeros of a Function  To find the zeros of a function , solve the equation .  "
 },
 {
   "id": "zeros-of-functions-7",
   "level": "2",
   "url": "section-2-3.html#zeros-of-functions-7",
   "type": "Example",
-  "number": "94",
+  "number": "92",
   "title": "",
-  "body": "  Find the zeros of each function.   a.   b.   c.      a. Set :     Zeros:  b. Set :      Zeros:  c. Set :   A fraction is zero when the numerator is zero:    Zero:   "
+  "body": "  Find the zeros of each function.   a.   b.   c.     a. Set :     Zeros:  b. Set :      Zeros:  c. Set :   A fraction is zero when the numerator is zero:    Zero:   "
 },
 {
   "id": "zeros-of-functions-10",
   "level": "2",
   "url": "section-2-3.html#zeros-of-functions-10",
   "type": "Figure",
-  "number": "68",
+  "number": "70",
   "title": "",
   "body": " Graph of with zeros   Parabola with zeros labeled    "
+},
+{
+  "id": "section-2-4",
+  "level": "1",
+  "url": "section-2-4.html",
+  "type": "Section",
+  "number": "",
+  "title": "Section 2.4 Linear Equations",
+  "body": " Section 2.4 Linear Equations    Linear Equations   Linear Equation  An equation that can be written as , where , , are real numbers and and are not both .    In other words: Linear equations are equations of first degree . That is, their variables have no written exponents . We saw this in Section 1.1, but this time we have two variables . The graph of the solution set is a line, hence the name \"linear\".  There are two types of lines:   Vertical  Non-vertical lines    Vertical Lines  Vertical lines are described by the equation .   Vertical Lines        Slope-Intercept Form  Every non-vertical line can be described with the equation , where is the slope of the line and is the -intercept.  The equation is called the slope-intercept form of a line.   Understanding Lines and Slopes Video   Slope of a Line  The slope of a line through and is:    The slope of a line describes its steepness and direction:   A line with positive slope rises from left to right.  A line with negative slope falls from left to right.  A line with zero slope is horizontal.  A vertical line has an undefined slope.    Types of Slopes          Slope Examples    Example: Draw a line with each of the following slopes:   (positive slope)  (negative slope)  (zero slope)      For : Start at the origin . Since the slope is , go up 2 units and right 1 unit to reach . Draw the line through these points.   For : Start at the origin . Since the slope is , go down 1 unit and right 2 units to reach . Draw the line through these points.   For : Start at . A zero slope means the line is horizontal. Draw a horizontal line through .                          Find the slope of a line passing through the given points.  1.  and  2.  and the origin    1. Let and .   The slope is .  2. The origin is . Let and .   The slope is .       Writing Equations of Lines   Find the slope and write the equation of the line Video    Find the slope and write the equation of the line going through the given points.  1.  and  2.  and    1. Let and .   The slope is (horizontal line).  The equation is .  2. Let and .   The slope is undefined (vertical line).  The equation is .    A line is uniquely determined by 2 points or 1 point and a slope . Writing the equation of a line in slope-intercept form can help you graph the equation.    Example. Write the equation in slope-intercept form, then use the slope and -intercept to graph the line.     Step 1: Solve for .     The slope is and the -intercept is .  Step 2: Graph the line.   Graph of           Finding the Equation from a Graph    Find the equation of the line shown below.   Line on a coordinate plane         Step 1: Identify two points on the line. From the graph, the line passes through and .   Line with identified points      Step 2: Find the slope using the two points.   Step 3: Use point-slope form with .     The equation of the line is .       Average Rate of Change   Average Rate of Change Video  We have learned that the slope of a line can be interpreted as a rate of change .  For a nonlinear graph whose slope changes at each point, the average rate of change between any two points and is the slope of the line through the two points.    Average Rate of Change (Secant Line)        Find the average rate of change of from to .   and   This gives us the points and .     AROC Example:      The average rate of change is the slope of the secant line through and :   The average rate of change is .     "
+},
+{
+  "id": "intro-linear-equations-2",
+  "level": "2",
+  "url": "section-2-4.html#intro-linear-equations-2",
+  "type": "Definition",
+  "number": "71",
+  "title": "Linear Equation.",
+  "body": " Linear Equation  An equation that can be written as , where , , are real numbers and and are not both .  "
+},
+{
+  "id": "vertical-lines-3",
+  "level": "2",
+  "url": "section-2-4.html#vertical-lines-3",
+  "type": "Figure",
+  "number": "72",
+  "title": "",
+  "body": " Vertical Lines     "
+},
+{
+  "id": "slope-intercept-form-5",
+  "level": "2",
+  "url": "section-2-4.html#slope-intercept-form-5",
+  "type": "Definition",
+  "number": "73",
+  "title": "Slope of a Line.",
+  "body": " Slope of a Line  The slope of a line through and is:   "
+},
+{
+  "id": "slope-intercept-form-8",
+  "level": "2",
+  "url": "section-2-4.html#slope-intercept-form-8",
+  "type": "Figure",
+  "number": "74",
+  "title": "",
+  "body": " Types of Slopes     "
+},
+{
+  "id": "slope-examples-2",
+  "level": "2",
+  "url": "section-2-4.html#slope-examples-2",
+  "type": "Example",
+  "number": "93",
+  "title": "",
+  "body": "  Example: Draw a line with each of the following slopes:   (positive slope)  (negative slope)  (zero slope)      For : Start at the origin . Since the slope is , go up 2 units and right 1 unit to reach . Draw the line through these points.   For : Start at the origin . Since the slope is , go down 1 unit and right 2 units to reach . Draw the line through these points.   For : Start at . A zero slope means the line is horizontal. Draw a horizontal line through .                       "
+},
+{
+  "id": "slope-examples-3",
+  "level": "2",
+  "url": "section-2-4.html#slope-examples-3",
+  "type": "Example",
+  "number": "94",
+  "title": "",
+  "body": "  Find the slope of a line passing through the given points.  1.  and  2.  and the origin    1. Let and .   The slope is .  2. The origin is . Let and .   The slope is .   "
+},
+{
+  "id": "writing-equations-3",
+  "level": "2",
+  "url": "section-2-4.html#writing-equations-3",
+  "type": "Example",
+  "number": "95",
+  "title": "",
+  "body": "  Find the slope and write the equation of the line going through the given points.  1.  and  2.  and    1. Let and .   The slope is (horizontal line).  The equation is .  2. Let and .   The slope is undefined (vertical line).  The equation is .   "
+},
+{
+  "id": "writing-equations-5",
+  "level": "2",
+  "url": "section-2-4.html#writing-equations-5",
+  "type": "Example",
+  "number": "96",
+  "title": "",
+  "body": "  Example. Write the equation in slope-intercept form, then use the slope and -intercept to graph the line.     Step 1: Solve for .     The slope is and the -intercept is .  Step 2: Graph the line.   Graph of       "
+},
+{
+  "id": "equation-from-graph-2",
+  "level": "2",
+  "url": "section-2-4.html#equation-from-graph-2",
+  "type": "Example",
+  "number": "97",
+  "title": "",
+  "body": "  Find the equation of the line shown below.   Line on a coordinate plane         Step 1: Identify two points on the line. From the graph, the line passes through and .   Line with identified points      Step 2: Find the slope using the two points.   Step 3: Use point-slope form with .     The equation of the line is .   "
+},
+{
+  "id": "average-rate-of-change-6",
+  "level": "2",
+  "url": "section-2-4.html#average-rate-of-change-6",
+  "type": "Figure",
+  "number": "81",
+  "title": "",
+  "body": " Average Rate of Change (Secant Line)     "
+},
+{
+  "id": "average-rate-of-change-7",
+  "level": "2",
+  "url": "section-2-4.html#average-rate-of-change-7",
+  "type": "Example",
+  "number": "98",
+  "title": "",
+  "body": "  Find the average rate of change of from to .   and   This gives us the points and .     AROC Example:      The average rate of change is the slope of the secant line through and :   The average rate of change is .   "
+},
+{
+  "id": "section-2-5",
+  "level": "1",
+  "url": "section-2-5.html",
+  "type": "Section",
+  "number": "",
+  "title": "Section 2.5 Applications of Linear Equations",
+  "body": " Section 2.5 Applications of Linear Equations    Linear Equations Review   Linear Equation  An equation that can be written as , where , , are real numbers and and are not both .      Point-Slope Form  Recall the slope formula:   Multiplying both sides by gives the point-slope form of a line:       This form is useful when you know the slope of a line and one point on the line.  While the slope-intercept form will satisfy most linear needs, there are times where the point-slope form makes things easier.     Parallel and Perpendicular Lines   Parallel and Perpendicular Lines Video   Parallel Lines  Parallel lines have matching slopes .  If and represent the slopes of two nonvertical parallel lines, then .    Perpendicular Lines  Perpendicular lines have slopes that are negative reciprocals .  If and represent the slopes of two nonvertical perpendicular lines, then:   In other words, , or they are negative reciprocals of each other.     The slope of a line is given. Determine the slope of a line parallel and perpendicular to the given line, if possible.   1.   2.   3.       1.    Parallel slope:   Perpendicular slope: (negative reciprocal of is )   2.    Parallel slope:   Perpendicular slope: (negative reciprocal of is )   3.    Parallel slope: (horizontal lines are parallel)  Perpendicular slope: undefined (vertical line). A horizontal line is perpendicular to a vertical line.       Example. Give the equations of two lines that pass through . The first is parallel and the second perpendicular to the line defined by .   Hint: What do we need from the equation to the left?     Step 1: Identify the slope of the given line.  The line has slope .   Step 2: Find the slope of the parallel line.  Parallel lines have the same slope: .  Using point-slope form with :      The parallel line is .   Step 3: Find the slope of the perpendicular line.  Perpendicular slopes are negative reciprocals. Since , the perpendicular slope is .  Using point-slope form with :      The perpendicular line is .    Graph of the lines: (original), (parallel), and (perpendicular)           Linear Cost, Revenue, and Profit Functions  What does it cost to produce something for sale? What is the difference between the costs of the building and equipment, and the costs of material, energy, and labor?  A linear cost function models the cost to produce items:   where:    is the number of items produced.   is the fixed cost – the cost that does not change in relation to the number of items produced. It includes expenses like office space, equipment, and insurance.   is the variable cost – the direct cost to produce each item. It includes materials, energy, and labor.   A linear revenue function models revenue for selling items:   where:    is the number of items sold.   is the selling price per item.   A linear profit function models the profit for producing and selling items:   Profit is Revenue minus Cost .   Break-Even Point  The break-even point occurs when profit is zero, i.e., . At this point, .      Example. A company invests to produce snow boots for dogs. Each set of boots costs to manufacture, package, and ship, and will sell for .   a. What is the Cost function?   b. What is the Revenue function?   c. What is the Profit function?   d. What is the profit if they produce and sell 1,000 sets of boots?   e. What is the profit if they produce and sell 2,000 sets of boots?   f. How many sets do they need to produce and sell to make profit? What is this number called?     a. The fixed cost is (the initial investment). The variable cost is (cost per set).    b. The selling price is .    c. Profit is Revenue minus Cost.      d. For :   The company loses (negative profit).   e. For :   The company makes profit.   f. Set :     The company needs to produce and sell sets of boots to break even. This is called the break-even point .     "
+},
+{
+  "id": "intro-linear-applications-2",
+  "level": "2",
+  "url": "section-2-5.html#intro-linear-applications-2",
+  "type": "Definition",
+  "number": "83",
+  "title": "Linear Equation.",
+  "body": " Linear Equation  An equation that can be written as , where , , are real numbers and and are not both .  "
+},
+{
+  "id": "point-slope-form-4",
+  "level": "2",
+  "url": "section-2-5.html#point-slope-form-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "point-slope form "
+},
+{
+  "id": "parallel-perpendicular-lines-3",
+  "level": "2",
+  "url": "section-2-5.html#parallel-perpendicular-lines-3",
+  "type": "Definition",
+  "number": "84",
+  "title": "Parallel Lines.",
+  "body": " Parallel Lines  Parallel lines have matching slopes .  If and represent the slopes of two nonvertical parallel lines, then .  "
+},
+{
+  "id": "parallel-perpendicular-lines-4",
+  "level": "2",
+  "url": "section-2-5.html#parallel-perpendicular-lines-4",
+  "type": "Definition",
+  "number": "85",
+  "title": "Perpendicular Lines.",
+  "body": " Perpendicular Lines  Perpendicular lines have slopes that are negative reciprocals .  If and represent the slopes of two nonvertical perpendicular lines, then:   In other words, , or they are negative reciprocals of each other.  "
+},
+{
+  "id": "parallel-perpendicular-lines-5",
+  "level": "2",
+  "url": "section-2-5.html#parallel-perpendicular-lines-5",
+  "type": "Example",
+  "number": "99",
+  "title": "",
+  "body": "  The slope of a line is given. Determine the slope of a line parallel and perpendicular to the given line, if possible.   1.   2.   3.       1.    Parallel slope:   Perpendicular slope: (negative reciprocal of is )   2.    Parallel slope:   Perpendicular slope: (negative reciprocal of is )   3.    Parallel slope: (horizontal lines are parallel)  Perpendicular slope: undefined (vertical line). A horizontal line is perpendicular to a vertical line.   "
+},
+{
+  "id": "parallel-perpendicular-lines-6",
+  "level": "2",
+  "url": "section-2-5.html#parallel-perpendicular-lines-6",
+  "type": "Example",
+  "number": "100",
+  "title": "",
+  "body": "   Example. Give the equations of two lines that pass through . The first is parallel and the second perpendicular to the line defined by .   Hint: What do we need from the equation to the left?     Step 1: Identify the slope of the given line.  The line has slope .   Step 2: Find the slope of the parallel line.  Parallel lines have the same slope: .  Using point-slope form with :      The parallel line is .   Step 3: Find the slope of the perpendicular line.  Perpendicular slopes are negative reciprocals. Since , the perpendicular slope is .  Using point-slope form with :      The perpendicular line is .    Graph of the lines: (original), (parallel), and (perpendicular)       "
+},
+{
+  "id": "cost-revenue-profit-3",
+  "level": "2",
+  "url": "section-2-5.html#cost-revenue-profit-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "linear cost function "
+},
+{
+  "id": "cost-revenue-profit-7",
+  "level": "2",
+  "url": "section-2-5.html#cost-revenue-profit-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "linear revenue function "
+},
+{
+  "id": "cost-revenue-profit-11",
+  "level": "2",
+  "url": "section-2-5.html#cost-revenue-profit-11",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "linear profit function "
+},
+{
+  "id": "cost-revenue-profit-14",
+  "level": "2",
+  "url": "section-2-5.html#cost-revenue-profit-14",
+  "type": "Definition",
+  "number": "87",
+  "title": "Break-Even Point.",
+  "body": " Break-Even Point  The break-even point occurs when profit is zero, i.e., . At this point, .  "
+},
+{
+  "id": "cost-revenue-profit-15",
+  "level": "2",
+  "url": "section-2-5.html#cost-revenue-profit-15",
+  "type": "Example",
+  "number": "101",
+  "title": "",
+  "body": "   Example. A company invests to produce snow boots for dogs. Each set of boots costs to manufacture, package, and ship, and will sell for .   a. What is the Cost function?   b. What is the Revenue function?   c. What is the Profit function?   d. What is the profit if they produce and sell 1,000 sets of boots?   e. What is the profit if they produce and sell 2,000 sets of boots?   f. How many sets do they need to produce and sell to make profit? What is this number called?     a. The fixed cost is (the initial investment). The variable cost is (cost per set).    b. The selling price is .    c. Profit is Revenue minus Cost.      d. For :   The company loses (negative profit).   e. For :   The company makes profit.   f. Set :     The company needs to produce and sell sets of boots to break even. This is called the break-even point .   "
 },
 {
   "id": "activity-01-intro-activity",
@@ -1319,7 +1499,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity.html#activity-4",
   "type": "Theorem",
-  "number": "69",
+  "number": "88",
   "title": "",
   "body": "  Testing testing.   "
 },
@@ -1337,7 +1517,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity.html#prop123",
   "type": "Proposition",
-  "number": "70",
+  "number": "89",
   "title": "",
   "body": "  Let be a prime and let all matrices be over . Suppose and are such that If there exist such that with the conditions where  is the last row of (restricted to its first entries),  is the last column of (restricted to its first entries),  is the top-left submatrix of ,  is the top-left submatrix of ,  then is a Calogero-Moser pair.  Conversely, if is a Calogero-Moser pair such that with and , then for any and satisfying there exists such that     Sketch of the proof:   Block notation. Write   Set    Then we have the following commutators:    In addition with Moreover,   Now, since and , we have   Using the explicit block commutators, the equation is equivalent to   Taking the top-left block gives   This yields the Calogero-Moser condition for , precisely when .   "
 },
