@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="section-2-5">
+    <title>Section 2.5 Applications of Linear Equations</title>
+
+    <!-- ========================================================
+         INTRODUCTION
+         ======================================================== -->
+
+    <subsection xml:id="intro-linear-applications">
+        <title>Linear Equations Review</title>
+
+        <definition>
+            <title>Linear Equation</title>
+            <p>
+                An equation that can be written as <m>Ax + By = C</m>, where <m>A</m>, <m>B</m>, <m>C</m> are real numbers and <m>A</m> and <m>B</m> are not both <m>0</m>.
+            </p>
+        </definition>
+    </subsection>
+
+    <!-- ========================================================
+         POINT-SLOPE FORM
+         ======================================================== -->
+
+    <subsection xml:id="point-slope-form">
+        <title>Point-Slope Form</title>
+
+        <p>
+            Recall the slope formula:
+        </p>
+        <me>\frac{y - y_1}{x - x_1} = m</me>
+
+        <p>
+            Multiplying both sides by <m>x - x_1</m> gives the <term effect="bold">point-slope form</term> of a line:
+        </p>
+
+        <boxed>
+            <p>
+                <me>y - y_1 = m(x - x_1)</me>
+            </p>
+        </boxed>
+
+        <p>
+            This form is useful when you know the slope of a line and one point on the line.
+        </p>
+
+        <p>
+            While the slope-intercept form <m>y = mx + b</m> will satisfy most linear needs, there are times where the point-slope form makes things easier.
+        </p>
+    </subsection>
+
+    <!-- ========================================================
+         PARALLEL AND PERPENDICULAR LINES (Video)
+         ======================================================== -->
+
+    <subsection xml:id="parallel-perpendicular-lines">
+        <title>Parallel and Perpendicular Lines</title>
+
+        <!-- Video: Appears at top of page 2 in PDF -->
+        <p><url href="https://youtu.be/0oe-GqFrYFU">Parallel and Perpendicular Lines Video</url></p>
+
+        <definition>
+            <title>Parallel Lines</title>
+            <p>
+                Parallel lines have <em effect="bold">matching slopes</em>.
+            </p>
+            <p>
+                If <m>m_1</m> and <m>m_2</m> represent the slopes of two nonvertical parallel lines, then <m>m_1 = m_2</m>.
+            </p>
+        </definition>
+
+        <definition>
+            <title>Perpendicular Lines</title>
+            <p>
+                Perpendicular lines have slopes that are <em effect="bold">negative reciprocals</em>.
+            </p>
+            <p>
+                If <m>m_1</m> and <m>m_2</m> represent the slopes of two nonvertical perpendicular lines, then:
+            </p>
+            <me>m_1 = -\frac{1}{m_2}</me>
+            <p>
+                In other words, <m>m_1 \cdot m_2 = -1</m>, or they are negative reciprocals of each other.
+            </p>
+        </definition>
+
+        <activity>
+            <statement>
+                <p>
+                    The slope of a line is given. Determine the slope of a line parallel and perpendicular to the given line, if possible.
+                </p>
+                <sidebyside>
+                    <p><strong>1.</strong> <m>m = \dfrac{1}{2}</m></p>
+                    <p><strong>2.</strong> <m>m = -4</m></p>
+                    <p><strong>3.</strong> <m>m = 0</m></p>
+                </sidebyside>
+            </statement>
+            <solution>
+                <p>
+                    <em>1.</em> <m>m = \dfrac{1}{2}</m>
+                </p>
+                <p>
+                    Parallel slope: <m>m = \dfrac{1}{2}</m>
+                </p>
+                <p>
+                    Perpendicular slope: <m>m = -2</m> (negative reciprocal of <m>\frac{1}{2}</m> is <m>-2</m>)
+                </p>
+
+                <p>
+                    <em>2.</em> <m>m = -4</m>
+                </p>
+                <p>
+                    Parallel slope: <m>m = -4</m>
+                </p>
+                <p>
+                    Perpendicular slope: <m>m = \dfrac{1}{4}</m> (negative reciprocal of <m>-4</m> is <m>\frac{1}{4}</m>)
+                </p>
+
+                <p>
+                    <em>3.</em> <m>m = 0</m>
+                </p>
+                <p>
+                    Parallel slope: <m>m = 0</m> (horizontal lines are parallel)
+                </p>
+                <p>
+                    Perpendicular slope: <em>undefined</em> (vertical line). A horizontal line is perpendicular to a vertical line.
+                </p>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p>
+                    <em>Example.</em> Give the equations of two lines that pass through <m>(-1, 1)</m>. The first is parallel and the second perpendicular to the line defined by <m>y = -2x + 5</m>.
+                </p>
+                <p>
+                    <em>Hint:</em> What do we need from the equation to the left?
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <em>Step 1:</em> Identify the slope of the given line.
+                </p>
+                <p>
+                    The line <m>y = -2x + 5</m> has slope <m>m = -2</m>.
+                </p>
+                <p>
+                    <em>Step 2:</em> Find the slope of the parallel line.
+                </p>
+                <p>
+                    Parallel lines have the same slope: <m>m = -2</m>.
+                </p>
+                <p>
+                    Using point-slope form with <m>(-1, 1)</m>:
+                </p>
+                <me>y - 1 = -2(x - (-1))</me>
+                <me>y - 1 = -2(x + 1)</me>
+                <me>y - 1 = -2x - 2</me>
+                <me>y = -2x - 1</me>
+                <p>
+                    The parallel line is <m>y = -2x - 1</m>.
+                </p>
+
+                <p>
+                    <em>Step 3:</em> Find the slope of the perpendicular line.
+                </p>
+                <p>
+                    Perpendicular slopes are negative reciprocals. Since <m>m = -2</m>, the perpendicular slope is <m>m = \frac{1}{2}</m>.
+                </p>
+                <p>
+                    Using point-slope form with <m>(-1, 1)</m>:
+                </p>
+                <me>y - 1 = \frac{1}{2}(x - (-1))</me>
+                <me>y - 1 = \frac{1}{2}(x + 1)</me>
+                <me>y - 1 = \frac{1}{2}x + \frac{1}{2}</me>
+                <me>y = \frac{1}{2}x + \frac{3}{2}</me>
+                <p>
+                    The perpendicular line is <m>y = \frac{1}{2}x + \frac{3}{2}</m>.
+                </p>
+
+                <!-- Graph showing all three lines -->
+                <figure>
+                    <caption>Graph of the lines: <m>y = -2x + 5</m> (original), <m>y = -2x - 1</m> (parallel), and <m>y = \frac{1}{2}x + \frac{3}{2}</m> (perpendicular)</caption>
+                    <image width="70%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}[x=0.5cm,y=0.5cm,>=Stealth]
+                                % Grid
+                                \draw[gray!20,thin,step=1] (-6,-6) grid (6,6);
+                                \draw[gray!40,thin,step=2] (-6,-6) grid (6,6);
+                                % Axes
+                                \draw[gray!65,->] (-6.5,0) -- (6.5,0) node[right] {$x$};
+                                \draw[gray!65,->] (0,-6.5) -- (0,6.5) node[above] {$y$};
+                                % Labels
+                                \foreach \x in {-4,-2,2,4}
+                                    \draw[gray!65] (\x,-0.12)--(\x,0.12) node[below,font=\small] {\x};
+                                \foreach \y in {-4,-2,2,4}
+                                    \draw[gray!65] (-0.12,\y)--(0.12,\y) node[left,font=\small] {\y};
+                                \node[font=\small,below left] at (0,0) {0};
+
+                                % Clip to grid
+                                \clip (-6,-6) rectangle (6,6);
+
+                                % Original line: y = -2x + 5
+                                \draw[graphblue,very thick] (-2,9) -- (5,-5);
+                                \node[graphblue,font=\small,anchor=south] at (2.5,4.5) {$y=-2x+5$};
+
+                                % Parallel line: y = -2x - 1
+                                \draw[red,very thick] (-4,7) -- (3,-7);
+                                \node[red,font=\small,anchor=north] at (-1.5,-4) {$y=-2x-1$};
+
+                                % Perpendicular line: y = 1/2 x + 3/2
+                                \draw[green!60!black,very thick] (-6,-1.5) -- (4,3.5);
+                                \node[green!60!black,font=\small,anchor=south] at (-2.5,-1.5) {$y=\frac12x+\frac32$};
+
+                                % Point (-1,1) - smaller dot
+                                \fill[red] (-1,1) circle (3pt);
+                                \node[red,font=\small,anchor=south east] at (-1,1.2) {$(-1,1)$};
+
+                                % Right angle mark at intersection
+                                \draw[gray!50,thick] (-1,1) -- (-0.7,1.15);
+                                \draw[gray!50,thick] (-1,1) -- (-0.85,0.85);
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         LINEAR COST, REVENUE, AND PROFIT FUNCTIONS
+         ======================================================== -->
+
+    <subsection xml:id="cost-revenue-profit">
+        <title>Linear Cost, Revenue, and Profit Functions</title>
+
+        <p>
+            What does it cost to produce something for sale? What is the difference between the costs of the building and equipment, and the costs of material, energy, and labor?
+        </p>
+
+        <p>
+            A <term>linear cost function</term> models the cost <m>C(x)</m> to produce <m>x</m> items:
+        </p>
+        <me>C(x) = mx + b</me>
+
+        <p>
+            where:
+        </p>
+        <ul>
+            <li>
+                <term effect="bold"><m>x</m></term> is the number of items produced.
+            </li>
+            <li>
+                <term effect="bold"><m>b</m></term> is the <em>fixed cost</em> – the cost that does not change in relation to the number of items produced. It includes expenses like office space, equipment, and insurance.
+            </li>
+            <li>
+                <term effect="bold"><m>m</m></term> is the <em>variable cost</em> – the direct cost to produce each item. It includes materials, energy, and labor.
+            </li>
+        </ul>
+
+        <p>
+            A <term>linear revenue function</term> models revenue <m>R(x)</m> for selling <m>x</m> items:
+        </p>
+        <me>R(x) = px</me>
+
+        <p>
+            where:
+        </p>
+        <ul>
+            <li>
+                <term effect="bold"><m>x</m></term> is the number of items sold.
+            </li>
+            <li>
+                <term effect="bold"><m>p</m></term> is the selling price per item.
+            </li>
+        </ul>
+
+        <p>
+            A <term>linear profit function</term> models the profit for producing and selling <m>x</m> items:
+        </p>
+        <me>P(x) = R(x) - C(x)</me>
+        <p>
+            Profit is <em>Revenue minus Cost</em>.
+        </p>
+
+        <definition>
+            <title>Break-Even Point</title>
+            <p>
+                The <em>break-even point</em> occurs when profit is zero, i.e., <m>P(x) = 0</m>. At this point, <m>R(x) = C(x)</m>.
+            </p>
+        </definition>
+
+        <activity>
+            <statement>
+                <p>
+                    <em>Example.</em> A company invests <m>\$18{,}000</m> to produce snow boots for dogs. Each set of boots costs <m>\$5</m> to manufacture, package, and ship, and will sell for <m>\$20</m>.
+                </p>
+                <p>
+                    <strong>a.</strong> What is the Cost function?
+                </p>
+                <p>
+                    <strong>b.</strong> What is the Revenue function?
+                </p>
+                <p>
+                    <strong>c.</strong> What is the Profit function?
+                </p>
+                <p>
+                    <strong>d.</strong> What is the profit if they produce and sell 1,000 sets of boots?
+                </p>
+                <p>
+                    <strong>e.</strong> What is the profit if they produce and sell 2,000 sets of boots?
+                </p>
+                <p>
+                    <strong>f.</strong> How many sets do they need to produce and sell to make <m>\$0</m> profit? What is this number called?
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <em>a.</em> The fixed cost is <m>b = 18000</m> (the initial investment). The variable cost is <m>m = 5</m> (cost per set).
+                </p>
+                <me>C(x) = 5x + 18000</me>
+
+                <p>
+                    <em>b.</em> The selling price is <m>p = 20</m>.
+                </p>
+                <me>R(x) = 20x</me>
+
+                <p>
+                    <em>c.</em> Profit is Revenue minus Cost.
+                </p>
+                <me>P(x) = R(x) - C(x)</me>
+                <me>P(x) = 20x - (5x + 18000)</me>
+                <me>P(x) = 15x - 18000</me>
+
+                <p>
+                    <em>d.</em> For <m>x = 1000</m>:
+                </p>
+                <me>P(1000) = 15(1000) - 18000 = 15000 - 18000 = -3000</me>
+                <p>
+                    The company loses <m>\$3{,}000</m> (negative profit).
+                </p>
+
+                <p>
+                    <em>e.</em> For <m>x = 2000</m>:
+                </p>
+                <me>P(2000) = 15(2000) - 18000 = 30000 - 18000 = 12000</me>
+                <p>
+                    The company makes <m>\$12{,}000</m> profit.
+                </p>
+
+                <p>
+                    <em>f.</em> Set <m>P(x) = 0</m>:
+                </p>
+                <me>15x - 18000 = 0</me>
+                <me>15x = 18000</me>
+                <me>x = 1200</me>
+                <p>
+                    The company needs to produce and sell <m>1200</m> sets of boots to break even. This is called the <term effect="bold">break-even point</term>.
+                </p>
+            </solution>
+        </activity>
+    </subsection>
+
+</section>

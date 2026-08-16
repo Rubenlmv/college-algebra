@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="section-2-4">
+    <title>Section 2.4 Linear Equations</title>
+
+    <!-- ========================================================
+         INTRODUCTION
+         ======================================================== -->
+
+    <subsection xml:id="intro-linear-equations">
+        <title>Linear Equations</title>
+
+        <definition>
+            <title>Linear Equation</title>
+            <p>
+                An equation that can be written as <m>Ax + By = C</m>, where <m>A</m>, <m>B</m>, <m>C</m> are real numbers and <m>A</m> and <m>B</m> are not both <m>0</m>.
+            </p>
+        </definition>
+
+        <p>
+            <em>In other words:</em> Linear equations are equations of <em>first degree</em>. That is, their variables have <em effect="bold">no written exponents</em>. We saw this in Section 1.1, but this time we have <em effect="bold">two variables</em>. The graph of the solution set is a line, hence the name "linear".
+        </p>
+
+        <p>
+            There are two types of lines:
+        </p>
+        <ol>
+            <li>Vertical</li>
+            <li>Non-vertical lines</li>
+        </ol>
+
+        <subsection xml:id="vertical-lines">
+            <title>Vertical Lines</title>
+
+            <p>
+                Vertical lines are described by the equation <m>x = a</m>.
+            </p>
+
+            <figure>
+                <caption>Vertical Lines</caption>
+                <image width="80%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[>=Stealth, scale=0.55]
+                            % Left grid: vertical line x = -2
+                            \begin{scope}[shift={(-6.5,0)}]
+                                \draw[gray!45,thin] (-5,-5) grid (5,5);
+                                \draw[thick,->] (-5.45,0) -- (5.45,0);
+                                \draw[thick,->] (0,-5.45) -- (0,5.45);
+                                \node[below right,font=\small] at (5.45,0) {$x$};
+                                \node[above left,font=\small] at (0,5.45) {$y$};
+                                \foreach \x in {-4,-2,2,4}
+                                    \draw[gray] (\x,-0.12) -- (\x,0.12) node[below,font=\small] {\x};
+                                \foreach \y in {-4,-2,2,4}
+                                    \draw[gray] (-0.12,\y) -- (0.12,\y) node[left,font=\small] {\y};
+                                \node[font=\small,below left] at (0,0) {0};
+                                \draw[graphblue,very thick] (-2,-5) -- (-2,5);
+                                \node[graphblue,font=\small,right] at (-2,4.5) {$x=-2$};
+                            \end{scope}
+
+                            % Right grid: vertical line x = 3
+                            \begin{scope}[shift={(6.5,0)}]
+                                \draw[gray!45,thin] (-5,-5) grid (5,5);
+                                \draw[thick,->] (-5.45,0) -- (5.45,0);
+                                \draw[thick,->] (0,-5.45) -- (0,5.45);
+                                \node[below right,font=\small] at (5.45,0) {$x$};
+                                \node[above left,font=\small] at (0,5.45) {$y$};
+                                \foreach \x in {-4,-2,2,4}
+                                    \draw[gray] (\x,-0.12) -- (\x,0.12) node[below,font=\small] {\x};
+                                \foreach \y in {-4,-2,2,4}
+                                    \draw[gray] (-0.12,\y) -- (0.12,\y) node[left,font=\small] {\y};
+                                \node[font=\small,below left] at (0,0) {0};
+                                \draw[graphblue,very thick] (3,-5) -- (3,5);
+                                \node[graphblue,font=\small,right] at (3,4.5) {$x=3$};
+                            \end{scope}
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+        </subsection>
+
+        <subsection xml:id="slope-intercept-form">
+            <title>Slope-Intercept Form</title>
+
+            <p>
+                Every non-vertical line can be described with the equation <m>y = mx + b</m>, where <m>m</m> is the slope of the line and <m>(0, b)</m> is the <m>y</m>-intercept.
+            </p>
+
+            <p>
+                The equation <m>y = mx + b</m> is called the <em>slope-intercept form</em> of a line.
+            </p>
+
+            <!-- Video 1: Understanding Lines and Slopes -->
+            <p><url href="https://youtu.be/lz8zVJxRFX8">Understanding Lines and Slopes Video</url></p>
+
+            <definition>
+                <title>Slope of a Line</title>
+                <p>
+                    The slope of a line through <m>(x_1, y_1)</m> and <m>(x_2, y_2)</m> is:
+                </p>
+                <me>
+                    \text{slope} = m = \frac{\text{change in } y}{\text{change in } x}
+                    = \frac{\Delta y}{\Delta x}
+                    = \frac{y_2 - y_1}{x_2 - x_1}
+                </me>
+            </definition>
+
+            <p>
+                The slope of a line describes its steepness and direction:
+            </p>
+            <ul>
+                <li>
+                    A line with <em>positive slope</em> rises from left to right.
+                </li>
+                <li>
+                    A line with <em>negative slope</em> falls from left to right.
+                </li>
+                <li>
+                    A line with <em>zero slope</em> is horizontal.
+                </li>
+                <li>
+                    A <em>vertical line</em> has an undefined slope.
+                </li>
+            </ul>
+
+            <figure>
+                <caption>Types of Slopes</caption>
+                <image width="80%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[line cap=round, scale=1.1]
+                            \draw[graphblue,very thick] (-5.5,-2.4) -- (-1.2,1.5);
+                            \node[graphblue,font=\small,above] at (-3.0,0.5) {Positive};
+                            \draw[graphblue,very thick] (0.2,1.7) -- (4.2,-2.2);
+                            \node[graphblue,font=\small,above] at (2.2,0.5) {Negative};
+                            \draw[graphblue,very thick] (5.5,1.65) -- (9.5,1.62);
+                            \node[graphblue,font=\small,above] at (7.5,1.0) {Zero};
+                            \draw[graphblue,very thick] (10.0,1.15) -- (10.1,-2.7);
+                            \node[graphblue,font=\small,right] at (10.3,-0.8) {Undefined};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+        </subsection>
+    </subsection>
+
+    <!-- ========================================================
+         SLOPE EXAMPLES
+         ======================================================== -->
+
+    <subsection xml:id="slope-examples">
+        <title>Slope Examples</title>
+
+        <activity>
+            <statement>
+                <p><em>Example:</em> Draw a line with each of the following slopes:</p>
+                <ul>
+                    <li><m>m = 2</m> (positive slope)</li>
+                    <li><m>m = -\frac{1}{2}</m> (negative slope)</li>
+                    <li><m>m = 0</m> (zero slope)</li>
+                </ul>
+            </statement>
+            <solution>
+                <p>
+                    <em>For <m>m = 2</m>:</em> Start at the origin <m>(0,0)</m>. Since the slope is <m>2 = \frac{2}{1}</m>, go up 2 units and right 1 unit to reach <m>(1,2)</m>. Draw the line through these points.
+                </p>
+                <p>
+                    <em>For <m>m = -\frac{1}{2}</m>:</em> Start at the origin <m>(0,0)</m>. Since the slope is <m>-\frac{1}{2}</m>, go down 1 unit and right 2 units to reach <m>(2,-1)</m>. Draw the line through these points.
+                </p>
+                <p>
+                    <em>For <m>m = 0</m>:</em> Start at <m>(0,2)</m>. A zero slope means the line is horizontal. Draw a horizontal line through <m>y = 2</m>.
+                </p>
+
+                <sidebyside widths="33% 33% 33%">
+                    <figure>
+                        <caption><m>m = 2</m></caption>
+                        <image width="100%">
+                            <latex-image>
+                                <![CDATA[
+                                \begin{adjustbox}{max width=\linewidth}
+                                \begin{tikzpicture}[scale=0.45,>=Stealth]
+                                    \draw[gray!45,thin] (-5,-5) grid (5,5);
+                                    \draw[thick,->] (-5.45,0) -- (5.45,0);
+                                    \draw[thick,->] (0,-5.45) -- (0,5.45);
+                                    \node[below right,font=\small] at (5.45,0) {$x$};
+                                    \node[above left,font=\small] at (0,5.45) {$y$};
+                                    \foreach \x in {-4,-2,2,4}
+                                        \draw[gray] (\x,-0.12) -- (\x,0.12) node[below,font=\small] {\x};
+                                    \foreach \y in {-4,-2,2,4}
+                                        \draw[gray] (-0.12,\y) -- (0.12,\y) node[left,font=\small] {\y};
+                                    \node[font=\small,below left] at (0,0) {0};
+                                    \draw[graphblue,very thick] (-2,-4) -- (2,4);
+                                    \fill[red] (0,0) circle (3pt);
+                                    \fill[red] (1,2) circle (3pt);
+                                    \node[red,font=\small] at (1.3,2.3) {$(1,2)$};
+                                \end{tikzpicture}
+                                \end{adjustbox}
+                                ]]>
+                            </latex-image>
+                        </image>
+                    </figure>
+
+                    <figure>
+                        <caption><m>m = -\frac{1}{2}</m></caption>
+                        <image width="100%">
+                            <latex-image>
+                                <![CDATA[
+                                \begin{adjustbox}{max width=\linewidth}
+                                \begin{tikzpicture}[scale=0.45,>=Stealth]
+                                    \draw[gray!45,thin] (-5,-5) grid (5,5);
+                                    \draw[thick,->] (-5.45,0) -- (5.45,0);
+                                    \draw[thick,->] (0,-5.45) -- (0,5.45);
+                                    \node[below right,font=\small] at (5.45,0) {$x$};
+                                    \node[above left,font=\small] at (0,5.45) {$y$};
+                                    \foreach \x in {-4,-2,2,4}
+                                        \draw[gray] (\x,-0.12) -- (\x,0.12) node[below,font=\small] {\x};
+                                    \foreach \y in {-4,-2,2,4}
+                                        \draw[gray] (-0.12,\y) -- (0.12,\y) node[left,font=\small] {\y};
+                                    \node[font=\small,below left] at (0,0) {0};
+                                    \draw[graphblue,very thick] (-4,2) -- (4,-2);
+                                    \fill[red] (0,0) circle (3pt);
+                                    \fill[red] (2,-1) circle (3pt);
+                                    \node[red,font=\small] at (2.3,-1.3) {$(2,-1)$};
+                                \end{tikzpicture}
+                                \end{adjustbox}
+                                ]]>
+                            </latex-image>
+                        </image>
+                    </figure>
+
+                    <figure>
+                        <caption><m>m = 0</m></caption>
+                        <image width="100%">
+                            <latex-image>
+                                <![CDATA[
+                                \begin{adjustbox}{max width=\linewidth}
+                                \begin{tikzpicture}[scale=0.45,>=Stealth]
+                                    \draw[gray!45,thin] (-5,-5) grid (5,5);
+                                    \draw[thick,->] (-5.45,0) -- (5.45,0);
+                                    \draw[thick,->] (0,-5.45) -- (0,5.45);
+                                    \node[below right,font=\small] at (5.45,0) {$x$};
+                                    \node[above left,font=\small] at (0,5.45) {$y$};
+                                    \foreach \x in {-4,-2,2,4}
+                                        \draw[gray] (\x,-0.12) -- (\x,0.12) node[below,font=\small] {\x};
+                                    \foreach \y in {-4,-2,2,4}
+                                        \draw[gray] (-0.12,\y) -- (0.12,\y) node[left,font=\small] {\y};
+                                    \node[font=\small,below left] at (0,0) {0};
+                                    \draw[graphblue,very thick] (-4,2) -- (4,2);
+                                    \fill[red] (0,2) circle (3pt);
+                                    \fill[red] (2,2) circle (3pt);
+                                    \node[red,font=\small] at (2.3,2.3) {$(2,2)$};
+                                \end{tikzpicture}
+                                \end{adjustbox}
+                                ]]>
+                            </latex-image>
+                        </image>
+                    </figure>
+                </sidebyside>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p>Find the slope of a line passing through the given points.</p>
+                <p><strong>1.</strong> <m>(4, -7)</m> and <m>(2, 3)</m></p>
+                <p><strong>2.</strong> <m>(3, -2)</m> and the origin</p>
+            </statement>
+            <solution>
+                <p><em>1.</em> Let <m>(x_1, y_1) = (4, -7)</m> and <m>(x_2, y_2) = (2, 3)</m>.</p>
+                <me>m = \frac{3 - (-7)}{2 - 4} = \frac{10}{-2} = -5</me>
+                <p>The slope is <m>-5</m>.</p>
+
+                <p><em>2.</em> The origin is <m>(0, 0)</m>. Let <m>(x_1, y_1) = (3, -2)</m> and <m>(x_2, y_2) = (0, 0)</m>.</p>
+                <me>m = \frac{0 - (-2)}{0 - 3} = \frac{2}{-3} = -\frac{2}{3}</me>
+                <p>The slope is <m>-\frac{2}{3}</m>.</p>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         WRITING EQUATIONS OF LINES (Video 2)
+         ======================================================== -->
+
+    <subsection xml:id="writing-equations">
+        <title>Writing Equations of Lines</title>
+
+        <!-- Video 2: Find slope and write equation -->
+        <p><url href="https://youtu.be/Sw3BRD3_HYQ">Find the slope and write the equation of the line Video</url></p>
+
+        <activity>
+            <statement>
+                <p>Find the slope and write the equation of the line going through the given points.</p>
+                <p><strong>1.</strong> <m>(4, 5)</m> and <m>(-2, 5)</m></p>
+                <p><strong>2.</strong> <m>(4, 5)</m> and <m>(4, 8)</m></p>
+            </statement>
+            <solution>
+                <p><em>1.</em> Let <m>(x_1, y_1) = (4, 5)</m> and <m>(x_2, y_2) = (-2, 5)</m>.</p>
+                <me>m = \frac{5 - 5}{-2 - 4} = \frac{0}{-6} = 0</me>
+                <p>The slope is <m>0</m> (horizontal line).</p>
+                <p>The equation is <m>y = 5</m>.</p>
+
+                <p><em>2.</em> Let <m>(x_1, y_1) = (4, 5)</m> and <m>(x_2, y_2) = (4, 8)</m>.</p>
+                <me>m = \frac{8 - 5}{4 - 4} = \frac{3}{0}</me>
+                <p>The slope is <em>undefined</em> (vertical line).</p>
+                <p>The equation is <m>x = 4</m>.</p>
+            </solution>
+        </activity>
+
+        <p>
+            A line is uniquely determined by <em>2 points</em> or <em>1 point and a slope</em>. Writing the equation of a line in slope-intercept form can help you graph the equation.
+        </p>
+
+        <activity>
+            <statement>
+                <p><em>Example.</em> Write the equation in slope-intercept form, then use the slope and <m>y</m>-intercept to graph the line.</p>
+                <p><m>2x + 3y = 6</m></p>
+            </statement>
+            <solution>
+                <p><em>Step 1:</em> Solve for <m>y</m>.</p>
+                <me>2x + 3y = 6</me>
+                <me>3y = -2x + 6</me>
+                <me>y = -\frac{2}{3}x + 2</me>
+                <p>
+                    The slope is <m>m = -\frac{2}{3}</m> and the <m>y</m>-intercept is <m>(0, 2)</m>.
+                </p>
+                <p><em>Step 2:</em> Graph the line.</p>
+                <figure>
+                    <caption>Graph of <m>2x + 3y = 6</m></caption>
+                    <image width="50%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}[x=0.5cm,y=0.5cm,>=Stealth]
+                                \draw[gray!45,thin] (-6,-4) grid (6,6);
+                                \draw[thick,->] (-6.45,0) -- (6.45,0) node[right] {$x$};
+                                \draw[thick,->] (0,-4.45) -- (0,6.45) node[above] {$y$};
+                                \foreach \x in {-4,-2,2,4}
+                                    \draw[gray] (\x,-0.12) -- (\x,0.12) node[below,font=\small] {\x};
+                                \foreach \y in {-2,2,4}
+                                    \draw[gray] (-0.12,\y) -- (0.12,\y) node[left,font=\small] {\y};
+                                \node[font=\small,below left] at (0,0) {0};
+                                \draw[graphblue,very thick] (-4.5,5) -- (6.5,-2.33);
+                                \fill[red] (0,2) circle (3pt);
+                                \node[red,font=\small,right] at (0.3,2.2) {$(0,2)$};
+                                \fill[red] (3,0) circle (3pt);
+                                \node[red,font=\small,right] at (3.3,0.2) {$(3,0)$};
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         FIND EQUATION FROM GRAPH
+         ======================================================== -->
+
+    <subsection xml:id="equation-from-graph">
+        <title>Finding the Equation from a Graph</title>
+
+        <activity>
+            <statement>
+                <p>Find the equation of the line shown below.</p>
+                <figure>
+                    <caption>Line on a coordinate plane</caption>
+                    <image width="70%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}[x=0.42cm,y=0.42cm,>=Stealth]
+                                % Grid lines every 1 unit (very light)
+                                \draw[gray!20,thin,step=1] (-10,-10) grid (10,10);
+                                % Grid lines every 2 units (slightly darker)
+                                \draw[gray!40,thin,step=2] (-10,-10) grid (10,10);
+                                % Axes
+                                \draw[gray!65,->] (-10.15,0) -- (10.2,0) node[right] {$x$};
+                                \draw[gray!65,->] (0,-10.15) -- (0,10.2) node[above] {$y$};
+                                % Labels every 2 units aligned with grid lines
+                                \foreach \x in {-8,-6,-4,-2,2,4,6,8}
+                                    \draw[gray!65] (\x,-0.12)--(\x,0.12) node[below,font=\tiny] {\x};
+                                \foreach \y in {-8,-6,-4,-2,2,4,6,8}
+                                    \draw[gray!65] (-0.12,\y)--(0.12,\y) node[left,font=\tiny] {\y};
+                                % Tick marks for every 1 unit (no labels)
+                                \foreach \x in {-9,-7,-5,-3,-1,1,3,5,7,9}
+                                    \draw[gray!40] (\x,-0.06)--(\x,0.06);
+                                \foreach \y in {-9,-7,-5,-3,-1,1,3,5,7,9}
+                                    \draw[gray!40] (-0.06,\y)--(0.06,\y);
+                                \node[gray!70,font=\tiny,below left] at (0,0) {0};
+                                % Line only - no points shown in statement
+                                \draw[graphblue,very thick] (-10,4.5) -- (10,-5.5);
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </statement>
+            <solution>
+                <p>
+                    <em>Step 1:</em> Identify two points on the line. From the graph, the line passes through <m>(-3, 1)</m> and <m>(1, -1)</m>.
+                </p>
+                <figure>
+                    <caption>Line with identified points</caption>
+                    <image width="70%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}[x=0.42cm,y=0.42cm,>=Stealth]
+                                \draw[gray!20,thin,step=1] (-10,-10) grid (10,10);
+                                \draw[gray!40,thin,step=2] (-10,-10) grid (10,10);
+                                \draw[gray!65,->] (-10.15,0) -- (10.2,0) node[right] {$x$};
+                                \draw[gray!65,->] (0,-10.15) -- (0,10.2) node[above] {$y$};
+                                \foreach \x in {-8,-6,-4,-2,2,4,6,8}
+                                    \draw[gray!65] (\x,-0.12)--(\x,0.12) node[below,font=\tiny] {\x};
+                                \foreach \y in {-8,-6,-4,-2,2,4,6,8}
+                                    \draw[gray!65] (-0.12,\y)--(0.12,\y) node[left,font=\tiny] {\y};
+                                \foreach \x in {-9,-7,-5,-3,-1,1,3,5,7,9}
+                                    \draw[gray!40] (\x,-0.06)--(\x,0.06);
+                                \foreach \y in {-9,-7,-5,-3,-1,1,3,5,7,9}
+                                    \draw[gray!40] (-0.06,\y)--(0.06,\y);
+                                \node[gray!70,font=\tiny,below left] at (0,0) {0};
+                                \draw[graphblue,very thick] (-10,4.5) -- (10,-5.5);
+                                \fill[red] (-3,1) circle (4pt);
+                                \fill[red] (1,-1) circle (4pt);
+                                \node[red,font=\small,above] at (-3,1.4) {$(-3,1)$};
+                                \node[red,font=\small,below] at (1,-1.4) {$(1,-1)$};
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+                <p><em>Step 2:</em> Find the slope using the two points.</p>
+                <me>m = \frac{-1 - 1}{1 - (-3)} = \frac{-2}{4} = -\frac{1}{2}</me>
+                <p><em>Step 3:</em> Use point-slope form with <m>(1, -1)</m>.</p>
+                <me>y - (-1) = -\frac{1}{2}(x - 1)</me>
+                <me>y + 1 = -\frac{1}{2}x + \frac{1}{2}</me>
+                <me>y = -\frac{1}{2}x - \frac{1}{2}</me>
+                <p>The equation of the line is <m>y = -\frac{1}{2}x - \frac{1}{2}</m>.</p>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         AVERAGE RATE OF CHANGE (Video 3)
+         ======================================================== -->
+
+    <subsection xml:id="average-rate-of-change">
+        <title>Average Rate of Change</title>
+
+        <!-- Video 3: AROC -->
+        <p><url href="https://youtu.be/f_Q0qlwlclQ">Average Rate of Change Video</url></p>
+
+        <p>
+            We have learned that the slope of a line can be interpreted as a <em>rate of change</em>.
+        </p>
+
+        <p>
+            For a nonlinear graph whose slope changes at each point, the <em>average rate of change</em> between any two points <m>(x_1, f(x_1))</m> and <m>(x_2, f(x_2))</m> is the slope of the line through the two points.
+        </p>
+
+        <me>
+            \text{slope} = m = \frac{y_2 - y_1}{x_2 - x_1}
+            = \frac{f(x_2) - f(x_1)}{x_2 - x_1}
+        </me>
+
+        <figure>
+            <caption>Average Rate of Change (Secant Line)</caption>
+            <image width="60%">
+                <latex-image>
+    <![CDATA[
+    \begin{adjustbox}{max width=\linewidth}
+    \begin{tikzpicture}[x=0.88cm,y=0.88cm,>=Stealth]
+        \draw[thick,->] (0,0) -- (6.1,0) node[below right] {$x$};
+        \draw[thick,->] (0,-0.25) -- (0,4.8) node[above] {$f(x)$};
+
+        % Parabola that passes through (1,1.75) and (4.45,3.65)
+        % Vertex at (3.5, 3.969) with a = -0.355
+        \draw[cyan!80!blue,very thick]
+            plot[domain=0.45:5.45,samples=100]
+            ({\x},{-0.355*(\x-3.5)^2 + 3.969});
+
+        % Secant line through both points
+        \draw[magenta,very thick] (1,1.75) -- (4.45,3.65);
+
+        % Points
+        \fill[cyan!80!blue] (1.0,1.75) circle (3pt);
+        \fill[cyan!80!blue] (4.45,3.65) circle (3pt);
+
+        % x-axis ticks
+        \draw[thick] (1,0.08)--(1,-0.08) node[below=0.12cm] {$x_1$};
+        \draw[thick] (4.55,0.08)--(4.55,-0.08) node[below=0.12cm] {$x_2$};
+
+        % Labels
+        \node[magenta,font=\small] at (4.15,2.65) {Secant line};
+        \node[cyan!80!blue,font=\small] at (5.85,3.2) {$y=f(x)$};
+        \node[font=\small,anchor=north west] at (1.0,1.75) {$(x_1,f(x_1))$};
+        \node[font=\small,anchor=south east] at (5,3.95) {$(x_2,f(x_2))$};
+    \end{tikzpicture}
+    \end{adjustbox}
+    ]]>
+</latex-image>
+            </image>
+        </figure>
+
+        <activity>
+            <statement>
+                <p>
+                    Find the average rate of change of <m>f(x) = -x^2 + 2x + 6</m> from <m>x = -4</m> to <m>x = 1</m>.
+                </p>
+                <p>
+                    <m>f(-4) = -18</m> and <m>f(1) = 7</m>
+                </p>
+                <p>
+                    This gives us the points <m>(-4, -18)</m> and <m>(1, 7)</m>.
+                </p>
+            </statement>
+            <solution>
+                <figure>
+                    <caption>AROC Example: <m>f(x) = -x^2 + 2x + 6</m></caption>
+                    <image width="80%">
+                        <latex-image>
+    <![CDATA[
+    \begin{adjustbox}{max width=\linewidth}
+    \begin{tikzpicture}[x=0.35cm,y=0.35cm,>=Stealth]
+        \draw[gray!30,dashed,step=5] (-20,-22) grid (15,10);
+        \draw[gray!65,->] (-20,0) -- (15,0) node[right] {$x$};
+        \draw[gray!65,->] (0,-22) -- (0,10) node[above] {$y$};
+        \foreach \x/\lab in {-15/-15,-10/-10,-5/-5,5/5,10/10}
+            \draw[gray!65] (\x,-0.28)--(\x,0.28) node[below,font=\tiny] {\lab};
+        \foreach \y/\lab in {-20/-20,-15/-15,-10/-10,-5/-5,5/5}
+            \draw[gray!65] (-0.35,\y)--(0.35,\y) node[left,font=\tiny] {\lab};
+        \node[gray!70,below left,font=\tiny] at (0,0) {0};
+
+        % Parabola: f(x) = -x^2 + 2x + 6
+        % Domain clipped to [-4, 6] so legs fit within grid
+        \draw[red,very thick]
+            plot[domain=-4:6,samples=160]
+            ({\x},{-\x*\x+2*\x+6});
+
+        % Secant line through (-4,-18) and (1,7)
+        \draw[blue,dashed,very thick] (-4.8,-22) -- (1.8,11);
+
+        % Points
+        \fill[red] (-4,-18) circle (4pt);
+        \fill[red] (1,7) circle (4pt);
+
+        % Labels - repositioned
+        \node[red,anchor=west,font=\small] at (1.8,7.2) {$(1,7)$};
+        \node[red,anchor=east,font=\small] at (-4.8,-18.5) {$(-4,-18)$};
+    \end{tikzpicture}
+    \end{adjustbox}
+    ]]>
+</latex-image>
+                    </image>
+                </figure>
+
+                <p>
+                    The average rate of change is the slope of the secant line through <m>(-4, -18)</m> and <m>(1, 7)</m>:
+                </p>
+                <me>m = \frac{7 - (-18)}{1 - (-4)} = \frac{25}{5} = 5</me>
+                <p>
+                    The average rate of change is <m>5</m>.
+                </p>
+            </solution>
+        </activity>
+    </subsection>
+
+</section>
