@@ -1,0 +1,1225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="section-2-6">
+    <title>Section 2.6 Transformation of Graphs</title>
+
+    <!-- ========================================================
+         INTRODUCTION
+         ======================================================== -->
+
+    <subsection xml:id="intro-transformations">
+        <title>Introduction to Parent Functions</title>
+
+        <p>
+            Students should be able to recognize the basic shapes of the graphs of different types of functions.
+        </p>
+
+        <p>
+            For instance, you know that the graph of the linear function <m>f(x) = mx + b</m> is a line with slope <m>m</m> and <m>y</m>-intercept at <m>(0, b)</m>.
+        </p>
+
+        <figure>
+            <caption>Linear Function: <m>f(x) = mx + b</m></caption>
+            <image width="60%">
+                <latex-image>
+                    <![CDATA[
+                    \begin{adjustbox}{max width=\linewidth}
+                    \begin{tikzpicture}[x=0.55cm,y=0.55cm,>=stealth,line cap=round,line join=round]
+                        \draw[gray!50,line width=0.4pt] (-8,-8) grid[step=1] (8,8);
+                        \draw[black!80,thick,->] (-8.5,0) -- (8.5,0) node[anchor=west,font=\tiny] {$x$};
+                        \draw[black!80,thick,->] (0,-8.5) -- (0,8.5) node[anchor=south,font=\tiny] {$y$};
+                        \foreach \x in {-8,-7,...,8} {\draw[black!80,thick] (\x,0.1) -- (\x,-0.1);}
+                        \foreach \y in {-8,-7,...,8} {\draw[black!80,thick] (0.1,\y) -- (-0.1,\y);}
+                        \foreach \x in {-6,-4,-2,2,4,6} {\node[font=\tiny,anchor=north] at (\x,-0.2) {$\x$};}
+                        \foreach \y in {-6,-4,-2,2,4,6} {\node[font=\tiny,anchor=east] at (-0.2,\y) {$\y$};}
+                        \draw[graphblue,thick] (-8,-2) -- (8,6);
+                        \fill[red] (0,2) circle (0.12);
+                        \node[graphblue,font=\large] at (3.5,5.5) {$f(x)=mx+b$};
+                        \node[red,font=\small] at (0.6,1.5) {$(0,b)$};
+                        \node[graphblue,font=\small] at (5,3.8) {$m=\frac12$};
+                    \end{tikzpicture}
+                    \end{adjustbox}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+    </subsection>
+
+    <!-- ========================================================
+         LINEAR FUNCTIONS
+         ======================================================== -->
+
+    <subsection xml:id="linear-functions">
+        <title>Linear Functions</title>
+
+        <definition>
+            <title>Linear Function</title>
+            <p>
+                A function of the form <m>f(x) = mx + b</m> has:
+            </p>
+            <ul>
+                <li>Domain: all real numbers</li>
+                <li>Range: all real numbers</li>
+                <li><m>x</m>-intercept: <m>(-b/m, 0)</m>, <m>y</m>-intercept: <m>(0, b)</m></li>
+                <li>Increasing if <m>m &gt; 0</m>, decreasing if <m>m &lt; 0</m>, constant if <m>m = 0</m></li>
+            </ul>
+        </definition>
+
+        <sidebyside widths="50% 50%">
+            <figure>
+                <caption>Increasing <m>(m &gt; 0)</m></caption>
+                <image width="100%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[x=0.5cm,y=0.5cm,>=stealth,line cap=round,line join=round]
+                            \draw[gray!50,line width=0.4pt] (-6,-6) grid[step=1] (6,6);
+                            \draw[black!80,thick,->] (-6.5,0) -- (6.5,0) node[anchor=west,font=\tiny] {$x$};
+                            \draw[black!80,thick,->] (0,-6.5) -- (0,6.5) node[anchor=south,font=\tiny] {$y$};
+                            \foreach \x in {-6,-5,...,6} {\draw[black!80,thick] (\x,0.1) -- (\x,-0.1);}
+                            \foreach \y in {-6,-5,...,6} {\draw[black!80,thick] (0.1,\y) -- (-0.1,\y);}
+                            \foreach \x in {-4,-2,2,4} {\node[font=\tiny,anchor=north] at (\x,-0.2) {$\x$};}
+                            \foreach \y in {-4,-2,2,4} {\node[font=\tiny,anchor=east] at (-0.2,\y) {$\y$};}
+                            \draw[graphblue,thick] (-6,-0.8) -- (6,1.6);
+                            \fill[red] (-2,0) circle (0.1);
+                            \fill[red] (3,1) circle (0.1);
+                            \node[graphblue,font=\large] at (1.5,-1.2) {$m=\frac15$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+
+            <figure>
+                <caption>Constant <m>(m = 0)</m></caption>
+                <image width="100%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[x=0.5cm,y=0.5cm,>=stealth,line cap=round,line join=round]
+                            \draw[gray!50,line width=0.4pt] (-6,-6) grid[step=1] (6,6);
+                            \draw[black!80,thick,->] (-6.5,0) -- (6.5,0) node[anchor=west,font=\tiny] {$x$};
+                            \draw[black!80,thick,->] (0,-6.5) -- (0,6.5) node[anchor=south,font=\tiny] {$y$};
+                            \foreach \x in {-6,-5,...,6} {\draw[black!80,thick] (\x,0.1) -- (\x,-0.1);}
+                            \foreach \y in {-6,-5,...,6} {\draw[black!80,thick] (0.1,\y) -- (-0.1,\y);}
+                            \foreach \x in {-4,-2,2,4} {\node[font=\tiny,anchor=north] at (\x,-0.2) {$\x$};}
+                            \foreach \y in {-4,-2,2,4} {\node[font=\tiny,anchor=east] at (-0.2,\y) {$\y$};}
+                            \draw[graphblue,thick] (-6,2) -- (6,2);
+                            \fill[red] (-3,2) circle (0.1);
+                            \fill[red] (3,2) circle (0.1);
+                            \node[graphblue,font=\large] at (1.5,4) {$m=0$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+        </sidebyside>
+
+        <!-- FIX 12: Decreasing graph extended to full grid -6 to 6 -->
+        <figure>
+            <caption>Decreasing <m>(m &lt; 0)</m></caption>
+            <image width="33%">
+                <latex-image>
+                    <![CDATA[
+                    \begin{adjustbox}{max width=\linewidth}
+                    \begin{tikzpicture}[x=0.5cm,y=0.5cm,>=stealth,line cap=round,line join=round]
+    \draw[gray!50,line width=0.4pt] (-6,-6) grid[step=1] (6,6);
+    \draw[black!80,thick,->] (-6.5,0) -- (6.5,0) node[anchor=west,font=\tiny] {$x$};
+    \draw[black!80,thick,->] (0,-6.5) -- (0,6.5) node[anchor=south,font=\tiny] {$y$};
+    \foreach \x in {-6,-5,...,6} {\draw[black!80,thick] (\x,0.1) -- (\x,-0.1);}
+    \foreach \y in {-6,-5,...,6} {\draw[black!80,thick] (0.1,\y) -- (-0.1,\y);}
+    \foreach \x in {-4,-2,2,4} {\node[font=\tiny,anchor=north] at (\x,-0.2) {$\x$};}
+    \foreach \y in {-4,-2,2,4} {\node[font=\tiny,anchor=east] at (-0.2,\y) {$\y$};}
+    % Line spanning full grid: y = -5x + 4
+    % At y=6: x = (4-6)/5 = -0.4
+    % At y=-6: x = (4-(-6))/5 = 2
+    \draw[graphblue,thick] (-0.4,6) -- (2,-6);
+    \fill[red] (0,4) circle (0.1);
+    \fill[red] (1,-1) circle (0.1);
+    \node[graphblue,font=\large] at (3.5,4.5) {$m=-5$};
+\end{tikzpicture}
+                    \end{adjustbox}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+
+        <subsection xml:id="constant-identity-functions">
+            <title>Constant and Identity Functions</title>
+
+            <p>
+                There are two special types of linear functions, the <term>constant function</term> and the <term>identity function</term>.
+            </p>
+
+            <definition>
+                <title>Constant Function</title>
+                <p>
+                    A function of the form <m>f(x) = c</m> where <m>c</m> is a constant.
+                </p>
+                <ul>
+                    <li>Domain: all real numbers</li>
+                    <li>Range: <m>\{c\}</m></li>
+                    <li>Graph is a horizontal line</li>
+                </ul>
+            </definition>
+
+            <figure>
+                <caption>Constant Function: <m>f(x) = c</m></caption>
+                <image width="40%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[x=0.55cm,y=0.55cm,>=stealth,line cap=round,line join=round]
+                            \draw[gray!50,line width=0.4pt] (-6,-6) grid[step=1] (6,6);
+                            \draw[black!80,thick,->] (-6.5,0) -- (6.5,0) node[anchor=west,font=\tiny] {$x$};
+                            \draw[black!80,thick,->] (0,-6.5) -- (0,6.5) node[anchor=south,font=\tiny] {$y$};
+                            \foreach \x in {-6,-5,...,6} {\draw[black!80,thick] (\x,0.1) -- (\x,-0.1);}
+                            \foreach \y in {-6,-5,...,6} {\draw[black!80,thick] (0.1,\y) -- (-0.1,\y);}
+                            \foreach \x in {-4,-2,2,4} {\node[font=\tiny,anchor=north] at (\x,-0.2) {$\x$};}
+                            \foreach \y in {-4,-2,2,4} {\node[font=\tiny,anchor=east] at (-0.2,\y) {$\y$};}
+                            \draw[graphblue,thick] (-6,3) -- (6,3);
+                            \fill[red] (0,3) circle (0.12);
+                            \node[graphblue,font=\large] at (4,3.8) {$f(x)=c$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+
+            <definition>
+                <title>Identity Function</title>
+                <p>
+                    A function of the form <m>f(x) = x</m>.
+                </p>
+                <ul>
+                    <li>Domain: all real numbers</li>
+                    <li>Range: all real numbers</li>
+                    <li>Slope: <m>m = 1</m></li>
+                    <li><m>y</m>-intercept: <m>(0, 0)</m></li>
+                </ul>
+            </definition>
+
+            <figure>
+                <caption>Identity Function: <m>f(x) = x</m></caption>
+                <image width="40%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[x=0.55cm,y=0.55cm,>=stealth,line cap=round,line join=round]
+                            \draw[gray!50,line width=0.4pt] (-6,-6) grid[step=1] (6,6);
+                            \draw[black!80,thick,->] (-6.5,0) -- (6.5,0) node[anchor=west,font=\tiny] {$x$};
+                            \draw[black!80,thick,->] (0,-6.5) -- (0,6.5) node[anchor=south,font=\tiny] {$y$};
+                            \foreach \x in {-6,-5,...,6} {\draw[black!80,thick] (\x,0.1) -- (\x,-0.1);}
+                            \foreach \y in {-6,-5,...,6} {\draw[black!80,thick] (0.1,\y) -- (-0.1,\y);}
+                            \foreach \x in {-4,-2,2,4} {\node[font=\tiny,anchor=north] at (\x,-0.2) {$\x$};}
+                            \foreach \y in {-4,-2,2,4} {\node[font=\tiny,anchor=east] at (-0.2,\y) {$\y$};}
+                            \draw[graphblue,thick] (-6,-6) -- (6,6);
+                            \fill[red] (0,0) circle (0.12);
+                            \fill[red] (2,2) circle (0.12);
+                            \node[graphblue,font=\tiny] at (1.15,0.35) {$m=1$};
+                            \node[graphblue,font=\large] at (2,4.5) {$f(x)=x$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+        </subsection>
+    </subsection>
+
+    <!-- ========================================================
+         SQUARING (QUADRATIC) FUNCTIONS
+         ======================================================== -->
+
+    <subsection xml:id="quadratic-functions">
+        <title>Squaring (Quadratic) Functions</title>
+
+        <definition>
+            <title>Squaring Function</title>
+            <p>
+                <me>f(x) = x^2</me>
+            </p>
+            <ul>
+                <li>Domain: all real numbers</li>
+                <li>Range: <m>[0, \infty)</m></li>
+                <li>Even function</li>
+                <li>Intercept at <m>(0, 0)</m></li>
+                <li>Decreasing on <m>(-\infty, 0)</m>, increasing on <m>(0, \infty)</m></li>
+                <li>Symmetric about the <m>y</m>-axis</li>
+            </ul>
+        </definition>
+
+        <figure>
+            <caption>Graph of <m>f(x) = x^2</m></caption>
+            <image width="40%">
+                <latex-image>
+                    <![CDATA[
+                    \begin{adjustbox}{max width=\linewidth}
+                    \begin{tikzpicture}[x=0.55cm,y=0.55cm,>=stealth,line cap=round,line join=round]
+                        \draw[gray!50,line width=0.4pt] (-8,-8) grid[step=1] (8,8);
+                        \draw[black!80,thick,->] (-8.5,0) -- (8.5,0) node[anchor=west,font=\tiny] {$x$};
+                        \draw[black!80,thick,->] (0,-8.5) -- (0,8.5) node[anchor=south,font=\tiny] {$y$};
+                        \foreach \x in {-8,-7,...,8} {\draw[black!80,thick] (\x,0.1) -- (\x,-0.1);}
+                        \foreach \y in {-8,-7,...,8} {\draw[black!80,thick] (0.1,\y) -- (-0.1,\y);}
+                        \foreach \x in {-6,-4,-2,2,4,6} {\node[font=\tiny,anchor=north] at (\x,-0.2) {$\x$};}
+                        \foreach \y in {-6,-4,-2,2,4,6} {\node[font=\tiny,anchor=east] at (-0.2,\y) {$\y$};}
+                        \draw[graphblue,thick,domain=-2.8:2.8,samples=100] plot (\x,{\x*\x});
+                        \fill[red] (0,0) circle (0.12);
+                        \fill[red] (2,4) circle (0.12);
+                        \fill[red] (-2,4) circle (0.12);
+                        \node[graphblue,font=\large] at (4.1,5.5) {$f(x)=x^2$};
+                    \end{tikzpicture}
+                    \end{adjustbox}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+    </subsection>
+
+    <!-- ========================================================
+         CUBIC FUNCTIONS
+         ======================================================== -->
+
+    <subsection xml:id="cubic-functions">
+        <title>Cubic Functions</title>
+
+        <definition>
+            <title>Cubic Function</title>
+            <p>
+                <me>f(x) = x^3</me>
+            </p>
+            <ul>
+                <li>Domain: all real numbers</li>
+                <li>Range: all real numbers</li>
+                <li>Odd function</li>
+                <li>Intercept at <m>(0, 0)</m></li>
+                <li>Increasing on <m>(-\infty, \infty)</m></li>
+                <li>Symmetric about the origin</li>
+            </ul>
+        </definition>
+
+        <figure>
+            <caption>Graph of <m>f(x) = x^3</m></caption>
+            <image width="40%">
+                <latex-image>
+                    <![CDATA[
+                    \begin{adjustbox}{max width=\linewidth}
+                    \begin{tikzpicture}[x=0.55cm,y=0.55cm,>=stealth,line cap=round,line join=round]
+                        \draw[gray!50,line width=0.4pt] (-8,-8) grid[step=1] (8,8);
+                        \draw[black!80,thick,->] (-8.5,0) -- (8.5,0) node[anchor=west,font=\tiny] {$x$};
+                        \draw[black!80,thick,->] (0,-8.5) -- (0,8.5) node[anchor=south,font=\tiny] {$y$};
+                        \foreach \x in {-8,-7,...,8} {\draw[black!80,thick] (\x,0.1) -- (\x,-0.1);}
+                        \foreach \y in {-8,-7,...,8} {\draw[black!80,thick] (0.1,\y) -- (-0.1,\y);}
+                        \foreach \x in {-6,-4,-2,2,4,6} {\node[font=\tiny,anchor=north] at (\x,-0.2) {$\x$};}
+                        \foreach \y in {-6,-4,-2,2,4,6} {\node[font=\tiny,anchor=east] at (-0.2,\y) {$\y$};}
+                        \clip (-8,-8) rectangle (8,8);
+                        \draw[graphblue,thick,domain=-2.2:2.2,samples=100] plot (\x,{\x*\x*\x});
+                        \fill[red] (0,0) circle (0.12);
+                        \fill[red] (1,1) circle (0.12);
+                        \fill[red] (-1,-1) circle (0.12);
+                        \node[graphblue,font=\large] at (3.5,3.5) {$f(x)=x^3$};
+                    \end{tikzpicture}
+                    \end{adjustbox}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+    </subsection>
+
+    <!-- ========================================================
+         SQUARE ROOT FUNCTIONS
+         ======================================================== -->
+
+    <subsection xml:id="square-root-functions">
+        <title>Square Root Functions</title>
+
+        <definition>
+            <title>Square Root Function</title>
+            <p>
+                <me>f(x) = \sqrt{x}</me>
+            </p>
+            <ul>
+                <li>Domain: <m>[0, \infty)</m></li>
+                <li>Range: <m>[0, \infty)</m></li>
+                <li>Intercept at <m>(0, 0)</m></li>
+                <li>Increasing on <m>(0, \infty)</m></li>
+            </ul>
+        </definition>
+
+        <figure>
+            <caption>Graph of <m>f(x) = \sqrt{x}</m></caption>
+            <image width="40%">
+                <latex-image>
+                    <![CDATA[
+                    \begin{adjustbox}{max width=\linewidth}
+                    \begin{tikzpicture}[x=0.55cm,y=0.55cm,>=stealth,line cap=round,line join=round]
+                        \draw[gray!50,line width=0.4pt] (-2,-2) grid[step=1] (10,8);
+                        \draw[black!80,thick,->] (-2.5,0) -- (10.5,0) node[anchor=west,font=\tiny] {$x$};
+                        \draw[black!80,thick,->] (0,-2.5) -- (0,8.5) node[anchor=south,font=\tiny] {$y$};
+                        \foreach \x in {-2,-1,...,10} {\draw[black!80,thick] (\x,0.1) -- (\x,-0.1);}
+                        \foreach \y in {-2,-1,...,8} {\draw[black!80,thick] (0.1,\y) -- (-0.1,\y);}
+                        \foreach \x in {2,4,6,8} {\node[font=\tiny,anchor=north] at (\x,-0.2) {$\x$};}
+                        \foreach \y in {2,4,6} {\node[font=\tiny,anchor=east] at (-0.2,\y) {$\y$};}
+                        \node[font=\tiny,anchor=north] at (0,-0.2) {0};
+                        \draw[graphblue,thick,domain=0:10,samples=100] plot (\x,{sqrt(\x)});
+                        \fill[red] (0,0) circle (0.12);
+                        \fill[red] (1,1) circle (0.12);
+                        \fill[red] (4,2) circle (0.12);
+                        \node[graphblue,font=\large] at (6,4.5) {$f(x)=\sqrt{x}$};
+                    \end{tikzpicture}
+                    \end{adjustbox}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+    </subsection>
+
+    <!-- ========================================================
+         RECIPROCAL FUNCTIONS
+         ======================================================== -->
+
+    <subsection xml:id="reciprocal-functions">
+        <title>Reciprocal Functions</title>
+
+        <definition>
+            <title>Reciprocal Function</title>
+            <p>
+                <me>f(x) = \frac{1}{x}</me>
+            </p>
+            <ul>
+                <li>Domain: <m>(-\infty, 0) \cup (0, \infty)</m></li>
+                <li>Range: <m>(-\infty, 0) \cup (0, \infty)</m></li>
+                <li>Odd function</li>
+                <li>No intercepts</li>
+                <li>Decreasing on <m>(-\infty, 0)</m> and <m>(0, \infty)</m></li>
+                <li>Symmetric about the origin</li>
+            </ul>
+        </definition>
+
+        <figure>
+            <caption>Graph of <m>f(x) = \frac{1}{x}</m></caption>
+            <image width="40%">
+                <latex-image>
+                    <![CDATA[
+                    \begin{adjustbox}{max width=\linewidth}
+                    \begin{tikzpicture}[x=0.55cm,y=0.55cm,>=stealth,line cap=round,line join=round]
+                        \draw[gray!50,line width=0.4pt] (-8,-8) grid[step=1] (8,8);
+                        \draw[black!80,thick,->] (-8.5,0) -- (8.5,0) node[anchor=west,font=\tiny] {$x$};
+                        \draw[black!80,thick,->] (0,-8.5) -- (0,8.5) node[anchor=south,font=\tiny] {$y$};
+                        \foreach \x in {-8,-7,...,8} {\draw[black!80,thick] (\x,0.1) -- (\x,-0.1);}
+                        \foreach \y in {-8,-7,...,8} {\draw[black!80,thick] (0.1,\y) -- (-0.1,\y);}
+                        \foreach \x in {-6,-4,-2,2,4,6} {\node[font=\tiny,anchor=north] at (\x,-0.2) {$\x$};}
+                        \foreach \y in {-6,-4,-2,2,4,6} {\node[font=\tiny,anchor=east] at (-0.2,\y) {$\y$};}
+                        \draw[graphblue,thick,domain=-8:-0.15,samples=100] plot (\x,{1/\x});
+                        \draw[graphblue,thick,domain=0.15:8,samples=100] plot (\x,{1/\x});
+                        \fill[red] (1,1) circle (0.12);
+                        \fill[red] (-1,-1) circle (0.12);
+                        \node[graphblue,font=\large] at (4,2.5) {$f(x)=\frac1x$};
+                    \end{tikzpicture}
+                    \end{adjustbox}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+    </subsection>
+
+    <!-- ========================================================
+         GREATEST INTEGER (STEP) FUNCTION
+         ======================================================== -->
+
+    <subsection xml:id="greatest-integer-function">
+        <title>Step Functions: Greatest Integer Function</title>
+
+        <p>
+            Functions whose graphs resemble sets of stairsteps are known as <term>step functions</term>. The most famous of the step functions is the <term>greatest integer function</term>, denoted by <m>\lfloor x \rfloor</m> and defined as:
+        </p>
+        <me>f(x) = \lfloor x \rfloor</me>
+        <p>
+            where <m>\lfloor x \rfloor</m> is the greatest integer less than or equal to <m>x</m>.
+        </p>
+
+        <p>
+            Some values are:
+        </p>
+        <me>\lfloor -1 \rfloor = -1</me>
+        <me>\lfloor -0.5 \rfloor = -1</me>
+        <me>\lfloor 0.1 \rfloor = 0</me>
+        <me>\lfloor 1.5 \rfloor = 1</me>
+
+        <definition>
+            <title>Greatest Integer Function</title>
+            <p>
+                <me>f(x) = \lfloor x \rfloor</me>
+            </p>
+            <ul>
+                <li>Domain: all real numbers</li>
+                <li>Range: all integers</li>
+                <li><m>y</m>-intercept at <m>(0, 0)</m></li>
+                <li><m>x</m>-intercepts in <m>[0, 1)</m></li>
+                <li>Constant between consecutive integers</li>
+                <li>Jumps vertically one unit at each integer</li>
+            </ul>
+        </definition>
+
+        <figure>
+            <caption>Graph of <m>f(x) = \lfloor x \rfloor</m></caption>
+            <image width="40%">
+                <latex-image>
+                    <![CDATA[
+                    \begin{adjustbox}{max width=\linewidth}
+                    \begin{tikzpicture}[x=0.55cm,y=0.55cm,>=stealth,line cap=round,line join=round]
+                        \draw[gray!50,line width=0.4pt] (-8,-8) grid[step=1] (8,8);
+                        \draw[black!80,thick,->] (-8.5,0) -- (8.5,0) node[anchor=west,font=\tiny] {$x$};
+                        \draw[black!80,thick,->] (0,-8.5) -- (0,8.5) node[anchor=south,font=\tiny] {$y$};
+                        \foreach \x in {-8,-7,...,8} {\draw[black!80,thick] (\x,0.1) -- (\x,-0.1);}
+                        \foreach \y in {-8,-7,...,8} {\draw[black!80,thick] (0.1,\y) -- (-0.1,\y);}
+                        \foreach \x in {-6,-4,-2,2,4,6} {\node[font=\tiny,anchor=north] at (\x,-0.2) {$\x$};}
+                        \foreach \y in {-6,-4,-2,2,4,6} {\node[font=\tiny,anchor=east] at (-0.2,\y) {$\y$};}
+                        \foreach \k in {-8,-7,...,7}{
+                            \draw[graphblue,thick] (\k,\k) -- (\k+1,\k);
+                            \draw[graphblue,fill=white] (\k+1,\k) circle (0.08);
+                            \fill[graphblue] (\k,\k) circle (0.08);
+                        }
+                        \node[graphblue,font=\large] at (4,3.5) {$f(x)=\lfloor x\rfloor$};
+                    \end{tikzpicture}
+                    \end{adjustbox}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+    </subsection>
+
+    <!-- ========================================================
+         SUMMARY OF PARENT FUNCTIONS
+         ======================================================== -->
+
+    <subsection xml:id="parent-functions-summary">
+        <title>Summary of Parent Functions</title>
+
+        <sidebyside widths="33% 33% 33%">
+            <figure>
+                <caption>Constant</caption>
+                <image width="100%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[x=0.4cm,y=0.4cm,>=stealth,line cap=round,line join=round]
+                            \draw[gray!50,line width=0.4pt] (-6,-6) grid[step=1] (6,6);
+                            \draw[black!80,thick,->] (-6.5,0) -- (6.5,0) node[anchor=west,font=\tiny] {$x$};
+                            \draw[black!80,thick,->] (0,-6.5) -- (0,6.5) node[anchor=south,font=\tiny] {$y$};
+                            \foreach \x in {-6,-5,...,6} {\draw[black!80,thick] (\x,0.08) -- (\x,-0.08);}
+                            \foreach \y in {-6,-5,...,6} {\draw[black!80,thick] (0.08,\y) -- (-0.08,\y);}
+                            \foreach \x in {-4,-2,2,4} {\node[font=\tiny,anchor=north] at (\x,-0.15) {$\x$};}
+                            \foreach \y in {-4,-2,2,4} {\node[font=\tiny,anchor=east] at (-0.15,\y) {$\y$};}
+                            \draw[graphblue,thick] (-5,2) -- (5,2);
+                            \node[graphblue,font=\large] at (2,3.5) {$f(x)=c$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+
+            <figure>
+                <caption>Identity</caption>
+                <image width="100%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[x=0.4cm,y=0.4cm,>=stealth,line cap=round,line join=round]
+                            \draw[gray!50,line width=0.4pt] (-6,-6) grid[step=1] (6,6);
+                            \draw[black!80,thick,->] (-6.5,0) -- (6.5,0) node[anchor=west,font=\tiny] {$x$};
+                            \draw[black!80,thick,->] (0,-6.5) -- (0,6.5) node[anchor=south,font=\tiny] {$y$};
+                            \foreach \x in {-6,-5,...,6} {\draw[black!80,thick] (\x,0.08) -- (\x,-0.08);}
+                            \foreach \y in {-6,-5,...,6} {\draw[black!80,thick] (0.08,\y) -- (-0.08,\y);}
+                            \foreach \x in {-4,-2,2,4} {\node[font=\tiny,anchor=north] at (\x,-0.15) {$\x$};}
+                            \foreach \y in {-4,-2,2,4} {\node[font=\tiny,anchor=east] at (-0.15,\y) {$\y$};}
+                            \draw[graphblue,thick] (-5,-5) -- (5,5);
+                            \node[graphblue,font=\large] at (3,3.5) {$f(x)=x$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+
+            <figure>
+                <caption>Absolute Value</caption>
+                <image width="100%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[x=0.4cm,y=0.4cm,>=stealth,line cap=round,line join=round]
+                            \draw[gray!50,line width=0.4pt] (-6,-6) grid[step=1] (6,6);
+                            \draw[black!80,thick,->] (-6.5,0) -- (6.5,0) node[anchor=west,font=\tiny] {$x$};
+                            \draw[black!80,thick,->] (0,-6.5) -- (0,6.5) node[anchor=south,font=\tiny] {$y$};
+                            \foreach \x in {-6,-5,...,6} {\draw[black!80,thick] (\x,0.08) -- (\x,-0.08);}
+                            \foreach \y in {-6,-5,...,6} {\draw[black!80,thick] (0.08,\y) -- (-0.08,\y);}
+                            \foreach \x in {-4,-2,2,4} {\node[font=\tiny,anchor=north] at (\x,-0.15) {$\x$};}
+                            \foreach \y in {-4,-2,2,4} {\node[font=\tiny,anchor=east] at (-0.15,\y) {$\y$};}
+                            \draw[graphblue,thick,domain=-5:5,samples=100] plot (\x,{abs(\x)});
+                            \node[graphblue,font=\large] at (2.5,5.1) {$f(x)=|x|$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+        </sidebyside>
+
+        <sidebyside widths="33% 33% 33%">
+            <figure>
+                <caption>Square Root</caption>
+                <image width="100%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[x=0.4cm,y=0.4cm,>=stealth,line cap=round,line join=round]
+                            \draw[gray!50,line width=0.4pt] (-2,-2) grid[step=1] (8,6);
+                            \draw[black!80,thick,->] (-2.5,0) -- (8.5,0) node[anchor=west,font=\tiny] {$x$};
+                            \draw[black!80,thick,->] (0,-2.5) -- (0,6.5) node[anchor=south,font=\tiny] {$y$};
+                            \foreach \x in {-2,-1,...,8} {\draw[black!80,thick] (\x,0.08) -- (\x,-0.08);}
+                            \foreach \y in {-2,-1,...,6} {\draw[black!80,thick] (0.08,\y) -- (-0.08,\y);}
+                            \foreach \x in {2,4,6} {\node[font=\tiny,anchor=north] at (\x,-0.15) {$\x$};}
+                            \foreach \y in {2,4} {\node[font=\tiny,anchor=east] at (-0.15,\y) {$\y$};}
+                            \node[font=\tiny,anchor=north] at (0,-0.15) {0};
+                            \draw[graphblue,thick,domain=0:8,samples=100] plot (\x,{sqrt(\x)});
+                            \node[graphblue,font=\large] at (4.5,3.5) {$f(x)=\sqrt{x}$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+
+            <figure>
+                <caption>Squaring</caption>
+                <image width="100%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[x=0.4cm,y=0.4cm,>=stealth,line cap=round,line join=round]
+                            \draw[gray!50,line width=0.4pt] (-6,-6) grid[step=1] (6,6);
+                            \draw[black!80,thick,->] (-6.5,0) -- (6.5,0) node[anchor=west,font=\tiny] {$x$};
+                            \draw[black!80,thick,->] (0,-6.5) -- (0,6.5) node[anchor=south,font=\tiny] {$y$};
+                            \foreach \x in {-6,-5,...,6} {\draw[black!80,thick] (\x,0.08) -- (\x,-0.08);}
+                            \foreach \y in {-6,-5,...,6} {\draw[black!80,thick] (0.08,\y) -- (-0.08,\y);}
+                            \foreach \x in {-4,-2,2,4} {\node[font=\tiny,anchor=north] at (\x,-0.15) {$\x$};}
+                            \foreach \y in {-4,-2,2,4} {\node[font=\tiny,anchor=east] at (-0.15,\y) {$\y$};}
+                            \draw[graphblue,thick,domain=-2.3:2.3,samples=100] plot (\x,{\x*\x});
+                            \node[graphblue,font=\large] at (4,4.5) {$f(x)=x^22$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+
+            <figure>
+                <caption>Cubic</caption>
+                <image width="100%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[x=0.4cm,y=0.4cm,>=stealth,line cap=round,line join=round]
+                            \draw[gray!50,line width=0.4pt] (-6,-6) grid[step=1] (6,6);
+                            \draw[black!80,thick,->] (-6.5,0) -- (6.5,0) node[anchor=west,font=\tiny] {$x$};
+                            \draw[black!80,thick,->] (0,-6.5) -- (0,6.5) node[anchor=south,font=\tiny] {$y$};
+                            \foreach \x in {-6,-5,...,6} {\draw[black!80,thick] (\x,0.08) -- (\x,-0.08);}
+                            \foreach \y in {-6,-5,...,6} {\draw[black!80,thick] (0.08,\y) -- (-0.08,\y);}
+                            \foreach \x in {-4,-2,2,4} {\node[font=\tiny,anchor=north] at (\x,-0.15) {$\x$};}
+                            \foreach \y in {-4,-2,2,4} {\node[font=\tiny,anchor=east] at (-0.15,\y) {$\y$};}
+                            \draw[graphblue,thick,domain=-1.8:1.8,samples=100] plot (\x,{\x*\x*\x});
+                            \node[graphblue,font=\large] at (3.5,3.0) {$f(x)=x^3$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+        </sidebyside>
+
+        <sidebyside widths="50% 50%">
+            <figure>
+                <caption>Reciprocal</caption>
+                <image width="100%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[x=0.4cm,y=0.4cm,>=stealth,line cap=round,line join=round]
+                            \draw[gray!50,line width=0.4pt] (-6,-6) grid[step=1] (6,6);
+                            \draw[black!80,thick,->] (-6.5,0) -- (6.5,0) node[anchor=west,font=\tiny] {$x$};
+                            \draw[black!80,thick,->] (0,-6.5) -- (0,6.5) node[anchor=south,font=\tiny] {$y$};
+                            \foreach \x in {-6,-5,...,6} {\draw[black!80,thick] (\x,0.08) -- (\x,-0.08);}
+                            \foreach \y in {-6,-5,...,6} {\draw[black!80,thick] (0.08,\y) -- (-0.08,\y);}
+                            \foreach \x in {-4,-2,2,4} {\node[font=\tiny,anchor=north] at (\x,-0.15) {$\x$};}
+                            \foreach \y in {-4,-2,2,4} {\node[font=\tiny,anchor=east] at (-0.15,\y) {$\y$};}
+                            \draw[graphblue,thick,domain=-6:-0.2,samples=100] plot (\x,{1/\x});
+                            \draw[graphblue,thick,domain=0.2:6,samples=100] plot (\x,{1/\x});
+                            \node[graphblue,font=\large] at (3,2.5) {$f(x)=\frac1x$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+
+            <figure>
+                <caption>Greatest Integer</caption>
+                <image width="100%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[x=0.4cm,y=0.4cm,>=stealth,line cap=round,line join=round]
+                            \draw[gray!50,line width=0.4pt] (-6,-6) grid[step=1] (6,6);
+                            \draw[black!80,thick,->] (-6.5,0) -- (6.5,0) node[anchor=west,font=\tiny] {$x$};
+                            \draw[black!80,thick,->] (0,-6.5) -- (0,6.5) node[anchor=south,font=\tiny] {$y$};
+                            \foreach \x in {-6,-5,...,6} {\draw[black!80,thick] (\x,0.08) -- (\x,-0.08);}
+                            \foreach \y in {-6,-5,...,6} {\draw[black!80,thick] (0.08,\y) -- (-0.08,\y);}
+                            \foreach \x in {-4,-2,2,4} {\node[font=\tiny,anchor=north] at (\x,-0.15) {$\x$};}
+                            \foreach \y in {-4,-2,2,4} {\node[font=\tiny,anchor=east] at (-0.15,\y) {$\y$};}
+                            \foreach \k in {-6,-5,...,5}{
+                                \draw[graphblue,thick] (\k,\k) -- (\k+1,\k);
+                                \draw[graphblue,fill=white] (\k+1,\k) circle (0.08);
+                                \fill[graphblue] (\k,\k) circle (0.08);
+                            }
+                            \node[graphblue,font=\large] at (2.5,2.5) {$f(x)=\lfloor x\rfloor$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+        </sidebyside>
+    </subsection>
+
+    <!-- ========================================================
+         TRANSFORMATION OF FUNCTIONS — SHIFTS (VIDEO 1)
+         ======================================================== -->
+
+    <subsection xml:id="transformations-shifts">
+        <title>Transformation of Functions — Shifts (Translations)</title>
+
+        <!-- Video 1: Shifts (Translations) -->
+        <p><url href="https://youtu.be/rrvYiHKb2EU">Transformation of Functions — Shifts Video</url></p>
+
+        <p>
+            Many functions have graphs that are simple transformations of the parent graphs.
+        </p>
+
+        <p>
+            For example, you can obtain the graph of <m>h(x) = x^2 + 2</m> by shifting the graph of <m>f(x) = x^2</m> upward two units. The shape of the graph does <em effect="bold">not</em> change. The graph is simply moved up.
+        </p>
+
+        <p>
+            When the shape does not change, the transformation is known as a <term>rigid transformation</term>. In this example we see a <term>vertical translation</term>.
+        </p>
+
+        <p>
+            In function notation, <m>h</m> and <m>f</m> are related as follows:
+        </p>
+        <me>h(x) = x^2 + 2 = f(x) + 2</me>
+
+        <ul>
+            <li>The <m>+2</m> outside the function changes the <m>y</m>-values, so the entire graph moves <em effect="bold">up 2 units</em>.</li>
+            <li>The coefficient of <m>x^2</m> remains <m>1</m>, so the parabola keeps the same width and shape.</li>
+        </ul>
+
+        <figure>
+            <caption>Vertical Shift: <m>h(x) = x^2 + 2</m></caption>
+            <image width="60%">
+                <latex-image>
+                    <![CDATA[
+                    \begin{adjustbox}{max width=\linewidth}
+                    \begin{tikzpicture}[x=0.5cm,y=0.5cm,>=stealth,line cap=round,line join=round]
+                        \draw[gray!50,line width=0.4pt] (-8,-8) grid[step=1] (8,8);
+                        \draw[black!80,thick,->] (-8.5,0) -- (8.5,0) node[anchor=west,font=\tiny] {$x$};
+                        \draw[black!80,thick,->] (0,-8.5) -- (0,8.5) node[anchor=south,font=\tiny] {$y$};
+                        \foreach \x in {-8,-7,...,8} {\draw[black!80,thick] (\x,0.1) -- (\x,-0.1);}
+                        \foreach \y in {-8,-7,...,8} {\draw[black!80,thick] (0.1,\y) -- (-0.1,\y);}
+                        \foreach \x in {-6,-4,-2,2,4,6} {\node[font=\tiny,anchor=north] at (\x,-0.2) {$\x$};}
+                        \foreach \y in {-6,-4,-2,2,4,6} {\node[font=\tiny,anchor=east] at (-0.2,\y) {$\y$};}
+                        \draw[graphblue,thick,domain=-2.8:2.8,samples=100] plot (\x,{\x*\x});
+                        \draw[red,thick,domain=-2.6:2.6,samples=100] plot (\x,{\x*\x+2});
+                        \fill[red] (0,0) circle (0.12);
+                        \fill[blue] (0,2) circle (0.12);
+                        \node[graphblue,font=\large] at (4,4.5) {$f(x)=x^2$};
+                        \node[red,font=\large] at (3,6.5) {$h(x)=x^2+2$};
+                    \end{tikzpicture}
+                    \end{adjustbox}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+
+        <p>
+            Similarly, you can obtain the graph of <m>g(x) = (x - 2)^2</m> by shifting the graph of <m>f(x) = x^2</m> to the right two units.
+        </p>
+
+        <p>
+            In this case, <m>g(x) = (x - 2)^2 = f(x - 2)</m>.
+        </p>
+
+        <ul>
+            <li>The <m>-2</m> inside the input shifts the graph <em effect="bold">right 2 units</em>.</li>
+            <li>Horizontal changes occur inside the function and work in the <em>opposite direction</em> of the sign.</li>
+        </ul>
+
+        <figure>
+            <caption>Horizontal Shift: <m>g(x) = (x-2)^2</m></caption>
+            <image width="60%">
+                <latex-image>
+                    <![CDATA[
+                    \begin{adjustbox}{max width=\linewidth}
+                    \begin{tikzpicture}[x=0.5cm,y=0.5cm,>=stealth,line cap=round,line join=round]
+                        \draw[gray!50,line width=0.4pt] (-8,-8) grid[step=1] (8,8);
+                        \draw[black!80,thick,->] (-8.5,0) -- (8.5,0) node[anchor=west,font=\tiny] {$x$};
+                        \draw[black!80,thick,->] (0,-8.5) -- (0,8.5) node[anchor=south,font=\tiny] {$y$};
+                        \foreach \x in {-8,-7,...,8} {\draw[black!80,thick] (\x,0.1) -- (\x,-0.1);}
+                        \foreach \y in {-8,-7,...,8} {\draw[black!80,thick] (0.1,\y) -- (-0.1,\y);}
+                        \foreach \x in {-6,-4,-2,2,4,6} {\node[font=\tiny,anchor=north] at (\x,-0.2) {$\x$};}
+                        \foreach \y in {-6,-4,-2,2,4,6} {\node[font=\tiny,anchor=east] at (-0.2,\y) {$\y$};}
+                        \clip (-8,-8) rectangle (8,8);
+                        \draw[graphblue,thick,domain=-2.8:2.8,samples=100] plot (\x,{\x*\x});
+                        \draw[red,thick,domain=-2:6,samples=100] plot (\x,{(\x-2)^2});
+                        \fill[red] (0,0) circle (0.12);
+                        \fill[blue] (2,0) circle (0.12);
+                        \node[graphblue,font=\large] at (-4,4.5) {$f(x)=x^2$};
+                        \node[red,font=\large] at (5,4.5) {$g(x)=(x-2)^2$};
+                    \end{tikzpicture}
+                    \end{adjustbox}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+
+        <definition>
+            <title>Vertical and Horizontal Shifts</title>
+            <p>
+                Let <m>h</m>, <m>k</m> be positive real numbers. Vertical and horizontal shifts in the graph of <m>y = f(x)</m> are represented as follows.
+            </p>
+            <ol>
+                <li>Vertical shift <m>k</m> units upward: <m>h(x) = f(x) + k</m></li>
+                <li>Vertical shift <m>k</m> units downward: <m>h(x) = f(x) - k</m></li>
+                <li>Horizontal shift <m>h</m> units to the right: <m>h(x) = f(x - h)</m></li>
+                <li>Horizontal shift <m>h</m> units to the left: <m>h(x) = f(x + h)</m></li>
+            </ol>
+        </definition>
+
+        <activity>
+            <statement>
+                <p>
+                    <em>Example.</em> Use the graph of <m>f(x) = x^3</m> to sketch the graph of <m>h(x) = (x + 2)^3 + 1</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Relative to the graph of <m>f(x) = x^3</m>, the graph of <m>h(x) = (x + 2)^3 + 1</m> involves a <em>left shift of two units</em> and an <em>upward shift of one unit</em>.
+                </p>
+
+                <!-- FIX 11: h(x)=(x+2)^3+1 extended to full grid -->
+                <figure>
+                    <caption><m>h(x) = (x+2)^3 + 1</m></caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}[x=0.5cm,y=0.5cm,>=stealth,line cap=round,line join=round]
+                                \draw[gray!50,line width=0.4pt] (-8,-8) grid[step=1] (8,8);
+                                \draw[black!80,thick,->] (-8.5,0) -- (8.5,0) node[anchor=west,font=\tiny] {$x$};
+                                \draw[black!80,thick,->] (0,-8.5) -- (0,8.5) node[anchor=south,font=\tiny] {$y$};
+                                \foreach \x in {-8,-7,...,8} {\draw[black!80,thick] (\x,0.1) -- (\x,-0.1);}
+                                \foreach \y in {-8,-7,...,8} {\draw[black!80,thick] (0.1,\y) -- (-0.1,\y);}
+                                \foreach \x in {-6,-4,-2,2,4,6} {\node[font=\tiny,anchor=north] at (\x,-0.2) {$\x$};}
+                                \foreach \y in {-6,-4,-2,2,4,6} {\node[font=\tiny,anchor=east] at (-0.2,\y) {$\y$};}
+                                \clip (-8,-8) rectangle (8,8);
+                                \draw[graphblue,thick,domain=-2.2:2.2,samples=100] plot (\x,{\x*\x*\x});
+                                \draw[red,thick,domain=-4.2:3.2,samples=100] plot (\x,{(\x+2)^3+1});
+                                \fill[red] (0,0) circle (0.12);
+                                \fill[blue] (-2,1) circle (0.12);
+                                \node[graphblue,font=\large] at (3.7,3.5) {$f(x)=x^3$};
+                                \node[red,font=\large] at (-4.5,5.0) {$h(x)=(x+2)^3+1$};
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         REFLECTIONS
+         ======================================================== -->
+
+    <subsection xml:id="transformations-reflections">
+        <title>Transformation of Functions — Reflections</title>
+
+        <p>
+            The second common type of transformation is a <term>reflection</term>.
+        </p>
+
+        <p>
+            If you consider the <m>x</m>-axis to be a mirror, the graph of <m>h(x) = -x^2</m> is the mirror image (or reflection) of the graph of <m>f(x) = x^2</m>, reflected across the <m>x</m>-axis.
+        </p>
+
+        <!-- FIX 6: Reflection graph drawn across full -8 to 8 grid -->
+        <figure>
+            <caption>Reflection across the <m>x</m>-axis: <m>h(x) = -x^2</m></caption>
+            <image width="60%">
+                <latex-image>
+                    <![CDATA[
+                    \begin{adjustbox}{max width=\linewidth}
+                    \begin{tikzpicture}[x=0.5cm,y=0.5cm,>=stealth,line cap=round,line join=round]
+                        \draw[gray!50,line width=0.4pt] (-8,-8) grid[step=1] (8,8);
+                        \draw[black!80,thick,->] (-8.5,0) -- (8.5,0) node[anchor=west,font=\tiny] {$x$};
+                        \draw[black!80,thick,->] (0,-8.5) -- (0,8.5) node[anchor=south,font=\tiny] {$y$};
+                        \foreach \x in {-8,-7,...,8} {\draw[black!80,thick] (\x,0.1) -- (\x,-0.1);}
+                        \foreach \y in {-8,-7,...,8} {\draw[black!80,thick] (0.1,\y) -- (-0.1,\y);}
+                        \foreach \x in {-6,-4,-2,2,4,6} {\node[font=\tiny,anchor=north] at (\x,-0.2) {$\x$};}
+                        \foreach \y in {-6,-4,-2,2,4,6} {\node[font=\tiny,anchor=east] at (-0.2,\y) {$\y$};}
+                        \clip (-8,-8) rectangle (8,8);
+                        \draw[graphblue,thick,domain=-2.8:2.8,samples=100] plot (\x,{\x*\x});
+                        \draw[red,thick,domain=-2.8:2.8,samples=100] plot (\x,{-\x*\x});
+                        \fill[red] (0,0) circle (0.12);
+                        \fill[blue] (0,0) circle (0.12);
+                        \node[graphblue,font=\large] at (3.5,3.5) {$f(x)=x^2$};
+                        \node[red,font=\large] at (4.5,-3.5) {$h(x)=-x^2$};
+                    \end{tikzpicture}
+                    \end{adjustbox}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+
+        <definition>
+            <title>Reflections in the Coordinate Axes</title>
+            <p>
+                Reflections in the coordinate axes of the graph of <m>y = f(x)</m> are represented as follows.
+            </p>
+            <ol>
+                <li>Reflection in the <m>x</m>-axis: <m>h(x) = -f(x)</m></li>
+                <li>Reflection in the <m>y</m>-axis: <m>h(x) = f(-x)</m></li>
+            </ol>
+        </definition>
+    </subsection>
+
+    <!-- ========================================================
+         NON-RIGID TRANSFORMATIONS
+         ======================================================== -->
+
+    <subsection xml:id="nonrigid-transformations">
+        <title>Non-Rigid Transformations of Functions</title>
+
+        <p>
+            Horizontal shifts, vertical shifts, and reflections are <term effect="bold">rigid transformations</term> because the basic shape of the graph is unchanged.
+        </p>
+
+        <p>
+            These transformations change only the position of the graph in the coordinate plane.
+        </p>
+
+        <p>
+            <term effect="bold">Nonrigid transformations</term> are those that cause a distortion — a change in the shape of the original graph.
+        </p>
+
+        <definition>
+            <title>Vertical Stretch and Shrink</title>
+            <p>
+                Let <m>a</m> be a positive real number. Vertical stretch or shrink in the graph of <m>y = f(x)</m> are represented as follows.
+            </p>
+            <ol>
+                <li>Vertical stretch if <m>a &gt; 1</m>: <m>h(x) = a f(x)</m></li>
+                <li>Vertical shrink if <m>0 &lt; a &lt; 1</m>: <m>h(x) = a f(x)</m></li>
+            </ol>
+            <p>
+                <em>Parameter <m>a</m>:</em> Multiplying the function outside changes vertical height; multiplying <m>x</m> inside changes horizontal width. Values <m>a &gt; 1</m> make the graph steeper/narrower, while <m>0 &lt; a &lt; 1</m> makes it flatter/wider.
+            </p>
+        </definition>
+
+        <definition>
+            <title>Horizontal Stretch and Shrink</title>
+            <p>
+                Let <m>a</m> be a positive real number. Horizontal shrink or stretch in the graph of <m>y = f(x)</m> are represented as follows.
+            </p>
+            <ol>
+                <li>Horizontal shrink if <m>a &gt; 1</m>: <m>h(x) = f(ax)</m></li>
+                <li>Horizontal stretch if <m>0 &lt; a &lt; 1</m>: <m>h(x) = f(ax)</m></li>
+            </ol>
+        </definition>
+
+        <p>
+            Compare the graph of <m>f(x) = |x|</m> with the graph of <m>h(x) = 3|x|</m>.
+        </p>
+
+        <p>
+            Relative to the graph of <m>f(x) = |x|</m>, the graph of <m>h(x) = 3|x| = 3f(x)</m> is a <term effect="bold">vertical stretch</term> (each <m>y</m>-value is multiplied by <m>3</m>) of the graph of <m>f</m>.
+        </p>
+
+        <!-- FIX 9: Vertical stretch graph across full -8 to 8 grid -->
+        <figure>
+            <caption>Vertical Stretch: <m>h(x) = 3|x|</m></caption>
+            <image width="60%">
+                <latex-image>
+                    <![CDATA[
+                   \begin{adjustbox}{max width=\linewidth}
+\begin{tikzpicture}[x=0.5cm,y=0.5cm,>=stealth,line cap=round,line join=round]
+    \draw[gray!50,line width=0.4pt] (-8,-8) grid[step=1] (8,8);
+    \draw[black!80,thick,->] (-8.5,0) -- (8.5,0) node[anchor=west,font=\tiny] {$x$};
+    \draw[black!80,thick,->] (0,-8.5) -- (0,8.5) node[anchor=south,font=\tiny] {$y$};
+    \foreach \x in {-8,-7,...,8} {\draw[black!80,thick] (\x,0.1) -- (\x,-0.1);}
+    \foreach \y in {-8,-7,...,8} {\draw[black!80,thick] (0.1,\y) -- (-0.1,\y);}
+    \foreach \x in {-6,-4,-2,2,4,6} {\node[font=\tiny,anchor=north] at (\x,-0.2) {$\x$};}
+    \foreach \y in {-6,-4,-2,2,4,6} {\node[font=\tiny,anchor=east] at (-0.2,\y) {$\y$};}
+    \clip (-8,-8) rectangle (8,8);
+    % FIXED: f(x)=|x| now spans the full -8 to 8 domain
+    \draw[graphblue,thick,domain=-8:8,samples=100] plot (\x,{abs(\x)});
+    % FIXED: h(x)=3|x| also spans the full -8 to 8 domain
+    \draw[red,thick,domain=-8:8,samples=100] plot (\x,{3*abs(\x)});
+    \fill[red] (1,1) circle (0.12);
+    \fill[blue] (1,3) circle (0.12);
+    \node[graphblue,font=\large] at (5,3.0) {$f(x)=|x|$};
+    \node[red,font=\large] at (2.5,6.5) {$h(x)=3|x|$};
+\end{tikzpicture}
+\end{adjustbox}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+
+        <p>
+            Compare the graph of <m>f(x) = |x|</m> with the graph of <m>g(x) = \frac{1}{3}|x|</m>.
+        </p>
+
+        <p>
+            Relative to the graph of <m>f(x) = |x|</m>, the graph of <m>g(x) = \frac{1}{3}|x| = \frac{1}{3}f(x)</m> is a <term effect="bold">vertical shrink</term> (each <m>y</m>-value is multiplied by <m>\frac{1}{3}</m>) of the graph of <m>f</m>.
+        </p>
+
+        <!-- FIX 10: Vertical shrink graph across full -8 to 8 grid -->
+        <figure>
+            <caption>Vertical Shrink: <m>g(x) = \frac{1}{3}|x|</m></caption>
+            <image width="60%">
+                <latex-image>
+                    <![CDATA[
+                    \begin{adjustbox}{max width=\linewidth}
+\begin{tikzpicture}[x=0.5cm,y=0.5cm,>=stealth,line cap=round,line join=round]
+    \draw[gray!50,line width=0.4pt] (-8,-8) grid[step=1] (8,8);
+    \draw[black!80,thick,->] (-8.5,0) -- (8.5,0) node[anchor=west,font=\tiny] {$x$};
+    \draw[black!80,thick,->] (0,-8.5) -- (0,8.5) node[anchor=south,font=\tiny] {$y$};
+    \foreach \x in {-8,-7,...,8} {\draw[black!80,thick] (\x,0.1) -- (\x,-0.1);}
+    \foreach \y in {-8,-7,...,8} {\draw[black!80,thick] (0.1,\y) -- (-0.1,\y);}
+    \foreach \x in {-6,-4,-2,2,4,6} {\node[font=\tiny,anchor=north] at (\x,-0.2) {$\x$};}
+    \foreach \y in {-6,-4,-2,2,4,6} {\node[font=\tiny,anchor=east] at (-0.2,\y) {$\y$};}
+    \clip (-8,-8) rectangle (8,8);
+    % FIXED: f(x)=|x| now spans the full -8 to 8 domain
+    \draw[graphblue,thick,domain=-8:8,samples=100] plot (\x,{abs(\x)});
+    \draw[red,thick,domain=-8:8,samples=100] plot (\x,{abs(\x)/3});
+    \fill[red] (3,3) circle (0.12);
+    \fill[blue] (3,1) circle (0.12);
+    \node[graphblue,font=\large] at (1.5,4.0) {$f(x)=|x|$};
+    \node[red,font=\large] at (3.5,1.8) {$g(x)=\frac13|x|$};
+\end{tikzpicture}
+\end{adjustbox}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+
+        <definition>
+            <title>Order of Transformations</title>
+            <p>
+                If there is more than one transformation, follow this order:
+            </p>
+            <ol>
+                <li>Translate the graph horizontally.</li>
+                <li>Stretch or shrink the graph.</li>
+                <li>Reflect the graph across an axis.</li>
+                <li>Translate the graph vertically.</li>
+            </ol>
+        </definition>
+    </subsection>
+
+    <!-- ========================================================
+         EXAMPLE 1: g(x) = sqrt(x) + 4 (Video 2)
+         ======================================================== -->
+
+    <subsection xml:id="example-sqrt-plus-4">
+        <p><url href="https://youtu.be/7S5HF38DnUY"><m>g(x) = \sqrt{x} + 4</m> Video</url></p>
+
+        <activity>
+            <statement>
+                <p>
+                    Consider the function:
+                    <me>g(x) = \sqrt{x} + 4</me>
+                </p>
+                <ol>
+                    <li>What is the "Parent Function"?</li>
+                    <li>What transformations have been applied?</li>
+                    <li>Sketch a graph of the Parent function and the transformed function without plotting points.</li>
+                </ol>
+            </statement>
+            <solution>
+                <p>
+                    <em>1.</em> The parent function is <m>f(x) = \sqrt{x}</m> (square root function).
+                </p>
+                <p>
+                    <em>2.</em> The <m>+4</m> is outside the radical, so it shifts the graph <em effect="bold">up 4 units</em>.
+                </p>
+
+                <figure>
+                    <caption><m>g(x) = \sqrt{x} + 4</m> (shift up by 4)</caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}[x=0.55cm,y=0.55cm,>=stealth,line cap=round,line join=round]
+                                \draw[gray!50,line width=0.4pt] (-2,-2) grid[step=1] (12,10);
+                                \draw[black!80,thick,->] (-2.5,0) -- (12.5,0) node[anchor=west,font=\tiny] {$x$};
+                                \draw[black!80,thick,->] (0,-2.5) -- (0,10.5) node[anchor=south,font=\tiny] {$y$};
+                                \foreach \x in {-2,-1,...,12} {\draw[black!80,thick] (\x,0.1) -- (\x,-0.1);}
+                                \foreach \y in {-2,-1,...,10} {\draw[black!80,thick] (0.1,\y) -- (-0.1,\y);}
+                                \foreach \x in {2,4,6,8,10} {\node[font=\tiny,anchor=north] at (\x,-0.2) {$\x$};}
+                                \foreach \y in {2,4,6,8} {\node[font=\tiny,anchor=east] at (-0.2,\y) {$\y$};}
+                                \node[font=\tiny,anchor=north] at (0,-0.2) {0};
+                                \draw[graphblue,thick,domain=0:12,samples=100] plot (\x,{sqrt(\x)});
+                                \draw[red,thick,domain=0:12,samples=100] plot (\x,{sqrt(\x)+4});
+                                \fill[red] (0,0) circle (0.12);
+                                \fill[blue] (0,4) circle (0.12);
+                                \node[graphblue,font=\large] at (7,2.0) {$f(x)=\sqrt{x}$};
+                                \node[red,font=\large] at (7,5) {$g(x)=\sqrt{x}+4$};
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         EXAMPLE 2: g(x) = |x+3| - 1 (Video 3)
+         ======================================================== -->
+
+    <subsection xml:id="example-abs-plus-3-minus-1">
+        <p><url href="https://youtu.be/R9AJGxAJ0QQ"><m>g(x) = |x+3| - 1</m> Video</url></p>
+
+        <activity>
+            <statement>
+                <p>
+                    Consider the function:
+                    <me>g(x) = |x + 3| - 1</me>
+                </p>
+                <ol>
+                    <li>What is the "Parent Function"?</li>
+                    <li>What transformations have been applied?</li>
+                    <li>Sketch a graph of the Parent function and the transformed function without plotting points.</li>
+                </ol>
+            </statement>
+            <solution>
+                <p>
+                    <em>1.</em> The parent function is <m>f(x) = |x|</m> (absolute value function).
+                </p>
+                <p>
+                    <em>2.</em> The <m>+3</m> inside the absolute value shifts the graph <em effect="bold">left 3 units</em>; the <m>-1</m> outside shifts it <em effect="bold">down 1 unit</em>.
+                </p>
+
+                <figure>
+                    <caption><m>g(x) = |x+3| - 1</m> (left 3, down 1)</caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}[x=0.5cm,y=0.5cm,>=stealth,line cap=round,line join=round]
+                                \draw[gray!50,line width=0.4pt] (-12,-8) grid[step=1] (8,8);
+                                \draw[black!80,thick,->] (-12.5,0) -- (8.5,0) node[anchor=west,font=\tiny] {$x$};
+                                \draw[black!80,thick,->] (0,-8.5) -- (0,8.5) node[anchor=south,font=\tiny] {$y$};
+                                \foreach \x in {-12,-11,...,8} {\draw[black!80,thick] (\x,0.1) -- (\x,-0.1);}
+                                \foreach \y in {-8,-7,...,8} {\draw[black!80,thick] (0.1,\y) -- (-0.1,\y);}
+                                \foreach \x in {-10,-8,-6,-4,-2,2,4,6} {\node[font=\tiny,anchor=north] at (\x,-0.2) {$\x$};}
+                                \foreach \y in {-6,-4,-2,2,4,6} {\node[font=\tiny,anchor=east] at (-0.2,\y) {$\y$};}
+                                \clip (-12,-8) rectangle (8,8);
+                                \draw[graphblue,thick,domain=-8:8,samples=100] plot (\x,{abs(\x)});
+                                \draw[red,thick,domain=-11:8,samples=100] plot (\x,{abs(\x+3)-1});
+                                \fill[red] (0,0) circle (0.12);
+                                \fill[blue] (-3,-1) circle (0.12);
+                                \node[graphblue,font=\large] at (4,.5) {$f(x)=|x|$};
+                                \node[red,font=\large] at (-4.5,-2) {$g(x)=|x+3|-1$};
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         EXAMPLE 3: g(x) = -3(x-2)^2 + 1 (Video 4)
+         ======================================================== -->
+
+    <subsection xml:id="example-negative-3-squared-plus-1">
+        <p><url href="https://youtu.be/QNAYg_ZohrM?t=17"><m>g(x) = -3(x-2)^2 + 1</m> Video</url></p>
+
+        <activity>
+            <statement>
+                <p>
+                    Consider the function:
+                    <me>g(x) = -3(x - 2)^2 + 1</me>
+                </p>
+                <ol>
+                    <li>What is the "Parent Function"?</li>
+                    <li>What transformations have been applied?</li>
+                    <li>Sketch a graph of the Parent function and the transformed function without plotting points.</li>
+                </ol>
+            </statement>
+            <solution>
+                <p>
+                    <em>1.</em> The parent function is <m>f(x) = x^2</m> (squaring/quadratic function).
+                </p>
+                <p>
+                    <em>2.</em> The transformations are:
+                </p>
+                <ul>
+                    <li><m>h = 2</m>: shift <em effect="bold">right 2 units</em></li>
+                    <li><m>a = -3</m>: reflect across the <m>x</m>-axis and <em>vertical stretch by 3</em></li>
+                    <li><m>k = 1</m>: shift <em effect="bold">up 1 unit</em></li>
+                </ul>
+
+                <figure>
+                    <caption><m>g(x) = -3(x-2)^2 + 1</m></caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}[x=0.5cm,y=0.5cm,>=stealth,line cap=round,line join=round]
+                                \draw[gray!50,line width=0.4pt] (-8,-10) grid[step=1] (10,10);
+                                \draw[black!80,thick,->] (-8.5,0) -- (10.5,0) node[anchor=west,font=\tiny] {$x$};
+                                \draw[black!80,thick,->] (0,-10.5) -- (0,10.5) node[anchor=south,font=\tiny] {$y$};
+                                \foreach \x in {-8,-7,...,10} {\draw[black!80,thick] (\x,0.1) -- (\x,-0.1);}
+                                \foreach \y in {-10,-9,...,10} {\draw[black!80,thick] (0.1,\y) -- (-0.1,\y);}
+                                \foreach \x in {-6,-4,-2,2,4,6,8} {\node[font=\tiny,anchor=north] at (\x,-0.2) {$\x$};}
+                                \foreach \y in {-8,-6,-4,-2,2,4,6,8} {\node[font=\tiny,anchor=east] at (-0.2,\y) {$\y$};}
+                                \clip (-8,-10) rectangle (10,10);
+                                \draw[graphblue,thick,domain=-3:3,samples=100] plot (\x,{\x*\x});
+                                \draw[red,thick,domain=0:4.2,samples=100] plot (\x,{-3*(\x-2)^2+1});
+                                \fill[red] (0,0) circle (0.12);
+                                \fill[blue] (2,1) circle (0.12);
+                                \node[graphblue,font=\large] at (-4.5,6.0) {$f(x)=x^2$};
+                                \node[red,font=\large] at (-4,-5.5) {$g(x)=-3(x-2)^2+1$};
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+</section>
