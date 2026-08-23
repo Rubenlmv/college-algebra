@@ -1,24 +1,6 @@
 var ptx_lunr_search_style = "textbook";
 var ptx_lunr_docs = [
 {
-  "id": "syllabus",
-  "level": "1",
-  "url": "syllabus.html",
-  "type": "Section",
-  "number": "",
-  "title": "Syllabus",
-  "body": " Syllabus        Course Information  Testing changes. This is the syllabus for course name (MATH xxx, section xxx) for [term] 20xx. It is a [n] credit course.    Instructor  Prof. Lastname, Office Location, prof.lastname@example.edu .    Student Hours  TBD    Class meets  course times and location.    Course Description  course description from catalog    Prerequisite  list of prerequisites    Textbook and course materials   textbook name by textbook author.       Course Overview        Assessments and Grades     "
-},
-{
-  "id": "sec-course-info-2",
-  "level": "2",
-  "url": "syllabus.html#sec-course-info-2",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "course name (MATH xxx, section xxx) "
-},
-{
   "id": "calendar-fall2026",
   "level": "1",
   "url": "calendar-fall2026.html",
@@ -34,16 +16,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Section 1.1 Linear Equations and Rational Equations",
-  "body": " Section 1.1 Linear Equations and Rational Equations   Linear Equations  Linear equations are also known as equations of first degree. That is, variables have no written exponents .  In General, this would exclude equations with variables in the denominators of fractions, since they would have an exponent of . However, we will see some equations with variables in their denominators that are equivalent to linear equations.    Solving Equations  To solve an equation means to find all possible solutions.  Good News! When solving an equation you can do anything you want—as long as you do it twice. Once to the whole left side and once to the whole right side.    The most common things we do:    Add\/subtract same value from both sides  Multiply\/divide both sides by the same non-zero value    We solve equations by:    Distribute to eliminate parentheses  Combine \"Like Terms\"  Use Addition\/Subtraction to \"collect\" variables on one side, constants on the other  Use Multiplication\/Division to isolate the variable       Solving Linear Equations Video  Watch the video below for a step-by-step explanation:  Solving Linear Equations       Solve:     Step 1: Distribute on both sides    Step 2: Collect variables on one side    Step 3: Isolate the variable   Therefore, the solution is .      Clearing Fractions   To clear fractions from an equation:   Find the Lowest Common Denominator (LCD) of ALL the fractions. (If you can't find the lowest common denominator, just multiply all denominators together.)  Multiply every term (on BOTH sides) by the LCD  Simplify each term. There should be no fractions.  Solve the new equation using your algebra skills.    xml:id=\"fig-clearing-fractions\"> Clearing the Fraction    Example    Solve:     LCD =  Step 1: Multiply every term by 6   Step 2: Simplify    Step 3: Solve     Therefore, the solution is .      What happens if there is a variable in the denominator?     Solve:   LCD: Restricted Values for :     LCD =  Restricted Values:  Step 1: Multiply every term by   Step 2: Simplify   Step 3: Solve    Since , this is a valid solution.  Therefore, the solution is .       Solve:   LCD: Restricted Values for :     First, factor  LCD =  Restricted Values: and  Step 1: Multiply every term by   Step 2: Simplify       Since and , this is a valid solution.  Therefore, the solution is .     "
+  "body": " Section 1.1 Linear Equations and Rational Equations   Linear Equations  Linear equations are also known as equations of first degree. That is, variables have no written exponents .  In General, this would exclude equations with variables in the denominators of fractions, since they would have an exponent of . However, we will see some equations with variables in their denominators that are equivalent to linear equations.    Solving Equations  To solve an equation means to find all possible solutions.  Good News! When solving an equation you can do anything you want—as long as you do it twice. Once to the whole left side and once to the whole right side.   Problem-Solving Strategy  The most common things we do:   Add\/subtract same value from both sides  Multiply\/divide both sides by the same non-zero value   We solve equations by:   Distribute to eliminate parentheses  Combine \"Like Terms\"  Use Addition\/Subtraction to \"collect\" variables on one side, constants on the other  Use Multiplication\/Division to isolate the variable       Solving Linear Equations  Solving Linear Equations Video      Solve:     Step 1: Distribute on both sides    Step 2: Collect variables on one side    Step 3: Isolate the variable   Therefore, the solution is .      Clearing Fractions   Clearing Fractions Video   Clearing Fractions  To clear fractions from an equation:   Find the Lowest Common Denominator (LCD) of ALL the fractions. (If you can't find the lowest common denominator, just multiply all denominators together.)  Multiply every term (on BOTH sides) by the LCD  Simplify each term. There should be no fractions.  Solve the new equation using your algebra skills.      Example    Solve:     LCD =  Step 1: Multiply every term by 6   Step 2: Simplify    Step 3: Solve     Therefore, the solution is .      What happens if there is a variable in the denominator?     Solve:   LCD: Restricted Values for :     LCD =  Restricted Values:  Step 1: Multiply every term by   Step 2: Simplify   Step 3: Solve    Since , this is a valid solution.  Therefore, the solution is .       Solve:   LCD: Restricted Values for :     First, factor  LCD =  Restricted Values: and  Step 1: Multiply every term by   Step 2: Simplify       Since and , this is a valid solution.  Therefore, the solution is .     "
 },
 {
-  "id": "Problem",
+  "id": "idea-2-solving-equations-4",
   "level": "2",
-  "url": "section-1-1.html#Problem",
+  "url": "section-1-1.html#idea-2-solving-equations-4",
   "type": "Problem-Solving Strategy",
   "number": "1",
-  "title": "",
-  "body": " The most common things we do:    Add\/subtract same value from both sides  Multiply\/divide both sides by the same non-zero value    We solve equations by:    Distribute to eliminate parentheses  Combine \"Like Terms\"  Use Addition\/Subtraction to \"collect\" variables on one side, constants on the other  Use Multiplication\/Division to isolate the variable    "
+  "title": "Problem-Solving Strategy.",
+  "body": " Problem-Solving Strategy  The most common things we do:   Add\/subtract same value from both sides  Multiply\/divide both sides by the same non-zero value   We solve equations by:   Distribute to eliminate parentheses  Combine \"Like Terms\"  Use Addition\/Subtraction to \"collect\" variables on one side, constants on the other  Use Multiplication\/Division to isolate the variable   "
 },
 {
   "id": "example-linear-equation-1",
@@ -55,13 +37,13 @@ var ptx_lunr_docs = [
   "body": "  Solve:     Step 1: Distribute on both sides    Step 2: Collect variables on one side    Step 3: Isolate the variable   Therefore, the solution is .   "
 },
 {
-  "id": "clearing-fractions-2",
+  "id": "clearing-fractions-3",
   "level": "2",
-  "url": "section-1-1.html#clearing-fractions-2",
+  "url": "section-1-1.html#clearing-fractions-3",
   "type": "Problem-Solving Strategy",
   "number": "2",
-  "title": "",
-  "body": " To clear fractions from an equation:   Find the Lowest Common Denominator (LCD) of ALL the fractions. (If you can't find the lowest common denominator, just multiply all denominators together.)  Multiply every term (on BOTH sides) by the LCD  Simplify each term. There should be no fractions.  Solve the new equation using your algebra skills.   "
+  "title": "Clearing Fractions.",
+  "body": " Clearing Fractions  To clear fractions from an equation:   Find the Lowest Common Denominator (LCD) of ALL the fractions. (If you can't find the lowest common denominator, just multiply all denominators together.)  Multiply every term (on BOTH sides) by the LCD  Simplify each term. There should be no fractions.  Solve the new equation using your algebra skills.   "
 },
 {
   "id": "example-clearing-fractions-2",
@@ -2060,6 +2042,294 @@ var ptx_lunr_docs = [
   "number": "113",
   "title": "",
   "body": "  What are the maxima or minima for the function? Can we find the exact value?   Graph of        The graph of is a parabola that opens upward.  The vertex occurs at:    Therefore, the function has a relative minimum at .  There is no relative maximum since the parabola opens upward and extends to infinity.   "
+},
+{
+  "id": "section-2-8",
+  "level": "1",
+  "url": "section-2-8.html",
+  "type": "Section",
+  "number": "",
+  "title": "Section 2.8 Algebra and Composition of Functions",
+  "body": " Section 2.8 Algebra and Composition of Functions    Operations on Functions   Operations on Functions Video  In business, we can define the Cost Function , where is the units produced, is the unit cost and is the fixed cost. Further, we define the Revenue function as where is the selling price. Finally, we know profit is Revenue minus Cost, in other words, . We have created a \"new\" function by algebraically combining two functions.   Sum, Difference, Product, and Quotient of Functions  Let and be functions with overlapping domains. Then:    Sum:     Difference:     Product:     Quotient:         Let and . Find:  1.   2.   3.   4.   5.   6.     1.   2.   3.   4.   5.   6.   Notice that , as expected.       Let , , and . Find:  1.   2.   3.   4.   5.   6.     1.   2.   3.   4.   5.   6.        Difference Quotient   Difference Quotient Video  The average rate of change between and is the slope of the secant line and is given by:   The expression is called the difference quotient .  Notice how similar this is to \"Average Rate of Change.\" It provides a formula for the average rate of change between and .   Difference Quotient: Secant Line         Find for .  Describe the graph of . How does this agree with what you found for the difference quotient?     Step 1: Find .    Step 2: Substitute into the difference quotient.   The graph of is a line with slope . The difference quotient gives the slope , which matches the slope of the line.   Graph of           Find for .  Consider what happens as . Describe what that means.     Step 1: Find .     Step 2: Substitute into the difference quotient.     Step 3: Consider what happens as .   As , the secant line approaches the tangent line to the parabola at the point . The difference quotient approaches the instantaneous rate of change (the derivative) at that point. For , the derivative is , which gives the slope of the tangent line at any point .   Graph of with tangent line at           Composition of Functions   Composition of Functions Video  You are ready to purchase the 3-D big screen television. But, the price is . Lucky for you, two stores have the television you want on SALE! And even better, it's a super, double discount sale.    Store A: Price reduced by and take an additional off the already low price.   Store B:  off PLUS take an additional off the discounted price.    Are the prices the same? If not, which store has the better sale?    Store A: Function Composition      For Store A:     Store B: Function Composition      For Store B:    The prices are not the same. Store B has the better sale by .   Composition of Functions  The composition of and , denoted , is defined as:   The domain of is the set of all in the domain of such that is in the domain of .      Let and . Evaluate and simplify:  1.   2.     1.      2.          Decomposition of Functions   Decomposition Video  The process of finding two functions whose composition is the original function is called decomposition .    Given , find functions and such that .    We need to decompose into two functions. Let:   Then:   Therefore, and .      Given , find functions and such that .    We need to decompose into two functions. Let:   Then:   Therefore, and .       Using Graphs for Function Operations  Use the graphs of and below to find:    1.   2.     3.   4.     5.     Graphs of and       From the graph:   , , (approximately), (approximately), ,    1.   2.     3.   4.     5.      "
+},
+{
+  "id": "operations-on-functions-4",
+  "level": "2",
+  "url": "section-2-8.html#operations-on-functions-4",
+  "type": "Definition",
+  "number": "145",
+  "title": "Sum, Difference, Product, and Quotient of Functions.",
+  "body": " Sum, Difference, Product, and Quotient of Functions  Let and be functions with overlapping domains. Then:    Sum:     Difference:     Product:     Quotient:     "
+},
+{
+  "id": "operations-on-functions-5",
+  "level": "2",
+  "url": "section-2-8.html#operations-on-functions-5",
+  "type": "Example",
+  "number": "114",
+  "title": "",
+  "body": "  Let and . Find:  1.   2.   3.   4.   5.   6.     1.   2.   3.   4.   5.   6.   Notice that , as expected.   "
+},
+{
+  "id": "operations-on-functions-6",
+  "level": "2",
+  "url": "section-2-8.html#operations-on-functions-6",
+  "type": "Example",
+  "number": "115",
+  "title": "",
+  "body": "  Let , , and . Find:  1.   2.   3.   4.   5.   6.     1.   2.   3.   4.   5.   6.    "
+},
+{
+  "id": "difference-quotient-5",
+  "level": "2",
+  "url": "section-2-8.html#difference-quotient-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "difference quotient "
+},
+{
+  "id": "difference-quotient-7",
+  "level": "2",
+  "url": "section-2-8.html#difference-quotient-7",
+  "type": "Figure",
+  "number": "146",
+  "title": "",
+  "body": " Difference Quotient: Secant Line     "
+},
+{
+  "id": "difference-quotient-8",
+  "level": "2",
+  "url": "section-2-8.html#difference-quotient-8",
+  "type": "Example",
+  "number": "116",
+  "title": "",
+  "body": "  Find for .  Describe the graph of . How does this agree with what you found for the difference quotient?     Step 1: Find .    Step 2: Substitute into the difference quotient.   The graph of is a line with slope . The difference quotient gives the slope , which matches the slope of the line.   Graph of       "
+},
+{
+  "id": "difference-quotient-9",
+  "level": "2",
+  "url": "section-2-8.html#difference-quotient-9",
+  "type": "Example",
+  "number": "117",
+  "title": "",
+  "body": "  Find for .  Consider what happens as . Describe what that means.     Step 1: Find .     Step 2: Substitute into the difference quotient.     Step 3: Consider what happens as .   As , the secant line approaches the tangent line to the parabola at the point . The difference quotient approaches the instantaneous rate of change (the derivative) at that point. For , the derivative is , which gives the slope of the tangent line at any point .   Graph of with tangent line at       "
+},
+{
+  "id": "composition-of-functions-4-1",
+  "level": "2",
+  "url": "section-2-8.html#composition-of-functions-4-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Store A: "
+},
+{
+  "id": "composition-of-functions-4-2",
+  "level": "2",
+  "url": "section-2-8.html#composition-of-functions-4-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Store B: "
+},
+{
+  "id": "composition-of-functions-6",
+  "level": "2",
+  "url": "section-2-8.html#composition-of-functions-6",
+  "type": "Figure",
+  "number": "149",
+  "title": "",
+  "body": " Store A: Function Composition     "
+},
+{
+  "id": "composition-of-functions-10",
+  "level": "2",
+  "url": "section-2-8.html#composition-of-functions-10",
+  "type": "Figure",
+  "number": "150",
+  "title": "",
+  "body": " Store B: Function Composition     "
+},
+{
+  "id": "composition-of-functions-15",
+  "level": "2",
+  "url": "section-2-8.html#composition-of-functions-15",
+  "type": "Definition",
+  "number": "151",
+  "title": "Composition of Functions.",
+  "body": " Composition of Functions  The composition of and , denoted , is defined as:   The domain of is the set of all in the domain of such that is in the domain of .  "
+},
+{
+  "id": "composition-of-functions-16",
+  "level": "2",
+  "url": "section-2-8.html#composition-of-functions-16",
+  "type": "Example",
+  "number": "118",
+  "title": "",
+  "body": "  Let and . Evaluate and simplify:  1.   2.     1.      2.      "
+},
+{
+  "id": "decomposition-3",
+  "level": "2",
+  "url": "section-2-8.html#decomposition-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "decomposition "
+},
+{
+  "id": "decomposition-4",
+  "level": "2",
+  "url": "section-2-8.html#decomposition-4",
+  "type": "Example",
+  "number": "119",
+  "title": "",
+  "body": "  Given , find functions and such that .    We need to decompose into two functions. Let:   Then:   Therefore, and .   "
+},
+{
+  "id": "decomposition-5",
+  "level": "2",
+  "url": "section-2-8.html#decomposition-5",
+  "type": "Example",
+  "number": "120",
+  "title": "",
+  "body": "  Given , find functions and such that .    We need to decompose into two functions. Let:   Then:   Therefore, and .   "
+},
+{
+  "id": "final-example-6",
+  "level": "2",
+  "url": "section-2-8.html#final-example-6",
+  "type": "Figure",
+  "number": "152",
+  "title": "",
+  "body": " Graphs of and     "
+},
+{
+  "id": "section-3-1",
+  "level": "1",
+  "url": "section-3-1.html",
+  "type": "Section",
+  "number": "",
+  "title": "Section 3.1 Quadratic Functions",
+  "body": " Section 3.1 Quadratic Functions    Quadratic Functions   Quadratic Function  A quadratic function is a function that can be written in the form   That is, it is an equation of degree 2.    The Graph of a Quadratic Function Video  The graph of a quadratic function is a parabola .    Parabola Opens Upward       Parabola Opens Downward          Vertex (Standard Form)   Vertex Form  The function may be written in vertex form as   In this case, the vertex is at the point .   Notice:    The function is written as .  Axis of symmetry: .      Vertex with       Vertex with          You Try: Example    Graph the quadratic function   Identify the vertex, - and -intercepts, and axis of symmetry.     Vertex:     Axis of symmetry:     -intercepts:  ≈ and    -intercept:     Graph of           Example    Graph the quadratic function   Identify the vertex, - and -intercepts, and axis of symmetry.     Vertex:     Axis of symmetry:     -intercepts:  and    -intercept:     Graph of           Completing the Square   Rewriting a Quadratic into Vertex Form Video   Completing the Square Video (Part 1)    Use the technique of completing the square to write in vertex form.  Identify the vertex, intercepts, and sketch the function.     Vertex form:     Vertex:     Axis of symmetry:     -intercepts:  and    -intercept:  – far above the grid   Graph of           Example    Use the technique of completing the square to write in vertex form.  Identify the vertex, intercepts, and sketch the function.     Vertex form:     Vertex:     Axis of symmetry:     -intercepts:  and    -intercept:     Graph of           The Vertex Formula   The Vertex Formula Video   Vertex Formula  For , , the -coordinate of the vertex is:   The -coordinate is .    Example: For :    Vertex:      You Try: Example    Given , find the vertex by:   Completing the square  The vertex formula      Method 1: Completing the Square    Vertex:   Method 2: Vertex Formula     Vertex:   Graph of         "
+},
+{
+  "id": "intro-quadratic-functions-2",
+  "level": "2",
+  "url": "section-3-1.html#intro-quadratic-functions-2",
+  "type": "Definition",
+  "number": "153",
+  "title": "Quadratic Function.",
+  "body": " Quadratic Function  A quadratic function is a function that can be written in the form   That is, it is an equation of degree 2.  "
+},
+{
+  "id": "intro-quadratic-functions-4",
+  "level": "2",
+  "url": "section-3-1.html#intro-quadratic-functions-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "parabola "
+},
+{
+  "id": "intro-quadratic-functions-5-1",
+  "level": "2",
+  "url": "section-3-1.html#intro-quadratic-functions-5-1",
+  "type": "Figure",
+  "number": "154",
+  "title": "",
+  "body": " Parabola Opens Upward     "
+},
+{
+  "id": "intro-quadratic-functions-5-2",
+  "level": "2",
+  "url": "section-3-1.html#intro-quadratic-functions-5-2",
+  "type": "Figure",
+  "number": "155",
+  "title": "",
+  "body": " Parabola Opens Downward     "
+},
+{
+  "id": "vertex-form-2",
+  "level": "2",
+  "url": "section-3-1.html#vertex-form-2",
+  "type": "Definition",
+  "number": "156",
+  "title": "Vertex Form.",
+  "body": " Vertex Form  The function may be written in vertex form as   In this case, the vertex is at the point .   Notice:    The function is written as .  Axis of symmetry: .   "
+},
+{
+  "id": "vertex-form-3-1",
+  "level": "2",
+  "url": "section-3-1.html#vertex-form-3-1",
+  "type": "Figure",
+  "number": "157",
+  "title": "",
+  "body": " Vertex with     "
+},
+{
+  "id": "vertex-form-3-2",
+  "level": "2",
+  "url": "section-3-1.html#vertex-form-3-2",
+  "type": "Figure",
+  "number": "158",
+  "title": "",
+  "body": " Vertex with     "
+},
+{
+  "id": "example-graph-vertex-form-2",
+  "level": "2",
+  "url": "section-3-1.html#example-graph-vertex-form-2",
+  "type": "Example",
+  "number": "121",
+  "title": "",
+  "body": "  Graph the quadratic function   Identify the vertex, - and -intercepts, and axis of symmetry.     Vertex:     Axis of symmetry:     -intercepts:  ≈ and    -intercept:     Graph of       "
+},
+{
+  "id": "example-graph-vertex-form-negative-2",
+  "level": "2",
+  "url": "section-3-1.html#example-graph-vertex-form-negative-2",
+  "type": "Example",
+  "number": "122",
+  "title": "",
+  "body": "  Graph the quadratic function   Identify the vertex, - and -intercepts, and axis of symmetry.     Vertex:     Axis of symmetry:     -intercepts:  and    -intercept:     Graph of       "
+},
+{
+  "id": "completing-square-4",
+  "level": "2",
+  "url": "section-3-1.html#completing-square-4",
+  "type": "Example",
+  "number": "123",
+  "title": "",
+  "body": "  Use the technique of completing the square to write in vertex form.  Identify the vertex, intercepts, and sketch the function.     Vertex form:     Vertex:     Axis of symmetry:     -intercepts:  and    -intercept:  – far above the grid   Graph of       "
+},
+{
+  "id": "example-completing-square-2",
+  "level": "2",
+  "url": "section-3-1.html#example-completing-square-2",
+  "type": "Example",
+  "number": "124",
+  "title": "",
+  "body": "  Use the technique of completing the square to write in vertex form.  Identify the vertex, intercepts, and sketch the function.     Vertex form:     Vertex:     Axis of symmetry:     -intercepts:  and    -intercept:     Graph of       "
+},
+{
+  "id": "vertex-formula-3",
+  "level": "2",
+  "url": "section-3-1.html#vertex-formula-3",
+  "type": "Definition",
+  "number": "163",
+  "title": "Vertex Formula.",
+  "body": " Vertex Formula  For , , the -coordinate of the vertex is:   The -coordinate is .  "
+},
+{
+  "id": "you-try-vertex-both-methods-2",
+  "level": "2",
+  "url": "section-3-1.html#you-try-vertex-both-methods-2",
+  "type": "Example",
+  "number": "125",
+  "title": "",
+  "body": "  Given , find the vertex by:   Completing the square  The vertex formula      Method 1: Completing the Square    Vertex:   Method 2: Vertex Formula     Vertex:   Graph of       "
 },
 {
   "id": "activities",
