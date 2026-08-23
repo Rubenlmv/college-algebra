@@ -28,24 +28,6 @@ var ptx_lunr_docs = [
   "body": " Calendar      "
 },
 {
-  "id": "notes-week-01",
-  "level": "1",
-  "url": "notes-week-01.html",
-  "type": "Section",
-  "number": "",
-  "title": "Week 1",
-  "body": " Week 1   This is an outline of the topics we covered in the first week of class.     Monday 8\/22      Wednesday 8\/24      Friday 8\/26      ser  For more details, see     "
-},
-{
-  "id": "notes-week-02",
-  "level": "1",
-  "url": "notes-week-02.html",
-  "type": "Section",
-  "number": "",
-  "title": "Week 2",
-  "body": " Week 2   Monday      Wednesday      Friday     "
-},
-{
   "id": "section-1-1",
   "level": "1",
   "url": "section-1-1.html",
@@ -1459,76 +1441,634 @@ var ptx_lunr_docs = [
   "body": "   Example. A company invests to produce snow boots for dogs. Each set of boots costs to manufacture, package, and ship, and will sell for .   a. What is the Cost function?   b. What is the Revenue function?   c. What is the Profit function?   d. What is the profit if they produce and sell 1,000 sets of boots?   e. What is the profit if they produce and sell 2,000 sets of boots?   f. How many sets do they need to produce and sell to make profit? What is this number called?     a. The fixed cost is (the initial investment). The variable cost is (cost per set).    b. The selling price is .    c. Profit is Revenue minus Cost.      d. For :   The company loses (negative profit).   e. For :   The company makes profit.   f. Set :     The company needs to produce and sell sets of boots to break even. This is called the break-even point .   "
 },
 {
-  "id": "activity-01-intro-activity",
+  "id": "section-2-6",
   "level": "1",
-  "url": "activity-01-intro-activity.html",
-  "type": "Worksheet",
+  "url": "section-2-6.html",
+  "type": "Section",
   "number": "",
-  "title": "Introduction Activity",
-  "body": " Introduction Activity    This is the introduction to the activity.      This is the first exercise.    "
+  "title": "Section 2.6 Transformation of Graphs",
+  "body": " Section 2.6 Transformation of Graphs    Introduction to Parent Functions  Students should be able to recognize the basic shapes of the graphs of different types of functions.  For instance, you know that the graph of the linear function is a line with slope and -intercept at .   Linear Function:         Linear Functions   Linear Function  A function of the form has:   Domain: all real numbers  Range: all real numbers  -intercept: , -intercept:  Increasing if , decreasing if , constant if      Increasing       Constant         Decreasing       Constant and Identity Functions  There are two special types of linear functions, the constant function and the identity function .   Constant Function  A function of the form where is a constant.   Domain: all real numbers  Range:  Graph is a horizontal line     Constant Function:       Identity Function  A function of the form .   Domain: all real numbers  Range: all real numbers  Slope:  -intercept:     Identity Function:          Squaring (Quadratic) Functions   Squaring Function      Domain: all real numbers  Range:  Even function  Intercept at  Decreasing on , increasing on  Symmetric about the -axis     Graph of         Cubic Functions   Cubic Function      Domain: all real numbers  Range: all real numbers  Odd function  Intercept at  Increasing on  Symmetric about the origin     Graph of         Square Root Functions   Square Root Function      Domain:  Range:  Intercept at  Increasing on     Graph of         Reciprocal Functions   Reciprocal Function      Domain:  Range:  Odd function  No intercepts  Decreasing on and  Symmetric about the origin     Graph of         Step Functions: Greatest Integer Function  Functions whose graphs resemble sets of stairsteps are known as step functions . The most famous of the step functions is the greatest integer function , denoted by and defined as:   where is the greatest integer less than or equal to .  Some values are:       Greatest Integer Function      Domain: all real numbers  Range: all integers  -intercept at  -intercepts in  Constant between consecutive integers  Jumps vertically one unit at each integer     Graph of         Summary of Parent Functions    Constant       Identity       Absolute Value         Square Root       Squaring       Cubic         Reciprocal       Greatest Integer          Transformation of Functions — Shifts (Translations)   Transformation of Functions — Shifts Video  Many functions have graphs that are simple transformations of the parent graphs.  For example, you can obtain the graph of by shifting the graph of upward two units. The shape of the graph does not change. The graph is simply moved up.  When the shape does not change, the transformation is known as a rigid transformation . In this example we see a vertical translation .  In function notation, and are related as follows:    The outside the function changes the -values, so the entire graph moves up 2 units .  The coefficient of remains , so the parabola keeps the same width and shape.    Vertical Shift:      Similarly, you can obtain the graph of by shifting the graph of to the right two units.  In this case, .   The inside the input shifts the graph right 2 units .  Horizontal changes occur inside the function and work in the opposite direction of the sign.    Horizontal Shift:       Vertical and Horizontal Shifts  Let , be positive real numbers. Vertical and horizontal shifts in the graph of are represented as follows.   Vertical shift units upward:  Vertical shift units downward:  Horizontal shift units to the right:  Horizontal shift units to the left:       Example. Use the graph of to sketch the graph of .    Relative to the graph of , the graph of involves a left shift of two units and an upward shift of one unit .              Transformation of Functions — Reflections  The second common type of transformation is a reflection .  If you consider the -axis to be a mirror, the graph of is the mirror image (or reflection) of the graph of , reflected across the -axis.    Reflection across the -axis:       Reflections in the Coordinate Axes  Reflections in the coordinate axes of the graph of are represented as follows.   Reflection in the -axis:  Reflection in the -axis:       Non-Rigid Transformations of Functions  Horizontal shifts, vertical shifts, and reflections are rigid transformations because the basic shape of the graph is unchanged.  These transformations change only the position of the graph in the coordinate plane.   Nonrigid transformations are those that cause a distortion — a change in the shape of the original graph.   Vertical Stretch and Shrink  Let be a positive real number. Vertical stretch or shrink in the graph of are represented as follows.   Vertical stretch if :  Vertical shrink if :    Parameter : Multiplying the function outside changes vertical height; multiplying inside changes horizontal width. Values make the graph steeper\/narrower, while makes it flatter\/wider.    Horizontal Stretch and Shrink  Let be a positive real number. Horizontal shrink or stretch in the graph of are represented as follows.   Horizontal shrink if :  Horizontal stretch if :    Compare the graph of with the graph of .  Relative to the graph of , the graph of is a vertical stretch (each -value is multiplied by ) of the graph of .    Vertical Stretch:      Compare the graph of with the graph of .  Relative to the graph of , the graph of is a vertical shrink (each -value is multiplied by ) of the graph of .    Vertical Shrink:       Order of Transformations  If there is more than one transformation, follow this order:   Translate the graph horizontally.  Stretch or shrink the graph.  Reflect the graph across an axis.  Translate the graph vertically.       Video    Consider the function:    What is the \"Parent Function\"?  What transformations have been applied?  Sketch a graph of the Parent function and the transformed function without plotting points.      1. The parent function is (square root function).   2. The is outside the radical, so it shifts the graph up 4 units .   (shift up by 4)           Video    Consider the function:    What is the \"Parent Function\"?  What transformations have been applied?  Sketch a graph of the Parent function and the transformed function without plotting points.      1. The parent function is (absolute value function).   2. The inside the absolute value shifts the graph left 3 units ; the outside shifts it down 1 unit .   (left 3, down 1)           Video    Consider the function:    What is the \"Parent Function\"?  What transformations have been applied?  Sketch a graph of the Parent function and the transformed function without plotting points.      1. The parent function is (squaring\/quadratic function).   2. The transformations are:   : shift right 2 units  : reflect across the -axis and vertical stretch by 3  : shift up 1 unit            "
 },
 {
-  "id": "activity-01-intro-activity-3",
+  "id": "intro-transformations-4",
   "level": "2",
-  "url": "activity-01-intro-activity.html#activity-01-intro-activity-3",
-  "type": "Worksheet Exercise",
-  "number": "1",
-  "title": "",
-  "body": "  This is the first exercise.   "
-},
-{
-  "id": "activity",
-  "level": "1",
-  "url": "activity.html",
-  "type": "Worksheet",
-  "number": "",
-  "title": "Activity Title",
-  "body": " Activity Title    This is the introduction to the activity.      This is the first exercise. The derivative of the integral is:       Testing testing.     testing proof     Let be a prime and let all matrices be over . Suppose and are such that If there exist such that with the conditions where  is the last row of (restricted to its first entries),  is the last column of (restricted to its first entries),  is the top-left submatrix of ,  is the top-left submatrix of ,  then is a Calogero-Moser pair.  Conversely, if is a Calogero-Moser pair such that with and , then for any and satisfying there exists such that     Sketch of the proof:   Block notation. Write   Set    Then we have the following commutators:    In addition with Moreover,   Now, since and , we have   Using the explicit block commutators, the equation is equivalent to   Taking the top-left block gives   This yields the Calogero-Moser condition for , precisely when .    "
-},
-{
-  "id": "activity-3",
-  "level": "2",
-  "url": "activity.html#activity-3",
-  "type": "Worksheet Exercise",
-  "number": "1",
-  "title": "",
-  "body": "  This is the first exercise. The derivative of the integral is:    "
-},
-{
-  "id": "activity-4",
-  "level": "2",
-  "url": "activity.html#activity-4",
-  "type": "Theorem",
+  "url": "section-2-6.html#intro-transformations-4",
+  "type": "Figure",
   "number": "88",
   "title": "",
-  "body": "  Testing testing.   "
+  "body": " Linear Function:     "
 },
 {
-  "id": "activity-5",
+  "id": "linear-functions-2",
   "level": "2",
-  "url": "activity.html#activity-5",
-  "type": "Proof",
-  "number": "1",
-  "title": "",
-  "body": " testing proof  "
-},
-{
-  "id": "prop123",
-  "level": "2",
-  "url": "activity.html#prop123",
-  "type": "Proposition",
+  "url": "section-2-6.html#linear-functions-2",
+  "type": "Definition",
   "number": "89",
-  "title": "",
-  "body": "  Let be a prime and let all matrices be over . Suppose and are such that If there exist such that with the conditions where  is the last row of (restricted to its first entries),  is the last column of (restricted to its first entries),  is the top-left submatrix of ,  is the top-left submatrix of ,  then is a Calogero-Moser pair.  Conversely, if is a Calogero-Moser pair such that with and , then for any and satisfying there exists such that     Sketch of the proof:   Block notation. Write   Set    Then we have the following commutators:    In addition with Moreover,   Now, since and , we have   Using the explicit block commutators, the equation is equivalent to   Taking the top-left block gives   This yields the Calogero-Moser condition for , precisely when .   "
+  "title": "Linear Function.",
+  "body": " Linear Function  A function of the form has:   Domain: all real numbers  Range: all real numbers  -intercept: , -intercept:  Increasing if , decreasing if , constant if   "
 },
 {
-  "id": "handouts",
+  "id": "linear-functions-3-1",
+  "level": "2",
+  "url": "section-2-6.html#linear-functions-3-1",
+  "type": "Figure",
+  "number": "90",
+  "title": "",
+  "body": " Increasing     "
+},
+{
+  "id": "linear-functions-3-2",
+  "level": "2",
+  "url": "section-2-6.html#linear-functions-3-2",
+  "type": "Figure",
+  "number": "91",
+  "title": "",
+  "body": " Constant     "
+},
+{
+  "id": "linear-functions-4",
+  "level": "2",
+  "url": "section-2-6.html#linear-functions-4",
+  "type": "Figure",
+  "number": "92",
+  "title": "",
+  "body": " Decreasing     "
+},
+{
+  "id": "constant-identity-functions-2",
+  "level": "2",
+  "url": "section-2-6.html#constant-identity-functions-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "constant function identity function "
+},
+{
+  "id": "constant-identity-functions-3",
+  "level": "2",
+  "url": "section-2-6.html#constant-identity-functions-3",
+  "type": "Definition",
+  "number": "93",
+  "title": "Constant Function.",
+  "body": " Constant Function  A function of the form where is a constant.   Domain: all real numbers  Range:  Graph is a horizontal line   "
+},
+{
+  "id": "constant-identity-functions-4",
+  "level": "2",
+  "url": "section-2-6.html#constant-identity-functions-4",
+  "type": "Figure",
+  "number": "94",
+  "title": "",
+  "body": " Constant Function:     "
+},
+{
+  "id": "constant-identity-functions-5",
+  "level": "2",
+  "url": "section-2-6.html#constant-identity-functions-5",
+  "type": "Definition",
+  "number": "95",
+  "title": "Identity Function.",
+  "body": " Identity Function  A function of the form .   Domain: all real numbers  Range: all real numbers  Slope:  -intercept:   "
+},
+{
+  "id": "constant-identity-functions-6",
+  "level": "2",
+  "url": "section-2-6.html#constant-identity-functions-6",
+  "type": "Figure",
+  "number": "96",
+  "title": "",
+  "body": " Identity Function:     "
+},
+{
+  "id": "quadratic-functions-2",
+  "level": "2",
+  "url": "section-2-6.html#quadratic-functions-2",
+  "type": "Definition",
+  "number": "97",
+  "title": "Squaring Function.",
+  "body": " Squaring Function      Domain: all real numbers  Range:  Even function  Intercept at  Decreasing on , increasing on  Symmetric about the -axis   "
+},
+{
+  "id": "quadratic-functions-3",
+  "level": "2",
+  "url": "section-2-6.html#quadratic-functions-3",
+  "type": "Figure",
+  "number": "98",
+  "title": "",
+  "body": " Graph of     "
+},
+{
+  "id": "cubic-functions-2",
+  "level": "2",
+  "url": "section-2-6.html#cubic-functions-2",
+  "type": "Definition",
+  "number": "99",
+  "title": "Cubic Function.",
+  "body": " Cubic Function      Domain: all real numbers  Range: all real numbers  Odd function  Intercept at  Increasing on  Symmetric about the origin   "
+},
+{
+  "id": "cubic-functions-3",
+  "level": "2",
+  "url": "section-2-6.html#cubic-functions-3",
+  "type": "Figure",
+  "number": "100",
+  "title": "",
+  "body": " Graph of     "
+},
+{
+  "id": "square-root-functions-2",
+  "level": "2",
+  "url": "section-2-6.html#square-root-functions-2",
+  "type": "Definition",
+  "number": "101",
+  "title": "Square Root Function.",
+  "body": " Square Root Function      Domain:  Range:  Intercept at  Increasing on   "
+},
+{
+  "id": "square-root-functions-3",
+  "level": "2",
+  "url": "section-2-6.html#square-root-functions-3",
+  "type": "Figure",
+  "number": "102",
+  "title": "",
+  "body": " Graph of     "
+},
+{
+  "id": "reciprocal-functions-2",
+  "level": "2",
+  "url": "section-2-6.html#reciprocal-functions-2",
+  "type": "Definition",
+  "number": "103",
+  "title": "Reciprocal Function.",
+  "body": " Reciprocal Function      Domain:  Range:  Odd function  No intercepts  Decreasing on and  Symmetric about the origin   "
+},
+{
+  "id": "reciprocal-functions-3",
+  "level": "2",
+  "url": "section-2-6.html#reciprocal-functions-3",
+  "type": "Figure",
+  "number": "104",
+  "title": "",
+  "body": " Graph of     "
+},
+{
+  "id": "greatest-integer-function-2",
+  "level": "2",
+  "url": "section-2-6.html#greatest-integer-function-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "step functions greatest integer function "
+},
+{
+  "id": "greatest-integer-function-10",
+  "level": "2",
+  "url": "section-2-6.html#greatest-integer-function-10",
+  "type": "Definition",
+  "number": "105",
+  "title": "Greatest Integer Function.",
+  "body": " Greatest Integer Function      Domain: all real numbers  Range: all integers  -intercept at  -intercepts in  Constant between consecutive integers  Jumps vertically one unit at each integer   "
+},
+{
+  "id": "greatest-integer-function-11",
+  "level": "2",
+  "url": "section-2-6.html#greatest-integer-function-11",
+  "type": "Figure",
+  "number": "106",
+  "title": "",
+  "body": " Graph of     "
+},
+{
+  "id": "parent-functions-summary-2-1",
+  "level": "2",
+  "url": "section-2-6.html#parent-functions-summary-2-1",
+  "type": "Figure",
+  "number": "107",
+  "title": "",
+  "body": " Constant     "
+},
+{
+  "id": "parent-functions-summary-2-2",
+  "level": "2",
+  "url": "section-2-6.html#parent-functions-summary-2-2",
+  "type": "Figure",
+  "number": "108",
+  "title": "",
+  "body": " Identity     "
+},
+{
+  "id": "parent-functions-summary-2-3",
+  "level": "2",
+  "url": "section-2-6.html#parent-functions-summary-2-3",
+  "type": "Figure",
+  "number": "109",
+  "title": "",
+  "body": " Absolute Value     "
+},
+{
+  "id": "parent-functions-summary-3-1",
+  "level": "2",
+  "url": "section-2-6.html#parent-functions-summary-3-1",
+  "type": "Figure",
+  "number": "110",
+  "title": "",
+  "body": " Square Root     "
+},
+{
+  "id": "parent-functions-summary-3-2",
+  "level": "2",
+  "url": "section-2-6.html#parent-functions-summary-3-2",
+  "type": "Figure",
+  "number": "111",
+  "title": "",
+  "body": " Squaring     "
+},
+{
+  "id": "parent-functions-summary-3-3",
+  "level": "2",
+  "url": "section-2-6.html#parent-functions-summary-3-3",
+  "type": "Figure",
+  "number": "112",
+  "title": "",
+  "body": " Cubic     "
+},
+{
+  "id": "parent-functions-summary-4-1",
+  "level": "2",
+  "url": "section-2-6.html#parent-functions-summary-4-1",
+  "type": "Figure",
+  "number": "113",
+  "title": "",
+  "body": " Reciprocal     "
+},
+{
+  "id": "parent-functions-summary-4-2",
+  "level": "2",
+  "url": "section-2-6.html#parent-functions-summary-4-2",
+  "type": "Figure",
+  "number": "114",
+  "title": "",
+  "body": " Greatest Integer     "
+},
+{
+  "id": "transformations-shifts-5",
+  "level": "2",
+  "url": "section-2-6.html#transformations-shifts-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "rigid transformation vertical translation "
+},
+{
+  "id": "transformations-shifts-9",
+  "level": "2",
+  "url": "section-2-6.html#transformations-shifts-9",
+  "type": "Figure",
+  "number": "115",
+  "title": "",
+  "body": " Vertical Shift:     "
+},
+{
+  "id": "transformations-shifts-13",
+  "level": "2",
+  "url": "section-2-6.html#transformations-shifts-13",
+  "type": "Figure",
+  "number": "116",
+  "title": "",
+  "body": " Horizontal Shift:     "
+},
+{
+  "id": "transformations-shifts-14",
+  "level": "2",
+  "url": "section-2-6.html#transformations-shifts-14",
+  "type": "Definition",
+  "number": "117",
+  "title": "Vertical and Horizontal Shifts.",
+  "body": " Vertical and Horizontal Shifts  Let , be positive real numbers. Vertical and horizontal shifts in the graph of are represented as follows.   Vertical shift units upward:  Vertical shift units downward:  Horizontal shift units to the right:  Horizontal shift units to the left:   "
+},
+{
+  "id": "transformations-shifts-15",
+  "level": "2",
+  "url": "section-2-6.html#transformations-shifts-15",
+  "type": "Example",
+  "number": "102",
+  "title": "",
+  "body": "   Example. Use the graph of to sketch the graph of .    Relative to the graph of , the graph of involves a left shift of two units and an upward shift of one unit .          "
+},
+{
+  "id": "transformations-reflections-2",
+  "level": "2",
+  "url": "section-2-6.html#transformations-reflections-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "reflection "
+},
+{
+  "id": "transformations-reflections-4",
+  "level": "2",
+  "url": "section-2-6.html#transformations-reflections-4",
+  "type": "Figure",
+  "number": "119",
+  "title": "",
+  "body": " Reflection across the -axis:     "
+},
+{
+  "id": "transformations-reflections-5",
+  "level": "2",
+  "url": "section-2-6.html#transformations-reflections-5",
+  "type": "Definition",
+  "number": "120",
+  "title": "Reflections in the Coordinate Axes.",
+  "body": " Reflections in the Coordinate Axes  Reflections in the coordinate axes of the graph of are represented as follows.   Reflection in the -axis:  Reflection in the -axis:   "
+},
+{
+  "id": "nonrigid-transformations-2",
+  "level": "2",
+  "url": "section-2-6.html#nonrigid-transformations-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "rigid transformations "
+},
+{
+  "id": "nonrigid-transformations-4",
+  "level": "2",
+  "url": "section-2-6.html#nonrigid-transformations-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Nonrigid transformations "
+},
+{
+  "id": "nonrigid-transformations-5",
+  "level": "2",
+  "url": "section-2-6.html#nonrigid-transformations-5",
+  "type": "Definition",
+  "number": "121",
+  "title": "Vertical Stretch and Shrink.",
+  "body": " Vertical Stretch and Shrink  Let be a positive real number. Vertical stretch or shrink in the graph of are represented as follows.   Vertical stretch if :  Vertical shrink if :    Parameter : Multiplying the function outside changes vertical height; multiplying inside changes horizontal width. Values make the graph steeper\/narrower, while makes it flatter\/wider.  "
+},
+{
+  "id": "nonrigid-transformations-6",
+  "level": "2",
+  "url": "section-2-6.html#nonrigid-transformations-6",
+  "type": "Definition",
+  "number": "122",
+  "title": "Horizontal Stretch and Shrink.",
+  "body": " Horizontal Stretch and Shrink  Let be a positive real number. Horizontal shrink or stretch in the graph of are represented as follows.   Horizontal shrink if :  Horizontal stretch if :   "
+},
+{
+  "id": "nonrigid-transformations-8",
+  "level": "2",
+  "url": "section-2-6.html#nonrigid-transformations-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "vertical stretch "
+},
+{
+  "id": "nonrigid-transformations-9",
+  "level": "2",
+  "url": "section-2-6.html#nonrigid-transformations-9",
+  "type": "Figure",
+  "number": "123",
+  "title": "",
+  "body": " Vertical Stretch:     "
+},
+{
+  "id": "nonrigid-transformations-11",
+  "level": "2",
+  "url": "section-2-6.html#nonrigid-transformations-11",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "vertical shrink "
+},
+{
+  "id": "nonrigid-transformations-12",
+  "level": "2",
+  "url": "section-2-6.html#nonrigid-transformations-12",
+  "type": "Figure",
+  "number": "124",
+  "title": "",
+  "body": " Vertical Shrink:     "
+},
+{
+  "id": "nonrigid-transformations-13",
+  "level": "2",
+  "url": "section-2-6.html#nonrigid-transformations-13",
+  "type": "Definition",
+  "number": "125",
+  "title": "Order of Transformations.",
+  "body": " Order of Transformations  If there is more than one transformation, follow this order:   Translate the graph horizontally.  Stretch or shrink the graph.  Reflect the graph across an axis.  Translate the graph vertically.   "
+},
+{
+  "id": "example-sqrt-plus-4-2",
+  "level": "2",
+  "url": "section-2-6.html#example-sqrt-plus-4-2",
+  "type": "Example",
+  "number": "103",
+  "title": "",
+  "body": "  Consider the function:    What is the \"Parent Function\"?  What transformations have been applied?  Sketch a graph of the Parent function and the transformed function without plotting points.      1. The parent function is (square root function).   2. The is outside the radical, so it shifts the graph up 4 units .   (shift up by 4)       "
+},
+{
+  "id": "example-abs-plus-3-minus-1-2",
+  "level": "2",
+  "url": "section-2-6.html#example-abs-plus-3-minus-1-2",
+  "type": "Example",
+  "number": "104",
+  "title": "",
+  "body": "  Consider the function:    What is the \"Parent Function\"?  What transformations have been applied?  Sketch a graph of the Parent function and the transformed function without plotting points.      1. The parent function is (absolute value function).   2. The inside the absolute value shifts the graph left 3 units ; the outside shifts it down 1 unit .   (left 3, down 1)       "
+},
+{
+  "id": "example-negative-3-squared-plus-1-2",
+  "level": "2",
+  "url": "section-2-6.html#example-negative-3-squared-plus-1-2",
+  "type": "Example",
+  "number": "105",
+  "title": "",
+  "body": "  Consider the function:    What is the \"Parent Function\"?  What transformations have been applied?  Sketch a graph of the Parent function and the transformed function without plotting points.      1. The parent function is (squaring\/quadratic function).   2. The transformations are:   : shift right 2 units  : reflect across the -axis and vertical stretch by 3  : shift up 1 unit          "
+},
+{
+  "id": "section-2-7",
   "level": "1",
-  "url": "handouts.html",
+  "url": "section-2-7.html",
+  "type": "Section",
+  "number": "",
+  "title": "Section 2.7 Analyzing Graphs of Functions",
+  "body": " Section 2.7 Analyzing Graphs of Functions    Symmetry   Symmetry Video  What does it mean to be symmetric?  From the dictionary: having sides or halves that are the same (example, mirror images).   Symmetry in Equations  Consider an equation in the variables and .    Symmetric with respect to the -axis: Substituting for results in an equivalent equation.   Symmetric with respect to the -axis: Substituting for results in an equivalent equation.   Symmetric with respect to the origin: Substituting for and for results in an equivalent equation.      Determine whether the graph of the equation is symmetric to the -axis, -axis, origin, or none of these.    Substitute for   Substitute for   Substitute for and for    Graph of          Substitute for :  The equation is unchanged, so the graph is symmetric with respect to the -axis .   Substitute for :  The equation is not equivalent, so the graph is not symmetric with respect to the -axis.   Substitute for and for :  The equation is not equivalent, so the graph is not symmetric with respect to the origin.  Therefore, the graph of is symmetric with respect to the -axis only.      Determine whether the graph of the equation is symmetric to the -axis, -axis, origin, or none of these.    Substitute for   Substitute for   Substitute for and for    Graph of          Substitute for :  The equation is not equivalent, so the graph is not symmetric with respect to the -axis.   Substitute for :  The equation is not equivalent, so the graph is not symmetric with respect to the -axis.   Substitute for and for :  The equation is unchanged, so the graph is symmetric with respect to the origin .  Therefore, the graph of is symmetric with respect to the origin only.       Even and Odd Functions   Even and Odd Functions Video   Even Function   for all in the domain of .  The graph is symmetric with respect to the -axis . Substituting for results in an equivalent equation.    Odd Function   for all in the domain of .  The graph is symmetric with respect to the origin . Substituting for and for results in an equivalent equation.     Determine if the function is even, odd, or neither.   1.   2.   3.      1.     Since , the function is even .   2.     and , so the function is neither even nor odd.   3.     Since , the function is odd .       Determine if each function shown is even, odd, or neither.    Graph 1       Graph 2          Graph 1: The graph is symmetric with respect to the -axis. For every point on the graph, the point is also on the graph. Therefore, this function is even .   Graph 2: The graph is symmetric with respect to the origin. For every point on the graph, the point is also on the graph. Therefore, this function is odd .       Piecewise Defined Functions   Piecewise Defined Functions Video   Piecewise Defined Function  A function that is defined differently on different intervals. That is, different \"pieces\" of the domain have different rules.     Given the piecewise function:   Evaluate:   a.   b.   c.     Graph of        a.  : Since , use .   b.  : Since , use .   c.  : Since , use .       Evaluate the piecewise function:   Find:   a.   b.   c.   d.   e.      a.  is in , so .  b.  is in , so .  c.  is in , so .  d.  is in , so .  e.  is not in the domain, so is undefined .       Increasing and Decreasing   Increasing and Decreasing Video   As you move from left to right , this graph falls from to , is constant from to , and rises from to .    Increasing, Decreasing, and Constant Behavior       While we intuitively understand these concepts, what does it mean mathematically?   Increasing, Decreasing, and Constant Functions  A function is increasing on an interval if, for any and in the interval,   A function is decreasing on an interval if, for any and in the interval,   A function is constant on an interval if, for any and in the interval,      Visualizing Increasing, Decreasing, and Constant       Example Video    Give the interval where is:   A. Increasing   B. Decreasing   C. Constant   Graph of         A.  is increasing on and .   B.  is decreasing on .   C.  is never constant.       Maxima and Minima   Maxima and Minima Video  The points at which a function changes its increasing, decreasing, or constant behavior are helpful in determining the relative (local) minimum or relative (local) maximum values of the function.   Relative Minimum and Relative Maximum  A function value is called a relative minimum of if there exists an interval that contains such that   A function value is called a relative maximum of if there exists an interval that contains such that      Relative Maxima and Minima         What are the maxima or minima for the function? Can we find the exact value?   Graph of        The graph of is a parabola that opens upward.  The vertex occurs at:    Therefore, the function has a relative minimum at .  There is no relative maximum since the parabola opens upward and extends to infinity.     "
+},
+{
+  "id": "symmetry-5",
+  "level": "2",
+  "url": "section-2-7.html#symmetry-5",
+  "type": "Definition",
+  "number": "129",
+  "title": "Symmetry in Equations.",
+  "body": " Symmetry in Equations  Consider an equation in the variables and .    Symmetric with respect to the -axis: Substituting for results in an equivalent equation.   Symmetric with respect to the -axis: Substituting for results in an equivalent equation.   Symmetric with respect to the origin: Substituting for and for results in an equivalent equation.   "
+},
+{
+  "id": "symmetry-6",
+  "level": "2",
+  "url": "section-2-7.html#symmetry-6",
+  "type": "Example",
+  "number": "106",
+  "title": "",
+  "body": "  Determine whether the graph of the equation is symmetric to the -axis, -axis, origin, or none of these.    Substitute for   Substitute for   Substitute for and for    Graph of          Substitute for :  The equation is unchanged, so the graph is symmetric with respect to the -axis .   Substitute for :  The equation is not equivalent, so the graph is not symmetric with respect to the -axis.   Substitute for and for :  The equation is not equivalent, so the graph is not symmetric with respect to the origin.  Therefore, the graph of is symmetric with respect to the -axis only.   "
+},
+{
+  "id": "symmetry-7",
+  "level": "2",
+  "url": "section-2-7.html#symmetry-7",
+  "type": "Example",
+  "number": "107",
+  "title": "",
+  "body": "  Determine whether the graph of the equation is symmetric to the -axis, -axis, origin, or none of these.    Substitute for   Substitute for   Substitute for and for    Graph of          Substitute for :  The equation is not equivalent, so the graph is not symmetric with respect to the -axis.   Substitute for :  The equation is not equivalent, so the graph is not symmetric with respect to the -axis.   Substitute for and for :  The equation is unchanged, so the graph is symmetric with respect to the origin .  Therefore, the graph of is symmetric with respect to the origin only.   "
+},
+{
+  "id": "even-odd-functions-3",
+  "level": "2",
+  "url": "section-2-7.html#even-odd-functions-3",
+  "type": "Definition",
+  "number": "132",
+  "title": "Even Function.",
+  "body": " Even Function   for all in the domain of .  The graph is symmetric with respect to the -axis . Substituting for results in an equivalent equation.  "
+},
+{
+  "id": "even-odd-functions-4",
+  "level": "2",
+  "url": "section-2-7.html#even-odd-functions-4",
+  "type": "Definition",
+  "number": "133",
+  "title": "Odd Function.",
+  "body": " Odd Function   for all in the domain of .  The graph is symmetric with respect to the origin . Substituting for and for results in an equivalent equation.  "
+},
+{
+  "id": "even-odd-functions-5",
+  "level": "2",
+  "url": "section-2-7.html#even-odd-functions-5",
+  "type": "Example",
+  "number": "108",
+  "title": "",
+  "body": "  Determine if the function is even, odd, or neither.   1.   2.   3.      1.     Since , the function is even .   2.     and , so the function is neither even nor odd.   3.     Since , the function is odd .   "
+},
+{
+  "id": "even-odd-functions-6",
+  "level": "2",
+  "url": "section-2-7.html#even-odd-functions-6",
+  "type": "Example",
+  "number": "109",
+  "title": "",
+  "body": "  Determine if each function shown is even, odd, or neither.    Graph 1       Graph 2          Graph 1: The graph is symmetric with respect to the -axis. For every point on the graph, the point is also on the graph. Therefore, this function is even .   Graph 2: The graph is symmetric with respect to the origin. For every point on the graph, the point is also on the graph. Therefore, this function is odd .   "
+},
+{
+  "id": "piecewise-functions-3",
+  "level": "2",
+  "url": "section-2-7.html#piecewise-functions-3",
+  "type": "Definition",
+  "number": "136",
+  "title": "Piecewise Defined Function.",
+  "body": " Piecewise Defined Function  A function that is defined differently on different intervals. That is, different \"pieces\" of the domain have different rules.  "
+},
+{
+  "id": "piecewise-functions-4",
+  "level": "2",
+  "url": "section-2-7.html#piecewise-functions-4",
+  "type": "Example",
+  "number": "110",
+  "title": "",
+  "body": "  Given the piecewise function:   Evaluate:   a.   b.   c.     Graph of        a.  : Since , use .   b.  : Since , use .   c.  : Since , use .    "
+},
+{
+  "id": "piecewise-functions-5",
+  "level": "2",
+  "url": "section-2-7.html#piecewise-functions-5",
+  "type": "Example",
+  "number": "111",
+  "title": "",
+  "body": "  Evaluate the piecewise function:   Find:   a.   b.   c.   d.   e.      a.  is in , so .  b.  is in , so .  c.  is in , so .  d.  is in , so .  e.  is not in the domain, so is undefined .   "
+},
+{
+  "id": "increasing-decreasing-4",
+  "level": "2",
+  "url": "section-2-7.html#increasing-decreasing-4",
+  "type": "Figure",
+  "number": "138",
+  "title": "",
+  "body": " Increasing, Decreasing, and Constant Behavior     "
+},
+{
+  "id": "increasing-decreasing-6",
+  "level": "2",
+  "url": "section-2-7.html#increasing-decreasing-6",
+  "type": "Definition",
+  "number": "139",
+  "title": "Increasing, Decreasing, and Constant Functions.",
+  "body": " Increasing, Decreasing, and Constant Functions  A function is increasing on an interval if, for any and in the interval,   A function is decreasing on an interval if, for any and in the interval,   A function is constant on an interval if, for any and in the interval,   "
+},
+{
+  "id": "increasing-decreasing-7",
+  "level": "2",
+  "url": "section-2-7.html#increasing-decreasing-7",
+  "type": "Figure",
+  "number": "140",
+  "title": "",
+  "body": " Visualizing Increasing, Decreasing, and Constant     "
+},
+{
+  "id": "increasing-decreasing-9",
+  "level": "2",
+  "url": "section-2-7.html#increasing-decreasing-9",
+  "type": "Example",
+  "number": "112",
+  "title": "",
+  "body": "  Give the interval where is:   A. Increasing   B. Decreasing   C. Constant   Graph of         A.  is increasing on and .   B.  is decreasing on .   C.  is never constant.   "
+},
+{
+  "id": "maxima-minima-3",
+  "level": "2",
+  "url": "section-2-7.html#maxima-minima-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "relative (local) minimum relative (local) maximum "
+},
+{
+  "id": "maxima-minima-4",
+  "level": "2",
+  "url": "section-2-7.html#maxima-minima-4",
+  "type": "Definition",
+  "number": "142",
+  "title": "Relative Minimum and Relative Maximum.",
+  "body": " Relative Minimum and Relative Maximum  A function value is called a relative minimum of if there exists an interval that contains such that   A function value is called a relative maximum of if there exists an interval that contains such that   "
+},
+{
+  "id": "maxima-minima-5",
+  "level": "2",
+  "url": "section-2-7.html#maxima-minima-5",
+  "type": "Figure",
+  "number": "143",
+  "title": "",
+  "body": " Relative Maxima and Minima     "
+},
+{
+  "id": "maxima-minima-6",
+  "level": "2",
+  "url": "section-2-7.html#maxima-minima-6",
+  "type": "Example",
+  "number": "113",
+  "title": "",
+  "body": "  What are the maxima or minima for the function? Can we find the exact value?   Graph of        The graph of is a parabola that opens upward.  The vertex occurs at:    Therefore, the function has a relative minimum at .  There is no relative maximum since the parabola opens upward and extends to infinity.   "
+},
+{
+  "id": "activities",
+  "level": "1",
+  "url": "activities.html",
   "type": "Chapter",
   "number": "",
-  "title": "Handouts",
-  "body": " Handouts      "
+  "title": "In-Class Activities",
+  "body": " In-Class Activities   These are copies of the in-class activities distributed during the semester.       "
 },
 {
   "id": "homework-3",
