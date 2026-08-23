@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="section-2-7">
+    <title>Section 2.7 Analyzing Graphs of Functions</title>
+
+    <!-- ========================================================
+         SYMMETRY (Video 1)
+         ======================================================== -->
+
+    <subsection xml:id="symmetry">
+        <title>Symmetry</title>
+
+        <!-- Video 1: Symmetry -->
+        <p><url href="https://youtu.be/pq4hHj7eyHU">Symmetry Video</url></p>
+
+        <p>
+            What does it mean to be symmetric?
+        </p>
+
+        <p>
+            From the dictionary: having sides or halves that are the same (example, mirror images).
+        </p>
+
+        <definition>
+            <title>Symmetry in Equations</title>
+            <p>
+                Consider an equation in the variables <m>x</m> and <m>y</m>.
+            </p>
+            <ul>
+                <li>
+                    <term effect="bold">Symmetric with respect to the <m>y</m>-axis:</term>
+                    Substituting <m>-x</m> for <m>x</m> results in an equivalent equation.
+                </li>
+                <li>
+                    <term effect="bold">Symmetric with respect to the <m>x</m>-axis:</term>
+                    Substituting <m>-y</m> for <m>y</m> results in an equivalent equation.
+                </li>
+                <li>
+                    <term effect="bold">Symmetric with respect to the origin:</term>
+                    Substituting <m>-x</m> for <m>x</m> and <m>-y</m> for <m>y</m> results in an equivalent equation.
+                </li>
+            </ul>
+        </definition>
+
+        <activity>
+            <statement>
+                <p>
+                    Determine whether the graph of the equation <m>y = x^2 + 5</m> is symmetric to the <m>x</m>-axis, <m>y</m>-axis, origin, or none of these.
+                </p>
+                <sidebyside widths="35% 60%">
+                    <p>
+                        <strong>Substitute <m>-x</m> for <m>x</m></strong><br/>
+                        <br/>
+                        <strong>Substitute <m>-y</m> for <m>y</m></strong><br/>
+                        <br/>
+                        <strong>Substitute <m>-x</m> for <m>x</m> and <m>-y</m> for <m>y</m></strong>
+                    </p>
+                    <figure>
+                        <caption>Graph of <m>y = x^2 + 5</m></caption>
+                        <image width="100%">
+                            <latex-image>
+                                <![CDATA[
+                                \begin{adjustbox}{max width=\linewidth}
+                                \begin{tikzpicture}[x=0.43cm,y=0.43cm,>=stealth,line cap=round,line join=round]
+                                    \draw[gray!30,line width=0.4pt] (-9,-1) grid[step=1] (13,14);
+                                    \draw[black!80,thick,->] (-9.5,0) -- (13.5,0) node[right,font=\tiny] {$x$};
+                                    \draw[black!80,thick,->] (0,-0.5) -- (0,14.5) node[above,font=\tiny] {$y$};
+                                    \foreach \x in {-9,-8,...,13} {\draw[black!80,thick] (\x,0.1) -- (\x,-0.1);}
+                                    \foreach \y in {-1,0,...,14} {\draw[black!80,thick] (0.1,\y) -- (-0.1,\y);}
+                                    \foreach \x in {-8,-6,-4,-2,2,4,6,8,10,12} {\node[font=\tiny,anchor=north] at (\x,-0.15) {$\x$};}
+                                    \foreach \y in {2,4,6,8,10,12} {\node[font=\tiny,anchor=east] at (-0.15,\y) {$\y$};}
+                                    \draw[graphblue,thick,domain=-3.25:3.25,samples=120] plot (\x,{(\x)^2+5});
+                                    \node[graphblue,font=\large] at (6.0,6.8) {$y=x^2+5$};
+                                \end{tikzpicture}
+                                \end{adjustbox}
+                                ]]>
+                            </latex-image>
+                        </image>
+                    </figure>
+                </sidebyside>
+            </statement>
+            <solution>
+                <p>
+                    <em>Substitute <m>-x</m> for <m>x</m>:</em>
+                    <me>y = (-x)^2 + 5 = x^2 + 5</me>
+                    The equation is unchanged, so the graph is <em effect="bold">symmetric with respect to the <m>y</m>-axis</em>.
+                </p>
+                <p>
+                    <em>Substitute <m>-y</m> for <m>y</m>:</em>
+                    <me>-y = x^2 + 5 \Rightarrow y = -x^2 - 5</me>
+                    The equation is not equivalent, so the graph is <em>not</em> symmetric with respect to the <m>x</m>-axis.
+                </p>
+                <p>
+                    <em>Substitute <m>-x</m> for <m>x</m> and <m>-y</m> for <m>y</m>:</em>
+                    <me>-y = (-x)^2 + 5 = x^2 + 5 \Rightarrow y = -x^2 - 5</me>
+                    The equation is not equivalent, so the graph is <em>not</em> symmetric with respect to the origin.
+                </p>
+                <p>
+                    Therefore, the graph of <m>y = x^2 + 5</m> is symmetric with respect to the <term effect="bold"><m>y</m>-axis</term> only.
+                </p>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p>
+                    Determine whether the graph of the equation <m>y = x^3</m> is symmetric to the <m>x</m>-axis, <m>y</m>-axis, origin, or none of these.
+                </p>
+                <sidebyside widths="35% 60%">
+                    <p>
+                        <strong>Substitute <m>-x</m> for <m>x</m></strong><br/>
+                        <br/>
+                        <strong>Substitute <m>-y</m> for <m>y</m></strong><br/>
+                        <br/>
+                        <strong>Substitute <m>-x</m> for <m>x</m> and <m>-y</m> for <m>y</m></strong>
+                    </p>
+                    <figure>
+                        <caption>Graph of <m>y = x^3</m></caption>
+                        <image width="100%">
+                            <latex-image>
+                                <![CDATA[
+                                \begin{adjustbox}{max width=\linewidth}
+                                \begin{tikzpicture}[x=0.43cm,y=0.43cm,>=stealth,line cap=round,line join=round]
+                                    \draw[gray!30,line width=0.4pt] (-9,-6) grid[step=1] (13,10);
+                                    \draw[black!80,thick,->] (-9.5,0) -- (13.5,0) node[right,font=\tiny] {$x$};
+                                    \draw[black!80,thick,->] (0,-6.5) -- (0,10.5) node[above,font=\tiny] {$y$};
+                                    \foreach \x in {-9,-8,...,13} {\draw[black!80,thick] (\x,0.1) -- (\x,-0.1);}
+                                    \foreach \y in {-6,-5,...,10} {\draw[black!80,thick] (0.1,\y) -- (-0.1,\y);}
+                                    \foreach \x in {-8,-6,-4,-2,2,4,6,8,10,12} {\node[font=\tiny,anchor=north] at (\x,-0.15) {$\x$};}
+                                    \foreach \y in {-4,-2,2,4,6,8} {\node[font=\tiny,anchor=east] at (-0.15,\y) {$\y$};}
+                                    \draw[graphblue,thick,domain=-2.15:2.15,samples=160] plot (\x,{(\x)^3});
+                                    \node[graphblue,font=\large] at (5.1,2.5) {$y=x^3$};
+                                \end{tikzpicture}
+                                \end{adjustbox}
+                                ]]>
+                            </latex-image>
+                        </image>
+                    </figure>
+                </sidebyside>
+            </statement>
+            <solution>
+                <p>
+                    <em>Substitute <m>-x</m> for <m>x</m>:</em>
+                    <me>y = (-x)^3 = -x^3</me>
+                    The equation is not equivalent, so the graph is <em>not</em> symmetric with respect to the <m>y</m>-axis.
+                </p>
+                <p>
+                    <em>Substitute <m>-y</m> for <m>y</m>:</em>
+                    <me>-y = x^3 \Rightarrow y = -x^3</me>
+                    The equation is not equivalent, so the graph is <em>not</em> symmetric with respect to the <m>x</m>-axis.
+                </p>
+                <p>
+                    <em>Substitute <m>-x</m> for <m>x</m> and <m>-y</m> for <m>y</m>:</em>
+                    <me>-y = (-x)^3 = -x^3 \Rightarrow y = x^3</me>
+                    The equation is unchanged, so the graph is <em effect="bold">symmetric with respect to the origin</em>.
+                </p>
+                <p>
+                    Therefore, the graph of <m>y = x^3</m> is symmetric with respect to the <term effect="bold">origin</term> only.
+                </p>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         EVEN AND ODD FUNCTIONS (Video 2)
+         ======================================================== -->
+
+    <subsection xml:id="even-odd-functions">
+        <title>Even and Odd Functions</title>
+
+        <!-- Video 2: Even and Odd Functions -->
+        <p><url href="https://youtu.be/4dOQePLgqxE">Even and Odd Functions Video</url></p>
+
+        <definition>
+            <title>Even Function</title>
+            <p>
+                <m>f(-x) = f(x)</m> for all <m>x</m> in the domain of <m>f</m>.
+            </p>
+            <p>
+                The graph is <em effect="bold">symmetric with respect to the <m>y</m>-axis</em>.
+                Substituting <m>-x</m> for <m>x</m> results in an equivalent equation.
+            </p>
+        </definition>
+
+        <definition>
+            <title>Odd Function</title>
+            <p>
+                <m>f(-x) = -f(x)</m> for all <m>x</m> in the domain of <m>f</m>.
+            </p>
+            <p>
+                The graph is <em effect="bold">symmetric with respect to the origin</em>.
+                Substituting <m>-x</m> for <m>x</m> and <m>-y</m> for <m>y</m> results in an equivalent equation.
+            </p>
+        </definition>
+
+        <activity>
+            <statement>
+                <p>
+                    Determine if the function is even, odd, or neither.
+                </p>
+                <!-- Added spacing between problems -->
+                <p><strong>1.</strong> <m>f(x) = x^4 - x^2 - 2</m></p>
+                <p><strong>2.</strong> <m>g(x) = x^3 - x + 4</m></p>
+                <p><strong>3.</strong> <m>h(x) = x^3 - x</m></p>
+            </statement>
+            <solution>
+                <p>
+                    <em>1.</em> <m>f(x) = x^4 - x^2 - 2</m>
+                </p>
+                <me>f(-x) = (-x)^4 - (-x)^2 - 2 = x^4 - x^2 - 2 = f(x)</me>
+                <p>Since <m>f(-x) = f(x)</m>, the function is <em effect="bold">even</em>.</p>
+
+                <p>
+                    <em>2.</em> <m>g(x) = x^3 - x + 4</m>
+                </p>
+                <me>g(-x) = (-x)^3 - (-x) + 4 = -x^3 + x + 4</me>
+                <p><m>g(-x) \neq g(x)</m> and <m>g(-x) \neq -g(x)</m>, so the function is <em>neither</em> even nor odd.</p>
+
+                <p>
+                    <em>3.</em> <m>h(x) = x^3 - x</m>
+                </p>
+                <me>h(-x) = (-x)^3 - (-x) = -x^3 + x = -(x^3 - x) = -h(x)</me>
+                <p>Since <m>h(-x) = -h(x)</m>, the function is <em effect="bold">odd</em>.</p>
+            </solution>
+        </activity>
+
+        <!-- Even/Odd Graphs (from PDF page 5) -->
+        <activity>
+            <statement>
+                <p>
+                    Determine if each function shown is even, odd, or neither.
+                </p>
+                <sidebyside widths="50% 50%">
+                    <figure>
+                        <caption>Graph 1</caption>
+                        <image width="100%">
+                            <latex-image>
+                                <![CDATA[
+                                \begin{adjustbox}{max width=\linewidth}
+                                \begin{tikzpicture}[x=0.6cm,y=0.6cm,>=stealth,line cap=round,line join=round]
+                                    \draw[gray!50,line width=0.4pt] (-5,-5) grid[step=1] (5,5);
+                                    \draw[black!80,thick,->] (-5.5,0) -- (5.5,0) node[right,font=\tiny] {$x$};
+                                    \draw[black!80,thick,->] (0,-5.5) -- (0,5.5) node[above,font=\tiny] {$y$};
+                                    \foreach \x in {-5,-4,...,5} {\draw[black!80,thick] (\x,0.08) -- (\x,-0.08);}
+                                    \foreach \y in {-5,-4,...,5} {\draw[black!80,thick] (0.08,\y) -- (-0.08,\y);}
+                                    \foreach \x in {-4,-2,2,4} {\node[font=\tiny,anchor=north] at (\x,-0.15) {$\x$};}
+                                    \foreach \y in {-4,-2,2,4} {\node[font=\tiny,anchor=east] at (-0.15,\y) {$\y$};}
+                                    \clip (-5,-5) rectangle (5,5);
+                                    \draw[graphblue,thick,domain=-3.35:3.35,samples=180] plot (\x,{-0.128*(\x)^4+0.92*(\x)^2});
+                                \end{tikzpicture}
+                                \end{adjustbox}
+                                ]]>
+                            </latex-image>
+                        </image>
+                    </figure>
+                    <figure>
+                        <caption>Graph 2</caption>
+                        <image width="100%">
+                            <latex-image>
+                                <![CDATA[
+                                \begin{adjustbox}{max width=\linewidth}
+                                \begin{tikzpicture}[x=0.6cm,y=0.6cm,>=stealth,line cap=round,line join=round]
+                                    \draw[gray!50,line width=0.4pt] (-5,-5) grid[step=1] (5,5);
+                                    \draw[black!80,thick,->] (-5.5,0) -- (5.5,0) node[right,font=\tiny] {$x$};
+                                    \draw[black!80,thick,->] (0,-5.5) -- (0,5.5) node[above,font=\tiny] {$y$};
+                                    \foreach \x in {-5,-4,...,5} {\draw[black!80,thick] (\x,0.08) -- (\x,-0.08);}
+                                    \foreach \y in {-5,-4,...,5} {\draw[black!80,thick] (0.08,\y) -- (-0.08,\y);}
+                                    \foreach \x in {-4,-2,2,4} {\node[font=\tiny,anchor=north] at (\x,-0.15) {$\x$};}
+                                    \foreach \y in {-4,-2,2,4} {\node[font=\tiny,anchor=east] at (-0.15,\y) {$\y$};}
+                                    \clip (-5,-5) rectangle (5,5);
+                                    \draw[graphblue,thick] plot[smooth] coordinates {
+                                        (-2.38,-5.0) (-2.20,-1.5) (-2.05,2.0) (-1.75,4.5)
+                                        (-1.45,3.8) (-1.05,1.0) (-0.55,-0.25) (-0.20,-0.05)
+                                        (0.15,0.25) (0.45,0.15) (0.75,-0.9) (1.05,-2.8)
+                                        (1.35,-4.55) (1.60,-4.35) (1.85,-2.0) (2.15,1.0)
+                                        (2.38,5.0)};
+                                \end{tikzpicture}
+                                \end{adjustbox}
+                                ]]>
+                            </latex-image>
+                        </image>
+                    </figure>
+                </sidebyside>
+            </statement>
+            <solution>
+                <p>
+                    <em>Graph 1:</em> The graph is symmetric with respect to the <m>y</m>-axis. For every point <m>(x, y)</m> on the graph, the point <m>(-x, y)</m> is also on the graph. Therefore, this function is <em effect="bold">even</em>.
+                </p>
+                <p>
+                    <em>Graph 2:</em> The graph is symmetric with respect to the origin. For every point <m>(x, y)</m> on the graph, the point <m>(-x, -y)</m> is also on the graph. Therefore, this function is <em effect="bold">odd</em>.
+                </p>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         PIECEWISE DEFINED FUNCTIONS (Video 3)
+         ======================================================== -->
+
+    <subsection xml:id="piecewise-functions">
+        <title>Piecewise Defined Functions</title>
+
+        <!-- Video 3: Piecewise Defined Functions -->
+        <p><url href="https://echo360.org/media/6872dd93-e385-4078-9419-7a448063d166/public">Piecewise Defined Functions Video</url></p>
+
+        <definition>
+            <title>Piecewise Defined Function</title>
+            <p>
+                A function that is defined differently on different intervals. That is, different "pieces" of the domain have different rules.
+            </p>
+        </definition>
+
+        <activity>
+            <statement>
+                <p>
+                    Given the piecewise function:
+                    <me>
+                        f(x) = \begin{cases}
+                            x^2 + 1 &amp; \text{if } x &lt; 0,\\
+                            x - 1   &amp; \text{if } x \ge 0
+                        \end{cases}
+                    </me>
+                </p>
+                <p>Evaluate:</p>
+                <sidebyside>
+                    <p><strong>a.</strong> <m>f(-1)</m></p>
+                    <p><strong>b.</strong> <m>f(0)</m></p>
+                    <p><strong>c.</strong> <m>f(2)</m></p>
+                </sidebyside>
+                <figure>
+                    <caption>Graph of <m>f(x)</m></caption>
+                    <image width="50%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}[x=0.53cm,y=0.53cm,>=stealth,line cap=round,line join=round]
+                                \draw[gray!40,line width=0.4pt] (-5,-5) grid[step=1] (5,5);
+                                \draw[black!80,thick,->] (-5.5,0) -- (5.5,0) node[right,font=\tiny] {$x$};
+                                \draw[black!80,thick,->] (0,-5.5) -- (0,5.5) node[above,font=\tiny] {$y$};
+                                \foreach \x in {-5,-4,...,5} {\draw[black!80,thick] (\x,0.08) -- (\x,-0.08);}
+                                \foreach \y in {-5,-4,...,5} {\draw[black!80,thick] (0.08,\y) -- (-0.08,\y);}
+                                \foreach \x in {-4,-2,2,4} {\node[font=\tiny,anchor=north] at (\x,-0.15) {$\x$};}
+                                \foreach \y in {-4,-2,2,4} {\node[font=\tiny,anchor=east] at (-0.15,\y) {$\y$};}
+                                \clip (-5,-5) rectangle (5,5);
+                                % Piece 1: x^2 + 1, x < 0
+                                \draw[graphblue,thick,domain=-2:0,samples=200] plot (\x,{(\x)^2+1});
+                                \draw[graphblue,thick,fill=white] (0,1) circle (0.15);
+                                % Piece 2: x - 1, x >= 0
+                                \draw[graphblue,thick] (0,-1) -- (5,4);
+                                \fill[graphblue] (0,-1) circle (0.15);
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </statement>
+            <solution>
+                <p><em>a.</em> <m>f(-1)</m>: Since <m>-1 &lt; 0</m>, use <m>x^2 + 1</m>.</p>
+                <me>f(-1) = (-1)^2 + 1 = 1 + 1 = 2</me>
+
+                <p><em>b.</em> <m>f(0)</m>: Since <m>0 \ge 0</m>, use <m>x - 1</m>.</p>
+                <me>f(0) = 0 - 1 = -1</me>
+
+                <p><em>c.</em> <m>f(2)</m>: Since <m>2 \ge 0</m>, use <m>x - 1</m>.</p>
+                <me>f(2) = 2 - 1 = 1</me>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p>
+                    Evaluate the piecewise function:
+                    <me>
+                        f(x) = \begin{cases}
+                            0.49 &amp; \text{if } 0 &lt; x \le 1,\\
+                            0.70 &amp; \text{if } 1 &lt; x \le 2,\\
+                            0.91 &amp; \text{if } 2 &lt; x \le 3,\\
+                            1.12 &amp; \text{if } 3 &lt; x \le 3.5
+                        \end{cases}
+                    </me>
+                </p>
+                <p>Find:</p>
+                <sidebyside>
+                    <p><strong>a.</strong> <m>f(0.75)</m></p>
+                    <p><strong>b.</strong> <m>f(1)</m></p>
+                    <p><strong>c.</strong> <m>f(1.2)</m></p>
+                    <p><strong>d.</strong> <m>f(2.5)</m></p>
+                    <p><strong>e.</strong> <m>f(4)</m></p>
+                </sidebyside>
+            </statement>
+            <solution>
+                <p><em>a.</em> <m>0.75</m> is in <m>0 &lt; x \le 1</m>, so <m>f(0.75) = 0.49</m>.</p>
+                <p><em>b.</em> <m>1</m> is in <m>0 &lt; x \le 1</m>, so <m>f(1) = 0.49</m>.</p>
+                <p><em>c.</em> <m>1.2</m> is in <m>1 &lt; x \le 2</m>, so <m>f(1.2) = 0.70</m>.</p>
+                <p><em>d.</em> <m>2.5</m> is in <m>2 &lt; x \le 3</m>, so <m>f(2.5) = 0.91</m>.</p>
+                <p><em>e.</em> <m>4</m> is not in the domain, so <m>f(4)</m> is <em>undefined</em>.</p>
+            </solution>
+        </activity>
+    </subsection>
+
+  <!-- ========================================================
+     INCREASING AND DECREASING (Video 4)
+     ======================================================== -->
+
+<subsection xml:id="increasing-decreasing">
+    <title>Increasing and Decreasing</title>
+
+    <!-- Video 4: Increasing and Decreasing -->
+    <p><url href="https://youtu.be/KxOp3s9ottg">Increasing and Decreasing Video</url></p>
+
+    <!-- Added introductory text -->
+    <p>
+        As you move from <em>left to right</em>, this graph falls from <m>x = -2</m> to <m>x = 0</m>, is constant from <m>x = 0</m> to <m>x = 2</m>, and rises from <m>x = 2</m> to <m>x = 4</m>.
+    </p>
+
+    <!-- Fixed graph with labels half the size -->
+    <figure>
+        <caption>Increasing, Decreasing, and Constant Behavior</caption>
+        <image width="60%">
+            <latex-image>
+                <![CDATA[
+                \begin{adjustbox}{max width=\linewidth}
+                \begin{tikzpicture}[x=0.48cm,y=0.48cm,>=stealth,line cap=round,line join=round]
+                    \draw[gray!40,line width=0.4pt] (-2.5,-1.5) grid[step=1] (4.5,4.5);
+                    \draw[black!80,thick,->] (-2.5,0) -- (4.5,0) node[right,font=\tiny] {$x$};
+                    \draw[black!80,thick,->] (0,-1.5) -- (0,4.5) node[above,font=\tiny] {$y$};
+                    \foreach \x in {-2,-1,1,2,3,4} {\draw[black!80,thick] (\x,0.08) -- (\x,-0.08);}
+                    \foreach \y in {-1,1,2,3,4} {\draw[black!80,thick] (0.08,\y) -- (-0.08,\y);}
+                    \foreach \x in {-2,-1,1,2,3,4} {\node[font=\tiny,anchor=north] at (\x,-0.15) {$\x$};}
+                    \foreach \y in {-1,1,2,3,4} {\node[font=\tiny,anchor=east] at (-0.15,\y) {$\y$};}
+                    \clip (-2.5,-1.5) rectangle (4.5,4.5);
+                    \draw[black,thick,domain=-2:0,samples=100] plot (\x,{0.75*(\x)^2+1});
+                    \draw[black,thick] (0,1)--(2,1);
+                    \draw[black,thick,domain=2:4,samples=100] plot (\x,{0.75*(\x-2)^2+1});
+                    \fill[black] (-2,4) circle (0.08);
+                    \fill[black] (0,1) circle (0.08);
+                    \fill[black] (2,1) circle (0.08);
+                    \fill[black] (4,4) circle (0.08);
+                    % Labels half the size - using \tiny
+                    \node[font=\tiny,rotate=-60] at (-1,2.5) {Decreasing};
+                    \node[font=\tiny] at (1.0,1.3) {Constant};
+                    \node[font=\tiny,rotate=60] at (3.0,2.5) {Increasing};
+                \end{tikzpicture}
+                \end{adjustbox}
+                ]]>
+            </latex-image>
+        </image>
+    </figure>
+
+    <!-- Added text -->
+    <p>
+        While we intuitively understand these concepts, what does it mean mathematically?
+    </p>
+
+    <definition>
+        <title>Increasing, Decreasing, and Constant Functions</title>
+        <p>
+            A function <m>f</m> is <term effect="bold">increasing</term> on an interval if, for any <m>x_1</m> and <m>x_2</m> in the interval,
+        </p>
+        <me>x_1 &lt; x_2 \quad \text{implies} \quad f(x_1) &lt; f(x_2).</me>
+        <p>
+            A function <m>f</m> is <term effect="bold">decreasing</term> on an interval if, for any <m>x_1</m> and <m>x_2</m> in the interval,
+        </p>
+        <me>x_1 &lt; x_2 \quad \text{implies} \quad f(x_1) &gt; f(x_2).</me>
+        <p>
+            A function <m>f</m> is <term effect="bold">constant</term> on an interval if, for any <m>x_1</m> and <m>x_2</m> in the interval,
+        </p>
+        <me>f(x_1) = f(x_2).</me>
+    </definition>
+
+    <!-- Three definition graphs: 2 on top, 1 below in the middle -->
+    <figure>
+        <caption>Visualizing Increasing, Decreasing, and Constant</caption>
+        <image width="90%">
+            <latex-image>
+                <![CDATA[
+                \begin{adjustbox}{max width=\linewidth}
+                \begin{tikzpicture}[x=0.9cm,y=0.9cm,>=stealth,line cap=round,line join=round]
+
+                    % LEFT: Increasing (first in top row)
+                    \begin{scope}[shift={(0,0)}]
+                        \draw[gray!65,->] (0,0) -- (0,3.5) node[above,font=\tiny] {$f(x)$};
+                        \draw[gray!65,->] (-0.2,0) -- (4.0,0) node[right,font=\tiny] {$x$};
+                        \draw[graphblue,thick] plot[smooth] coordinates {(0.2,0.45) (0.75,0.65) (1.25,0.95) (2.0,1.45) (2.85,2.15) (3.5,2.75)};
+                        \fill[graphblue] (1.25,0.95) circle (0.08);
+                        \fill[graphblue] (2.85,2.15) circle (0.08);
+                        \draw[dashed] (1.25,0)--(1.25,0.95);
+                        \draw[dashed] (2.85,0)--(2.85,2.15);
+                        \draw[dashed] (0,0.95)--(1.25,0.95);
+                        \draw[dashed] (0,2.15)--(2.85,2.15);
+                        \node[font=\tiny,anchor=north] at (1.25,0) {$x_1$};
+                        \node[font=\tiny,anchor=north] at (2.85,0) {$x_2$};
+                        \node[font=\tiny,anchor=east] at (0,0.95) {$f(x_1)$};
+                        \node[font=\tiny,anchor=east] at (0,2.15) {$f(x_2)$};
+                        \node[font=\bfseries] at (1.7,4.25) {Increasing};
+                        \node[font=\tiny,align=center] at (1.9,-0.8) {For all $x_1<x_2$ on $I$, $f(x_1)<f(x_2)$};
+                        \draw[red,thick] (0.25,-0.5) -- (3.5,-0.5);
+                        \node[red,font=\tiny] at (1.9,-0.7) {$I$};
+                    \end{scope}
+
+                    % RIGHT: Decreasing (second in top row)
+                    \begin{scope}[shift={(6.0,0)}]
+                        \draw[gray!65,->] (0,0) -- (0,3.5) node[above,font=\tiny] {$f(x)$};
+                        \draw[gray!65,->] (-0.2,0) -- (4.0,0) node[right,font=\tiny] {$x$};
+                        \draw[graphblue,thick] plot[smooth] coordinates {(0.25,3.0) (0.8,2.65) (1.25,2.25) (1.9,1.65) (2.85,0.95) (3.5,0.55)};
+                        \fill[graphblue] (1.25,2.25) circle (0.08);
+                        \fill[graphblue] (2.85,0.95) circle (0.08);
+                        \draw[dashed] (1.25,0)--(1.25,2.25);
+                        \draw[dashed] (2.85,0)--(2.85,0.95);
+                        \draw[dashed] (0,2.25)--(1.25,2.25);
+                        \draw[dashed] (0,0.95)--(2.85,0.95);
+                        \node[font=\tiny,anchor=north] at (1.25,0) {$x_1$};
+                        \node[font=\tiny,anchor=north] at (2.85,0) {$x_2$};
+                        \node[font=\tiny,anchor=east] at (0,2.25) {$f(x_1)$};
+                        \node[font=\tiny,anchor=east] at (0,0.95) {$f(x_2)$};
+                        \node[font=\bfseries] at (1.7,4.25) {Decreasing};
+                        \node[font=\tiny,align=center] at (1.9,-0.8) {For all $x_1<x_2$ on $I$, $f(x_1)>f(x_2)$};
+                        \draw[red,thick] (0.25,-0.5) -- (3.5,-0.5);
+                        \node[red,font=\tiny] at (1.9,-0.7) {$I$};
+                    \end{scope}
+
+                    % BOTTOM: Constant (centered below)
+                    \begin{scope}[shift={(3.0,-4.5)}]
+                        \draw[gray!65,->] (0,0) -- (0,3.5) node[above,font=\tiny] {$f(x)$};
+                        \draw[gray!65,->] (-0.2,0) -- (4.0,0) node[right,font=\tiny] {$x$};
+                        \draw[graphblue,thick] (0.3,2.0)--(3.5,2.0);
+                        \fill[graphblue] (1.25,2.0) circle (0.08);
+                        \fill[graphblue] (2.85,2.0) circle (0.08);
+                        \draw[dashed] (1.25,0)--(1.25,2.0);
+                        \draw[dashed] (2.85,0)--(2.85,2.0);
+                        \draw[dashed] (0,2.0)--(1.25,2.0);
+                        \node[font=\tiny,anchor=north] at (1.25,0) {$x_1$};
+                        \node[font=\tiny,anchor=north] at (2.85,0) {$x_2$};
+                        \node[font=\tiny,anchor=east] at (0,2.0) {$f(x_1)=f(x_2)$};
+                        \node[font=\bfseries] at (1.7,2.65) {Constant};
+                        \node[font=\tiny,align=center] at (1.9,-0.8) {For all $x_1$ and $x_2$ on $I$, $f(x_1)=f(x_2)$};
+                        \draw[red,thick] (0.25,-0.5) -- (3.5,-0.5);
+                        \node[red,font=\tiny] at (1.9,-0.7) {$I$};
+                    \end{scope}
+
+                \end{tikzpicture}
+                \end{adjustbox}
+                ]]>
+            </latex-image>
+        </image>
+    </figure>
+
+    <!-- Video 5: Example -->
+    <p><url href="https://youtu.be/dIVUaSY4jKM">Example Video</url></p>
+
+    <activity>
+        <statement>
+            <p>
+                Give the interval where <m>f(x)</m> is:
+            </p>
+            <p>
+                <strong>A.</strong> Increasing
+            </p>
+            <p>
+                <strong>B.</strong> Decreasing
+            </p>
+            <p>
+                <strong>C.</strong> Constant
+            </p>
+            <figure>
+                <caption>Graph of <m>f(x) = x^3 - 3x</m></caption>
+                <image width="50%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[x=0.8cm,y=0.8cm,>=stealth,line cap=round,line join=round]
+                            \draw[gray!40,line width=0.4pt] (-3,-3) grid[step=0.5] (3,3);
+                            \draw[black!80,thick,->] (-3.5,0) -- (3.5,0) node[right,font=\tiny] {$x$};
+                            \draw[black!80,thick,->] (0,-3.5) -- (0,3.5) node[above,font=\tiny] {$y$};
+                            \foreach \x in {-3,-2,-1,1,2,3} {\draw[black!80,thick] (\x,0.08) -- (\x,-0.08);}
+                            \foreach \y in {-3,-2,-1,1,2,3} {\draw[black!80,thick] (0.08,\y) -- (-0.08,\y);}
+                            \foreach \x in {-2,-1,1,2} {\node[font=\tiny,anchor=north] at (\x,-0.15) {$\x$};}
+                            \foreach \y in {-2,-1,1,2} {\node[font=\tiny,anchor=east] at (-0.15,\y) {$\y$};}
+                            \clip (-3,-3) rectangle (3,3);
+                            \draw[black,thick,domain=-2.5:2.5,samples=220] plot (\x,{(\x)^3-3*(\x)});
+                            \fill[black] (-1,2) circle (0.08);
+                            \fill[black] (1,-2) circle (0.08);
+                            \node[font=\small] at (-1.0,2.3) {$(-1,2)$};
+                            \node[font=\small] at (1.0,-2.3) {$(1,-2)$};
+                            \node[draw=gray!70,fill=white,font=\small,inner sep=3pt,anchor=south west] at (0.42,2.2) {$f(x)=x^3-3x$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+        </statement>
+        <solution>
+            <p>
+                <em>A.</em> <m>f(x)</m> is increasing on <m>(-\infty, -1)</m> and <m>(1, \infty)</m>.
+            </p>
+            <p>
+                <em>B.</em> <m>f(x)</m> is decreasing on <m>(-1, 1)</m>.
+            </p>
+            <p>
+                <em>C.</em> <m>f(x)</m> is never constant.
+            </p>
+        </solution>
+    </activity>
+</subsection>
+
+    <!-- ========================================================
+         MAXIMA AND MINIMA (Video 6)
+         ======================================================== -->
+
+    <subsection xml:id="maxima-minima">
+        <title>Maxima and Minima</title>
+
+        <!-- Video 6: Maxima and Minima -->
+        <p><url href="https://youtu.be/GaltHJF6WyI">Maxima and Minima Video</url></p>
+
+        <p>
+            The points at which a function changes its increasing, decreasing, or constant behavior are helpful in determining the <term effect="bold">relative (local) minimum</term> or <term effect="bold">relative (local) maximum</term> values of the function.
+        </p>
+
+        <definition>
+            <title>Relative Minimum and Relative Maximum</title>
+            <p>
+                A function value <m>f(a)</m> is called a <term effect="bold">relative minimum</term> of <m>f</m> if there exists an interval <m>(x_1, x_2)</m> that contains <m>a</m> such that
+            </p>
+            <me>x_1 &lt; x &lt; x_2 \quad \text{implies} \quad f(a) \le f(x).</me>
+            <p>
+                A function value <m>f(a)</m> is called a <term effect="bold">relative maximum</term> of <m>f</m> if there exists an interval <m>(x_1, x_2)</m> that contains <m>a</m> such that
+            </p>
+            <me>x_1 &lt; x &lt; x_2 \quad \text{implies} \quad f(a) \ge f(x).</me>
+        </definition>
+
+        <!-- Fixed graph with proper bounding box -->
+        <figure>
+            <caption>Relative Maxima and Minima</caption>
+            <image width="70%">
+                <latex-image>
+                    <![CDATA[
+                    \begin{adjustbox}{max width=\linewidth}
+                    \begin{tikzpicture}[x=0.9cm,y=0.9cm,>=stealth,line cap=round,line join=round]
+                        \useasboundingbox (-0.5,-0.5) rectangle (6.8,5.5);
+                        \draw[gray!40,line width=0.4pt] (0,0) grid[step=0.5] (6,4.5);
+                        \draw[gray!70,->] (0,0) -- (6.8,0) node[right,font=\tiny] {$x$};
+                        \draw[gray!70,->] (0,0) -- (0,5.2) node[above,font=\tiny] {$y$};
+                        \foreach \x in {1,2,3,4,5,6} {\draw[gray] (\x,0.08) -- (\x,-0.08) node[below,font=\tiny] {\x};}
+                        \foreach \y in {1,2,3,4} {\draw[gray] (0.08,\y) -- (-0.08,\y) node[left,font=\tiny] {\y};}
+                        \clip (-0.5,-0.5) rectangle (6.8,5.5);
+                        \draw[black,thick] plot[smooth] coordinates {
+                            (0,2.35) (0.20,1.65) (0.65,0.95) (1.05,0.80)
+                            (1.45,1.15) (1.95,2.10) (2.55,2.75) (2.95,2.95)
+                            (3.35,2.65) (3.80,1.55) (4.20,1.05) (4.55,1.35)
+                            (5.05,2.45) (5.55,3.45) (5.90,3.95) (6.35,3.55)};
+                        \fill[black] (1.05,0.80) circle (0.10);
+                        \fill[black] (2.95,2.95) circle (0.10);
+                        \fill[black] (4.20,1.05) circle (0.10);
+                        \fill[black] (5.90,3.95) circle (0.10);
+                        \node[font=\small,align=center] at (2.95,3.8) {Relative\\maxima};
+                        \draw[gray!70] (2.68,3.5) -- (2.95,3.02);
+                        \node[font=\small,align=center] at (5.05,4.5) {Relative\\maxima};
+                        \draw[gray!70] (5.20,4.2) -- (5.78,4.0);
+                        \node[font=\small] at (2.35,0.3) {Relative minima};
+                        \draw[gray!70] (1.85,0.55) -- (1.12,0.84);
+                        \draw[gray!70] (3.95,0.55) -- (4.17,1.03);
+                    \end{tikzpicture}
+                    \end{adjustbox}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+
+        <!-- Fixed graph with proper bounding box -->
+        <activity>
+            <statement>
+                <p>
+                    What are the maxima or minima for the function? Can we find the exact value?
+                </p>
+                <figure>
+                    <caption>Graph of <m>f(x) = (x-4)(x+2)</m></caption>
+                    <image width="80%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}[x=0.52cm,y=0.52cm,>=stealth,line cap=round,line join=round]
+                                \useasboundingbox (-12.5,-11) rectangle (13.5,10);
+                                \draw[gray!30,line width=0.4pt] (-12,-10) grid[step=1] (13,8);
+                                \draw[black!80,thick,->] (-12.5,0) -- (13.5,0) node[right,font=\tiny] {$x$};
+                                \draw[black!80,thick,->] (0,-10.5) -- (0,8.5) node[above,font=\tiny] {$y$};
+                                \foreach \x in {-12,-11,...,13} {\draw[black!80,thick] (\x,0.08) -- (\x,-0.08);}
+                                \foreach \y in {-10,-9,...,8} {\draw[black!80,thick] (0.08,\y) -- (-0.08,\y);}
+                                \foreach \x in {-10,-8,-6,-4,-2,2,4,6,8,10,12} {\node[font=\tiny,anchor=north] at (\x,-0.15) {$\x$};}
+                                \foreach \y in {-8,-6,-4,-2,2,4,6} {\node[font=\tiny,anchor=east] at (-0.15,\y) {$\y$};}
+                                \clip (-12.5,-11) rectangle (13.5,10);
+                                % f(x) = (x-4)(x+2) = x^2 - 2x - 8
+                                \draw[graphblue,thick,domain=-11:13,samples=240] plot (\x,{(\x-4)*(\x+2)});
+                                % Vertex at (1, -9)
+                                \fill[red] (1,-9) circle (0.12);
+                                \node[red,font=\small,anchor=north] at (1,-9.5) {$(1,-9)$};
+                                \node[graphblue,font=\large] at (6.6,1.05) {$f(x)=(x-4)(x+2)$};
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </statement>
+            <solution>
+                <p>
+                    The graph of <m>f(x) = (x-4)(x+2) = x^2 - 2x - 8</m> is a parabola that opens upward.
+                </p>
+                <p>
+                    The vertex occurs at:
+                </p>
+                <me>x = -\frac{b}{2a} = -\frac{-2}{2(1)} = 1</me>
+                <me>f(1) = 1^2 - 2(1) - 8 = 1 - 2 - 8 = -9</me>
+                <p>
+                    Therefore, the function has a <term effect="bold">relative minimum</term> at <m>(1, -9)</m>.
+                </p>
+                <p>
+                    There is no relative maximum since the parabola opens upward and extends to infinity.
+                </p>
+            </solution>
+        </activity>
+    </subsection>
+
+</section>
