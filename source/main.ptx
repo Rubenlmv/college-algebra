@@ -6,7 +6,7 @@
   <xi:include href="./docinfo.ptx" />
   <!-- By creating a PreTeXt "book" for the course, we can split components into "chapters" -->
   <book>
-    <title>Course Testing</title>
+    <title>College Algebra</title>
 
     <subtitle>MATH 1320 Fall  Semester 2026</subtitle>
 
@@ -22,7 +22,7 @@
       <title>Course Documents</title>
 
       <!-- Course syllabus -->
-      <xi:include href="./syllabus/syllabus.ptx" />
+     <!--  <xi:include href="./syllabus/syllabus.ptx" />-->
       <xi:include href="./syllabus/calendar.ptx" />
     
       <!-- Other documents could go here, like a schedule, project description, etc. -->
@@ -52,6 +52,8 @@
       <xi:include href="./notes/section2-5.ptx"/>
       <xi:include href="./notes/section2-6.ptx"/>
       <xi:include href="./notes/section2-7.ptx"/>
+      <xi:include href="./notes/section2-8.ptx"/>
+      <xi:include href="./notes/section3-1.ptx"/>
       <!-- etc. -->
 
     </chapter>

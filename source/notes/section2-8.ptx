@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="section-2-8">
+    <title>Section 2.8 Algebra and Composition of Functions</title>
+
+    <!-- ========================================================
+         OPERATIONS ON FUNCTIONS (Video 1)
+         ======================================================== -->
+
+    <subsection xml:id="operations-on-functions">
+        <title>Operations on Functions</title>
+
+        <!-- Video 1: Operations on Functions -->
+        <p><url href="https://youtu.be/5934UqzXvKA">Operations on Functions Video</url></p>
+
+        <p>
+            In business, we can define the Cost Function <m>C(x) = mx + b</m>, where <m>x</m> is the units produced, <m>m</m> is the unit cost and <m>b</m> is the fixed cost. Further, we define the Revenue function as <m>R(x) = px</m> where <m>p</m> is the selling price. Finally, we know profit is Revenue minus Cost, in other words, <m>P(x) = R(x) - C(x)</m>. We have created a "new" function by algebraically combining two functions.
+        </p>
+
+        <definition>
+            <title>Sum, Difference, Product, and Quotient of Functions</title>
+            <p>
+                Let <m>f</m> and <m>g</m> be functions with overlapping domains. Then:
+            </p>
+            <ul>
+                <li>
+                    <term effect="bold">Sum:</term>
+                    <me>(f + g)(x) = f(x) + g(x)</me>
+                </li>
+                <li>
+                    <term effect="bold">Difference:</term>
+                    <me>(f - g)(x) = f(x) - g(x)</me>
+                </li>
+                <li>
+                    <term effect="bold">Product:</term>
+                    <me>(fg)(x) = f(x)g(x)</me>
+                </li>
+                <li>
+                    <term effect="bold">Quotient:</term>
+                    <me>\left(\frac{f}{g}\right)(x) = \frac{f(x)}{g(x)}, \quad g(x) \neq 0</me>
+                </li>
+            </ul>
+        </definition>
+
+        <!-- Activity 1: Fixed layout - problems one below the other with spacing -->
+        <activity>
+            <statement>
+                <p>
+                    Let <m>f(x) = x^2 + 1</m> and <m>g(x) = 2x - 3</m>. Find:
+                </p>
+                <p><strong>1.</strong> <m>(f + g)(x)</m></p>
+                <p><strong>2.</strong> <m>(f - g)(x)</m></p>
+                <p><strong>3.</strong> <m>(fg)(x)</m></p>
+                <p><strong>4.</strong> <m>\left(\frac{f}{g}\right)(x)</m></p>
+                <p><strong>5.</strong> <m>(f + g)(2)</m></p>
+                <p><strong>6.</strong> <m>f(2) + g(2)</m></p>
+            </statement>
+            <solution>
+                <p><em>1.</em> <m>(f + g)(x) = (x^2 + 1) + (2x - 3) = x^2 + 2x - 2</m></p>
+                <p><em>2.</em> <m>(f - g)(x) = (x^2 + 1) - (2x - 3) = x^2 - 2x + 4</m></p>
+                <p><em>3.</em> <m>(fg)(x) = (x^2 + 1)(2x - 3) = 2x^3 - 3x^2 + 2x - 3</m></p>
+                <p><em>4.</em> <m>\left(\frac{f}{g}\right)(x) = \frac{x^2 + 1}{2x - 3}, \quad x \neq \frac{3}{2}</m></p>
+                <p><em>5.</em> <m>(f + g)(2) = 2^2 + 2(2) - 2 = 4 + 4 - 2 = 6</m></p>
+                <p><em>6.</em> <m>f(2) + g(2) = (4 + 1) + (4 - 3) = 5 + 1 = 6</m></p>
+                <p>
+                    Notice that <m>(f + g)(2) = f(2) + g(2)</m>, as expected.
+                </p>
+            </solution>
+        </activity>
+
+        <!-- Activity 2: Fixed layout - problems one below the other -->
+        <activity>
+            <statement>
+                <p>
+                    Let <m>f(x) = x^2 + 1</m>, <m>g(x) = 2x - 3</m>, and <m>h(x) = x</m>. Find:
+                </p>
+                <p><strong>1.</strong> <m>(f - g)(x)</m></p>
+                <p><strong>2.</strong> <m>(fg)(x)</m></p>
+                <p><strong>3.</strong> <m>\left(\frac{f}{g}\right)(x)</m></p>
+                <p><strong>4.</strong> <m>\left(\frac{f}{g}\right)(3)</m></p>
+                <p><strong>5.</strong> <m>\frac{f(3)}{g(3)}</m></p>
+                <p><strong>6.</strong> <m>(fh)(x)</m></p>
+            </statement>
+            <solution>
+                <p><em>1.</em> <m>(f - g)(x) = (x^2 + 1) - (2x - 3) = x^2 - 2x + 4</m></p>
+                <p><em>2.</em> <m>(fg)(x) = (x^2 + 1)(2x - 3) = 2x^3 - 3x^2 + 2x - 3</m></p>
+                <p><em>3.</em> <m>\left(\frac{f}{g}\right)(x) = \frac{x^2 + 1}{2x - 3}, \quad x \neq \frac{3}{2}</m></p>
+                <p><em>4.</em> <m>\left(\frac{f}{g}\right)(3) = \frac{3^2 + 1}{2(3) - 3} = \frac{10}{3}</m></p>
+                <p><em>5.</em> <m>\frac{f(3)}{g(3)} = \frac{10}{3}</m></p>
+                <p><em>6.</em> <m>(fh)(x) = (x^2 + 1)(x) = x^3 + x</m></p>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+     DIFFERENCE QUOTIENT (Video 2)
+     ======================================================== -->
+
+<subsection xml:id="difference-quotient">
+    <title>Difference Quotient</title>
+
+    <!-- Video 2: Difference Quotient -->
+    <p><url href="https://echo360.org/media/c812a653-ceae-49c1-b1ee-1935afc58388/public">Difference Quotient Video</url></p>
+
+    <p>
+        The average rate of change between <m>P</m> and <m>Q</m> is the slope of the secant line and is given by:
+    </p>
+    <me>
+        m = \frac{\Delta y}{\Delta x}
+        = \frac{f(x + h) - f(x)}{(x + h) - x}
+        = \frac{f(x + h) - f(x)}{h}
+    </me>
+
+    <p>
+        The expression
+        <me>\frac{f(x + h) - f(x)}{h}</me>
+        is called the <term effect="bold">difference quotient</term>.
+    </p>
+
+    <p>
+        Notice how similar this is to "Average Rate of Change." It provides a formula for the average rate of change between <m>x</m> and <m>x + h</m>.
+    </p>
+
+    <figure>
+        <caption>Difference Quotient: Secant Line</caption>
+        <image width="60%">
+            <latex-image>
+                <![CDATA[
+                \begin{adjustbox}{max width=\linewidth}
+                \begin{tikzpicture}[x=1cm,y=1cm,>=stealth,line cap=round,line join=round]
+                    \useasboundingbox (-0.5,-0.5) rectangle (9.0,6.5);
+                    % Axes
+                    \draw[->,very thick] (-0.30,0) -- (8.70,0) node[below right,font=\large] {$x$};
+                    \draw[->,very thick] (0,-0.35) -- (0,5.95) node[above left,font=\large] {$f(x)$};
+                    % Function curve
+                    \draw[graphblue,very thick,domain=0.55:8.25,samples=80] plot (\x,{5.25 - 5.02*exp(-0.36*\x)});
+                    % Secant line through points
+                    \draw[red,very thick] (0,1.6428) -- (8.60,5.7153);
+                    % Vertical dashed lines
+                    \draw[dashed,very thick] (1.55,0) -- (1.55,2.3768);
+                    \draw[dashed,very thick] (6.65,0) -- (6.65,4.7919);
+                    % Points
+                    \fill[graphblue] (1.55,2.3768) circle (4pt);
+                    \fill[graphblue] (6.65,4.7919) circle (4pt);
+                    % X-axis ticks and labels
+                    \draw[very thick] (1.55,-0.12) -- (1.55,0.12);
+                    \draw[very thick] (6.65,-0.12) -- (6.65,0.12);
+                    \node[below=5pt,font=\large] at (1.55,0) {$x$};
+                    \node[below=5pt,font=\large] at (6.65,0) {$x+h$};
+                    % Point labels
+                    \node[anchor=west,font=\large] at (2.15,1.95) {$P(x,f(x))$};
+                    \draw[thick] (2.08,2.12) -- (1.68,2.34);
+                    \node[anchor=west,font=\large] at (6.95,4.02) {$Q(x+h,f(x+h))$};
+                    \draw[thick] (6.92,4.25) -- (6.69,4.70);
+                    % Function label
+                    \node[graphblue,anchor=west,font=\large] at (7.15,4.68) {$y=f(x)$};
+                    % Secant line label
+                    \node[red,anchor=west,font=\large] at (5.00,5.42) {secant line};
+                    \draw[thick] (6.45,5.20) -- (6.90,4.99);
+                    % Horizontal brace for h
+                    \draw[decorate,decoration={brace,amplitude=5pt},thick] (1.55,0.55) -- (6.65,0.55)
+                        node[midway,above=7pt,font=\large] {$h$};
+                \end{tikzpicture}
+                \end{adjustbox}
+                ]]>
+            </latex-image>
+        </image>
+    </figure>
+
+    <!-- Example 1: f(x)=5x-3 -->
+    <activity>
+        <statement>
+            <p>
+                Find <m>\dfrac{f(x + h) - f(x)}{h}</m> for <m>f(x) = 5x - 3</m>.
+            </p>
+            <p>
+                Describe the graph of <m>f(x)</m>. How does this agree with what you found for the difference quotient?
+            </p>
+        </statement>
+        <solution>
+            <p>
+                <em>Step 1:</em> Find <m>f(x + h)</m>.
+            </p>
+            <me>f(x + h) = 5(x + h) - 3 = 5x + 5h - 3</me>
+            <p>
+                <em>Step 2:</em> Substitute into the difference quotient.
+            </p>
+            <me>
+                \frac{f(x + h) - f(x)}{h}
+                = \frac{(5x + 5h - 3) - (5x - 3)}{h}
+                = \frac{5h}{h}
+                = 5
+            </me>
+            <p>
+                The graph of <m>f(x) = 5x - 3</m> is a line with slope <m>m = 5</m>. The difference quotient gives the slope <m>5</m>, which matches the slope of the line.
+            </p>
+            <figure>
+                <caption>Graph of <m>f(x) = 5x - 3</m></caption>
+                <image width="60%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[x=0.6cm,y=0.6cm,>=stealth,line cap=round,line join=round]
+                            \useasboundingbox (-5.5,-5.5) rectangle (5.5,5.5);
+                            \draw[gray!40,line width=0.4pt] (-5,-5) grid[step=1] (5,5);
+                            \draw[black!80,thick,->] (-5.5,0) -- (5.5,0) node[right,font=\tiny] {$x$};
+                            \draw[black!80,thick,->] (0,-5.5) -- (0,5.5) node[above,font=\tiny] {$y$};
+                            \foreach \x in {-5,-4,...,5} {\draw[black!80,thick] (\x,0.08) -- (\x,-0.08);}
+                            \foreach \y in {-5,-4,...,5} {\draw[black!80,thick] (0.08,\y) -- (-0.08,\y);}
+                            \foreach \x in {-4,-2,2,4} {\node[font=\tiny,anchor=north] at (\x,-0.15) {$\x$};}
+                            \foreach \y in {-4,-2,2,4} {\node[font=\tiny,anchor=east] at (-0.15,\y) {$\y$};}
+                            \clip (-5.5,-5.5) rectangle (5.5,5.5);
+                            % f(x) = 5x - 3
+                            \draw[graphblue,thick,domain=-4.5:4.5,samples=100] plot (\x,{5*\x-3});
+                            % Two points on the line
+                            \fill[red] (0,-3) circle (0.08);
+                            \fill[red] (2,7) circle (0.08);
+                            \node[graphblue,font=\large] at (-3.5,4.0) {$f(x)=5x-3$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+        </solution>
+    </activity>
+
+   <!-- Example 2: f(x)=x^2-3x+2 (from the image) -->
+<activity>
+    <statement>
+        <p>
+            Find <m>\dfrac{f(x + h) - f(x)}{h}</m> for <m>f(x) = x^2 - 3x + 2</m>.
+        </p>
+        <p>
+            Consider what happens as <m>h \to 0</m>. Describe what that means.
+        </p>
+    </statement>
+    <solution>
+        <p>
+            <em>Step 1:</em> Find <m>f(x + h)</m>.
+        </p>
+        <me>f(x + h) = (x + h)^2 - 3(x + h) + 2</me>
+        <me>f(x + h) = x^2 + 2xh + h^2 - 3x - 3h + 2</me>
+
+        <p>
+            <em>Step 2:</em> Substitute into the difference quotient.
+        </p>
+        <me>
+            \frac{f(x + h) - f(x)}{h}
+            = \frac{(x^2 + 2xh + h^2 - 3x - 3h + 2) - (x^2 - 3x + 2)}{h}
+        </me>
+        <me>
+            = \frac{2xh + h^2 - 3h}{h}
+            = 2x + h - 3
+        </me>
+
+        <p>
+            <em>Step 3:</em> Consider what happens as <m>h \to 0</m>.
+        </p>
+        <me>
+            \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}
+            = \lim_{h \to 0} (2x + h - 3)
+            = 2x - 3
+        </me>
+
+        <p>
+            As <m>h \to 0</m>, the secant line approaches the tangent line to the parabola at the point <m>(x, f(x))</m>. The difference quotient approaches the instantaneous rate of change (the derivative) at that point. For <m>f(x) = x^2 - 3x + 2</m>, the derivative is <m>f'(x) = 2x - 3</m>, which gives the slope of the tangent line at any point <m>x</m>.
+        </p>
+
+        <figure>
+    <caption>Graph of <m>f(x) = x^2 - 3x + 2</m> with tangent line at <m>x = 1</m></caption>
+    <image width="55%">
+        <latex-image>
+            <![CDATA[
+            \begin{adjustbox}{max width=\linewidth}
+            \begin{tikzpicture}[x=0.6cm,y=0.6cm,>=stealth,line cap=round,line join=round]
+                \useasboundingbox (-5.5,-5.5) rectangle (7.5,13.5);
+                \draw[gray!40,line width=0.4pt] (-5,-5) grid[step=1] (7,13);
+                \draw[black!80,thick,->] (-5.5,0) -- (7.5,0) node[right,font=\tiny] {$x$};
+                \draw[black!80,thick,->] (0,-5.5) -- (0,13.5) node[above,font=\tiny] {$y$};
+                \foreach \x in {-5,-4,...,7} {\draw[black!80,thick] (\x,0.08) -- (\x,-0.08);}
+                \foreach \y in {-5,-4,...,13} {\draw[black!80,thick] (0.08,\y) -- (-0.08,\y);}
+                \foreach \x in {-4,-2,2,4,6} {\node[font=\tiny,anchor=north] at (\x,-0.15) {$\x$};}
+                \foreach \y in {-4,-2,2,4,6,8,10,12} {\node[font=\tiny,anchor=east] at (-0.15,\y) {$\y$};}
+                \clip (-5,-5) rectangle (7,13);
+                \draw[graphblue,thick,domain=-2:5,samples=100] plot (\x,{\x*\x - 3*\x + 2});
+                \draw[red,thick] (-3,4) -- (6,-5);
+                \fill[red] (1,0) circle (0.12);
+                \node[red,font=\large,anchor=south west] at (1.2,0.2) {$(1,0)$};
+                \node[graphblue,font=\large] at (-4.0,11.5) {$f(x)=x^2-3x+2$};
+                \node[red,font=\large] at (4.5,1.5) {tangent line};
+            \end{tikzpicture}
+            \end{adjustbox}
+            ]]>
+        </latex-image>
+    </image>
+</figure>
+    </solution>
+</activity>
+</subsection>
+    <!-- ========================================================
+         COMPOSITION OF FUNCTIONS (Video 3)
+         ======================================================== -->
+
+    <subsection xml:id="composition-of-functions">
+        <title>Composition of Functions</title>
+
+        <!-- Video 3: Composition of Functions -->
+        <p><url href="https://youtu.be/OBX-Yhf20D8">Composition of Functions Video</url></p>
+
+        <p>
+            You are ready to purchase the 3-D big screen television. But, the price is <m>\$1000</m>. Lucky for you, two stores have the television you want on SALE! And even better, it's a super, double discount sale.
+        </p>
+
+        <sidebyside widths="50% 50%">
+            <p>
+                <term effect="bold">Store A:</term> Price reduced by <m>\$200</m> and take an additional <m>20\%</m> off the already low price.
+            </p>
+            <p>
+                <term effect="bold">Store B:</term> <m>20\%</m> off PLUS take an additional <m>\$200</m> off the discounted price.
+            </p>
+        </sidebyside>
+
+        <p>
+            <em effect="bold">Are the prices the same? If not, which store has the better sale?</em>
+        </p>
+
+        <figure>
+            <caption>Store A: Function Composition</caption>
+            <image width="80%">
+                <latex-image>
+                    <![CDATA[
+                    \begin{adjustbox}{max width=\linewidth}
+                    \begin{tikzpicture}[x=0.65cm,y=0.65cm,>=stealth]
+                        % Store A label
+                        \node[font=\Large\bfseries,blue!70!black] at (0,4.5) {Store A};
+
+                        % First machine
+                        \draw[fill=gray!20,draw=black!60,thick,rounded corners=2pt] (-0.5,-0.5) rectangle (2.5,1.5);
+                        \draw[fill=white,draw=black!60,thick] (0.5,1.5) -- (0.6,2.0) -- (1.4,2.0) -- (1.5,1.5) -- cycle;
+                        \draw[->,very thick] (1.0,2.6) -- (1.0,2.1);
+                        \node[font=\large\bfseries] at (1.0,0.5) {$x-200$};
+                        \node[font=\small\bfseries,align=center] at (1.0,-0.8) {first discount};
+
+                        % Output from first to second
+                        \draw[->,very thick] (2.5,0.5) .. controls (4.0,0.5) and (4.2,-0.6) .. (5.5,0.1);
+
+                        % Second machine
+                        \draw[fill=gray!20,draw=black!60,thick,rounded corners=2pt] (5.5,-1.5) rectangle (8.5,0.5);
+                        \draw[fill=white,draw=black!60,thick] (6.5,0.5) -- (6.6,1.0) -- (7.4,1.0) -- (7.5,0.5) -- cycle;
+                        \draw[->,very thick] (7.0,1.6) -- (7.0,1.1);
+                        \node[font=\large\bfseries] at (7.0,-0.5) {$x-0.2x$};
+                        \node[font=\small\bfseries,align=center] at (7.0,-1.8) {additional 20\% off};
+
+                        % Original price
+                        \node[font=\bfseries\large] at (1.0,3.0) {\$1000};
+
+                        % Final price
+                        \node[font=\bfseries,anchor=west,align=left] at (10.5,-0.5) {Final price\\[-1pt]\large \$640};
+
+                        % Arrow from second machine to final price
+                        \draw[->,thick] (8.5,0.1) -- (10.0,0.1);
+                    \end{tikzpicture}
+                    \end{adjustbox}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+
+        <p>
+            For Store A:
+        </p>
+        <me>f(x) = x - 200, \quad g(x) = x - 0.2x = 0.8x</me>
+        <me>g(f(1000)) = (1000 - 200) - 0.2(1000 - 200) = 800 - 160 = \$640</me>
+
+        <figure>
+            <caption>Store B: Function Composition</caption>
+            <image width="80%">
+                <latex-image>
+                    <![CDATA[
+                    \begin{adjustbox}{max width=\linewidth}
+                    \begin{tikzpicture}[x=0.65cm,y=0.65cm,>=stealth]
+                        % Store B label
+                        \node[font=\Large\bfseries,green!60!black] at (0,4.5) {Store B};
+
+                        % First machine
+                        \draw[fill=gray!20,draw=black!60,thick,rounded corners=2pt] (-0.5,-0.5) rectangle (2.5,1.5);
+                        \draw[fill=white,draw=black!60,thick] (0.5,1.5) -- (0.6,2.0) -- (1.4,2.0) -- (1.5,1.5) -- cycle;
+                        \draw[->,very thick] (1.0,2.6) -- (1.0,2.1);
+                        \node[font=\large\bfseries] at (1.0,0.5) {$x-0.2x$};
+                        \node[font=\small\bfseries,align=center] at (1.0,-0.8) {first discount};
+
+                        % Output from first to second
+                        \draw[->,very thick] (2.5,0.5) .. controls (4.0,0.5) and (4.2,-0.6) .. (5.5,0.1);
+
+                        % Second machine
+                        \draw[fill=gray!20,draw=black!60,thick,rounded corners=2pt] (5.5,-1.5) rectangle (8.5,0.5);
+                        \draw[fill=white,draw=black!60,thick] (6.5,0.5) -- (6.6,1.0) -- (7.4,1.0) -- (7.5,0.5) -- cycle;
+                        \draw[->,very thick] (7.0,1.6) -- (7.0,1.1);
+                        \node[font=\large\bfseries] at (7.0,-0.5) {$x-200$};
+                        \node[font=\small\bfseries,align=center] at (7.0,-1.8) {additional \$200 off};
+
+                        % Original price
+                        \node[font=\bfseries\large] at (1.0,3.0) {\$1000};
+
+                        % Final price
+                        \node[font=\bfseries,anchor=west,align=left] at (10.5,-0.5) {Final price\\[-1pt]\large \$600};
+
+                        % Arrow from second machine to final price
+                        \draw[->,thick] (8.5,0.1) -- (10.0,0.1);
+                    \end{tikzpicture}
+                    \end{adjustbox}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+
+        <p>
+            For Store B:
+        </p>
+        <me>f(x) = x - 0.2x = 0.8x, \quad g(x) = x - 200</me>
+        <me>g(f(1000)) = (1000 - 0.2(1000)) - 200 = 800 - 200 = \$600</me>
+
+        <p>
+            The prices are <em effect="bold">not</em> the same. Store B has the better sale by <m>\$40</m>.
+        </p>
+
+        <definition>
+            <title>Composition of Functions</title>
+            <p>
+                The composition of <m>f</m> and <m>g</m>, denoted <m>(f \circ g)(x)</m>, is defined as:
+            </p>
+            <me>(f \circ g)(x) = f(g(x))</me>
+            <p>
+                The domain of <m>f \circ g</m> is the set of all <m>x</m> in the domain of <m>g</m> such that <m>g(x)</m> is in the domain of <m>f</m>.
+            </p>
+        </definition>
+
+        <!-- Missing example from Page 9 -->
+        <activity>
+            <statement>
+                <p>
+                    Let <m>f(x) = x^2 + 2x + 1</m> and <m>g(x) = x - 3</m>. Evaluate and simplify:
+                </p>
+                <p><strong>1.</strong> <m>(f \circ g)(x)</m></p>
+                <p><strong>2.</strong> <m>(g \circ f)(x)</m></p>
+            </statement>
+            <solution>
+                <p><em>1.</em> <m>(f \circ g)(x) = f(g(x))</m></p>
+                <me>f(g(x)) = f(x - 3) = (x - 3)^2 + 2(x - 3) + 1</me>
+                <me>f(g(x)) = (x^2 - 6x + 9) + (2x - 6) + 1</me>
+                <me>f(g(x)) = x^2 - 4x + 4 = (x - 2)^2</me>
+
+                <p><em>2.</em> <m>(g \circ f)(x) = g(f(x))</m></p>
+                <me>g(f(x)) = g(x^2 + 2x + 1) = (x^2 + 2x + 1) - 3</me>
+                <me>g(f(x)) = x^2 + 2x - 2</me>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         DECOMPOSITION (Video 4)
+         ======================================================== -->
+
+    <subsection xml:id="decomposition">
+        <title>Decomposition of Functions</title>
+
+        <!-- Video 4: Decomposition -->
+        <p><url href="https://youtu.be/NmfaC7etZms">Decomposition Video</url></p>
+
+        <p>
+            The process of finding two functions whose composition is the original function is called <term effect="bold">decomposition</term>.
+        </p>
+
+        <activity>
+            <statement>
+                <p>
+                    Given <m>h(x) = \sqrt{x + 2}</m>, find functions <m>f(x)</m> and <m>g(x)</m> such that <m>(f \circ g)(x) = h(x)</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    We need to decompose <m>h(x)</m> into two functions. Let:
+                </p>
+                <me>g(x) = x + 2, \quad f(x) = \sqrt{x}</me>
+                <p>
+                    Then:
+                </p>
+                <me>(f \circ g)(x) = f(g(x)) = f(x + 2) = \sqrt{x + 2} = h(x)</me>
+                <p>
+                    Therefore, <m>f(x) = \sqrt{x}</m> and <m>g(x) = x + 2</m>.
+                </p>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p>
+                    Given <m>h(x) = (2x - 4)^3</m>, find functions <m>f(x)</m> and <m>g(x)</m> such that <m>(f \circ g)(x) = h(x)</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    We need to decompose <m>h(x)</m> into two functions. Let:
+                </p>
+                <me>g(x) = 2x - 4, \quad f(x) = x^3</me>
+                <p>
+                    Then:
+                </p>
+                <me>(f \circ g)(x) = f(g(x)) = f(2x - 4) = (2x - 4)^3 = h(x)</me>
+                <p>
+                    Therefore, <m>f(x) = x^3</m> and <m>g(x) = 2x - 4</m>.
+                </p>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         FINAL EXAMPLE WITH GRAPH (Page 11)
+         ======================================================== -->
+
+    <subsection xml:id="final-example">
+        <title>Using Graphs for Function Operations</title>
+
+        <p>
+            Use the graphs of <m>f(x)</m> and <m>g(x)</m> below to find:
+        </p>
+
+        <!-- Problems with 2 per line for spacing -->
+        <sidebyside widths="50% 50%">
+            <p><strong>1.</strong> <m>(f - g)(3)</m></p>
+            <p><strong>2.</strong> <m>(fg)(-1)</m></p>
+        </sidebyside>
+        <sidebyside widths="50% 50%">
+            <p><strong>3.</strong> <m>(f \circ g)(-1)</m></p>
+            <p><strong>4.</strong> <m>(g \circ f)(-1)</m></p>
+        </sidebyside>
+        <sidebyside widths="50% 50%">
+            <p><strong>5.</strong> <m>(f \circ g)(0)</m></p>
+        </sidebyside>
+
+        <figure>
+            <caption>Graphs of <m>f(x)</m> and <m>g(x)</m></caption>
+            <image width="60%">
+                <latex-image>
+                    <![CDATA[
+                    \begin{adjustbox}{max width=\linewidth}
+                    \begin{tikzpicture}[x=0.6cm,y=0.6cm,>=stealth,line cap=round,line join=round]
+                        \draw[gray!35,line width=0.4pt] (-5,-5) grid[step=1] (5,5);
+                        \draw[black!80,thick,->] (-5.8,0) -- (5.8,0) node[right,font=\tiny] {$x$};
+                        \draw[black!80,thick,->] (0,-5.8) -- (0,5.8) node[above,font=\tiny] {$y$};
+                        \foreach \x in {-5,-4,...,5} {\draw[black!80,thick] (\x,0.08) -- (\x,-0.08);}
+                        \foreach \y in {-5,-4,...,5} {\draw[black!80,thick] (0.08,\y) -- (-0.08,\y);}
+                        \foreach \x in {-4,-2,2,4} {\node[font=\tiny,anchor=north] at (\x,-0.15) {$\x$};}
+                        \foreach \y in {-4,-2,2,4} {\node[font=\tiny,anchor=east] at (-0.15,\y) {$\y$};}
+                        \node[font=\tiny,anchor=south east] at (-0.05,-0.05) {0};
+                        \clip (-5,-5) rectangle (5,5);
+
+                        % f(x): left ray, horizontal, right ray
+                        \draw[graphblue,very thick,->,>=stealth] (-4,-2) -- (-2,2);
+                        \draw[graphblue,very thick] (-2,2) -- (1,2);
+                        \draw[graphblue,very thick,->,>=stealth] (1,2) -- (4,5);
+                        \node[graphblue,font=\large] at (3.0,5.2) {$f(x)$};
+
+                        % g(x): left ray, rising, descending right ray
+                        \draw[red,very thick,<-,>=stealth] (-4,-4) -- (-2,-4);
+                        \draw[red,very thick] (-2,-4) -- (2,4);
+                        \draw[red,very thick,->,>=stealth] (2,4) -- (5,1);
+                        \node[red,font=\large] at (5.2,1.0) {$g(x)$};
+                    \end{tikzpicture}
+                    \end{adjustbox}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+
+        <solution>
+            <p>
+                From the graph:
+            </p>
+            <p>
+                <m>f(-1) = 2</m>, <m>g(-1) = -4</m>,
+                <m>f(3) = 4.5</m> (approximately), <m>g(3) = 1</m> (approximately),
+                <m>f(0) = 2</m>, <m>g(0) = -3</m>
+            </p>
+
+            <sidebyside widths="50% 50%">
+                <p><em>1.</em> <m>(f - g)(3) = f(3) - g(3) = 4.5 - 1 = 3.5</m></p>
+                <p><em>2.</em> <m>(fg)(-1) = f(-1)g(-1) = 2(-4) = -8</m></p>
+            </sidebyside>
+            <sidebyside widths="50% 50%">
+                <p><em>3.</em> <m>(f \circ g)(-1) = f(g(-1)) = f(-4) \approx -2</m></p>
+                <p><em>4.</em> <m>(g \circ f)(-1) = g(f(-1)) = g(2) \approx 4</m></p>
+            </sidebyside>
+            <sidebyside widths="50% 50%">
+                <p><em>5.</em> <m>(f \circ g)(0) = f(g(0)) = f(-3) \approx -1</m></p>
+            </sidebyside>
+        </solution>
+    </subsection>
+
+</section>

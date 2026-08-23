@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-  
-
 <section xml:id="section-1-1">
     <title>Section 1.1 Linear Equations and Rational Equations</title>
 
@@ -17,46 +15,38 @@
         </p>
     </subsection>
 
-  <subsection xml:id="idea-2-solving-equations">
-    <title>Solving Equations</title>
-    <p>
-        To solve an equation means to find all possible solutions.
-    </p>
-    <p>
-        Good News! When solving an equation you can do anything you want—as long as you do it twice. Once to the whole left side and 
-        once to the whole right side.
-    </p>
-    
-    <!-- Custom box with CLASS instead of ID -->
-    <algorithm label="Problem">
-    <p>The most common things we do:</p>
-    <p>
-        <ul>
-            <li><em>Add/subtract</em> same value from both sides</li>
-            <li><em>Multiply/divide</em> both sides by the same non-zero value</li>
-        </ul>
-    </p>
-    <p>We solve equations by:</p>
-    <p>
-        <ol>
-            <li><em>Distribute</em> to eliminate parentheses</li>
-            <li><em>Combine</em> "Like Terms"</li>
-            <li>Use <em>Addition/Subtraction</em> to "collect" variables on one side, constants on the other</li>
-            <li>Use <em>Multiplication/Division</em> to isolate the variable</li>
-        </ol>
-    </p>
-</algorithm>
-</subsection>
+    <subsection xml:id="idea-2-solving-equations">
+        <title>Solving Equations</title>
+        <p>
+            To solve an equation means to find all possible solutions.
+        </p>
+        <p>
+            Good News! When solving an equation you can do anything you want—as long as you do it twice. Once to the whole left side and 
+            once to the whole right side.
+        </p>
+        
+        <algorithm number="no">
+            <title>Problem-Solving Strategy</title>
+            <p>The most common things we do:</p>
+            <ul>
+                <li><em>Add/subtract</em> same value from both sides</li>
+                <li><em>Multiply/divide</em> both sides by the same non-zero value</li>
+            </ul>
+            <p>We solve equations by:</p>
+            <ol>
+                <li><em>Distribute</em> to eliminate parentheses</li>
+                <li><em>Combine</em> "Like Terms"</li>
+                <li>Use <em>Addition/Subtraction</em> to "collect" variables on one side, constants on the other</li>
+                <li>Use <em>Multiplication/Division</em> to isolate the variable</li>
+            </ol>
+        </algorithm>
+    </subsection>
 
+    <!-- Video 1: Solving Linear Equations (clickable link) -->
     <subsection xml:id="solving-linear-equations-video">
-        <title>Solving Linear Equations Video</title>
+        <title>Solving Linear Equations</title>
         
-        <p>Watch the video below for a step-by-step explanation:</p>
-        
-        
-            <caption>Solving Linear Equations</caption>
-            <interactive iframe="https://echo360.org/media/9d4f201e-b274-47f8-909f-24c4eb74d050/public" />
-        
+        <p><url href="https://echo360.org/media/9d4f201e-b274-47f8-909f-24c4eb74d050/public">Solving Linear Equations Video</url></p>
     </subsection>
 
     <subsection xml:id="example-linear-equation">
@@ -83,23 +73,22 @@
     </subsection>
 
     <subsection xml:id="clearing-fractions">
-    <title>Clearing Fractions</title>
-    
-    <algorithm number="2">
-        <p>To clear fractions from an equation:</p>
-        <ol>
-            <li><em>Find the Lowest Common Denominator</em> (LCD) of ALL the fractions. (If you can't find the lowest common denominator, just multiply all denominators together.)</li>
-            <li><em>Multiply</em> every term (on BOTH sides) by the LCD</li>
-            <li><em>Simplify</em> each term. There should be no fractions.</li>
-            <li><em>Solve</em> the new equation using your algebra skills.</li>
-        </ol>
-    </algorithm>
-</subsection>
-
-xml:id="fig-clearing-fractions">
-            <caption>Clearing the Fraction</caption>
-            <interactive iframe="https://echo360.org/media/ad586bdc-3b3d-4da4-8d1e-832db422fccc/public" />
-       
+        <title>Clearing Fractions</title>
+        
+        <!-- Video 2: Clearing Fractions (clickable link) -->
+        <p><url href="https://echo360.org/media/ad586bdc-3b3d-4da4-8d1e-832db422fccc/public">Clearing Fractions Video</url></p>
+        
+        <algorithm number="no">
+            <title>Clearing Fractions</title>
+            <p>To clear fractions from an equation:</p>
+            <ol>
+                <li><em>Find the Lowest Common Denominator</em> (LCD) of ALL the fractions. (If you can't find the lowest common denominator, just multiply all denominators together.)</li>
+                <li><em>Multiply</em> every term (on BOTH sides) by the LCD</li>
+                <li><em>Simplify</em> each term. There should be no fractions.</li>
+                <li><em>Solve</em> the new equation using your algebra skills.</li>
+            </ol>
+        </algorithm>
+    </subsection>
 
     <subsection xml:id="example-clearing-fractions">
         <title>Example</title>
@@ -199,6 +188,4 @@ xml:id="fig-clearing-fractions">
          
     </subsection>
 
-
 </section>
-

@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="section-3-1">
+    <title>Section 3.1 Quadratic Functions</title>
+
+    <!-- ========================================================
+         INTRODUCTION
+         ======================================================== -->
+
+    <subsection xml:id="intro-quadratic-functions">
+        <title>Quadratic Functions</title>
+
+        <definition>
+            <title>Quadratic Function</title>
+            <p>
+                A quadratic function is a function that can be written in the form
+            </p>
+            <me>f(x) = ax^2 + bx + c, \quad a \neq 0</me>
+            <p>
+                That is, it is an equation of degree 2.
+            </p>
+        </definition>
+
+        <!-- Video 1: Graph of a Quadratic Function -->
+        <p><url href="https://youtu.be/A2eK7VziEn0">The Graph of a Quadratic Function Video</url></p>
+
+        <p>
+            The graph of a quadratic function is a <term>parabola</term>.
+        </p>
+
+        <sidebyside widths="50% 50%">
+            <figure>
+                <caption>Parabola Opens Upward <m>(a &gt; 0)</m></caption>
+                <image width="80%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[x=0.52cm,y=0.52cm,>=stealth,line cap=round,line join=round]
+                            \useasboundingbox (-3.5,-3.5) rectangle (3.5,3.5);
+                            \draw[gray!50,line width=0.4pt] (-3,-3) grid[step=1] (3,3);
+                            \draw[black!80,->,very thick] (-3.45,0) -- (3.45,0) node[right,font=\tiny] {$x$};
+                            \draw[black!80,->,very thick] (0,-3.45) -- (0,3.45) node[above,font=\tiny] {$y$};
+                            \foreach \x in {-2,-1,1,2} {\draw[black!80,thick] (\x,0.08) -- (\x,-0.08) node[below,font=\tiny] {$\x$};}
+                            \foreach \y in {-2,-1,1,2} {\draw[black!80,thick] (0.08,\y) -- (-0.08,\y) node[left,font=\tiny] {$\y$};}
+                            \draw[graphblue,very thick,domain=-1.3:1.9,samples=100] plot (\x,{2*(\x-0.3)^2-1.8});
+                            \fill[red] (0.3,-1.8) circle (2.8pt);
+                            \node[red,font=\tiny,above right] at (0.3,-1.8) {$(h,k)$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+
+            <figure>
+                <caption>Parabola Opens Downward <m>(a &lt; 0)</m></caption>
+                <image width="80%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[x=0.52cm,y=0.52cm,>=stealth,line cap=round,line join=round]
+                            \useasboundingbox (-3.5,-3.5) rectangle (3.5,3.5);
+                            \draw[gray!50,line width=0.4pt] (-3,-3) grid[step=1] (3,3);
+                            \draw[black!80,->,very thick] (-3.45,0) -- (3.45,0) node[right,font=\tiny] {$x$};
+                            \draw[black!80,->,very thick] (0,-3.45) -- (0,3.45) node[above,font=\tiny] {$y$};
+                            \foreach \x in {-2,-1,1,2} {\draw[black!80,thick] (\x,0.08) -- (\x,-0.08) node[below,font=\tiny] {$\x$};}
+                            \foreach \y in {-2,-1,1,2} {\draw[black!80,thick] (0.08,\y) -- (-0.08,\y) node[left,font=\tiny] {$\y$};}
+                            \draw[graphblue,very thick,domain=-1.9:1.3,samples=100] plot (\x,{-1.8*(\x+0.3)^2+1.8});
+                            \fill[red] (-0.3,1.8) circle (2.8pt);
+                            \node[red,font=\tiny,above left] at (-0.3,1.8) {$(h,k)$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+        </sidebyside>
+    </subsection>
+
+    <!-- ========================================================
+         VERTEX FORM
+         ======================================================== -->
+
+    <subsection xml:id="vertex-form">
+        <title>Vertex (Standard Form)</title>
+
+        <definition>
+            <title>Vertex Form</title>
+            <p>
+                The function may be written in <term>vertex form</term> as
+            </p>
+            <me>f(x) = a(x - h)^2 + k</me>
+            <p>
+                In this case, the <term>vertex</term> is at the point <m>(h, k)</m>.
+            </p>
+            <p>
+                <em>Notice:</em>
+            </p>
+            <ul>
+                <li>The function is written as <m>(x - h)</m>.</li>
+                <li>Axis of symmetry: <m>x = h</m>.</li>
+            </ul>
+        </definition>
+
+        <sidebyside widths="50% 50%">
+            <figure>
+                <caption>Vertex <m>(h, k)</m> with <m>a &gt; 0</m></caption>
+                <image width="90%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[x=0.58cm,y=0.58cm,>=stealth,line cap=round,line join=round]
+                            \useasboundingbox (-3.5,-3.5) rectangle (3.5,3.5);
+                            \draw[gray!50,line width=0.4pt] (-3,-3) grid[step=1] (3,3);
+                            \draw[black!80,->,very thick] (-3.45,0) -- (3.45,0) node[right,font=\tiny] {$x$};
+                            \draw[black!80,->,very thick] (0,-3.45) -- (0,3.45) node[above,font=\tiny] {$y$};
+                            \foreach \x in {-2,-1,1,2} {\draw[black!80,thick] (\x,0.08) -- (\x,-0.08) node[below,font=\tiny] {$\x$};}
+                            \foreach \y in {-2,-1,1,2} {\draw[black!80,thick] (0.08,\y) -- (-0.08,\y) node[left,font=\tiny] {$\y$};}
+                            \draw[graphblue,very thick,domain=-1.1:2.2,samples=100] plot (\x,{1.8*(\x-0.55)^2-1.8});
+                            \fill[red] (0.55,-1.8) circle (2.8pt);
+                            \node[red,font=\tiny,anchor=north west] at (0.55,-1.8) {$(h,k)$};
+                            \draw[red!65,dashed,thick] (0.55,-3) -- (0.55,3);
+                            \node[red!65,font=\tiny,above] at (0.65,3.1) {$x=h$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+
+            <figure>
+                <caption>Vertex <m>(h, k)</m> with <m>a &lt; 0</m></caption>
+                <image width="90%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[x=0.58cm,y=0.58cm,>=stealth,line cap=round,line join=round]
+                            \useasboundingbox (-3.5,-3.5) rectangle (3.5,3.5);
+                            \draw[gray!50,line width=0.4pt] (-3,-3) grid[step=1] (3,3);
+                            \draw[black!80,->,very thick] (-3.45,0) -- (3.45,0) node[right,font=\tiny] {$x$};
+                            \draw[black!80,->,very thick] (0,-3.45) -- (0,3.45) node[above,font=\tiny] {$y$};
+                            \foreach \x in {-2,-1,1,2} {\draw[black!80,thick] (\x,0.08) -- (\x,-0.08) node[below,font=\tiny] {$\x$};}
+                            \foreach \y in {-2,-1,1,2} {\draw[black!80,thick] (0.08,\y) -- (-0.08,\y) node[left,font=\tiny] {$\y$};}
+                            \draw[graphblue,very thick,domain=-2.3:1.1,samples=100] plot (\x,{-1.8*(\x+0.6)^2+1.8});
+                            \fill[red] (-0.6,1.8) circle (2.8pt);
+                            \node[red,font=\tiny,anchor=south] at (-0.6,2.1) {$(h,k)$};
+                            \draw[red!65,dashed,thick] (-0.6,-3) -- (-0.6,3);
+                            \node[red!65,font=\tiny,above] at (-0.6,3.1) {$x=h$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+        </sidebyside>
+    </subsection>
+
+    <!-- ========================================================
+         YOU TRY: EXAMPLE 1
+         ======================================================== -->
+
+    <subsection xml:id="example-graph-vertex-form">
+        <title>You Try: Example</title>
+
+        <activity>
+            <statement>
+                <p>
+                    Graph the quadratic function
+                    <me>f(x) = (x - 2)^2 - 3</me>
+                </p>
+                <p>
+                    Identify the vertex, <m>x</m>- and <m>y</m>-intercepts, and axis of symmetry.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <em>Vertex:</em> <m>(2, -3)</m>
+                </p>
+                <p>
+                    <em>Axis of symmetry:</em> <m>x = 2</m>
+                </p>
+                <p>
+                    <em><m>x</m>-intercepts:</em> <m>(2 \pm \sqrt{3}, 0)</m> ≈ <m>(0.268, 0)</m> and <m>(3.732, 0)</m>
+                </p>
+                <p>
+                    <em><m>y</m>-intercept:</em> <m>(0, 1)</m>
+                </p>
+
+                <figure>
+                    <caption>Graph of <m>f(x) = (x-2)^2 - 3</m></caption>
+                    <image width="70%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}[x=0.6cm,y=0.6cm,>=stealth,line cap=round,line join=round]
+                                \useasboundingbox (-4.5,-4.5) rectangle (6.5,4.5);
+                                \draw[gray!50,line width=0.4pt] (-4,-4) grid[step=1] (6,4);
+                                \draw[black!80,thick,->] (-4.5,0) -- (6.5,0) node[right,font=\tiny] {$x$};
+                                \draw[black!80,thick,->] (0,-4.5) -- (0,4.5) node[above,font=\tiny] {$y$};
+                                \foreach \x in {-4,-3,...,6} {\draw[black!80,thick] (\x,0.08) -- (\x,-0.08);}
+                                \foreach \y in {-4,-3,...,4} {\draw[black!80,thick] (0.08,\y) -- (-0.08,\y);}
+                                \foreach \x in {-2,-1,1,2,3,4} {\node[font=\tiny,anchor=north] at (\x,-0.15) {$\x$};}
+                                \foreach \y in {-3,-2,-1,1,2,3} {\node[font=\tiny,anchor=east] at (-0.15,\y) {$\y$};}
+                                \clip (-4.5,-4.5) rectangle (6.5,4.5);
+                                \draw[graphblue,very thick,domain=-0.6:4.6,samples=120] plot (\x,{(\x-2)^2-3});
+                                \fill[red] (2,-3) circle (3pt);
+                                \node[red,font=\tiny,anchor=west] at (2.35,-3.0) {$(2,-3)$};
+                                \fill[red] (0,1) circle (3pt);
+                                \node[red,font=\tiny,anchor=south east] at (-0.15,1) {$(0,1)$};
+                                \fill[red] (0.268,0) circle (3pt);
+                                \fill[red] (3.732,0) circle (3pt);
+                                \draw[red!65,dashed,thick] (2,-4.5) -- (2,4.5);
+                                \node[red!65,font=\tiny,above] at (2,4.7) {$x=2$};
+                                \node[graphblue,font=\tiny] at (-2.5,3.0) {$f(x)=(x-2)^2-3$};
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         EXAMPLE 2
+         ======================================================== -->
+
+    <subsection xml:id="example-graph-vertex-form-negative">
+        <title>Example</title>
+
+        <activity>
+            <statement>
+                <p>
+                    Graph the quadratic function
+                    <me>f(x) = -(x - 3)^2 + 1</me>
+                </p>
+                <p>
+                    Identify the vertex, <m>x</m>- and <m>y</m>-intercepts, and axis of symmetry.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <em>Vertex:</em> <m>(3, 1)</m>
+                </p>
+                <p>
+                    <em>Axis of symmetry:</em> <m>x = 3</m>
+                </p>
+                <p>
+                    <em><m>x</m>-intercepts:</em> <m>(2, 0)</m> and <m>(4, 0)</m>
+                </p>
+                <p>
+                    <em><m>y</m>-intercept:</em> <m>(0, -8)</m>
+                </p>
+
+                <figure>
+                    <caption>Graph of <m>f(x) = -(x-3)^2 + 1</m></caption>
+                    <image width="70%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}[x=0.6cm,y=0.6cm,>=stealth,line cap=round,line join=round]
+                                \useasboundingbox (-4.5,-9.5) rectangle (6.5,4.5);
+                                \draw[gray!50,line width=0.4pt] (-4,-9) grid[step=1] (6,4);
+                                \draw[black!80,thick,->] (-4.5,0) -- (6.5,0) node[right,font=\tiny] {$x$};
+                                \draw[black!80,thick,->] (0,-9.5) -- (0,4.5) node[above,font=\tiny] {$y$};
+                                \foreach \x in {-4,-3,...,6} {\draw[black!80,thick] (\x,0.08) -- (\x,-0.08);}
+                                \foreach \y in {-9,-8,...,4} {\draw[black!80,thick] (0.08,\y) -- (-0.08,\y);}
+                                \foreach \x in {-2,2,4} {\node[font=\tiny,anchor=north] at (\x,-0.15) {$\x$};}
+                                \foreach \y in {-8,-6,-4,-2,2} {\node[font=\tiny,anchor=east] at (-0.15,\y) {$\y$};}
+                                \clip (-4.5,-9.5) rectangle (6.5,4.5);
+                                \draw[graphblue,very thick,domain=-0.2:6.2,samples=120] plot (\x,{-(\x-3)^2+1});
+                                \fill[red] (3,1) circle (3pt);
+                                \node[red,font=\tiny,anchor=west] at (3.35,1.0) {$(3,1)$};
+                                \fill[red] (0,-8) circle (3pt);
+                                \node[red,font=\tiny,anchor=north east] at (-0.15,-8) {$(0,-8)$};
+                                \fill[red] (2,0) circle (3pt);
+                                \fill[red] (4,0) circle (3pt);
+                                \draw[red!65,dashed,thick] (3,-9.5) -- (3,4.5);
+                                \node[red!65,font=\tiny,above] at (3,4.7) {$x=3$};
+                                \node[graphblue,font=\tiny] at (-2.5,2.5) {$f(x)=-(x-3)^2+1$};
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         COMPLETING THE SQUARE (Video 2 & 3)
+         ======================================================== -->
+
+    <subsection xml:id="completing-square">
+        <title>Completing the Square</title>
+
+        <!-- Video 2: Completing the Square -->
+        <p><url href="https://youtu.be/CrYHDQXzhck">Rewriting a Quadratic into Vertex Form Video</url></p>
+
+        <!-- Video 3: Part 1 (Additional) -->
+        <p><url href="https://youtu.be/6Wzc3BjiX1I">Completing the Square Video (Part 1)</url></p>
+
+        <activity>
+            <statement>
+                <p>
+                    Use the technique of <em>completing the square</em> to write
+                    <me>f(x) = 2x^2 + 20x + 42</me>
+                    in vertex form.
+                </p>
+                <p>
+                    Identify the vertex, intercepts, and sketch the function.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <em>Vertex form:</em> <m>f(x) = 2(x + 5)^2 - 8</m>
+                </p>
+                <p>
+                    <em>Vertex:</em> <m>(-5, -8)</m>
+                </p>
+                <p>
+                    <em>Axis of symmetry:</em> <m>x = -5</m>
+                </p>
+                <p>
+                    <em><m>x</m>-intercepts:</em> <m>(-7, 0)</m> and <m>(-3, 0)</m>
+                </p>
+                <p>
+                    <em><m>y</m>-intercept:</em> <m>(0, 42)</m> – far above the grid
+                </p>
+
+                <figure>
+                    <caption>Graph of <m>f(x) = 2(x+5)^2 - 8</m></caption>
+                    <image width="70%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}[x=0.4cm,y=0.12cm,>=stealth,line cap=round,line join=round]
+                                \useasboundingbox (-13,-13) rectangle (4,50);
+                                \draw[gray!50,line width=0.4pt] (-11,-10) grid[step=1] (3,45);
+                                \draw[black!80,thick,->] (-11.5,0) -- (3.5,0) node[right,font=\tiny] {$x$};
+                                \draw[black!80,thick,->] (0,-10.5) -- (0,45.5) node[above,font=\tiny] {$y$};
+                                \foreach \x in {-11,-10,...,3} {\draw[black!80,thick] (\x,0.08) -- (\x,-0.08);}
+                                \foreach \x in {-10,-8,-6,-4,-2} {\node[font=\tiny,anchor=north] at (\x,-0.15) {$\x$};}
+                                \foreach \y in {-10,-5,5,10,15,20,25,30,35,40,45} {\draw[black!80,thick] (0.08,\y) -- (-0.08,\y) node[left,font=\tiny] {$\y$};}
+                                \clip (-11,-10) rectangle (3,45);
+                                \draw[graphblue,very thick,domain=-11:1,samples=120] plot (\x,{2*(\x+5)^2-8});
+                                \fill[red] (-5,-8) circle (2.5pt);
+                                \node[red,font=\tiny,anchor=west] at (-4.5,-8) {$(-5,-8)$};
+                                \draw[red!65,dashed,thick] (-5,-10.5) -- (-5,45);
+                                \node[red!65,font=\tiny,above] at (-5,45.7) {$x=-5$};
+                                \node[graphblue,font=\tiny] at (-6.5,42) {$f(x)=2(x+5)^2-8$};
+                                \fill[red] (0,42) circle (2.5pt);
+                                \node[red,font=\tiny,anchor=south west] at (0.2,42) {$(0,42)$};
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         EXAMPLE: COMPLETING THE SQUARE
+         ======================================================== -->
+
+    <subsection xml:id="example-completing-square">
+        <title>Example</title>
+
+        <activity>
+            <statement>
+                <p>
+                    Use the technique of <em>completing the square</em> to write
+                    <me>f(x) = -x^2 - 2x + 3</me>
+                    in vertex form.
+                </p>
+                <p>
+                    Identify the vertex, intercepts, and sketch the function.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <em>Vertex form:</em> <m>f(x) = -(x + 1)^2 + 4</m>
+                </p>
+                <p>
+                    <em>Vertex:</em> <m>(-1, 4)</m>
+                </p>
+                <p>
+                    <em>Axis of symmetry:</em> <m>x = -1</m>
+                </p>
+                <p>
+                    <em><m>x</m>-intercepts:</em> <m>(-3, 0)</m> and <m>(1, 0)</m>
+                </p>
+                <p>
+                    <em><m>y</m>-intercept:</em> <m>(0, 3)</m>
+                </p>
+
+                <figure>
+                    <caption>Graph of <m>f(x) = -(x+1)^2 + 4</m></caption>
+                    <image width="70%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}[x=0.6cm,y=0.6cm,>=stealth,line cap=round,line join=round]
+                                \useasboundingbox (-6,-4) rectangle (4,7.5);
+                                \draw[gray!50,line width=0.4pt] (-5,-3) grid[step=1] (3,6);
+                                \draw[black!80,thick,->] (-5.5,0) -- (3.5,0) node[right,font=\tiny] {$x$};
+                                \draw[black!80,thick,->] (0,-3.5) -- (0,6.5) node[above,font=\tiny] {$y$};
+                                \foreach \x in {-5,-4,...,3} {\draw[black!80,thick] (\x,0.08) -- (\x,-0.08);}
+                                \foreach \x in {-4,-2,2} {\node[font=\tiny,anchor=north] at (\x,-0.15) {$\x$};}
+                                \foreach \y in {-2,2,4,6} {\draw[black!80,thick] (0.08,\y) -- (-0.08,\y) node[left,font=\tiny] {$\y$};}
+                                \clip (-5,-3) rectangle (3,6);
+                                \draw[graphblue,very thick,domain=-5:3,samples=120] plot (\x,{-(\x+1)^2+4});
+                                \fill[red] (-1,4) circle (2.5pt);
+                                \node[red,font=\tiny,anchor=west] at (-0.5,4) {$(-1,4)$};
+                                \draw[red!65,dashed,thick] (-1,-3) -- (-1,6);
+                                \node[red!65,font=\tiny,above] at (-1,6.2) {$x=-1$};
+                                \node[graphblue,font=\tiny] at (-3.0,5.2) {$f(x)=-(x+1)^2+4$};
+                                \fill[red] (0,3) circle (2.5pt);
+                                \node[red,font=\tiny,anchor=south east] at (-0.15,3) {$(0,3)$};
+                                \fill[red] (-3,0) circle (2.5pt);
+                                \fill[red] (1,0) circle (2.5pt);
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         VERTEX FORMULA (Video 4)
+         ======================================================== -->
+
+    <subsection xml:id="vertex-formula">
+        <title>The Vertex Formula</title>
+
+        <!-- Video 4: Vertex Formula -->
+        <p><url href="https://youtu.be/V2udel2WylU">The Vertex Formula Video</url></p>
+
+        <definition>
+            <title>Vertex Formula</title>
+            <p>
+                For <m>f(x) = ax^2 + bx + c</m>, <m>a \neq 0</m>, the <m>x</m>-coordinate of the vertex is:
+            </p>
+            <me>x = -\frac{b}{2a}</me>
+            <p>
+                The <m>y</m>-coordinate is <m>f\left(-\frac{b}{2a}\right)</m>.
+            </p>
+        </definition>
+
+        <p>
+            <em>Example:</em> For <m>f(x) = 2x^2 + 20x + 42</m>:
+        </p>
+        <me>x = -\frac{20}{2(2)} = -5</me>
+        <me>f(-5) = 2(-5)^2 + 20(-5) + 42 = -8</me>
+        <p>
+            Vertex: <m>(-5, -8)</m>
+        </p>
+    </subsection>
+
+    <!-- ========================================================
+         YOU TRY: VERTEX BY BOTH METHODS
+         ======================================================== -->
+
+    <subsection xml:id="you-try-vertex-both-methods">
+        <title>You Try: Example</title>
+
+        <activity>
+            <statement>
+                <p>
+                    Given <m>f(x) = -2x^2 - 4x + 3</m>, find the vertex by:
+                </p>
+                <ol>
+                    <li><em>Completing the square</em></li>
+                    <li><em>The vertex formula</em></li>
+                </ol>
+            </statement>
+            <solution>
+                <p>
+                    <em>Method 1: Completing the Square</em>
+                </p>
+                <me>f(x) = -2(x + 1)^2 + 5</me>
+                <p>Vertex: <m>(-1, 5)</m></p>
+
+                <p>
+                    <em>Method 2: Vertex Formula</em>
+                </p>
+                <me>x = -\frac{-4}{2(-2)} = -1</me>
+                <me>f(-1) = -2(-1)^2 - 4(-1) + 3 = 5</me>
+                <p>Vertex: <m>(-1, 5)</m></p>
+
+                <figure>
+                    <caption>Graph of <m>f(x) = -2(x+1)^2 + 5</m></caption>
+                    <image width="70%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}[x=0.55cm,y=0.55cm,>=stealth,line cap=round,line join=round]
+                                \useasboundingbox (-6.5,-3.5) rectangle (3.5,12.5);
+                                \draw[gray!50,line width=0.4pt] (-6,-3) grid[step=1] (3,12);
+                                \draw[black!80,thick,->] (-6.5,0) -- (3.5,0) node[right,font=\tiny] {$x$};
+                                \draw[black!80,thick,->] (0,-3.5) -- (0,12.5) node[above,font=\tiny] {$y$};
+                                \foreach \x in {-6,-5,...,3} {\draw[black!80,thick] (\x,0.08) -- (\x,-0.08);}
+                                \foreach \x in {-4,-2} {\node[font=\tiny,anchor=north] at (\x,-0.15) {$\x$};}
+                                \foreach \y in {-2,2,4,6,8,10,12} {\draw[black!80,thick] (0.08,\y) -- (-0.08,\y) node[left,font=\tiny] {$\y$};}
+                                \clip (-6,-3) rectangle (3,12);
+                                \draw[graphblue,very thick,domain=-6:3,samples=120] plot (\x,{-2*(\x+1)^2+5});
+                                \fill[red] (-1,5) circle (2.5pt);
+                                \node[red,font=\tiny,anchor=west] at (-0.5,5) {$(-1,5)$};
+                                \draw[red!65,dashed,thick] (-1,-3) -- (-1,12);
+                                \node[red!65,font=\tiny,above] at (-1,12.2) {$x=-1$};
+                                \node[graphblue,font=\tiny] at (-4.5,10) {$f(x)=-2(x+1)^2+5$};
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+</section>
