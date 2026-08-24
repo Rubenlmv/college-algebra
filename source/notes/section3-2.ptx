@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="section-3-2">
+    <title>Section 3.2 Polynomial Functions</title>
+
+    <!-- ========================================================
+         INTRODUCTION & DEFINITION
+         ======================================================== -->
+
+    <subsection xml:id="intro-polynomial-functions">
+        <title>Polynomial Functions</title>
+
+        <definition>
+            <title>Polynomial Function</title>
+            <p>
+                Let <m>n</m> be a nonnegative integer and let <m>a_n, a_{n-1}, \ldots, a_2, a_1, a_0</m> be real numbers with <m>a_n \neq 0</m>. The function given by
+            </p>
+            <me>f(x) = a_n x^n + a_{n-1} x^{n-1} + \cdots + a_2 x^2 + a_1 x + a_0</me>
+            <p>
+                is called a <term>polynomial function</term> of <m>x</m> with <term>degree</term> <m>n</m>.
+            </p>
+            <p>
+                Polynomial functions are classified by degree. For instance, a constant function <m>f(x) = c</m> with <m>c \neq 0</m> has degree 0, and a linear function <m>f(x) = ax + b</m> with <m>a \neq 0</m> has degree 1. When dealing with polynomials in one variable, the degree is the same as the <em>largest exponent</em>.
+            </p>
+        </definition>
+
+        <!-- Video: Polynomial Functions -->
+        <p><url href="https://youtu.be/CHEtGgTexHI">Polynomial Functions Video</url></p>
+    </subsection>
+
+    <!-- ========================================================
+         PROPERTIES OF POLYNOMIALS
+         ======================================================== -->
+
+    <subsection xml:id="properties-polynomials">
+        <title>Properties of Polynomials</title>
+
+        <p>
+            Polynomials have two important features: they are <em>continuous</em> and <em>smooth</em>.
+        </p>
+
+        <definition>
+            <title>Continuous</title>
+            <p>
+                The graph of a polynomial function is continuous. This means that the graph has no breaks, holes, or gaps. You can draw the graph without lifting your pencil.
+            </p>
+        </definition>
+
+        <figure>
+            <caption>A continuous graph (polynomial)</caption>
+            <image width="50%">
+                <latex-image>
+                    <![CDATA[
+                    \begin{adjustbox}{max width=\linewidth}
+                    \begin{tikzpicture}
+                    \begin{axis}[
+                        width=6.2cm,
+                        height=4.8cm,
+                        xmin=-1.2, xmax=4.2,
+                        ymin=-0.5, ymax=4.5,
+                        axis lines=middle,
+                        axis line style={gray!70!black},
+                        xlabel={$x$},
+                        ylabel={$y$},
+                        xlabel style={anchor=west},
+                        ylabel style={anchor=south},
+                        xtick=\empty,
+                        ytick=\empty,
+                        clip=false
+                    ]
+                    \addplot[
+                        black,
+                        very thick,
+                        smooth
+                    ] coordinates {
+                        (-0.55,-0.5)
+                        (-0.35,0.5)
+                        (0,2.0)
+                        (0.55,3.0)
+                        (1.1,3.35)
+                        (1.65,3.0)
+                        (2.1,2.1)
+                        (2.6,1.0)
+                        (3.1,0.55)
+                        (3.55,0.8)
+                        (3.9,2.0)
+                        (4.05,4.5)
+                    };
+                    \end{axis}
+                    \end{tikzpicture}
+                    \end{adjustbox}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+
+        <figure>
+            <caption>A discontinuous graph (piecewise defined, not polynomial)</caption>
+            <image width="50%">
+                <latex-image>
+                    <![CDATA[
+                    \begin{adjustbox}{max width=\linewidth}
+                    \begin{tikzpicture}
+                    \begin{axis}[
+                        width=6.2cm,
+                        height=4.8cm,
+                        xmin=-1.2, xmax=4.2,
+                        ymin=-0.5, ymax=3.5,
+                        axis lines=middle,
+                        axis line style={gray!70!black},
+                        xlabel={$x$},
+                        ylabel={$y$},
+                        xlabel style={anchor=west},
+                        ylabel style={anchor=south},
+                        xtick=\empty,
+                        ytick=\empty,
+                        clip=false
+                    ]
+                    % Left piece
+                    \addplot[
+                        black,
+                        very thick,
+                        smooth
+                    ] coordinates {
+                        (-0.55,-0.5)
+                        (-0.25,0.4)
+                        (0.2,1.25)
+                        (0.8,1.75)
+                        (1.35,1.9)
+                        (1.8,1.75)
+                        (2.05,1.55)
+                    };
+                    \fill[black] (axis cs:2.05,1.55) circle (2.2pt);
+                    % Right piece
+                    \addplot[
+                        black,
+                        very thick,
+                        smooth
+                    ] coordinates {
+                        (2.05,0.9)
+                        (2.5,0.95)
+                        (3.0,1.1)
+                        (3.4,1.45)
+                        (3.8,2.0)
+                        (4.15,2.8)
+                    };
+                    \draw[black, very thick, fill=white] (axis cs:2.05,0.9) circle (2.4pt);
+                    \end{axis}
+                    \end{tikzpicture}
+                    \end{adjustbox}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+
+        <definition>
+            <title>Smooth</title>
+            <p>
+                The graph of a polynomial function has only smooth, rounded turns. It cannot have sharp corners.
+            </p>
+        </definition>
+
+        <figure>
+            <caption>A smooth graph (polynomial)</caption>
+            <image width="50%">
+                <latex-image>
+                    <![CDATA[
+                    \begin{adjustbox}{max width=\linewidth}
+                    \begin{tikzpicture}
+                    \begin{axis}[
+                        width=6.2cm,
+                        height=4.8cm,
+                        xmin=-0.2, xmax=5.5,
+                        ymin=-0.5, ymax=5.5,
+                        axis lines=middle,
+                        axis line style={gray!70!black},
+                        xlabel={$x$},
+                        ylabel={$y$},
+                        xlabel style={anchor=west},
+                        ylabel style={anchor=south},
+                        xtick=\empty,
+                        ytick=\empty,
+                        clip=false
+                    ]
+                    \addplot[
+                        black,
+                        very thick,
+                        smooth
+                    ] coordinates {
+                        (0.05,-0.5)
+                        (0.15,1.0)
+                        (0.3,4.0)
+                        (0.6,5.0)
+                        (0.9,3.8)
+                        (1.4,2.5)
+                        (2.0,2.8)
+                        (2.6,3.2)
+                        (3.1,2.6)
+                        (3.7,1.0)
+                        (4.1,0.2)
+                        (4.5,0.8)
+                        (4.9,3.0)
+                        (5.1,5.5)
+                    };
+                    \end{axis}
+                    \end{tikzpicture}
+                    \end{adjustbox}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+
+        <!-- Corrected graph with sharp corner -->
+        <figure>
+            <caption>A graph with a sharp corner (not polynomial)</caption>
+            <image width="50%">
+                <latex-image>
+                    <![CDATA[
+                    \begin{adjustbox}{max width=\linewidth}
+                    \begin{tikzpicture}
+                    \begin{axis}[
+                        width=6.2cm,
+                        height=4.8cm,
+                        xmin=-4.5, xmax=4.5,
+                        ymin=-1.5, ymax=6.5,
+                        axis lines=middle,
+                        axis line style={gray!70!black},
+                        xlabel={$x$},
+                        ylabel={$y$},
+                        xlabel style={anchor=west},
+                        ylabel style={anchor=south},
+                        xtick={-4,-3,-2,-1,1,2,3,4},
+                        ytick={-1,1,2,3,4,5,6},
+                        xticklabel style={anchor=north, yshift=-2pt},
+                        yticklabel style={anchor=east, xshift=-2pt},
+                        clip=false
+                    ]
+                    \addplot[black, very thick, domain=-4.5:4.5] {abs(x)};
+                    \fill[black] (axis cs:0,0) circle (2.5pt);
+                    \node[draw=black, fill=white, font=\small] at (axis cs:2.2,5.3) {$f(x)=|x|$};
+                    \draw[black, thick] (axis cs:2.5,4.8) -- (axis cs:3,3);
+                    \node[anchor=north west, font=\small] at (axis cs:0.15,0.25) {$(0,0)$};
+                    \end{axis}
+                    \end{tikzpicture}
+                    \end{adjustbox}
+                    ]]>
+                </latex-image>
+            </image>
+            <p>
+                The function <m>f(x) = |x|</m> has a sharp turn at <m>(0,0)</m> and is <em>not</em> a polynomial function.
+            </p>
+        </figure>
+    </subsection>
+
+    <!-- ========================================================
+         MONOMIALS (PAGE 4)
+         ======================================================== -->
+
+    <subsection xml:id="monomials">
+        <title>Monomials</title>
+
+        <p>
+            The polynomial functions that have the simplest graphs are monomials of the form <m>f(x) = x^n</m>, where <m>n</m> is an integer greater than zero.
+        </p>
+
+        <p>
+            <em>What pattern do you see?</em>
+        </p>
+
+        <sidebyside widths="33% 33% 33%">
+            <figure>
+                <caption><m>f(x) = x^2</m></caption>
+                <image width="100%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[x=0.36cm,y=0.36cm,>=stealth,line cap=round,line join=round]
+                            \draw[gray!25, very thin] (-12,-6) grid (12,12);
+                            \draw[gray!55!black, thin, ->] (-12,0) -- (12.35,0);
+                            \draw[gray!55!black, thin, ->] (0,-6) -- (0,12.35);
+                            \foreach \x in {-12,-11,...,11} \draw[gray!50!black, very thin] (\x,-0.16) -- (\x,0.16);
+                            \foreach \y in {-6,-5,...,11} \draw[gray!50!black, very thin] (-0.16,\y) -- (0.16,\y);
+                            \foreach \x in {-12,-10,-8,-6,-4,-2,2,4,6,8,10,12} \node[gray!55!black,font=\scriptsize,anchor=north] at (\x,-0.20) {\x};
+                            \foreach \y in {-6,-4,-2,2,4,6,8,10,12} \node[gray!55!black,font=\scriptsize,anchor=east] at (-0.20,\y) {\y};
+                            \draw[blue!75!black, very thick, domain=-3.55:3.55, samples=300] plot (\x,{\x*\x});
+                            \node[blue!75!black, font=\large, anchor=west] at (2.0,2.0) {$f(x)=x^2$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+
+            <figure>
+                <caption><m>f(x) = x^3</m></caption>
+                <image width="100%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[x=0.36cm,y=0.36cm,>=stealth,line cap=round,line join=round]
+                            \draw[gray!25, very thin] (-12,-6) grid (12,12);
+                            \draw[gray!55!black, thin, ->] (-12,0) -- (12.35,0);
+                            \draw[gray!55!black, thin, ->] (0,-6) -- (0,12.35);
+                            \foreach \x in {-12,-11,...,11} \draw[gray!50!black, very thin] (\x,-0.16) -- (\x,0.16);
+                            \foreach \y in {-6,-5,...,11} \draw[gray!50!black, very thin] (-0.16,\y) -- (0.16,\y);
+                            \foreach \x in {-12,-10,-8,-6,-4,-2,2,4,6,8,10,12} \node[gray!55!black,font=\scriptsize,anchor=north] at (\x,-0.20) {\x};
+                            \foreach \y in {-6,-4,-2,2,4,6,8,10,12} \node[gray!55!black,font=\scriptsize,anchor=east] at (-0.20,\y) {\y};
+                            \draw[blue!75!black, very thick, domain=-2.29:2.29, samples=300] plot (\x,{\x^3});
+                            \node[blue!75!black, font=\large, anchor=west] at (2.0,2.0) {$f(x)=x^3$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+
+            <figure>
+                <caption><m>f(x) = x^4</m></caption>
+                <image width="100%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[x=0.36cm,y=0.36cm,>=stealth,line cap=round,line join=round]
+                            \draw[gray!25, very thin] (-12,-4) grid (12,12);
+                            \draw[gray!55!black, thin, ->] (-12,0) -- (12.3,0);
+                            \draw[gray!55!black, thin, ->] (0,-4) -- (0,12.3);
+                            \foreach \x in {-12,-11,...,11} \draw[gray!50!black, very thin] (\x,-0.16) -- (\x,0.16);
+                            \foreach \y in {-4,-3,...,11} \draw[gray!50!black, very thin] (-0.16,\y) -- (0.16,\y);
+                            \foreach \x in {-12,-10,-8,-6,-4,-2,2,4,6,8,10,12} \node[gray!55!black,font=\scriptsize,anchor=north] at (\x,-0.20) {\x};
+                            \foreach \y in {-4,-2,2,4,6,8,10,12} \node[gray!55!black,font=\scriptsize,anchor=east] at (-0.20,\y) {\y};
+                            \draw[blue!75!black, very thick, domain=-1.86:1.86, samples=300] plot (\x,{(\x)^4});
+                            \node[blue!75!black, font=\large, anchor=west] at (1.25,2.0) {$f(x)=x^4$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+        </sidebyside>
+
+        <sidebyside widths="33% 33% 33%">
+            <figure>
+                <caption><m>f(x) = x^5</m></caption>
+                <image width="100%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[x=0.36cm,y=0.36cm,>=stealth,line cap=round,line join=round]
+                            \draw[gray!25, very thin] (-12,-6) grid (12,12);
+                            \draw[gray!55!black, thin, ->] (-12,0) -- (12.35,0);
+                            \draw[gray!55!black, thin, ->] (0,-6) -- (0,12.35);
+                            \foreach \x in {-12,-11,...,11} \draw[gray!50!black, very thin] (\x,-0.16) -- (\x,0.16);
+                            \foreach \y in {-6,-5,...,11} \draw[gray!50!black, very thin] (-0.16,\y) -- (0.16,\y);
+                            \foreach \x in {-12,-10,-8,-6,-4,-2,2,4,6,8,10,12} \node[gray!55!black,font=\scriptsize,anchor=north] at (\x,-0.20) {\x};
+                            \foreach \y in {-6,-4,-2,2,4,6,8,10,12} \node[gray!55!black,font=\scriptsize,anchor=east] at (-0.20,\y) {\y};
+                            \draw[blue!75!black, very thick, domain=-1.64:1.64, samples=300] plot (\x,{\x^5});
+                            \node[blue!75!black, font=\large, anchor=west] at (1.55,2.0) {$f(x)=x^5$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+
+            <figure>
+                <caption><m>f(x) = x^6</m></caption>
+                <image width="100%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[x=0.36cm,y=0.36cm,>=stealth,line cap=round,line join=round]
+                            \draw[gray!25, very thin] (-12,-4) grid (12,12);
+                            \draw[gray!55!black, thin, ->] (-12,0) -- (12.3,0);
+                            \draw[gray!55!black, thin, ->] (0,-4) -- (0,12.3);
+                            \foreach \x in {-12,-11,...,11} \draw[gray!50!black, very thin] (\x,-0.16) -- (\x,0.16);
+                            \foreach \y in {-4,-3,...,11} \draw[gray!50!black, very thin] (-0.16,\y) -- (0.16,\y);
+                            \foreach \x in {-12,-10,-8,-6,-4,-2,2,4,6,8,10,12} \node[gray!55!black,font=\scriptsize,anchor=north] at (\x,-0.20) {\x};
+                            \foreach \y in {-4,-2,2,4,6,8,10,12} \node[gray!55!black,font=\scriptsize,anchor=east] at (-0.20,\y) {\y};
+                            \draw[blue!75!black, very thick, domain=-1.51:1.51, samples=300] plot (\x,{(\x)^6});
+                            \node[blue!75!black, font=\large, anchor=west] at (1.05,2.0) {$f(x)=x^6$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+
+            <figure>
+                <caption><m>f(x) = x^7</m></caption>
+                <image width="100%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[x=0.36cm,y=0.36cm,>=stealth,line cap=round,line join=round]
+                            \draw[gray!25, very thin] (-12,-6) grid (12,12);
+                            \draw[gray!55!black, thin, ->] (-12,0) -- (12.35,0);
+                            \draw[gray!55!black, thin, ->] (0,-6) -- (0,12.35);
+                            \foreach \x in {-12,-11,...,11} \draw[gray!50!black, very thin] (\x,-0.16) -- (\x,0.16);
+                            \foreach \y in {-6,-5,...,11} \draw[gray!50!black, very thin] (-0.16,\y) -- (0.16,\y);
+                            \foreach \x in {-12,-10,-8,-6,-4,-2,2,4,6,8,10,12} \node[gray!55!black,font=\scriptsize,anchor=north] at (\x,-0.20) {\x};
+                            \foreach \y in {-6,-4,-2,2,4,6,8,10,12} \node[gray!55!black,font=\scriptsize,anchor=east] at (-0.20,\y) {\y};
+                            \draw[blue!75!black, very thick, domain=-1.43:1.43, samples=300] plot (\x,{\x^7});
+                            \node[blue!75!black, font=\large, anchor=west] at (1.35,2.0) {$f(x)=x^7$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+        </sidebyside>
+
+        <sidebyside widths="50% 50%">
+            <figure>
+                <caption><m>f(x) = x^8</m></caption>
+                <image width="100%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[x=0.36cm,y=0.36cm,>=stealth,line cap=round,line join=round]
+                            \draw[gray!25, very thin] (-12,-4) grid (12,12);
+                            \draw[gray!55!black, thin, ->] (-12,0) -- (12.3,0);
+                            \draw[gray!55!black, thin, ->] (0,-4) -- (0,12.3);
+                            \foreach \x in {-12,-11,...,11} \draw[gray!50!black, very thin] (\x,-0.16) -- (\x,0.16);
+                            \foreach \y in {-4,-3,...,11} \draw[gray!50!black, very thin] (-0.16,\y) -- (0.16,\y);
+                            \foreach \x in {-12,-10,-8,-6,-4,-2,2,4,6,8,10,12} \node[gray!55!black,font=\scriptsize,anchor=north] at (\x,-0.20) {\x};
+                            \foreach \y in {-4,-2,2,4,6,8,10,12} \node[gray!55!black,font=\scriptsize,anchor=east] at (-0.20,\y) {\y};
+                            \draw[blue!75!black, very thick, domain=-1.37:1.37, samples=300] plot (\x,{(\x)^8});
+                            \node[blue!75!black, font=\large, anchor=west] at (0.95,2.0) {$f(x)=x^8$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+
+            <figure>
+                <caption><m>f(x) = x^9</m></caption>
+                <image width="80%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[x=0.36cm,y=0.36cm,>=stealth,line cap=round,line join=round]
+    % Grid
+    \draw[gray!25, very thin] (-12,-6) grid (12,12);
+    % Axes
+    \draw[gray!55!black, thin, ->] (-12,0) -- (12.35,0);
+    \draw[gray!55!black, thin, ->] (0,-6) -- (0,12.35);
+    % Tick marks
+    \foreach \x in {-12,-11,...,11} \draw[gray!50!black, very thin] (\x,-0.16) -- (\x,0.16);
+    \foreach \y in {-6,-5,...,11} \draw[gray!50!black, very thin] (-0.16,\y) -- (0.16,\y);
+    % Labels
+    \foreach \x in {-12,-10,-8,-6,-4,-2,2,4,6,8,10,12} \node[gray!55!black,font=\scriptsize,anchor=north] at (\x,-0.20) {\x};
+    \foreach \y in {-6,-4,-2,2,4,6,8,10,12} \node[gray!55!black,font=\scriptsize,anchor=east] at (-0.20,\y) {\y};
+    % ---- ADD CLIPPING TO FIT INSIDE GRID ----
+    \clip (-12,-6) rectangle (12,12);
+    % Function
+    \draw[blue!75!black, very thick, domain=-1.33:1.33, samples=300] plot (\x,{\x^9});
+    % Label
+    \node[blue!75!black, font=\large, anchor=west] at (1.25,2.0) {$f(x)=x^9$};
+\end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+        </sidebyside>
+    </subsection>
+
+    <!-- ========================================================
+         END BEHAVIOR (LEADING COEFFICIENT TEST) – PAGE 5
+         ======================================================== -->
+
+    <subsection xml:id="end-behavior">
+        <title>End Behavior</title>
+
+        <p>
+            Whether the graph of a polynomial function eventually rises or falls (as <m>x \to -\infty</m> and <m>x \to \infty</m>) can be determined by the function's degree (even or odd) and by its leading coefficient, as indicated in the <term>Leading Coefficient Test</term>.
+        </p>
+
+        <p>
+            <em>Notice that there are only 4 possibilities!</em>
+        </p>
+
+        <figure>
+            <caption>Leading Coefficient Test</caption>
+           <image source="images/evenodd.png" width="100%"/>
+        </figure>
+    </subsection>
+
+    <!-- ========================================================
+         END BEHAVIOR EXAMPLES (PAGE 6-8)
+         ======================================================== -->
+
+    <subsection xml:id="end-behavior-examples">
+        <title>End Behavior Examples</title>
+
+        <activity>
+            <statement>
+                <p>
+                    Describe the right-hand and left-hand behavior of the graph of each function.
+                </p>
+                <sidebyside widths="50% 50%">
+                    <p><strong>a.</strong> <m>f(x) = -x^3 + 4x</m></p>
+                    <p><strong>b.</strong> <m>g(x) = x^4 - 5x^2 + 4</m></p>
+                </sidebyside>
+                <sidebyside widths="50% 50%">
+                    <p><strong>c.</strong> <m>h(x) = x^5 - x</m></p>
+                    <p><strong>d.</strong> <m>k(x) = -2(x - 5)(x + 1)^3</m></p>
+                </sidebyside>
+            </statement>
+            <solution>
+                <p><em>a.</em> <m>f(x) = -x^3 + 4x</m> has degree 3 (odd) and leading coefficient -1 (negative). So the graph falls to the right and rises to the left.</p>
+                <figure>
+                    <caption>Graph of <m>f(x) = -x^3 + 4x</m></caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}
+                            \begin{axis}[
+                                width=7.0cm,
+                                height=5.0cm,
+                                xmin=-7, xmax=7,
+                                ymin=-5, ymax=5,
+                                axis lines=middle,
+                                grid=both,
+                                grid style={gray!18},
+                                axis line style={gray!60},
+                                xlabel={$x$},
+                                ylabel={$y$},
+                                xtick={-6,-5,...,6},
+                                ytick={-5,-4,...,5},
+                                clip=false
+                            ]
+                            \addplot[blue!75!black, thick, domain=-2.5:2.5, samples=300] {-x^3+4*x};
+                            \node[blue!75!black, font=\small, anchor=west] at (axis cs:2.0,2.0) {$f(x)=-x^3+4x$};
+                            \end{axis}
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+
+                <p><em>b.</em> <m>g(x) = x^4 - 5x^2 + 4</m> has degree 4 (even) and leading coefficient 1 (positive). So the graph rises to the right and rises to the left.</p>
+                <!-- Corrected graph for g(x) -->
+                <figure>
+                    <caption>Graph of <m>g(x) = x^4 - 5x^2 + 4</m></caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}
+                            \begin{axis}[
+                                width=7.0cm,
+                                height=5.0cm,
+                                xmin=-4, xmax=4,
+                                ymin=-4, ymax=6,
+                                axis lines=middle,
+                                grid=both,
+                                grid style={gray!18},
+                                axis line style={gray!60},
+                                xlabel={$x$},
+                                ylabel={$y$},
+                                xtick={-4,-3,-2,-1,0,1,2,3,4},
+                                ytick={-4,-2,0,2,4,6},
+                                clip=true
+                            ]
+                            \addplot[blue!75!black, thick, domain=-2.5:2.5, samples=300] {x^4-5*x^2+4};
+                            \node[blue!75!black, font=\small, anchor=west] at (axis cs:2.0,4.5) {$g(x)=x^4-5x^2+4$};
+                            \end{axis}
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+
+                <p><em>c.</em> <m>h(x) = x^5 - x</m> has degree 5 (odd) and leading coefficient 1 (positive). So the graph rises to the right and falls to the left.</p>
+                <!-- Corrected graph for h(x) -->
+                <figure>
+                    <caption>Graph of <m>h(x) = x^5 - x</m></caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}[x=0.36cm,y=0.36cm,>=stealth,line cap=round,line join=round]
+                                \draw[gray!25, very thin] (-12,-6) grid (12,12);
+                                \draw[gray!55!black, thin, ->] (-12,0) -- (12.35,0);
+                                \draw[gray!55!black, thin, ->] (0,-6) -- (0,12.35);
+                                \foreach \x in {-12,-11,...,11} \draw[gray!50!black, very thin] (\x,-0.16) -- (\x,0.16);
+                                \foreach \y in {-6,-5,...,11} \draw[gray!50!black, very thin] (-0.16,\y) -- (0.16,\y);
+                                \foreach \x in {-12,-10,-8,-6,-4,-2,2,4,6,8,10,12} \node[gray!55!black,font=\scriptsize,anchor=north] at (\x,-0.20) {\x};
+                                \foreach \y in {-6,-4,-2,2,4,6,8,10,12} \node[gray!55!black,font=\scriptsize,anchor=east] at (-0.20,\y) {\y};
+                                \clip (-12,-6) rectangle (12,12);
+                                \draw[blue!75!black, very thick, domain=-2:2, samples=300] plot (\x,{\x^5-\x});
+                                \node[blue!75!black, font=\large, anchor=west] at (2.2,2.0) {$h(x)=x^5-x$};
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+
+                <p><em>d.</em> <m>k(x) = -2(x - 5)(x + 1)^3</m> has degree 1+3=4 (even) and leading coefficient -2 (negative). So the graph falls to the right and falls to the left.</p>
+                <!-- Corrected graph for k(x) -->
+                <figure>
+                    <caption>Graph of <m>k(x) = -2(x-5)(x+1)^3</m></caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}[x=0.36cm,y=0.0144cm,>=stealth,line cap=round,line join=round]
+                                \draw[gray!25, very thin] (-14,-300) grid[step=1] (19,300);
+                                \draw[gray!25, very thin] (-14,-300) grid[step=50] (19,300);
+                                \draw[gray!55!black, thin, ->] (-14,0) -- (19.5,0);
+                                \draw[gray!55!black, thin, ->] (0,-310) -- (0,310);
+                                \foreach \x in {-14,-13,...,19} \draw[gray!50!black, very thin] (\x,-0.5) -- (\x,0.5);
+                                \foreach \y in {-300,-250,-200,-150,-100,-50,50,100,150,200,250,300}
+                                    \draw[gray!50!black, very thin] (-0.5,\y) -- (0.5,\y);
+                                \foreach \x in {-14,-12,-10,-8,-6,-4,-2,2,4,6,8,10,12,14,16,18}
+                                    \node[gray!55!black,font=\tiny,anchor=north] at (\x,-0.3) {\x};
+                                \foreach \y in {-300,-250,-200,-150,-100,-50,50,100,150,200,250,300}
+                                    \node[gray!55!black,font=\tiny,anchor=east] at (-0.3,\y) {\y};
+                                \clip (-14,-300) rectangle (19,300);
+                                \draw[blue!75!black, very thick, domain=-4.5:7.5, samples=400] plot (\x,{-2*(\x-5)*(\x+1)^3});
+                                \node[blue!75!black, font=\large, anchor=west] at (5.5,250) {$k(x)=-2(x-5)(x+1)^3$};
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         ZEROS OF POLYNOMIAL FUNCTIONS (PAGE 9-10)
+         ======================================================== -->
+
+    <subsection xml:id="zeros-of-polynomials">
+        <title>Zeros of Polynomial Functions</title>
+
+        <definition>
+            <title>Zeros of a Polynomial</title>
+            <p>
+                The values of <m>x</m> in the domain of <m>f</m> for which <m>f(x) = 0</m> are called the <term>zeros</term> of the function. These are the real solutions (or roots) of the equation <m>f(x) = 0</m> and correspond to the <m>x</m>-intercepts of the graph of <m>y = f(x)</m>.
+            </p>
+        </definition>
+
+        <p>
+            <em>Related statements:</em>
+        </p>
+        <ul>
+            <li><m>c</m> is a zero of the function</li>
+            <li><m>c</m> is a solution (or root) of the equation <m>f(x)=0</m></li>
+            <li><m>c</m> is an <m>x</m>-intercept of the graph of <m>f</m></li>
+            <li><m>(x - c)</m> is a factor of <m>f(x)</m></li>
+        </ul>
+
+        <activity>
+            <statement>
+                <p>
+                    Find the zeros of <m>f(x) = x^3 - 5x^2 - 4x + 20</m> by factoring.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Factor by grouping:
+                </p>
+                <me>f(x) = x^2(x - 5) - 4(x - 5) = (x^2 - 4)(x - 5) = (x - 2)(x + 2)(x - 5)</me>
+                <p>
+                    Zeros: <m>x = 2</m>, <m>x = -2</m>, <m>x = 5</m>.
+                </p>
+
+                <!-- Corrected graph for f(x) = x^3 - 5x^2 - 4x + 20 -->
+                <figure>
+                    <caption>Graph of <m>f(x) = x^3 - 5x^2 - 4x + 20</m></caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}
+                            \begin{axis}[
+                                width=8.0cm,
+                                height=6.0cm,
+                                xmin=-4.5, xmax=7.5,
+                                ymin=-16, ymax=26,
+                                axis lines=middle,
+                                axis line style={gray!70!black},
+                                grid=both,
+                                grid style={gray!25, dashed},
+                                major grid style={gray!35, dashed},
+                                xlabel={$x$},
+                                ylabel={$y$},
+                                xtick={-4,-3,-2,-1,1,2,3,4,5,6,7},
+                                ytick={-15,-10,-5,5,10,15,20,25},
+                                clip=true
+                            ]
+                            \addplot[blue!75!black, very thick, domain=-3.5:6.5, samples=400] {x^3 - 5*x^2 - 4*x + 20};
+                            \addplot[only marks, mark=*, mark size=3pt, red] coordinates {(-2,0) (2,0) (5,0)};
+                            \node[blue!75!black, font=\small, anchor=south west] at (axis cs:0.5,-17) {$f(x)=x^3-5x^2-4x+20$};
+                            \end{axis}
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         MULTIPLICITY AND TOUCH/CROSS (PAGE 11)
+         ======================================================== -->
+
+    <subsection xml:id="multiplicity">
+        <title>Multiplicity and Touch/Cross</title>
+
+        <definition>
+            <title>Multiplicity</title>
+            <p>
+                If a polynomial function has a factor <m>(x - c)</m> that appears exactly <m>n</m> times, then <m>c</m> is a zero of <term>multiplicity</term> <m>n</m>.
+                In other words, if the factor <m>(x-c)^n </m> is a factor of the polynomial, <m>c</m> is a zero of multiplicity of <m>n</m>. 
+            </p>
+            <p>
+                If <m>c</m> is a zero of <em>odd</em> multiplicity, then the graph <em effect="bold">crosses</em> the <m>x</m>-axis at <m>c</m>.
+            </p>
+            <p>
+                If <m>c</m> is a zero of <em>even</em> multiplicity, then the graph <em effect="bold">touches</em> the <m>x</m>-axis at <m>c</m> (bounces off).
+            </p>
+        </definition>
+<p>
+    Compare the following functions.  How does the exponent on the <m>(x-3)</m> factor affect the <m>x</m>-intercept? 
+</p>
+        <sidebyside widths="33% 33% 33%">
+            <figure>
+                <caption><m>x=3</m> cross (odd multiplicity)</caption>
+                <image width="100%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}
+\begin{axis}[
+    width=6.0cm,
+    height=4.8cm,
+    xmin=-3.8, xmax=4.5,
+    ymin=-10, ymax=6,
+    axis lines=middle,
+    grid=both,
+    grid style={gray!18},
+    axis line style={gray!60},
+    xlabel={$x$},
+    ylabel={$y$},
+    xtick={-3,-2,-1,0,1,2,3,4},
+    ytick={-8,-6,-4,-2,2,4,6},
+    clip=true % <-- FIXED: clips the plot to the axis box
+]
+\addplot[blue!75!black, thick, domain=-3.2:4.0, samples=300] {x*(x+2)*(x-3)};
+\addplot[only marks, mark=*, mark size=3pt, red] coordinates {(-2,0) (0,0) (3,0)};
+\node[blue!75!black, font=\small, anchor=west] at (axis cs:-2,-9) {$f(x)=x(x+2)(x-3)$};
+\end{axis}
+\end{tikzpicture}
+
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+
+            <!-- Corrected graph for f(x) = x(x+2)(x-3)^2 -->
+            <figure>
+                <caption><m>x=3</m> touches (even multiplicity)</caption>
+                <image width="100%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[x=0.6cm,y=0.18cm,>=stealth,line cap=round,line join=round]
+                            \draw[gray!25, very thin] (-4,-18) grid[step=1] (5,15);
+                            \draw[gray!25, very thin] (-4,-18) grid[step=3] (5,15);
+                            \draw[gray!55!black, thick, ->] (-4.2,0) -- (5.2,0);
+                            \draw[gray!55!black, thick, ->] (0,-18.2) -- (0,15.2);
+                            \foreach \x in {-4,-3,-2,-1,1,2,3,4,5} \draw[gray!50!black, very thin] (\x,-0.15) -- (\x,0.15);
+                            \foreach \y in {-18,-15,-12,-9,-6,-3,3,6,9,12,15} \draw[gray!50!black, very thin] (-0.15,\y) -- (0.15,\y);
+                            \foreach \x in {-4,-3,-2,-1,1,2,3,4,5} \node[gray!55!black,font=\small,anchor=north] at (\x,-0.25) {\x};
+                            \foreach \y in {-18,-15,-12,-9,-6,-3,3,6,9,12,15} \node[gray!55!black,font=\small,anchor=east] at (-0.25,\y) {\y};
+                            \clip (-4,-18) rectangle (7,15);
+                            \draw[blue!75!black, very thick, domain=-3.8:4.8, samples=500] plot (\x,{(\x)*(\x+2)*(\x-3)^2});
+                            \draw[red, fill=red] (-2,0) circle (3pt);
+                            \draw[red, fill=red] (0,0) circle (3pt);
+                            \draw[red, fill=red] (3,0) circle (3pt);
+                            \node[blue!75!black, font=\small, anchor=west] at (-0.5,-9) {$f(x)=x(x+2)(x-3)^2$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+
+            <!-- Corrected graph for f(x) = x(x+2)(x-3)^3 -->
+            <figure>
+                <caption><m>x=3</m> crosses (odd multiplicity)</caption>
+                <image width="100%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[x=0.6cm,y=0.055cm,>=stealth,line cap=round,line join=round]
+                            \draw[gray!25, very thin] (-3,-30) grid[step=1] (5,80);
+                            \draw[gray!25, very thin] (-3,-30) grid[step=10] (5,80);
+                            \draw[gray!55!black, thick, ->] (-3.2,0) -- (5.2,0);
+                            \draw[gray!55!black, thick, ->] (0,-32) -- (0,82);
+                            \foreach \x in {-3,-2,-1,1,2,3,4,5} \draw[gray!50!black, very thin] (\x,-0.15) -- (\x,0.15);
+                            \foreach \y in {-30,-20,-10,10,20,30,40,50,60,70,80} \draw[gray!50!black, very thin] (-0.15,\y) -- (0.15,\y);
+                            \foreach \x in {-3,-2,-1,1,2,3,4,5} \node[gray!55!black,font=\small,anchor=north] at (\x,-0.25) {\x};
+                            \foreach \y in {-30,-20,-10,10,20,30,40,50,60,70,80} \node[gray!55!black,font=\small,anchor=east] at (-0.25,\y) {\y};
+                            \clip (-3,-30) rectangle (5,80);
+                            \draw[blue!75!black, very thick, domain=-2.8:4.5, samples=500] plot (\x,{(\x)*(\x+2)*(\x-3)^3});
+                            \draw[red, fill=red] (-2,0) circle (3pt);
+                            \draw[red, fill=red] (0,0) circle (3pt);
+                            \draw[red, fill=red] (3,0) circle (3pt);
+                            \node[blue!75!black, font=\small, anchor=west] at (-2.8,75) {$f(x)=x(x+2)(x-3)^3$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+        </sidebyside>
+    </subsection>
+
+    <!-- ========================================================
+         YOU TRY: EXAMPLE – PAGE 12-13
+         ======================================================== -->
+
+    <subsection xml:id="example-graph-polynomial-1">
+        <title>You Try:</title>
+
+        <activity>
+            <statement>
+                <p>
+                    Given <m>f(x) = 3x^3 - 6x^2 + 3x</m>, find all real zeros, determine their multiplicity, then graph the function.
+                </p>
+                <p>
+                    <em>Steps:</em>
+                </p>
+                <ul>
+                    <li>Factored form</li>
+                    <li>End Behavior</li>
+                    <li>Intercepts (y-intercept and x-intercepts with multiplicities)</li>
+                    <li>Check points</li>
+                </ul>
+            </statement>
+            <solution>
+                <p>
+                    <em>Factored form:</em>
+                </p>
+                <me>f(x) = 3x(x^2 - 2x + 1) = 3x(x - 1)^2</me>
+
+                <p>
+                    <em>End Behavior:</em> Degree 3 (odd), leading coefficient 3 (positive) → falls to the left, rises to the right.
+                </p>
+
+                <p>
+                    <em>Intercepts:</em>
+                </p>
+                <ul>
+                    <li>y-intercept: <m>f(0) = 0</m></li>
+                    <li>x-intercepts: <m>x = 0</m> (multiplicity 1, odd → crosses), <m>x = 1</m> (multiplicity 2, even → touches)</li>
+                </ul>
+
+                <p>
+                    <em>Check points:</em> e.g., <m>f(-1) = -12</m>, <m>f(2) = 6</m>.
+                </p>
+
+                <!-- Corrected graph for f(x) = 3x(x-1)^2 -->
+                <figure>
+                    <caption>Graph of <m>f(x) = 3x(x-1)^2</m></caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}[x=0.6cm,y=0.6cm,>=stealth,line cap=round,line join=round]
+                                \draw[gray!25, very thin] (-4,-4) grid[step=1] (4,4);
+                                \draw[gray!55!black, thick, ->] (-4.2,0) -- (4.2,0);
+                                \draw[gray!55!black, thick, ->] (0,-4.2) -- (0,4.2);
+                                \foreach \x in {-4,-3,-2,-1,1,2,3,4} \draw[gray!50!black, very thin] (\x,-0.15) -- (\x,0.15);
+                                \foreach \y in {-4,-3,-2,-1,1,2,3,4} \draw[gray!50!black, very thin] (-0.15,\y) -- (0.15,\y);
+                                \foreach \x in {-4,-3,-2,-1,1,2,3,4} \node[gray!55!black,font=\small,anchor=north] at (\x,-0.25) {\x};
+                                \foreach \y in {-4,-3,-2,-1,1,2,3,4} \node[gray!55!black,font=\small,anchor=east] at (-0.25,\y) {\y};
+                                \clip (-4,-4) rectangle (4,4);
+                                \draw[blue!75!black, very thick, domain=-0.8:2.3, samples=400] plot (\x,{3*(\x)*(\x-1)^2});
+                                \draw[red, fill=red] (0,0) circle (3pt);
+                                \draw[red, fill=red] (1,0) circle (3pt);
+                                \node[blue!75!black, font=\small, anchor=west] at (-4,3.5) {$f(x)=3x(x-1)^2$};
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         ANOTHER EXAMPLE – PAGE 15-17
+         ======================================================== -->
+
+    <subsection xml:id="example-graph-polynomial-2">
+        
+
+        <activity>
+            <statement>
+                <p>
+                    Given <m>f(x) = 2x^4 + 2x^2 - 40</m>, find all real zeros, determine their multiplicity, then graph the function.
+                </p>
+                <p>
+                    <em>Steps:</em>
+                </p>
+                <ul>
+                    <li>Factored form</li>
+                    <li>End Behavior</li>
+                    <li>Intercepts (y-intercept and x-intercepts with multiplicities)</li>
+                    <li>Check points</li>
+                </ul>
+            </statement>
+            <solution>
+                <p>
+                    <em>Factored form:</em>
+                </p>
+                <me>f(x) = 2(x^4 + x^2 - 20) = 2(x^2 + 5)(x^2 - 4) = 2(x^2 + 5)(x - 2)(x + 2)</me>
+
+                <p>
+                    <em>End Behavior:</em> Degree 4 (even), leading coefficient 2 (positive) → rises to the right and left.
+                </p>
+
+                <p>
+                    <em>Intercepts:</em>
+                </p>
+                <ul>
+                    <li>y-intercept: <m>f(0) = -40</m></li>
+                    <li>x-intercepts: <m>x = -2</m> (multiplicity 1, odd → crosses), <m>x = 2</m> (multiplicity 1, odd → crosses).</li>
+                    <li>The factor <m>(x^2 + 5)</m> has no real zeros.</li>
+                </ul>
+
+                <!-- Corrected graph for f(x) = 2(x^2+5)(x-2)(x+2) -->
+                <figure>
+                    <caption>Graph of <m>f(x) = 2(x^2+5)(x-2)(x+2)</m></caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}[x=0.6cm,y=0.06cm,>=stealth,line cap=round,line join=round]
+                                \draw[gray!25, very thin] (-5,-45) grid[step=1] (4,40);
+                                \draw[gray!25, very thin] (-5,-45) grid[step=5] (4,40);
+                                \draw[gray!55!black, thick, ->] (-5.2,0) -- (4.2,0);
+                                \draw[gray!55!black, thick, ->] (0,-46) -- (0,41);
+                                \foreach \x in {-5,-4,-3,-2,-1,1,2,3,4} \draw[gray!50!black, very thin] (\x,-0.15) -- (\x,0.15);
+                                \foreach \y in {-45,-40,-35,-30,-25,-20,-15,-10,-5,5,10,15,20,25,30,35,40}
+                                    \draw[gray!50!black, very thin] (-0.15,\y) -- (0.15,\y);
+                                \foreach \x in {-5,-4,-3,-2,-1,1,2,3,4}
+                                    \node[gray!55!black,font=\small,anchor=north] at (\x,-0.25) {\x};
+                                \foreach \y in {-40,-30,-20,-10,10,20,30,40}
+                                    \node[gray!55!black,font=\small,anchor=east] at (-0.25,\y) {\y};
+                                \clip (-5,-50) rectangle (4,40);
+                                \draw[blue!75!black, very thick, domain=-3.5:3.5, samples=500] plot (\x,{2*(\x)^4+2*(\x)^2-40});
+                                \draw[red, fill=red] (-2,0) circle (3pt);
+                                \draw[red, fill=red] (2,0) circle (3pt);
+                                \node[blue!75!black, font=\small, anchor=west] at (-4.5,-46) {$f(x)=2(x^2+5)(x-2)(x+2)$};
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+</section>

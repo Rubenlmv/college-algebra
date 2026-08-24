@@ -54,6 +54,7 @@
       <xi:include href="./notes/section2-7.ptx"/>
       <xi:include href="./notes/section2-8.ptx"/>
       <xi:include href="./notes/section3-1.ptx"/>
+       <xi:include href="./notes/section3-2.ptx"/>
       <!-- etc. -->
 
     </chapter>
