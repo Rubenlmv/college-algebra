@@ -54,10 +54,10 @@
 <use data-text="2" xlink:href="#font_3_1" transform="matrix(4.981549,0,0,-4.9813,84.68129,130.471)"/>
 <use data-text="2" xlink:href="#font_3_1" transform="matrix(4.981549,0,0,-4.9813,84.68028,74.13699)"/>
 <use data-text="4" xlink:href="#font_3_2" transform="matrix(4.981549,0,0,-4.9813,84.68028,45.790998)"/>
-<path transform="matrix(1.00005,0,0,-1,94.425769,100.879)" stroke-width=".79701" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#2d37dc" d="M-85.04037 28.34679H85.04037"/>
+<path transform="matrix(1.00005,0,0,-1,94.425769,100.879)" stroke-width=".79701" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#2832dc" d="M-85.04037 28.34679H85.04037"/>
 <path transform="matrix(1.00005,0,0,-1,94.425769,100.879)" d="M-41.10277 28.34679C-41.10277 29.12961-41.73737 29.7642-42.52019 29.7642-43.30301 29.7642-43.9376 29.12961-43.9376 28.34679-43.9376 27.56396-43.30301 26.92937-42.52019 26.92937-41.73737 26.92937-41.10277 27.56396-41.10277 28.34679ZM-42.52019 28.34679" fill="#ff0000"/>
 <path transform="matrix(1.00005,0,0,-1,94.425769,100.879)" d="M43.9376 28.34679C43.9376 29.12961 43.30301 29.7642 42.52019 29.7642 41.73737 29.7642 41.10277 29.12961 41.10277 28.34679 41.10277 27.56396 41.73737 26.92937 42.52019 26.92937 43.30301 26.92937 43.9376 27.56396 43.9376 28.34679ZM42.52019 28.34679" fill="#ff0000"/>
-<use data-text="m" xlink:href="#font_4_1" transform="matrix(11.955797,0,0,-11.9552,99.76703,48.038)" fill="#2d37dc"/>
-<use data-text="=" xlink:href="#font_5_2" transform="matrix(11.955797,0,0,-11.9552,113.32771,48.038)" fill="#2d37dc"/>
-<use data-text="0" xlink:href="#font_5_1" transform="matrix(11.955797,0,0,-11.9552,125.73782,48.038)" fill="#2d37dc"/>
+<use data-text="m" xlink:href="#font_4_1" transform="matrix(11.955797,0,0,-11.9552,99.76703,48.038)" fill="#2832dc"/>
+<use data-text="=" xlink:href="#font_5_2" transform="matrix(11.955797,0,0,-11.9552,113.32771,48.038)" fill="#2832dc"/>
+<use data-text="0" xlink:href="#font_5_1" transform="matrix(11.955797,0,0,-11.9552,125.73782,48.038)" fill="#2832dc"/>
 </svg>

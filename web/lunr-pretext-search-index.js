@@ -2332,6 +2332,519 @@ var ptx_lunr_docs = [
   "body": "  Given , find the vertex by:   Completing the square  The vertex formula      Method 1: Completing the Square    Vertex:   Method 2: Vertex Formula     Vertex:   Graph of       "
 },
 {
+  "id": "section-3-2",
+  "level": "1",
+  "url": "section-3-2.html",
+  "type": "Section",
+  "number": "",
+  "title": "Section 3.2 Polynomial Functions",
+  "body": " Section 3.2 Polynomial Functions    Polynomial Functions   Polynomial Function  Let be a nonnegative integer and let be real numbers with . The function given by   is called a polynomial function of with degree  .  Polynomial functions are classified by degree. For instance, a constant function with has degree 0, and a linear function with has degree 1. When dealing with polynomials in one variable, the degree is the same as the largest exponent .    Polynomial Functions Video     Properties of Polynomials  Polynomials have two important features: they are continuous and smooth .   Continuous  The graph of a polynomial function is continuous. This means that the graph has no breaks, holes, or gaps. You can draw the graph without lifting your pencil.    A continuous graph (polynomial)       A discontinuous graph (piecewise defined, not polynomial)       Smooth  The graph of a polynomial function has only smooth, rounded turns. It cannot have sharp corners.    A smooth graph (polynomial)        A graph with a sharp corner (not polynomial)     The function has a sharp turn at and is not a polynomial function.      Monomials  The polynomial functions that have the simplest graphs are monomials of the form , where is an integer greater than zero.   What pattern do you see?                                                            End Behavior  Whether the graph of a polynomial function eventually rises or falls (as and ) can be determined by the function's degree (even or odd) and by its leading coefficient, as indicated in the Leading Coefficient Test .   Notice that there are only 4 possibilities!    Leading Coefficient Test       End Behavior Examples    Describe the right-hand and left-hand behavior of the graph of each function.   a.   b.     c.   d.      a.  has degree 3 (odd) and leading coefficient -1 (negative). So the graph falls to the right and rises to the left.   Graph of      b.  has degree 4 (even) and leading coefficient 1 (positive). So the graph rises to the right and rises to the left.    Graph of      c.  has degree 5 (odd) and leading coefficient 1 (positive). So the graph rises to the right and falls to the left.    Graph of      d.  has degree 1+3=4 (even) and leading coefficient -2 (negative). So the graph falls to the right and falls to the left.    Graph of           Zeros of Polynomial Functions   Zeros of a Polynomial  The values of in the domain of for which are called the zeros of the function. These are the real solutions (or roots) of the equation and correspond to the -intercepts of the graph of .    Related statements:    is a zero of the function  is a solution (or root) of the equation  is an -intercept of the graph of  is a factor of     Find the zeros of by factoring.    Factor by grouping:   Zeros: , , .    Graph of           Multiplicity and Touch\/Cross   Multiplicity  If a polynomial function has a factor that appears exactly times, then is a zero of multiplicity  . In other words, if the factor is a factor of the polynomial, is a zero of multiplicity of .  If is a zero of odd multiplicity, then the graph crosses the -axis at .  If is a zero of even multiplicity, then the graph touches the -axis at (bounces off).   Compare the following functions. How does the exponent on the factor affect the -intercept?    cross (odd multiplicity)        touches (even multiplicity)        crosses (odd multiplicity)          You Try:    Given , find all real zeros, determine their multiplicity, then graph the function.   Steps:    Factored form  End Behavior  Intercepts (y-intercept and x-intercepts with multiplicities)  Check points      Factored form:     End Behavior: Degree 3 (odd), leading coefficient 3 (positive) → falls to the left, rises to the right.   Intercepts:    y-intercept:  x-intercepts: (multiplicity 1, odd → crosses), (multiplicity 2, even → touches)    Check points: e.g., , .    Graph of             Given , find all real zeros, determine their multiplicity, then graph the function.   Steps:    Factored form  End Behavior  Intercepts (y-intercept and x-intercepts with multiplicities)  Check points      Factored form:     End Behavior: Degree 4 (even), leading coefficient 2 (positive) → rises to the right and left.   Intercepts:    y-intercept:  x-intercepts: (multiplicity 1, odd → crosses), (multiplicity 1, odd → crosses).  The factor has no real zeros.     Graph of         "
+},
+{
+  "id": "intro-polynomial-functions-2",
+  "level": "2",
+  "url": "section-3-2.html#intro-polynomial-functions-2",
+  "type": "Definition",
+  "number": "165",
+  "title": "Polynomial Function.",
+  "body": " Polynomial Function  Let be a nonnegative integer and let be real numbers with . The function given by   is called a polynomial function of with degree  .  Polynomial functions are classified by degree. For instance, a constant function with has degree 0, and a linear function with has degree 1. When dealing with polynomials in one variable, the degree is the same as the largest exponent .  "
+},
+{
+  "id": "properties-polynomials-3",
+  "level": "2",
+  "url": "section-3-2.html#properties-polynomials-3",
+  "type": "Definition",
+  "number": "166",
+  "title": "Continuous.",
+  "body": " Continuous  The graph of a polynomial function is continuous. This means that the graph has no breaks, holes, or gaps. You can draw the graph without lifting your pencil.  "
+},
+{
+  "id": "properties-polynomials-4",
+  "level": "2",
+  "url": "section-3-2.html#properties-polynomials-4",
+  "type": "Figure",
+  "number": "167",
+  "title": "",
+  "body": " A continuous graph (polynomial)     "
+},
+{
+  "id": "properties-polynomials-5",
+  "level": "2",
+  "url": "section-3-2.html#properties-polynomials-5",
+  "type": "Figure",
+  "number": "168",
+  "title": "",
+  "body": " A discontinuous graph (piecewise defined, not polynomial)     "
+},
+{
+  "id": "properties-polynomials-6",
+  "level": "2",
+  "url": "section-3-2.html#properties-polynomials-6",
+  "type": "Definition",
+  "number": "169",
+  "title": "Smooth.",
+  "body": " Smooth  The graph of a polynomial function has only smooth, rounded turns. It cannot have sharp corners.  "
+},
+{
+  "id": "properties-polynomials-7",
+  "level": "2",
+  "url": "section-3-2.html#properties-polynomials-7",
+  "type": "Figure",
+  "number": "170",
+  "title": "",
+  "body": " A smooth graph (polynomial)     "
+},
+{
+  "id": "properties-polynomials-8",
+  "level": "2",
+  "url": "section-3-2.html#properties-polynomials-8",
+  "type": "Figure",
+  "number": "171",
+  "title": "",
+  "body": " A graph with a sharp corner (not polynomial)     The function has a sharp turn at and is not a polynomial function.  "
+},
+{
+  "id": "monomials-4-1",
+  "level": "2",
+  "url": "section-3-2.html#monomials-4-1",
+  "type": "Figure",
+  "number": "172",
+  "title": "",
+  "body": "     "
+},
+{
+  "id": "monomials-4-2",
+  "level": "2",
+  "url": "section-3-2.html#monomials-4-2",
+  "type": "Figure",
+  "number": "173",
+  "title": "",
+  "body": "     "
+},
+{
+  "id": "monomials-4-3",
+  "level": "2",
+  "url": "section-3-2.html#monomials-4-3",
+  "type": "Figure",
+  "number": "174",
+  "title": "",
+  "body": "     "
+},
+{
+  "id": "monomials-5-1",
+  "level": "2",
+  "url": "section-3-2.html#monomials-5-1",
+  "type": "Figure",
+  "number": "175",
+  "title": "",
+  "body": "     "
+},
+{
+  "id": "monomials-5-2",
+  "level": "2",
+  "url": "section-3-2.html#monomials-5-2",
+  "type": "Figure",
+  "number": "176",
+  "title": "",
+  "body": "     "
+},
+{
+  "id": "monomials-5-3",
+  "level": "2",
+  "url": "section-3-2.html#monomials-5-3",
+  "type": "Figure",
+  "number": "177",
+  "title": "",
+  "body": "     "
+},
+{
+  "id": "monomials-6-1",
+  "level": "2",
+  "url": "section-3-2.html#monomials-6-1",
+  "type": "Figure",
+  "number": "178",
+  "title": "",
+  "body": "     "
+},
+{
+  "id": "monomials-6-2",
+  "level": "2",
+  "url": "section-3-2.html#monomials-6-2",
+  "type": "Figure",
+  "number": "179",
+  "title": "",
+  "body": "     "
+},
+{
+  "id": "end-behavior-2",
+  "level": "2",
+  "url": "section-3-2.html#end-behavior-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Leading Coefficient Test "
+},
+{
+  "id": "end-behavior-4",
+  "level": "2",
+  "url": "section-3-2.html#end-behavior-4",
+  "type": "Figure",
+  "number": "180",
+  "title": "",
+  "body": " Leading Coefficient Test   "
+},
+{
+  "id": "end-behavior-examples-2",
+  "level": "2",
+  "url": "section-3-2.html#end-behavior-examples-2",
+  "type": "Example",
+  "number": "126",
+  "title": "",
+  "body": "  Describe the right-hand and left-hand behavior of the graph of each function.   a.   b.     c.   d.      a.  has degree 3 (odd) and leading coefficient -1 (negative). So the graph falls to the right and rises to the left.   Graph of      b.  has degree 4 (even) and leading coefficient 1 (positive). So the graph rises to the right and rises to the left.    Graph of      c.  has degree 5 (odd) and leading coefficient 1 (positive). So the graph rises to the right and falls to the left.    Graph of      d.  has degree 1+3=4 (even) and leading coefficient -2 (negative). So the graph falls to the right and falls to the left.    Graph of       "
+},
+{
+  "id": "zeros-of-polynomials-2",
+  "level": "2",
+  "url": "section-3-2.html#zeros-of-polynomials-2",
+  "type": "Definition",
+  "number": "185",
+  "title": "Zeros of a Polynomial.",
+  "body": " Zeros of a Polynomial  The values of in the domain of for which are called the zeros of the function. These are the real solutions (or roots) of the equation and correspond to the -intercepts of the graph of .  "
+},
+{
+  "id": "zeros-of-polynomials-5",
+  "level": "2",
+  "url": "section-3-2.html#zeros-of-polynomials-5",
+  "type": "Example",
+  "number": "127",
+  "title": "",
+  "body": "  Find the zeros of by factoring.    Factor by grouping:   Zeros: , , .    Graph of       "
+},
+{
+  "id": "multiplicity-2",
+  "level": "2",
+  "url": "section-3-2.html#multiplicity-2",
+  "type": "Definition",
+  "number": "187",
+  "title": "Multiplicity.",
+  "body": " Multiplicity  If a polynomial function has a factor that appears exactly times, then is a zero of multiplicity  . In other words, if the factor is a factor of the polynomial, is a zero of multiplicity of .  If is a zero of odd multiplicity, then the graph crosses the -axis at .  If is a zero of even multiplicity, then the graph touches the -axis at (bounces off).  "
+},
+{
+  "id": "multiplicity-4-1",
+  "level": "2",
+  "url": "section-3-2.html#multiplicity-4-1",
+  "type": "Figure",
+  "number": "188",
+  "title": "",
+  "body": " cross (odd multiplicity)     "
+},
+{
+  "id": "multiplicity-4-2",
+  "level": "2",
+  "url": "section-3-2.html#multiplicity-4-2",
+  "type": "Figure",
+  "number": "189",
+  "title": "",
+  "body": " touches (even multiplicity)     "
+},
+{
+  "id": "multiplicity-4-3",
+  "level": "2",
+  "url": "section-3-2.html#multiplicity-4-3",
+  "type": "Figure",
+  "number": "190",
+  "title": "",
+  "body": " crosses (odd multiplicity)     "
+},
+{
+  "id": "example-graph-polynomial-1-2",
+  "level": "2",
+  "url": "section-3-2.html#example-graph-polynomial-1-2",
+  "type": "Example",
+  "number": "128",
+  "title": "",
+  "body": "  Given , find all real zeros, determine their multiplicity, then graph the function.   Steps:    Factored form  End Behavior  Intercepts (y-intercept and x-intercepts with multiplicities)  Check points      Factored form:     End Behavior: Degree 3 (odd), leading coefficient 3 (positive) → falls to the left, rises to the right.   Intercepts:    y-intercept:  x-intercepts: (multiplicity 1, odd → crosses), (multiplicity 2, even → touches)    Check points: e.g., , .    Graph of       "
+},
+{
+  "id": "example-graph-polynomial-2-1",
+  "level": "2",
+  "url": "section-3-2.html#example-graph-polynomial-2-1",
+  "type": "Example",
+  "number": "129",
+  "title": "",
+  "body": "  Given , find all real zeros, determine their multiplicity, then graph the function.   Steps:    Factored form  End Behavior  Intercepts (y-intercept and x-intercepts with multiplicities)  Check points      Factored form:     End Behavior: Degree 4 (even), leading coefficient 2 (positive) → rises to the right and left.   Intercepts:    y-intercept:  x-intercepts: (multiplicity 1, odd → crosses), (multiplicity 1, odd → crosses).  The factor has no real zeros.     Graph of       "
+},
+{
+  "id": "section-3-3",
+  "level": "1",
+  "url": "section-3-3.html",
+  "type": "Section",
+  "number": "",
+  "title": "Section 3.3 Polynomial Division",
+  "body": " Section 3.3 Polynomial Division    Polynomial Division  In this section, we will study two procedures for dividing polynomials.  Do you remember long division?   Example:     Long Division Steps    Divide the first digit by the divisor (5). Write the result on top (1).  Multiply the result from step 1 by 5 and write below the dividend.  Subtract (6 − 5) and \"bring down\" the next digit.  Divide the result from step 3 by the divisor and back to step 3.  Repeat until no digits remain.     Because (with remainder 0), we say that 5 is a factor of 6170.  That is: .    Long division of         Division Algorithm   Division Algorithm  Suppose that and are polynomials where and the degree of is less than or equal to the degree of .  Then there exists unique polynomials and such that:   or   where the degree of is zero or of lesser degree than .    Note: The polynomial is the dividend , is the divisor , is the quotient , and is the remainder .  This means that we can divide one polynomial by another of lesser degree. BUT HOW?   Dividing Polynomials Using Long Division Video     Dividing Polynomials Using Long Division   Long Division Strategy    To begin the division: Always write the terms of the dividend and divisor in descending order with place holders for missing powers of .  Divide the FIRST TERM of the dividend by the FIRST TERM of the divisor. Place the result on the top of the division symbol.  Multiply the entire divisor by the new term in the quotient and write the result under the dividend.  Subtract and bring down the next term.  Repeat until the difference is of lower degree than the divisor (or zero).        Use Polynomial Long Division to divide .     Polynomial long division of      Thus, we can write the result in two equivalent forms:   and        Use Polynomial Division to divide .     Polynomial long division of      Thus,   and        Divide: .     Polynomial long division of      Since the remainder is 0, we have   and        Dividing Polynomials Using Synthetic Division   Note: I usually skip this topic. Long division always works. But you can review this video if you like using Synthetic Division. Careful, synthetic division only works when you divide by .   Dividing Polynomials Using Synthetic Division Video  When dividing polynomials where the divisor is a binomial of the form and is a constant, we can use synthetic division.   Synthetic Division Strategy    Write the value of in a box.  Write the coefficients of the dividend to the right of the box.  Skip a line and draw a horizontal line below the list of coefficients.  Bring down the leading coefficient from the dividend and write it below the line.  Multiply the value of by the number below the line. Write the result in the next column above the line.  Add the numbers in the column above the line, and write the result below the line.    Repeat steps 5 and 6 until all columns have been completed. The right-most number below the line is the remainder. The other numbers below the line are the coefficients of the quotient in order by the degree of the term. Since the divisor is linear (1st-degree), the degree of the quotient is 1 less than the degree of the dividend.      Divide using synthetic division: .       The remainder is .  Thus,   and        Divide using synthetic division: .       The remainder is 0, so is a factor.  Thus,   and        Factor Theorem   Factor Theorem Video   is a factor of if and only if is a root of the equation .   What does this mean?    If you know a factor, you know a zero (root, x-intercept).  If you know a zero, you know a factor.    Example Video    Given that 3 and are roots of , construct a polynomial .    If 3 and are roots, then and are factors.  So .  (Any nonzero constant multiple of this polynomial would also work.)      Use the factor theorem to determine if is a factor of .    Evaluate :   Since ,  is a factor of .     Remember: If , then:   is a zero of the function  is a solution (or root) of the equation  is an -intercept of the graph of  is a factor of (divides with no remainder)      Putting It All Together     Use the factor theorem to show is a factor of . Then, factor completely, find ALL the zeros and sketch a graph.     Step 1: Verify is a factor.   Evaluate :   Since , is a factor.   Step 2: Divide.   Using synthetic division:   So .   Step 3: Factor completely.    Therefore:    Step 4: End Behavior.   Degree 3 (odd), leading coefficient 6 (positive) → falls to the left, rises to the right.   Step 5: Zeros.    , multiplicity 1 (crosses)  , multiplicity 1 (crosses)  , multiplicity 1 (crosses)    Step 6: y-intercept.      Graph of         "
+},
+{
+  "id": "intro-polynomial-division-5",
+  "level": "2",
+  "url": "section-3-3.html#intro-polynomial-division-5",
+  "type": "Problem-Solving Strategy",
+  "number": "193",
+  "title": "Long Division Steps.",
+  "body": " Long Division Steps    Divide the first digit by the divisor (5). Write the result on top (1).  Multiply the result from step 1 by 5 and write below the dividend.  Subtract (6 − 5) and \"bring down\" the next digit.  Divide the result from step 3 by the divisor and back to step 3.  Repeat until no digits remain.    "
+},
+{
+  "id": "intro-polynomial-division-6",
+  "level": "2",
+  "url": "section-3-3.html#intro-polynomial-division-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "factor "
+},
+{
+  "id": "intro-polynomial-division-8",
+  "level": "2",
+  "url": "section-3-3.html#intro-polynomial-division-8",
+  "type": "Figure",
+  "number": "194",
+  "title": "",
+  "body": " Long division of     "
+},
+{
+  "id": "division-algorithm-2",
+  "level": "2",
+  "url": "section-3-3.html#division-algorithm-2",
+  "type": "Definition",
+  "number": "195",
+  "title": "Division Algorithm.",
+  "body": " Division Algorithm  Suppose that and are polynomials where and the degree of is less than or equal to the degree of .  Then there exists unique polynomials and such that:   or   where the degree of is zero or of lesser degree than .  "
+},
+{
+  "id": "division-algorithm-3",
+  "level": "2",
+  "url": "section-3-3.html#division-algorithm-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "dividend divisor quotient remainder "
+},
+{
+  "id": "long-division-2",
+  "level": "2",
+  "url": "section-3-3.html#long-division-2",
+  "type": "Problem-Solving Strategy",
+  "number": "196",
+  "title": "Long Division Strategy.",
+  "body": " Long Division Strategy    To begin the division: Always write the terms of the dividend and divisor in descending order with place holders for missing powers of .  Divide the FIRST TERM of the dividend by the FIRST TERM of the divisor. Place the result on the top of the division symbol.  Multiply the entire divisor by the new term in the quotient and write the result under the dividend.  Subtract and bring down the next term.  Repeat until the difference is of lower degree than the divisor (or zero).    "
+},
+{
+  "id": "long-division-3",
+  "level": "2",
+  "url": "section-3-3.html#long-division-3",
+  "type": "Example",
+  "number": "130",
+  "title": "",
+  "body": "  Use Polynomial Long Division to divide .     Polynomial long division of      Thus, we can write the result in two equivalent forms:   and    "
+},
+{
+  "id": "long-division-4",
+  "level": "2",
+  "url": "section-3-3.html#long-division-4",
+  "type": "Example",
+  "number": "131",
+  "title": "",
+  "body": "  Use Polynomial Division to divide .     Polynomial long division of      Thus,   and    "
+},
+{
+  "id": "long-division-5",
+  "level": "2",
+  "url": "section-3-3.html#long-division-5",
+  "type": "Example",
+  "number": "132",
+  "title": "",
+  "body": "  Divide: .     Polynomial long division of      Since the remainder is 0, we have   and    "
+},
+{
+  "id": "synthetic-division-5",
+  "level": "2",
+  "url": "section-3-3.html#synthetic-division-5",
+  "type": "Problem-Solving Strategy",
+  "number": "200",
+  "title": "Synthetic Division Strategy.",
+  "body": " Synthetic Division Strategy    Write the value of in a box.  Write the coefficients of the dividend to the right of the box.  Skip a line and draw a horizontal line below the list of coefficients.  Bring down the leading coefficient from the dividend and write it below the line.  Multiply the value of by the number below the line. Write the result in the next column above the line.  Add the numbers in the column above the line, and write the result below the line.    Repeat steps 5 and 6 until all columns have been completed. The right-most number below the line is the remainder. The other numbers below the line are the coefficients of the quotient in order by the degree of the term. Since the divisor is linear (1st-degree), the degree of the quotient is 1 less than the degree of the dividend.  "
+},
+{
+  "id": "synthetic-division-6",
+  "level": "2",
+  "url": "section-3-3.html#synthetic-division-6",
+  "type": "Example",
+  "number": "133",
+  "title": "",
+  "body": "  Divide using synthetic division: .       The remainder is .  Thus,   and    "
+},
+{
+  "id": "synthetic-division-7",
+  "level": "2",
+  "url": "section-3-3.html#synthetic-division-7",
+  "type": "Example",
+  "number": "134",
+  "title": "",
+  "body": "  Divide using synthetic division: .       The remainder is 0, so is a factor.  Thus,   and    "
+},
+{
+  "id": "factor-theorem-7",
+  "level": "2",
+  "url": "section-3-3.html#factor-theorem-7",
+  "type": "Example",
+  "number": "135",
+  "title": "",
+  "body": "  Given that 3 and are roots of , construct a polynomial .    If 3 and are roots, then and are factors.  So .  (Any nonzero constant multiple of this polynomial would also work.)   "
+},
+{
+  "id": "factor-theorem-8",
+  "level": "2",
+  "url": "section-3-3.html#factor-theorem-8",
+  "type": "Example",
+  "number": "136",
+  "title": "",
+  "body": "  Use the factor theorem to determine if is a factor of .    Evaluate :   Since ,  is a factor of .   "
+},
+{
+  "id": "putting-it-all-together-2",
+  "level": "2",
+  "url": "section-3-3.html#putting-it-all-together-2",
+  "type": "Example",
+  "number": "137",
+  "title": "",
+  "body": "  Use the factor theorem to show is a factor of . Then, factor completely, find ALL the zeros and sketch a graph.     Step 1: Verify is a factor.   Evaluate :   Since , is a factor.   Step 2: Divide.   Using synthetic division:   So .   Step 3: Factor completely.    Therefore:    Step 4: End Behavior.   Degree 3 (odd), leading coefficient 6 (positive) → falls to the left, rises to the right.   Step 5: Zeros.    , multiplicity 1 (crosses)  , multiplicity 1 (crosses)  , multiplicity 1 (crosses)    Step 6: y-intercept.      Graph of       "
+},
+{
+  "id": "section-3-4",
+  "level": "1",
+  "url": "section-3-4.html",
+  "type": "Section",
+  "number": "",
+  "title": "Section 3.4 Zeros of Polynomials",
+  "body": " Section 3.4 Zeros of Polynomials    Factor Theorem  In the previous section, we learned how to divide polynomials. Now we will use those skills to find the zeros of polynomial functions. The Factor Theorem provides the connection between factors and zeros.   Rational Root Theorem Video   Factor Theorem  Let be a polynomial.   If , then is a factor of .  If is a factor of , then .   Notice that the theorem works in both directions — factors and zeros are equivalent statements.     Factor given that is a factor.    Since is a factor, we divide by using synthetic division:   This tells us that:   The remaining factor is in \"quadratic form\" (it looks like a quadratic in ), so we can factor it:   Therefore:   The zeros are .       Rational Zero Theorem  But what if we don't have a factor given to us? We need a way to find potential zeros. The Rational Zero Theorem gives us a finite list of candidates to test.   Rational Zero Theorem  If has integer coefficients and , and if (written in lowest terms) is a rational zero of , then is a factor of the constant term and is a factor of the leading coefficient .  If a rational zero exists for a polynomial, then it must be of the form:    This theorem tells us that if has a rational zero, it will be found in the list of possibilities created above. However, it does not guarantee that has a rational zero, nor does it guarantee that everything in the list is a zero. The Rational Zero Theorem is useful because it creates a finite list of possibilities we can test to find a zero.     Given , find the zeros (that is, factor completely) and their multiplicities, then sketch its graph.     Step 1: List possible rational zeros.   The constant term is and the leading coefficient is .    Step 2: Test possible zeros using the Factor Theorem.   Start with :   Since , is a zero, so is a factor. Divide:   This gives us: .   Step 3: Test another possible zero on the cubic factor.   Test :   Since , is a zero, so is a factor. Divide:   Now we have a quadratic factor: .   Step 4: Factor the quadratic.     Step 5: Write the complete factorization.     Step 6: Identify zeros and multiplicities.    , multiplicity 2 (the graph touches the x-axis here)  , multiplicity 1 (the graph crosses here)  , multiplicity 1 (the graph crosses here)    End Behavior: Degree 4 (even), leading coefficient 2 (positive) → rises to the right and to the left.       Graph of           Graphing Example   Graphing Example Video  The process of finding zeros is systematic:   Use the Rational Zero Theorem to list possible zeros.  Test candidates using the Factor Theorem.  Divide to factor the polynomial.  Continue until all factors are found.  Use the zeros and end behavior to sketch the graph.     Given , find the zeros (that is, factor completely) and their multiplicities, then sketch its graph.     Step 1: List possible rational zeros.   The constant term is and the leading coefficient is .    Step 2: Test possible zeros.   Test :   Since , is a zero, so is a factor. Divide:   So .   Step 3: Find remaining zeros using the quadratic formula.   For :   So the zeros are:    Step 4: Zeros and multiplicities.    , multiplicity 1 (crosses)  , multiplicity 1 (crosses)  , multiplicity 1 (crosses)    End Behavior: Degree 3 (odd), leading coefficient 1 (positive) → falls to the left, rises to the right.        Graph of          Given , find the zeros (that is, factor completely) and their multiplicities, then sketch its graph.     Step 1: List possible rational zeros.   The constant term is and the leading coefficient is .   That's a LOT of possible zeros (and we know that a cubic can only have 3 zeros). We can use a graph to help us decide which zeros are likely. Remember, the graph doesn't prove we have a zero — we must use division to confirm.   Step 2: Test likely zeros.   From the graph, it looks like and are zeros. Let's test :   Since , is a zero. Divide:   So .   Step 3: Factor the quadratic.    Therefore:    Step 4: Zeros and multiplicities.    , multiplicity 1 (crosses)  , multiplicity 1 (crosses)  , multiplicity 1 (crosses)    End Behavior: Degree 3 (odd), leading coefficient (negative) → rises to the left, falls to the right.       Graph of           The Fundamental Theorem of Algebra   Fundamental Theorem of Algebra Video   Fundamental Theorem of Algebra  If is a polynomial of degree , where , then has at least one zero in the complex number system.   This means that , but is ALSO a polynomial, so it too must have a zero. We can continue this process: , and so on, until the quotient is a linear factor. That gives us:    Linear Factorization Theorem  If is a polynomial of degree , where , then has precisely linear factors:   where are complex numbers.   What does this tell us? Every polynomial can be factored into the product of linear factors.   Note that the Fundamental Theorem of Algebra and the Linear Factorization Theorem tell you only that the zeros or factors of a polynomial exist — not how to find them. Such theorems are called existence theorems . Remember that the zeros of a polynomial function can be real or complex, and they may be repeated.  Some useful facts about factors of polynomials:   Conjugate Zeros Theorem  If is a polynomial with real coefficients and if ( ) is a zero of , then its conjugate is also a zero of .  Complex factors of polynomials with real coefficients ALWAYS come as conjugate pairs.    Number of Zeros of a Polynomial  If is a polynomial of degree with complex coefficients, then has exactly complex zeros, provided that each zero is counted by its multiplicity.  A polynomial of degree has zeros (n factors, n roots) when you count multiplicities.      Given , express as a product of linear factors and sketch its graph.     Step 1: List possible rational zeros.   The constant term is and the leading coefficient is .    Step 2: Test possible zeros.   It looks like and are zeros. Test :   Since , is a zero. Divide:   So .  Now test on the cubic factor:   So .   Step 3: Find remaining zeros using the quadratic formula.   For , with , , :    Step 4: Write the complete factorization.     Step 5: Zeros and multiplicities.    , multiplicity 1  , multiplicity 1  , multiplicity 1  , multiplicity 1     Graph of           Given that is a zero of , find the remaining zeros.   Hint: If is a zero, then is also a zero (by the Conjugate Zeros Theorem).     Step 1: Find the quadratic factor corresponding to the complex conjugate pair.   If and are zeros, then:    Step 2: Divide the original polynomial by this quadratic factor.    Long division of      So we have:    Step 3: Factor the quadratic.     Step 4: Write the complete factorization.     Step 5: Identify all zeros.    (given)  (conjugate pair)        "
+},
+{
+  "id": "intro-factor-theorem-4",
+  "level": "2",
+  "url": "section-3-4.html#intro-factor-theorem-4",
+  "type": "Definition",
+  "number": "202",
+  "title": "Factor Theorem.",
+  "body": " Factor Theorem  Let be a polynomial.   If , then is a factor of .  If is a factor of , then .   Notice that the theorem works in both directions — factors and zeros are equivalent statements.  "
+},
+{
+  "id": "intro-factor-theorem-5",
+  "level": "2",
+  "url": "section-3-4.html#intro-factor-theorem-5",
+  "type": "Example",
+  "number": "138",
+  "title": "",
+  "body": "  Factor given that is a factor.    Since is a factor, we divide by using synthetic division:   This tells us that:   The remaining factor is in \"quadratic form\" (it looks like a quadratic in ), so we can factor it:   Therefore:   The zeros are .   "
+},
+{
+  "id": "rational-zero-theorem-3",
+  "level": "2",
+  "url": "section-3-4.html#rational-zero-theorem-3",
+  "type": "Definition",
+  "number": "203",
+  "title": "Rational Zero Theorem.",
+  "body": " Rational Zero Theorem  If has integer coefficients and , and if (written in lowest terms) is a rational zero of , then is a factor of the constant term and is a factor of the leading coefficient .  If a rational zero exists for a polynomial, then it must be of the form:   "
+},
+{
+  "id": "rational-zero-theorem-5",
+  "level": "2",
+  "url": "section-3-4.html#rational-zero-theorem-5",
+  "type": "Example",
+  "number": "139",
+  "title": "",
+  "body": "  Given , find the zeros (that is, factor completely) and their multiplicities, then sketch its graph.     Step 1: List possible rational zeros.   The constant term is and the leading coefficient is .    Step 2: Test possible zeros using the Factor Theorem.   Start with :   Since , is a zero, so is a factor. Divide:   This gives us: .   Step 3: Test another possible zero on the cubic factor.   Test :   Since , is a zero, so is a factor. Divide:   Now we have a quadratic factor: .   Step 4: Factor the quadratic.     Step 5: Write the complete factorization.     Step 6: Identify zeros and multiplicities.    , multiplicity 2 (the graph touches the x-axis here)  , multiplicity 1 (the graph crosses here)  , multiplicity 1 (the graph crosses here)    End Behavior: Degree 4 (even), leading coefficient 2 (positive) → rises to the right and to the left.       Graph of       "
+},
+{
+  "id": "graphing-example-5",
+  "level": "2",
+  "url": "section-3-4.html#graphing-example-5",
+  "type": "Example",
+  "number": "140",
+  "title": "",
+  "body": "  Given , find the zeros (that is, factor completely) and their multiplicities, then sketch its graph.     Step 1: List possible rational zeros.   The constant term is and the leading coefficient is .    Step 2: Test possible zeros.   Test :   Since , is a zero, so is a factor. Divide:   So .   Step 3: Find remaining zeros using the quadratic formula.   For :   So the zeros are:    Step 4: Zeros and multiplicities.    , multiplicity 1 (crosses)  , multiplicity 1 (crosses)  , multiplicity 1 (crosses)    End Behavior: Degree 3 (odd), leading coefficient 1 (positive) → falls to the left, rises to the right.        Graph of       "
+},
+{
+  "id": "graphing-example-6",
+  "level": "2",
+  "url": "section-3-4.html#graphing-example-6",
+  "type": "Example",
+  "number": "141",
+  "title": "",
+  "body": "  Given , find the zeros (that is, factor completely) and their multiplicities, then sketch its graph.     Step 1: List possible rational zeros.   The constant term is and the leading coefficient is .   That's a LOT of possible zeros (and we know that a cubic can only have 3 zeros). We can use a graph to help us decide which zeros are likely. Remember, the graph doesn't prove we have a zero — we must use division to confirm.   Step 2: Test likely zeros.   From the graph, it looks like and are zeros. Let's test :   Since , is a zero. Divide:   So .   Step 3: Factor the quadratic.    Therefore:    Step 4: Zeros and multiplicities.    , multiplicity 1 (crosses)  , multiplicity 1 (crosses)  , multiplicity 1 (crosses)    End Behavior: Degree 3 (odd), leading coefficient (negative) → rises to the left, falls to the right.       Graph of       "
+},
+{
+  "id": "fundamental-theorem-3",
+  "level": "2",
+  "url": "section-3-4.html#fundamental-theorem-3",
+  "type": "Definition",
+  "number": "207",
+  "title": "Fundamental Theorem of Algebra.",
+  "body": " Fundamental Theorem of Algebra  If is a polynomial of degree , where , then has at least one zero in the complex number system.  "
+},
+{
+  "id": "fundamental-theorem-5",
+  "level": "2",
+  "url": "section-3-4.html#fundamental-theorem-5",
+  "type": "Definition",
+  "number": "208",
+  "title": "Linear Factorization Theorem.",
+  "body": " Linear Factorization Theorem  If is a polynomial of degree , where , then has precisely linear factors:   where are complex numbers.  "
+},
+{
+  "id": "fundamental-theorem-7",
+  "level": "2",
+  "url": "section-3-4.html#fundamental-theorem-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "existence theorems "
+},
+{
+  "id": "fundamental-theorem-9",
+  "level": "2",
+  "url": "section-3-4.html#fundamental-theorem-9",
+  "type": "Definition",
+  "number": "209",
+  "title": "Conjugate Zeros Theorem.",
+  "body": " Conjugate Zeros Theorem  If is a polynomial with real coefficients and if ( ) is a zero of , then its conjugate is also a zero of .  Complex factors of polynomials with real coefficients ALWAYS come as conjugate pairs.  "
+},
+{
+  "id": "fundamental-theorem-10",
+  "level": "2",
+  "url": "section-3-4.html#fundamental-theorem-10",
+  "type": "Definition",
+  "number": "210",
+  "title": "Number of Zeros of a Polynomial.",
+  "body": " Number of Zeros of a Polynomial  If is a polynomial of degree with complex coefficients, then has exactly complex zeros, provided that each zero is counted by its multiplicity.  A polynomial of degree has zeros (n factors, n roots) when you count multiplicities.  "
+},
+{
+  "id": "fundamental-theorem-11",
+  "level": "2",
+  "url": "section-3-4.html#fundamental-theorem-11",
+  "type": "Example",
+  "number": "142",
+  "title": "",
+  "body": "  Given , express as a product of linear factors and sketch its graph.     Step 1: List possible rational zeros.   The constant term is and the leading coefficient is .    Step 2: Test possible zeros.   It looks like and are zeros. Test :   Since , is a zero. Divide:   So .  Now test on the cubic factor:   So .   Step 3: Find remaining zeros using the quadratic formula.   For , with , , :    Step 4: Write the complete factorization.     Step 5: Zeros and multiplicities.    , multiplicity 1  , multiplicity 1  , multiplicity 1  , multiplicity 1     Graph of       "
+},
+{
+  "id": "fundamental-theorem-12",
+  "level": "2",
+  "url": "section-3-4.html#fundamental-theorem-12",
+  "type": "Example",
+  "number": "143",
+  "title": "",
+  "body": "  Given that is a zero of , find the remaining zeros.   Hint: If is a zero, then is also a zero (by the Conjugate Zeros Theorem).     Step 1: Find the quadratic factor corresponding to the complex conjugate pair.   If and are zeros, then:    Step 2: Divide the original polynomial by this quadratic factor.    Long division of      So we have:    Step 3: Factor the quadratic.     Step 4: Write the complete factorization.     Step 5: Identify all zeros.    (given)  (conjugate pair)      "
+},
+{
   "id": "activities",
   "level": "1",
   "url": "activities.html",

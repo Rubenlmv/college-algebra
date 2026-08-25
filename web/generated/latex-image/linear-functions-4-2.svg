@@ -55,11 +55,11 @@
 <use data-text="2" xlink:href="#font_3_1" transform="matrix(4.981549,0,0,-4.9813,84.68129,130.471)"/>
 <use data-text="2" xlink:href="#font_3_1" transform="matrix(4.981549,0,0,-4.9813,84.68028,74.13699)"/>
 <use data-text="4" xlink:href="#font_3_2" transform="matrix(4.981549,0,0,-4.9813,84.68028,45.790998)"/>
-<path transform="matrix(1.00005,0,0,-1,94.425769,100.879)" stroke-width=".79701" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#2d37dc" d="M-5.66925 85.04037 28.34679-85.04037"/>
+<path transform="matrix(1.00005,0,0,-1,94.425769,100.879)" stroke-width=".79701" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#2832dc" d="M-5.66925 85.04037 28.34679-85.04037"/>
 <path transform="matrix(1.00005,0,0,-1,94.425769,100.879)" d="M1.4174 56.69359C1.4174 57.47641 .78282 58.111 0 58.111-.78282 58.111-1.4174 57.47641-1.4174 56.69359-1.4174 55.91075-.78282 55.27617 0 55.27617 .78282 55.27617 1.4174 55.91075 1.4174 56.69359ZM0 56.69359" fill="#ff0000"/>
 <path transform="matrix(1.00005,0,0,-1,94.425769,100.879)" d="M15.5908-14.17339C15.5908-13.39056 14.95622-12.75597 14.17339-12.75597 13.39056-12.75597 12.75597-13.39056 12.75597-14.17339 12.75597-14.95622 13.39056-15.5908 14.17339-15.5908 14.95622-15.5908 15.5908-14.95622 15.5908-14.17339ZM14.17339-14.17339" fill="#ff0000"/>
-<use data-text="m" xlink:href="#font_4_1" transform="matrix(11.955797,0,0,-11.9552,123.46522,40.453)" fill="#2d37dc"/>
-<use data-text="=" xlink:href="#font_5_2" transform="matrix(11.955797,0,0,-11.9552,137.02591,40.453)" fill="#2d37dc"/>
-<use data-text="&#x2212;" xlink:href="#font_6_1" transform="matrix(11.955797,0,0,-11.9552,149.45252,40.453)" fill="#2d37dc"/>
-<use data-text="5" xlink:href="#font_5_1" transform="matrix(11.955797,0,0,-11.9552,158.75098,40.453)" fill="#2d37dc"/>
+<use data-text="m" xlink:href="#font_4_1" transform="matrix(11.955797,0,0,-11.9552,123.46522,40.453)" fill="#2832dc"/>
+<use data-text="=" xlink:href="#font_5_2" transform="matrix(11.955797,0,0,-11.9552,137.02591,40.453)" fill="#2832dc"/>
+<use data-text="&#x2212;" xlink:href="#font_6_1" transform="matrix(11.955797,0,0,-11.9552,149.45252,40.453)" fill="#2832dc"/>
+<use data-text="5" xlink:href="#font_5_1" transform="matrix(11.955797,0,0,-11.9552,158.75098,40.453)" fill="#2832dc"/>
 </svg>

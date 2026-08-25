@@ -86,7 +86,7 @@
 <path transform="matrix(1.00005,0,0,-1,121.9422,133.103)" stroke-width=".3985" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#cccccc" d="M-.7143 83.33928H.7143"/>
 <path transform="matrix(1.00005,0,0,-1,121.9422,133.103)" stroke-width=".3985" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#cccccc" d="M-.7143 107.1505H.7143"/>
 <use data-text="0" xlink:href="#font_2_121" transform="matrix(4.981549,0,0,-4.9813,115.029857,139.94)" fill="#a6a6a6"/>
-<path transform="matrix(1.00005,0,0,-1,121.9422,133.103)" stroke-width="1.19553" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#2d37dc" d="M-119.0561 53.57524 119.0561-65.48085"/>
+<path transform="matrix(1.00005,0,0,-1,121.9422,133.103)" stroke-width="1.19553" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#2832dc" d="M-119.0561 53.57524 119.0561-65.48085"/>
 <path transform="matrix(1.00005,0,0,-1,121.9422,133.103)" d="M-31.73172 11.90561C-31.73172 14.10655-33.51588 15.89072-35.71683 15.89072-37.91777 15.89072-39.70193 14.10655-39.70193 11.90561-39.70193 9.70467-37.91777 7.9205-35.71683 7.9205-33.51588 7.9205-31.73172 9.70467-31.73172 11.90561ZM-35.71683 11.90561" fill="#ff0000"/>
 <path transform="matrix(1.00005,0,0,-1,121.9422,133.103)" d="M15.89072-11.90561C15.89072-9.70467 14.10655-7.9205 11.90561-7.9205 9.70467-7.9205 7.9205-9.70467 7.9205-11.90561 7.9205-14.10655 9.70467-15.89072 11.90561-15.89072 14.10655-15.89072 15.89072-14.10655 15.89072-11.90561ZM11.90561-11.90561" fill="#ff0000"/>
 <use data-text="(" xlink:href="#font_3_1" transform="matrix(8.966848,0,0,-8.9664,72.39972,110.673999)" fill="#ff0000"/>
