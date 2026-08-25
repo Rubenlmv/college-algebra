@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="section-3-3">
+    <title>Section 3.3 Polynomial Division</title>
+
+    <!-- ========================================================
+         INTRODUCTION
+         ======================================================== -->
+
+    <subsection xml:id="intro-polynomial-division">
+        <title>Polynomial Division</title>
+
+        <p>
+            In this section, we will study two procedures for dividing polynomials.
+        </p>
+
+        <p>
+            Do you remember long division?
+        </p>
+
+        <p>
+            <em>Example:</em> <m>6170 \div 5</m>
+        </p>
+
+        <algorithm>
+            <title>Long Division Steps</title>
+            <p>
+                <ul>
+                    <li>Divide the first digit by the divisor (5). Write the result on top (1).</li>
+                    <li>Multiply the result from step 1 by 5 and write below the dividend.</li>
+                    <li>Subtract (6 − 5) and "bring down" the next digit.</li>
+                    <li>Divide the result from step 3 by the divisor and back to step 3.</li>
+                    <li>Repeat until no digits remain.</li>
+                </ul>
+            </p>
+        </algorithm>
+
+        <p>
+            Because <m>6170 \div 5 = 1234</m> (with remainder 0), we say that 5 is a <term>factor</term> of 6170.
+        </p>
+
+        <p>
+            That is: <m>5 \cdot 1234 = 6170</m>.
+        </p>
+
+        <!-- FIGURE 1: Numeric Long Division -->
+        <figure>
+            <caption>Long division of <m>6170 \div 5</m></caption>
+            <image width="60%">
+                <latex-image>
+                    <![CDATA[
+                    \begin{adjustbox}{max width=\linewidth}
+                    \begin{tikzpicture}[x=1.0cm, y=1.0cm, every node/.style={font=\Large}]
+
+                        % ----- Long division bracket -----
+                        \draw[thick] (0.2, -6.2) -- (0.2, 0.5) -- (4.2, 0.5);
+
+                        % ----- Divisor (left of bracket) -----
+                        \node[anchor=east] at (0.0, 0.0) {5};
+
+                        % ----- Dividend (inside bracket) -----
+                        \node at (0.8, 0.0) {6};
+                        \node at (1.8, 0.0) {1};
+                        \node at (2.8, 0.0) {7};
+                        \node at (3.8, 0.0) {0};
+
+                        % ----- Quotient (above bracket) -----
+                        \node at (0.8, 0.8) {1};
+                        \node at (1.8, 0.8) {2};
+                        \node at (2.8, 0.8) {3};
+                        \node at (3.8, 0.8) {4};
+
+                        % ============================================================
+                        % STEP 1: 6 ÷ 5 = 1, product -5, remainder 1, bring down 1
+                        % ============================================================
+                        \node at (0.3, -0.6) {-};
+                        \node at (0.8, -0.6) {5};
+                        \draw[thick] (0.4, -0.9) -- (1.0, -0.9);
+                        \node at (0.8, -1.4) {1};
+                        \node at (1.8, -1.4) {1};
+
+                        % ============================================================
+                        % STEP 2: 11 ÷ 5 = 2, product -10, remainder 1, bring down 7
+                        % ============================================================
+                        \node at (0.3, -2.0) {-};
+                        \node at (0.8, -2.0) {1};
+                        \node at (1.8, -2.0) {0};
+                        \draw[thick] (0.4, -2.3) -- (2.0, -2.3);
+                        \node at (1.8, -2.8) {1};
+                        \node at (2.8, -2.8) {7};
+
+                        % ============================================================
+                        % STEP 3: 17 ÷ 5 = 3, product -15, remainder 2, bring down 0
+                        % ============================================================
+                        \node at (1.3, -3.4) {-};
+                        \node at (1.8, -3.4) {1};
+                        \node at (2.8, -3.4) {5};
+                        \draw[thick] (1.4, -3.7) -- (3.0, -3.7);
+                        \node at (2.8, -4.2) {2};
+                        \node at (3.8, -4.2) {0};
+
+                        % ============================================================
+                        % STEP 4: 20 ÷ 5 = 4, product -20, remainder 0
+                        % ============================================================
+                        \node at (2.3, -4.8) {-};
+                        \node at (2.8, -4.8) {2};
+                        \node at (3.8, -4.8) {0};
+                        \draw[thick] (2.4, -5.1) -- (4.0, -5.1);
+                        \node at (3.8, -5.6) {0};
+
+                        % ============================================================
+                        % LABELS WITH ARROWS AND BOXES
+                        % ============================================================
+
+                        % ----- Divisor (point from the left) -----
+                        \draw[->, red!70!black, thick] (-1.8, 0.0) -- (-0.5, 0.0);
+                        \node[draw=red!70!black, thick, rounded corners, fill=red!10,
+                              anchor=east, font=\Large\bfseries] at (-2.0, 0.0) {Divisor};
+
+                        % ----- Quotient (point to the last digit, from the right) -----
+                        \draw[->, green!70!black, thick] (5.2, 0.8) -- (4.0, 0.8);
+                        \node[draw=green!70!black, thick, rounded corners, fill=green!10,
+                              anchor=west, font=\Large\bfseries] at (5.4, 0.8) {Quotient};
+
+                        % ----- Dividend (point to the last digit, from the right) -----
+                        \draw[->, blue!70!black, thick] (5.2, 0.0) -- (4.0, 0.0);
+                        \node[draw=blue!70!black, thick, rounded corners, fill=blue!10,
+                              anchor=west, font=\Large\bfseries] at (5.4, 0.0) {Dividend};
+
+                        % ----- Remainder (point to the last digit, from the right) -----
+                        \draw[->, orange!70!black, thick] (5.2, -5.6) -- (4.0, -5.6);
+                        \node[draw=orange!70!black, thick, rounded corners, fill=orange!10,
+                              anchor=west, font=\Large\bfseries] at (5.4, -5.6) {Remainder};
+
+                    \end{tikzpicture}
+                    \end{adjustbox}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+    </subsection>
+
+    <!-- ========================================================
+         DIVISION ALGORITHM
+         ======================================================== -->
+
+    <subsection xml:id="division-algorithm">
+        <title>Division Algorithm</title>
+
+        <definition>
+            <title>Division Algorithm</title>
+            <p>
+                Suppose that <m>f(x)</m> and <m>d(x)</m> are polynomials where <m>d(x) \neq 0</m> and the degree of <m>d(x)</m> is less than or equal to the degree of <m>f(x)</m>.
+            </p>
+            <p>
+                Then there exists unique polynomials <m>q(x)</m> and <m>r(x)</m> such that:
+            </p>
+            <me>f(x) = d(x) \cdot q(x) + r(x)</me>
+            <p>or</p>
+            <me>\frac{f(x)}{d(x)} = q(x) + \frac{r(x)}{d(x)}</me>
+            <p>
+                where the degree of <m>r(x)</m> is zero or of lesser degree than <m>d(x)</m>.
+            </p>
+        </definition>
+
+        <p>
+            <em>Note:</em> The polynomial <m>f(x)</m> is the <term>dividend</term>, <m>d(x)</m> is the <term>divisor</term>, <m>q(x)</m> is the <term>quotient</term>, and <m>r(x)</m> is the <term>remainder</term>.
+        </p>
+
+        <p>
+            This means that we can divide one polynomial by another of lesser degree. BUT HOW?
+        </p>
+
+        <!-- Video 1: Long Division -->
+        <p><url href="https://youtu.be/RPXMBIFG_W4">Dividing Polynomials Using Long Division Video</url></p>
+    </subsection>
+
+    <!-- ========================================================
+         LONG DIVISION
+         ======================================================== -->
+
+    <subsection xml:id="long-division">
+        <title>Dividing Polynomials Using Long Division</title>
+
+        <algorithm>
+            <title>Long Division Strategy</title>
+            <p>
+                <ul>
+                    <li>To begin the division: Always write the terms of the dividend and divisor in descending order with place holders for missing powers of <m>x</m>.</li>
+                    <li>Divide the <strong>FIRST TERM</strong> of the dividend by the <strong>FIRST TERM</strong> of the divisor. Place the result on the top of the division symbol.</li>
+                    <li>Multiply the entire divisor by the new term in the quotient and write the result under the dividend.</li>
+                    <li>Subtract and bring down the next term.</li>
+                    <li>Repeat until the difference is of lower degree than the divisor (or zero).</li>
+                </ul>
+            </p>
+        </algorithm>
+
+        <!-- Example 1 -->
+        <activity>
+            <statement>
+                <p>
+                    Use Polynomial Long Division to divide <m>\left(2x^3 - 11x^2 + 13x + 15\right) \div \left(2x - 5\right)</m>.
+                </p>
+            </statement>
+            <solution>
+                <figure>
+                    <caption>Polynomial long division of <m>(2x^3 - 11x^2 + 13x + 15) \div (2x - 5)</m></caption>
+                    <image width="70%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}[x=1.2cm, y=1.0cm, every node/.style={font=\Large}]
+
+                                \draw[thick] (0.2, -4.6) -- (0.2, 0.5) -- (5.0, 0.5);
+                                \node[anchor=east] at (0.0, 0.0) {\(2x - 5\)};
+
+                                % Dividend
+                                \node at (0.8, 0.0) {\(2x^3\)};
+                                \node at (2.0, 0.0) {\(-11x^2\)};
+                                \node at (3.2, 0.0) {\(+13x\)};
+                                \node at (4.4, 0.0) {\(+15\)};
+
+                                % Quotient
+                                \node at (0.8, 0.8) {\(x^2\)};
+                                \node at (2.0, 0.8) {\(-3x\)};
+                                \node at (3.2, 0.8) {\(-1\)};
+
+                                % Step 1
+                                \node[blue] at (0.8, -0.6) {\(-2x^3\)};
+                                \node[blue] at (2.0, -0.6) {\(+5x^2\)};
+                                \draw[blue, thick] (0.4, -0.9) -- (2.2, -0.9);
+                                \node at (2.0, -1.4) {\(-6x^2\)};
+                                \node at (3.2, -1.4) {\(+13x\)};
+                                \node at (4.4, -1.4) {\(+15\)};
+
+                                % Step 2
+                                \node[blue] at (2.0, -2.0) {\(+6x^2\)};
+                                \node[blue] at (3.2, -2.0) {\(-15x\)};
+                                \draw[blue, thick] (1.8, -2.3) -- (3.4, -2.3);
+                                \node at (3.2, -2.8) {\(-2x\)};
+                                \node at (4.4, -2.8) {\(+15\)};
+
+                                % Step 3
+                                \node[blue] at (3.2, -3.4) {\(+2x\)};
+                                \node[blue] at (4.4, -3.4) {\(-5\)};
+                                \draw[blue, thick] (3.0, -3.7) -- (4.6, -3.7);
+                                \node at (4.4, -4.2) {\(10\)};
+
+                                % Labels
+                                \draw[->, red!70!black, thick] (-1.8, 0.0) -- (-1.4, 0.0);
+                                \node[draw=red!70!black, thick, rounded corners, fill=red!10,
+                                      anchor=east, font=\Large\bfseries] at (-2.0, 0.0) {Divisor};
+                                \draw[->, green!70!black, thick] (5.0, 0.8) -- (4.6, 0.8);
+                                \node[draw=green!70!black, thick, rounded corners, fill=green!10,
+                                      anchor=west, font=\Large\bfseries] at (5.2, 0.8) {Quotient};
+                                \draw[->, blue!70!black, thick] (5.0, 0.0) -- (4.8, 0.0);
+                                \node[draw=blue!70!black, thick, rounded corners, fill=blue!10,
+                                      anchor=west, font=\Large\bfseries] at (5.2, 0.0) {Dividend};
+                                \draw[->, orange!70!black, thick] (5.0, -4.2) -- (4.6, -4.2);
+                                \node[draw=orange!70!black, thick, rounded corners, fill=orange!10,
+                                      anchor=west, font=\Large\bfseries] at (5.2, -4.2) {Remainder};
+
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+
+                <p>Thus, we can write the result in two equivalent forms:</p>
+                <me>2x^3 - 11x^2 + 13x + 15 = (2x - 5)(x^2 - 3x - 1) + 10</me>
+                <p>and</p>
+                <me>\frac{2x^3 - 11x^2 + 13x + 15}{2x - 5} = x^2 - 3x - 1 + \frac{10}{2x - 5}.</me>
+            </solution>
+        </activity>
+
+        <!-- Example 2 -->
+        <activity>
+            <statement>
+                <p>
+                    Use Polynomial Division to divide <m>\left(x^5 - 3x^4 + 12x - 33\right) \div \left(x - 3\right)</m>.
+                </p>
+            </statement>
+            <solution>
+                <figure>
+                    <caption>Polynomial long division of <m>(x^5 - 3x^4 + 12x - 33) \div (x - 3)</m></caption>
+                    <image width="70%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}[x=1.2cm, y=1.0cm, every node/.style={font=\Large}]
+                                \draw[thick] (0.2, -7.0) -- (0.2, 0.5) -- (7.0, 0.5);
+                                \node[anchor=east] at (0.0, 0.0) {\(x - 3\)};
+
+                                % Dividend
+                                \node at (0.8, 0.0) {\(x^5\)};
+                                \node at (2.0, 0.0) {\(-3x^4\)};
+                                \node at (3.2, 0.0) {\(+0x^3\)};
+                                \node at (4.4, 0.0) {\(+0x^2\)};
+                                \node at (5.6, 0.0) {\(+12x\)};
+                                \node at (6.8, 0.0) {\(-33\)};
+
+                                % Quotient
+                                \node at (0.8, 0.8) {\(x^4\)};
+                                \node at (2.0, 0.8) {\(+0x^3\)};
+                                \node at (3.2, 0.8) {\(+0x^2\)};
+                                \node at (4.4, 0.8) {\(+0x\)};
+                                \node at (5.6, 0.8) {\(+12\)};
+
+                                % Step 1
+                                \node[blue] at (0.8, -0.6) {\(-x^5\)};
+                                \node[blue] at (2.0, -0.6) {\(+3x^4\)};
+                                \draw[blue, thick] (0.4, -0.9) -- (2.2, -0.9);
+                                \node at (2.0, -1.4) {\(0\)};
+                                \node at (3.2, -1.4) {\(+0x^3\)};
+                                \node at (4.4, -1.4) {\(+0x^2\)};
+                                \node at (5.6, -1.4) {\(+12x\)};
+                                \node at (6.8, -1.4) {\(-33\)};
+
+                                % Step 2
+                                \node[blue] at (2.0, -2.0) {\(0\)};
+                                \draw[blue, thick] (1.8, -2.3) -- (2.2, -2.3);
+                                \node at (3.2, -2.8) {\(0\)};
+                                \node at (4.4, -2.8) {\(0\)};
+                                \node at (5.6, -2.8) {\(+12x\)};
+                                \node at (6.8, -2.8) {\(-33\)};
+
+                                % Step 3
+                                \node[blue] at (3.2, -3.4) {\(0\)};
+                                \draw[blue, thick] (3.0, -3.7) -- (3.4, -3.7);
+                                \node at (4.4, -4.2) {\(0\)};
+                                \node at (5.6, -4.2) {\(+12x\)};
+                                \node at (6.8, -4.2) {\(-33\)};
+
+                                % Step 4
+                                \node[blue] at (4.4, -4.8) {\(0\)};
+                                \draw[blue, thick] (4.2, -5.1) -- (4.6, -5.1);
+                                \node at (5.6, -5.6) {\(+12x\)};
+                                \node at (6.8, -5.6) {\(-33\)};
+
+                                % Step 5
+                                \node[blue] at (5.6, -6.2) {\(-12x\)};
+                                \node[blue] at (6.8, -6.2) {\(+36\)};
+                                \draw[blue, thick] (5.4, -6.5) -- (7.0, -6.5);
+                                \node at (6.8, -7.0) {\(3\)};
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+
+                <p>Thus,</p>
+                <me>x^5 - 3x^4 + 12x - 33 = (x - 3)(x^4 + 12) + 3</me>
+                <p>and</p>
+                <me>\frac{x^5 - 3x^4 + 12x - 33}{x - 3} = x^4 + 12 + \frac{3}{x - 3}.</me>
+            </solution>
+        </activity>
+
+        <!-- Example 3 -->
+        <activity>
+            <statement>
+                <p>
+                    Divide: <m>\left(2x^3 + 2x^2 - 16x + 32\right) \div \left(x^2 - 3x + 4\right)</m>.
+                </p>
+            </statement>
+            <solution>
+                <figure>
+                    <caption>Polynomial long division of <m>(2x^3 + 2x^2 - 16x + 32) \div (x^2 - 3x + 4)</m></caption>
+                    <image width="70%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}[x=1.2cm, y=1.0cm, every node/.style={font=\Large}]
+                                \draw[thick] (0.2, -3.4) -- (0.2, 0.5) -- (5.0, 0.5);
+                                \node[anchor=east] at (0.0, 0.0) {\(x^2 - 3x + 4\)};
+
+                                % Dividend
+                                \node at (0.8, 0.0) {\(2x^3\)};
+                                \node at (2.0, 0.0) {\(+2x^2\)};
+                                \node at (3.2, 0.0) {\(-16x\)};
+                                \node at (4.4, 0.0) {\(+32\)};
+
+                                % Quotient
+                                \node at (0.8, 0.8) {\(2x\)};
+                                \node at (2.0, 0.8) {\(+8\)};
+
+                                % Step 1
+                                \node[blue] at (0.8, -0.6) {\(-2x^3\)};
+                                \node[blue] at (2.0, -0.6) {\(+6x^2\)};
+                                \node[blue] at (3.2, -0.6) {\(-8x\)};
+                                \draw[blue, thick] (0.4, -0.9) -- (3.4, -0.9);
+                                \node at (2.0, -1.4) {\(8x^2\)};
+                                \node at (3.2, -1.4) {\(-24x\)};
+                                \node at (4.4, -1.4) {\(+32\)};
+
+                                % Step 2
+                                \node[blue] at (2.0, -2.0) {\(-8x^2\)};
+                                \node[blue] at (3.2, -2.0) {\(+24x\)};
+                                \node[blue] at (4.4, -2.0) {\(-32\)};
+                                \draw[blue, thick] (1.8, -2.3) -- (4.6, -2.3);
+                                \node at (3.2, -2.8) {\(0\)};
+                                \node at (4.4, -2.8) {\(0\)};
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+
+                <p>Since the remainder is 0, we have</p>
+                <me>2x^3 + 2x^2 - 16x + 32 = (x^2 - 3x + 4)(2x + 8)</me>
+                <p>and</p>
+                <me>\frac{2x^3 + 2x^2 - 16x + 32}{x^2 - 3x + 4} = 2x + 8.</me>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         SYNTHETIC DIVISION
+         ======================================================== -->
+
+    <subsection xml:id="synthetic-division">
+        <title>Dividing Polynomials Using Synthetic Division</title>
+
+        <p>
+            <em>Note:</em> I usually skip this topic. Long division always works. But you can review this video if you like using Synthetic Division. Careful, synthetic division only works when you divide by <m>(x - c)</m>.
+        </p>
+
+        <!-- Video 2: Synthetic Division -->
+        <p><url href="https://youtu.be/AWCQBLthbNI">Dividing Polynomials Using Synthetic Division Video</url></p>
+
+        <p>
+            When dividing polynomials where the divisor is a binomial of the form <m>(x - c)</m> and <m>c</m> is a constant, we can use synthetic division.
+        </p>
+
+        <algorithm>
+            <title>Synthetic Division Strategy</title>
+            <p>
+                <ul>
+                    <li>Write the value of <m>c</m> in a box.</li>
+                    <li>Write the coefficients of the dividend to the right of the box.</li>
+                    <li>Skip a line and draw a horizontal line below the list of coefficients.</li>
+                    <li>Bring down the leading coefficient from the dividend and write it below the line.</li>
+                    <li>Multiply the value of <m>c</m> by the number below the line. Write the result in the next column above the line.</li>
+                    <li>Add the numbers in the column above the line, and write the result below the line.</li>
+                </ul>
+            </p>
+            <p>
+                Repeat steps 5 and 6 until all columns have been completed. The right-most number below the line is the remainder. The other numbers below the line are the coefficients of the quotient in order by the degree of the term. Since the divisor is linear (1st-degree), the degree of the quotient is 1 less than the degree of the dividend.
+            </p>
+        </algorithm>
+
+        <!-- Synthetic Example 1 -->
+        <activity>
+            <statement>
+                <p>
+                    Divide using synthetic division: <m>\left(x^3 - 13x^2 + 46x - 49\right) \div \left(x - 8\right)</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <me>
+                        \begin{array}{c|rrrr}
+                        8 &amp; 1 &amp; -13 &amp; 46 &amp; -49 \\
+                         &amp;  &amp; 8 &amp; -40 &amp; 48 \\
+                        \hline
+                         &amp; 1 &amp; -5 &amp; 6 &amp; \boxed{-1}
+                        \end{array}
+                    </me>
+                </p>
+                <p>The remainder is <m>-1</m>.</p>
+                <p>Thus,</p>
+                <me>x^3 - 13x^2 + 46x - 49 = (x - 8)(x^2 - 5x + 6) - 1</me>
+                <p>and</p>
+                <me>\frac{x^3 - 13x^2 + 46x - 49}{x - 8} = x^2 - 5x + 6 - \frac{1}{x - 8}.</me>
+            </solution>
+        </activity>
+
+        <!-- Synthetic Example 2 -->
+        <activity>
+            <statement>
+                <p>
+                    Divide using synthetic division: <m>\left(3x^3 + 25x^2 - 48x + 20\right) \div \left(x + 10\right)</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <me>
+                        \begin{array}{c|rrrr}
+                        -10 &amp; 3 &amp; 25 &amp; -48 &amp; 20 \\
+                         &amp;  &amp; -30 &amp; 50 &amp; -20 \\
+                        \hline
+                         &amp; 3 &amp; -5 &amp; 2 &amp; \boxed{0}
+                        \end{array}
+                    </me>
+                </p>
+                <p>The remainder is 0, so <m>(x + 10)</m> is a factor.</p>
+                <p>Thus,</p>
+                <me>3x^3 + 25x^2 - 48x + 20 = (x + 10)(3x^2 - 5x + 2)</me>
+                <p>and</p>
+                <me>\frac{3x^3 + 25x^2 - 48x + 20}{x + 10} = 3x^2 - 5x + 2.</me>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         FACTOR THEOREM
+         ======================================================== -->
+
+    <subsection xml:id="factor-theorem">
+        <title>Factor Theorem</title>
+
+        <!-- Video 3: Factor Theorem -->
+        <p><url href="https://youtu.be/D12QfFfiiYw">Factor Theorem Video</url></p>
+
+        <p>
+            <m>x - c</m> is a factor of <m>f(x)</m> if and only if <m>x = c</m> is a root of the equation <m>f(x) = 0</m>.
+        </p>
+
+        <p>
+            <em>What does this mean?</em>
+        </p>
+        <ul>
+            <li>If you know a factor, you know a zero (root, x-intercept).</li>
+            <li>If you know a zero, you know a factor.</li>
+        </ul>
+
+        <!-- Video 4: Example -->
+        <p><url href="https://youtu.be/ZKADIoVzsQw">Example Video</url></p>
+
+        <activity>
+            <statement>
+                <p>
+                    Given that 3 and <m>-2</m> are roots of <m>f(x) = 0</m>, construct a polynomial <m>f(x)</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    If 3 and <m>-2</m> are roots, then <m>(x - 3)</m> and <m>(x + 2)</m> are factors.
+                </p>
+                <p>
+                    So <m>f(x) = (x - 3)(x + 2) = x^2 - x - 6</m>.
+                </p>
+                <p>
+                    (Any nonzero constant multiple of this polynomial would also work.)
+                </p>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p>
+                    Use the factor theorem to determine if <m>(x - 1)</m> is a factor of <m>f(x) = 2x^3 + 4x^2 - 2x - 4</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Evaluate <m>f(1)</m>:
+                </p>
+                <me>f(1) = 2(1)^3 + 4(1)^2 - 2(1) - 4 = 2 + 4 - 2 - 4 = 0</me>
+                <p>
+                    Since <m>f(1) = 0</m>, <m>(x - 1)</m> <em>is</em> a factor of <m>f(x)</m>.
+                </p>
+            </solution>
+        </activity>
+
+        <p>
+            <em>Remember:</em> If <m>f(c) = 0</m>, then:
+        </p>
+        <ul>
+            <li><m>c</m> is a <term>zero</term> of the function</li>
+            <li><m>c</m> is a <term>solution</term> (or root) of the equation</li>
+            <li><m>c</m> is an <m>x</m>-intercept of the graph of <m>f(x)</m></li>
+            <li><m>(x - c)</m> is a <term>factor</term> of <m>f(x)</m> (divides with no remainder)</li>
+        </ul>
+    </subsection>
+
+    <!-- ========================================================
+         PUTTING IT ALL TOGETHER (REVISED)
+         ======================================================== -->
+
+    <subsection xml:id="putting-it-all-together">
+        <title>Putting It All Together</title>
+
+        <!-- Removed the "tricked you" line -->
+
+        <activity>
+            <statement>
+                <p>
+                    Use the factor theorem to show <m>(x + 4)</m> is a factor of <m>f(x) = 6x^3 + 11x^2 - 60x - 32</m>. Then, factor completely, find ALL the zeros and sketch a graph.
+                </p>
+            </statement>
+            <solution>
+
+                <p>
+                    <em effect="bold">Step 1: Verify <m>(x + 4)</m> is a factor.</em>
+                </p>
+                <p>
+                    Evaluate <m>f(-4)</m>:
+                </p>
+                <me>f(-4) = 6(-4)^3 + 11(-4)^2 - 60(-4) - 32 = -384 + 176 + 240 - 32 = 0</me>
+                <p>
+                    Since <m>f(-4) = 0</m>, <m>(x + 4)</m> is a factor.
+                </p>
+
+                <p>
+                    <em effect="bold">Step 2: Divide.</em>
+                </p>
+                <p>
+                    Using synthetic division:
+                </p>
+                <me>
+                    \begin{array}{c|rrrr}
+                    -4 &amp; 6 &amp; 11 &amp; -60 &amp; -32 \\
+                     &amp;  &amp; -24 &amp; 52 &amp; 32 \\
+                    \hline
+                     &amp; 6 &amp; -13 &amp; -8 &amp; 0
+                    \end{array}
+                </me>
+                <p>
+                    So <m>f(x) = (x + 4)(6x^2 - 13x - 8)</m>.
+                </p>
+
+                <p>
+                    <em effect="bold">Step 3: Factor completely.</em>
+                </p>
+                <me>6x^2 - 13x - 8 = (2x + 1)(3x - 8)</me>
+                <p>
+                    Therefore:
+                </p>
+                <me>f(x) = (x + 4)(2x + 1)(3x - 8)</me>
+
+                <p>
+                    <em effect="bold">Step 4: End Behavior.</em>
+                </p>
+                <p>
+                    Degree 3 (odd), leading coefficient 6 (positive) → falls to the left, rises to the right.
+                </p>
+
+                <p>
+                    <em effect="bold">Step 5: Zeros.</em>
+                </p>
+                <ul>
+                    <li><m>x = -4</m>, multiplicity 1 (crosses)</li>
+                    <li><m>x = -\frac{1}{2}</m>, multiplicity 1 (crosses)</li>
+                    <li><m>x = \frac{8}{3}</m>, multiplicity 1 (crosses)</li>
+                </ul>
+
+                <p>
+                    <em effect="bold">Step 6: y-intercept.</em>
+                </p>
+                <me>f(0) = -32</me>
+
+                <!-- Revised Graph with label at (1,-90) -->
+                <figure>
+                    <caption>Graph of <m>f(x) = (x+4)(2x+1)(3x-8)</m></caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}[x=0.8cm, y=0.025cm, >=stealth, line cap=round, line join=round]
+                                % Grid: step 1 for fine, step 20 for major
+                                \draw[gray!25, very thin] (-8,-110) grid[step=1] (7,120);
+                                \draw[gray!25, very thin] (-8,-110) grid[step=20] (7,120);
+                                \draw[gray!55!black, thick, ->] (-8.2,0) -- (7.2,0);
+                                \draw[gray!55!black, thick, ->] (0,-112) -- (0,122);
+                                \foreach \x in {-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7}
+                                    \draw[gray!50!black, very thin] (\x,-0.15) -- (\x,0.15);
+                                \foreach \y in {-100,-80,-60,-40,-20,20,40,60,80,100,120}
+                                    \draw[gray!50!black, very thin] (-0.15,\y) -- (0.15,\y);
+                                \foreach \x in {-8,-6,-4,-2,2,4,6}
+                                    \node[gray!55!black,font=\small,anchor=north] at (\x,-0.25) {\x};
+                                \foreach \y in {-100,-80,-60,-40,-20,20,40,60,80,100,120}
+                                    \node[gray!55!black,font=\small,anchor=east] at (-0.25,\y) {\y};
+                                \clip (-8,-110) rectangle (7,120);
+                                \draw[blue!75!black, very thick, domain=-5.8:5.8, samples=500]
+                                    plot (\x,{(\x+4)*(2*\x+1)*(3*\x-8)});
+                                \draw[red, fill=red] (-4,0) circle (3pt);
+                                \draw[red, fill=red] (-0.5,0) circle (3pt);
+                                \draw[red, fill=red] (2.667,0) circle (3pt);
+                                % Label moved to (1,-90) – anchor west means text goes right from that point
+                                \node[blue!75!black, font=\small, anchor=west] at (1.0, -90)
+                                    {$f(x)=(x+4)(2x+1)(3x-8)$};
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+</section>

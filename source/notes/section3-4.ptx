@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="section-3-4">
+    <title>Section 3.4 Zeros of Polynomials</title>
+
+    <!-- ========================================================
+         INTRODUCTION & FACTOR THEOREM
+         ======================================================== -->
+
+    <subsection xml:id="intro-factor-theorem">
+        <title>Factor Theorem</title>
+
+        <p>
+            In the previous section, we learned how to divide polynomials. Now we will use those skills to find the zeros of polynomial functions. The Factor Theorem provides the connection between factors and zeros.
+        </p>
+
+        <!-- Video 1: Rational Root Theorem -->
+        <p><url href="https://echo360.org/media/290c7060-bbe2-4fb0-9d32-ac7f86ccd782/public">Rational Root Theorem Video</url></p>
+
+        <definition>
+            <title>Factor Theorem</title>
+            <p>
+                Let <m>f(x)</m> be a polynomial.
+            </p>
+            <ul>
+                <li>If <m>f(c) = 0</m>, then <m>(x - c)</m> is a factor of <m>f(x)</m>.</li>
+                <li>If <m>(x - c)</m> is a factor of <m>f(x)</m>, then <m>f(c) = 0</m>.</li>
+            </ul>
+            <p>
+                Notice that the theorem works in both directions — factors and zeros are equivalent statements.
+            </p>
+        </definition>
+
+        <activity>
+            <statement>
+                <p>
+                    Factor <m>f(x) = 4x^5 - 24x^4 - 3x^3 + 18x^2 - x + 6</m> given that <m>(x - 6)</m> is a factor.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Since <m>(x - 6)</m> is a factor, we divide by <m>(x - 6)</m> using synthetic division:
+                </p>
+                <me>
+                    \begin{array}{c|rrrrrr}
+                    6 &amp; 4 &amp; -24 &amp; -3 &amp; 18 &amp; -1 &amp; 6 \\
+                     &amp;  &amp; 24 &amp; 0 &amp; -18 &amp; 0 &amp; -6 \\
+                    \hline
+                     &amp; 4 &amp; 0 &amp; -3 &amp; 0 &amp; -1 &amp; 0
+                    \end{array}
+                </me>
+                <p>
+                    This tells us that:
+                </p>
+                <me>f(x) = (x - 6)(4x^4 - 3x^2 - 1)</me>
+                <p>
+                    The remaining factor is in "quadratic form" (it looks like a quadratic in <m>x^2</m>), so we can factor it:
+                </p>
+                <me>4x^4 - 3x^2 - 1 = (4x^2 + 1)(x^2 - 1) = (4x^2 + 1)(x - 1)(x + 1)</me>
+                <p>
+                    Therefore:
+                </p>
+                <me>f(x) = (x - 6)(4x^2 + 1)(x - 1)(x + 1)</me>
+                <p>
+                    The zeros are <m>x = 6, 1, -1, \pm \frac{1}{2}i</m>.
+                </p>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         RATIONAL ZERO THEOREM
+         ======================================================== -->
+
+    <subsection xml:id="rational-zero-theorem">
+        <title>Rational Zero Theorem</title>
+
+        <p>
+            But what if we don't have a factor given to us? We need a way to find potential zeros. The Rational Zero Theorem gives us a finite list of candidates to test.
+        </p>
+
+        <definition>
+            <title>Rational Zero Theorem</title>
+            <p>
+                If <m>f(x) = a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0</m> has integer coefficients and <m>a_n \neq 0</m>, and if <m>\frac{p}{q}</m> (written in lowest terms) is a rational zero of <m>f</m>, then <m>p</m> is a factor of the constant term <m>a_0</m> and <m>q</m> is a factor of the leading coefficient <m>a_n</m>.
+            </p>
+            <p>
+                If a rational zero exists for a polynomial, then it must be of the form:
+            </p>
+            <me>
+                \frac{p}{q} = \frac{\text{factor of constant term}}{\text{factor of leading coefficient}}
+            </me>
+        </definition>
+
+        <p>
+            This theorem tells us that if <m>f(x)</m> has a rational zero, it will be found in the list of possibilities created above. However, it does <em>not</em> guarantee that <m>f(x)</m> has a rational zero, nor does it guarantee that everything in the list is a zero. The Rational Zero Theorem is useful because it creates a finite list of possibilities we can test to find a zero.
+        </p>
+
+        <!-- Example 1: 2x^4 + x^3 - 5x^2 - x + 3 -->
+        <activity>
+            <statement>
+                <p>
+                    Given <m>f(x) = 2x^4 + x^3 - 5x^2 - x + 3</m>, find the zeros (that is, factor completely) and their multiplicities, then sketch its graph.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <em>Step 1: List possible rational zeros.</em>
+                </p>
+                <p>
+                    The constant term is <m>3</m> and the leading coefficient is <m>2</m>.
+                </p>
+                <me>
+                    \frac{\text{Factors of } 3}{\text{Factors of } 2} = \frac{\pm 1, \pm 3}{\pm 1, \pm 2} \rightarrow \left\{1, -1, 3, -3, \frac{1}{2}, -\frac{1}{2}, \frac{3}{2}, -\frac{3}{2}\right\}
+                </me>
+
+                <p>
+                    <em>Step 2: Test possible zeros using the Factor Theorem.</em>
+                </p>
+                <p>
+                    Start with <m>x = 1</m>:
+                </p>
+                <me>f(1) = 2(1)^4 + (1)^3 - 5(1)^2 - (1) + 3 = 2 + 1 - 5 - 1 + 3 = 0</me>
+                <p>
+                    Since <m>f(1) = 0</m>, <m>x = 1</m> is a zero, so <m>(x - 1)</m> is a factor. Divide:
+                </p>
+                <me>
+                    \begin{array}{c|rrrrr}
+                    1 &amp; 2 &amp; 1 &amp; -5 &amp; -1 &amp; 3 \\
+                     &amp;  &amp; 2 &amp; 3 &amp; -2 &amp; -3 \\
+                    \hline
+                     &amp; 2 &amp; 3 &amp; -2 &amp; -3 &amp; 0
+                    \end{array}
+                </me>
+                <p>
+                    This gives us: <m>f(x) = (x - 1)(2x^3 + 3x^2 - 2x - 3)</m>.
+                </p>
+
+                <p>
+                    <em>Step 3: Test another possible zero on the cubic factor.</em>
+                </p>
+                <p>
+                    Test <m>x = -1</m>:
+                </p>
+                <me>f(-1) = 2(-1)^4 + (-1)^3 - 5(-1)^2 - (-1) + 3 = 2 - 1 - 5 + 1 + 3 = 0</me>
+                <p>
+                    Since <m>f(-1) = 0</m>, <m>x = -1</m> is a zero, so <m>(x + 1)</m> is a factor. Divide:
+                </p>
+                <me>
+                    \begin{array}{c|rrrr}
+                    -1 &amp; 2 &amp; 3 &amp; -2 &amp; -3 \\
+                     &amp;  &amp; -2 &amp; -1 &amp; 3 \\
+                    \hline
+                     &amp; 2 &amp; 1 &amp; -3 &amp; 0
+                    \end{array}
+                </me>
+                <p>
+                    Now we have a quadratic factor: <m>2x^2 + x - 3</m>.
+                </p>
+
+                <p>
+                    <em>Step 4: Factor the quadratic.</em>
+                </p>
+                <me>2x^2 + x - 3 = (2x + 3)(x - 1)</me>
+
+                <p>
+                    <em>Step 5: Write the complete factorization.</em>
+                </p>
+                <me>f(x) = (x - 1)(x + 1)(2x + 3)(x - 1) = (x - 1)^2(x + 1)(2x + 3)</me>
+
+                <p>
+                    <em>Step 6: Identify zeros and multiplicities.</em>
+                </p>
+                <ul>
+                    <li><m>x = 1</m>, multiplicity 2 (the graph touches the x-axis here)</li>
+                    <li><m>x = -1</m>, multiplicity 1 (the graph crosses here)</li>
+                    <li><m>x = -\frac{3}{2}</m>, multiplicity 1 (the graph crosses here)</li>
+                </ul>
+
+                <p>
+                    <em>End Behavior:</em> Degree 4 (even), leading coefficient 2 (positive) → rises to the right and to the left.
+                </p>
+                <!-- End behavior image: rises both sides (both arrows UP) -->
+                <image width="15%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{tikzpicture}[x=0.7cm,y=0.7cm]
+                            \draw[red, very thick, line cap=round]
+                                (-1.45,1.45) .. controls (-1.35,1.05) and (-1.28,0.35) .. (-1.05,0.20)
+                                .. controls (-0.78,0.02) and (-0.62,1.18) .. (-0.35,1.25)
+                                .. controls (-0.05,1.32) and (0.02,0.15) .. (0.22,0.05)
+                                .. controls (0.48,-0.08) and (0.55,0.75) .. (0.78,0.65)
+                                .. controls (1.02,0.55) and (1.08,1.20) .. (1.20,1.55);
+                            \draw[red, very thick, -{Stealth[length=7pt,width=6pt]}, line cap=round]
+                                (-1.45,1.45) -- (-1.45,1.80);
+                            \draw[red, very thick, -{Stealth[length=7pt,width=6pt]}, line cap=round]
+                                (1.20,1.55) -- (1.20,1.90);
+                        \end{tikzpicture}
+                        ]]>
+                    </latex-image>
+                </image>
+
+                <figure>
+                    <caption>Graph of <m>f(x) = (x-1)^2(x+1)(2x+3)</m></caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}[x=0.8cm, y=0.6cm, >=stealth, line cap=round, line join=round]
+                                \draw[gray!25, very thin] (-4,-6) grid[step=1] (5,10);
+                                \draw[gray!25, very thin] (-4,-6) grid[step=2] (5,10);
+                                \draw[gray!55!black, thick, ->] (-4.2,0) -- (5.2,0);
+                                \draw[gray!55!black, thick, ->] (0,-6.2) -- (0,10.2);
+                                \foreach \x in {-4,-3,-2,-1,1,2,3,4,5}
+                                    \draw[gray!50!black, very thin] (\x,-0.15) -- (\x,0.15);
+                                \foreach \y in {-6,-4,-2,2,4,6,8,10}
+                                    \draw[gray!50!black, very thin] (-0.15,\y) -- (0.15,\y);
+                                \foreach \x in {-4,-2,2,4}
+                                    \node[gray!55!black,font=\small,anchor=north] at (\x,-0.25) {\x};
+                                \foreach \y in {-6,-4,-2,2,4,6,8,10}
+                                    \node[gray!55!black,font=\small,anchor=east] at (-0.25,\y) {\y};
+                                \clip (-4,-6) rectangle (5,10);
+                                \draw[blue!75!black, very thick, domain=-2.8:3.5, samples=500]
+                                    plot (\x,{2*(\x-1)^2*(\x+1)*(2*\x+3)});
+                                \draw[red, fill=red] (1,0) circle (3pt);
+                                \draw[red, fill=red] (-1,0) circle (3pt);
+                                \draw[red, fill=red] (-1.5,0) circle (3pt);
+                                \node[blue!75!black, font=\small, anchor=west] at (2.5,8)
+                                    {$f(x)=(x-1)^2(x+1)(2x+3)$};
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         GRAPHING EXAMPLE VIDEO
+         ======================================================== -->
+
+    <subsection xml:id="graphing-example">
+        <title>Graphing Example</title>
+
+        <!-- Video 2: Graphing Example -->
+        <p><url href="https://youtu.be/LHPlr7bk3s0">Graphing Example Video</url></p>
+
+        <p>
+            The process of finding zeros is systematic:
+        </p>
+        <ul>
+            <li>Use the Rational Zero Theorem to list possible zeros.</li>
+            <li>Test candidates using the Factor Theorem.</li>
+            <li>Divide to factor the polynomial.</li>
+            <li>Continue until all factors are found.</li>
+            <li>Use the zeros and end behavior to sketch the graph.</li>
+        </ul>
+
+        <activity>
+            <statement>
+                <p>
+                    Given <m>f(x) = x^3 - 2x^2 - 14x - 5</m>, find the zeros (that is, factor completely) and their multiplicities, then sketch its graph.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <em>Step 1: List possible rational zeros.</em>
+                </p>
+                <p>
+                    The constant term is <m>-5</m> and the leading coefficient is <m>1</m>.
+                </p>
+                <me>
+                    \frac{\text{Factors of } -5}{\text{Factors of } 1} = \pm 1, \pm 5
+                </me>
+
+                <p>
+                    <em>Step 2: Test possible zeros.</em>
+                </p>
+                <p>
+                    Test <m>x = 5</m>:
+                </p>
+                <me>f(5) = 125 - 50 - 70 - 5 = 0</me>
+                <p>
+                    Since <m>f(5) = 0</m>, <m>x = 5</m> is a zero, so <m>(x - 5)</m> is a factor. Divide:
+                </p>
+                <me>
+                    \begin{array}{c|rrrr}
+                    5 &amp; 1 &amp; -2 &amp; -14 &amp; -5 \\
+                     &amp;  &amp; 5 &amp; 15 &amp; 5 \\
+                    \hline
+                     &amp; 1 &amp; 3 &amp; 1 &amp; 0
+                    \end{array}
+                </me>
+                <p>
+                    So <m>f(x) = (x - 5)(x^2 + 3x + 1)</m>.
+                </p>
+
+                <p>
+                    <em>Step 3: Find remaining zeros using the quadratic formula.</em>
+                </p>
+                <p>
+                    For <m>x^2 + 3x + 1 = 0</m>:
+                </p>
+                <me>
+                    x = \frac{-3 \pm \sqrt{3^2 - 4(1)(1)}}{2(1)} = \frac{-3 \pm \sqrt{5}}{2}
+                </me>
+                <p>
+                    So the zeros are:
+                </p>
+                <me>
+                    x = 5,\quad x = \frac{-3 + \sqrt{5}}{2} \approx -0.382,\quad x = \frac{-3 - \sqrt{5}}{2} \approx -2.618
+                </me>
+
+                <p>
+                    <em>Step 4: Zeros and multiplicities.</em>
+                </p>
+                <ul>
+                    <li><m>x = 5</m>, multiplicity 1 (crosses)</li>
+                    <li><m>x = \frac{-3 + \sqrt{5}}{2} \approx -0.382</m>, multiplicity 1 (crosses)</li>
+                    <li><m>x = \frac{-3 - \sqrt{5}}{2} \approx -2.618</m>, multiplicity 1 (crosses)</li>
+                </ul>
+
+                <p>
+                    <em>End Behavior:</em> Degree 3 (odd), leading coefficient 1 (positive) → falls to the left, rises to the right.
+                </p>
+                <!-- End behavior image: falls left, rises right -->
+                <image width="15%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{tikzpicture}[x=0.75cm,y=0.75cm]
+                            \draw[red, very thick, line cap=round, line join=round]
+                                (-1.65,0.00) .. controls (-1.48,0.55) and (-1.32,1.45) .. (-0.95,1.55)
+                                .. controls (-0.62,1.65) and (-0.52,0.42) .. (-0.25,0.35)
+                                .. controls (-0.02,0.30) and (0.02,1.18) .. (0.25,1.10)
+                                .. controls (0.48,1.02) and (0.43,0.25) .. (0.72,0.18)
+                                .. controls (1.02,0.10) and (1.10,1.00) .. (1.32,1.45)
+                                .. controls (1.43,1.68) and (1.50,1.88) .. (1.58,2.08);
+                            \draw[red, very thick, -{Stealth[length=7pt,width=6pt]}, line cap=round]
+                                (-1.65,0.30) -- (-1.65,0.00);
+                            \draw[red, very thick, -{Stealth[length=7pt,width=6pt]}, line cap=round]
+                                (1.48,1.82) -- (1.58,2.08);
+                        \end{tikzpicture}
+                        ]]>
+                    </latex-image>
+                </image>
+
+                <!-- FIXED GRAPH: extended domain, proper y-range, more samples -->
+                <figure>
+                    <caption>Graph of <m>f(x) = x^3 - 2x^2 - 14x - 5</m></caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}[x=0.7cm, y=0.15cm, >=stealth, line cap=round, line join=round]
+                                \draw[gray!25, very thin] (-6,-40) grid[step=1] (7,30);
+                                \draw[gray!25, very thin] (-6,-40) grid[step=10] (7,30);
+                                \draw[gray!55!black, thick, ->] (-6.2,0) -- (7.2,0);
+                                \draw[gray!55!black, thick, ->] (0,-42) -- (0,32);
+                                \foreach \x in {-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7}
+                                    \draw[gray!50!black, very thin] (\x,-0.15) -- (\x,0.15);
+                                \foreach \y in {-40,-30,-20,-10,10,20,30}
+                                    \draw[gray!50!black, very thin] (-0.15,\y) -- (0.15,\y);
+                                \foreach \x in {-6,-4,-2,2,4,6}
+                                    \node[gray!55!black,font=\small,anchor=north] at (\x,-0.25) {\x};
+                                \foreach \y in {-40,-30,-20,-10,10,20,30}
+                                    \node[gray!55!black,font=\small,anchor=east] at (-0.25,\y) {\y};
+                                \clip (-6,-40) rectangle (7,30);
+                                \draw[blue!75!black, very thick, domain=-6:7, samples=600]
+                                    plot (\x,{\x^3 - 2*\x^2 - 14*\x - 5});
+                                \draw[red, fill=red] (5,0) circle (3pt);
+                                \draw[red, fill=red] (-0.382,0) circle (3pt);
+                                \draw[red, fill=red] (-2.618,0) circle (3pt);
+                                \node[blue!75!black, font=\small, anchor=west] at (2.5,25)
+                                    {$f(x)=x^3-2x^2-14x-5$};
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p>
+                    Given <m>f(x) = -3x^3 + 20x^2 - 36x + 16</m>, find the zeros (that is, factor completely) and their multiplicities, then sketch its graph.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <em>Step 1: List possible rational zeros.</em>
+                </p>
+                <p>
+                    The constant term is <m>16</m> and the leading coefficient is <m>-3</m>.
+                </p>
+                <me>
+                    \frac{\pm 1, \pm 2, \pm 4, \pm 8, \pm 16}{\pm 1, \pm 3} = \pm 1, \pm 2, \pm 4, \pm 8, \pm 16, \pm \frac{1}{3}, \pm \frac{2}{3}, \pm \frac{4}{3}, \pm \frac{8}{3}, \pm \frac{16}{3}
+                </me>
+                <p>
+                    That's a LOT of possible zeros (and we know that a cubic can only have 3 zeros). We can use a graph to help us decide which zeros are likely. Remember, the graph doesn't <em>prove</em> we have a zero — we must use division to confirm.
+                </p>
+
+                <p>
+                    <em>Step 2: Test likely zeros.</em>
+                </p>
+                <p>
+                    From the graph, it looks like <m>x = 2</m> and <m>x = 4</m> are zeros. Let's test <m>x = 4</m>:
+                </p>
+                <me>f(4) = -3(64) + 20(16) - 36(4) + 16 = -192 + 320 - 144 + 16 = 0</me>
+                <p>
+                    Since <m>f(4) = 0</m>, <m>x = 4</m> is a zero. Divide:
+                </p>
+                <me>
+                    \begin{array}{c|rrrr}
+                    4 &amp; -3 &amp; 20 &amp; -36 &amp; 16 \\
+                     &amp;  &amp; -12 &amp; 32 &amp; -16 \\
+                    \hline
+                     &amp; -3 &amp; 8 &amp; -4 &amp; 0
+                    \end{array}
+                </me>
+                <p>
+                    So <m>f(x) = (x - 4)(-3x^2 + 8x - 4)</m>.
+                </p>
+
+                <p>
+                    <em>Step 3: Factor the quadratic.</em>
+                </p>
+                <me>-3x^2 + 8x - 4 = -(3x^2 - 8x + 4) = -(3x - 2)(x - 2)</me>
+                <p>
+                    Therefore:
+                </p>
+                <me>f(x) = (x - 4)(-1)(3x - 2)(x - 2) = -(x - 4)(3x - 2)(x - 2)</me>
+
+                <p>
+                    <em>Step 4: Zeros and multiplicities.</em>
+                </p>
+                <ul>
+                    <li><m>x = 4</m>, multiplicity 1 (crosses)</li>
+                    <li><m>x = 2</m>, multiplicity 1 (crosses)</li>
+                    <li><m>x = \frac{2}{3}</m>, multiplicity 1 (crosses)</li>
+                </ul>
+
+                <p>
+                    <em>End Behavior:</em> Degree 3 (odd), leading coefficient <m>-3</m> (negative) → rises to the left, falls to the right.
+                </p>
+                <!-- End behavior image: rises left, falls right -->
+                <image width="15%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{tikzpicture}[x=0.75cm,y=0.75cm]
+                            \draw[red, very thick, line cap=round, line join=round]
+                                (-1.65,1.80) .. controls (-1.48,1.00) and (-1.32,0.10) .. (-0.95,-0.05)
+                                .. controls (-0.62,-0.20) and (-0.52,0.80) .. (-0.25,0.75)
+                                .. controls (-0.02,0.70) and (0.02,-0.10) .. (0.25,-0.05)
+                                .. controls (0.48,0.02) and (0.43,0.85) .. (0.72,0.90)
+                                .. controls (1.02,0.95) and (1.10,0.10) .. (1.32,-0.30)
+                                .. controls (1.43,-0.55) and (1.50,-0.75) .. (1.58,-0.95);
+                            \draw[red, very thick, -{Stealth[length=7pt,width=6pt]}, line cap=round]
+                                (-1.65,1.80) -- (-1.65,2.10);
+                            \draw[red, very thick, -{Stealth[length=7pt,width=6pt]}, line cap=round]
+                                (1.48,-0.82) -- (1.58,-0.95);
+                        \end{tikzpicture}
+                        ]]>
+                    </latex-image>
+                </image>
+
+                <figure>
+                    <caption>Graph of <m>f(x) = -(x-4)(3x-2)(x-2)</m></caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}[x=0.8cm, y=0.15cm, >=stealth, line cap=round, line join=round]
+                                \draw[gray!25, very thin] (-2,-15) grid[step=1] (6,15);
+                                \draw[gray!25, very thin] (-2,-15) grid[step=5] (6,15);
+                                \draw[gray!55!black, thick, ->] (-2.2,0) -- (6.2,0);
+                                \draw[gray!55!black, thick, ->] (0,-15.2) -- (0,15.2);
+                                \foreach \x in {-2,-1,1,2,3,4,5,6}
+                                    \draw[gray!50!black, very thin] (\x,-0.15) -- (\x,0.15);
+                                \foreach \y in {-15,-10,-5,5,10,15}
+                                    \draw[gray!50!black, very thin] (-0.15,\y) -- (0.15,\y);
+                                \foreach \x in {-2,2,4,6}
+                                    \node[gray!55!black,font=\small,anchor=north] at (\x,-0.25) {\x};
+                                \foreach \y in {-15,-10,-5,5,10,15}
+                                    \node[gray!55!black,font=\small,anchor=east] at (-0.25,\y) {\y};
+                                \clip (-2,-15) rectangle (6,15);
+                                \draw[blue!75!black, very thick, domain=-0.5:5.5, samples=500]
+                                    plot (\x,{-(\x-4)*(3*\x-2)*(\x-2)});
+                                \draw[red, fill=red] (4,0) circle (3pt);
+                                \draw[red, fill=red] (2,0) circle (3pt);
+                                \draw[red, fill=red] (0.667,0) circle (3pt);
+                                \node[blue!75!black, font=\small, anchor=west] at (3.5,12)
+                                    {$f(x)=-(x-4)(3x-2)(x-2)$};
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         FUNDAMENTAL THEOREM OF ALGEBRA
+         ======================================================== -->
+
+    <subsection xml:id="fundamental-theorem">
+        <title>The Fundamental Theorem of Algebra</title>
+
+        <!-- Video 3: Fundamental Theorem of Algebra -->
+        <p><url href="https://echo360.org/media/6af6b33c-91dc-49cb-8568-4a2ce6c2eafc/public">Fundamental Theorem of Algebra Video</url></p>
+
+        <definition>
+            <title>Fundamental Theorem of Algebra</title>
+            <p>
+                If <m>f(x)</m> is a polynomial of degree <m>n</m>, where <m>n > 0</m>, then <m>f</m> has at least one zero in the complex number system.
+            </p>
+        </definition>
+
+        <p>
+            This means that <m>f(x) = (x - c)q(x)</m>, but <m>q(x)</m> is ALSO a polynomial, so it too must have a zero. We can continue this process: <m>f(x) = (x - c_1)(x - c_2)q_2(x)</m>, and so on, until the quotient is a linear factor.
+            <p>That gives us:</p>
+        </p>
+
+        <definition>
+            <title>Linear Factorization Theorem</title>
+            <p>
+                If <m>f(x)</m> is a polynomial of degree <m>n</m>, where <m>n > 0</m>, then <m>f</m> has precisely <m>n</m> linear factors:
+            </p>
+            <me>f(x) = a_n(x - c_1)(x - c_2)\cdots(x - c_n)</me>
+            <p>
+                where <m>c_1, c_2, \ldots, c_n</m> are complex numbers.
+            </p>
+        </definition>
+
+        <p>
+            What does this tell us? <em>Every polynomial can be factored into the product of linear factors.</em>
+        </p>
+
+        <p>
+            Note that the Fundamental Theorem of Algebra and the Linear Factorization Theorem tell you only that the zeros or factors of a polynomial exist — not how to find them. Such theorems are called <term>existence theorems</term>. Remember that the <m>n</m> zeros of a polynomial function can be real or complex, and they may be repeated.
+        </p>
+
+        <p>
+            Some useful facts about factors of polynomials:
+        </p>
+
+        <definition>
+            <title>Conjugate Zeros Theorem</title>
+            <p>
+                If <m>f(x)</m> is a polynomial with real coefficients and if <m>a + bi</m> (<m>b \neq 0</m>) is a zero of <m>f(x)</m>, then its conjugate <m>a - bi</m> is also a zero of <m>f(x)</m>.
+            </p>
+            <p>
+                Complex factors of polynomials with real coefficients ALWAYS come as conjugate pairs.
+            </p>
+        </definition>
+
+        <definition>
+            <title>Number of Zeros of a Polynomial</title>
+            <p>
+                If <m>f(x)</m> is a polynomial of degree <m>n \geq 1</m> with complex coefficients, then <m>f(x)</m> has exactly <m>n</m> complex zeros, provided that each zero is counted by its multiplicity.
+            </p>
+            <p>
+                A polynomial of degree <m>n</m> has <m>n</m> zeros (n factors, n roots) when you count multiplicities.
+            </p>
+        </definition>
+
+        <!-- Example with complex zeros -->
+        <activity>
+            <statement>
+                <p>
+                    Given <m>f(x) = 7x^4 + 37x^3 + 53x^2 + 17x + 6</m>, express <m>f(x)</m> as a product of linear factors and sketch its graph.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <em>Step 1: List possible rational zeros.</em>
+                </p>
+                <p>
+                    The constant term is <m>6</m> and the leading coefficient is <m>7</m>.
+                </p>
+                <me>
+                    \pm 1, \pm 2, \pm 3, \pm 6, \pm \frac{1}{7}, \pm \frac{2}{7}, \pm \frac{3}{7}, \pm \frac{6}{7}
+                </me>
+
+                <p>
+                    <em>Step 2: Test possible zeros.</em>
+                </p>
+                <p>
+                    It looks like <m>x = -3</m> and <m>x = -2</m> are zeros. Test <m>x = -3</m>:
+                </p>
+                <me>f(-3) = 7(81) + 37(-27) + 53(9) + 17(-3) + 6 = 567 - 999 + 477 - 51 + 6 = 0</me>
+                <p>
+                    Since <m>f(-3) = 0</m>, <m>x = -3</m> is a zero. Divide:
+                </p>
+                <me>
+                    \begin{array}{c|rrrrr}
+                    -3 &amp; 7 &amp; 37 &amp; 53 &amp; 17 &amp; 6 \\
+                     &amp;  &amp; -21 &amp; -48 &amp; -15 &amp; -6 \\
+                    \hline
+                     &amp; 7 &amp; 16 &amp; 5 &amp; 2 &amp; 0
+                    \end{array}
+                </me>
+                <p>
+                    So <m>f(x) = (x + 3)(7x^3 + 16x^2 + 5x + 2)</m>.
+                </p>
+
+                <p>
+                    Now test <m>x = -2</m> on the cubic factor:
+                </p>
+                <me>
+                    \begin{array}{c|rrrr}
+                    -2 &amp; 7 &amp; 16 &amp; 5 &amp; 2 \\
+                     &amp;  &amp; -14 &amp; -4 &amp; -2 \\
+                    \hline
+                     &amp; 7 &amp; 2 &amp; 1 &amp; 0
+                    \end{array}
+                </me>
+                <p>
+                    So <m>f(x) = (x + 3)(x + 2)(7x^2 + 2x + 1)</m>.
+                </p>
+
+                <p>
+                    <em>Step 3: Find remaining zeros using the quadratic formula.</em>
+                </p>
+                <p>
+                    For <m>7x^2 + 2x + 1 = 0</m>, with <m>a = 7</m>, <m>b = 2</m>, <m>c = 1</m>:
+                </p>
+                <me>
+                    x = \frac{-2 \pm \sqrt{2^2 - 4(7)(1)}}{2(7)} = \frac{-2 \pm \sqrt{-24}}{14} = -\frac{1}{7} \pm \frac{\sqrt{6}}{7}i
+                </me>
+
+                <p>
+                    <em>Step 4: Write the complete factorization.</em>
+                </p>
+                <me>
+                    f(x) = (x + 3)(x + 2)\left(x - \left(-\frac{1}{7} + \frac{\sqrt{6}}{7}i\right)\right)\left(x - \left(-\frac{1}{7} - \frac{\sqrt{6}}{7}i\right)\right)
+                </me>
+
+                <p>
+                    <em>Step 5: Zeros and multiplicities.</em>
+                </p>
+                <ul>
+                    <li><m>x = -3</m>, multiplicity 1</li>
+                    <li><m>x = -2</m>, multiplicity 1</li>
+                    <li><m>x = -\frac{1}{7} + \frac{\sqrt{6}}{7}i</m>, multiplicity 1</li>
+                    <li><m>x = -\frac{1}{7} - \frac{\sqrt{6}}{7}i</m>, multiplicity 1</li>
+                </ul>
+
+                <!-- FIXED GRAPH: using axis environment with restrict y to domain and factored form -->
+                <figure>
+                    <caption>Graph of <m>f(x) = 7x^4 + 37x^3 + 53x^2 + 17x + 6</m></caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}
+                                \begin{axis}[
+                                    x=0.6cm,
+                                    y=0.3cm,
+                                    axis lines=middle,
+                                    axis line style={gray!55!black},
+                                    grid=both,
+                                    grid style={gray!25, very thin},
+                                    major grid style={gray!35, thick},
+                                    xmin=-5, xmax=2,
+                                    ymin=-10, ymax=10,
+                                    xtick={-5,-4,-3,-2,-1,0,1,2},
+                                    ytick={-10,-8,-6,-4,-2,0,2,4,6,8,10},
+                                    clip=true,
+                                    restrict y to domain=-10:10,
+                                    domain=-3.5:0.5,
+                                    samples=200,
+                                    xlabel={$x$},
+                                    ylabel={$y$},
+                                    legend style={at={(0.95,0.95)}, anchor=north east}
+                                ]
+                                    \addplot[blue!75!black, very thick] {(\x+3)*(\x+2)*(7*\x*\x+2*\x+1)};
+                                    \addplot[red, only marks, mark=*, mark size=3pt] coordinates {(-3,0) (-2,0)};
+                                    \legend{$f(x)=7x^4+37x^3+53x^2+17x+6$}
+                                \end{axis}
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+
+        <!-- Example with given complex zero -->
+        <activity>
+            <statement>
+                <p>
+                    Given that <m>1 + 3i</m> is a zero of <m>f(x) = x^4 - 3x^3 + 6x^2 + 2x - 60</m>, find the remaining zeros.
+                </p>
+                <p>
+                    <em>Hint:</em> If <m>1 + 3i</m> is a zero, then <m>1 - 3i</m> is also a zero (by the Conjugate Zeros Theorem).
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <em>Step 1: Find the quadratic factor corresponding to the complex conjugate pair.</em>
+                </p>
+                <p>
+                    If <m>1 + 3i</m> and <m>1 - 3i</m> are zeros, then:
+                </p>
+                <me>
+                    (x - (1 + 3i))(x - (1 - 3i)) = x^2 - 2x + 10
+                </me>
+
+                <p>
+                    <em>Step 2: Divide the original polynomial by this quadratic factor.</em>
+                </p>
+
+                <figure>
+                    <caption>Long division of <m>(x^4 - 3x^3 + 6x^2 + 2x - 60) \div (x^2 - 2x + 10)</m></caption>
+                    <image width="70%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}[x=1.0cm, y=0.9cm, every node/.style={font=\Large}]
+
+                                \draw[thick] (0.2, -3.8) -- (0.2, 0.5) -- (7.0, 0.5);
+                                \node[anchor=east] at (0.0, 0.0) {\(x^2 - 2x + 10\)};
+
+                                % Dividend
+                                \node at (1.0, 0.0) {\(x^4\)};
+                                \node at (2.2, 0.0) {\(-3x^3\)};
+                                \node at (3.4, 0.0) {\(+6x^2\)};
+                                \node at (4.6, 0.0) {\(+2x\)};
+                                \node at (5.8, 0.0) {\(-60\)};
+
+                                % Quotient
+                                \node at (1.0, 0.8) {\(x^2\)};
+                                \node at (2.2, 0.8) {\(-x\)};
+                                \node at (3.4, 0.8) {\(-6\)};
+
+                                % Step 1: subtract -(x^4 - 2x^3 + 10x^2) = -x^4 + 2x^3 - 10x^2
+                                \node[blue] at (1.0, -0.6) {\(-x^4\)};
+                                \node[blue] at (2.2, -0.6) {\(+2x^3\)};
+                                \node[blue] at (3.4, -0.6) {\(-10x^2\)};
+                                \draw[blue, thick] (0.6, -0.9) -- (3.8, -0.9);
+                                \node at (2.2, -1.4) {\(-x^3\)};
+                                \node at (3.4, -1.4) {\(-4x^2\)};
+                                \node at (4.6, -1.4) {\(+2x\)};
+                                \node at (5.8, -1.4) {\(-60\)};
+
+                                % Step 2: subtract -(-x^3 + 2x^2 - 10x) = +x^3 - 2x^2 + 10x
+                                \node[blue] at (2.2, -2.0) {\(+x^3\)};
+                                \node[blue] at (3.4, -2.0) {\(-2x^2\)};
+                                \node[blue] at (4.6, -2.0) {\(+10x\)};
+                                \draw[blue, thick] (1.8, -2.3) -- (5.0, -2.3);
+                                \node at (3.4, -2.8) {\(-6x^2\)};
+                                \node at (4.6, -2.8) {\(+12x\)};
+                                \node at (5.8, -2.8) {\(-60\)};
+
+                                % Step 3: subtract -(-6x^2 + 12x - 60) = +6x^2 - 12x + 60
+                                \node[blue] at (3.4, -3.4) {\(+6x^2\)};
+                                \node[blue] at (4.6, -3.4) {\(-12x\)};
+                                \node[blue] at (5.8, -3.4) {\(+60\)};
+                                \draw[blue, thick] (3.0, -3.7) -- (6.2, -3.7);
+                                \node at (4.6, -4.2) {\(0\)};
+                                \node at (5.8, -4.2) {\(0\)};
+
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+
+                <p>
+                    So we have:
+                </p>
+                <me>f(x) = (x^2 - 2x + 10)(x^2 - x - 6)</me>
+
+                <p>
+                    <em>Step 3: Factor the quadratic.</em>
+                </p>
+                <me>x^2 - x - 6 = (x - 3)(x + 2)</me>
+
+                <p>
+                    <em>Step 4: Write the complete factorization.</em>
+                </p>
+                <me>f(x) = (x^2 - 2x + 10)(x - 3)(x + 2)</me>
+
+                <p>
+                    <em>Step 5: Identify all zeros.</em>
+                </p>
+                <ul>
+                    <li><m>x = 1 + 3i</m> (given)</li>
+                    <li><m>x = 1 - 3i</m> (conjugate pair)</li>
+                    <li><m>x = 3</m></li>
+                    <li><m>x = -2</m></li>
+                </ul>
+            </solution>
+        </activity>
+    </subsection>
+
+</section>
