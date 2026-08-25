@@ -659,31 +659,34 @@
                             <![CDATA[
                             \begin{adjustbox}{max width=\linewidth}
                             \begin{tikzpicture}
-                                \begin{axis}[
-                                    x=0.6cm,
-                                    y=0.3cm,
-                                    axis lines=middle,
-                                    axis line style={gray!55!black},
-                                    grid=both,
-                                    grid style={gray!25, very thin},
-                                    major grid style={gray!35, thick},
-                                    xmin=-5, xmax=2,
-                                    ymin=-10, ymax=10,
-                                    xtick={-5,-4,-3,-2,-1,0,1,2},
-                                    ytick={-10,-8,-6,-4,-2,0,2,4,6,8,10},
-                                    clip=true,
-                                    restrict y to domain=-10:10,
-                                    domain=-3.5:0.5,
-                                    samples=200,
-                                    xlabel={$x$},
-                                    ylabel={$y$},
-                                    legend style={at={(0.95,0.95)}, anchor=north east}
-                                ]
-                                    \addplot[blue!75!black, very thick] {(\x+3)*(\x+2)*(7*\x*\x+2*\x+1)};
-                                    \addplot[red, only marks, mark=*, mark size=3pt] coordinates {(-3,0) (-2,0)};
-                                    \legend{$f(x)=7x^4+37x^3+53x^2+17x+6$}
-                                \end{axis}
-                            \end{tikzpicture}
+    \begin{axis}[
+        x=0.6cm,
+        y=0.25cm,
+        axis lines=middle,
+        axis line style={gray!55!black},
+        grid=both,
+        grid style={gray!25, very thin},
+        major grid style={gray!35, thick},
+        xmin=-5, xmax=5,
+        ymin=-13, ymax=20,
+        xtick={-4,-3,-2,-1,0,1,2,3,4,5},
+        ytick={-10,-5,0,5,10,15,20},
+        clip=true,
+        restrict y to domain=-20:25,
+        domain=-4.8:2.5,
+        samples=300,
+        xlabel={$x$},
+        ylabel={$y$}
+    ]
+        % Plot using factored form for stability
+        \addplot[blue!75!black, very thick] {(\x+3)*(\x+2)*(7*\x*\x+2*\x+1)};
+        % Mark real zeros
+        \addplot[red, only marks, mark=*, mark size=3pt] coordinates {(-3,0) (-2,0)};
+        % Normal label (no box) placed near the curve, not floating
+        \node[blue!75!black, anchor=west, font=\small] at (axis cs:-5,-11.3) 
+            {$f(x)=7x^4+37x^3+53x^2+17x+6$};
+    \end{axis}
+\end{tikzpicture}
                             \end{adjustbox}
                             ]]>
                         </latex-image>
