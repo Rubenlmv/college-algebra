@@ -1,90 +1,559 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<section xml:id="syllabus" xmlns:xi="http://www.w3.org/2001/XInclude" >
-  <title>Syllabus</title>
+<section xml:id="syllabus" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Syllabus</title>
 
-  <introduction>
-    <p>
-    </p>
-  </introduction>
-  <!-- Include chapters -->
-  <subsection xml:id="sec-course-info">
-    <title>Course Information</title>
+    <introduction>
+        <p>
+            This syllabus contains the policies, expectations, and schedule for <term>MATH 1320 College Algebra</term>.
+            Please read it carefully and refer to it throughout the semester.
+        </p>
+    </introduction>
 
-    <p> Testing changes. 
+    <!-- ========================================================
+         COURSE INFORMATION
+         ======================================================== -->
 
-      This is the syllabus for <term>course name (MATH xxx, section xxx)</term> for [term] 20xx.
-      It is a [n] credit course.
-      <!-- use a description list (dl) for short items -->
-      <dl>
-        <li>
-          <title>Instructor</title>
+    <subsection xml:id="sec-course-info">
+        <title>Course Information</title>
 
-          <p>
-            Prof. Lastname, Office Location, <url href="mailto:prof.lastname@example.edu">prof.lastname@example.edu</url>.
-          </p>
-        </li>
+        <dl>
+            <li>
+                <title>Course</title>
+                <p>MATH 1320 College Algebra, Section 014, CRN 42937</p>
+            </li>
 
-        <li>
-          <title>Student Hours</title>
+            <li>
+                <title>Semester</title>
+                <p>Fall 2026</p>
+            </li>
 
-          <p>
-            TBD
-          </p>
-        </li>
+            <li>
+                <title>Credit Hours</title>
+                <p>3 credit hours</p>
+            </li>
 
-        <li>
-          <title>Class meets</title>
+            <li>
+                <title>Meeting Information</title>
+                <p>
+                    Lecture: <m>02:30</m> PM – <m>03:50</m> PM, Mondays and Wednesdays<br/>
+                    Location: Memorial Field House FH 1230
+                </p>
+            </li>
 
-          <p>
-            course times and location.
-          </p>
-        </li>
+            <li>
+                <title>Course Website</title>
+                <p><url href="https://blackboard.utoledo.edu">Blackboard Learn</url></p>
+            </li>
 
-        <li>
-          <title>Course Description</title>
+            <li>
+                <title>Instructor</title>
+                <p>
+                    Ruben Limbert Mamani Velasco<br/>
+                    <url href="mailto:RubenLimbert.MamaniVelasco@rockets.utoledo.edu">RubenLimbert.MamaniVelasco@rockets.utoledo.edu</url><br/>
+                    Office: FH 1040 (Tue, Thu) and UH 2020 D (Fri)<br/>
+                    Phone: <tel>419-530-2619</tel>
+                </p>
+            </li>
 
-          <p>
-            course description from catalog
-          </p>
-        </li>
+            <li>
+                <title>Office Hours</title>
+                <p>
+                    <m>02:30</m> PM – <m>03:30</m> PM, Tuesday, Thursday, and Friday
+                </p>
+            </li>
 
-        <li>
-          <title>Prerequisite</title>
+            <li>
+                <title>Course Catalog Description</title>
+                <p>
+                    Number system; elementary theory of equations and inequalities; functions and relations;
+                    exponentials and logarithms; systems of equations and topics in analytic geometry.
+                    Course is not applicable toward the undergraduate Mathematics major requirements.
+                    No credit given for students who have credit for MATH 1340.
+                </p>
+            </li>
 
-          <p>
-            list of prerequisites
-          </p>
-        </li>
+            <li>
+                <title>Prerequisites</title>
+                <p>
+                    <ul>
+                        <li>High School GPA of 3.0 and (ACT Math 18, ALEKS 44, SAT Math 500/460, or MATH 1200 C+ or MATH 1180 B+)</li>
+                        <li>or MATH 1310 (may be taken concurrently) with grade C and (ACT Math 16, ALEKS 36, SAT Math 430/390, or MATH 1200 C- or MATH 1180 C-)</li>
+                        <li>or ACT Math 24, ALEKS 56, SAT Math 580/560, or MATH 1200 C+ or MATH 1180 B+</li>
+                        <li>or MATH 1310 (may be taken concurrently) with grade C and (ACT Math 20, ALEKS 48, SAT Math 520/490, or MATH 1200 C- or MATH 1180 C-)</li>
+                        <li>or Math - Coll Algebra Placement with score 10</li>
+                    </ul>
+                </p>
+            </li>
 
-        <li>
-          <title>Textbook and course materials</title>
+            <li>
+                <title>Textbook and Course Materials</title>
+                <p>
+                    <pubtitle>College Algebra</pubtitle> by Julie Miller and Donna Gerken, 2nd Edition, McGraw-Hill Education (2016).
+                    ISBN: 9780077836344. The textbook is recommended, but not required. An e-book is included with access to ALEKS.
+                </p>
+            </li>
 
-          <p>
-            <pubtitle>textbook name</pubtitle>
-            by textbook author.
-          </p>
-        </li>
-      </dl>
-    </p>
+            <li>
+                <title>Required Ancillary Materials</title>
+                <p>ALEKS online access. Online access is provided with the course.</p>
+            </li>
 
-  <!-- Use paragraphs to break apart subsections -->
-    <paragraphs>
-      <title>Course Overview</title>
+            <li>
+                <title>Technology Requirements</title>
+                <p>
+                    Scientific calculator with memory, parentheses, exponent, and root keys.
+                    Graphing calculator is helpful, but not required.
+                    <em>Cell phones/Smart phones are not allowed during quizzes and exams.</em>
+                    Laptops can be borrowed from Carlson Library at the Circulation/IT desk for 5 hours at a time.
+                </p>
+            </li>
+        </dl>
 
-      <p>
-      </p>
-    </paragraphs>
-  </subsection>
+        
+    </subsection>
 
-  <!-- Other subsections for larger dividers -->
-  <subsection xml:id="sec-assessments">
-    <title>Assessments and Grades</title>
+    <!-- ========================================================
+         COURSE OVERVIEW & LEARNING OUTCOMES
+         ======================================================== -->
 
-    <p>
-    </p>
-  </subsection>
-     
+    <subsection xml:id="sec-learning-outcomes">
+        <title>Course Overview and Learning Outcomes</title>
+
+        <p>
+            The objective of this course is to develop the students' mathematical skills,
+            with emphasis on problems relating to algebra and polynomials.
+        </p>
+
+        <p>
+            <term>Student Learning Outcomes:</term>
+        </p>
+
+        <ul>
+            <li>
+                <strong>Representation:</strong> Graphical, algebraic, numerical, and verbal representation
+                of linear, quadratic, polynomial, rational, root/radical/power, exponential, logarithmic,
+                and piecewise-defined functions.
+            </li>
+            <li>
+                <strong>Graphs:</strong> Determine whether an algebraic relation or given graph represents a function;
+                perform transformations on graphs and operations with functions; determine intercepts, domain, range,
+                intervals of monotonicity, vertex of a quadratic, asymptotes, symmetry; and match graphs to algebraic definitions.
+            </li>
+            <li>
+                <strong>Remainder and Factor Theorems:</strong> Use the Remainder and Factor Theorems for polynomial functions.
+            </li>
+            <li>
+                <strong>Modeling:</strong> Use functions to model a variety of real-world problem-solving applications.
+            </li>
+            <li>
+                <strong>Properties of Equations:</strong> Recognize the difference between algebraic equations and functions;
+                describe the relationship among the solutions of an equation and the zeros of the corresponding function;
+                identify the coordinates of the x-intercepts of the graph of a function.
+            </li>
+            <li>
+                <strong>Solution of Equations:</strong> Solve a variety of equations, including polynomial, rational,
+                exponential, and logarithmic, including equations arising in applications; solve a system of linear equations
+                graphically and algebraically by substitution and elimination; and solve polynomial and rational inequalities
+                graphically and algebraically.
+            </li>
+        </ul>
+
+        <p>
+            <term>Core Curriculum:</term> MATH 1320 fulfills the University of Toledo Core Curriculum requirement for Mathematics.
+            This course supports the institutional outcomes of <em>Scientific and Quantitative Reasoning and Literacy</em>
+            (through algebraic problem-solving) and <em>Critical Thinking and Integrative Learning</em> (through real-world modeling).
+        </p>
+    </subsection>
+
+    <!-- ========================================================
+         COURSE EXPECTATIONS
+         ======================================================== -->
+
+    <subsection xml:id="sec-expectations">
+        <title>Course Expectations</title>
+
+        <p>
+            You are expected to prepare for class, to have read the indicated sections
+            and watched the lecture videos prior to the class session. Your ALEKS homework
+            and modules should be completed by the indicated date.
+        </p>
+
+        <p>
+            This is a three credit hour course and you should expect to spend
+            <m>5</m> to <m>8</m> hours outside of class reading, studying,
+            and doing homework problems.
+        </p>
+
+        <p>
+            This course is challenging, and I believe everyone can learn this material.
+            Please view me as a partner in your learning. If challenges arise that interfere
+            with your learning, let me know immediately so we can create a plan to help you be successful.
+            <em>Participation, preparation, and communication are keys to success in this course.</em>
+        </p>
+    </subsection>
+
+    <!-- ========================================================
+         ASSESSMENTS AND GRADES
+         ======================================================== -->
+
+    <subsection xml:id="sec-assessments">
+        <title>Assessments and Grades</title>
+
+        <p>
+            <term>Midterm Grading:</term> Midterm grades will be based on the Quiz,
+            Test and Homework grades earned by approximately the 6th week of class
+            and are weighted as above without the final exam weight.
+        </p>
+
+        <p>
+            <term>Final Grading Scale:</term> The evaluation for this course will be based
+            upon a percentage of the total of homework, test and final exam scores.
+        </p>
+
+        <table>
+            <title>Assessment Measures</title>
+            <tabular>
+                <row>
+                    <cell><strong>Assessment Measure</strong></cell>
+                    <cell><strong>% of Final Grade</strong></cell>
+                </row>
+                <row>
+                    <cell>ALEKS Homework/Path</cell>
+                    <cell>20%</cell>
+                </row>
+                <row>
+                    <cell>Attendance and Participation</cell>
+                    <cell>5%</cell>
+                </row>
+                <row>
+                    <cell>Quizzes</cell>
+                    <cell>15%</cell>
+                </row>
+                <row>
+                    <cell>Tests (3)</cell>
+                    <cell>40%</cell>
+                </row>
+                <row>
+                    <cell>Final Examination (comprehensive)</cell>
+                    <cell>20%</cell>
+                </row>
+                <row>
+                    <cell><strong>Total</strong></cell>
+                    <cell><strong>100%</strong></cell>
+                </row>
+            </tabular>
+        </table>
+
+        <table>
+            <title>Grade Scale</title>
+            <tabular>
+                <row>
+                    <cell><strong>Percentage</strong></cell>
+                    <cell><strong>Grade</strong></cell>
+                </row>
+                <row>
+                    <cell>90% – 100%</cell>
+                    <cell>A</cell>
+                </row>
+                <row>
+                    <cell>80% – 89%</cell>
+                    <cell>B</cell>
+                </row>
+                <row>
+                    <cell>70% – 79%</cell>
+                    <cell>C</cell>
+                </row>
+                <row>
+                    <cell>60% – 69%</cell>
+                    <cell>D</cell>
+                </row>
+                <row>
+                    <cell>Below 60%</cell>
+                    <cell>F</cell>
+                </row>
+            </tabular>
+        </table>
+    </subsection>
+
+    <!-- ========================================================
+         ALEKS HOMEWORK/MODULES
+         ======================================================== -->
+
+    <subsection xml:id="sec-aleks">
+        <title>ALEKS Homework/Modules</title>
+
+        <p>
+            ALEKS problems allow you to test your knowledge and improve your skills.
+            It is a very important part of this course, since you learn the material
+            by doing the problems. Working together is allowed, even encouraged,
+            however be sure to do your own work.
+        </p>
+
+        <p>
+            Keep a notebook of all work. This helps to keep track of your problems
+            and stay organized when you have questions. Often times we will be working
+            on ALEKS in class so it is important to bring a laptop to class with you.
+        </p>
+
+        <p>
+            <term>ALEKS Modules</term> are adaptive to what you personally need
+            and allow practice with the problems discussed in the notes. The due dates
+            of Modules keep us on track with the course notes.
+        </p>
+
+        <p>
+            <term>ALEKS Homework</term> assignments are not adaptive and each student
+            in the class has the same question with altered numbers. These are great
+            practice to make sure you understand the material discussed in the modules
+            and lecture notes.
+        </p>
+
+        <p>
+            <em>If you are experiencing challenges throughout the term that are impacting
+            your ability to succeed in this course, please reach out to me immediately
+            so that we can work together to form a plan for your academic success.</em>
+        </p>
+    </subsection>
+
+    <!-- ========================================================
+         QUIZZES
+         ======================================================== -->
+
+    <subsection xml:id="sec-quizzes">
+        <title>Quizzes</title>
+
+        <p>
+            Quizzes are one way that we will check your learning progress in this course.
+            They show me how well students are understanding the material and help me
+            identify common areas where students may be struggling. They also give you
+            opportunities to assess how well you are understanding the concepts.
+        </p>
+
+        <p>
+            There will be around 10 short quizzes this semester. Quizzes will be taken
+            from ALEKS homework problems that have been assigned to be completed on
+            or before the date of the quiz. Most quizzes will be 2–4 problems.
+        </p>
+
+        <p>
+            Quizzes will be done on paper, or in ALEKS depending on the schedule.
+            If done in ALEKS, a laptop will be required on these days.
+            <em>If you do not own a laptop, the Carlson Library lends laptops out
+            to students for 5 hours at a time.</em> It is the student's responsibility
+            to bring a laptop on quiz days.
+        </p>
+
+        <p>
+            At the end of the semester the <strong>lowest two quizzes will be dropped</strong>.
+            There will be no make-up for quizzes.
+        </p>
+    </subsection>
+
+    <!-- ========================================================
+         TESTS
+         ======================================================== -->
+
+    <subsection xml:id="sec-tests">
+        <title>Tests and Final Exam</title>
+
+        <p>
+            There are <strong>three tests</strong> and a <strong>comprehensive final exam</strong>.
+        </p>
+
+        <p>
+            <em>Missed exams can be made up only by prior arrangement and must be taken
+            by the next class session.</em>
+        </p>
+
+        <p>
+            Extra credit of <m>5\%</m> will be added to any test for attendance of
+            <strong>at least four hours</strong> with the tutors during the three to four week
+            period before that test. No partial extra credit for less than four hours.
+        </p>
+    </subsection>
+
+    <!-- ========================================================
+         AI TOOL USAGE
+         ======================================================== -->
+
+    <subsection xml:id="sec-ai-policy">
+        <title>AI Tool Usage Policy</title>
+
+        <p>
+            <term>Permitted uses:</term> Generative AI tools (ChatGPT, etc.) can be helpful
+            learning and study tools as you work to master mathematical concepts and techniques.
+            I encourage you to use them as such, recognizing that you need to exercise
+            critical thinking to ensure you are receiving accurate information.
+        </p>
+
+        <p>
+            <term>Prohibited use:</term> The use of generative AI tools (ChatGPT, etc.)
+            to find solutions to any credit-bearing work (Homework, test, quiz and exam problems)
+            is prohibited in this class, since it violates The University of Toledo's
+            Academic Dishonesty Policy, as it involves using work that is not solely your own.
+        </p>
+    </subsection>
+
+    <!-- ========================================================
+         UNIVERSITY POLICIES
+         ======================================================== -->
+
+    <subsection xml:id="sec-university-policies">
+        <title>University Policies</title>
+
+        <p>
+            Your safety and well-being as a University of Toledo student is important.
+            Please review the following university policies:
+        </p>
+
+        <ul>
+            <li>
+                <strong>Academic Policies:</strong>
+                <url href="https://www.utoledo.edu/policies/academic/">Undergraduate Academic Policies</url>
+            </li>
+            <li>
+                <strong>Non-Discrimination on the Basis of Disability (ADA):</strong>
+                <url href="https://www.utoledo.edu/policies/student/">ADA Compliance</url>
+            </li>
+            <li>
+                <strong>Academic Accommodations:</strong>
+                Office of Accessibility and Disability Resources<br/>
+                Phone: <tel>419-530-4981</tel><br/>
+                Email: <url href="mailto:StudentDisability@utoledo.edu">StudentDisability@utoledo.edu</url>
+            </li>
+            <li>
+                <strong>Religious Accommodations:</strong>
+                A student is permitted to be absent, without penalty, for up to three days
+                each academic semester to take holidays for reasons of faith or religious
+                or spiritual belief system.
+            </li>
+            <li>
+                <strong>Academic and Support Services:</strong>
+                <url href="https://www.utoledo.edu/studentaffairs/">Learner Support</url>
+            </li>
+            <li>
+                <strong>Safety and Health Services:</strong>
+                <url href="https://www.utoledo.edu/publicsafety/">Office of Public Safety</url>
+            </li>
+        </ul>
+    </subsection>
+
+    <!-- ========================================================
+         SCHEDULE
+         ======================================================== -->
+
+    <subsection xml:id="sec-schedule">
+        <title>Course Schedule</title>
+
+        <p>
+            The following schedule is tentative and subject to change.
+            Any changes will be announced in class and on Blackboard.
+        </p>
+
+        <table>
+            <title>Fall 2026 Schedule</title>
+            <tabular>
+                <row>
+                    <cell><strong>Week</strong></cell>
+                    <cell><strong>Dates</strong></cell>
+                    <cell><strong>Sections</strong></cell>
+                    <cell><strong>Assessments</strong></cell>
+                </row>
+                <row>
+                    <cell>1</cell>
+                    <cell>Aug 31 – Sep 4</cell>
+                    <cell>1.1–1.2</cell>
+                    <cell></cell>
+                </row>
+                <row>
+                    <cell>2</cell>
+                    <cell>Sep 7 – Sep 11</cell>
+                    <cell>1.3</cell>
+                    <cell>Quiz 1</cell>
+                </row>
+                <row>
+                    <cell>3</cell>
+                    <cell>Sep 14 – Sep 18</cell>
+                    <cell>1.4–1.7</cell>
+                    <cell>Quiz 2</cell>
+                </row>
+                <row>
+                    <cell>4</cell>
+                    <cell>Sep 21 – Sep 25</cell>
+                    <cell>2.1–2.3</cell>
+                    <cell><term>Test 1</term></cell>
+                </row>
+                <row>
+                    <cell>5</cell>
+                    <cell>Sep 28 – Oct 2</cell>
+                    <cell>2.4-2.7</cell>
+                    <cell>Quiz 3</cell>
+                </row>
+                <row>
+                    <cell>6</cell>
+                    <cell>Oct 5 – Oct 9</cell>
+                    <cell>2.8–3.2</cell>
+                    <cell>Quiz 4</cell>
+                </row>
+                <row>
+                    <cell>7</cell>
+                    <cell>Oct 12 – Oct 16</cell>
+                    <cell>3.3–3.5</cell>
+                    <cell>Quiz 5</cell>
+                </row>
+                <row>
+                    <cell>8</cell>
+                    <cell>Oct 19 – Oct 23</cell>
+                    <cell>3.6</cell>
+                    <cell>Quiz 6</cell>
+                </row>
+                <row>
+                    <cell>9</cell>
+                    <cell>Oct 26 – Oct 30</cell>
+                    <cell>4.1–4.2</cell>
+                    <cell><term>Test 2</term></cell>
+                </row>
+                <row>
+                    <cell>10</cell>
+                    <cell>Nov 2 – Nov 6</cell>
+                    <cell>4.3-4.6</cell>
+                    <cell>Quiz 7</cell>
+                </row>
+                <row>
+                    <cell>11</cell>
+                    <cell>Nov 9 – Nov 13</cell>
+                    <cell>5.1–5.2, 5.4</cell>
+                    <cell></cell>
+                </row>
+                <row>
+                    <cell>12</cell>
+                    <cell>Nov 16 – Nov 20</cell>
+                    <cell>6.1–6.3</cell>
+                    <cell>Quiz 8</cell>
+                </row>
+                <row>
+                    <cell>13</cell>
+                    <cell>Nov 23 – Nov 27</cell>
+                    <cell></cell>
+                    <cell><term>Test 3</term></cell>
+                </row>
+                <row>
+                    <cell>14</cell>
+                    <cell>Nov 30 – Dec 4</cell>
+                    <cell>7.1-7.3</cell>
+                    <cell>Quiz 9</cell>
+                </row>
+                <row>
+                    <cell>15</cell>
+                    <cell>Dec 7 – Dec 11</cell>
+                    <cell>8.1–8.3</cell>
+                    <cell>Quiz 10</cell>
+                </row>
+                
+            </tabular>
+        </table>
+
+    </subsection>
 
 </section>
-
