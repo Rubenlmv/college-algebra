@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet>
+    <title>Worksheets</title>
+
+    <introduction>
+        <p>
+            The worksheets listed below are used during class sessions to help you practice
+            the concepts covered in each section. You can <strong>download and print</strong>
+            them before class or use them for extra practice at home.
+        </p>
+        <p>
+            <em>Instructions:</em> Click on any worksheet below to view, download, or print the PDF.
+            Bring a printed copy to class if you prefer to work on paper during the session.
+        </p>
+    </introduction>
+
+    <ul>
+        <li><url href="assets/Worksheets/Worksheet1.pdf">Worksheet 1</url></li>
+        <li><url href="assets/Worksheets/Worksheet2.pdf">Worksheet 2</url></li>
+        <li><url href="assets/Worksheets/Worksheet3.pdf">Worksheet 3</url></li>
+    </ul>
+
+    <p>
+        <term>Note:</term> Worksheets are for in-class practice and preparation.
+        They are not graded, but completing them will help you succeed on quizzes and exams.
+    </p>
+
+</worksheet>

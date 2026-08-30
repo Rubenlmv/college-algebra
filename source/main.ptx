@@ -57,6 +57,7 @@
       <xi:include href="./notes/section3-2.ptx"/>
       <xi:include href="./notes/section3-3.ptx"/>
       <xi:include href="./notes/section3-4.ptx"/>
+      <xi:include href="./notes/section3-5.ptx"/>
       <!-- etc. -->
 
     </chapter>
@@ -70,7 +71,7 @@
           These are copies of the in-class activities distributed during the semester.
         </p>
       </introduction>
-
+      <xi:include href="./activities/worksheets.ptx"/>
       <!-- Remove the example and replace with your own activities -->
       <!-- <xi:include href="./activities/01-intro-activity.ptx"/>-->
       <!-- <xi:include href="./activities/activity-template.ptx"/>-->
