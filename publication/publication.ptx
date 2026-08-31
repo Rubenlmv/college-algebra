@@ -219,8 +219,10 @@
 
  
 
-  <deployment>
-      <github-pages branch="gh-pages" />
-  </deployment>
+   <assets>
+      <source directory="assets" target="assets"/>
+  </assets>
 
 </publication>
+
+
