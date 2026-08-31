@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="section-3-5">
+    <title>Section 3.5 Rational Functions</title>
+
+    <!-- ========================================================
+         INTRODUCTION (Page 1)
+         ======================================================== -->
+
+    <subsection xml:id="intro-rational-functions">
+        <title>Rational Functions</title>
+
+        <p>
+            Functions in the form:
+            <me>R(x) = \frac{P(x)}{Q(x)}</me>
+            where <m>P(x)</m> and <m>Q(x)</m> are <term>polynomials</term>.
+        </p>
+
+        <!-- Video 1: Page 1 – exactly after P(x) and Q(x) are POLYNOMIALS -->
+        <p><url href="https://youtu.be/fy45qX8cUwQ">Asymptotes Video</url></p>
+
+        <p>
+            <em>Notation Describing Infinite Behavior of a Function:</em>
+        </p>
+
+        <table>
+            <title>Infinite Behavior Notation</title>
+            <tabular>
+                <row>
+                    <cell><strong>Notation</strong></cell>
+                    <cell><strong>Meaning</strong></cell>
+                </row>
+                <row>
+                    <cell><m>x \to c^+</m></cell>
+                    <cell><m>x</m> approaches <m>c</m> from the right (but <m>x \neq c</m>).</cell>
+                </row>
+                <row>
+                    <cell><m>x \to c^-</m></cell>
+                    <cell><m>x</m> approaches <m>c</m> from the left (but <m>x \neq c</m>).</cell>
+                </row>
+                <row>
+                    <cell><m>x \to \infty</m></cell>
+                    <cell><m>x</m> increases without bound.</cell>
+                </row>
+                <row>
+                    <cell><m>x \to -\infty</m></cell>
+                    <cell><m>x</m> decreases without bound.</cell>
+                </row>
+            </tabular>
+        </table>
+    </subsection>
+
+    <!-- ========================================================
+         EXAMPLE: INFINITE BEHAVIOR (Page 2)
+         ======================================================== -->
+
+    <subsection xml:id="example-infinite-behavior">
+        <title>Example: Infinite Behavior</title>
+
+        <activity>
+            <statement>
+                <p>
+                    The graph of <m>f(x) = \dfrac{x - 1}{x - 3}</m> is shown below. Complete the statements.
+                </p>
+                <figure>
+                    <caption>Graph of <m>f(x) = \frac{x - 1}{x - 3}</m></caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}
+                            \begin{axis}[
+                              width=8.0cm,height=7.5cm,
+                              xmin=-3,xmax=10,ymin=-5,ymax=8,
+                              axis lines=middle,
+                              xlabel={$x$},ylabel={$y$},
+                              xtick={-3,0,10}, ytick={-5,0,8},
+                              enlargelimits=false,
+                              clip=true,
+                              samples=250,
+                              domain=-3:10,
+                              unbounded coords=jump,
+                            ]
+                            \addplot[red,dashed,very thick,domain=-3:10] {1};
+                            \addplot[red,dashed,very thick,domain=3:3] coordinates {(3,-5) (3,8)};
+                            \addplot[blue,very thick,domain=-3:2.96] {(x-1)/(x-3)};
+                            \addplot[blue,very thick,domain=3.04:10] {(x-1)/(x-3)};
+                            \end{axis}
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+                <p>
+                    As <m>x \to \infty</m>, <m>f(x) \to</m> _____
+                </p>
+                <p>
+                    As <m>x \to -\infty</m>, <m>f(x) \to</m> _____
+                </p>
+                <p>
+                    As <m>x \to 3^+</m>, <m>f(x) \to</m> _____
+                </p>
+                <p>
+                    As <m>x \to 3^-</m>, <m>f(x) \to</m> _____
+                </p>
+            </statement>
+            <solution>
+                <ul>
+                    <li>As <m>x \to \infty</m>, <m>f(x) \to 1</m> (horizontal asymptote).</li>
+                    <li>As <m>x \to -\infty</m>, <m>f(x) \to 1</m> (horizontal asymptote).</li>
+                    <li>As <m>x \to 3^+</m>, <m>f(x) \to \infty</m> (vertical asymptote, right side).</li>
+                    <li>As <m>x \to 3^-</m>, <m>f(x) \to -\infty</m> (vertical asymptote, left side).</li>
+                </ul>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         VERTICAL ASYMPTOTES (Pages 3–6)
+         ======================================================== -->
+
+    <subsection xml:id="vertical-asymptotes">
+        <title>Vertical Asymptotes</title>
+
+        <definition>
+            <title>Vertical Asymptote</title>
+            <p>
+                The line <m>x = c</m> is a <term>vertical asymptote</term> of the graph of <m>f</m> if <m>f(x)</m> approaches <m>\infty</m> or <m>-\infty</m> as <m>x</m> approaches <m>c</m> from either side.
+            </p>
+        </definition>
+
+        <!-- Figures 2–5: vertical asymptote behavior -->
+        <sidebyside widths="50% 50%">
+            <figure>
+                <caption>As <m>x \to c^+</m>, <m>f(x) \to \infty</m></caption>
+                <image width="100%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[>=Stealth]
+                        \draw[->,thick] (-2.3,0)--(2.3,0);
+                        \draw[->,thick] (0,-1.9)--(0,2.0);
+                        \draw[red,dashed,very thick] (1.15,-1.7)--(1.15,1.75);
+                        \draw[red,very thick]
+                          (1.20,1.65)
+                          .. controls (1.22,0.9) and (1.25,0.2) .. (1.45,0.05)
+                          .. controls (1.75,-0.05) and (2.0,0.0) .. (2.15,0.05);
+                        \draw[red,very thick,->] (1.20,1.65)--(1.20,1.95);
+                        % c marked on x-axis with tick
+                        \draw[thick] (1.15,0.08)--(1.15,-0.08);
+                        % c label moved slightly to the right to avoid overlapping asymptote
+                        \node[blue,font=\large,anchor=west] at (1.3,-0.3) {$c$};
+                        % Label asymptote
+                        \node[red,font=\small,anchor=south east] at (1.15,1.7) {$x=c$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+            <figure>
+                <caption>As <m>x \to c^-</m>, <m>f(x) \to \infty</m></caption>
+                <image width="100%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[>=Stealth]
+                        \draw[->,thick] (-2.3,0)--(2.3,0);
+                        \draw[->,thick] (0,-1.9)--(0,2.0);
+                        \draw[red,dashed,very thick] (1.15,-1.7)--(1.15,1.75);
+                        \draw[red,very thick]
+                          (-2.15,0.10)
+                          .. controls (-1.6,0.08) and (-1.1,0.05) .. (-0.55,0.08)
+                          .. controls (0.35,0.12) and (0.95,0.35) .. (1.08,1.55);
+                        \draw[red,very thick,->] (1.08,1.55)--(1.08,1.95);
+                        \draw[thick] (1.15,0.08)--(1.15,-0.08);
+                        \node[blue,font=\large,anchor=west] at (1.3,-0.3) {$c$};
+                        \node[red,font=\small,anchor=south east] at (1.15,1.7) {$x=c$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+        </sidebyside>
+
+        <sidebyside widths="50% 50%">
+            <figure>
+                <caption>As <m>x \to c^+</m>, <m>f(x) \to -\infty</m></caption>
+                <image width="100%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[>=Stealth]
+                        \draw[->,thick] (-2.3,0)--(2.3,0);
+                        \draw[->,thick] (0,-1.9)--(0,2.0);
+                        \draw[red,dashed,very thick] (1.15,-1.7)--(1.15,1.75);
+                        \draw[red,very thick]
+                          (1.22,-1.65)
+                          .. controls (1.23,-1.0) and (1.25,-0.35) .. (1.42,-0.22)
+                          .. controls (1.72,-0.10) and (2.0,-0.10) .. (2.15,-0.08);
+                        \draw[red,very thick,->] (1.22,-1.65)--(1.22,-1.95);
+                        \draw[thick] (1.15,0.08)--(1.15,-0.08);
+                        \node[blue,font=\large,anchor=west] at (1.3,-0.3) {$c$};
+                        \node[red,font=\small,anchor=south east] at (1.15,1.7) {$x=c$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+            <figure>
+                <caption>As <m>x \to c^-</m>, <m>f(x) \to -\infty</m></caption>
+                <image width="100%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[>=Stealth]
+                        \draw[->,thick] (-2.3,0)--(2.3,0);
+                        \draw[->,thick] (0,-1.9)--(0,2.0);
+                        \draw[red,dashed,very thick] (1.15,-1.7)--(1.15,1.75);
+                        \draw[red,very thick]
+                          (-2.15,-0.10)
+                          .. controls (-1.5,-0.10) and (-0.9,-0.08) .. (-0.45,-0.12)
+                          .. controls (0.30,-0.18) and (0.95,-0.30) .. (1.08,-1.60);
+                        \draw[red,very thick,->] (1.08,-1.60)--(1.08,-1.95);
+                        \draw[thick] (1.15,0.08)--(1.15,-0.08);
+                        \node[blue,font=\large,anchor=west] at (1.3,-0.3) {$c$};
+                        \node[red,font=\small,anchor=south east] at (1.15,1.7) {$x=c$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+        </sidebyside>
+
+        <p>
+            <em>Identifying vertical asymptotes:</em> Let <m>R(x)=\frac{P(x)}{Q(x)}</m> with no common factors. The vertical asymptotes occur at the real zeros of <m>Q(x)</m> that are not zeros of <m>P(x)</m>.
+        </p>
+
+        <activity>
+            <statement>
+                <p>
+                    Identify the vertical asymptotes (if any) of: <m>f(x) = \dfrac{x - 3}{x^2 - 4x - 5}</m>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Factor the denominator:
+                    <me>x^2 - 4x - 5 = (x - 5)(x + 1).</me>
+                    Set equal to zero:
+                    <me>(x - 5)(x + 1) = 0 \implies x = 5,\; x = -1.</me>
+                    Since neither zero cancels with the numerator, both are vertical asymptotes.
+                </p>
+                <figure>
+                    <caption>Graph of <m>f(x)=\frac{x-3}{x^2-4x-5}</m></caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}
+                            \begin{axis}[
+                              width=10.0cm,height=7.4cm,
+                              xmin=-5,xmax=9,ymin=-4.5,ymax=6.5,
+                              axis lines=middle,
+                              xtick={-4,-2,0,2,4,6,8},
+                              ytick={-4,-2,0,2,4,6},
+                              samples=300,
+                              unbounded coords=jump,
+                              clip=true,
+                            ]
+                            \addplot[red,dashed,very thick] coordinates {(-1,-4.5) (-1,6.5)};
+                            \addplot[red,dashed,very thick] coordinates {(5,-4.5) (5,6.5)};
+                            \addplot[blue,very thick,domain=-5:-1.03] {(x-3)/(x^2-4*x-5)};
+                            \addplot[blue,very thick,domain=-0.97:4.97] {(x-3)/(x^2-4*x-5)};
+                            \addplot[blue,very thick,domain=5.03:9] {(x-3)/(x^2-4*x-5)};
+                            \end{axis}
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+
+        <!-- Video 2: Page 6 – "VA exception to the rule video" -->
+        <p><url href="https://echo360.org/media/f23573d6-7acf-4c18-8cb4-68bd83f6a7a7/public">VA Exception to the Rule Video</url></p>
+
+        <activity>
+            <statement>
+                <p>
+                    Identify the vertical asymptotes (if any) of: <m>f(x) = \dfrac{x - 3}{x^2 - 2x - 3}</m>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Factor the denominator:
+                    <me>x^2 - 2x - 3 = (x - 3)(x + 1).</me>
+                    The common factor <m>(x-3)</m> cancels with the numerator, leaving:
+                    <me>f(x) = \frac{1}{x+1},\quad x \neq 3.</me>
+                    So there is a <term>hole</term> at <m>x=3</m>. The y‑value of the hole is
+                    <me>\frac{1}{3+1} = \frac{1}{4}.</me>
+                    The vertical asymptote is <m>x = -1</m>.
+                </p>
+                <figure>
+                    <caption>Graph with a hole at <m>\left(3,\frac{1}{4}\right)</m></caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}
+                            \begin{axis}[
+                              width=10.0cm,height=7.4cm,
+                              xmin=-5,xmax=9,ymin=-4.5,ymax=6.5,
+                              axis lines=middle,
+                              xtick={-4,-2,0,2,4,6,8},
+                              ytick={-4,-2,0,2,4,6},
+                              samples=300,
+                              unbounded coords=jump,
+                              clip=true,
+                            ]
+                            \addplot[red,dashed,very thick] coordinates {(-1,-4.5) (-1,6.5)};
+                            \addplot[blue,very thick,domain=-5:-1.03] {1/(x+1)};
+                            \addplot[blue,very thick,domain=-0.97:9] {1/(x+1)};
+                            \addplot[only marks,mark=o,mark size=2.8pt,draw=gray,fill=white]
+                              coordinates {(3,0.25)};
+                            \end{axis}
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p>
+                    Identify the vertical asymptotes (if any) of: <m>f(x) = \dfrac{8}{x^2 + 25}</m>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    The denominator <m>x^2 + 25 = 0</m> has no real solutions, so there are <strong>no vertical asymptotes</strong>.
+                </p>
+                <figure>
+                    <caption>Graph of <m>f(x)=\frac{8}{x^2+25}</m></caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}
+                            \begin{axis}[
+                              width=10.0cm,height=7.0cm,
+                              xmin=-7.5,xmax=7.5,ymin=-1.8,ymax=1.7,
+                              axis lines=middle,
+                              xtick={-6,-4,-2,0,2,4,6},
+                              ytick={-1.5,-1,-0.5,0,0.5,1,1.5},
+                              samples=300,
+                              clip=true,
+                            ]
+                            \addplot[blue,very thick,domain=-7.5:7.5] {8/(x^2+25)};
+                            \end{axis}
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         HORIZONTAL ASYMPTOTES (Pages 8–11)
+         ======================================================== -->
+
+    <subsection xml:id="horizontal-asymptotes">
+        <title>Horizontal Asymptotes</title>
+
+        <definition>
+            <title>Horizontal Asymptote</title>
+            <p>
+                The line <m>y = d</m> is a <term>horizontal asymptote</term> if <m>f(x) \to d</m> as <m>x \to \infty</m> or <m>x \to -\infty</m>. This is the end‑behavior of rational functions.
+            </p>
+        </definition>
+
+        <!-- Figures 9–12: horizontal asymptote behavior -->
+        <sidebyside widths="50% 50%">
+            <figure>
+                <caption>As <m>x \to \infty</m>, <m>f(x) \to d</m> from below</caption>
+                <image width="100%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[>=Stealth]
+                        \draw[->,thick] (-2.0,0)--(2.1,0);
+                        \draw[->,thick] (0,-1.2)--(0,1.7);
+                        \draw[red,dashed,very thick] (-2,0.8)--(2,0.8);
+                        \draw[red,very thick]
+                          (0.18,-0.9)
+                          .. controls (0.15,-0.3) and (0.16,0.35) .. (0.40,0.58)
+                          .. controls (0.75,0.70) and (1.45,0.69) .. (1.92,0.69);
+                        \draw[red,very thick,->] (1.45,0.69)--(2.05,0.69);
+                        % d marked on y-axis with tick
+                        \draw[thick] (-0.08,0.8)--(0.08,0.8);
+                        % d label moved slightly to the right to avoid overlapping asymptote
+                        \node[blue,font=\large,anchor=west] at (0.1,0.8) {$d$};
+                        \node[red,font=\small,anchor=south west] at (1.8,0.8) {$y=d$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+            <figure>
+                <caption>As <m>x \to \infty</m>, <m>f(x) \to d</m> from above</caption>
+                <image width="100%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[>=Stealth]
+                        \draw[->,thick] (-1.8,0)--(2.0,0);
+                        \draw[->,thick] (0,-1.2)--(0,1.7);
+                        \draw[red,dashed,very thick] (-1.8,0.8)--(2,0.8);
+                        % Curve approaches from above with visible gap
+                        \draw[red,very thick]
+                          (0.22,1.65)
+                          .. controls (0.20,1.15) and (0.25,0.95) .. (0.55,0.88)
+                          .. controls (1.0,0.86) and (1.55,0.87) .. (1.95,0.87);
+                        \draw[red,very thick,->] (1.50,0.87)--(2.05,0.87);
+                        \draw[thick] (-0.08,0.8)--(0.08,0.8);
+                        \node[blue,font=\large,anchor=west] at (0.1,0.8) {$d$};
+                        \node[red,font=\small,anchor=south west] at (1.8,0.8) {$y=d$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+        </sidebyside>
+
+        <sidebyside widths="50% 50%">
+            <figure>
+                <caption>As <m>x \to -\infty</m>, <m>f(x) \to d</m> from below</caption>
+                <image width="100%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[>=Stealth]
+                        \draw[->,thick] (-2.0,0)--(2.1,0);
+                        \draw[->,thick] (0,-1.2)--(0,1.7);
+                        \draw[red,dashed,very thick] (-2,0.8)--(2,0.8);
+                        \draw[red,very thick]
+                          (-1.95,0.66)
+                          .. controls (-1.35,0.66) and (-0.55,0.67) .. (-0.15,0.62)
+                          .. controls (0.25,0.57) and (0.38,0.20) .. (0.38,-0.75);
+                        \draw[red,very thick,->] (-1.45,0.66)--(-2.05,0.66);
+                        \draw[thick] (-0.08,0.8)--(0.08,0.8);
+                        \node[blue,font=\large,anchor=west] at (0.1,0.8) {$d$};
+                        \node[red,font=\small,anchor=south east] at (-1.9,0.8) {$y=d$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+            <figure>
+                <caption>As <m>x \to -\infty</m>, <m>f(x) \to d</m> from above</caption>
+                <image width="100%">
+                    <latex-image>
+                        <![CDATA[
+                        \begin{adjustbox}{max width=\linewidth}
+                        \begin{tikzpicture}[>=Stealth]
+                        \draw[->,thick] (-2.0,0)--(2.1,0);
+                        \draw[->,thick] (0,-1.2)--(0,1.7);
+                        \draw[red,dashed,very thick] (-2,0.8)--(2,0.8);
+                        % Curve approaches from above with visible gap
+                        \draw[red,very thick]
+                          (-1.95,0.87)
+                          .. controls (-1.30,0.86) and (-0.60,0.85) .. (-0.25,0.84)
+                          .. controls (0.20,0.83) and (0.30,0.90) .. (0.30,1.65);
+                        \draw[red,very thick,->] (-1.45,0.87)--(-2.05,0.87);
+                        \draw[thick] (-0.08,0.8)--(0.08,0.8);
+                        \node[blue,font=\large,anchor=west] at (0.1,0.8) {$d$};
+                        \node[red,font=\small,anchor=south east] at (-1.9,0.8) {$y=d$};
+                        \end{tikzpicture}
+                        \end{adjustbox}
+                        ]]>
+                    </latex-image>
+                </image>
+            </figure>
+        </sidebyside>
+
+        <p>
+            For a rational function
+            <me>f(x)=\frac{a_n x^n + \cdots}{b_m x^m + \cdots}</me>
+            with <m>n</m> = degree of numerator, <m>m</m> = degree of denominator:
+        </p>
+        <ul>
+            <li>If <m>n > m</m>, <strong>no horizontal asymptote</strong>.</li>
+            <li>If <m>n &lt; m</m>, horizontal asymptote <m>y=0</m>.</li>
+            <li>If <m>n = m</m>, horizontal asymptote <m>y=\frac{a_n}{b_m}</m>.</li>
+        </ul>
+
+        <p>
+            <em>Note:</em> The graph of a rational function may cross a horizontal asymptote (unlike vertical asymptotes, which it cannot cross).
+        </p>
+
+        <activity>
+            <statement>
+                <p>
+                    Identify the asymptotes (if any) of <m>f(x)=\dfrac{3x}{x^2-9}</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Vertical asymptotes: <m>x=3</m> and <m>x=-3</m> (from <m>x^2-9=0</m>).<br/>
+                    Horizontal asymptote: degree numerator = 1, denominator = 2 → <m>n &lt; m</m> → <m>y=0</m>.
+                </p>
+                <figure>
+                    <caption>Graph of <m>f(x)=\frac{3x}{x^2-9}</m></caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}
+                            \begin{axis}[
+                              width=10.0cm,height=7.5cm,
+                              xmin=-7.5,xmax=7.5,ymin=-4.5,ymax=5.5,
+                              axis lines=middle,
+                              xtick={-6,-4,-2,0,2,4,6},
+                              ytick={-4,-2,0,2,4},
+                              samples=300,
+                              unbounded coords=jump,
+                            ]
+                            \addplot[red,dashed,very thick] coordinates {(-3,-4.5) (-3,5.5)};
+                            \addplot[red,dashed,very thick] coordinates {(3,-4.5) (3,5.5)};
+                            \addplot[blue,very thick,domain=-7.5:-3.03] {3*x/(x^2-9)};
+                            \addplot[blue,very thick,domain=-2.97:2.97] {3*x/(x^2-9)};
+                            \addplot[blue,very thick,domain=3.03:7.5] {3*x/(x^2-9)};
+                            \end{axis}
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+
+        <activity>
+            <statement>
+                <p>
+                    Identify the asymptotes (if any) of <m>f(x)=\dfrac{3x^2}{x^2-9}</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Vertical asymptotes: <m>x=3</m> and <m>x=-3</m>.<br/>
+                    Horizontal asymptote: degrees equal → <m>y = \frac{3}{1} = 3</m>.
+                </p>
+                <figure>
+                    <caption>Graph of <m>f(x)=\frac{3x^2}{x^2-9}</m></caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}
+                            \begin{axis}[
+                              width=10.0cm,height=7.5cm,
+                              xmin=-10,xmax=10,ymin=-4.5,ymax=9.0,
+                              axis lines=middle,
+                              xtick={-8,-6,-4,-2,0,2,4,6,8},
+                              ytick={-4,-2,0,2,4,6,8},
+                              samples=300,
+                              unbounded coords=jump,
+                            ]
+                            \addplot[red,dashed,very thick] coordinates {(-3,-4.5) (-3,9)};
+                            \addplot[red,dashed,very thick] coordinates {(3,-4.5) (3,9)};
+                            \addplot[red,dashed,very thick,domain=-10:10] {3};
+                            \addplot[blue,very thick,domain=-10:-3.03] {3*x^2/(x^2-9)};
+                            \addplot[blue,very thick,domain=-2.97:2.97] {3*x^2/(x^2-9)};
+                            \addplot[blue,very thick,domain=3.03:10] {3*x^2/(x^2-9)};
+                            \end{axis}
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         SLANT ASYMPTOTES (Page 12)
+         ======================================================== -->
+
+    <subsection xml:id="slant-asymptotes">
+        <title>Slant (Oblique) Asymptotes</title>
+
+        <p>
+            A rational function has a <term>slant asymptote</term> if the degree of the numerator is exactly one greater than the degree of the denominator. To find it, divide the numerator by the denominator; the quotient (linear) is the slant asymptote.
+        </p>
+
+        <activity>
+            <statement>
+                <p>
+                    Find the slant asymptote of <m>f(x)=\dfrac{3x^3}{x^2-9}</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Divide <m>3x^3</m> by <m>x^2-9</m>:
+                </p>
+                <figure>
+                    <caption>Long division for slant asymptote</caption>
+                    <image width="70%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}[x=1.2cm, y=0.9cm, every node/.style={font=\Large}]
+                                \draw[thick] (0.2, -2.8) -- (0.2, 0.5) -- (5.0, 0.5);
+                                \node[anchor=east] at (0.0, 0.0) {\(x^2+0x-9\)};
+                                % Dividend
+                                \node at (1.0, 0.0) {\(3x^3\)};
+                                \node at (2.2, 0.0) {\(+0x^2\)};
+                                \node at (3.4, 0.0) {\(+0x\)};
+                                \node at (4.6, 0.0) {\(+0\)};
+                                % Quotient
+                                \node at (1.0, 0.8) {\(3x\)};
+                                % Step 1: subtract -(3x^3 +0x^2 -27x)
+                                \node[blue] at (1.0, -0.6) {\(-3x^3\)};
+                                \node[blue] at (2.2, -0.6) {\(-0x^2\)};
+                                \node[blue] at (3.4, -0.6) {\(+27x\)};
+                                \draw[blue, thick] (0.6, -0.9) -- (3.8, -0.9);
+                                \node at (3.4, -1.4) {\(27x\)};
+                                \node at (4.6, -1.4) {\(+0\)};
+                                % Step 2: subtract -(27x -243)
+                                \node[blue] at (3.4, -2.0) {\(-27x\)};
+                                \node[blue] at (4.6, -2.0) {\(+243\)};
+                                \draw[blue, thick] (3.0, -2.3) -- (5.0, -2.3);
+                                \node at (4.6, -2.8) {\(243\)};
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+                <p>
+                    The quotient is <m>3x</m>, so the slant asymptote is <m>y = 3x</m>.
+                </p>
+                <figure>
+                    <caption>Graph with slant asymptote <m>y=3x</m></caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}
+                            \begin{axis}[
+                              width=10.0cm,height=8.0cm,
+                              xmin=-14,xmax=16,ymin=-50,ymax=50,
+                              axis lines=middle,
+                              xtick={-10,-5,0,5,10,15},
+                              ytick={-40,-20,0,20,40},
+                              samples=400,
+                              unbounded coords=jump,
+                            ]
+                            \addplot[red,dashed,very thick,domain=-14:16] {3*x};
+                            \addplot[red,dashed,very thick] coordinates {(-3,-50) (-3,50)};
+                            \addplot[red,dashed,very thick] coordinates {(3,-50) (3,50)};
+                            \addplot[blue,very thick,domain=-14:-3.03] {3*x^3/(x^2-9)};
+                            \addplot[blue,very thick,domain=-2.97:2.97] {3*x^3/(x^2-9)};
+                            \addplot[blue,very thick,domain=3.03:16] {3*x^3/(x^2-9)};
+                            \end{axis}
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         GRAPHING RATIONAL FUNCTIONS (Pages 13–15)
+         ======================================================== -->
+
+    <subsection xml:id="graphing-rational-functions">
+        <title>Graphing a Rational Function</title>
+
+        <!-- Video 3: Page 13 -->
+        <p><url href="https://echo360.org/media/184a9772-c55c-45d8-a7fe-bcc4b6dd6d87/public">Graphing a Rational Function Summary Video</url></p>
+
+        <algorithm>
+            <title>Graphing Rational Functions</title>
+            <p>
+                Given <m>f(x)=\frac{P(x)}{Q(x)}</m> where <m>P(x)</m> and <m>Q(x)</m> are polynomials with no common factors:
+            </p>
+            <p>
+                <em>Step 1: Factor.</em>
+            </p>
+            <p>
+                Begin by factoring the numerator and denominator.
+            </p>
+            <p>
+                <em>Holes:</em>
+            </p>
+            <p>
+                When you factor the top and bottom, if you notice a common factor that can simplify as a one, please do so. However note at what x-value this is, because your graph will have a hole at that input. To find the point at which the hole occurs, plug in that x value into the simplified function.
+            </p>
+            <p>
+                <em>Intercepts:</em>
+            </p>
+            <ul>
+                <li>To find the <m>x</m>-intercepts, solve <m>f(x) = 0</m>. Notice that if you "clear the fraction", you only need solve <m>0 = P(x)</m>.</li>
+                <li>To find the <m>y</m>-intercept, evaluate <m>f(0)</m>.</li>
+            </ul>
+            <p>
+                <em>Asymptotes:</em>
+            </p>
+            <ul>
+                <li>Vertical asymptotes: solve <m>0 = Q(x)</m> (after canceling common factors).</li>
+                <li>Horizontal asymptote: use the degree rules.</li>
+                <li>Slant asymptote: if degree numerator = degree denominator + 1.</li>
+            </ul>
+            <p>
+                <em>Sketch:</em>
+            </p>
+            <ul>
+                <li>Put intercepts and asymptotes on the graph.</li>
+                <li>Plot points (ALEKS will ask for one or two points on each part of the graph).</li>
+                <li>Complete the sketch using all collected information.</li>
+            </ul>
+        </algorithm>
+
+        <activity>
+            <statement>
+                <p>
+                    Sketch a graph of <m>f(x)=\dfrac{x^2-x-6}{x^2-5x-6}</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <em>Step 1: Factor.</em>
+                </p>
+                <me>f(x)=\frac{x^2-x-6}{x^2-5x-6}=\frac{(x-3)(x+2)}{(x-6)(x+1)}</me>
+                <p>
+                    No common factors → no holes.
+                </p>
+                <p>
+                    <em>Step 2: Intercepts.</em>
+                </p>
+                <ul>
+                    <li><m>x</m>-intercepts: <m>0=(x-3)(x+2)</m> → <m>x=-2,\;3</m>.</li>
+                    <li><m>y</m>-intercept: <m>f(0)=\frac{0^2-0-6}{0^2-5(0)-6}=1</m>.</li>
+                </ul>
+                <p>
+                    <em>Step 3: Asymptotes.</em>
+                </p>
+                <ul>
+                    <li>Vertical asymptotes: <m>0=(x-6)(x+1)</m> → <m>x=6,\;-1</m>.</li>
+                    <li>Horizontal asymptote: degrees equal → <m>y=1</m>.</li>
+                </ul>
+                <figure>
+                    <caption>Graph of <m>f(x)=\frac{x^2-x-6}{x^2-5x-6}</m></caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}
+                            \begin{axis}[
+                              width=10.0cm,height=8.0cm,
+                              xmin=-9,xmax=12.5,ymin=-8.5,ymax=8.0,
+                              axis lines=middle,
+                              grid=both,
+                              grid style={draw=gray!35,dashed},
+                              major grid style={draw=gray!35,dashed},
+                              xtick={-8,-6,-4,-2,0,2,4,6,8,10,12},
+                              ytick={-8,-6,-4,-2,0,2,4,6,8},
+                              samples=350,
+                              unbounded coords=jump,
+                            ]
+                            \addplot[red,dashed,very thick] coordinates {(-1,-8.5) (-1,8)};
+                            \addplot[red,dashed,very thick] coordinates {(6,-8.5) (6,8)};
+                            \addplot[red,dashed,very thick,domain=-9:12.5] {1};
+                            \addplot[blue,very thick,domain=-9:-1.03] {(x^2-x-6)/(x^2-5*x-6)};
+                            \addplot[blue,very thick,domain=-0.97:5.97] {(x^2-x-6)/(x^2-5*x-6)};
+                            \addplot[blue,very thick,domain=6.03:12.5] {(x^2-x-6)/(x^2-5*x-6)};
+                            \end{axis}
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         YOU TRY: GRAPHING (Pages 16–17)
+         ======================================================== -->
+
+    <subsection xml:id="example-graph-rational-2">
+        <title>You Try: Graphing a Rational Function</title>
+
+        <activity>
+            <statement>
+                <p>
+                    Sketch a graph of <m>f(x)=\dfrac{2x^2}{x^2-4}</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <em>Step 1: Factor.</em>
+                </p>
+                <me>f(x)=\frac{2x^2}{x^2-4}=\frac{2x^2}{(x-2)(x+2)}</me>
+                <p>
+                    No common factors.
+                </p>
+                <p>
+                    <em>Step 2: Intercepts.</em>
+                </p>
+                <ul>
+                    <li><m>x</m>-intercepts: <m>0=2x^2</m> → <m>x=0</m>.</li>
+                    <li><m>y</m>-intercept: <m>f(0)=0</m>.</li>
+                </ul>
+                <p>
+                    <em>Step 3: Asymptotes.</em>
+                </p>
+                <ul>
+                    <li>Vertical asymptotes: <m>0=(x-2)(x+2)</m> → <m>x=2,\;-2</m>.</li>
+                    <li>Horizontal asymptote: degrees equal → <m>y=2</m>.</li>
+                </ul>
+                <figure>
+                    <caption>Graph of <m>f(x)=\frac{2x^2}{x^2-4}</m></caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}
+                            \begin{axis}[
+                              width=10.0cm,height=8.0cm,
+                              xmin=-9,xmax=12.5,ymin=-8.5,ymax=8.0,
+                              axis lines=middle,
+                              grid=both,
+                              grid style={draw=gray!35,dashed},
+                              major grid style={draw=gray!35,dashed},
+                              xtick={-8,-6,-4,-2,0,2,4,6,8,10,12},
+                              ytick={-8,-6,-4,-2,0,2,4,6,8},
+                              samples=350,
+                              unbounded coords=jump,
+                            ]
+                            \addplot[red,dashed,very thick] coordinates {(-2,-8.5) (-2,8)};
+                            \addplot[red,dashed,very thick] coordinates {(2,-8.5) (2,8)};
+                            \addplot[red,dashed,very thick,domain=-9:12.5] {2};
+                            \addplot[blue,very thick,domain=-9:-2.03] {2*x^2/(x^2-4)};
+                            \addplot[blue,very thick,domain=-1.97:1.97] {2*x^2/(x^2-4)};
+                            \addplot[blue,very thick,domain=2.03:12.5] {2*x^2/(x^2-4)};
+                            \end{axis}
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         EXAMPLE: GRAPHING WITH SLANT ASYMPTOTE (Pages 18–19)
+         ======================================================== -->
+
+    <subsection xml:id="example-graph-rational-3">
+        <title>Example: Graphing with a Slant Asymptote</title>
+
+        <activity>
+            <statement>
+                <p>
+                    Sketch a graph of <m>f(x)=\dfrac{2x^2-8x+8}{x-3}</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <em>Step 1: Factor.</em>
+                </p>
+                <me>f(x)=\frac{2x^2-8x+8}{x-3}=\frac{2(x-2)^2}{x-3}</me>
+                <p>
+                    No common factors.
+                </p>
+                <p>
+                    <em>Step 2: Intercepts.</em>
+                </p>
+                <ul>
+                    <li><m>x</m>-intercepts: <m>0=2(x-2)^2</m> → <m>x=2</m>.</li>
+                    <li><m>y</m>-intercept: <m>f(0)=\frac{8}{-3}=-\frac{8}{3}</m>.</li>
+                </ul>
+                <p>
+                    <em>Step 3: Asymptotes.</em>
+                </p>
+                <ul>
+                    <li>Vertical asymptote: <m>0=x-3</m> → <m>x=3</m>.</li>
+                    <li>No horizontal asymptote (degree numerator > degree denominator).</li>
+                    <li>Slant asymptote: divide <m>2x^2-8x+8</m> by <m>x-3</m> → <m>2x-2</m>.</li>
+                </ul>
+                <figure>
+                    <caption>Graph with slant asymptote <m>y=2x-2</m></caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}
+                            \begin{axis}[
+                              width=10.0cm,height=8.0cm,
+                              xmin=-16,xmax=21,ymin=-14,ymax=15,
+                              axis lines=middle,
+                              grid=both,
+                              grid style={draw=gray!35,dashed},
+                              major grid style={draw=gray!35,dashed},
+                              xtick={-15,-10,-5,0,5,10,15,20},
+                              ytick={-10,-5,0,5,10},
+                              samples=400,
+                              unbounded coords=jump,
+                            ]
+                            \addplot[red,dashed,very thick] coordinates {(3,-14) (3,15)};
+                            \addplot[red,dashed,very thick,domain=-16:21] {2*x-2};
+                            \addplot[blue,very thick,domain=-16:2.97] {(2*x^2-8*x+8)/(x-3)};
+                            \addplot[blue,very thick,domain=3.03:21] {(2*x^2-8*x+8)/(x-3)};
+                            \end{axis}
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+</section>
