@@ -42,14 +42,37 @@
         </algorithm>
     </subsection>
 
-    <!-- Video 1: Solving Linear Equations (clickable link) -->
+    <!-- Video 1: Solving Linear Equations -->
     <subsection xml:id="solving-linear-equations-video">
         <title>Solving Linear Equations</title>
         
         <p><url href="https://echo360.org/media/9d4f201e-b274-47f8-909f-24c4eb74d050/public">Solving Linear Equations Video</url></p>
     </subsection>
 
+    <!-- ACTIVITY 1: New problem added before the existing one -->
     <subsection xml:id="example-linear-equation">
+        <activity>
+            <statement>
+                <p>Solve:</p>
+                <me>4x - 5 = 2(2x - x)</me>
+            </statement>
+            <solution>
+                <p>Step 1: Simplify inside the parentheses on the right side.</p>
+                <me>4x - 5 = 2(x)</me>
+                <me>4x - 5 = 2x</me>
+                
+                <p>Step 2: Collect variables on one side.</p>
+                <me>4x - 2x = 5</me>
+                <me>2x = 5</me>
+                
+                <p>Step 3: Isolate the variable.</p>
+                <me>x = \frac{5}{2}</me>
+                
+                <p>Therefore, the solution is <m>x = \frac{5}{2}</m>.</p>
+            </solution>
+        </activity>
+
+        <!-- ACTIVITY 2: Original problem -->
         <activity>
             <statement>
                 <p>Solve:</p>
@@ -75,7 +98,7 @@
     <subsection xml:id="clearing-fractions">
         <title>Clearing Fractions</title>
         
-        <!-- Video 2: Clearing Fractions (clickable link) -->
+        <!-- Video 2: Clearing Fractions -->
         <p><url href="https://echo360.org/media/ad586bdc-3b3d-4da4-8d1e-832db422fccc/public">Clearing Fractions Video</url></p>
         
         <algorithm number="no">
@@ -185,7 +208,39 @@
                 <p>Therefore, the solution is <m>x = -5</m>.</p>
             </solution>
         </activity>
-         
+
+        <!-- NEW ACTIVITY 3: Rational equation added at the end -->
+        <activity>
+            <statement>
+                <p>
+                    Solve: 
+                    <me>\frac{3}{x+2} - \frac{1}{x-1} = \frac{5}{x^2 + x - 2}</me>
+                </p>
+                <p>
+                    LCD: <fillin /> 
+                    Restricted Values for <m>x</m>: <fillin />
+                </p>
+            </statement>
+            <solution>
+                <p>First, factor <m>x^2 + x - 2 = (x+2)(x-1)</m></p>
+                <p>LCD = <m>(x+2)(x-1)</m></p>
+                <p>Restricted Values: <m>x \neq -2</m> and <m>x \neq 1</m></p>
+                
+                <p>Step 1: Multiply every term by <m>(x+2)(x-1)</m></p>
+                <me>(x+2)(x-1)\left(\frac{3}{x+2}\right) - (x+2)(x-1)\left(\frac{1}{x-1}\right) = (x+2)(x-1)\left(\frac{5}{(x+2)(x-1)}\right)</me>
+                
+                <p>Step 2: Simplify</p>
+                <me>3(x-1) - (x+2) = 5</me>
+                <me>3x - 3 - x - 2 = 5</me>
+                <me>2x - 5 = 5</me>
+                <me>2x = 10</me>
+                <me>x = 5</me>
+                
+                <p>Since <m>5 \neq -2</m> and <m>5 \neq 1</m>, this is a valid solution.</p>
+                
+                <p>Therefore, the solution is <m>x = 5</m>.</p>
+            </solution>
+        </activity>
     </subsection>
 
 </section>
