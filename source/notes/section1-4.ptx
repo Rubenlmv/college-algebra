@@ -184,7 +184,7 @@
             <ol>
                 <li><em>Divide</em> both sides by <m>a</m> to make the leading coefficient 1.</li>
                 <li><em>Isolate</em> the variable terms on one side of the equation.</li>
-                <li><em>Complete the square.</em> Add the square of one-half the linear term to both sides. That is, add <m>\left(\frac{b}{2}\right)^2</m> to both sides, then factor.</li>
+                <li><em>Complete the square.</em> Add the square of one-half the linear term to both sides. That is, add <m>\left(\frac{b}{2a}\right)^2</m> to both sides, then factor.</li>
                 <li><em>Apply</em> the square root property and solve for <m>x</m>.</li>
             </ol>
         </algorithm>

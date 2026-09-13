@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="section-3-6">
+    <title>Section 3.6 Polynomial and Rational Inequalities</title>
+
+    <!-- ========================================================
+         INTRODUCTION (Page 1)
+         ======================================================== -->
+
+    <subsection xml:id="intro-poly-rational-inequalities">
+        <title>Polynomial and Rational Inequalities</title>
+
+        <!-- Video 1: Page 1 – after the header -->
+        <p><url href="https://echo360.org/media/17aee40c-5676-41fa-841b-ee9d470864a2/public">Polynomial and Rational Inequalities Video</url></p>
+
+        <p>
+            An inequality that can be written in the form
+            <me>f(x) &lt; 0,\quad f(x) &gt; 0,\quad f(x) \leq 0,\quad f(x) \geq 0</me>
+            where <m>f(x)</m> is a polynomial is called a <term>polynomial inequality</term>.
+            If <m>f(x)</m> is a rational function, it is called a <term>rational inequality</term>.
+        </p>
+
+        <p>
+            <em>Why do we require that one side be 0?</em>
+        </p>
+        
+
+        <p>
+            Remember:
+            <ul>
+                <li>If <m>f(x) &gt; 0</m>, the graph is <strong>above</strong> the <m>x</m>-axis.</li>
+                <li>If <m>f(x) &lt; 0</m>, the graph is <strong>below</strong> the <m>x</m>-axis.</li>
+                <li>If <m>f(x) = 0</m>, the graph is on the <m>x</m>-axis (these are the zeros).</li>
+            </ul>
+        </p>
+
+        <p>
+            <em>How does this help us?</em>
+        </p>
+        <p>
+            Consider a point on the graph, <m>(a,b)</m>. If the the point is above the <m>x</m>-axis, then we know two important facts:
+        </p>
+        <ol>
+            <li><m>f(a) &gt; 0</m>.</li>
+            <li><m>f(x)>0</m> for <m>x</m>-values close to <m>a</m>.</li>
+        </ol>
+
+        <!-- FIGURE 1 -->
+        <figure>
+            <caption>A point with a positive output on the graph of a function</caption>
+            <image width="60%">
+                <latex-image>
+                    <![CDATA[
+                    \begin{adjustbox}{max width=\linewidth}
+                    \begin{tikzpicture}
+                    \begin{axis}[
+                      width=12cm,height=7.4cm,
+                      xmin=-3.1,xmax=3.6,ymin=-4.8,ymax=5.0,
+                      axis lines=middle,
+                      xtick={-3,-2,-1,0,1,2,3},
+                      ytick={-4,-2,0,2,4},
+                      samples=240,
+                      clip=true
+                    ]
+                    \addplot[blue,very thick,domain=-2.3:2.7]{0.72*x^3-2.35*x+1.15};
+                    \addplot[only marks,mark=*,mark size=2.5pt,red] coordinates {(-1.55,2.30)};
+                    \node[font=\small] at (axis cs:-1.55,2.30) [anchor=east] {$(a,b)$};
+                    \end{axis}
+                    \end{tikzpicture}
+                    \end{adjustbox}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+    </subsection>
+
+    <!-- ========================================================
+         THE SIGN CHART METHOD (Pages 2-3)
+         ======================================================== -->
+
+    <subsection xml:id="sign-chart-method">
+        <title>The Sign Chart Method</title>
+
+        <p>
+            Consider a continuous function <m>f(x)</m>. If we know the zeros of the function (where <m>f(x)=0</m>), we can use the fact that a continuous function can only change sign at a zero or at a vertical asymptote.
+        </p>
+        <p>
+            Therefore, if we pick any point <m>x = a</m> in an interval between two consecutive zeros, the output <m>f(a)</m> will have the same sign as every other point in that interval. This is the fundamental idea behind the sign chart method.
+        </p>
+
+        <!-- FIGURE 2 -->
+        <figure>
+            <caption>Multiple points in an interval have the same sign</caption>
+            <image width="60%">
+                <latex-image>
+                    <![CDATA[
+                    \begin{adjustbox}{max width=\linewidth}
+                    \begin{tikzpicture}
+                    \begin{axis}[
+                      width=10.2cm,
+                      height=7.5cm,
+                      xmin=-3.0,
+                      xmax=3.5,
+                      ymin=-4.5,
+                      ymax=7.5,                  % increased to accommodate larger bubble
+                      axis lines=middle,
+                      xtick={-3,-2,-1,0,1,2,3},
+                      ytick={-4,-2,0,2,4,6},
+                      samples=260,
+                      clip=false
+                    ]
+
+                    % ---- The blue curve ----
+                    \addplot[blue, very thick, domain=-2.6:2.5]{0.72*x^3 - 2.35*x + 1.15};
+
+                    % ---- RED POINTS: exactly on the curve, all in positive interval (between zeros) ----
+                    % Removed the point at x=0.5 (which was closest to the zero) to avoid confusion.
+                    \addplot[
+                      only marks,
+                      mark=*,
+                      mark size=2.25pt,
+                      red
+                    ] coordinates {
+                      (-1.90, 0.67652)
+                      (-1.70, 1.60764)
+                      (-1.50, 2.24500)
+                      (-1.30, 2.62316)
+                      (-1.10, 2.77668)
+                      (-0.90, 2.74012)
+                      (-0.70, 2.54804)
+                      (-0.50, 2.23500)
+                      (-0.30, 1.83556)
+                      (-0.10, 1.38428)
+                      ( 0.10, 0.91572)
+                      ( 0.30, 0.46444)
+                    };
+
+                    % ---- ZEROS: marked with black circles ----
+                    \addplot[
+                      only marks,
+                      mark=*,
+                      mark size=2.5pt,
+                      black
+                    ] coordinates {
+                      (-2.0, 0)   % first zero
+                      (0.55, 0)   % second zero
+                      (2.1, 0)    % third zero
+                    };
+
+                    % ---- Label the point (a,b) ----
+                    \node[font=\small] at (axis cs:-1.8, 2.78) [anchor=east] {$(a,b)$};
+
+                    % ---- Horizontal brace spanning from first zero to second zero ----
+                    \draw[red, very thick, decorate, decoration={brace, amplitude=7pt, mirror}]
+                      (axis cs:-1.95, -0.4) -- (axis cs:0.50, -0.4);
+
+                    % ---- "Any x here..." text placed below the brace ----
+                    \node[red, font=\small, align=center] at (axis cs:-1.2, -2.3) {
+                      Any $x$ here\\
+                      will have a\\
+                      positive $y$
+                    };
+
+                    % ---- Speech bubble (larger, moved higher for clarity) ----
+                    \draw[fill=blue!65, draw=blue!65]
+                      (axis cs:1.72, 5.0) ellipse (1.5 and 1.5);
+                    \draw[fill=blue!65, draw=blue!65]
+                      (axis cs:1.02, 4.2) -- (axis cs:0.67, 3.5) -- (axis cs:1.48, 4.3) -- cycle;
+
+                    % ---- Speech bubble text (fully readable) ----
+                    \node[white, font=\small\bfseries, align=center] at (axis cs:1.72, 5.0) {
+                      All of these\\
+                      points are\\
+                      positive
+                    };
+
+                    \end{axis}
+                    \end{tikzpicture}
+                    \end{adjustbox}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+
+        <p>
+            For rational functions, the sign of <m>f(x)</m> can also change at <strong>undefined values</strong> (vertical asymptotes). Therefore, the process for rational inequalities involves finding both the zeros and the values that are not in the domain (where the denominator is zero).
+        </p>
+
+        <!-- FIGURE 3 -->
+        <figure>
+            <caption>Sign changes at zeros and vertical asymptotes</caption>
+            <image width="60%">
+                <latex-image>
+                    <![CDATA[
+                    \begin{adjustbox}{max width=\linewidth}
+                    \begin{tikzpicture}
+                    \begin{axis}[
+                      width=10.8cm,
+                      height=7.35cm,
+                      xmin=-9,
+                      xmax=11,
+                      ymin=-8.5,
+                      ymax=9,
+                      axis lines=middle,
+                      xtick={-8,-6,-4,-2,0,2,4,6,8,10},
+                      ytick={-8,-6,-4,-2,0,2,4,6,8},
+                      samples=300,
+                      unbounded coords=jump,
+                      clip=true
+                    ]
+
+                    % ---- The blue curve (two branches) ----
+                    \addplot[blue, very thick, domain=-9:1.96]{(x-1)/(2-x)};
+                    \addplot[blue, very thick, domain=2.04:11]{(x-1)/(2-x)};
+
+                    % ---- RED dots (below/on the x-axis, left branch) ----
+                    \addplot[
+                      only marks,
+                      mark=*,
+                      mark size=2.35pt,
+                      red
+                    ] coordinates {
+                      (-5, -0.8571)
+                      (-4, -0.8333)
+                      (-3, -0.8)
+                      (-2, -0.75)
+                      (-1, -0.6667)
+                      (0, -0.5)
+                      (1, 0)
+                    };
+
+                    % ---- GREEN dots: ABOVE the x-axis, with y-values spaced ~1 unit apart ----
+                    \addplot[
+                      only marks,
+                      mark=*,
+                      mark size=2.35pt,
+                      green
+                    ] coordinates {
+                      (1.500, 1)
+                      (1.750, 3)
+                      (1.833, 5)
+                      (1.875, 7)
+                      (1.900, 9)
+                    };
+
+                    % ---- CYAN dots (below the x-axis, right branch) ----
+                    \addplot[
+                      only marks,
+                      mark=*,
+                      mark size=2.35pt,
+                      cyan
+                    ] coordinates {
+                      (2.25, -5)
+                      (2.50, -3)
+                      (3, -2)
+                      (4, -1.5)
+                      (5, -1.3333)
+                      (7, -1.2)
+                      (9, -1.125)
+                    };
+
+                    \end{axis}
+                    \end{tikzpicture}
+                    \end{adjustbox}
+                    ]]>
+                </latex-image>
+            </image>
+        </figure>
+
+        <p>
+            <em>The Sign Chart Method:</em>
+        </p>
+        <p>
+            <strong>Step 1:</strong> Move all terms to one side so the other side is <m>0</m>. Define <m>f(x)</m> and state the inequality to be solved (e.g., <m>f(x) \leq 0</m>).
+        </p>
+        <p>
+            <strong>Step 2: Find the boundary points.</strong> These are the zeros of <m>f(x)</m> and any undefined values (points not in the domain).
+        </p>
+        <ul>
+            <li>Zeros: solve <m>f(x)=0</m> (for rational functions, solve the numerator = 0).</li>
+            <li>Undefined values: set the denominator = 0 and solve.</li>
+        </ul>
+        <p>
+            <strong>Step 3: Choose a test point in each interval.</strong> The boundary points divide the real number line into intervals. Pick a convenient test point in each interval and evaluate <m>f(x)</m>. Record whether the output is positive or negative.
+        </p>
+        <p>
+            <strong>Step 4: Write the solution.</strong>
+        </p>
+        <ul>
+            <li>If solving <m>f(x) &gt; 0</m>, include intervals where <m>f(x)</m> is positive.</li>
+            <li>If solving <m>f(x) \geq 0</m>, include intervals where <m>f(x)</m> is positive <em>and</em> the zeros.</li>
+            <li>Never include undefined values.</li>
+        </ul>
+    </subsection>
+
+    <!-- ========================================================
+         EXAMPLE 1: QUADRATIC INEQUALITY (Pages 4-5)
+         ======================================================== -->
+
+    <subsection xml:id="example-quadratic-inequality">
+        <title>Example 1: Solving a Quadratic Inequality</title>
+
+        <activity>
+            <statement>
+                <p>
+                    Solve <m>x^2 - 2x \leq 15</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <strong>Step 1:</strong> Move all terms to one side.
+                </p>
+                <me>
+                    x^2 - 2x - 15 \leq 0
+                </me>
+                <p>
+                    Let <m>f(x) = x^2 - 2x - 15</m>. We want to know where <m>f(x) \leq 0</m>.
+                </p>
+
+                <p>
+                    <strong>Step 2: Find the zeros.</strong>
+                </p>
+                <p>
+                    Factor:
+                </p>
+                <me>
+                    f(x) = (x - 5)(x + 3)
+                </me>
+                <p>
+                    The zeros are <m>x = 5</m> and <m>x = -3</m>. These are the boundary points.
+                </p>
+
+                <p>
+                    <strong>Step 3: Choose test points.</strong>
+                </p>
+                <p>
+                    The zeros divide the number line into three intervals:
+                </p>
+                <ul>
+                    <li><m>(-\infty, -3)</m></li>
+                    <li><m>(-3, 5)</m></li>
+                    <li><m>(5, \infty)</m></li>
+                </ul>
+                <p>
+                    We choose a test point in each interval: <m>x = -5</m>, <m>x = 0</m>, and <m>x = 6</m>.
+                </p>
+
+                <!-- FIGURE 4: Sign chart -->
+                <figure>
+                    <caption>Sign chart for <m>f(x) = x^2 - 2x - 15</m></caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}[x=0.72cm, y=0.78cm, >=Stealth]
+                            % ---- Number line ----
+                            \draw[->,thick] (-8.8,0)--(8.8,0);
+                            \foreach \x in {-8,...,8}{
+                              \draw[thick](\x,-0.13)--(\x,0.13);
+                              \node[font=\small] at (\x,-0.35){\x};
+                            }
+                            % ---- Zeros (boundary points) ----
+                            \fill[red](-3,0) circle(0.13);
+                            \fill[red](5,0) circle(0.13);
+                            % ---- "Boundary Points" text centered above ----
+                            \node[red, font=\small\bfseries] at (1.0, 1.5) {Boundary Points};
+                            % ---- Two arrows starting from the same point just below the text ----
+                            \draw[red, thick, ->] (1.0, 0.9) -- (-3, 0.16);
+                            \draw[red, thick, ->] (1.0, 0.9) -- (5, 0.16);
+                            % ---- Braces for intervals (unchanged) ----
+                            \draw[red, very thick, decorate, decoration={brace, amplitude=7pt, mirror}] (-7.8,-1.02) -- (-3.2,-1.02);
+                            \draw[red, very thick, decorate, decoration={brace, amplitude=7pt, mirror}] (-2.8,-1.02) -- (4.8,-1.02);
+                            \draw[red, very thick, decorate, decoration={brace, amplitude=7pt, mirror}] (5.2,-1.02) -- (7.8,-1.02);
+                            % ---- Test point labels (unchanged) ----
+                            \node[red, font=\small\bfseries, align=center] at (-5.0,-1.72) {Test point at $x=-5$};
+                            \node[red, font=\small\bfseries, align=center] at (1.0,-1.72) {Test point at $x=0$};
+                            \node[red, font=\small\bfseries, align=center] at (6.5,-1.72) {Test point at $x=6$};
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+
+                <p>
+                    Evaluate <m>f(x)</m> at each test point:
+                </p>
+                <ul>
+                    <li>At <m>x = -5</m>: <m>f(-5) = (-5)^2 - 2(-5) - 15 = 25 + 10 - 15 = 20</m> → positive.</li>
+                    <li>At <m>x = 0</m>: <m>f(0) = 0 - 0 - 15 = -15</m> → negative.</li>
+                    <li>At <m>x = 6</m>: <m>f(6) = 36 - 12 - 15 = 9</m> → positive.</li>
+                </ul>
+
+                <p>
+                    <strong>Step 4: Write the solution.</strong>
+                </p>
+                <p>
+                    Since we want <m>f(x) \leq 0</m>, we choose the interval where <m>f(x)</m> is negative. We also include the zeros because the inequality is non-strict (<m>\leq</m>).
+                </p>
+                <p>
+                    The solution is <m>-3 \leq x \leq 5</m>.
+                </p>
+                <p>
+                    In interval notation: <m>[-3, 5]</m>.
+                </p>
+
+                <!-- FIGURE 5 -->
+                <figure>
+                    <caption>Graph of <m>f(x) = x^2 - 2x - 15</m></caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}
+                            \begin{axis}[
+                              width=10.7cm,height=7.6cm,
+                              xmin=-4.3,xmax=7.0,ymin=-16.5,ymax=23,
+                              axis lines=middle,
+                              xtick={-4,-3,-2,-1,0,1,2,3,4,5,6},
+                              ytick={-10,0,10,20},
+                              samples=240,
+                              clip=true
+                            ]
+                            \addplot[blue,very thick,domain=-4.3:7]{x^2-2*x-15};
+                            \draw[red,very thick,decorate,decoration={brace,amplitude=7pt}] (axis cs:-2.9,1.72) -- (axis cs:5.0,1.72);
+                            \node[red,font=\bfseries] at (axis cs:1.0,4.45) {In this interval};
+                            \draw[red,very thick,decorate,decoration={brace,amplitude=8pt}] (axis cs:5.18,-0.10) -- (axis cs:5.18,-9.35);
+                            \node[red,font=\bfseries] at (axis cs:6.3,-4.75) {$f(x)<0$};
+                            \end{axis}
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         EXAMPLE 2: QUADRATIC INEQUALITY (Page 6)
+         ======================================================== -->
+
+    <subsection xml:id="example-quadratic-inequality-2">
+        <title>Example 2: Solving a Quadratic Inequality</title>
+
+        <activity>
+            <statement>
+                <p>
+                    Solve <m>-x^2 - x + 6 &gt; 0</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <strong>Step 1:</strong> Let <m>f(x) = -x^2 - x + 6</m>. We want <m>f(x) &gt; 0</m>.
+                </p>
+
+                <p>
+                    <strong>Step 2: Find the zeros.</strong>
+                </p>
+                <p>
+                    Factor:
+                </p>
+                <me>
+                    f(x) = -(x^2 + x - 6) = -(x + 3)(x - 2)
+                </me>
+                <p>
+                    The zeros are <m>x = -3</m> and <m>x = 2</m>.
+                </p>
+
+                <p>
+                    <strong>Step 3: Choose test points.</strong>
+                </p>
+                <p>
+                    The zeros divide the number line into three intervals:
+                </p>
+                <ul>
+                    <li><m>(-\infty, -3)</m></li>
+                    <li><m>(-3, 2)</m></li>
+                    <li><m>(2, \infty)</m></li>
+                </ul>
+                <p>
+                    Choose test points: <m>x = -4</m>, <m>x = 0</m>, and <m>x = 3</m>.
+                </p>
+
+                <ul>
+                    <li>At <m>x = -4</m>: <m>f(-4) = -(-4)^2 - (-4) + 6 = -16 + 4 + 6 = -6</m> → negative.</li>
+                    <li>At <m>x = 0</m>: <m>f(0) = 6</m> → positive.</li>
+                    <li>At <m>x = 3</m>: <m>f(3) = -9 - 3 + 6 = -6</m> → negative.</li>
+                </ul>
+
+                <p>
+                    <strong>Step 4: Write the solution.</strong>
+                </p>
+                <p>
+                    Since we want <m>f(x) &gt; 0</m>, we choose the interval where <m>f(x)</m> is positive. We do not include the zeros because the inequality is strict (<m>&gt;</m>).
+                </p>
+                <p>
+                    The solution is <m>-3 &lt; x &lt; 2</m>.
+                </p>
+                <p>
+                    In interval notation: <m>(-3, 2)</m>.
+                </p>
+
+                <!-- FIGURE 6 -->
+                <figure>
+                    <caption>Graph of <m>f(x) = -x^2 - x + 6</m></caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}
+                            \begin{axis}[
+                              width=10.5cm,height=7.5cm,
+                              xmin=-5.7,xmax=5.7,ymin=-8,ymax=11,
+                              axis lines=middle,
+                              xtick={-5,-4,-3,-2,-1,0,1,2,3,4,5},
+                              ytick={-6,-4,-2,0,2,4,6,8,10},
+                              samples=220,
+                              clip=true
+                            ]
+                            \addplot[blue,very thick,domain=-5.7:5.7]{-x^2-x+6};
+                            \end{axis}
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+
+        <!-- Video 2: Page 7 – after the polynomial inequality example -->
+        <p><url href="https://youtu.be/Fd5ys4PQ-aM">Video Examples</url></p>
+
+        <activity>
+            <statement>
+                <p>
+                    Solve <m>-(x + 4)^2(x - 3) &gt; 0</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <strong>Step 1:</strong> Let <m>f(x) = -(x + 4)^2(x - 3)</m>. We want <m>f(x) &gt; 0</m>.
+                </p>
+
+                <p>
+                    <strong>Step 2: Find the zeros.</strong>
+                </p>
+                <p>
+                    The zeros are <m>x = -4</m> (multiplicity 2) and <m>x = 3</m> (multiplicity 1). Note that a zero with even multiplicity does not cause a sign change.
+                </p>
+
+                <p>
+                    <strong>Step 3: Choose test points.</strong>
+                </p>
+                <p>
+                    The zeros divide the number line into three intervals:
+                </p>
+                <ul>
+                    <li><m>(-\infty, -4)</m></li>
+                    <li><m>(-4, 3)</m></li>
+                    <li><m>(3, \infty)</m></li>
+                </ul>
+                <p>
+                    Choose test points: <m>x = -5</m>, <m>x = -2</m>, and <m>x = 4</m>.
+                </p>
+
+                <ul>
+                    <li>At <m>x = -5</m>: <m>f(-5) = -(-1)^2(-8) = -(1)(-8) = 8</m> → positive.</li>
+                    <li>At <m>x = -2</m>: <m>f(-2) = -(2)^2(-5) = -(4)(-5) = 20</m> → positive.</li>
+                    <li>At <m>x = 4</m>: <m>f(4) = -(8)^2(1) = -64</m> → negative.</li>
+                </ul>
+
+                <p>
+                    <strong>Step 4: Write the solution.</strong>
+                </p>
+                <p>
+                    We want <m>f(x) &gt; 0</m>, so we take the intervals where the function is positive: <m>(-\infty, -4) \cup (-4, 3)</m>.
+                </p>
+                <p>
+                    Note that <m>x = -4</m> is <em>not</em> included because it makes the function equal to 0, not greater than 0.
+                </p>
+                <p>
+                    In interval notation: <m>(-\infty, -4) \cup (-4, 3)</m>.
+                </p>
+
+                <!-- FIGURE 7 -->
+                <figure>
+                    <caption>Graph of <m>f(x) = -(x + 4)^2(x - 3)</m></caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}
+                            \begin{axis}[
+                              width=10.5cm,height=7.5cm,
+                              xmin=-6.8,xmax=4.2,ymin=-50,ymax=52,
+                              axis lines=middle,
+                              xtick={-6,-5,-4,-3,-2,-1,0,1,2,3,4},
+                              ytick={-40,-20,0,20,40},
+                              samples=300,
+                              clip=true
+                            ]
+                            \addplot[blue,very thick,domain=-6.8:4]{-(x+4)^2*(x-3)};
+                            \end{axis}
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         RATIONAL INEQUALITY (Pages 8-9)
+         ======================================================== -->
+
+    <subsection xml:id="rational-inequality-example">
+        <title>Example: Solving a Rational Inequality</title>
+
+        <!-- Video 3: Page 8 – before the rational inequality example -->
+        <p><url href="https://echo360.org/media/bde71a36-38c6-4a95-9a9a-27afb2f6fb02/public">Video Examples</url></p>
+
+        <activity>
+            <statement>
+                <p>
+                    Solve <m>\frac{x^2 + 8x + 12}{x - 1} \geq 0</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <strong>Step 1:</strong> Let <m>f(x) = \frac{x^2 + 8x + 12}{x - 1}</m>. We want <m>f(x) \geq 0</m>.
+                </p>
+
+                <p>
+                    <strong>Step 2: Find the boundary points.</strong>
+                </p>
+                <p>
+                    Factor the numerator:
+                </p>
+                <me>
+                    x^2 + 8x + 12 = (x + 6)(x + 2)
+                </me>
+                <p>
+                    Zeros (where numerator = 0): <m>x = -6</m> and <m>x = -2</m>.
+                </p>
+                <p>
+                    Undefined values (where denominator = 0): <m>x = 1</m>.
+                </p>
+
+                <p>
+                    <strong>Step 3: Choose test points.</strong>
+                </p>
+                <p>
+                    The boundary points divide the number line into four intervals:
+                </p>
+                <ul>
+                    <li><m>(-\infty, -6)</m></li>
+                    <li><m>(-6, -2)</m></li>
+                    <li><m>(-2, 1)</m></li>
+                    <li><m>(1, \infty)</m></li>
+                </ul>
+                <p>
+                    Choose test points: <m>x = -7</m>, <m>x = -4</m>, <m>x = 0</m>, and <m>x = 2</m>.
+                </p>
+
+                <!-- FIGURE 8 -->
+                <figure>
+                    <caption>Sign chart for <m>\frac{(x+6)(x+2)}{x-1} \geq 0</m></caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}[x=0.72cm, y=0.80cm, >=Stealth]
+                            % ---- Number line ----
+                            \draw[->,thick] (-8.8,0) -- (8.8,0);
+                            \foreach \x in {-8,...,8}{
+                              \draw[thick] (\x,-0.13) -- (\x,0.13);
+                              \node[font=\small] at (\x,-0.34) {\x};
+                            }
+                            % ---- Boundary points ----
+                            \fill[red] (-6,0) circle(0.13);
+                            \fill[red] (-2,0) circle(0.13);
+                            \draw[red, very thick] (1,0) circle(0.16);  % open circle for undefined
+                            % ---- "Boundary Points" label and arrows (centered) ----
+                            \node[red, font=\small\bfseries] at (2.0, 1.5) {Boundary Points};
+                            \draw[red, thick, ->] (2.0, 0.9) -- (-6, 0.16);
+                            \draw[red, thick, ->] (2.0, 0.9) -- (-2, 0.16);
+                            \draw[red, thick, ->] (2.0, 0.9) -- (1, 0.16);
+                            % ---- Braces for each interval ----
+                            \draw[red, very thick, decorate, decoration={brace, amplitude=7pt, mirror}] (-7.75,-1.00) -- (-6.25,-1.00);
+                            \draw[red, very thick, decorate, decoration={brace, amplitude=7pt, mirror}] (-5.75,-1.00) -- (-2.25,-1.00);
+                            \draw[red, very thick, decorate, decoration={brace, amplitude=7pt, mirror}] (-1.75,-1.00) -- (0.75,-1.00);
+                            \draw[red, very thick, decorate, decoration={brace, amplitude=7pt, mirror}] (1.25,-1.00) -- (7.75,-1.00);
+                            % ---- Single "Test points" label with arrows to each brace ----
+                            \node[red, font=\small\bfseries] at (0.0, -1.9) {Test points};
+                            \foreach \x in {-7.0, -4.0, -0.5, 4.5} {
+                              \draw[red, thick, ->] (0.0, -1.7) -- (\x, -1.1);
+                            }
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+
+                <p>
+                    Evaluate <m>f(x)</m> at each test point:
+                </p>
+                <ul>
+                    <li>At <m>x = -7</m>: <m>f(-7) = \frac{(-1)(-5)}{-8} = \frac{5}{-8}</m> → negative.</li>
+                    <li>At <m>x = -4</m>: <m>f(-4) = \frac{(2)(-2)}{-5} = \frac{-4}{-5}</m> → positive.</li>
+                    <li>At <m>x = 0</m>: <m>f(0) = \frac{(6)(2)}{-1} = \frac{12}{-1}</m> → negative.</li>
+                    <li>At <m>x = 2</m>: <m>f(2) = \frac{(8)(4)}{1} = 32</m> → positive.</li>
+                </ul>
+
+                <p>
+                    <strong>Step 4: Write the solution.</strong>
+                </p>
+                <p>
+                    Since we want <m>f(x) \geq 0</m>, we choose the intervals where <m>f(x)</m> is positive. We include the zeros but <strong>never</strong> include the undefined value.
+                </p>
+                <p>
+                    The solution is <m>[-6, -2] \cup (1, \infty)</m>.
+                </p>
+
+                <!-- FIGURE 9 -->
+                <figure>
+                    <caption>Graph of <m>f(x) = \frac{x^2 + 8x + 12}{x - 1}</m></caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}
+                            \begin{axis}[
+                              width=10.5cm,height=7.5cm,
+                              xmin=-22,xmax=22,ymin=-34,ymax=36,
+                              axis lines=middle,
+                              xtick={-20,-15,-10,-5,0,5,10,15,20},
+                              ytick={-30,-20,-10,0,10,20,30},
+                              samples=300,
+                              unbounded coords=jump,
+                              clip=true
+                            ]
+                            \addplot[red,dashed,thin] coordinates {(1,-34)(1,36)};
+                            \addplot[red,dashed,thin,domain=-22:22]{x+9};
+                            \addplot[blue,very thick,domain=-22:0.96]{(x^2+8*x+12)/(x-1)};
+                            \addplot[blue,very thick,domain=1.04:22]{(x^2+8*x+12)/(x-1)};
+                            \end{axis}
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+    <!-- ========================================================
+         EXAMPLE: INEQUALITY NOT 0 ON ONE SIDE (Page 10)
+         ======================================================== -->
+
+    <subsection xml:id="rational-inequality-not-zero">
+        <title>Example: Inequality Not 0 on One Side</title>
+
+        <!-- Video 4: Page 10 -->
+        <p><url href="https://youtu.be/KYI7D-pvPlI">Example Video with Inequality Not 0 on One Side</url></p>
+
+        <activity>
+            <statement>
+                <p>
+                    Solve <m>\frac{x - 3}{x - 2} &lt; 2</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <strong>Step 1:</strong> Move all terms to one side.
+                </p>
+                <me>
+                    \frac{x - 3}{x - 2} - 2 &lt; 0
+                </me>
+                <p>
+                    Combine into a single fraction:
+                </p>
+                <me>
+                    \frac{x - 3 - 2(x - 2)}{x - 2} &lt; 0
+                </me>
+                <me>
+                    \frac{x - 3 - 2x + 4}{x - 2} &lt; 0
+                </me>
+                <me>
+                    \frac{-x + 1}{x - 2} &lt; 0
+                </me>
+                <p>
+                    Let <m>f(x) = \frac{-x + 1}{x - 2}</m>. We want <m>f(x) &lt; 0</m>.
+                </p>
+
+                <p>
+                    <strong>Step 2: Find the boundary points.</strong>
+                </p>
+                <p>
+                    Zero (numerator = 0): <m>x = 1</m>.
+                </p>
+                <p>
+                    Undefined value (denominator = 0): <m>x = 2</m>.
+                </p>
+
+                <p>
+                    <strong>Step 3: Choose test points.</strong>
+                </p>
+                <p>
+                    The boundary points divide the number line into three intervals:
+                </p>
+                <ul>
+                    <li><m>(-\infty, 1)</m></li>
+                    <li><m>(1, 2)</m></li>
+                    <li><m>(2, \infty)</m></li>
+                </ul>
+                <p>
+                    Choose test points: <m>x = 0</m>, <m>x = 1.5</m>, and <m>x = 3</m>.
+                </p>
+
+                <ul>
+                    <li>At <m>x = 0</m>: <m>f(0) = \frac{1}{-2} = -0.5</m> → negative.</li>
+                    <li>At <m>x = 1.5</m>: <m>f(1.5) = \frac{-0.5}{-0.5} = 1</m> → positive.</li>
+                    <li>At <m>x = 3</m>: <m>f(3) = \frac{-2}{1} = -2</m> → negative.</li>
+                </ul>
+
+                <p>
+                    <strong>Step 4: Write the solution.</strong>
+                </p>
+                <p>
+                    Since we want <m>f(x) &lt; 0</m>, we choose the intervals where <m>f(x)</m> is negative. We do not include the zero and we never include the undefined value.
+                </p>
+                <p>
+                    The solution is <m>(-\infty, 1) \cup (2, \infty)</m>.
+                </p>
+
+                <!-- FIGURE 10 -->
+                <figure>
+                    <caption>Graph of <m>f(x) = \frac{x - 3}{x - 2}</m> with horizontal line <m>y = 2</m></caption>
+                    <image width="60%">
+                        <latex-image>
+                            <![CDATA[
+                            \begin{adjustbox}{max width=\linewidth}
+                            \begin{tikzpicture}
+                            \begin{axis}[
+                              width=10.5cm,height=7.5cm,
+                              xmin=-9,xmax=11,ymin=-9,ymax=9,
+                              axis lines=middle,
+                              xtick={-8,-6,-4,-2,0,2,4,6,8,10},
+                              ytick={-8,-6,-4,-2,0,2,4,6,8},
+                              samples=260,
+                              unbounded coords=jump,
+                              clip=true
+                            ]
+                            \addplot[red,dashed,thin] coordinates {(2,-9)(2,9)};
+                            \addplot[red,dashed,thin,domain=-9:11]{1};
+                            \addplot[blue,very thick,domain=-9:1.96]{(x-3)/(x-2)};
+                            \addplot[blue,very thick,domain=2.04:11]{(x-3)/(x-2)};
+                            \end{axis}
+                            \end{tikzpicture}
+                            \end{adjustbox}
+                            ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+            </solution>
+        </activity>
+    </subsection>
+
+</section>
