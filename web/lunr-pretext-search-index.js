@@ -149,7 +149,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-1.html#example-linear-equation-1",
   "type": "Example",
-  "number": "1",
+  "number": "5",
   "title": "",
   "body": "  Solve:     Step 1: Simplify inside the parentheses on the right side.    Step 2: Collect variables on one side.    Step 3: Isolate the variable.   Therefore, the solution is .   "
 },
@@ -158,7 +158,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-1.html#example-linear-equation-2",
   "type": "Example",
-  "number": "2",
+  "number": "6",
   "title": "",
   "body": "  Solve:     Step 1: Distribute on both sides    Step 2: Collect variables on one side    Step 3: Isolate the variable   Therefore, the solution is .   "
 },
@@ -167,7 +167,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-1.html#clearing-fractions-3",
   "type": "Problem-Solving Strategy",
-  "number": "5",
+  "number": "7",
   "title": "Clearing Fractions.",
   "body": " Clearing Fractions  To clear fractions from an equation:   Find the Lowest Common Denominator (LCD) of ALL the fractions. (If you can't find the lowest common denominator, just multiply all denominators together.)  Multiply every term (on BOTH sides) by the LCD  Simplify each term. There should be no fractions.  Solve the new equation using your algebra skills.   "
 },
@@ -176,7 +176,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-1.html#example-clearing-fractions-2",
   "type": "Example",
-  "number": "3",
+  "number": "8",
   "title": "",
   "body": "  Solve:     LCD =  Step 1: Multiply every term by 6   Step 2: Simplify    Step 3: Solve     Therefore, the solution is .   "
 },
@@ -185,7 +185,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-1.html#variables-in-denominator-2",
   "type": "Example",
-  "number": "4",
+  "number": "9",
   "title": "",
   "body": "  Solve:   LCD: Restricted Values for :     LCD =  Restricted Values:  Step 1: Multiply every term by   Step 2: Simplify   Step 3: Solve    Since , this is a valid solution.  Therefore, the solution is .   "
 },
@@ -194,7 +194,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-1.html#variables-in-denominator-3",
   "type": "Example",
-  "number": "5",
+  "number": "10",
   "title": "",
   "body": "  Solve:   LCD: Restricted Values for :     First, factor  LCD =  Restricted Values: and  Step 1: Multiply every term by   Step 2: Simplify       Since and , this is a valid solution.  Therefore, the solution is .   "
 },
@@ -203,7 +203,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-1.html#variables-in-denominator-4",
   "type": "Example",
-  "number": "6",
+  "number": "11",
   "title": "",
   "body": "  Solve:   LCD: Restricted Values for :     First, factor  LCD =  Restricted Values: and  Step 1: Multiply every term by   Step 2: Simplify       Since and , this is a valid solution.  Therefore, the solution is .   "
 },
@@ -221,7 +221,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-2.html#problem-solving-strategy-2",
   "type": "Problem-Solving Strategy",
-  "number": "6",
+  "number": "12",
   "title": "",
   "body": " Follow these steps to solve application problems:   Read – Understand the problem. What are you solving for?  Define – Assign variables. Figure out how they relate.  Draw – If possible, draw a picture or graph to visualize.  Equation – Write an equation using the given information.  Solve – Solve the equation algebraically.  Check – Verify your answer works in the original problem.   "
 },
@@ -230,7 +230,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-2.html#activity-triangle-angles-2",
   "type": "Example",
-  "number": "7",
+  "number": "13",
   "title": "",
   "body": "  The sum of the measures of the angles in a triangle is . What is the value of in the given triangle?    Right Triangle with 40°, 2x°, and 90°   A right triangle with angles 40°, 2x°, and 90° (right angle marked with a square)       Step 1: Read – We need to find the value of in the triangle.  Step 2: Define – The angles are , , and .  Step 3: Draw – Already given.  Step 4: Equation – The sum of the angles is :   Step 5: Solve     Step 6: Check – ✅  Therefore, the value of is .   "
 },
@@ -239,7 +239,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-2.html#activity-school-tickets-2",
   "type": "Example",
-  "number": "8",
+  "number": "15",
   "title": "",
   "body": "  A total of 575 tickets were sold for the school play. They were either adult tickets or student tickets. There were 75 more student tickets sold than adult tickets. How many adult tickets were sold?    Step 1: Read – We need to find the number of adult tickets sold.  Step 2: Define – Let = adult tickets, = student tickets.  Step 3: Draw – Not needed.  Step 4: Equation – ,  Step 5: Solve      Step 6: Check – ✅  Therefore, there were adult tickets sold.   "
 },
@@ -248,7 +248,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-2.html#activity-farmer-john-2",
   "type": "Example",
-  "number": "9",
+  "number": "16",
   "title": "",
   "body": "  Farmer John has pigs and chickens. When he looks out into the barnyard he can count 12 animals and together those animals have 30 legs. How many pigs and how many chickens does he have? Solve without an equation.    Step 1: Read – We need to find how many pigs and chickens.  Step 2: Define – Let = pigs, = chickens.  Step 3: Draw – Not needed.  Step 4: Equation – ,  Step 5: Solve       Step 6: Check – ✅. ✅  Farmer John has pigs and chickens.   "
 },
@@ -257,7 +257,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-2.html#activity-phone-card-2",
   "type": "Example",
-  "number": "10",
+  "number": "17",
   "title": "",
   "body": "  Lisa purchased a prepaid phone card for $15. Long distance calls cost 16 cents a minute using this card. Lisa used her card only once to make a long distance call. If the remaining credit on her card is $9.72, how many minutes did her call last?    Step 1: Read – We need to find how many minutes Lisa's call lasted.  Step 2: Define – Let = minutes.  Step 3: Draw – Not needed.  Step 4: Equation –  Step 5: Solve     Step 6: Check – ✅  Lisa's call lasted minutes.   "
 },
@@ -266,7 +266,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-2.html#activity-movie-tickets-2",
   "type": "Example",
-  "number": "11",
+  "number": "18",
   "title": "",
   "body": "  At the movie theatre, child admission is $5.10 and adult admission is $9.50. On Saturday, 170 tickets were sold for a total sales of $1210.20. How many adult tickets were sold that day?    Step 1: Read – We need to find the number of adult tickets sold.  Step 2: Define – Let = adult tickets, = child tickets.  Step 3: Draw – Not needed.  Step 4: Equation – ,  Step 5: Solve      Step 6: Check – ✅. ✅  There were adult tickets sold.   "
 },
@@ -275,7 +275,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-2.html#activity-two-planes-2",
   "type": "Example",
-  "number": "12",
+  "number": "19",
   "title": "",
   "body": "  Two passengers leave the airport at Kansas City, Missouri. One flies to Los Angeles, California in hours and the other flies the opposite direction to New York City in hours. With prevailing westerly winds, the speed of the plane to NYC is mph faster than the plane to LA. If the total distance travelled by both planes is miles, what is the speed of each plane?    Step 1: Read – We need to find the speed of each plane.  Step 2: Define – Let = speed of plane to LA, = speed of plane to NYC.  Step 3: Draw – Not needed.  Step 4: Equation – Distance = Rate × Time. Total distance = miles.   Step 5: Solve      Plane to LA: mph  Plane to NYC: mph  Step 6: Check – ✅  Therefore, the plane to LA travels at mph, and the plane to NYC travels at mph.   "
 },
@@ -284,7 +284,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-2.html#activity-tasha-jobs-2",
   "type": "Example",
-  "number": "13",
+  "number": "20",
   "title": "",
   "body": "  Tasha considers two sales jobs for two pharmaceutical companies. One pays a base salary of with a commission on sales. The other pays with a commission on sales.  a) Write equations that represent the salaries of the two offers.  b) For how much in sales will the two jobs result in the equal salaries?  c) If Tasha expects to sell , which job would be better?    Step 1: Read – We need to compare two job offers.  Step 2: Define – Let = amount of sales.  Step 3: Draw – Not needed.  Step 4: Equation  a) Job 1: , Job 2:  b)  Step 5: Solve     c) For :  Job 1:  Job 2:  Step 6: Check – , so Job 1 is better.  a) ,  b) Equal at in sales.  c) Job 1 is better for .   "
 },
@@ -293,7 +293,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-2.html#activity-malcolm-janay-2",
   "type": "Example",
-  "number": "14",
+  "number": "21",
   "title": "",
   "body": "  Malcolm and Janay have been offered if they can clean out a garage in under 2 hours. Malcolm can clean the garage in 3 hours and Janay can clean the garage in 5 hours. Working together, can they clean the garage in time to make ?  What are their speeds alone? What is their speed when they work together? How much will they get done in 2 hours? Will they earn the ?    Step 1: Read – We need to determine if they can clean the garage in under 2 hours.  Step 2: Define – Malcolm's rate = garage\/hour, Janay's rate = garage\/hour.  Step 3: Draw – Not needed.  Step 4: Equation – Combined rate =  Step 5: Solve   In 2 hours: garages.  Step 6: Check – , so they finish in under 2 hours.  Malcolm and Janay will earn the .   "
 },
@@ -311,7 +311,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-3.html#practice-square-roots-3",
   "type": "Example",
-  "number": "15",
+  "number": "22",
   "title": "",
   "body": "       "
 },
@@ -320,7 +320,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-3.html#practice-square-roots-4",
   "type": "Example",
-  "number": "16",
+  "number": "23",
   "title": "",
   "body": "       "
 },
@@ -329,7 +329,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-3.html#practice-square-roots-5",
   "type": "Example",
-  "number": "17",
+  "number": "24",
   "title": "",
   "body": "       "
 },
@@ -338,7 +338,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-3.html#practice-square-roots-6",
   "type": "Example",
-  "number": "18",
+  "number": "25",
   "title": "",
   "body": "       "
 },
@@ -347,7 +347,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-3.html#practice-multiplying-roots-3",
   "type": "Example",
-  "number": "19",
+  "number": "26",
   "title": "",
   "body": "      and     "
 },
@@ -356,7 +356,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-3.html#practice-multiplying-roots-4",
   "type": "Example",
-  "number": "20",
+  "number": "27",
   "title": "",
   "body": "      and     "
 },
@@ -365,7 +365,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-3.html#standard-complex-form-7",
   "type": "Example",
-  "number": "21",
+  "number": "28",
   "title": "",
   "body": "      , so the expression is .   "
 },
@@ -374,7 +374,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-3.html#standard-complex-form-8",
   "type": "Example",
-  "number": "22",
+  "number": "29",
   "title": "",
   "body": "         "
 },
@@ -383,7 +383,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-3.html#standard-complex-form-9",
   "type": "Example",
-  "number": "23",
+  "number": "30",
   "title": "",
   "body": "         "
 },
@@ -392,7 +392,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-3.html#standard-complex-form-10",
   "type": "Example",
-  "number": "24",
+  "number": "31",
   "title": "",
   "body": "          "
 },
@@ -401,7 +401,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-3.html#powers-of-i-12",
   "type": "Example",
-  "number": "25",
+  "number": "32",
   "title": "",
   "body": "  What is ?    The pattern repeats every 4: , , etc.   remainder , so .   "
 },
@@ -410,7 +410,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-3.html#adding-subtracting-complex-8",
   "type": "Example",
-  "number": "26",
+  "number": "33",
   "title": "",
   "body": "       "
 },
@@ -419,7 +419,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-3.html#adding-subtracting-complex-9",
   "type": "Example",
-  "number": "27",
+  "number": "34",
   "title": "",
   "body": "       "
 },
@@ -428,7 +428,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-3.html#adding-subtracting-complex-10",
   "type": "Example",
-  "number": "28",
+  "number": "35",
   "title": "",
   "body": "       "
 },
@@ -437,7 +437,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-3.html#adding-subtracting-complex-11",
   "type": "Example",
-  "number": "29",
+  "number": "36",
   "title": "",
   "body": "       "
 },
@@ -446,7 +446,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-3.html#multiplying-complex-3",
   "type": "Example",
-  "number": "30",
+  "number": "37",
   "title": "",
   "body": "       "
 },
@@ -455,7 +455,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-3.html#multiplying-complex-4",
   "type": "Example",
-  "number": "31",
+  "number": "38",
   "title": "",
   "body": "         "
 },
@@ -464,7 +464,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-3.html#multiplying-complex-5",
   "type": "Example",
-  "number": "32",
+  "number": "39",
   "title": "",
   "body": "         "
 },
@@ -473,7 +473,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-3.html#complex-conjugates-8",
   "type": "Example",
-  "number": "33",
+  "number": "40",
   "title": "",
   "body": "       Notice that the product of complex conjugates is always a real number .   "
 },
@@ -482,7 +482,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-3.html#complex-conjugates-9",
   "type": "Example",
-  "number": "34",
+  "number": "41",
   "title": "",
   "body": "       "
 },
@@ -491,7 +491,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-3.html#complex-conjugates-10",
   "type": "Example",
-  "number": "35",
+  "number": "42",
   "title": "",
   "body": "       "
 },
@@ -500,7 +500,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-3.html#dividing-complex-4",
   "type": "Example",
-  "number": "36",
+  "number": "43",
   "title": "",
   "body": "     Multiply numerator and denominator by the conjugate of the denominator:    Multiply the numerator:     Multiply the denominator:   Therefore:    "
 },
@@ -509,7 +509,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-3.html#dividing-complex-5",
   "type": "Example",
-  "number": "37",
+  "number": "44",
   "title": "",
   "body": "     Multiply numerator and denominator by the conjugate of (which is ):       "
 },
@@ -518,7 +518,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-3.html#dividing-complex-6",
   "type": "Example",
-  "number": "38",
+  "number": "45",
   "title": "",
   "body": "     Multiply numerator and denominator by the conjugate of (which is ):        "
 },
@@ -536,7 +536,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-4.html#zero-product-property-5",
   "type": "Example",
-  "number": "39",
+  "number": "46",
   "title": "",
   "body": "  Solve:      "
 },
@@ -545,7 +545,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-4.html#zero-product-property-6",
   "type": "Example",
-  "number": "40",
+  "number": "47",
   "title": "",
   "body": "  Solve:       "
 },
@@ -554,7 +554,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-4.html#zero-product-property-7",
   "type": "Example",
-  "number": "41",
+  "number": "48",
   "title": "",
   "body": "  Solve:       "
 },
@@ -563,7 +563,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-4.html#practice-factoring-4",
   "type": "Example",
-  "number": "42",
+  "number": "49",
   "title": "",
   "body": "     First, rewrite in standard form:       "
 },
@@ -572,7 +572,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-4.html#practice-factoring-5",
   "type": "Example",
-  "number": "43",
+  "number": "50",
   "title": "",
   "body": "          "
 },
@@ -581,7 +581,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-4.html#practice-factoring-6",
   "type": "Example",
-  "number": "44",
+  "number": "51",
   "title": "",
   "body": "  Solve using the trick from the video above:        "
 },
@@ -590,7 +590,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-4.html#square-root-property-4",
   "type": "Example",
-  "number": "45",
+  "number": "52",
   "title": "",
   "body": "        "
 },
@@ -599,7 +599,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-4.html#square-root-property-5",
   "type": "Example",
-  "number": "46",
+  "number": "53",
   "title": "",
   "body": "        "
 },
@@ -608,7 +608,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-4.html#square-root-property-6",
   "type": "Example",
-  "number": "47",
+  "number": "54",
   "title": "",
   "body": "        "
 },
@@ -617,7 +617,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-4.html#completing-the-square-4",
   "type": "Problem-Solving Strategy",
-  "number": "8",
+  "number": "55",
   "title": "",
   "body": " Steps for Completing the Square:   Divide both sides by to make the leading coefficient 1.  Isolate the variable terms on one side of the equation.  Complete the square. Add the square of one-half the linear term to both sides. That is, add to both sides, then factor.  Apply the square root property and solve for .   "
 },
@@ -626,7 +626,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-4.html#completing-the-square-7",
   "type": "Example",
-  "number": "48",
+  "number": "56",
   "title": "",
   "body": "     Step 1: The leading coefficient is already 1.  Step 2: Isolate the variable terms:   Step 3: Complete the square.    Step 4: Apply the square root property:     "
 },
@@ -635,7 +635,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-4.html#quadratic-formula-5",
   "type": "Example",
-  "number": "49",
+  "number": "57",
   "title": "",
   "body": "  Solve using the quadratic formula:   (Rewrite as . What are the values for and ?)    First, rewrite as :   So , , .       "
 },
@@ -644,7 +644,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-4.html#discriminant-7",
   "type": "Example",
-  "number": "50",
+  "number": "58",
   "title": "",
   "body": "  Determine the number and type of solutions for:     Here , , .   Since , there are 2 complex solutions .   "
 },
@@ -662,7 +662,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-5.html#polya-steps-2",
   "type": "Problem-Solving Strategy",
-  "number": "9",
+  "number": "59",
   "title": "",
   "body": " Follow these steps to solve application problems:   Read – Understand the problem. What are you solving for?  Define – Assign variables. Figure out how they relate.  Draw – If possible, draw a picture or graph to visualize.  Equation – Write an equation using the given information.  Solve – Solve the equation algebraically (using factoring, quadratic formula, etc.).  Check – Verify your answer works in the original problem.   "
 },
@@ -671,7 +671,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-5.html#activity-ball-height",
   "type": "Example",
-  "number": "51",
+  "number": "60",
   "title": "Ball Height.",
   "body": " Ball Height  A ball is thrown from an initial height of 7 feet with an initial upward velocity of 21 ft\/s. The ball's height (in feet) after seconds is given by the following.   Find all values of for which the ball's height is 13 feet. Round your answer(s) to the nearest hundredth.    Projectile motion of the ball   Projectile motion graph showing the ball's path from initial height to maximum height.      Step 1: Read – We are given the formula . We need to find when .  Step 2: Define – Let be the time in seconds when the ball's height is 13 feet.  Step 3: Draw – The graph above shows the projectile motion of the ball.  Step 4: Equation – Substitute into the formula:   Subtract 13 from both sides:   Rearrange in standard form:   Step 5: Solve – Use the quadratic formula with , , :       Step 6: Check – The ball reaches 13 feet at seconds on the way up, and again at seconds on the way down. Both answers are reasonable.  Therefore, the ball's height is 13 feet at or seconds.   "
 },
@@ -680,7 +680,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-5.html#activity-fish-tank",
   "type": "Example",
-  "number": "52",
+  "number": "62",
   "title": "Fish Tank Dimensions.",
   "body": " Fish Tank Dimensions  Dmitri is having a fish tank constructed to fit in a niche in his wall. The width must be 12 inches, while the length is twice the height decreased by 8 inches. The total volume of the tank must be 6840 cubic inches. What are the dimensions of the tank?    Fish tank with dimensions labeled   A rectangular prism (fish tank) with length l = 2h - 8, width w = 12, and height h.      Step 1: Read – We need to find the dimensions of the fish tank.  Step 2: Define – Let be the height of the tank.   Width ( ) = 12 inches  Length ( ) = (twice the height decreased by 8)  Volume ( ) = 6840 cubic inches   Step 3: Draw – The diagram above shows the fish tank with labeled dimensions.  Step 4: Equation – Volume formula for a rectangular prism:    Rewrite as a quadratic equation:   Divide both sides by 24:   Step 5: Solve – Factor:    Since height cannot be negative, inches.  Now find the length:   Step 6: Check – Check the volume: cubic inches. ✅  Therefore, the dimensions of the tank are:   Width : 12 inches  Length : 30 inches  Height : 19 inches    "
 },
@@ -698,7 +698,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-6.html#factor-by-grouping-4",
   "type": "Example",
-  "number": "53",
+  "number": "64",
   "title": "",
   "body": "  Solve by factoring using grouping:     Step 1: Group the terms.   Step 2: Factor out the GCF from each group.   Step 3: Factor out the common binomial.   Step 4: Factor the difference of squares.   Step 5: Apply the Zero Product Property.    Therefore, the solutions are , , and .   "
 },
@@ -707,7 +707,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-6.html#rational-equations-4",
   "type": "Example",
-  "number": "54",
+  "number": "65",
   "title": "",
   "body": "  Solve:   LCD: Restricted Values for :     First, identify the LCD and restricted values:  LCD =  Restricted Values: and  Step 1: Multiply every term by the LCD.   Step 2: Simplify.   Step 3: Solve.     Since is a restricted value, it is not a valid solution.  Therefore, there is no solution .   "
 },
@@ -716,7 +716,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-6.html#radical-equations-3",
   "type": "Problem-Solving Strategy",
-  "number": "12",
+  "number": "66",
   "title": "",
   "body": " Steps for Solving Radical Equations:   Isolate a radical (using algebra).  Raise BOTH WHOLE sides to the index power. (You may need to use distribution.)  If a radical remains, go back to step 1.  Solve the resulting equation.  Check your answers! You must check answers when you raise an equation to an even power. There may be solutions that don't work! Remember, the radical means the principle (positive) square root.   "
 },
@@ -725,7 +725,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-6.html#radical-equations-4",
   "type": "Example",
-  "number": "55",
+  "number": "67",
   "title": "",
   "body": "  Problem 1. Solve:    Step 1: Isolate the radical.   Step 2: Square both sides.    Step 3: Solve the resulting equation.     Step 4: Check your answers.  Check : ✅  Check : ❌  Since does not work, the only solution is .   "
 },
@@ -734,7 +734,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-6.html#rational-exponents-4",
   "type": "Example",
-  "number": "56",
+  "number": "68",
   "title": "",
   "body": "  Problem 2. Solve:    To solve equations with rational exponents, raise both sides to the reciprocal power.    Check: ✅  Therefore, the solution is .   Note: Be careful when raising to an even power — you may need to consider both positive and negative roots.   "
 },
@@ -743,7 +743,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-6.html#quadratic-in-form-6",
   "type": "Problem-Solving Strategy",
-  "number": "13",
+  "number": "69",
   "title": "",
   "body": " Method:   Let (We introduce our own variable here.) Then .  Substitute for and write the equation as .  Solve for as you would solve any quadratic.  Back substitute the solution into to find .   "
 },
@@ -752,7 +752,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-6.html#quadratic-in-form-7",
   "type": "Example",
-  "number": "57",
+  "number": "70",
   "title": "",
   "body": "  Problem 1. Solve:    Step 1: Let .  Then .  Step 2: Substitute.   Step 3: Solve for .    Step 4: Back substitute.  If : →  If : →  Therefore, the solutions are and .   "
 },
@@ -761,7 +761,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-6.html#quadratic-in-form-8",
   "type": "Example",
-  "number": "58",
+  "number": "71",
   "title": "",
   "body": "  Problem 2. Solve:    Step 1: Let .  Then .  Step 2: Substitute.   Step 3: Solve for .    Step 4: Back substitute.  If : →  If : → (complex solutions)  Therefore, the real solutions are and .  The complex solutions are and .   "
 },
@@ -770,7 +770,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-6.html#quadratic-in-form-9",
   "type": "Example",
-  "number": "59",
+  "number": "72",
   "title": "",
   "body": "  Problem 3. Solve:    Step 1: Let .  Then .  Step 2: Substitute.   Step 3: Solve for .    Step 4: Back substitute.  If : →  If : →  Therefore, the solutions are and .  Check: ✅  Check: ✅   "
 },
@@ -788,7 +788,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-7.html#notation-x-leq-a-5",
   "type": "Figure",
-  "number": "14",
+  "number": "73",
   "title": "",
   "body": " Number line for   Number line showing x less than or equal to a    "
 },
@@ -797,7 +797,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-7.html#notation-x-lt-a-5",
   "type": "Figure",
-  "number": "15",
+  "number": "74",
   "title": "",
   "body": " Number line for   Number line showing x less than a    "
 },
@@ -806,7 +806,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-7.html#notation-x-geq-a-5",
   "type": "Figure",
-  "number": "16",
+  "number": "75",
   "title": "",
   "body": " Number line for   Number line showing x greater than or equal to a    "
 },
@@ -815,7 +815,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-7.html#notation-x-gt-a-5",
   "type": "Figure",
-  "number": "17",
+  "number": "76",
   "title": "",
   "body": " Number line for   Number line showing x greater than a    "
 },
@@ -824,7 +824,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-7.html#notation-a-leq-x-leq-b-5",
   "type": "Figure",
-  "number": "18",
+  "number": "77",
   "title": "",
   "body": " Number line for   Number line showing x between a and b inclusive    "
 },
@@ -833,7 +833,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-7.html#notation-a-lt-x-lt-b-5",
   "type": "Figure",
-  "number": "19",
+  "number": "78",
   "title": "",
   "body": " Number line for   Number line showing x between a and b    "
 },
@@ -842,7 +842,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-7.html#linear-inequalities-2",
   "type": "Example",
-  "number": "60",
+  "number": "79",
   "title": "",
   "body": "  Problem 1. Solve:  Graph the solution set, and write the solution in set-builder notation and interval notation.    Step 1: Distribute.   Step 2: Collect variables on one side.    Step 3: Divide by 2.   Therefore, the solution is .   Set-builder notation:     Interval notation:     Number line for   Number line showing x greater than 6      "
 },
@@ -851,7 +851,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-7.html#linear-inequalities-3",
   "type": "Example",
-  "number": "61",
+  "number": "81",
   "title": "",
   "body": "  Problem 2. Solve:  Graph the solution set, and write the solution in set-builder notation and interval notation.    Step 1: Distribute and simplify.    Step 2: Collect constants on one side.   Step 3: Divide by 5.   Therefore, the solution is .   Set-builder notation:     Interval notation:     Number line for   Number line showing x greater than or equal to 32\/5      "
 },
@@ -860,7 +860,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-7.html#compound-inequalities-3",
   "type": "Problem-Solving Strategy",
-  "number": "22",
+  "number": "83",
   "title": "",
   "body": " Key Differences:   AND — The solution must satisfy both inequalities.  OR — The solution must satisfy at least one inequality.   "
 },
@@ -869,7 +869,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-7.html#compound-inequalities-4",
   "type": "Example",
-  "number": "62",
+  "number": "84",
   "title": "",
   "body": "  Problem 1 (OR). Solve:  Graph the solution set, and write the solution in set-builder notation and interval notation.    Solve each inequality separately.  First: . Second: .  Since it is OR , the solution is:    Set-builder notation:     Interval notation:     Number line for compound inequality (OR)   Number line showing union of two intervals      "
 },
@@ -878,7 +878,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-7.html#compound-inequalities-5",
   "type": "Example",
-  "number": "63",
+  "number": "86",
   "title": "",
   "body": "  Problem 2 (AND). Solve:  Graph the solution set, and write the solution in set-builder notation and interval notation.    Solve each inequality separately.  First: . Second: .  Since it is AND , the solution must satisfy both:    Set-builder notation:     Interval notation:     Number line for compound inequality (AND)   Number line showing intersection of two intervals      "
 },
@@ -887,7 +887,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-7.html#compound-inequalities-6",
   "type": "Example",
-  "number": "64",
+  "number": "88",
   "title": "",
   "body": "  Problem 3 (OR). Solve:  Graph the solution set, and write the solution in set-builder notation and interval notation.    Solve each inequality separately.  First: . Second: .  Since it is OR , the solution is:    Set-builder notation:     Interval notation:     Number line for x ≥ -2   Number line showing x greater than or equal to -2      "
 },
@@ -896,7 +896,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-7.html#compound-inequalities-7",
   "type": "Example",
-  "number": "65",
+  "number": "90",
   "title": "",
   "body": "  Problem 4 (AND). Solve:  Graph the solution set, and write the solution in set-builder notation and interval notation.    Solve each inequality separately.  First: . Second: .  Since it is AND , the solution must satisfy both:    Set-builder notation:     Interval notation:     Number line for x > -2   Number line showing x greater than -2      "
 },
@@ -905,7 +905,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-7.html#three-part-inequalities-2",
   "type": "Example",
-  "number": "66",
+  "number": "92",
   "title": "",
   "body": "  Problem 1. Solve:  Graph the solution set, and write the solution in set-builder notation and interval notation.    Add 4 to all three parts.   Divide by 2.    Set-builder notation:     Interval notation:     Number line for 1 < x ≤ 7   Number line showing 1 less than x less than or equal to 7      "
 },
@@ -914,7 +914,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-7.html#three-part-inequalities-3",
   "type": "Example",
-  "number": "67",
+  "number": "94",
   "title": "",
   "body": "  Problem 2. Solve:  Graph the solution set, and write the solution in set-builder notation and interval notation.    Add 1 to all three parts.   Divide by 2.    Set-builder notation:     Interval notation:     Number line for 2 ≤ x ≤ 6   Number line showing x between 2 and 6 inclusive      "
 },
@@ -923,7 +923,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-7.html#absolute-value-equations-4",
   "type": "Example",
-  "number": "68",
+  "number": "96",
   "title": "",
   "body": "  Problem 1. Solve:      Set-builder notation:     Interval notation:     Number line for |x| = 5   Number line showing points at -5 and 5      "
 },
@@ -932,7 +932,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-7.html#absolute-value-equations-5",
   "type": "Example",
-  "number": "69",
+  "number": "98",
   "title": "",
   "body": "  Problem 2. Solve:       Set-builder notation:     Interval notation:     Number line for |x - 2| = 5   Number line showing points at -3 and 7      "
 },
@@ -941,7 +941,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-7.html#absolute-value-equations-6",
   "type": "Example",
-  "number": "70",
+  "number": "100",
   "title": "",
   "body": "  Problem 3. Solve:    Step 1: Isolate the absolute value.   Step 2: Split into two equations.    Set-builder notation:     Interval notation:     Number line for (1\/2)|x-2| + 1 = 5   Number line showing points at -6 and 10      "
 },
@@ -950,7 +950,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-7.html#absolute-value-equations-7",
   "type": "Example",
-  "number": "71",
+  "number": "102",
   "title": "",
   "body": "  Problem 4. Solve:     No solution. Absolute value cannot equal a negative number.   Set-builder notation:     Interval notation: No solution   "
 },
@@ -959,7 +959,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-7.html#absolute-value-equations-8",
   "type": "Example",
-  "number": "72",
+  "number": "103",
   "title": "",
   "body": "  Problem 5. Solve:      Set-builder notation:     Interval notation:     Number line for |x - 2| = 0   Number line showing point at 2      "
 },
@@ -968,7 +968,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-7.html#absolute-value-inequalities-less-or-equal-4",
   "type": "Figure",
-  "number": "33",
+  "number": "105",
   "title": "",
   "body": " Number line for |x| ≤ 3   Number line showing interval from -3 to 3    "
 },
@@ -977,7 +977,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-7.html#absolute-value-inequalities-less-or-equal-5",
   "type": "Figure",
-  "number": "34",
+  "number": "106",
   "title": "",
   "body": " Number line for |x + 2| ≤ 3   Number line showing interval from -5 to 1    "
 },
@@ -986,7 +986,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-7.html#absolute-value-inequalities-greater-or-equal-4",
   "type": "Figure",
-  "number": "35",
+  "number": "107",
   "title": "",
   "body": " Number line for |x| ≥ 3   Number line showing union of two intervals    "
 },
@@ -995,7 +995,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-7.html#absolute-value-inequalities-greater-or-equal-5",
   "type": "Figure",
-  "number": "36",
+  "number": "108",
   "title": "",
   "body": " Number line for |x + 2| ≥ 3   Number line showing union of two intervals    "
 },
@@ -1004,7 +1004,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-7.html#absolute-value-inequalities-less-4",
   "type": "Example",
-  "number": "73",
+  "number": "109",
   "title": "",
   "body": "  Problem 1. Solve:     Subtract 3 from all parts.   Divide by 2.    Set-builder notation:     Interval notation:     Number line for |2x + 3| < 5   Number line showing interval from -4 to 1      "
 },
@@ -1013,7 +1013,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-7.html#absolute-value-inequalities-less-5",
   "type": "Example",
-  "number": "74",
+  "number": "111",
   "title": "",
   "body": "  Problem 2. Solve:    Isolate the absolute value.    Subtract 5 from all parts.   Divide by 2.    Set-builder notation:     Interval notation:     Number line for |2x + 5| + 4 < 11   Number line showing interval from -6 to 1      "
 },
@@ -1022,7 +1022,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-7.html#absolute-value-inequalities-greater-4",
   "type": "Example",
-  "number": "75",
+  "number": "113",
   "title": "",
   "body": "  Problem 1. Solve:     First: . Second: .   Set-builder notation:     Interval notation:     Number line for |2x + 3| ≥ 5   Number line showing union of two intervals      "
 },
@@ -1031,7 +1031,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-1-7.html#absolute-value-inequalities-greater-5",
   "type": "Example",
-  "number": "76",
+  "number": "115",
   "title": "",
   "body": "  Problem 2. Solve:    Isolate the absolute value.   First: . Second: .   Set-builder notation:     Interval notation:     Number line for 2|x + 4| + 3 > 9   Number line showing union of two intervals      "
 },
@@ -1049,7 +1049,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-1.html#intro-coordinate-system-3",
   "type": "Figure",
-  "number": "41",
+  "number": "117",
   "title": "",
   "body": " Rectangular Coordinate System with Quadrants   Coordinate system with four quadrants labeled    "
 },
@@ -1058,7 +1058,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-1.html#plotting-points-3",
   "type": "Example",
-  "number": "77",
+  "number": "118",
   "title": "",
   "body": "  Plot the following points on the coordinate plane below:           Empty coordinate plane   Empty grid for plotting       The points are plotted as shown below:   Plotted points   Coordinate plane with five points plotted      "
 },
@@ -1067,7 +1067,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-1.html#distance-formula-4",
   "type": "Figure",
-  "number": "44",
+  "number": "121",
   "title": "",
   "body": " Distance Formula Diagram   Diagram showing distance between two points    "
 },
@@ -1076,7 +1076,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-1.html#distance-formula-6",
   "type": "Example",
-  "number": "78",
+  "number": "122",
   "title": "",
   "body": "  Example. Find the distance between the points and . Give the exact distance and an approximation to 2 decimal places.    Step 1: Identify the coordinates.  Let and .  Step 2: Apply the distance formula.      Step 3: Approximate to 2 decimal places.   Therefore, the exact distance is and the approximate distance is .   "
 },
@@ -1085,7 +1085,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-1.html#midpoint-formula-5",
   "type": "Example",
-  "number": "79",
+  "number": "123",
   "title": "",
   "body": "  Example. Find the midpoint of the line segment with endpoints and .    Step 1: Identify the coordinates.  Let and .  Step 2: Apply the midpoint formula.     Therefore, the midpoint is .   "
 },
@@ -1094,7 +1094,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-1.html#midpoint-formula-6",
   "type": "Figure",
-  "number": "45",
+  "number": "124",
   "title": "",
   "body": " Midpoint of a line segment   Line segment with midpoint marked    "
 },
@@ -1103,7 +1103,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-1.html#plotting-ex",
   "type": "Example",
-  "number": "80",
+  "number": "125",
   "title": "",
   "body": "  Example 1. Graph by completing the table of values and plotting the points.  Complete the table:      Ordered Pair                              Empty coordinate plane for   Empty grid for parabola       Choose values: .      Ordered Pair                             Plot the points and connect them with a smooth curve to form a parabola opening upward with vertex at .   Graph of   Parabola y = x^2 + 3      "
 },
@@ -1112,7 +1112,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-1.html#graphing-by-plotting-points-4",
   "type": "Example",
-  "number": "81",
+  "number": "128",
   "title": "",
   "body": "  Example 2. Graph by completing the table and plotting points.  Complete the table:      Ordered Pair                              Empty coordinate plane for   Empty grid for square root       Choose values: (so the radicand is non-negative).      Ordered Pair                             Plot the points and connect them with a smooth curve starting at .   Graph of   Square root function y = sqrt(x + 3)      "
 },
@@ -1121,7 +1121,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-1.html#intercepts-3",
   "type": "Problem-Solving Strategy",
-  "number": "50",
+  "number": "131",
   "title": "Finding x- and y-intercepts.",
   "body": " Finding x- and y-intercepts   To find the -intercept(s), substitute into the equation and solve for .  To find the -intercept(s), substitute into the equation and solve for .   "
 },
@@ -1130,7 +1130,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-1.html#intercepts-5",
   "type": "Example",
-  "number": "82",
+  "number": "132",
   "title": "",
   "body": "  Estimate the - and -intercepts from the graph of shown below.   Graph of   Parabola y = x^2 - 4       From the graph, the parabola crosses the -axis at and , and the -axis at .   Intercepts labeled   Parabola with intercepts      "
 },
@@ -1139,7 +1139,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-1.html#intercepts-6",
   "type": "Example",
-  "number": "83",
+  "number": "135",
   "title": "",
   "body": "  Find the - and -intercepts of the circle .    Find the y-intercepts: Set .      y-intercepts: and .  Find the x-intercepts: Set .      x-intercepts: and .   Circle with intercepts   Circle with intercepts marked      "
 },
@@ -1148,7 +1148,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-1.html#circles-8",
   "type": "Example",
-  "number": "84",
+  "number": "137",
   "title": "",
   "body": "  Example. Graph the circle with center and radius .  The equation is .  Mark the center with an open circle, then plot points 4 units up, down, left, and right from the center, and draw the circle.    Center: . Points:   Up:  Down:  Left:  Right:   The graph is shown below:   Circle with center (-3,2) and radius 4   Circle with center and radius marked      "
 },
@@ -1157,7 +1157,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-1.html#circles-9",
   "type": "Example",
-  "number": "85",
+  "number": "139",
   "title": "",
   "body": "  Practice. Write the equation of the circle with center and radius in standard form, then graph the circle.    The standard form is , i.e.   Graph: center at , radius .   Circle with center (-1,-2) and radius 3   Circle with center (-1,-2) radius 3      "
 },
@@ -1166,7 +1166,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-1.html#circles-10",
   "type": "Example",
-  "number": "86",
+  "number": "141",
   "title": "",
   "body": "  Practice. Write the equation of the circle with center at and tangent to the -axis in standard form, then graph the circle.    If the circle is tangent to the y-axis, the radius is the horizontal distance from the center to the y-axis. The center is , so the distance to the y-axis is . Thus, .  The equation in standard form is:   Graph: center , radius .   Circle tangent to the y-axis   Circle tangent to y-axis      "
 },
@@ -1175,7 +1175,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-1.html#general-form-circle-4",
   "type": "Example",
-  "number": "87",
+  "number": "143",
   "title": "",
   "body": "  Example. Write the equation in general form.    Step 1: Expand the squares.   Step 2: Combine like terms and set equal to 0.    Therefore, the general form is .   "
 },
@@ -1184,7 +1184,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-1.html#completing-square-circle-3",
   "type": "Example",
-  "number": "88",
+  "number": "144",
   "title": "",
   "body": "  Example 1. Given , write the equation in standard form and identify the center and radius.    Step 1: Group x and y terms.   Step 2: Complete the square for x.  Half of is , square it: .  Step 3: Complete the square for y.  Half of is , square it: .  Step 4: Add to both sides.   Step 5: Factor.   Therefore, the center is and the radius is .   "
 },
@@ -1193,7 +1193,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-1.html#completing-square-circle-4",
   "type": "Example",
-  "number": "89",
+  "number": "145",
   "title": "",
   "body": "  Example 2. Complete the square to write in standard form.    Step 1: Factor out the coefficient of and .   Step 2: Complete the square for x.  Half of is , square it: .  Step 3: Complete the square for y.  Half of is , square it: .  Step 4: Add to both sides (inside the parentheses).   Step 5: Simplify.    Step 6: Divide by 4.   Therefore, the center is and the radius is .   "
 },
@@ -1220,7 +1220,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-3.html#intro-functions-5",
   "type": "Definition",
-  "number": "57",
+  "number": "146",
   "title": "Domain.",
   "body": " Domain  The set of inputs ( -values) of the relation.  "
 },
@@ -1229,7 +1229,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-3.html#intro-functions-6",
   "type": "Definition",
-  "number": "58",
+  "number": "147",
   "title": "Range.",
   "body": " Range  The set of outputs ( -values) of the relation.  "
 },
@@ -1238,7 +1238,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-3.html#function-age",
   "type": "Figure",
-  "number": "59",
+  "number": "148",
   "title": "",
   "body": " Domain and Range Mapping     "
 },
@@ -1247,7 +1247,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-3.html#intro-functions-14",
   "type": "Definition",
-  "number": "60",
+  "number": "149",
   "title": "Function.",
   "body": " Function  A function is an equation for which any input yields exactly one output .  "
 },
@@ -1256,7 +1256,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-3.html#evaluating-functions-4",
   "type": "Example",
-  "number": "90",
+  "number": "150",
   "title": "",
   "body": "  Let and   Find:   a.   b.   c.   d.      a.   b.   c.   d.    "
 },
@@ -1265,7 +1265,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-3.html#vertical-line-test-6",
   "type": "Problem-Solving Strategy",
-  "number": "61",
+  "number": "151",
   "title": "Vertical Line Test for Functions.",
   "body": " Vertical Line Test for Functions  If any vertical line intersects the graph in more than one point, the graph does not represent a function. If every vertical line intersects the graph in at most one point, the graph represents a function.  "
 },
@@ -1274,7 +1274,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-3.html#vertical-line-test-7",
   "type": "Example",
-  "number": "91",
+  "number": "152",
   "title": "",
   "body": "  Which graphs are functions? Use the vertical line test.   Vertical Line Test Practice   Four graphs for vertical line test        Use the vertical line test: if a vertical line intersects the graph more than once, it is not a function.   Vertical Line Test Applied   Vertical line test applied to four graphs     The results are:   a.  is a function – every vertical line intersects the parabola exactly once.  b.  is not a function – vertical lines intersect the graph twice (shown by the red dots).  c.  is a function – every vertical line intersects the cubic exactly once.  d.  is a function – solving for gives , which yields exactly one for each .    "
 },
@@ -1283,7 +1283,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-3.html#domain-range-graphs-4",
   "type": "Figure",
-  "number": "64",
+  "number": "155",
   "title": "",
   "body": " Domain and Range from a Graph   Graph showing domain and range    "
 },
@@ -1292,7 +1292,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-3.html#domain-range-graphs-5",
   "type": "Example",
-  "number": "92",
+  "number": "156",
   "title": "",
   "body": "  Find the domain and range of each graph shown.   Domain and Range Practice   Four graphs for domain and range practice        For each graph, determine the set of all possible -values (domain) and the set of all possible -values (range).   Domain and Range Solutions   Solutions for domain and range     The solutions are:    a. Domain: , Range: .   b. Domain: , Range: .   c. Domain: , Range: .   d. Domain: , Range: .    "
 },
@@ -1301,7 +1301,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-3.html#domain-algebraically-3",
   "type": "Problem-Solving Strategy",
-  "number": "67",
+  "number": "159",
   "title": "Finding Domain Algebraically.",
   "body": " Finding Domain Algebraically  The domain of a function is the set of all the -values for which we can compute . Hence, when the function has fractions or radicals, we must exclude some values.   Exclude values of that make the denominator zero. (Set the denominator )  When the index of the root is even, exclude values of that make the radicand negative. (Set stuff under root )   "
 },
@@ -1310,7 +1310,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-3.html#domain-algebraically-4",
   "type": "Example",
-  "number": "93",
+  "number": "160",
   "title": "",
   "body": "  Find the domain of each function:   a.   b.     c.   d.        a.    Domain:   Number line for (a)        b.    Domain:   Number line for (b)        c.  is always positive, so no restrictions.  Domain:   Number line for (c)        d. Need (since denominator cannot be zero).  Domain:   Number line for (d)       "
 },
@@ -1319,7 +1319,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-3.html#zeros-of-functions-4",
   "type": "Problem-Solving Strategy",
-  "number": "72",
+  "number": "165",
   "title": "Zeros of a Function.",
   "body": " Zeros of a Function  To find the zeros of a function , solve the equation .  "
 },
@@ -1328,7 +1328,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-3.html#zeros-of-functions-7",
   "type": "Example",
-  "number": "94",
+  "number": "166",
   "title": "",
   "body": "  Find the zeros of each function.   a.   b.   c.     a. Set :     Zeros:  b. Set :      Zeros:  c. Set :   A fraction is zero when the numerator is zero:    Zero:   "
 },
@@ -1337,7 +1337,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-3.html#zeros-of-functions-10",
   "type": "Figure",
-  "number": "73",
+  "number": "167",
   "title": "",
   "body": " Graph of with zeros   Parabola with zeros labeled    "
 },
@@ -1355,7 +1355,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-4.html#intro-linear-equations-2",
   "type": "Definition",
-  "number": "74",
+  "number": "168",
   "title": "Linear Equation.",
   "body": " Linear Equation  An equation that can be written as , where , , are real numbers and and are not both .  "
 },
@@ -1364,7 +1364,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-4.html#vertical-lines-3",
   "type": "Figure",
-  "number": "75",
+  "number": "169",
   "title": "",
   "body": " Vertical Lines     "
 },
@@ -1373,7 +1373,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-4.html#slope-intercept-form-5",
   "type": "Definition",
-  "number": "76",
+  "number": "170",
   "title": "Slope of a Line.",
   "body": " Slope of a Line  The slope of a line through and is:   "
 },
@@ -1382,7 +1382,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-4.html#slope-intercept-form-8",
   "type": "Figure",
-  "number": "77",
+  "number": "171",
   "title": "",
   "body": " Types of Slopes     "
 },
@@ -1391,7 +1391,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-4.html#slope-examples-2",
   "type": "Example",
-  "number": "95",
+  "number": "172",
   "title": "",
   "body": "  Example: Draw a line with each of the following slopes:   (positive slope)  (negative slope)  (zero slope)      For : Start at the origin . Since the slope is , go up 2 units and right 1 unit to reach . Draw the line through these points.   For : Start at the origin . Since the slope is , go down 1 unit and right 2 units to reach . Draw the line through these points.   For : Start at . A zero slope means the line is horizontal. Draw a horizontal line through .                       "
 },
@@ -1400,7 +1400,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-4.html#slope-examples-3",
   "type": "Example",
-  "number": "96",
+  "number": "176",
   "title": "",
   "body": "  Find the slope of a line passing through the given points.  1.  and  2.  and the origin    1. Let and .   The slope is .  2. The origin is . Let and .   The slope is .   "
 },
@@ -1409,7 +1409,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-4.html#writing-equations-3",
   "type": "Example",
-  "number": "97",
+  "number": "177",
   "title": "",
   "body": "  Find the slope and write the equation of the line going through the given points.  1.  and  2.  and    1. Let and .   The slope is (horizontal line).  The equation is .  2. Let and .   The slope is undefined (vertical line).  The equation is .   "
 },
@@ -1418,7 +1418,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-4.html#writing-equations-5",
   "type": "Example",
-  "number": "98",
+  "number": "178",
   "title": "",
   "body": "  Example. Write the equation in slope-intercept form, then use the slope and -intercept to graph the line.     Step 1: Solve for .     The slope is and the -intercept is .  Step 2: Graph the line.   Graph of       "
 },
@@ -1427,7 +1427,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-4.html#equation-from-graph-2",
   "type": "Example",
-  "number": "99",
+  "number": "180",
   "title": "",
   "body": "  Find the equation of the line shown below.   Line on a coordinate plane         Step 1: Identify two points on the line. From the graph, the line passes through and .   Line with identified points      Step 2: Find the slope using the two points.   Step 3: Use point-slope form with .     The equation of the line is .   "
 },
@@ -1436,7 +1436,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-4.html#average-rate-of-change-6",
   "type": "Figure",
-  "number": "84",
+  "number": "183",
   "title": "",
   "body": " Average Rate of Change (Secant Line)     "
 },
@@ -1445,7 +1445,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-4.html#average-rate-of-change-7",
   "type": "Example",
-  "number": "100",
+  "number": "184",
   "title": "",
   "body": "  Find the average rate of change of from to .   and   This gives us the points and .     AROC Example:      The average rate of change is the slope of the secant line through and :   The average rate of change is .   "
 },
@@ -1463,7 +1463,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-5.html#intro-linear-applications-2",
   "type": "Definition",
-  "number": "86",
+  "number": "186",
   "title": "Linear Equation.",
   "body": " Linear Equation  An equation that can be written as , where , , are real numbers and and are not both .  "
 },
@@ -1481,7 +1481,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-5.html#parallel-perpendicular-lines-3",
   "type": "Definition",
-  "number": "87",
+  "number": "187",
   "title": "Parallel Lines.",
   "body": " Parallel Lines  Parallel lines have matching slopes .  If and represent the slopes of two nonvertical parallel lines, then .  "
 },
@@ -1490,7 +1490,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-5.html#parallel-perpendicular-lines-4",
   "type": "Definition",
-  "number": "88",
+  "number": "188",
   "title": "Perpendicular Lines.",
   "body": " Perpendicular Lines  Perpendicular lines have slopes that are negative reciprocals .  If and represent the slopes of two nonvertical perpendicular lines, then:   In other words, , or they are negative reciprocals of each other.  "
 },
@@ -1499,7 +1499,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-5.html#parallel-perpendicular-lines-5",
   "type": "Example",
-  "number": "101",
+  "number": "189",
   "title": "",
   "body": "  The slope of a line is given. Determine the slope of a line parallel and perpendicular to the given line, if possible.   1.   2.   3.       1.    Parallel slope:   Perpendicular slope: (negative reciprocal of is )   2.    Parallel slope:   Perpendicular slope: (negative reciprocal of is )   3.    Parallel slope: (horizontal lines are parallel)  Perpendicular slope: undefined (vertical line). A horizontal line is perpendicular to a vertical line.   "
 },
@@ -1508,7 +1508,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-5.html#parallel-perpendicular-lines-6",
   "type": "Example",
-  "number": "102",
+  "number": "190",
   "title": "",
   "body": "   Example. Give the equations of two lines that pass through . The first is parallel and the second perpendicular to the line defined by .   Hint: What do we need from the equation to the left?     Step 1: Identify the slope of the given line.  The line has slope .   Step 2: Find the slope of the parallel line.  Parallel lines have the same slope: .  Using point-slope form with :      The parallel line is .   Step 3: Find the slope of the perpendicular line.  Perpendicular slopes are negative reciprocals. Since , the perpendicular slope is .  Using point-slope form with :      The perpendicular line is .    Graph of the lines: (original), (parallel), and (perpendicular)       "
 },
@@ -1544,7 +1544,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-5.html#cost-revenue-profit-14",
   "type": "Definition",
-  "number": "90",
+  "number": "192",
   "title": "Break-Even Point.",
   "body": " Break-Even Point  The break-even point occurs when profit is zero, i.e., . At this point, .  "
 },
@@ -1553,7 +1553,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-5.html#cost-revenue-profit-15",
   "type": "Example",
-  "number": "103",
+  "number": "193",
   "title": "",
   "body": "   Example. A company invests to produce snow boots for dogs. Each set of boots costs to manufacture, package, and ship, and will sell for .   a. What is the Cost function?   b. What is the Revenue function?   c. What is the Profit function?   d. What is the profit if they produce and sell 1,000 sets of boots?   e. What is the profit if they produce and sell 2,000 sets of boots?   f. How many sets do they need to produce and sell to make profit? What is this number called?     a. The fixed cost is (the initial investment). The variable cost is (cost per set).    b. The selling price is .    c. Profit is Revenue minus Cost.      d. For :   The company loses (negative profit).   e. For :   The company makes profit.   f. Set :     The company needs to produce and sell sets of boots to break even. This is called the break-even point .   "
 },
@@ -1571,7 +1571,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#intro-transformations-4",
   "type": "Figure",
-  "number": "91",
+  "number": "194",
   "title": "",
   "body": " Linear Function:     "
 },
@@ -1580,7 +1580,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#linear-functions-2",
   "type": "Definition",
-  "number": "92",
+  "number": "195",
   "title": "Linear Function.",
   "body": " Linear Function  A function of the form has:   Domain: all real numbers  Range: all real numbers  -intercept: , -intercept:  Increasing if , decreasing if , constant if   "
 },
@@ -1589,7 +1589,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#linear-functions-3-1",
   "type": "Figure",
-  "number": "93",
+  "number": "196",
   "title": "",
   "body": " Increasing     "
 },
@@ -1598,7 +1598,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#linear-functions-3-2",
   "type": "Figure",
-  "number": "94",
+  "number": "197",
   "title": "",
   "body": " Constant     "
 },
@@ -1607,7 +1607,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#linear-functions-4",
   "type": "Figure",
-  "number": "95",
+  "number": "198",
   "title": "",
   "body": " Decreasing     "
 },
@@ -1625,7 +1625,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#constant-identity-functions-3",
   "type": "Definition",
-  "number": "96",
+  "number": "199",
   "title": "Constant Function.",
   "body": " Constant Function  A function of the form where is a constant.   Domain: all real numbers  Range:  Graph is a horizontal line   "
 },
@@ -1634,7 +1634,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#constant-identity-functions-4",
   "type": "Figure",
-  "number": "97",
+  "number": "200",
   "title": "",
   "body": " Constant Function:     "
 },
@@ -1643,7 +1643,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#constant-identity-functions-5",
   "type": "Definition",
-  "number": "98",
+  "number": "201",
   "title": "Identity Function.",
   "body": " Identity Function  A function of the form .   Domain: all real numbers  Range: all real numbers  Slope:  -intercept:   "
 },
@@ -1652,7 +1652,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#constant-identity-functions-6",
   "type": "Figure",
-  "number": "99",
+  "number": "202",
   "title": "",
   "body": " Identity Function:     "
 },
@@ -1661,7 +1661,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#quadratic-functions-2",
   "type": "Definition",
-  "number": "100",
+  "number": "203",
   "title": "Squaring Function.",
   "body": " Squaring Function      Domain: all real numbers  Range:  Even function  Intercept at  Decreasing on , increasing on  Symmetric about the -axis   "
 },
@@ -1670,7 +1670,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#quadratic-functions-3",
   "type": "Figure",
-  "number": "101",
+  "number": "204",
   "title": "",
   "body": " Graph of     "
 },
@@ -1679,7 +1679,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#cubic-functions-2",
   "type": "Definition",
-  "number": "102",
+  "number": "205",
   "title": "Cubic Function.",
   "body": " Cubic Function      Domain: all real numbers  Range: all real numbers  Odd function  Intercept at  Increasing on  Symmetric about the origin   "
 },
@@ -1688,7 +1688,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#cubic-functions-3",
   "type": "Figure",
-  "number": "103",
+  "number": "206",
   "title": "",
   "body": " Graph of     "
 },
@@ -1697,7 +1697,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#square-root-functions-2",
   "type": "Definition",
-  "number": "104",
+  "number": "207",
   "title": "Square Root Function.",
   "body": " Square Root Function      Domain:  Range:  Intercept at  Increasing on   "
 },
@@ -1706,7 +1706,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#square-root-functions-3",
   "type": "Figure",
-  "number": "105",
+  "number": "208",
   "title": "",
   "body": " Graph of     "
 },
@@ -1715,7 +1715,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#reciprocal-functions-2",
   "type": "Definition",
-  "number": "106",
+  "number": "209",
   "title": "Reciprocal Function.",
   "body": " Reciprocal Function      Domain:  Range:  Odd function  No intercepts  Decreasing on and  Symmetric about the origin   "
 },
@@ -1724,7 +1724,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#reciprocal-functions-3",
   "type": "Figure",
-  "number": "107",
+  "number": "210",
   "title": "",
   "body": " Graph of     "
 },
@@ -1742,7 +1742,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#greatest-integer-function-10",
   "type": "Definition",
-  "number": "108",
+  "number": "211",
   "title": "Greatest Integer Function.",
   "body": " Greatest Integer Function      Domain: all real numbers  Range: all integers  -intercept at  -intercepts in  Constant between consecutive integers  Jumps vertically one unit at each integer   "
 },
@@ -1751,7 +1751,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#greatest-integer-function-11",
   "type": "Figure",
-  "number": "109",
+  "number": "212",
   "title": "",
   "body": " Graph of     "
 },
@@ -1760,7 +1760,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#parent-functions-summary-2-1",
   "type": "Figure",
-  "number": "110",
+  "number": "213",
   "title": "",
   "body": " Constant     "
 },
@@ -1769,7 +1769,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#parent-functions-summary-2-2",
   "type": "Figure",
-  "number": "111",
+  "number": "214",
   "title": "",
   "body": " Identity     "
 },
@@ -1778,7 +1778,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#parent-functions-summary-2-3",
   "type": "Figure",
-  "number": "112",
+  "number": "215",
   "title": "",
   "body": " Absolute Value     "
 },
@@ -1787,7 +1787,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#parent-functions-summary-3-1",
   "type": "Figure",
-  "number": "113",
+  "number": "216",
   "title": "",
   "body": " Square Root     "
 },
@@ -1796,7 +1796,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#parent-functions-summary-3-2",
   "type": "Figure",
-  "number": "114",
+  "number": "217",
   "title": "",
   "body": " Squaring     "
 },
@@ -1805,7 +1805,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#parent-functions-summary-3-3",
   "type": "Figure",
-  "number": "115",
+  "number": "218",
   "title": "",
   "body": " Cubic     "
 },
@@ -1814,7 +1814,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#parent-functions-summary-4-1",
   "type": "Figure",
-  "number": "116",
+  "number": "219",
   "title": "",
   "body": " Reciprocal     "
 },
@@ -1823,7 +1823,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#parent-functions-summary-4-2",
   "type": "Figure",
-  "number": "117",
+  "number": "220",
   "title": "",
   "body": " Greatest Integer     "
 },
@@ -1841,7 +1841,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#transformations-shifts-9",
   "type": "Figure",
-  "number": "118",
+  "number": "221",
   "title": "",
   "body": " Vertical Shift:     "
 },
@@ -1850,7 +1850,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#transformations-shifts-13",
   "type": "Figure",
-  "number": "119",
+  "number": "222",
   "title": "",
   "body": " Horizontal Shift:     "
 },
@@ -1859,7 +1859,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#transformations-shifts-14",
   "type": "Definition",
-  "number": "120",
+  "number": "223",
   "title": "Vertical and Horizontal Shifts.",
   "body": " Vertical and Horizontal Shifts  Let , be positive real numbers. Vertical and horizontal shifts in the graph of are represented as follows.   Vertical shift units upward:  Vertical shift units downward:  Horizontal shift units to the right:  Horizontal shift units to the left:   "
 },
@@ -1868,7 +1868,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#transformations-shifts-15",
   "type": "Example",
-  "number": "104",
+  "number": "224",
   "title": "",
   "body": "   Example. Use the graph of to sketch the graph of .    Relative to the graph of , the graph of involves a left shift of two units and an upward shift of one unit .          "
 },
@@ -1886,7 +1886,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#transformations-reflections-4",
   "type": "Figure",
-  "number": "122",
+  "number": "226",
   "title": "",
   "body": " Reflection across the -axis:     "
 },
@@ -1895,7 +1895,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#transformations-reflections-5",
   "type": "Definition",
-  "number": "123",
+  "number": "227",
   "title": "Reflections in the Coordinate Axes.",
   "body": " Reflections in the Coordinate Axes  Reflections in the coordinate axes of the graph of are represented as follows.   Reflection in the -axis:  Reflection in the -axis:   "
 },
@@ -1922,7 +1922,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#nonrigid-transformations-5",
   "type": "Definition",
-  "number": "124",
+  "number": "228",
   "title": "Vertical Stretch and Shrink.",
   "body": " Vertical Stretch and Shrink  Let be a positive real number. Vertical stretch or shrink in the graph of are represented as follows.   Vertical stretch if :  Vertical shrink if :    Parameter : Multiplying the function outside changes vertical height; multiplying inside changes horizontal width. Values make the graph steeper\/narrower, while makes it flatter\/wider.  "
 },
@@ -1931,7 +1931,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#nonrigid-transformations-6",
   "type": "Definition",
-  "number": "125",
+  "number": "229",
   "title": "Horizontal Stretch and Shrink.",
   "body": " Horizontal Stretch and Shrink  Let be a positive real number. Horizontal shrink or stretch in the graph of are represented as follows.   Horizontal shrink if :  Horizontal stretch if :   "
 },
@@ -1949,7 +1949,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#nonrigid-transformations-9",
   "type": "Figure",
-  "number": "126",
+  "number": "230",
   "title": "",
   "body": " Vertical Stretch:     "
 },
@@ -1967,7 +1967,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#nonrigid-transformations-12",
   "type": "Figure",
-  "number": "127",
+  "number": "231",
   "title": "",
   "body": " Vertical Shrink:     "
 },
@@ -1976,7 +1976,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#nonrigid-transformations-13",
   "type": "Definition",
-  "number": "128",
+  "number": "232",
   "title": "Order of Transformations.",
   "body": " Order of Transformations  If there is more than one transformation, follow this order:   Translate the graph horizontally.  Stretch or shrink the graph.  Reflect the graph across an axis.  Translate the graph vertically.   "
 },
@@ -1985,7 +1985,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#example-sqrt-plus-4-2",
   "type": "Example",
-  "number": "105",
+  "number": "233",
   "title": "",
   "body": "  Consider the function:    What is the \"Parent Function\"?  What transformations have been applied?  Sketch a graph of the Parent function and the transformed function without plotting points.      1. The parent function is (square root function).   2. The is outside the radical, so it shifts the graph up 4 units .   (shift up by 4)       "
 },
@@ -1994,7 +1994,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#example-abs-plus-3-minus-1-2",
   "type": "Example",
-  "number": "106",
+  "number": "235",
   "title": "",
   "body": "  Consider the function:    What is the \"Parent Function\"?  What transformations have been applied?  Sketch a graph of the Parent function and the transformed function without plotting points.      1. The parent function is (absolute value function).   2. The inside the absolute value shifts the graph left 3 units ; the outside shifts it down 1 unit .   (left 3, down 1)       "
 },
@@ -2003,7 +2003,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-6.html#example-negative-3-squared-plus-1-2",
   "type": "Example",
-  "number": "107",
+  "number": "237",
   "title": "",
   "body": "  Consider the function:    What is the \"Parent Function\"?  What transformations have been applied?  Sketch a graph of the Parent function and the transformed function without plotting points.      1. The parent function is (squaring\/quadratic function).   2. The transformations are:   : shift right 2 units  : reflect across the -axis and vertical stretch by 3  : shift up 1 unit          "
 },
@@ -2021,7 +2021,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-7.html#symmetry-5",
   "type": "Definition",
-  "number": "132",
+  "number": "239",
   "title": "Symmetry in Equations.",
   "body": " Symmetry in Equations  Consider an equation in the variables and .    Symmetric with respect to the -axis: Substituting for results in an equivalent equation.   Symmetric with respect to the -axis: Substituting for results in an equivalent equation.   Symmetric with respect to the origin: Substituting for and for results in an equivalent equation.   "
 },
@@ -2030,7 +2030,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-7.html#symmetry-6",
   "type": "Example",
-  "number": "108",
+  "number": "240",
   "title": "",
   "body": "  Determine whether the graph of the equation is symmetric to the -axis, -axis, origin, or none of these.    Substitute for   Substitute for   Substitute for and for    Graph of          Substitute for :  The equation is unchanged, so the graph is symmetric with respect to the -axis .   Substitute for :  The equation is not equivalent, so the graph is not symmetric with respect to the -axis.   Substitute for and for :  The equation is not equivalent, so the graph is not symmetric with respect to the origin.  Therefore, the graph of is symmetric with respect to the -axis only.   "
 },
@@ -2039,7 +2039,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-7.html#symmetry-7",
   "type": "Example",
-  "number": "109",
+  "number": "242",
   "title": "",
   "body": "  Determine whether the graph of the equation is symmetric to the -axis, -axis, origin, or none of these.    Substitute for   Substitute for   Substitute for and for    Graph of          Substitute for :  The equation is not equivalent, so the graph is not symmetric with respect to the -axis.   Substitute for :  The equation is not equivalent, so the graph is not symmetric with respect to the -axis.   Substitute for and for :  The equation is unchanged, so the graph is symmetric with respect to the origin .  Therefore, the graph of is symmetric with respect to the origin only.   "
 },
@@ -2048,7 +2048,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-7.html#even-odd-functions-3",
   "type": "Definition",
-  "number": "135",
+  "number": "244",
   "title": "Even Function.",
   "body": " Even Function   for all in the domain of .  The graph is symmetric with respect to the -axis . Substituting for results in an equivalent equation.  "
 },
@@ -2057,7 +2057,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-7.html#even-odd-functions-4",
   "type": "Definition",
-  "number": "136",
+  "number": "245",
   "title": "Odd Function.",
   "body": " Odd Function   for all in the domain of .  The graph is symmetric with respect to the origin . Substituting for and for results in an equivalent equation.  "
 },
@@ -2066,7 +2066,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-7.html#even-odd-functions-5",
   "type": "Example",
-  "number": "110",
+  "number": "246",
   "title": "",
   "body": "  Determine if the function is even, odd, or neither.   1.   2.   3.      1.     Since , the function is even .   2.     and , so the function is neither even nor odd.   3.     Since , the function is odd .   "
 },
@@ -2075,7 +2075,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-7.html#even-odd-functions-6",
   "type": "Example",
-  "number": "111",
+  "number": "247",
   "title": "",
   "body": "  Determine if each function shown is even, odd, or neither.    Graph 1       Graph 2          Graph 1: The graph is symmetric with respect to the -axis. For every point on the graph, the point is also on the graph. Therefore, this function is even .   Graph 2: The graph is symmetric with respect to the origin. For every point on the graph, the point is also on the graph. Therefore, this function is odd .   "
 },
@@ -2084,7 +2084,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-7.html#piecewise-functions-3",
   "type": "Definition",
-  "number": "139",
+  "number": "250",
   "title": "Piecewise Defined Function.",
   "body": " Piecewise Defined Function  A function that is defined differently on different intervals. That is, different \"pieces\" of the domain have different rules.  "
 },
@@ -2093,7 +2093,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-7.html#piecewise-functions-4",
   "type": "Example",
-  "number": "112",
+  "number": "251",
   "title": "",
   "body": "  Given the piecewise function:   Evaluate:   a.   b.   c.     Graph of        a.  : Since , use .   b.  : Since , use .   c.  : Since , use .    "
 },
@@ -2102,7 +2102,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-7.html#piecewise-functions-5",
   "type": "Example",
-  "number": "113",
+  "number": "253",
   "title": "",
   "body": "  Evaluate the piecewise function:   Find:   a.   b.   c.   d.   e.      a.  is in , so .  b.  is in , so .  c.  is in , so .  d.  is in , so .  e.  is not in the domain, so is undefined .   "
 },
@@ -2111,7 +2111,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-7.html#increasing-decreasing-4",
   "type": "Figure",
-  "number": "141",
+  "number": "254",
   "title": "",
   "body": " Increasing, Decreasing, and Constant Behavior     "
 },
@@ -2120,7 +2120,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-7.html#increasing-decreasing-6",
   "type": "Definition",
-  "number": "142",
+  "number": "255",
   "title": "Increasing, Decreasing, and Constant Functions.",
   "body": " Increasing, Decreasing, and Constant Functions  A function is increasing on an interval if, for any and in the interval,   A function is decreasing on an interval if, for any and in the interval,   A function is constant on an interval if, for any and in the interval,   "
 },
@@ -2129,7 +2129,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-7.html#increasing-decreasing-7",
   "type": "Figure",
-  "number": "143",
+  "number": "256",
   "title": "",
   "body": " Visualizing Increasing, Decreasing, and Constant     "
 },
@@ -2138,7 +2138,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-7.html#increasing-decreasing-9",
   "type": "Example",
-  "number": "114",
+  "number": "257",
   "title": "",
   "body": "  Give the interval where is:   A. Increasing   B. Decreasing   C. Constant   Graph of         A.  is increasing on and .   B.  is decreasing on .   C.  is never constant.   "
 },
@@ -2156,7 +2156,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-7.html#maxima-minima-4",
   "type": "Definition",
-  "number": "145",
+  "number": "259",
   "title": "Relative Minimum and Relative Maximum.",
   "body": " Relative Minimum and Relative Maximum  A function value is called a relative minimum of if there exists an interval that contains such that   A function value is called a relative maximum of if there exists an interval that contains such that   "
 },
@@ -2165,7 +2165,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-7.html#maxima-minima-5",
   "type": "Figure",
-  "number": "146",
+  "number": "260",
   "title": "",
   "body": " Relative Maxima and Minima     "
 },
@@ -2174,7 +2174,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-7.html#maxima-minima-6",
   "type": "Example",
-  "number": "115",
+  "number": "261",
   "title": "",
   "body": "  What are the maxima or minima for the function? Can we find the exact value?   Graph of        The graph of is a parabola that opens upward.  The vertex occurs at:    Therefore, the function has a relative minimum at .  There is no relative maximum since the parabola opens upward and extends to infinity.   "
 },
@@ -2192,7 +2192,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-8.html#operations-on-functions-4",
   "type": "Definition",
-  "number": "148",
+  "number": "263",
   "title": "Sum, Difference, Product, and Quotient of Functions.",
   "body": " Sum, Difference, Product, and Quotient of Functions  Let and be functions with overlapping domains. Then:    Sum:     Difference:     Product:     Quotient:     "
 },
@@ -2201,7 +2201,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-8.html#operations-on-functions-5",
   "type": "Example",
-  "number": "116",
+  "number": "264",
   "title": "",
   "body": "  Let and . Find:  1.   2.   3.   4.   5.   6.     1.   2.   3.   4.   5.   6.   Notice that , as expected.   "
 },
@@ -2210,7 +2210,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-8.html#operations-on-functions-6",
   "type": "Example",
-  "number": "117",
+  "number": "265",
   "title": "",
   "body": "  Let , , and . Find:  1.   2.   3.   4.   5.   6.     1.   2.   3.   4.   5.   6.    "
 },
@@ -2228,7 +2228,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-8.html#difference-quotient-7",
   "type": "Figure",
-  "number": "149",
+  "number": "266",
   "title": "",
   "body": " Difference Quotient: Secant Line     "
 },
@@ -2237,7 +2237,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-8.html#difference-quotient-8",
   "type": "Example",
-  "number": "118",
+  "number": "267",
   "title": "",
   "body": "  Find for .  Describe the graph of . How does this agree with what you found for the difference quotient?     Step 1: Find .    Step 2: Substitute into the difference quotient.   The graph of is a line with slope . The difference quotient gives the slope , which matches the slope of the line.   Graph of       "
 },
@@ -2246,7 +2246,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-8.html#difference-quotient-9",
   "type": "Example",
-  "number": "119",
+  "number": "269",
   "title": "",
   "body": "  Find for .  Consider what happens as . Describe what that means.     Step 1: Find .     Step 2: Substitute into the difference quotient.     Step 3: Consider what happens as .   As , the secant line approaches the tangent line to the parabola at the point . The difference quotient approaches the instantaneous rate of change (the derivative) at that point. For , the derivative is , which gives the slope of the tangent line at any point .   Graph of with tangent line at       "
 },
@@ -2273,7 +2273,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-8.html#composition-of-functions-6",
   "type": "Figure",
-  "number": "152",
+  "number": "271",
   "title": "",
   "body": " Store A: Function Composition     "
 },
@@ -2282,7 +2282,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-8.html#composition-of-functions-10",
   "type": "Figure",
-  "number": "153",
+  "number": "272",
   "title": "",
   "body": " Store B: Function Composition     "
 },
@@ -2291,7 +2291,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-8.html#composition-of-functions-15",
   "type": "Definition",
-  "number": "154",
+  "number": "273",
   "title": "Composition of Functions.",
   "body": " Composition of Functions  The composition of and , denoted , is defined as:   The domain of is the set of all in the domain of such that is in the domain of .  "
 },
@@ -2300,7 +2300,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-8.html#composition-of-functions-16",
   "type": "Example",
-  "number": "120",
+  "number": "274",
   "title": "",
   "body": "  Let and . Evaluate and simplify:  1.   2.     1.      2.      "
 },
@@ -2318,7 +2318,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-8.html#decomposition-4",
   "type": "Example",
-  "number": "121",
+  "number": "275",
   "title": "",
   "body": "  Given , find functions and such that .    We need to decompose into two functions. Let:   Then:   Therefore, and .   "
 },
@@ -2327,7 +2327,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-8.html#decomposition-5",
   "type": "Example",
-  "number": "122",
+  "number": "276",
   "title": "",
   "body": "  Given , find functions and such that .    We need to decompose into two functions. Let:   Then:   Therefore, and .   "
 },
@@ -2336,7 +2336,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-2-8.html#final-example-6",
   "type": "Figure",
-  "number": "155",
+  "number": "277",
   "title": "",
   "body": " Graphs of and     "
 },
@@ -2354,7 +2354,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-1.html#intro-quadratic-functions-2",
   "type": "Definition",
-  "number": "156",
+  "number": "278",
   "title": "Quadratic Function.",
   "body": " Quadratic Function  A quadratic function is a function that can be written in the form   That is, it is an equation of degree 2.  "
 },
@@ -2372,7 +2372,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-1.html#intro-quadratic-functions-5-1",
   "type": "Figure",
-  "number": "157",
+  "number": "279",
   "title": "",
   "body": " Parabola Opens Upward     "
 },
@@ -2381,7 +2381,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-1.html#intro-quadratic-functions-5-2",
   "type": "Figure",
-  "number": "158",
+  "number": "280",
   "title": "",
   "body": " Parabola Opens Downward     "
 },
@@ -2390,7 +2390,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-1.html#vertex-form-2",
   "type": "Definition",
-  "number": "159",
+  "number": "281",
   "title": "Vertex Form.",
   "body": " Vertex Form  The function may be written in vertex form as   In this case, the vertex is at the point .   Notice:    The function is written as .  Axis of symmetry: .   "
 },
@@ -2399,7 +2399,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-1.html#vertex-form-3-1",
   "type": "Figure",
-  "number": "160",
+  "number": "282",
   "title": "",
   "body": " Vertex with     "
 },
@@ -2408,7 +2408,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-1.html#vertex-form-3-2",
   "type": "Figure",
-  "number": "161",
+  "number": "283",
   "title": "",
   "body": " Vertex with     "
 },
@@ -2417,7 +2417,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-1.html#example-graph-vertex-form-2",
   "type": "Example",
-  "number": "123",
+  "number": "284",
   "title": "",
   "body": "  Graph the quadratic function   Identify the vertex, - and -intercepts, and axis of symmetry.     Vertex:     Axis of symmetry:     -intercepts:  ≈ and    -intercept:     Graph of       "
 },
@@ -2426,7 +2426,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-1.html#example-graph-vertex-form-negative-2",
   "type": "Example",
-  "number": "124",
+  "number": "286",
   "title": "",
   "body": "  Graph the quadratic function   Identify the vertex, - and -intercepts, and axis of symmetry.     Vertex:     Axis of symmetry:     -intercepts:  and    -intercept:     Graph of       "
 },
@@ -2435,7 +2435,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-1.html#completing-square-4",
   "type": "Example",
-  "number": "125",
+  "number": "288",
   "title": "",
   "body": "  Use the technique of completing the square to write in vertex form.  Identify the vertex, intercepts, and sketch the function.     Vertex form:     Vertex:     Axis of symmetry:     -intercepts:  and    -intercept:  – far above the grid   Graph of       "
 },
@@ -2444,7 +2444,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-1.html#example-completing-square-2",
   "type": "Example",
-  "number": "126",
+  "number": "290",
   "title": "",
   "body": "  Use the technique of completing the square to write in vertex form.  Identify the vertex, intercepts, and sketch the function.     Vertex form:     Vertex:     Axis of symmetry:     -intercepts:  and    -intercept:     Graph of       "
 },
@@ -2453,7 +2453,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-1.html#vertex-formula-3",
   "type": "Definition",
-  "number": "166",
+  "number": "292",
   "title": "Vertex Formula.",
   "body": " Vertex Formula  For , , the -coordinate of the vertex is:   The -coordinate is .  "
 },
@@ -2462,7 +2462,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-1.html#you-try-vertex-both-methods-2",
   "type": "Example",
-  "number": "127",
+  "number": "293",
   "title": "",
   "body": "  Given , find the vertex by:   Completing the square  The vertex formula      Method 1: Completing the Square    Vertex:   Method 2: Vertex Formula     Vertex:   Graph of       "
 },
@@ -2480,7 +2480,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-2.html#intro-polynomial-functions-2",
   "type": "Definition",
-  "number": "168",
+  "number": "295",
   "title": "Polynomial Function.",
   "body": " Polynomial Function  Let be a nonnegative integer and let be real numbers with . The function given by   is called a polynomial function of with degree  .  Polynomial functions are classified by degree. For instance, a constant function with has degree 0, and a linear function with has degree 1. When dealing with polynomials in one variable, the degree is the same as the largest exponent .  "
 },
@@ -2489,7 +2489,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-2.html#properties-polynomials-3",
   "type": "Definition",
-  "number": "169",
+  "number": "296",
   "title": "Continuous.",
   "body": " Continuous  The graph of a polynomial function is continuous. This means that the graph has no breaks, holes, or gaps. You can draw the graph without lifting your pencil.  "
 },
@@ -2498,7 +2498,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-2.html#properties-polynomials-4",
   "type": "Figure",
-  "number": "170",
+  "number": "297",
   "title": "",
   "body": " A continuous graph (polynomial)     "
 },
@@ -2507,7 +2507,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-2.html#properties-polynomials-5",
   "type": "Figure",
-  "number": "171",
+  "number": "298",
   "title": "",
   "body": " A discontinuous graph (piecewise defined, not polynomial)     "
 },
@@ -2516,7 +2516,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-2.html#properties-polynomials-6",
   "type": "Definition",
-  "number": "172",
+  "number": "299",
   "title": "Smooth.",
   "body": " Smooth  The graph of a polynomial function has only smooth, rounded turns. It cannot have sharp corners.  "
 },
@@ -2525,7 +2525,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-2.html#properties-polynomials-7",
   "type": "Figure",
-  "number": "173",
+  "number": "300",
   "title": "",
   "body": " A smooth graph (polynomial)     "
 },
@@ -2534,7 +2534,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-2.html#properties-polynomials-8",
   "type": "Figure",
-  "number": "174",
+  "number": "301",
   "title": "",
   "body": " A graph with a sharp corner (not polynomial)     The function has a sharp turn at and is not a polynomial function.  "
 },
@@ -2543,7 +2543,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-2.html#monomials-4-1",
   "type": "Figure",
-  "number": "175",
+  "number": "302",
   "title": "",
   "body": "     "
 },
@@ -2552,7 +2552,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-2.html#monomials-4-2",
   "type": "Figure",
-  "number": "176",
+  "number": "303",
   "title": "",
   "body": "     "
 },
@@ -2561,7 +2561,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-2.html#monomials-4-3",
   "type": "Figure",
-  "number": "177",
+  "number": "304",
   "title": "",
   "body": "     "
 },
@@ -2570,7 +2570,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-2.html#monomials-5-1",
   "type": "Figure",
-  "number": "178",
+  "number": "305",
   "title": "",
   "body": "     "
 },
@@ -2579,7 +2579,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-2.html#monomials-5-2",
   "type": "Figure",
-  "number": "179",
+  "number": "306",
   "title": "",
   "body": "     "
 },
@@ -2588,7 +2588,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-2.html#monomials-5-3",
   "type": "Figure",
-  "number": "180",
+  "number": "307",
   "title": "",
   "body": "     "
 },
@@ -2597,7 +2597,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-2.html#monomials-6-1",
   "type": "Figure",
-  "number": "181",
+  "number": "308",
   "title": "",
   "body": "     "
 },
@@ -2606,7 +2606,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-2.html#monomials-6-2",
   "type": "Figure",
-  "number": "182",
+  "number": "309",
   "title": "",
   "body": "     "
 },
@@ -2624,7 +2624,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-2.html#end-behavior-4",
   "type": "Figure",
-  "number": "183",
+  "number": "310",
   "title": "",
   "body": " Leading Coefficient Test   "
 },
@@ -2633,7 +2633,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-2.html#end-behavior-examples-2",
   "type": "Example",
-  "number": "128",
+  "number": "311",
   "title": "",
   "body": "  Describe the right-hand and left-hand behavior of the graph of each function.   a.   b.     c.   d.      a.  has degree 3 (odd) and leading coefficient -1 (negative). So the graph falls to the right and rises to the left.   Graph of      b.  has degree 4 (even) and leading coefficient 1 (positive). So the graph rises to the right and rises to the left.    Graph of      c.  has degree 5 (odd) and leading coefficient 1 (positive). So the graph rises to the right and falls to the left.    Graph of      d.  has degree 1+3=4 (even) and leading coefficient -2 (negative). So the graph falls to the right and falls to the left.    Graph of       "
 },
@@ -2642,7 +2642,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-2.html#zeros-of-polynomials-2",
   "type": "Definition",
-  "number": "188",
+  "number": "316",
   "title": "Zeros of a Polynomial.",
   "body": " Zeros of a Polynomial  The values of in the domain of for which are called the zeros of the function. These are the real solutions (or roots) of the equation and correspond to the -intercepts of the graph of .  "
 },
@@ -2651,7 +2651,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-2.html#zeros-of-polynomials-5",
   "type": "Example",
-  "number": "129",
+  "number": "317",
   "title": "",
   "body": "  Find the zeros of by factoring.    Factor by grouping:   Zeros: , , .    Graph of       "
 },
@@ -2660,7 +2660,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-2.html#multiplicity-2",
   "type": "Definition",
-  "number": "190",
+  "number": "319",
   "title": "Multiplicity.",
   "body": " Multiplicity  If a polynomial function has a factor that appears exactly times, then is a zero of multiplicity  . In other words, if the factor is a factor of the polynomial, is a zero of multiplicity of .  If is a zero of odd multiplicity, then the graph crosses the -axis at .  If is a zero of even multiplicity, then the graph touches the -axis at (bounces off).  "
 },
@@ -2669,7 +2669,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-2.html#multiplicity-4-1",
   "type": "Figure",
-  "number": "191",
+  "number": "320",
   "title": "",
   "body": " cross (odd multiplicity)     "
 },
@@ -2678,7 +2678,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-2.html#multiplicity-4-2",
   "type": "Figure",
-  "number": "192",
+  "number": "321",
   "title": "",
   "body": " touches (even multiplicity)     "
 },
@@ -2687,7 +2687,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-2.html#multiplicity-4-3",
   "type": "Figure",
-  "number": "193",
+  "number": "322",
   "title": "",
   "body": " crosses (odd multiplicity)     "
 },
@@ -2696,7 +2696,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-2.html#example-graph-polynomial-1-2",
   "type": "Example",
-  "number": "130",
+  "number": "323",
   "title": "",
   "body": "  Given , find all real zeros, determine their multiplicity, then graph the function.   Steps:    Factored form  End Behavior  Intercepts (y-intercept and x-intercepts with multiplicities)  Check points      Factored form:     End Behavior: Degree 3 (odd), leading coefficient 3 (positive) → falls to the left, rises to the right.   Intercepts:    y-intercept:  x-intercepts: (multiplicity 1, odd → crosses), (multiplicity 2, even → touches)    Check points: e.g., , .    Graph of       "
 },
@@ -2705,7 +2705,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-2.html#example-graph-polynomial-2-1",
   "type": "Example",
-  "number": "131",
+  "number": "325",
   "title": "",
   "body": "  Given , find all real zeros, determine their multiplicity, then graph the function.   Steps:    Factored form  End Behavior  Intercepts (y-intercept and x-intercepts with multiplicities)  Check points      Factored form:     End Behavior: Degree 4 (even), leading coefficient 2 (positive) → rises to the right and left.   Intercepts:    y-intercept:  x-intercepts: (multiplicity 1, odd → crosses), (multiplicity 1, odd → crosses).  The factor has no real zeros.     Graph of       "
 },
@@ -2723,7 +2723,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-3.html#intro-polynomial-division-5",
   "type": "Problem-Solving Strategy",
-  "number": "196",
+  "number": "327",
   "title": "Long Division Steps.",
   "body": " Long Division Steps    Divide the first digit by the divisor (5). Write the result on top (1).  Multiply the result from step 1 by 5 and write below the dividend.  Subtract (6 − 5) and \"bring down\" the next digit.  Divide the result from step 3 by the divisor and back to step 3.  Repeat until no digits remain.    "
 },
@@ -2741,7 +2741,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-3.html#intro-polynomial-division-8",
   "type": "Figure",
-  "number": "197",
+  "number": "328",
   "title": "",
   "body": " Long division of     "
 },
@@ -2750,7 +2750,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-3.html#division-algorithm-2",
   "type": "Definition",
-  "number": "198",
+  "number": "329",
   "title": "Division Algorithm.",
   "body": " Division Algorithm  Suppose that and are polynomials where and the degree of is less than or equal to the degree of .  Then there exists unique polynomials and such that:   or   where the degree of is zero or of lesser degree than .  "
 },
@@ -2768,7 +2768,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-3.html#long-division-2",
   "type": "Problem-Solving Strategy",
-  "number": "199",
+  "number": "330",
   "title": "Long Division Strategy.",
   "body": " Long Division Strategy    To begin the division: Always write the terms of the dividend and divisor in descending order with place holders for missing powers of .  Divide the FIRST TERM of the dividend by the FIRST TERM of the divisor. Place the result on the top of the division symbol.  Multiply the entire divisor by the new term in the quotient and write the result under the dividend.  Subtract and bring down the next term.  Repeat until the difference is of lower degree than the divisor (or zero).    "
 },
@@ -2777,7 +2777,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-3.html#long-division-3",
   "type": "Example",
-  "number": "132",
+  "number": "331",
   "title": "",
   "body": "  Use Polynomial Long Division to divide .     Polynomial long division of      Thus, we can write the result in two equivalent forms:   and    "
 },
@@ -2786,7 +2786,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-3.html#long-division-4",
   "type": "Example",
-  "number": "133",
+  "number": "333",
   "title": "",
   "body": "  Use Polynomial Division to divide .     Polynomial long division of      Thus,   and    "
 },
@@ -2795,7 +2795,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-3.html#long-division-5",
   "type": "Example",
-  "number": "134",
+  "number": "335",
   "title": "",
   "body": "  Divide: .     Polynomial long division of      Since the remainder is 0, we have   and    "
 },
@@ -2804,7 +2804,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-3.html#synthetic-division-5",
   "type": "Problem-Solving Strategy",
-  "number": "203",
+  "number": "337",
   "title": "Synthetic Division Strategy.",
   "body": " Synthetic Division Strategy    Write the value of in a box.  Write the coefficients of the dividend to the right of the box.  Skip a line and draw a horizontal line below the list of coefficients.  Bring down the leading coefficient from the dividend and write it below the line.  Multiply the value of by the number below the line. Write the result in the next column above the line.  Add the numbers in the column above the line, and write the result below the line.    Repeat steps 5 and 6 until all columns have been completed. The right-most number below the line is the remainder. The other numbers below the line are the coefficients of the quotient in order by the degree of the term. Since the divisor is linear (1st-degree), the degree of the quotient is 1 less than the degree of the dividend.  "
 },
@@ -2813,7 +2813,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-3.html#synthetic-division-6",
   "type": "Example",
-  "number": "135",
+  "number": "338",
   "title": "",
   "body": "  Divide using synthetic division: .       The remainder is .  Thus,   and    "
 },
@@ -2822,7 +2822,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-3.html#synthetic-division-7",
   "type": "Example",
-  "number": "136",
+  "number": "339",
   "title": "",
   "body": "  Divide using synthetic division: .       The remainder is 0, so is a factor.  Thus,   and    "
 },
@@ -2831,7 +2831,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-3.html#factor-theorem-7",
   "type": "Example",
-  "number": "137",
+  "number": "340",
   "title": "",
   "body": "  Given that 3 and are roots of , construct a polynomial .    If 3 and are roots, then and are factors.  So .  (Any nonzero constant multiple of this polynomial would also work.)   "
 },
@@ -2840,7 +2840,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-3.html#factor-theorem-8",
   "type": "Example",
-  "number": "138",
+  "number": "341",
   "title": "",
   "body": "  Use the factor theorem to determine if is a factor of .    Evaluate :   Since ,  is a factor of .   "
 },
@@ -2849,7 +2849,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-3.html#putting-it-all-together-2",
   "type": "Example",
-  "number": "139",
+  "number": "342",
   "title": "",
   "body": "  Use the factor theorem to show is a factor of . Then, factor completely, find ALL the zeros and sketch a graph.     Step 1: Verify is a factor.   Evaluate :   Since , is a factor.   Step 2: Divide.   Using synthetic division:   So .   Step 3: Factor completely.    Therefore:    Step 4: End Behavior.   Degree 3 (odd), leading coefficient 6 (positive) → falls to the left, rises to the right.   Step 5: Zeros.    , multiplicity 1 (crosses)  , multiplicity 1 (crosses)  , multiplicity 1 (crosses)    Step 6: y-intercept.      Graph of       "
 },
@@ -2867,7 +2867,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-4.html#intro-factor-theorem-4",
   "type": "Definition",
-  "number": "205",
+  "number": "344",
   "title": "Factor Theorem.",
   "body": " Factor Theorem  Let be a polynomial.   If , then is a factor of .  If is a factor of , then .   Notice that the theorem works in both directions — factors and zeros are equivalent statements.  "
 },
@@ -2876,7 +2876,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-4.html#intro-factor-theorem-5",
   "type": "Example",
-  "number": "140",
+  "number": "345",
   "title": "",
   "body": "  Factor given that is a factor.    Since is a factor, we divide by using synthetic division:   This tells us that:   The remaining factor is in \"quadratic form\" (it looks like a quadratic in ), so we can factor it:   Therefore:   The zeros are .   "
 },
@@ -2885,7 +2885,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-4.html#rational-zero-theorem-3",
   "type": "Definition",
-  "number": "206",
+  "number": "346",
   "title": "Rational Zero Theorem.",
   "body": " Rational Zero Theorem  If has integer coefficients and , and if (written in lowest terms) is a rational zero of , then is a factor of the constant term and is a factor of the leading coefficient .  If a rational zero exists for a polynomial, then it must be of the form:   "
 },
@@ -2894,7 +2894,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-4.html#rational-zero-theorem-5",
   "type": "Example",
-  "number": "141",
+  "number": "347",
   "title": "",
   "body": "  Given , find the zeros (that is, factor completely) and their multiplicities, then sketch its graph.     Step 1: List possible rational zeros.   The constant term is and the leading coefficient is .    Step 2: Test possible zeros using the Factor Theorem.   Start with :   Since , is a zero, so is a factor. Divide:   This gives us: .   Step 3: Test another possible zero on the cubic factor.   Test :   Since , is a zero, so is a factor. Divide:   Now we have a quadratic factor: .   Step 4: Factor the quadratic.     Step 5: Write the complete factorization.     Step 6: Identify zeros and multiplicities.    , multiplicity 2 (the graph touches the x-axis here)  , multiplicity 1 (the graph crosses here)  , multiplicity 1 (the graph crosses here)    End Behavior: Degree 4 (even), leading coefficient 2 (positive) → rises to the right and to the left.       Graph of       "
 },
@@ -2903,7 +2903,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-4.html#graphing-example-5",
   "type": "Example",
-  "number": "142",
+  "number": "349",
   "title": "",
   "body": "  Given , find the zeros (that is, factor completely) and their multiplicities, then sketch its graph.     Step 1: List possible rational zeros.   The constant term is and the leading coefficient is .    Step 2: Test possible zeros.   Test :   Since , is a zero, so is a factor. Divide:   So .   Step 3: Find remaining zeros using the quadratic formula.   For :   So the zeros are:    Step 4: Zeros and multiplicities.    , multiplicity 1 (crosses)  , multiplicity 1 (crosses)  , multiplicity 1 (crosses)    End Behavior: Degree 3 (odd), leading coefficient 1 (positive) → falls to the left, rises to the right.        Graph of       "
 },
@@ -2912,7 +2912,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-4.html#graphing-example-6",
   "type": "Example",
-  "number": "143",
+  "number": "351",
   "title": "",
   "body": "  Given , find the zeros (that is, factor completely) and their multiplicities, then sketch its graph.     Step 1: List possible rational zeros.   The constant term is and the leading coefficient is .   That's a LOT of possible zeros (and we know that a cubic can only have 3 zeros). We can use a graph to help us decide which zeros are likely. Remember, the graph doesn't prove we have a zero — we must use division to confirm.   Step 2: Test likely zeros.   From the graph, it looks like and are zeros. Let's test :   Since , is a zero. Divide:   So .   Step 3: Factor the quadratic.    Therefore:    Step 4: Zeros and multiplicities.    , multiplicity 1 (crosses)  , multiplicity 1 (crosses)  , multiplicity 1 (crosses)    End Behavior: Degree 3 (odd), leading coefficient (negative) → rises to the left, falls to the right.       Graph of       "
 },
@@ -2921,7 +2921,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-4.html#fundamental-theorem-3",
   "type": "Definition",
-  "number": "210",
+  "number": "353",
   "title": "Fundamental Theorem of Algebra.",
   "body": " Fundamental Theorem of Algebra  If is a polynomial of degree , where , then has at least one zero in the complex number system.  "
 },
@@ -2930,7 +2930,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-4.html#fundamental-theorem-5",
   "type": "Definition",
-  "number": "211",
+  "number": "354",
   "title": "Linear Factorization Theorem.",
   "body": " Linear Factorization Theorem  If is a polynomial of degree , where , then has precisely linear factors:   where are complex numbers.  "
 },
@@ -2948,7 +2948,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-4.html#fundamental-theorem-9",
   "type": "Definition",
-  "number": "212",
+  "number": "355",
   "title": "Conjugate Zeros Theorem.",
   "body": " Conjugate Zeros Theorem  If is a polynomial with real coefficients and if ( ) is a zero of , then its conjugate is also a zero of .  Complex factors of polynomials with real coefficients ALWAYS come as conjugate pairs.  "
 },
@@ -2957,7 +2957,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-4.html#fundamental-theorem-10",
   "type": "Definition",
-  "number": "213",
+  "number": "356",
   "title": "Number of Zeros of a Polynomial.",
   "body": " Number of Zeros of a Polynomial  If is a polynomial of degree with complex coefficients, then has exactly complex zeros, provided that each zero is counted by its multiplicity.  A polynomial of degree has zeros (n factors, n roots) when you count multiplicities.  "
 },
@@ -2966,7 +2966,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-4.html#fundamental-theorem-11",
   "type": "Example",
-  "number": "144",
+  "number": "357",
   "title": "",
   "body": "  Given , express as a product of linear factors and sketch its graph.     Step 1: List possible rational zeros.   The constant term is and the leading coefficient is .    Step 2: Test possible zeros.   It looks like and are zeros. Test :   Since , is a zero. Divide:   So .  Now test on the cubic factor:   So .   Step 3: Find remaining zeros using the quadratic formula.   For , with , , :    Step 4: Write the complete factorization.     Step 5: Zeros and multiplicities.    , multiplicity 1  , multiplicity 1  , multiplicity 1  , multiplicity 1     Graph of       "
 },
@@ -2975,7 +2975,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-4.html#fundamental-theorem-12",
   "type": "Example",
-  "number": "145",
+  "number": "359",
   "title": "",
   "body": "  Given that is a zero of , find the remaining zeros.   Hint: If is a zero, then is also a zero (by the Conjugate Zeros Theorem).     Step 1: Find the quadratic factor corresponding to the complex conjugate pair.   If and are zeros, then:    Step 2: Divide the original polynomial by this quadratic factor.    Long division of      So we have:    Step 3: Factor the quadratic.     Step 4: Write the complete factorization.     Step 5: Identify all zeros.    (given)  (conjugate pair)      "
 },
@@ -3002,7 +3002,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-5.html#intro-rational-functions-5",
   "type": "Table",
-  "number": "216",
+  "number": "361",
   "title": "Infinite Behavior Notation",
   "body": " Infinite Behavior Notation    Notation  Meaning     approaches from the right (but ).     approaches from the left (but ).     increases without bound.     decreases without bound.    "
 },
@@ -3011,7 +3011,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-5.html#example-infinite-behavior-2",
   "type": "Example",
-  "number": "146",
+  "number": "362",
   "title": "",
   "body": "  The graph of is shown below. Complete the statements.   Graph of      As , _____  As , _____  As , _____  As , _____     As , (horizontal asymptote).  As , (horizontal asymptote).  As , (vertical asymptote, right side).  As , (vertical asymptote, left side).    "
 },
@@ -3020,7 +3020,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-5.html#vertical-asymptotes-2",
   "type": "Definition",
-  "number": "218",
+  "number": "364",
   "title": "Vertical Asymptote.",
   "body": " Vertical Asymptote  The line is a vertical asymptote of the graph of if approaches or as approaches from either side.  "
 },
@@ -3029,7 +3029,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-5.html#vertical-asymptotes-3-1",
   "type": "Figure",
-  "number": "219",
+  "number": "365",
   "title": "",
   "body": " As ,     "
 },
@@ -3038,7 +3038,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-5.html#vertical-asymptotes-3-2",
   "type": "Figure",
-  "number": "220",
+  "number": "366",
   "title": "",
   "body": " As ,     "
 },
@@ -3047,7 +3047,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-5.html#vertical-asymptotes-4-1",
   "type": "Figure",
-  "number": "221",
+  "number": "367",
   "title": "",
   "body": " As ,     "
 },
@@ -3056,7 +3056,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-5.html#vertical-asymptotes-4-2",
   "type": "Figure",
-  "number": "222",
+  "number": "368",
   "title": "",
   "body": " As ,     "
 },
@@ -3065,7 +3065,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-5.html#vertical-asymptotes-6",
   "type": "Example",
-  "number": "147",
+  "number": "369",
   "title": "",
   "body": "  Identify the vertical asymptotes (if any) of:     Factor the denominator: Set equal to zero: Since neither zero cancels with the numerator, both are vertical asymptotes.   Graph of       "
 },
@@ -3074,7 +3074,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-5.html#vertical-asymptotes-8",
   "type": "Example",
-  "number": "148",
+  "number": "371",
   "title": "",
   "body": "  Identify the vertical asymptotes (if any) of:     Factor the denominator: The common factor cancels with the numerator, leaving: So there is a hole at . The y‑value of the hole is The vertical asymptote is .   Graph with a hole at       "
 },
@@ -3083,7 +3083,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-5.html#vertical-asymptotes-9",
   "type": "Example",
-  "number": "149",
+  "number": "373",
   "title": "",
   "body": "  Identify the vertical asymptotes (if any) of:     The denominator has no real solutions, so there are no vertical asymptotes .   Graph of       "
 },
@@ -3092,7 +3092,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-5.html#horizontal-asymptotes-2",
   "type": "Definition",
-  "number": "226",
+  "number": "375",
   "title": "Horizontal Asymptote.",
   "body": " Horizontal Asymptote  The line is a horizontal asymptote if as or . This is the end‑behavior of rational functions.  "
 },
@@ -3101,7 +3101,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-5.html#horizontal-asymptotes-3-1",
   "type": "Figure",
-  "number": "227",
+  "number": "376",
   "title": "",
   "body": " As , from below     "
 },
@@ -3110,7 +3110,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-5.html#horizontal-asymptotes-3-2",
   "type": "Figure",
-  "number": "228",
+  "number": "377",
   "title": "",
   "body": " As , from above     "
 },
@@ -3119,7 +3119,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-5.html#horizontal-asymptotes-4-1",
   "type": "Figure",
-  "number": "229",
+  "number": "378",
   "title": "",
   "body": " As , from below     "
 },
@@ -3128,7 +3128,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-5.html#horizontal-asymptotes-4-2",
   "type": "Figure",
-  "number": "230",
+  "number": "379",
   "title": "",
   "body": " As , from above     "
 },
@@ -3137,7 +3137,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-5.html#horizontal-asymptotes-8",
   "type": "Example",
-  "number": "150",
+  "number": "380",
   "title": "",
   "body": "  Identify the asymptotes (if any) of .    Vertical asymptotes: and (from ). Horizontal asymptote: degree numerator = 1, denominator = 2 → → .   Graph of       "
 },
@@ -3146,7 +3146,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-5.html#horizontal-asymptotes-9",
   "type": "Example",
-  "number": "151",
+  "number": "382",
   "title": "",
   "body": "  Identify the asymptotes (if any) of .    Vertical asymptotes: and . Horizontal asymptote: degrees equal → .   Graph of       "
 },
@@ -3164,7 +3164,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-5.html#slant-asymptotes-3",
   "type": "Example",
-  "number": "152",
+  "number": "384",
   "title": "",
   "body": "  Find the slant asymptote of .    Divide by :   Long division for slant asymptote      The quotient is , so the slant asymptote is .   Graph with slant asymptote       "
 },
@@ -3173,7 +3173,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-5.html#graphing-rational-functions-3",
   "type": "Problem-Solving Strategy",
-  "number": "235",
+  "number": "387",
   "title": "Graphing Rational Functions.",
   "body": " Graphing Rational Functions  Given where and are polynomials with no common factors:   Step 1: Factor.   Begin by factoring the numerator and denominator.   Holes:   When you factor the top and bottom, if you notice a common factor that can simplify as a one, please do so. However note at what x-value this is, because your graph will have a hole at that input. To find the point at which the hole occurs, plug in that x value into the simplified function.   Intercepts:    To find the -intercepts, solve . Notice that if you \"clear the fraction\", you only need solve .  To find the -intercept, evaluate .    Asymptotes:    Vertical asymptotes: solve (after canceling common factors).  Horizontal asymptote: use the degree rules.  Slant asymptote: if degree numerator = degree denominator + 1.    Sketch:    Put intercepts and asymptotes on the graph.  Plot points (ALEKS will ask for one or two points on each part of the graph).  Complete the sketch using all collected information.   "
 },
@@ -3182,7 +3182,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-5.html#graphing-rational-functions-4",
   "type": "Example",
-  "number": "153",
+  "number": "388",
   "title": "",
   "body": "  Sketch a graph of .     Step 1: Factor.    No common factors → no holes.   Step 2: Intercepts.    -intercepts: → .  -intercept: .    Step 3: Asymptotes.    Vertical asymptotes: → .  Horizontal asymptote: degrees equal → .    Graph of       "
 },
@@ -3191,7 +3191,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-5.html#example-graph-rational-2-2",
   "type": "Example",
-  "number": "154",
+  "number": "390",
   "title": "",
   "body": "  Sketch a graph of .     Step 1: Factor.    No common factors.   Step 2: Intercepts.    -intercepts: → .  -intercept: .    Step 3: Asymptotes.    Vertical asymptotes: → .  Horizontal asymptote: degrees equal → .    Graph of       "
 },
@@ -3200,9 +3200,99 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-3-5.html#example-graph-rational-3-2",
   "type": "Example",
-  "number": "155",
+  "number": "392",
   "title": "",
   "body": "  Sketch a graph of .     Step 1: Factor.    No common factors.   Step 2: Intercepts.    -intercepts: → .  -intercept: .    Step 3: Asymptotes.    Vertical asymptote: → .  No horizontal asymptote (degree numerator > degree denominator).  Slant asymptote: divide by → .    Graph with slant asymptote       "
+},
+{
+  "id": "section-3-6",
+  "level": "1",
+  "url": "section-3-6.html",
+  "type": "Section",
+  "number": "",
+  "title": "Section 3.6 Polynomial and Rational Inequalities",
+  "body": " Section 3.6 Polynomial and Rational Inequalities    Polynomial and Rational Inequalities   Polynomial and Rational Inequalities Video  An inequality that can be written in the form where is a polynomial is called a polynomial inequality . If is a rational function, it is called a rational inequality .   Why do we require that one side be 0?   Remember:  If , the graph is above the -axis.  If , the graph is below the -axis.  If , the graph is on the -axis (these are the zeros).     How does this help us?   Consider a point on the graph, . If the the point is above the -axis, then we know two important facts:   .  for -values close to .     A point with a positive output on the graph of a function         The Sign Chart Method  Consider a continuous function . If we know the zeros of the function (where ), we can use the fact that a continuous function can only change sign at a zero or at a vertical asymptote.  Therefore, if we pick any point in an interval between two consecutive zeros, the output will have the same sign as every other point in that interval. This is the fundamental idea behind the sign chart method.    Multiple points in an interval have the same sign      For rational functions, the sign of can also change at undefined values (vertical asymptotes). Therefore, the process for rational inequalities involves finding both the zeros and the values that are not in the domain (where the denominator is zero).    Sign changes at zeros and vertical asymptotes       The Sign Chart Method:    Step 1: Move all terms to one side so the other side is . Define and state the inequality to be solved (e.g., ).   Step 2: Find the boundary points. These are the zeros of and any undefined values (points not in the domain).   Zeros: solve (for rational functions, solve the numerator = 0).  Undefined values: set the denominator = 0 and solve.    Step 3: Choose a test point in each interval. The boundary points divide the real number line into intervals. Pick a convenient test point in each interval and evaluate . Record whether the output is positive or negative.   Step 4: Write the solution.    If solving , include intervals where is positive.  If solving , include intervals where is positive and the zeros.  Never include undefined values.      Example 1: Solving a Quadratic Inequality    Solve .     Step 1: Move all terms to one side.   Let . We want to know where .   Step 2: Find the zeros.   Factor:   The zeros are and . These are the boundary points.   Step 3: Choose test points.   The zeros divide the number line into three intervals:       We choose a test point in each interval: , , and .    Sign chart for      Evaluate at each test point:   At : → positive.  At : → negative.  At : → positive.    Step 4: Write the solution.   Since we want , we choose the interval where is negative. We also include the zeros because the inequality is non-strict ( ).  The solution is .  In interval notation: .    Graph of           Example 2: Solving a Quadratic Inequality    Solve .     Step 1: Let . We want .   Step 2: Find the zeros.   Factor:   The zeros are and .   Step 3: Choose test points.   The zeros divide the number line into three intervals:       Choose test points: , , and .   At : → negative.  At : → positive.  At : → negative.    Step 4: Write the solution.   Since we want , we choose the interval where is positive. We do not include the zeros because the inequality is strict ( ).  The solution is .  In interval notation: .    Graph of         Video Examples    Solve .     Step 1: Let . We want .   Step 2: Find the zeros.   The zeros are (multiplicity 2) and (multiplicity 1). Note that a zero with even multiplicity does not cause a sign change.   Step 3: Choose test points.   The zeros divide the number line into three intervals:       Choose test points: , , and .   At : → positive.  At : → positive.  At : → negative.    Step 4: Write the solution.   We want , so we take the intervals where the function is positive: .  Note that is not included because it makes the function equal to 0, not greater than 0.  In interval notation: .    Graph of           Example: Solving a Rational Inequality   Video Examples    Solve .     Step 1: Let . We want .   Step 2: Find the boundary points.   Factor the numerator:   Zeros (where numerator = 0): and .  Undefined values (where denominator = 0): .   Step 3: Choose test points.   The boundary points divide the number line into four intervals:        Choose test points: , , , and .    Sign chart for      Evaluate at each test point:   At : → negative.  At : → positive.  At : → negative.  At : → positive.    Step 4: Write the solution.   Since we want , we choose the intervals where is positive. We include the zeros but never include the undefined value.  The solution is .    Graph of           Example: Inequality Not 0 on One Side   Example Video with Inequality Not 0 on One Side    Solve .     Step 1: Move all terms to one side.   Combine into a single fraction:     Let . We want .   Step 2: Find the boundary points.   Zero (numerator = 0): .  Undefined value (denominator = 0): .   Step 3: Choose test points.   The boundary points divide the number line into three intervals:       Choose test points: , , and .   At : → negative.  At : → positive.  At : → negative.    Step 4: Write the solution.   Since we want , we choose the intervals where is negative. We do not include the zero and we never include the undefined value.  The solution is .    Graph of with horizontal line         "
+},
+{
+  "id": "intro-poly-rational-inequalities-3",
+  "level": "2",
+  "url": "section-3-6.html#intro-poly-rational-inequalities-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "polynomial inequality rational inequality "
+},
+{
+  "id": "intro-poly-rational-inequalities-9",
+  "level": "2",
+  "url": "section-3-6.html#intro-poly-rational-inequalities-9",
+  "type": "Figure",
+  "number": "394",
+  "title": "",
+  "body": " A point with a positive output on the graph of a function     "
+},
+{
+  "id": "sign-chart-method-4",
+  "level": "2",
+  "url": "section-3-6.html#sign-chart-method-4",
+  "type": "Figure",
+  "number": "395",
+  "title": "",
+  "body": " Multiple points in an interval have the same sign     "
+},
+{
+  "id": "sign-chart-method-6",
+  "level": "2",
+  "url": "section-3-6.html#sign-chart-method-6",
+  "type": "Figure",
+  "number": "396",
+  "title": "",
+  "body": " Sign changes at zeros and vertical asymptotes     "
+},
+{
+  "id": "example-quadratic-inequality-2",
+  "level": "2",
+  "url": "section-3-6.html#example-quadratic-inequality-2",
+  "type": "Example",
+  "number": "397",
+  "title": "",
+  "body": "  Solve .     Step 1: Move all terms to one side.   Let . We want to know where .   Step 2: Find the zeros.   Factor:   The zeros are and . These are the boundary points.   Step 3: Choose test points.   The zeros divide the number line into three intervals:       We choose a test point in each interval: , , and .    Sign chart for      Evaluate at each test point:   At : → positive.  At : → negative.  At : → positive.    Step 4: Write the solution.   Since we want , we choose the interval where is negative. We also include the zeros because the inequality is non-strict ( ).  The solution is .  In interval notation: .    Graph of       "
+},
+{
+  "id": "example-quadratic-inequality-2-2",
+  "level": "2",
+  "url": "section-3-6.html#example-quadratic-inequality-2-2",
+  "type": "Example",
+  "number": "400",
+  "title": "",
+  "body": "  Solve .     Step 1: Let . We want .   Step 2: Find the zeros.   Factor:   The zeros are and .   Step 3: Choose test points.   The zeros divide the number line into three intervals:       Choose test points: , , and .   At : → negative.  At : → positive.  At : → negative.    Step 4: Write the solution.   Since we want , we choose the interval where is positive. We do not include the zeros because the inequality is strict ( ).  The solution is .  In interval notation: .    Graph of       "
+},
+{
+  "id": "example-quadratic-inequality-2-4",
+  "level": "2",
+  "url": "section-3-6.html#example-quadratic-inequality-2-4",
+  "type": "Example",
+  "number": "402",
+  "title": "",
+  "body": "  Solve .     Step 1: Let . We want .   Step 2: Find the zeros.   The zeros are (multiplicity 2) and (multiplicity 1). Note that a zero with even multiplicity does not cause a sign change.   Step 3: Choose test points.   The zeros divide the number line into three intervals:       Choose test points: , , and .   At : → positive.  At : → positive.  At : → negative.    Step 4: Write the solution.   We want , so we take the intervals where the function is positive: .  Note that is not included because it makes the function equal to 0, not greater than 0.  In interval notation: .    Graph of       "
+},
+{
+  "id": "rational-inequality-example-3",
+  "level": "2",
+  "url": "section-3-6.html#rational-inequality-example-3",
+  "type": "Example",
+  "number": "404",
+  "title": "",
+  "body": "  Solve .     Step 1: Let . We want .   Step 2: Find the boundary points.   Factor the numerator:   Zeros (where numerator = 0): and .  Undefined values (where denominator = 0): .   Step 3: Choose test points.   The boundary points divide the number line into four intervals:        Choose test points: , , , and .    Sign chart for      Evaluate at each test point:   At : → negative.  At : → positive.  At : → negative.  At : → positive.    Step 4: Write the solution.   Since we want , we choose the intervals where is positive. We include the zeros but never include the undefined value.  The solution is .    Graph of       "
+},
+{
+  "id": "rational-inequality-not-zero-3",
+  "level": "2",
+  "url": "section-3-6.html#rational-inequality-not-zero-3",
+  "type": "Example",
+  "number": "407",
+  "title": "",
+  "body": "  Solve .     Step 1: Move all terms to one side.   Combine into a single fraction:     Let . We want .   Step 2: Find the boundary points.   Zero (numerator = 0): .  Undefined value (denominator = 0): .   Step 3: Choose test points.   The boundary points divide the number line into three intervals:       Choose test points: , , and .   At : → negative.  At : → positive.  At : → negative.    Step 4: Write the solution.   Since we want , we choose the intervals where is negative. We do not include the zero and we never include the undefined value.  The solution is .    Graph of with horizontal line       "
 },
 {
   "id": "activities-3",
@@ -3211,7 +3301,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Worksheets",
-  "body": " Worksheets   The worksheets listed below are used during class sessions to help you practice the concepts covered in each section. You can download and print them before class or use them for extra practice at home.   Instructions: Click on any worksheet below to view, download, or print the PDF. Bring a printed copy to class if you prefer to work on paper during the session.    Worksheet 1  Worksheet 2  Worksheet 3    Note: Worksheets are for in-class practice and preparation. They are not graded, but completing them will help you succeed on quizzes and exams.  "
+  "body": " Worksheets   The worksheets listed below are used during class sessions to help you practice the concepts covered in each section. You can download and print them before class or use them for extra practice at home.   Instructions: Click on any worksheet below to view, download, or print the PDF. Bring a printed copy to class if you prefer to work on paper during the session.    Worksheet 1  Worksheet 2  Worksheet 3  Worksheet 4  Worksheet 5    Note: Worksheets are for in-class practice and preparation. They are not graded, but completing them will help you succeed on quizzes and exams.  "
 },
 {
   "id": "activities-3-4",
