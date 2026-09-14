@@ -146,12 +146,17 @@
     <!-- See also                                              -->
     <!-- https://pretextbook.org/doc/guide/html/publication-file-online.html#online-style-options -->
     <css 
-        theme="denver" 
-        
-        primary-color="#386F94"
-        primary-color-dark="#5192BD"
-        provide-dark-mode="yes"
-    />
+    
+     theme="denver" 
+    primary-color="#386F94"
+    primary-color-dark="#5192BD"
+    provide-dark-mode="yes"
+   
+/>
+
+ <tableofcontents focused="yes" preexpanded-levels="6" />
+<!--custom="custom.css" -->
+   <!--theme="greeley" -->
 
     <!-- Search can be default or none, or you can use a Google-cx number to use google's search
     feature (but then variant should be set to none to avoid conflict) -->
@@ -220,7 +225,7 @@
  
 
    <assets>
-      <source directory="assets" target="assets"/>
+      <source directory="../assets" target="assets"/>
   </assets>
 
 </publication>
